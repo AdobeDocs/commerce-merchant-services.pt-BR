@@ -16,7 +16,7 @@ ht-degree: 0%
 Cada regra tem três componentes principais:
 
 * Condições - As condições que acionam uma ação.
-* Eventos - A(s) ação(ões) que ocorre(s) quando a(s) condição(ões) é(são) atendida(s).
+* Eventos - A(s) ação(ões) que ocorre quando a(s) condição(ões) é(são) atendida(s).
 * Detalhes - O nome da regra, o período de tempo e a descrição opcionais.
 
 É possível combinar várias condições e ações e agendar uma regra para permanecer ativa por um período específico.
