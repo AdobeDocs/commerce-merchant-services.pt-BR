@@ -1,0 +1,51 @@
+---
+title: Gerenciar sinônimos
+description: Saiba como gerenciar sinônimos existentes do Live Search.
+exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
+source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
+
+---
+
+# Gerenciar sinônimos
+
+Siga estas instruções para gerenciar os [!DNL Live Search] [sinônimos](synonyms.md).
+
+## Encontrar sinônimo
+
+Para facilitar a localização de um sinônimo, você pode filtrar a lista por tipo e pesquisar por palavra-chave ou termo de expansão.  Esses métodos podem ser usados individualmente ou em conjunto.
+
+1. Para filtrar a lista, defina **Tipo** para um dos seguintes:
+
+   * Todos
+   * Unidirecional
+   * Dois sentidos
+
+1. Para procurar uma palavra-chave ou termo de expansão, insira pelo menos três caracteres em **Pesquisar por** caixa.
+
+## Editar sinônimo
+
+1. Encontre o sinônimo que deseja editar e clique em **Mais** (...) opções.
+
+1. Clique em **Editar**.
+A palavra-chave é o primeiro termo na lista e cada termo é separado por vírgula. A palavra-chave e os termos de expansão podem ser atualizados, mas o tipo de sinônimo não pode ser alterado.
+1. Clique no item que deseja editar. Em seguida, atualize o texto conforme necessário.
+
+   ![editar sinônimo bidirecional](assets/synonym-two-way-edit.png)
+
+1. Ao concluir, clique em **Salvar**.
+
+## Excluir sinônimo
+
+1. Encontre o sinônimo que deseja excluir na lista e clique em **Mais** (...) opções.
+1. Clique em **Excluir**.
+1. Quando solicitado, clique em **Excluir sinônimo** para confirmar.
+
+## Publicar alterações
+
+Para concluir o processo, suas alterações salvas devem ser publicadas na loja. Pode levar até duas horas para que as atualizações sejam ativadas.
+
+1. Clique em **Publicar alterações**.
+1. Procure a mensagem na parte superior da página que confirma que as alterações foram publicadas.
