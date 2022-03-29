@@ -2,37 +2,17 @@
 title: Visão geral
 description: A Live Search da Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva.
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: e1fae25f8a005e2d4c659bf2d84580772a423c35
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '95'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search]
 
-[!DNL Live Search] a Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva, e está disponível para a Adobe Commerce sem custo adicional. [!DNL Live Search] alimentado por [Adobe Sensei](https://www.adobe.com/sensei.html) O usa inteligência artificial e algoritmos de aprendizado automatizado para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados ao seu catálogo do Adobe Commerce, resultam em experiências de compras altamente envolventes, relevantes e personalizadas. Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um alterador de jogos para compradores e comerciantes.
+[!DNL Live Search] é um conjunto independente [pacotes](#live-search-packages) que substitui os recursos de pesquisa padrão do Magento Open Source e Adobe Commerce. O [!DNL Live Search] O módulo é instalado a partir da linha de comando do servidor e se conecta à instalação do Adobe Commerce como um [service](https://docs.magento.com/user-guide/system/saas.html). Quando o processo estiver concluído, [!DNL Live Search] aparece no *Marketing* menu em *SEO &amp; Pesquisar* no [!DNL Commerce] *Administrador*.
 
-- [Integração](install.md)
-Complete o [!DNL Live Search] instalação e configuração.
+O lado do Adobe Commerce inclui a hospedagem da pesquisa *Administrador*, sincronização de dados do catálogo e execução do serviço de query.
 
-- [Tour rápido](quick-tour.md)
-Faça um rápido tour por [!DNL Live Search] da loja.
-
-- [Popover de frente de loja](storefront-popover.md)
-O [!DNL Live Search] o storefront pover retorna produtos sugeridos e miniaturas dos principais resultados da pesquisa, pois os clientes digitam o texto da consulta.
-
-- [Workspace](workspace.md)
-Saiba mais sobre a [!DNL Live Search] espaço de trabalho.
-
-- [Aspectos](facets.md)
-Use várias dimensões de valores de atributos como filtros de pesquisa de alto desempenho.
-
-- [Sinônimos](synonyms.md)
-Expanda o alcance da pesquisa com palavras que os compradores podem usar que diferem daqueles no catálogo.
-
-- [Regras](rules.md)
-Formate a experiência de compra com instruções if-then que adicionam lógica e eventos a serem pesquisados. Use as regras para impulsionar ou enterrar produtos por um período específico.
-
-- [Indexação](indexing.md)
-Saiba como [!DNL Live Search] indexa os metadados para propriedades de atributos do produto.
+![Diagrama de arquitetura do Live Search](assets/architecture-diagram.svg)

@@ -2,9 +2,9 @@
 title: Popover de frente de loja
 description: A vitrine do Live Search retorna dinamicamente produtos sugeridos e miniaturas.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
 workflow-type: tm+mt
-source-wordcount: '239'
+source-wordcount: '381'
 ht-degree: 0%
 
 ---
@@ -30,3 +30,15 @@ Os atributos a seguir sempre podem ser pesquisados:
 * `categories`
 
 ![Potência do Live Search](assets/storefront-search-as-you-type.png)
+
+## Tamanho da página de pôster
+
+O tamanho da página do portador determina quantas linhas de produtos autopreenchidos podem ser retornadas. Anteriormente, o tamanho da página era codificado como seis linhas. No entanto, a variável `page_size` agora é uma configuração que pode ser configurada no *Administrador*. Durante a instalação do Live Search, a variável `page_size` O valor é alterado para o valor atual da variável [Pesquisa no catálogo](https://docs.magento.com/user-guide/configuration/catalog/catalog.html#catalog-search) - `Autocomplete Limit` configuração.
+
+Por padrão, o valor de Limite de Conclusão Automática - Pesquisa no Catálogo é definido como oito linhas (ou linhas). Para alterar o tamanho da página do portfólio, faça o seguinte:
+
+1. No *Administrador* barra lateral, vá para **Lojas** > Configurações > **Configuração**.
+1. No painel esquerdo, expanda **Catálogo** e escolha **Catálogo** na lista de configurações.
+1. Expanda o *Pesquisa no catálogo* seção.
+1. Defina as **Limite de preenchimento automático** para o número de linhas que você deseja permitir no portátil.
+1. Ao concluir, clique em **Salvar configuração**.

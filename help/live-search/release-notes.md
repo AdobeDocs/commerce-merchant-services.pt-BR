@@ -2,9 +2,9 @@
 title: Notas de versão do Live Search
 description: As informações mais recentes da versão do Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '653'
 ht-degree: 1%
 
 ---
@@ -16,6 +16,19 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search]
 * ![Novo](../assets/new.svg) - Novos recursos
 * ![Correção](../assets/fix.svg) - Correções e melhorias
 * ![Bug](../assets/bug.svg) - Problemas conhecidos
+
+## [!DNL Live Search] 2,0
+
+* Compatível com Adobe Commerce (EE): 2.4.x
+* Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
+* Estabilidade: Estável
+
+* ![Novo](../assets/new.svg) - O número de linhas disponíveis no [loja](quick-tour.md) pode ser configurado no *Administrador*.
+* ![Novo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidade para o Live Search.
+* ![Novo](../assets/new.svg) - O processo de instalação do Live Search é atualizado com alterações avançadas no processo.
+* ![Correção](../assets/fix.svg) - [Pesquisa avançada](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removido do rodapé da loja.
+* ![Bug](../assets/bug.svg) - Os seguintes atributos de produto não são compatíveis com [API Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql) quando utilizado em relação à versão beta do PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - A versão beta do PWA para Live Search não é compatível [tratamento de evento](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1.
 
@@ -47,7 +60,7 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search]
 * Estabilidade: Estável
 
 * ![Novo](../assets/new.svg) - Loja [proveta](storefront-popover.md) O exibe os produtos sugeridos e imagens em miniatura dos principais resultados da pesquisa, enquanto os compradores digitam consultas na caixa Pesquisar.
-* ![Novo](../assets/new.svg) - A sessão de administrador do Commerce permanece aberta durante longos períodos de inatividade do teclado
+* ![Novo](../assets/new.svg) - Comércio *Administrador* a sessão permanece aberta durante longos períodos de inatividade do teclado
 * ![Novo](../assets/new.svg) - [!DNL Live Search] é ativado automaticamente após a integração
 * ![Correção](../assets/fix.svg) - O tempo de indexação inicial é inferior a uma hora
 * ![Correção](../assets/fix.svg) - Atualizações incrementais de produtos quase em tempo real (após a instalação e a configuração)
