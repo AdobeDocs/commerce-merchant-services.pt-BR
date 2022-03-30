@@ -1,9 +1,9 @@
 ---
 title: Posicionamento e rótulos
 description: Saiba onde você pode colocar recomendações em várias páginas do seu site e sugestões para rótulos usados com frequência para cada tipo de recomendação.
-source-git-commit: 4ec8acf6795cd451df48fbfba12e8635c180bf79
+source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
 workflow-type: tm+mt
-source-wordcount: '553'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,11 @@ ht-degree: 0%
 
 Com tantos tipos de recomendação para escolher, qual deve ser usado em cada página? Se não tiver certeza de onde começar, tente o seguinte:
 
-|Home page|`Recommended for you`| |Página do produto|`Viewed this, viewed that`| |Carrinho|`Bought this, bought that`|
+| Página | Tipo de Recomendação |
+|---|---|
+| Página inicial | `Recommended for you` |
+| Página do produto | `Viewed this, viewed that` |
+| Carrinho | `Bought this, bought that` |
 
 Você pode rastrear o [métricas](workspace.md) e ajustar, se necessário. Lembre-se de que experimentação é fundamental.
 
