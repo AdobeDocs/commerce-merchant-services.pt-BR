@@ -3,27 +3,18 @@ title: Documentação dos serviços
 description: Procurar serviços para a documentação do produto Adobe Commerce
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
+breadcrumb-title: Documentação
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 2f64ddf30cb9bcd5d2d05b37fbe601f9bfe8e84b
+source-git-commit: ddfcc8e195b1971b0f431205948faa6c6dd2c49f
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
 
-# Documentação dos serviços {#documentation}
-
-![Serviços para Adobe Commerce](./assets/banner-services-home.png)
+# <!-- use banner as heading -->![Documentação dos serviços](./assets/banner-services-home.png) {#documentation}
 
 O Adobe fornece uma coleção de serviços hospedados para ajudar os comerciantes a suportar os principais componentes de seus negócios.
-
-## Conectar-se a serviços
-
-O [Conector do Commerce Services](https://docs.magento.com/user-guide/system/saas.html) O fornece a integração para a instância do Adobe Commerce ou Magento Open Source usando uma chave API e uma chave privada. Para serviços de dados (somente Adobe Commerce), também é possível especificar o espaço de dados na configuração.
-
-## Sincronização do catálogo
-
-Para serviços que usam dados de catálogo (Recommendations do Produto e Live Search), a variável [Sincronização do catálogo](https://docs.magento.com/user-guide/system/catalog-sync.html) O processa exportações de dados do produto do servidor Commerce para o Commerce Services de forma contínua, a fim de manter os serviços atualizados.
 
 ## Serviços disponíveis
 
@@ -31,7 +22,7 @@ Para serviços que usam dados de catálogo (Recommendations do Produto e Live Se
 <tr>
    <td valign="top">
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" />
-    <div><a href="https://docs.magento.com/user-guide/recommendations/overview.html">
+    <div><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html">
     <strong>[!DNL Product Recommendations]</strong></a>
     </div>
     <p>(Somente Adobe Commerce)<br><em>Adicione recomendações alimentadas por IA com base no comportamento do comprador, nas tendências populares, na similaridade do produto e muito mais.</em></p>
@@ -65,6 +56,14 @@ Para serviços que usam dados de catálogo (Recommendations do Produto e Live Se
   </td>
 </tr>
 </table>
+
+## Conectar-se a serviços
+
+O [Conector do Commerce Services](https://docs.magento.com/user-guide/system/saas.html) O fornece a integração para a instância do Adobe Commerce ou Magento Open Source usando uma chave API e uma chave privada. Para serviços de dados (somente Adobe Commerce), também é possível especificar o espaço de dados na configuração.
+
+## Sincronização do catálogo
+
+Para serviços que usam dados de catálogo (Recommendations do Produto e Live Search), a variável [Sincronização do catálogo](https://docs.magento.com/user-guide/system/catalog-sync.html) O processa exportações de dados do produto do servidor Commerce para o Commerce Services de forma contínua, a fim de manter os serviços atualizados.
 
 ## Novidades
 
