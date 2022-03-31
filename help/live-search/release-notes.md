@@ -2,9 +2,9 @@
 title: Notas de versão do Live Search
 description: As informações mais recentes da versão do Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 8fea8145e624b57278b9373246e8c4249472a03d
+source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
 workflow-type: tm+mt
-source-wordcount: '653'
+source-wordcount: '648'
 ht-degree: 1%
 
 ---
@@ -46,7 +46,7 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search]
 * Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
 * Estabilidade: Estável
 
-* ![Novo](../assets/new.svg) - [Desempenho](https://docs.magento.com/user-guide/live-search/performance.html) o painel de relatórios fornece informações sobre os termos de pesquisa que os compradores usam.
+* ![Novo](../assets/new.svg) - [Desempenho](performance.md) o painel de relatórios fornece informações sobre os termos de pesquisa que os compradores usam.
 * ![Novo](../assets/new.svg) - [!DNL Live Search] [SDK de eventos de vitrine](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) O fornece acesso a uma camada de dados comum com serviços de publicação de eventos e assinatura, além de métricas.
 * ![Correção](../assets/fix.svg) - O [Popover de frente de loja](https://devdocs.magento.com/live-search/storefront-popover.html) tem um novo `active` classe para `.search-autocomplete` contêiner que controla a visibilidade.
 * ![Correção](../assets/fix.svg) - Na loja, a [Pesquisar termos](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) link de rodapé removido e seu cache desativado para [!DNL Live Search] instalações.
