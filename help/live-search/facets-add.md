@@ -2,7 +2,7 @@
 title: Adicionar aspectos
 description: Saiba como adicionar atributos de produto filtráveis como facetas do Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '649'
 ht-degree: 0%
@@ -42,7 +42,7 @@ A faceta é adicionada à parte inferior da *Aspectos dinâmicos* e a *Publicar 
 
 ## Etapa 2: Editar propriedades de faceta (opcional)
 
-1. Para editar as propriedades da faceta, clique em **Mais** (![Mais seletor](assets/btn-more.png) na coluna da extrema direita.
+1. Para editar as propriedades da faceta, clique em **Mais** (![Mais seletor](assets/btn-more.png)) na coluna da extrema direita.
 1. No menu, clique em **Editar**. Em seguida, ajuste as seguintes propriedades, conforme necessário.
 
    * Rótulo - ([Cabeça](facets-type.md) somente) Insira o rótulo da faceta que deseja usar.

@@ -2,7 +2,7 @@
 title: Gerenciar aspectos
 description: Saiba como gerenciar aspectos existentes do Live Search.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 0%
@@ -56,19 +56,19 @@ Suas alterações não aparecerão na loja até que sejam publicadas.
 
 O pino muda de cor ao ser clicado e é usado para mover a faceta para o *Aspectos fixados* ou *Aspectos dinâmicos* seção.
 
-1. Para fixar uma faceta na parte superior do *Filtros* localize a faceta na lista *Aspectos dinâmicos* e clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png).
+1. Para fixar uma faceta na parte superior do *Filtros* localize a faceta na lista *Aspectos dinâmicos* e clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png)).
 O pino fica azul e a faceta move-se para *Aspectos fixados* seção.
-1. Para desafixar uma faceta, encontre a faceta na *Aspectos fixados* e clique no pino azul (![Seletor de pinos](assets/btn-pin-blue.png).
+1. Para desafixar uma faceta, encontre a faceta na *Aspectos fixados* e clique no pino azul (![Seletor de pinos](assets/btn-pin-blue.png)).
 O pino fica cinza e a faceta move-se para o *Aspectos dinâmicos* seção.
 
    ![Aspectos fixos e dinâmicos](assets/facets-pinned-unpinned.png)
 
 ## Mover faceta afixada
 
-A ordem das facetas fixadas pode ser alterada movendo a linha para uma posição diferente. As facetas fixadas têm um *Mover* ícone (![Mover seletor](assets/btn-move.png) no início da linha. Ao contrário dos aspectos fixados, os aspectos dinâmicos não podem ser movidos.
+A ordem das facetas fixadas pode ser alterada movendo a linha para uma posição diferente. As facetas fixadas têm um *Mover* ícone (![Mover seletor](assets/btn-move.png)no início da linha. Ao contrário dos aspectos fixados, os aspectos dinâmicos não podem ser movidos.
 
 1. Encontre a faceta na *Aspectos fixados* da lista.
-1. Use o **Mover** (![Mover seletor](assets/btn-move.png) ícone para arrastar a linha para uma nova posição na *Aspectos fixados* seção.
+1. Use o **Mover** (![Mover seletor](assets/btn-move.png)) para arrastar a linha para uma nova posição na *Aspectos fixados* seção.
 Depois que as alterações forem publicadas, as facetas reordenadas aparecerão na loja *Filtros* lista.
 
 ## Excluir faceta

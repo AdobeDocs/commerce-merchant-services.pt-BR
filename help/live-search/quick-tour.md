@@ -2,7 +2,7 @@
 title: Tour rápido
 description: Faça um rápido tour pelo Live Search a partir da loja.
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
 source-wordcount: '308'
 ht-degree: 0%
@@ -16,6 +16,7 @@ Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é
 ## Pesquisar à medida que você digita
 
 [!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados de pesquisa em um [proveta](storefront-popover.md) como compradores, digite queries no [Pesquisar](https://docs.magento.com/user-guide/catalog/search-quick.html) caixa. O [detalhes do produto](https://docs.magento.com/user-guide/quick-tour/product-page.html) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir tudo_ no rodapé da janela exibe a página de resultados da pesquisa.
+
 [!DNL Live Search] retorna resultados de &quot;pesquisa conforme você digita&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na query não é configurável. Os seguintes campos estão incluídos no portador: `name`, `sku`e `category_ids`.
 
 ![Exemplo de vitrine - pesquisar à medida que você digita](assets/storefront-search-as-you-type.png)

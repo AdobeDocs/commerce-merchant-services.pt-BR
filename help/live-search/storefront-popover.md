@@ -2,9 +2,9 @@
 title: Popover de frente de loja
 description: A vitrine do Live Search retorna dinamicamente produtos sugeridos e miniaturas.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 10cea4389d685ce0e26b083872b13a1cd19ba2af
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '379'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ When [!DNL Live Search] é [instalado](install.md), uma tomada aparece na loja q
 
 >[!NOTE]
 >
->O [!DNL Live Search] o fornecedor de vitrine está disponível somente para lojas que usam o *Luma* tema ou um tema personalizado baseado em *Luma*. O *Luma* o tema está incluído na variável [!DNL Commerce] dados de amostra. O provedor não suporta a variável *Em branco* tema. Consulte [Trabalhar com um tema modificado](#working-with-modified-theme) para obter mais informações.
+>O [!DNL Live Search] o fornecedor de vitrine está disponível somente para lojas que usam o *Luma* tema ou um tema personalizado baseado em *Luma*. O *Luma* o tema está incluído na variável [!DNL Commerce] dados de amostra. O provedor não suporta a variável *Em branco* tema. Consulte [Alterar estilo de elementos pop-up](storefront-popover-styling.md) para saber mais.
 
 ## Atributos pesquisáveis
 

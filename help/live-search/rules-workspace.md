@@ -2,9 +2,9 @@
 title: Workspace de regras
 description: Saiba mais sobre a área de trabalho de regras do Live Search.
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Você pode executar qualquer um dos seguintes procedimentos no painel Exibir det
 
 | Controle | Descrição |
 |--- |--- |
-| Adicionar regra | Abre a variável [editor de regras]({% link live-search/rules-add.md %}). |
+| Adicionar regra | Abre a variável [editor de regras](rules-add.md). |
 | Status | Filtra a lista de regras por status. Opções: Tudo, Ativo, Inativo, Programado |
 | ![Seletor de coluna](assets/btn-show-hide-columns.png) | Especifica as colunas que são visíveis na grade. Opções: Última atualização, Data inicial, Data final, Status |
 | Pesquisar | Pesquisa uma regra por nome completo ou correspondência parcial. |

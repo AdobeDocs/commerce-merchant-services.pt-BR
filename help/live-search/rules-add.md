@@ -2,9 +2,9 @@
 title: Adicionar regras
 description: Saiba como criar regras do Live Search.
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '1283'
+source-wordcount: '1284'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,8 @@ Uma regra pode ter até 10 condições. O operador lógico que une duas condiç�
    * Todos - Todos os operadores lógicos na regra são definidos como `AND` e os resultados serão exibidos no painel de teste.
 
    O *Corresponder* determina o operador lógico usado para unir várias condições. Alteração do *Corresponder* definir altera todos os operadores lógicos na regra. Não é possível combinar `AND` e `OR` na mesma regra.
-Neste exemplo, em vez de pesquisar por &quot;calças de yoga&quot;, há duas consultas separadas que pesquisam por &quot;yoga&quot; ou &quot;calças&quot;. Essa regra é menos específica e será acionada com mais frequência na loja do que na outra.
+
+   Neste exemplo, em vez de pesquisar por &quot;calças de yoga&quot;, há duas consultas separadas que pesquisam por &quot;yoga&quot; ou &quot;calças&quot;. Essa regra é menos específica e será acionada com mais frequência na loja do que na outra.
 
    ![Regras - Corresponder](assets/rules-match.png)
 
@@ -74,10 +75,11 @@ Neste exemplo, em vez de pesquisar por &quot;calças de yoga&quot;, há duas con
 
 ## Etapa 3: Adicionar evento(s)
 
-Evento(s) são ações que alteram os resultados da pesquisa quando as condições são atendidas. Uma única regra pode ter até vinte e cinco eventos.
+Evento(s) são ações que alteram os resultados da pesquisa quando as condições são atendidas. Uma única regra pode ter até 25 eventos.
 
 1. Em *Eventos*, escolha o **Evento** para ocorrer quando a(s) condição(ões) associada(s) for(em) atendida(s).
-Por exemplo, escolha `Pin a product`. Em seguida, insira o nome do produto que deseja prender. Se precisar de ajuda, poderá encontrar o nome no painel de teste.
+
+   Por exemplo, escolha `Pin a product`. Em seguida, insira o nome do produto que deseja prender. Se precisar de ajuda, poderá encontrar o nome no painel de teste.
 Em seguida, insira o *Position* onde deve aparecer o produto fixado. O produto é movido para a nova posição no painel de ensaio e marcado com uma *Fixo* selo de visualização.
 
    ![Regras - Corresponder](assets/rule-event-pin-product.png)
@@ -108,8 +110,11 @@ As informações inseridas aqui aparecem no [Detalhes da regra](rules-workspace.
 
 ## Etapa 6: Salvar e publicar
 
-Ao concluir, clique em **Salvar e publicar**.
-A regra é adicionada à lista no espaço de trabalho de regras. Embora as regras ativas entrem em vigor imediatamente, pode levar até quinze minutos para que os resultados da consulta em cache sejam atualizados na loja.
+1. Ao concluir, clique em **Salvar e publicar**.
+
+   A regra é adicionada à lista no espaço de trabalho de regras.
+
+1. Embora as regras ativas entrem em vigor imediatamente, talvez seja necessário aguardar até 15 minutos para que os resultados da consulta em cache sejam atualizados na loja.
 
 ## Descrições dos campos
 

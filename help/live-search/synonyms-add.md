@@ -2,9 +2,9 @@
 title: Adicionar sinônimos
 description: Adicione sinônimos do Live Search para melhorar a resposta às solicitações de pesquisa.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
 workflow-type: tm+mt
-source-wordcount: '394'
+source-wordcount: '393'
 ht-degree: 0%
 
 ---
@@ -63,8 +63,8 @@ O conjunto de sinônimos aparece na lista com uma seta unidirecional apontando d
 
 ## Etapa 3: Publicar alterações
 
-Quando o(s) sinônimo(s) estiver(em) concluído(s), clique em **Publicar alterações**.
-Pode levar até duas horas para que suas atualizações estejam disponíveis na loja.
+1. Quando o(s) sinônimo(s) estiver(em) concluído(s), clique em **Publicar alterações**.
+1. Aguarde até duas horas para que suas atualizações estejam disponíveis na loja.
 
 ![Publicar alterações](assets/synonym-publish.png)
 
