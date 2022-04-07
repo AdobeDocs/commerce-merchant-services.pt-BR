@@ -4,9 +4,9 @@ description: Informações abrangentes sobre [!DNL Payment Services] para admini
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or Magento Open Source.
 exl-id: 30b23f26-9aac-4a24-a607-2431455fc935
-source-git-commit: eb8fdba65b4b64730d0ad4fa6e0c9b64bdadc7df
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '219'
+source-wordcount: '225'
 ht-degree: 0%
 
 ---
@@ -36,8 +36,9 @@ Este guia não aborda os principais recursos do Adobe Commerce e do Magento Open
 
 ## Suporte
 
-Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
+Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, use os seguintes recursos disponíveis no painel:
+
+![Recursos de ajuda](assets/help-resources.png)
 
 * [Central de ajuda](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;} — Consulte o [!DNL Payment Services]Artigos relacionados à solução de problemas.
 * [Tíquetes de suporte](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — Envie um tíquete para receber ajuda adicional.
-

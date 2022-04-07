@@ -2,10 +2,10 @@
 title: '"[!DNL Payment Services] Notas de versão"'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 93a10d91a2dc92db530074d7fc2dfd4f31a9488d
+source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '555'
+ht-degree: 1%
 
 ---
 
@@ -42,8 +42,6 @@ Essas notas de versão descrevem a versão inicial do [!DNL Payment Services] e 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-2561 --> Os produtos removidos anteriormente não aparecem no carrinho da _Pedido de revisão_ página.
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-2456 --> [!DNL Payment Services] melhora os rótulos do método de pagamento no Administrador.
-
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-2907 --> A coleta de dados de transação foi aprimorada para melhor utilizar regras de fraude e proteção de substituição de débito.
 
 ![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2473 --> Usando [chaves do compositor incorretas](https://support.magento.com/hc/en-us/articles/4406603542541) durante a instalação da extensão impede que o usuário [autenticar](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) com correto `MAGEID`.
 
