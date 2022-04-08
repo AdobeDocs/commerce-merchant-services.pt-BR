@@ -2,7 +2,7 @@
 title: Página de checkout
 description: Visão geral da página de check-out no Adobe Commerce.
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
 source-wordcount: '130'
 ht-degree: 0%
@@ -19,7 +19,7 @@ A página de checkout é onde os clientes inserem as informações necessárias 
 
 Um exemplo de página de finalização:
 
-![Página de checkout](../assets/checkout-page.png)
+![Página de checkout](assets/checkout-page.png)
 
 Para obter mais informações sobre a página de check-out padrão do Adobe Commerce, consulte [página de checkout](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) tópico.
 

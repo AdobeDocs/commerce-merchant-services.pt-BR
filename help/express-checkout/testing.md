@@ -2,9 +2,9 @@
 title: Teste da [!DNL Express Checkout] para extensão do Adobe Commerce
 description: O teste e a validação garantem que a variável [!DNL Express Checkout] A extensão funciona conforme o esperado.
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: d8302d2d652b4e2380cc862183e58cbd2cca831b
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '478'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -25,7 +25,7 @@ Teste da [!DNL Express Checkout] em um ambiente de sandbox é uma etapa de valid
 
 ### Uso da conta sandbox
 
-Ao testar e validar sua sandbox, você deve usar um número de cartão de crédito falso e um [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} conta comercial no Bolt, para que você não esteja criando encargos reais para uma conta de cartão de crédito existente.
+Ao testar e validar sua sandbox, você deve usar um número de cartão de crédito falso e um [sandbox](https://merchant-sandbox.bolt.com/register){target=&quot;_blank&quot;} conta comercial no [!DNL Bolt], para que você não esteja criando encargos reais para uma conta de cartão de crédito existente.
 
 ## Testes na produção
 
@@ -48,7 +48,7 @@ Conclua um check-out bem-sucedido em sua loja seguindo estas etapas:
 
 1. Vá para a loja e coloque os itens desejados no carrinho.
 1. Prossiga para o check-out.
-1. Digite um endereço de email associado a uma Conta Bolt quando solicitado.
+1. Insira um endereço de email associado a um [!DNL Bolt] Conta quando solicitado.
 1. Insira a Senha única (OTP) enviada ao endereço de email da conta.
 1. Selecione o painel de ambiente:
 

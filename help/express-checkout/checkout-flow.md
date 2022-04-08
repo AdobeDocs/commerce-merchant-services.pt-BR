@@ -2,9 +2,9 @@
 title: Fluxo de finalização
 description: Visão geral da [!DNL Express Checkout] no Adobe Commerce.
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '602'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -22,11 +22,11 @@ Um sucesso [!DNL Express Checkout] O fluxo consiste nas seguintes etapas:
 1. Abra a loja e adicione itens ao carrinho.
 1. Prossiga para o check-out.
 
-![Check-out](../assets/proceed-checkout.png)
+![Check-out](assets/proceed-checkout.png)
 
-1. Quando solicitado, insira um endereço de email associado a uma conta Bolt.
-1. Insira o OTP (One-Time Password, Senha única) enviado para o endereço de email ou número de telefone dessa conta do Bolt.
-1. Depois de conectado com sua conta Bolt, os detalhes de check-out são automaticamente preenchidos:
+1. Quando solicitado, insira um endereço de email associado a um [!DNL Bolt] conta.
+1. Insira a Senha única (OTP) enviada para isso [!DNL Bolt] endereço de email ou número de telefone da conta.
+1. Depois de fazer logon com o [!DNL Bolt] Os detalhes de check-out são automaticamente preenchidos:
 
    - Informações sobre envio
    - Método de pagamento
@@ -43,20 +43,20 @@ O [!DNL Express Checkout] é compatível com as opções padrão adicionais de c
 
 O [!DNL Express Checkout] O permite vários casos de uso durante um fluxo de finalização:
 
-- Usuário convidado com uma conta Bolt registrada.
-- Usuário convidado com uma nova conta Bolt.
-- Um usuário existente do Adobe Commerce com/sem uma conta Bolt registrada.
+- Usuário convidado com um registro [!DNL Bolt] conta.
+- Usuário convidado com um novo [!DNL Bolt] conta.
+- Um usuário existente do Adobe Commerce com/sem um registro [!DNL Bolt] conta.
 
 ## Check-out do usuário convidado: Como funciona
 
-A experiência de check-out de convidado é diferente da experiência de logon. Quando um comprador insere um endereço de email no check-out, a variável [!DNL Express Checkout] O valida para localizar uma conta Bolt existente.
+A experiência de check-out de convidado é diferente da experiência de logon. Quando um comprador insere um endereço de email no check-out, a variável [!DNL Express Checkout] O valida para localizar um [!DNL Bolt] conta.
 
-### Conta Bolt registrada
+### Registrado [!DNL Bolt] account
 
-Se uma conta Bolt for encontrada, os compradores continuarão com suas [!DNL Express Checkout] experiência de finalização contínua:
+Se uma [!DNL Bolt] for encontrada, os compradores continuarão com suas [!DNL Express Checkout] experiência de finalização contínua:
 
-1. Insira a Senha única (OTP) enviada para o endereço de email ou celular dessa conta do Bolt, dependendo das preferências do usuário na conta Bolt.
-1. Depois de conectado com sua conta Bolt, ele preenche os detalhes de check-out automaticamente:
+1. Insira a Senha única (OTP) enviada para isso [!DNL Bolt] endereço de email da conta ou dispositivo móvel, dependendo das preferências do usuário no [!DNL Bolt] conta.
+1. Depois de fazer logon com o [!DNL Bolt] preenche os detalhes de check-out automaticamente:
 
    - Informações sobre envio
    - Método de pagamento
@@ -67,16 +67,16 @@ Se uma conta Bolt for encontrada, os compradores continuarão com suas [!DNL Exp
 >
 > O usuário convidado coloca o pedido e pode se registrar no Adobe Commerce.
 
-### Nova conta Bolt
+### Novo [!DNL Bolt] account
 
-Se nenhuma conta Bolt for encontrada, os compradores continuarão com o check-out padrão do Adobe Commerce e o comprador fornece todos os detalhes necessários para fazer o pedido:
+Se não [!DNL Bolt] for encontrada, os compradores continuarão com a verificação predefinida do Adobe Commerce e o comprador fornecerá todos os detalhes necessários para fazer o pedido:
 
 - Informações sobre remessa e faturamento
 - Método de remessa
 - Revisar método de pagamento
-- Uma caixa de seleção aparece para se registrar no Bolt para obter finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar sua conta Bolt.
+- Uma caixa de seleção aparece para se registrar no [!DNL Bolt] para finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar seus [!DNL Bolt] conta.
 
-   ![Lembrar de Bolt](../assets/checked-bolt.png)
+   ![Lembrar [!DNL Bolt]](assets/checked-bolt.png)
 
 - O usuário convidado coloca o pedido e pode se registrar no Adobe Commerce.
 
@@ -84,11 +84,11 @@ Se nenhuma conta Bolt for encontrada, os compradores continuarão com o check-ou
 
 Um usuário existente pode selecionar detalhes existentes quando o usuário colocar um pedido com a variável [!DNL Express Checkout] para obter uma experiência de finalização mais rápida.
 
-Quando um comprador insere um endereço de email no check-out, a variável [!DNL Express Checkout] O valida para localizar uma conta Bolt existente.
+Quando um comprador insere um endereço de email no check-out, a variável [!DNL Express Checkout] O valida para localizar um [!DNL Bolt] conta.
 
-### Conta Bolt registrada com um usuário do Adobe Commerce
+### Registrado [!DNL Bolt] conta com um usuário do Adobe Commerce
 
-Se uma conta Bolt for encontrada, os compradores continuarão com o check-out padrão do Adobe Commerce e o comprador fornece todos os detalhes necessários e, em seguida, coloca o pedido:
+Se uma [!DNL Bolt] for encontrada, os compradores continuarão com a verificação predefinida do Adobe Commerce e o comprador fornecerá todos os detalhes necessários e colocará o pedido:
 
 - Informações sobre remessa e faturamento
 - Método de remessa
@@ -98,19 +98,19 @@ Consulte a [solução de problemas](../express-checkout/troubleshooting.md) para
 
 >[!NOTE]
 >
-> Se o usuário tiver uma conta Bolt e o email não for exibido como registrado no Adobe Commerce, ele acionará o logon OTP (One-Time Password, Senha única). Consulte a [conta Bolt registrada](#registered-bolt-account) fluxo.
+> Se o usuário tiver uma [!DNL Bolt] A conta e o email não aparecem como registrados no Adobe Commerce, ele aciona o logon OTP (One-Time Password, Senha única). Consulte a [registrado [!DNL Bolt] account](#registered-bolt-account) fluxo.
 
-### Nova conta Bolt
+### Novo [!DNL Bolt] account
 
-Se nenhuma conta Bolt for encontrada, os compradores continuarão com o check-out padrão do Adobe Commerce e o comprador selecionará todos os detalhes necessários de suas informações salvas para colocar o pedido:
+Se não [!DNL Bolt] for encontrada, os compradores continuarão com o check-out padrão do Adobe Commerce e o comprador selecionará todos os detalhes necessários de suas informações salvas para colocar o pedido:
 
 - Informações sobre remessa e faturamento
 - Método de remessa
 - Revisar método de pagamento
-- Uma caixa de seleção aparece para se registrar no Bolt para obter finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar sua conta Bolt.
+- Uma caixa de seleção aparece para se registrar no [!DNL Bolt] para finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar seus [!DNL Bolt] conta.
 
-   ![Lembrar de Bolt](../assets/checked-bolt.png)
+   ![Lembrar [!DNL Bolt]](assets/checked-bolt.png)
 
 ## Obter ajuda
 
-Entre em contato com o Suporte da Adobe Commerce para obter assistência e perguntas.
+Entre em contato com o Suporte da Adobe Commerce para obter assistência.

@@ -1,10 +1,10 @@
 ---
 title: Solução de problemas para o [!DNL Express Checkout]
-description: Solucione erros, problemas conhecidos que você pode enfrentar ao usar o [!DNL Express Checkout] para extensão do Adobe Commerce.
+description: Troubleshoot errors, known issues you may experience while using the [!DNL Express Checkout] for Adobe Commerce extension.
 exl-id: a379ff81-360d-4cb9-a123-47e8cbc0cdbd
-source-git-commit: 163dd5260908b4ea3a8bfbcfdb834531d1603734
+source-git-commit: 1a7df2c5581ea6d590aa1a2f701b4428371d2299
 workflow-type: tm+mt
-source-wordcount: '472'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
-> Esse recurso destina-se somente aos usuários do EAP (Early Adobe Program) e ainda não está acessível para todos os clientes. Atualmente limitado a clientes dos EUA. Entre em contato com o Suporte da Adobe Commerce para obter assistência e perguntas.
+> This feature is for Early Adopter Program (EAP) users only and is not yet accessible for all customers. Currently limited to US customers. Contact Adobe Commerce Support for assistance and questions.
 
-Use os seguintes métodos de solução de problemas para resolver esses problemas específicos.
+Use the following troubleshooting methods to resolve these specific issues.
 
 ## Chaves do Composer Incorretas
 
@@ -43,9 +43,9 @@ Para ver quais chaves do Composer estão configuradas:
 
 1. Consulte [quais chaves estão associadas à sua ID de Magento](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html).
 
-## Estabilidade mínima na `composer.json` está definido como estável
+## Minimum stability in the `composer.json` is set to stable
 
-Caso veja o seguinte erro indicando que você tem as chaves do Composer incorretas:
+If you see the following error denoting you have the incorrect Composer keys:
 
 ```terminal
 Could not find a matching version of package magento/express-checkout. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
@@ -71,9 +71,9 @@ Por exemplo:
 php -d memory_limit=-1 vendor/bin/composer require magento/express-checkout
 ```
 
-## Endereço de entrega inválido
+## Invalid shipping address
 
-Há um problema conhecido para a variável [!DNL Express Checkout].
+There is a known issue for the [!DNL Express Checkout].
 
 Quando o endereço de envio padrão não é válido, o cliente é redirecionado para a etapa de endereço de envio. A vitrine mostra somente endereços de envio válidos.
 
@@ -85,7 +85,7 @@ Consulte a [detalhes de envio](../express-checkout/shipping-details.md) para obt
 
 ## Adicionar linhas de endereço de rua com um novo endereço de envio
 
-Há um problema conhecido para a variável [!DNL Express Checkout].
+There is a known issue for the [!DNL Express Checkout].
 
 Quando você [fazer logon com uma conta Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/) você pode adicionar um novo endereço de envio com uma limitação de 4 linhas por endereço de rua.
 
@@ -93,11 +93,11 @@ O Adobe Commerce geralmente pode ser configurado para suportar até 20 linhas de
 
 ## Caixa de seleção `enable terms and conditions` não exibindo corretamente
 
-Há um problema conhecido para a variável [!DNL Express Checkout].
+There is a known issue for the [!DNL Express Checkout].
 
-Ao ativar a variável `Enable terms and conditions` caixa de seleção e [fazer logon com uma conta Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/), a caixa de seleção não é exibida.
+Ao ativar a variável `Enable terms and conditions` na caixa de seleção em Admin e faça logon com uma [!DNL Bolt] , a `Enable terms and conditions` não é exibida durante o check-out. Consulte a [fazer logon](https://help.bolt.com/shoppers/account/login-dashboard/) [!DNL Bolt] para obter mais informações.
 
-Consulte [termos e condições](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) para obter mais informações.
+See [terms and conditions](https://docs.magento.com/user-guide/sales/terms-and-conditions.html) topic for more information on the Admin configuration.
 
 ## Comportamento inesperado ao `Display Billing Address On` está definida como `payment page`
 
@@ -105,18 +105,18 @@ Há um problema conhecido para a variável [!DNL Express Checkout].
 
 Se você definir a variável `Display Billing Address On` para `payment page` e [fazer logon com uma conta Bolt](https://help.bolt.com/shoppers/guides/checkout/log-in/) ao verificar o `My billing and shipping address are the same` caixa de seleção:
 
-![Mesmo endereço](../assets/checked-address.png)
+![Mesmo endereço](assets/checked-address.png)
 
 Botão de opção exibido `use existing card`.
 
-Consulte [Check-out](https://docs.magento.com/user-guide/configuration/sales/checkout.html) tópico para obter mais informações sobre `Display Billing Address On` parâmetro.
+See [Checkout](https://docs.magento.com/user-guide/configuration/sales/checkout.html) topic for more information on the `Display Billing Address On` parameter.
 
-## Tradução da variável [!DNL Express Checkout] extensão
+## Translating the [!DNL Express Checkout] extension
 
-O Adobe Commerce permite que você localize sua loja para várias regiões e mercados. Você pode até mesmo localizar mensagens de erro na visualização de Administração.
+Adobe Commerce enables you to localize your store for multiple regions and markets. Você pode até mesmo localizar mensagens de erro na visualização de Administração.
 
 Consulte a [tradução e localização](https://devdocs.magento.com/guides/v2.4/frontend-dev-guide/translations/xlate.html) para obter mais informações.
 
-## Obter ajuda
+## Get help
 
-Entre em contato com o Suporte da Adobe Commerce para obter mais assistência ou dúvidas.
+Contact Adobe Commerce Support for any assistance.
