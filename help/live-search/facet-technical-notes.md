@@ -2,9 +2,9 @@
 title: Notas técnicas de faceta
 description: Notas técnicas sobre o uso de facetas do Live Search.
 exl-id: 37982610-0ff7-48b7-b088-be7d2eff8a57
-source-git-commit: 7402e97f53b71e488d860215487f4809572b7e6f
+source-git-commit: e53fb13b98684757b8081b2e19dd33d925e8ce5d
 workflow-type: tm+mt
-source-wordcount: '158'
+source-wordcount: '114'
 ht-degree: 0%
 
 ---
@@ -22,13 +22,3 @@ A agregação de facetas é realizada da seguinte maneira se a loja tiver três 
 * `categories` agregação - Agregados `categories`, aplica-se `color` e `price` , mas não a variável `categories` filtro.
 * `color` agregação - Agregados `color`, aplica-se `price` e `categories` , mas não a variável `color` filtro.
 * `price` agregação - Agregados `price`, aplica-se `color` e `categories` , mas não a variável `price` filtro.
-
-## Valores de atributo padrão
-
-Os atributos de produto a seguir têm alguns [propriedades storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) que são ativadas por padrão.
-
-| Propriedade | Propriedade Storefront | Atributo |
-|---|---|---|
-| Classificável | Usado para Classificação na Lista de Produtos | `price` |
-| Pesquisável | Usar na pesquisa | `price` <br />`sku`<br />`name` |
-| FilterableInSearch | Usar na navegação em camadas - Filtrável (com resultados) | `price`<br />`visibility`<br />`category_name` |

@@ -2,9 +2,9 @@
 title: Instalar o Live Search
 description: Saiba como instalar, atualizar e desinstalar o Live Search do Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 27adb528c0c805478516dd9669237b971d0efc95
 workflow-type: tm+mt
-source-wordcount: '1211'
+source-wordcount: '1245'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,8 @@ Nesse cenário, as operações de vitrine são interrompidas enquanto o [!DNL Li
 1. Execute os seguintes comandos para desativar [!DNL Elasticsearch] e módulos relacionados e instalação [!DNL Live Search]:
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -139,7 +140,8 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente as solicitações 
    ```
 
    ```bash
-   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch
+   bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch6 Magento_Elasticsearch7 Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch 
+   Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
    ```bash
@@ -200,6 +202,18 @@ composer update magento/live-search --with-dependencies
 ```
 
 Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz do projeto [!DNL Composer] `.json` como segue:
+
+1. Se estiver instalado `magento/live-search` a versão é `1.3.1` ou inferior, e você está atualizando para a versão `2.0.0` ou superior, execute o seguinte comando antes da atualização:
+
+   ```bash
+   bin/magento module:enable Magento_AdvancedSearch
+   ```
+
+   Para obter informações sobre o `magento/live-search` , execute o seguinte comando:
+
+   ```bash
+   composer show magento/live-search
+   ```
 
 1. Abra a raiz `composer.json` arquivo e pesquisa por `magento/live-search`.
 

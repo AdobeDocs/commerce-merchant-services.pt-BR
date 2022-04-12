@@ -2,14 +2,14 @@
 title: Facting Workspace
 description: Saiba mais sobre a área de trabalho de lapidamento do Live Search.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
 
-# Espaço de trabalho Facting
+# Facting Workspace
 
 O [!DNL Live Search] A área de trabalho lista todas as facetas disponíveis no momento e fornece acesso às ferramentas necessárias para configurar e gerenciar aspectos. As facetas fixadas aparecem primeiro na lista de facetas existentes, seguidas de facetas dinâmicas. A lista pode ser filtrada para mostrar todas as facetas, ou apenas aquelas que são fixadas ou dinâmicas.
 

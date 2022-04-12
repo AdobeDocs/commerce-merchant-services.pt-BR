@@ -1,15 +1,15 @@
 ---
-title: Visão geral do guia
+title: Visão geral do Guia do Live Search
 description: A Live Search da Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva.
-source-git-commit: 69c2689c4d97169078c413e9055601893c5467a0
+exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
+source-git-commit: a8943e56cc074a96d3f9e1009b76fa589b76a8a4
 workflow-type: tm+mt
-source-wordcount: '220'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-
-# Visão geral do Live Search Guide
+# Visão geral do Guia do Live Search
 
 [!DNL Live Search] a Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva, e está disponível para a Adobe Commerce sem custo adicional. [!DNL Live Search] alimentado por [Adobe Sensei](https://www.adobe.com/sensei.html) O usa inteligência artificial e algoritmos de aprendizado automatizado para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados ao seu catálogo do Adobe Commerce, resultam em experiências de compras altamente envolventes, relevantes e personalizadas. Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um alterador de jogos para compradores e comerciantes.
 

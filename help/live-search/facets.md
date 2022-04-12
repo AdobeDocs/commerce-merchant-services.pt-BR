@@ -2,16 +2,16 @@
 title: Aspectos
 description: Os aspectos do Live Search usam várias dimensões de valores de atributos como critérios de pesquisa.
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 554b07c233da2af2ca2d9aacf56bdfe09dc67cd3
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
 
 # Aspectos
 
-Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributos como critérios de pesquisa. A pesquisa com facetas é semelhante, mas consideravelmente &quot;mais inteligente&quot; que o padrão [navegação em camadas](https://docs.magento.com/user-guide/catalog/navigation-layered.html). A lista de filtros disponíveis é determinada pela variável [atributos filtráveis](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) de produtos retornados nos resultados da pesquisa. É possível configurar até 100 facetas com [!DNL Live Search].
+Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributos como critérios de pesquisa. A pesquisa com facetas é semelhante, mas consideravelmente &quot;mais inteligente&quot; que o padrão [navegação em camadas](https://docs.magento.com/user-guide/catalog/navigation-layered.html). A lista de filtros disponíveis é determinada pela variável [atributos filtráveis](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) de produtos retornados nos resultados da pesquisa.
 
 ![Resultados da pesquisa filtrada](assets/storefront-search-results-run.png)
 
@@ -19,11 +19,24 @@ Faceting é um método de filtragem de alto desempenho que usa várias dimensõe
 
 Os requisitos de atributo de categoria e produto para lapidação são semelhantes aos atributos filtráveis usados para navegação em camadas. As propriedades de loja de cada atributo devem ser definidas como `filterable (with results)`.
 
+* É possível configurar até 100 atributos como facetas com [!DNL Live Search].
+* [!DNL Live Search] indexa até 300 atributos como filtráveis/pesquisáveis/classificáveis e visíveis na pesquisa.
+
 | Configuração | Descrição |
 |--- |--- |
 | [Configurações de exibição de categoria](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Âncora - `Yes` |
 | [Propriedades do atributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo de entrada do catálogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Propriedades da vitrine de atributos | Usar na navegação em camadas - `Filterable (with results)` |
+
+## Valores de atributo padrão
+
+Os atributos de produto a seguir têm [propriedades storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) que são usados por [!DNL Live Search] e ativadas por padrão.
+
+| Propriedade | Propriedade Storefront | Atributo |
+|---|---|---|
+| Classificável | Usado para Classificação na Lista de Produtos | `price` |
+| Pesquisável | Usar na pesquisa | `price` <br />`sku`<br />`name` |
+| FilterableInSearch | Usar na navegação em camadas - Filtrável (com resultados) | `price`<br />`visibility`<br />`category_name` |
 
 ## Propriedades de atributos não-sistema padrão
 

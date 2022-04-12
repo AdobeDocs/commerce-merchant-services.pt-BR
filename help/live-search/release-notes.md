@@ -2,9 +2,9 @@
 title: Notas de versão do Live Search
 description: As informações mais recentes da versão do Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: c70d08b90d7584559fd69cdeece0220015ae8523
+source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
 workflow-type: tm+mt
-source-wordcount: '648'
+source-wordcount: '684'
 ht-degree: 1%
 
 ---
@@ -23,12 +23,16 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search]
 * Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
 * Estabilidade: Estável
 
+Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL Live Search] 2.0.0 para aproveitar os novos recursos, correções e aprimoramentos a seguir:
+
+* ![Novo](../assets/new.svg) - [!DNL Live Search] O agora é compatível com o PHP 8.1 para instalações que executam o Adobe Commerce 2.4.4.
+* ![Novo](../assets/new.svg) - O `Magento_ElasticsearchCatalogPermissionsGraphQl` é adicionado à lista de módulos que são desativados durante a instalação.
 * ![Novo](../assets/new.svg) - O número de linhas disponíveis no [loja](quick-tour.md) pode ser configurado no *Administrador*.
-* ![Novo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidade para o Live Search.
-* ![Novo](../assets/new.svg) - O processo de instalação do Live Search é atualizado com alterações avançadas no processo.
+* ![Novo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidade para [!DNL Live Search].
+* ![Novo](../assets/new.svg) - O [!DNL Live Search] o processo de instalação é atualizado com alterações avançadas do processo.
 * ![Correção](../assets/fix.svg) - [Pesquisa avançada](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removido do rodapé da loja.
 * ![Bug](../assets/bug.svg) - Os seguintes atributos de produto não são compatíveis com [API Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql) quando utilizado em relação à versão beta do PWA: `description`, `name`, `short_description`
-* ![Bug](../assets/bug.svg) - A versão beta do PWA para Live Search não é compatível [tratamento de evento](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
+* ![Bug](../assets/bug.svg) - A versão beta do PWA para [!DNL Live Search] não suporta [tratamento de evento](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
 ## [!DNL Live Search] 1.3.1.
 

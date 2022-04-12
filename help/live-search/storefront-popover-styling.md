@@ -2,14 +2,14 @@
 title: Alterar estilo de elementos pop-up
 description: Notas técnicas sobre como personalizar a loja do Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
 workflow-type: tm+mt
 source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
-# Estilo de elementos de energia
+# Alterar estilo de elementos pop-up
 
 O [loja](storefront-popover.md) sempre exibe o produto `name` e `price`e a seleção de campos não é configurável. No entanto, os elementos avançados podem ser estilizados usando classes CSS. Por exemplo, as declarações a seguir alteram a cor de plano de fundo do contêiner e do rodapé da portadora.
 
