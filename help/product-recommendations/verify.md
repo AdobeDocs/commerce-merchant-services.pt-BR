@@ -1,9 +1,10 @@
 ---
 title: Verificar Coleção de Eventos
 description: Saiba como verificar se os dados comportamentais estão sendo enviados para o Adobe Commerce.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: c8c34db4-9d87-4012-b8f0-e9b1da214305
+source-git-commit: 7d9cef7a81196921b465ccf2dcd58d98b66d6598
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -22,6 +23,9 @@ Para garantir que o arquivo JS do coletor de eventos esteja sendo carregado em t
 1. Recarregue a página.
 1. Você deveria ver `ds.js` ou `ds.min.js` no **Nome** coluna.
 
+![JS do coletor de eventos](assets/filter-ds.png)
+_JS do Coletor de Eventos_
+
 Para garantir que os eventos sejam acionados em páginas do seu site (página inicial, produto, check-out e assim por diante):
 
 1. Desative bloqueadores de anúncios no navegador e aceite os cookies no site.
@@ -29,6 +33,9 @@ Para garantir que os eventos sejam acionados em páginas do seu site (página in
 1. Escolha a **Rede** e filtre por `tp2`.
 1. Recarregue a página.
 1. Você deve ver chamadas em `tp2` no **Nome** coluna.
+
+![Acionamento de eventos](assets/filter-tp2.png)
+_Verifique se os eventos estão sendo acionados_
 
 ## Verificar usando a extensão Snowplow do Chrome
 
@@ -46,7 +53,8 @@ Instale o [Extensão do Snowplow Analytics Debugger para Chrome](https://chrome.
 
 1. Verifique se a variável [ID do espaço de dados SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) está definida corretamente.
 
-Se tiver problemas para verificar se os eventos foram coletados e enviados para a Adobe Commerce, [entrar em contato com o suporte](https://support.magento.com/hc/en-us).
+![Filtro Snowplow](assets/snowplow-filter.png)
+_Filtro de apresentação de neve_
 
 >[!NOTE]
 >

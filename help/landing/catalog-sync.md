@@ -1,18 +1,19 @@
 ---
 title: Sincronização do catálogo
-description: '"Saiba como exportar dados de produtos do [!DNL Commerce] para [!DNL Commerce Services] de forma contínua para manter os serviços atualizados."'
-source-git-commit: 5910874fbd386456c50c4d87098f72fef908a7ae
+description: Saiba como exportar dados do produto do [!DNL Commerce] para [!DNL Commerce Services] de forma contínua, a fim de manter os serviços atualizados.
+exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
+source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '860'
 ht-degree: 0%
 
 ---
 
 # Sincronização do catálogo
 
-O Adobe Commerce e o Magento Open Source usam indexadores para compilar dados de catálogo em tabelas. The process is automatically triggered by [events](https://docs.magento.com/user-guide/system/index-management-events.html) such as a change to a product price or inventory level.
+O Adobe Commerce e o Magento Open Source usam indexadores para compilar dados de catálogo em tabelas. O processo é acionado automaticamente por [events](https://docs.magento.com/user-guide/system/index-management-events.html) como uma alteração no preço do produto ou no nível de inventário.
 
-O processo de sincronização de catálogo é executado por hora para permitir [!DNL Commerce Services] para usar dados de catálogo. Catalog sync exports product data from the [!DNL Commerce] server to [!DNL Commerce Services] on an ongoing basis to keep the services up to date. Por exemplo, [!DNL Product Recommendations] O precisa de informações atuais do catálogo para retornar com precisão as recomendações com nomes, preços e disponibilidade corretos. Você pode usar o _Sincronização do catálogo_ painel para observar e gerenciar o processo de sincronização ou o [interface de linha de comando](#resynccmdline) para acionar a sincronização do catálogo e reindexar os dados do produto para consumo ao [!DNL Commerce Services].
+O processo de sincronização de catálogo é executado por hora para permitir [!DNL Commerce] para usar dados de catálogo. A sincronização de catálogo exporta dados do produto do [!DNL Commerce] para [!DNL Commerce] serviços de forma contínua para manter os serviços atualizados. Por exemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) O precisa de informações atuais do catálogo para retornar com precisão as recomendações com nomes, preços e disponibilidade corretos. Você pode usar o _Sincronização do catálogo_ painel para observar e gerenciar o processo de sincronização ou o [interface de linha de comando](#resynccmdline) para acionar a sincronização do catálogo e reindexar os dados do produto para consumo ao [!DNL Commerce] serviços.
 
 >[!NOTE]
 >
@@ -72,7 +73,7 @@ O **Produtos de catálogo sincronizado** A tabela exibe as seguintes informaçõ
 | ID | Identificador exclusivo do produto |
 | Nome | Nome da loja do produto |
 | Tipo | Identifica o tipo de produto, como simples, configurável, baixável e assim por diante |
-| Last Exported | Data em que o produto foi exportado com êxito do catálogo |
+| Última exportação | Data em que o produto foi exportado com êxito do catálogo |
 | Última modificação | Data em que o produto foi modificado pela última vez no catálogo |
 | SKU | Exibe a unidade de manutenção de estoque do produto |
 | Preço | Preço do produto |
@@ -84,8 +85,8 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 
 ### Discrepância de dados
 
-1. Display the detailed view of the product in question in the search results.
-1. Copy the JSON output and verify that the content matches what you have in the [!DNL Commerce] catalog.
+1. Exiba a exibição detalhada do produto em questão nos resultados da pesquisa.
+1. Copie a saída JSON e verifique se o conteúdo corresponde ao que você tem no [!DNL Commerce] catálogo.
 1. Se o conteúdo não corresponder, faça uma pequena alteração no produto no catálogo, como adicionar um espaço ou um ponto.
 1. Aguarde uma ressincronização ou [acionar uma ressincronização manual](#resync).
 
@@ -93,13 +94,13 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 
 Se a sincronização não estiver sendo executada em um agendamento ou nada estiver sincronizado, consulte o [KnowledgeBase](https://support.magento.com/hc/en-us/articles/360042224851).
 
-### Sync failed
+### Falha na sincronização
 
 Se a sincronização de catálogo tiver um status de **Falha**, submete uma [tíquete de suporte](https://support.magento.com/hc/en-us/articles/360019088251).
 
 ## Interface de linha de comando {#resynccmdline}
 
-O `saas:resync` faz parte do comando `magento/saas-export` pacote. Você pode instalar este pacote usando um dos [!DNL Commerce Services] produtos, como [!DNL Product Recommendations] ou [!DNL Live Search].
+O `saas:resync` faz parte do comando `magento/saas-export` pacote. Você pode instalar este pacote usando um dos [!DNL Commerce Services] produtos, como [[!DNL Product Recommendations]](/help/product-recommendations/install-configure.md) ou [[!DNL Live Search]](/help/live-search/install.md).
 
 >[!NOTE]
 >
@@ -126,7 +127,7 @@ O nome do feed pode ser um dos seguintes:
 - `productattributes`— Atributos de produto como `activity`, `gender`, `tops`, `bottoms`e assim por diante
 - `productoverrides`— Regras específicas de preço e visibilidade de catálogo do cliente, como aquelas baseadas em permissões de categoria
 
-### Examples
+### Exemplos
 
 O exemplo a seguir reindexa os dados do produto da variável [!DNL Commerce] catálogo e ressincroniza aos serviços do Commerce:
 
