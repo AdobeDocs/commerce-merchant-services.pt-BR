@@ -2,9 +2,9 @@
 title: Adicionar aspectos
 description: Saiba como adicionar atributos de produto filtráveis como facetas do Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '652'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ A faceta é adicionada à parte inferior da *Aspectos dinâmicos* e a *Publicar 
    * Rótulo - ([Cabeça](facets-type.md) somente) Insira o rótulo da faceta que deseja usar.
    * Selecionar tipo - O *Selecionar tipo* usado para todos [!DNL Commerce] vitrines é `single select`. Para implementações sem periféricos, `multi-select` pode ser atribuído com um operador lógico (`or` ou `and`) para determinar o conjunto de produtos retornados.
    * Tipo de classificação - as Facetas são classificadas alfabeticamente para todas [!DNL Commerce] vitrines. Para implementações sem cabeçalho, as facetas podem ser classificadas alfabeticamente ou por contagem. Opções: Alfabético, Contagem (somente sem cabeçalho)
-   * Valor máx. - Insira o número máximo de valores de faceta exibidos na loja. Entradas válidas: 0 - 10
+   * Valor máx. - Insira o número máximo de valores de faceta exibidos na loja. Entradas válidas: 0 - 30; Padrão: 8
 
 1. Ao concluir, clique em **Salvar**.
 
@@ -70,7 +70,7 @@ Se a faceta não estiver disponível após duas horas, consulte [Verificar expor
 | Rótulo | ([Cabeça](facets-type.md) only) A variável [rótulo da faceta](facets-type.md) que é visível na loja pode ser editada para fins de consistência com sua marca. |
 | Selecionar tipo | Exibe a [método de seleção](facets-type.md) que está associada ao atributo do produto. Todas as facetas na [!DNL Commerce] vitrines são `Single select` somente. As implementações headless também suportam `Multi-select` com os operadores lógicos `OR` e `AND`. |
 | Tipo de classificação | O método usado para [sort](facets-type.md) aspectos. Todos [!DNL Commerce] as vitrines classificam somente alfabeticamente as facetas. As implementações headless também podem ser classificadas por `Count`. Opções:<br />Alfabético - Classifica facetas alfabeticamente.<br />Contagem - (Somente sem cabeçalho) Classifica aspectos com base no número de correspondências encontradas. |
-| Valor máx. | O número máximo de valores que podem ser exibidos na loja para cada faceta. As facetas que representam um intervalo de valores são distribuídas uniformemente. Padrão: 8 |
+| Valor máx. | O número máximo de valores que podem ser exibidos na loja para cada faceta. As facetas que representam um intervalo de valores são distribuídas uniformemente. Entradas válidas: 0 - 30; Padrão: 8 |
 
 ### Controles
 
