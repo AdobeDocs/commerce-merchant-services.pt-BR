@@ -2,9 +2,9 @@
 title: Visão geral da integração
 description: Fluxo de integração do Live Search, requisitos do sistema, limites e limitações
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f33f02fa15b6250970bda3302d3403b6fcec5786
+source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,7 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 
 ### Versão beta do PWA
 
+* A implementação beta PWA do Live Search atual requer mais tempo de processamento para retornar os resultados da pesquisa do que o Live Search com a vitrine nativa do Commerce.
 * A versão beta do PWA para [!DNL Live Search] não suporta [tratamento de evento](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 * Os atributos de produto a seguir não são suportados pelo GraphQL quando usados em relação à versão beta de [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
 
@@ -55,3 +56,5 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 * [Grupos de preços personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Várias localizações de inventário, conforme usado por [MCOM](https://docs.magento.com/user-guide/mcom.html) ou outras extensões OMS
 * [Recursos B2B integrados](https://business.adobe.com/products/magento/b2b-ecommerce.html)
+* Os preços do produto não incluem [imposto sobre o valor acrescentado](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
+* Os produtos indisponíveis são exibidos nos resultados da pesquisa, independentemente do [Opções de Estoque](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuração.

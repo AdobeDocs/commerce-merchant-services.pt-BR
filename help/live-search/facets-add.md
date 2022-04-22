@@ -2,9 +2,9 @@
 title: Adicionar aspectos
 description: Saiba como adicionar atributos de produto filtráveis como facetas do Live Search.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 966b15e6cb8c839c39575a3ad25a6b460201330b
+source-git-commit: f31c76404315a9fe142bf0c72ff9999c4a87365d
 workflow-type: tm+mt
-source-wordcount: '652'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -54,8 +54,8 @@ A faceta é adicionada à parte inferior da *Aspectos dinâmicos* e a *Publicar 
 
    ![Espaço de trabalho Facting](assets/facet-edit.png)
 
-1. Para fixar a faceta na parte superior do *Filtros* clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png).
-1. Para alterar a ordem da faceta fixa, clique no botão **Mover** (![Mover seletor](assets/btn-move.png) e arraste a linha para uma nova posição na *Aspectos fixados* seção.
+1. Para fixar a faceta na parte superior do *Filtros* clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png)).
+1. Para alterar a ordem da faceta fixa, clique no botão **Mover** (![Mover seletor](assets/btn-move.png)) e arraste a linha para uma nova posição na *Aspectos fixados* seção.
 
 ## Etapa 3: Publicar alterações
 
