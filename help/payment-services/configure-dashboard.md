@@ -3,9 +3,10 @@ title: Configurar no painel
 description: Após a instalação, você pode configurar [!DNL Payment Services] no painel.
 role: Admin, User
 level: Intermediate
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
+source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -97,4 +98,4 @@ Você também pode configurar o _[!UICONTROL Button style]_opções dos botões 
 1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
-Você pode configurar [!DNL PayPal Smart Buttons] no Admin ou no Painel. Consulte [Configuração [!DNL PayPal Smart Buttons style]](configure-admin.md#configure-paypal-smart-button-styling) para obter mais informações.
+Você pode configurar [!DNL PayPal Smart Buttons] no Admin ou no Painel. Consulte [Guia de estilo de botões do PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obter mais informações.
