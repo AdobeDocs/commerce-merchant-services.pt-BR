@@ -2,9 +2,9 @@
 title: Visão geral da integração
 description: Fluxo de integração do Live Search, requisitos do sistema, limites e limitações
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: f2934746c327528d5d52f2ae356afe303ff9b81b
+source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '343'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,11 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 * Indexa somente produtos do banco de dados do Adobe Commerce
 * Não indexa páginas CMS
 
-### Limites da consulta
+### Sinônimos
+
+* [!DNL Live Search] O pode gerenciar até 200 sinônimos por `Data Space ID`.
+
+### Query
 
 * [!DNL Live Search] não tem acesso à taxonomia completa da árvore de categorias, o que faz com que alguns cenários de pesquisa de navegação em camadas estejam além do seu alcance.
 * [!DNL Live Search] O usa um endpoint GraphQL exclusivo para consultas para oferecer suporte a recursos como lapidamento inteligente e pesquisa por tipo. Embora semelhantes ao [API Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), há algumas diferenças e alguns campos podem não ser totalmente compatíveis no momento.

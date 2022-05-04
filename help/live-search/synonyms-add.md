@@ -2,16 +2,16 @@
 title: Adicionar sinônimos
 description: Adicione sinônimos do Live Search para melhorar a resposta às solicitações de pesquisa.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: 61d50ec07e7c8ced1696f4169a90302cca4d4f96
+source-git-commit: 87e0500c623f9492d1722c21a2b47bf43d104829
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '395'
 ht-degree: 0%
 
 ---
 
 # Adicionar sinônimos
 
-Adicione sua própria lista de [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa e manter os clientes envolvidos.
+Aumente a participação do cliente adicionando sua própria lista com curadoria de sinônimos do Live Search. [!DNL Live Search] O pode gerenciar até 200 sinônimos por `Data Space ID`.
 
 ![[!DNL Live Search] sinônimos](assets/synonym-workspace.png)
 
