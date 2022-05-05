@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 015c5c8c-8184-45c1-932a-f4365ddf5a30
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 44e97a0299e980656aef557eb5c2bac9b6443452
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -51,6 +51,8 @@ Você pode ativar [!DNL Payment Services] para o seu site e ative o teste de san
 
 1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
 
+   Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
+
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
 ### Campos de cartão de crédito
@@ -63,6 +65,9 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), definir **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Para **[!UICONTROL Debug Mode]**, alterne o seletor para ativar o modo de depuração.
 1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+
+   Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
+
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
 ### Botões inteligentes PayPal
@@ -83,6 +88,9 @@ Você pode ativar as opções de pagamento dos botões inteligentes PayPal no pa
 1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button) (se desejar), alterne a opção **[!UICONTROL Display Pay Later message]** opção.
 1. Para ativar o modo de depuração, clique em **[!UICONTROL Debug Mode]**,
 1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+
+   Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
+
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
 ### Estilo do botão
@@ -96,6 +104,9 @@ Você também pode configurar o _[!UICONTROL Button style]_opções dos botões 
 1. Para ativar o seletor de altura do botão, clique em **[!UICONTROL Responsive button height]**.
 1. Para modificar o **[!UICONTROL Label]**, selecione a opção de rótulo desejada.
 1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+
+   Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
+
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
 Você pode configurar [!DNL PayPal Smart Buttons] no Admin ou no Painel. Consulte [Guia de estilo de botões do PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obter mais informações.
