@@ -4,16 +4,16 @@ description: Conecte sua instância com [!DNL Payment Services] concluindo algum
 role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
-source-git-commit: bfb2b6632fe494d6e392c214f5e3f5a11930c0b2
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
 
 # Integrado [!DNL Payment Services]
 
-Para começar a usar [!DNL Payment Services] para o Adobe Commerce e o Magento Open Source, você deve concluir algumas etapas de integração para conectar sua instância ao recurso de pagamentos.
+Para começar a usar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source], você deve concluir algumas etapas de integração para conectar sua instância ao recurso de pagamentos.
 
 ## Fluxo de integração
 
@@ -23,7 +23,7 @@ Este diagrama de fluxo de integração mostra o processo geral de integração [
 
 Após concluir a integração para sandbox ou pagamentos em tempo real, o relatório financeiro é acessível a partir de [!DNL Payment Services] em Admin.
 
-Se a sandbox e os pagamentos ao vivo estiverem integrados e ativados, você poderá alternar facilmente entre esses modos do [!DNL Payment Services] em casa.
+Se a sandbox e os pagamentos ao vivo estiverem integrados e ativados, você poderá alternar facilmente entre esses modos do [!DNL Payment Services] Casa.
 
 ## Pré-requisitos
 

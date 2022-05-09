@@ -4,22 +4,22 @@ description: Use o relatório de Pagamentos para obter total transparência sobr
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: aff1a43fedab473b84d02068a7d3fbd33b4fe093
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '869'
+source-wordcount: '857'
 ht-degree: 0%
 
 ---
 
 # Relatório de pagamentos
 
-[!DNL Payment Services] O para Adobe Commerce e Magento Open Source oferece relatórios abrangentes para que você possa obter uma visão clara dos pedidos e pagamentos da sua loja.
+[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa obter uma visão clara dos pedidos e pagamentos da sua loja.
 
 ![Exibição de relatórios financeiros](assets/reports-view.png)
 
 O relatório de Pagamentos mostra informações abrangentes sobre o pagamento imediatamente, permitindo que você tenha total transparência sobre a quantia de pagamento, o volume processado e o relatório detalhado sobre o nível da transação para reconciliação financeira.
 
-Você não precisa abrir vários painéis ou exibições para pedidos e pagamentos de referência cruzada ou reconciliar contas. [!DNL Payment Services] O para Adobe Commerce e Magento Open Source permite que você execute todas essas ações em um único local (relatório de Pagamentos), para que possa visualizar e gerenciar seus pagamentos com eficiência.
+Não é necessário abrir várias exibições para fazer referência cruzada a ordens e pagamentos ou reconciliar contas. [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O permite que você execute todas essas ações em um único local, relatório de Pagamentos, para que possa visualizar e gerenciar seus pagamentos com eficiência.
 
 Consulte IDs de transação e ordem de comércio vinculadas, valores de transação, método de pagamento por transação e muito mais, tudo dentro do relatório de Payouts no Administrador.
 
@@ -45,7 +45,7 @@ If _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as inf
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver lojas no modo Online, a seleção da fonte de dados assumirá como padrão [!UICONTROL Sandbox]_.
+* Se você não tiver lojas no modo Online, a seleção da fonte de dados assumirá como padrão _[!UICONTROL Sandbox]_.
 * Se você tiver lojas (uma ou várias) no modo Online, a seleção da fonte de dados assumirá como padrão _[!UICONTROL Live]_.
 * As exportações de relatório sempre seguem a seleção da fonte de dados.
 

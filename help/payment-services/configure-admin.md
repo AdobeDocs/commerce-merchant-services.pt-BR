@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: bae0eeac349fe3c266d868f8d94c5e033390a661
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '723'
+source-wordcount: '718'
 ht-degree: 0%
 
 ---
@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Você pode personalizar [!DNL Payment Services] de acordo com suas necessidades com opções de configuração úteis no Administrador.
 
-Ao configurar [!DNL Payment Services] para Adobe Commerce e Magento Open Source no Admin, essas configurações se aplicam somente ao ambiente definido no [!UICONTROL Method] campo de [!UICONTROL General Configuration]. Todas as alterações feitas nos campos de configuração são independentes de alternar a variável [!UICONTROL Method] seleção — se você alternar o método, suas seleções não serão redefinidas.
+Ao configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] no Administrador, essas configurações se aplicam somente ao ambiente definido na variável _[!UICONTROL Method]_campo de_[!UICONTROL General Configuration]_. Todas as alterações feitas nos campos de configuração são independentes de alternar a variável _[!UICONTROL Method]_seleção — se você alternar o método, suas seleções não serão redefinidas.
 
 Consulte a [[!UICONTROL General Configuration] seção](#general-configuration) para obter mais informações.
 
 ## Configuração geral
 
-Você pode ativar [!DNL Payment Services] para sua loja e ativar o teste de sandbox ou os pagamentos em tempo real na [!UICONTROL General Configuration] seção.
+Você pode ativar [!DNL Payment Services] para sua loja e ativar o teste de sandbox ou os pagamentos em tempo real na _[!UICONTROL General Configuration]_seção.
 
 1. No _Administrador_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
@@ -35,7 +35,7 @@ Você pode ativar [!DNL Payment Services] para sua loja e ativar o teste de sand
 
    >[!WARNING]
    >
-   >Seu [!UICONTROL Sandbox Merchant ID] e [!UICONTROL Production Merchant ID] são geradas automaticamente e estão presentes em seus respectivos campos quando você terminar de integrar a sandbox e/ou produção. Não remova ou altere essas IDs.
+   >Seu _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ são geradas automaticamente e estão presentes em seus respectivos campos quando você terminar de integrar a sandbox e/ou produção. Não remova ou altere essas IDs.
 
 1. Clique em **[!UICONTROL Save Config]** para salvar as alterações.
 

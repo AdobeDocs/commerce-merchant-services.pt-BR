@@ -4,26 +4,26 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: bcb817775fe9cd9ac7096931dd40d5ec0c4a5cfc
+source-git-commit: 9596815e31402f23b399b223f3221074331c1773
 workflow-type: tm+mt
-source-wordcount: '526'
+source-wordcount: '515'
 ht-degree: 0%
 
 ---
 
 # Configuração da linha de comando
 
-Depois de instalar [!DNL Payment Services], você pode configurá-lo facilmente a partir de [no Administrador](configure-admin.md) ou através da Interface de linha de comando (CLI).
+Depois de instalar [!DNL Payment Services], você pode configurá-lo facilmente a partir de [na casa](payments-home.md) ou através da Interface de linha de comando (CLI).
 
 ## Configurar exportação de dados
 
-[!DNL Payment Services] O combina dados de pedidos exportados do Magento Open Source e Adobe Commerce com dados de pagamento agregados de provedores de pagamento para criar relatórios úteis. O [!DNL Payment Services] A extensão usa indexadores para coletar com eficiência todos os dados necessários para os relatórios.
+[!DNL Payment Services] combina dados de pedido exportados de [!DNL Magento Open Source] e [!DNL Adobe Commerce] com dados de pagamento agregados dos prestadores de pagamentos para criar relatórios úteis. O [!DNL Payment Services] A extensão usa indexadores para coletar com eficiência todos os dados necessários para os relatórios.
 
 Para saber mais sobre os dados usados no [!DNL Payment Services] para relatórios, consulte [Relatório de status do pagamento da ordem](order-payment-status.md#data-used-in-the-report).
 
-### Configurar o cron no Magento Open Source
+### Configurar o cron em [!DNL Magento Open Source]
 
-Se quiser usar um `BY SCHEDULE` modo de índice no Magento Open Source, você deve configurar o cron. Consulte [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Se quiser usar um `BY SCHEDULE` modo de índice ativado [!DNL Magento Open Source], você deve configurar o cron. Consulte [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Definir indexadores
 
