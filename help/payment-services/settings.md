@@ -3,16 +3,17 @@ title: Configurações dos serviços de pagamento
 description: Após a instalação, você pode configurar [!DNL Payment Services] no Início.
 role: Admin, User
 level: Intermediate
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
+source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Configurar na exibição Início
+# Configurações
 
-Você pode personalizar [!DNL Payment Services] conforme suas necessidades com configurações úteis na exibição Início.
+Você pode personalizar [!DNL Payment Services] de acordo com suas necessidades com as configurações úteis na [!DNL Payment Services] Casa.
 
 Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Essas opções de configuração se aplicam somente ao ambiente definido na variável _[!UICONTROL Payment mode]_nas Configurações gerais.
 
@@ -22,25 +23,25 @@ Consulte a [[!UICONTROL General] seção configurações](#general-settings) par
 >
 > Para obter configurações de várias lojas ou legadas, consulte [Configurar no Administrador](configure-admin.md) tópico.
 
-## Configurar serviços de pagamento
+## Ativar serviços de pagamento
 
-Você pode ativar [!DNL Payment Services] para o seu site e ative o teste de sandbox ou os pagamentos em tempo real na [!UICONTROL General] seção de configurações.
+Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sandbox ou os pagamentos em tempo real, na [!UICONTROL General] seção.
 
 1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
    ![Exibição da página inicial](assets/payment-services-menu-small.png)
 
-1. Na exibição Início, clique em **[!UICONTROL Settings]**. Consulte [Início](payments-home.md) para obter mais informações.
+1. Clique em **[!UICONTROL Settings]**. Consulte [Introdução ao [!DNL Payment Services] Início](payments-home.md) para obter mais informações.
 
-   O _[!UICONTROL General]_inclui as opções de configuração usadas para definir [!DNL Payment Services] como método de pagamento.
+   O _[!UICONTROL General]_seção inclui configurações usadas para ativar [!DNL Payment Services] como método de pagamento.
 
-1. Para a opção de alternância na parte superior (**[!UICONTROL Enable Payment Services as payment method]**), defina-o como `Yes` para ativar [!DNL Payment Services] para o seu site.
+1. Para ativar [!DNL Payment Services] como método de pagamento para sua loja, alterne (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
 
-1. Para **Modo de pagamento**, defina-o como `Sandbox` se você ainda estiver testando [!DNL Payment Services] para sua loja ou `Production` se você estiver pronto para habilitar pagamentos em tempo real.
+1. Se você ainda estiver testando [!DNL Payment Services] para sua loja, defina **Modo de pagamento** para `Sandbox`. Se estiver pronto para ativar os pagamentos em tempo real, defina-o como `Production`.
 
    >[!WARNING]
    >
-   >Seu _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ são geradas automaticamente e estão presentes em seus respectivos campos quando você terminar de integrar a sandbox e/ou produção. Não remova ou altere essas IDs.
+   >Seu _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ são geradas automaticamente e estão presentes em seus respectivos campos quando você conclui a integração com a sandbox e/ou produção. Não remova ou altere essas IDs.
 
 1. Para alterar as configurações padrão das funções de pagamento e da tela de loja, defina as opções adicionais conforme necessário:
 
@@ -48,7 +49,7 @@ Você pode ativar [!DNL Payment Services] para o seu site e ative o teste de san
    - [Botões inteligentes PayPal](#paypal-smart-buttons)
    - [Estilo do botão](#button-style)
 
-1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
 
@@ -56,14 +57,14 @@ Você pode ativar [!DNL Payment Services] para o seu site e ative o teste de san
 
 ### Campos de cartão de crédito
 
-O _[!UICONTROL Credit Card Fields]_as opções de pagamento proporcionam um check-out simples e seguro para os métodos de pagamento com cartão de crédito ou cartão de débito.
+O _[!UICONTROL Credit Card Fields]_As configurações oferecem uma opção de check-out simples e segura para os métodos de pagamento com cartão de crédito ou cartão de débito.
 
 Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para obter mais informações.
 
-1. Para **[!UICONTROL Checkout title]**, insira o texto (se necessário) para alterar o nome do método de pagamento exibido durante o check-out.
-1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), definir **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
-1. Para **[!UICONTROL Debug Mode]**, alterne o seletor para ativar o modo de depuração.
-1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+1. Para alterar o nome do método de pagamento exibido durante o check-out, edite o valor no **[!UICONTROL Checkout title]** campo.
+1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
+1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
+1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
 
@@ -73,39 +74,44 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 
 O [!DNL PayPal Smart Buttons] as opções de pagamento oferecem um processo de check-out simples, rápido e seguro para o cliente. Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para obter mais informações.
 
-Você pode ativar as opções de pagamento dos botões inteligentes PayPal na Página inicial:
+Você pode ativar e configurar as opções de pagamento dos botões inteligentes PayPal:
 
 1. Para alterar o nome do método de pagamento, como mostrado durante o check-out, edite o valor no **[!UICONTROL Checkout Title]** campo.
-1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), definir **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
+1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Use os seletores de alternância para ativar ou desativar [!DNL PayPal smart button] recursos de exibição:
    - **[!UICONTROL Show buttons on product detail page]**
    - **[!UICONTROL Show buttons in mini cart preview]**
    - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL Show Venmo button]**.
-   - **[!UICONTROL PayPal Pay Later enabled]** para ativar a opção de mostrar botão durante o check-out.
+   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show Venmo button]**
 
-1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button) (se desejar), alterne a opção **[!UICONTROL Display Pay Later message]** opção.
-1. Para ativar o modo de depuração, clique em **[!UICONTROL Debug Mode]**,
-1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button), alterne a **[!UICONTROL Display Pay Later message]** opção.
+1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
+1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
 
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
-### Estilo do botão
+#### Estilo do botão
 
-Você também pode configurar o _[!UICONTROL Button style]_opções dos botões inteligentes PayPal na página inicial:
+Você também pode configurar o _[!UICONTROL Button style]_opções dos botões inteligentes PayPal:
 
 1. Para alterar o **[!UICONTROL Layout]**, selecione `Vertical` ou `Horizontal`.
-1. Para ativar o slogan em um layout horizontal, clique em **[!UICONTROL Show tagline]**.
+
+   >[!NOTE]
+   >
+   > Se o estilo do botão estiver configurado como `Horizontal` e a sua loja está configurada para mostrar vários botões inteligentes do PayPal, você só pode ver dois botões exibidos na página do produto, na página de checkout e no minicarrinho, e um botão exibido no carrinho.
+
+1. Para ativar o slogan em um layout horizontal, alterne a **[!UICONTROL Show tagline]** seletor.
 1. Para modificar o **[!UICONTROL Color]**, selecione a opção de cor desejada.
-1. Para alterar o **[!UICONTROL Shape]**, selecione `Pill` ou `Rect`.
-1. Para ativar o seletor de altura do botão, clique em **[!UICONTROL Responsive button height]**.
+1. Para modificar o **[!UICONTROL Shape]**, selecione `Pill` ou `Rect`.
+1. Para ativar o seletor de altura do botão, alterne a **[!UICONTROL Responsive button height]** seletor.
 1. Para modificar o **[!UICONTROL Label]**, selecione a opção de rótulo desejada.
-1. Para salvar as alterações, clique em **[!UICONTROL Save]** na parte superior direita da página.
+1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
 
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
-Você pode configurar [!DNL PayPal Smart Buttons] estilo em Administração ou Início. Consulte [Guia de estilo de botões do PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obter mais informações.
+Você pode configurar [!DNL PayPal Smart Buttons] no Admin ou [!DNL Payment Services Home]. Consulte [Guia de estilo de botões do PayPal](https://developer.paypal.com/docs/checkout/standard/customize/buttons-style-guide/) para obter mais informações.
