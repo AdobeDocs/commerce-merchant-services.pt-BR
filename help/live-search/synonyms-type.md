@@ -2,9 +2,9 @@
 title: Tipos de sinônimos
 description: Os sinônimos de uma e duas vias do Live Search expandem a definição de palavras-chave.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: c8fd75f68ed0def18f6f89adc777244057c5d79d
+source-git-commit: 7c3b7ff9e892521108dfec3f308db795e3ab42f9
 workflow-type: tm+mt
-source-wordcount: '402'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
@@ -34,6 +34,10 @@ Lembre-se das seguintes práticas recomendadas para aproveitar ao máximo os sin
 ### Mapeamento de palavra-chave
 
 Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://docs.magento.com/user-guide/catalog/search-results.html).
+
+### Usar palavras simples
+
+Se um termo de sinônimo contiver várias palavras, o espaço em branco entre as palavras fará com que sejam tratadas como sinônimos separados. Por exemplo, se você definir &quot;peça de tempo&quot; como sinônimo de &quot;relógio&quot;, as palavras &quot;hora&quot; e &quot;peça&quot; serão tratadas como sinônimos separados.
 
 ### Uso de singular e plural
 
