@@ -2,9 +2,9 @@
 title: Notas de versão do Live Search
 description: As informações mais recentes da versão do Live Search da Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: a3a52af6cd907b2b8734a5dd3ca7df71158db190
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '684'
+source-wordcount: '676'
 ht-degree: 1%
 
 ---
@@ -27,7 +27,7 @@ Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL L
 
 * ![Novo](../assets/new.svg) - [!DNL Live Search] O agora é compatível com o PHP 8.1 para instalações que executam o Adobe Commerce 2.4.4.
 * ![Novo](../assets/new.svg) - O `Magento_ElasticsearchCatalogPermissionsGraphQl` é adicionado à lista de módulos que são desativados durante a instalação.
-* ![Novo](../assets/new.svg) - O número de linhas disponíveis no [loja](quick-tour.md) pode ser configurado no *Administrador*.
+* ![Novo](../assets/new.svg) - O número de linhas disponíveis no [[!DNL storefront popover]](quick-tour.md) pode ser configurado no *Administrador*.
 * ![Novo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidade para [!DNL Live Search].
 * ![Novo](../assets/new.svg) - O [!DNL Live Search] o processo de instalação é atualizado com alterações avançadas do processo.
 * ![Correção](../assets/fix.svg) - [Pesquisa avançada](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removido do rodapé da loja.
@@ -42,7 +42,7 @@ Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL L
 
 * ![Correção](../assets/fix.svg) - [Atributo de preço personalizado](https://docs.magento.com/user-guide/stores/attributes-input-types.html) não retorna mais um erro quando configurado como um [faceta]({% link live-search/facets-add.md %}).
 * ![Correção](../assets/fix.svg) - Correção de um problema que causava um erro quando não havia [símbolo de moeda](https://docs.magento.com/user-guide/stores/currency-symbols.html) (`data-currency-symbol`) está disponível.
-* ![Correção](../assets/fix.svg) - [Potência de vitrine](storefront-popover.md) agora mostra o [Preço Especial](https://docs.magento.com/user-guide/catalog/product-price-special.html) (preço final mínimo), quando disponível.
+* ![Correção](../assets/fix.svg) - [[!DNL Storefront popover]](storefront-popover.md) agora mostra o [Preço Especial](https://docs.magento.com/user-guide/catalog/product-price-special.html) (preço final mínimo), quando disponível.
 
 ## [!DNL Live Search] 1.3.0
 
@@ -52,7 +52,7 @@ Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL L
 
 * ![Novo](../assets/new.svg) - [Desempenho](performance.md) o painel de relatórios fornece informações sobre os termos de pesquisa que os compradores usam.
 * ![Novo](../assets/new.svg) - [!DNL Live Search] [SDK de eventos de vitrine](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) O fornece acesso a uma camada de dados comum com serviços de publicação de eventos e assinatura, além de métricas.
-* ![Correção](../assets/fix.svg) - O [Popover de frente de loja](https://devdocs.magento.com/live-search/storefront-popover.html) tem um novo `active` classe para `.search-autocomplete` contêiner que controla a visibilidade.
+* ![Correção](../assets/fix.svg) - O [[!DNL Storefront Popover]](https://devdocs.magento.com/live-search/storefront-popover.html) tem um novo `active` classe para `.search-autocomplete` contêiner que controla a visibilidade.
 * ![Correção](../assets/fix.svg) - Na loja, a [Pesquisar termos](https://docs.magento.com/user-guide/marketing/search-terms-popular.html) link de rodapé removido e seu cache desativado para [!DNL Live Search] instalações.
 * ![Bug](../assets/bug.svg) - Patch for Search adapter trata de produtos duplicados.
 * ![Bug](../assets/bug.svg) - [!DNL Live Search] suporta [fonte única](https://docs.magento.com/user-guide/catalog/inventory-sources.html) locais de inventário (físicos) com vários (virtuais) [stocks](https://docs.magento.com/user-guide/catalog/inventory-stock.html). No momento, não há suporte para várias fontes de inventário.
@@ -63,7 +63,7 @@ Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL L
 * Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
 * Estabilidade: Estável
 
-* ![Novo](../assets/new.svg) - Loja [proveta](storefront-popover.md) O exibe os produtos sugeridos e imagens em miniatura dos principais resultados da pesquisa, enquanto os compradores digitam consultas na caixa Pesquisar.
+* ![Novo](../assets/new.svg) - [[!DNL Storefront popover]](storefront-popover.md) O exibe os produtos sugeridos e imagens em miniatura dos principais resultados da pesquisa, enquanto os compradores digitam consultas na caixa Pesquisar.
 * ![Novo](../assets/new.svg) - Comércio *Administrador* a sessão permanece aberta durante longos períodos de inatividade do teclado
 * ![Novo](../assets/new.svg) - [!DNL Live Search] é ativado automaticamente após a integração
 * ![Correção](../assets/fix.svg) - O tempo de indexação inicial é inferior a uma hora

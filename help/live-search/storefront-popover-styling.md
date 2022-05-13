@@ -2,16 +2,16 @@
 title: Alterar estilo de elementos pop-up
 description: Notas técnicas sobre como personalizar a loja do Live Search.
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 479bf3fba776f47942a0ac8419abbae5553339f0
+source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
 workflow-type: tm+mt
-source-wordcount: '222'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
 
-# Alterar estilo de elementos pop-up
+# Estilo [!DNL Popover] Elementos
 
-O [loja](storefront-popover.md) sempre exibe o produto `name` e `price`e a seleção de campos não é configurável. No entanto, os elementos avançados podem ser estilizados usando classes CSS. Por exemplo, as declarações a seguir alteram a cor de plano de fundo do contêiner e do rodapé da portadora.
+O [[!DNL storefront popover]](storefront-popover.md) sempre exibe o produto `name` e `price`e a seleção de campos não é configurável. No entanto, [!DNL popover] Os elementos podem ser estilizados usando classes CSS. Por exemplo, as declarações a seguir alteram a cor de fundo da variável [!DNL popover] contêiner e rodapé.
 
 ```css
 .livesearch.popover-container {
@@ -25,7 +25,7 @@ O [loja](storefront-popover.md) sempre exibe o produto `name` e `price`e a sele�
 
 ## Visibilidade do contêiner
 
-O componente principal do `.livesearch.popover-container` é `.search-autocomplete`.  O `.active` indica a visibilidade do contêiner. O `.active` A classe é adicionada condicionalmente quando o provedor está aberto.
+O componente principal do `.livesearch.popover-container` é `.search-autocomplete`.  O `.active` indica a visibilidade do contêiner. O `.active` é adicionada condicionalmente quando a [!DNL popover] está aberto.
 
 ```css
 .search-autocomplete.active   /* visible */
@@ -36,7 +36,7 @@ Para obter mais informações sobre elementos de loja de estilos, consulte [Folh
 
 ## Seletores de classes
 
-Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a sugestão e os elementos do produto no provedor.
+Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a sugestão e os elementos do produto na [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
@@ -52,7 +52,7 @@ Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a 
 
 `.livesearch.popover-container`
 
-![Contêiner Pop](assets/livesearch-popover-container.png)
+![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
 `.livesearch.view-all-footer`
 
@@ -85,7 +85,7 @@ Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a 
 
 ## Trabalhar com um tema modificado {#working-with-modified-theme}
 
-A loja pode ser usada com um [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) que herda os arquivos necessários de *Luma*. O `top.search` no `header-wrapper` do `Magento_Search` não deve ser modificado.
+O [!DNL storefront popover] pode ser usada com um [tema](https://devdocs.magento.com/guides/v2.3/frontend-dev-guide/themes/theme-overview.html) que herda os arquivos necessários de *Luma*. O `top.search` no `header-wrapper` do `Magento_Search` não deve ser modificado.
 
 ```html
 <referenceContainer name="header-wrapper">
@@ -97,9 +97,9 @@ A loja pode ser usada com um [tema](https://devdocs.magento.com/guides/v2.3/fron
 </referenceContainer>
 ```
 
-## Desabilitando a tampa
+## Desabilitação do [!DNL popover]
 
-Para desativar e restaurar o padrão [Pesquisa rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) , insira o seguinte comando:
+Para desativar o [!DNL popover] e restaurar o padrão [Pesquisa rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) , insira o seguinte comando:
 
 ```bash
 bin/magento module:disable Magento_LiveSearchStorefrontPopover
