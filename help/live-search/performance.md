@@ -1,10 +1,10 @@
 ---
-title: Desempenho
-description: O painel de Desempenho do Live Search fornece informações sobre os termos de pesquisa que os compradores usam.
+title: '"Desempenho"'
+description: '"O [!DNL Live Search] O painel de desempenho fornece informações sobre os termos de pesquisa que os compradores usam."'
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '463'
 ht-degree: 0%
 
 ---

@@ -1,27 +1,27 @@
 ---
-user-guide-title: Guia do Live Search
-user-guide-description: Este guia fornece instruções detalhadas para usar o Live Search da Adobe Commerce.
-breadcrumb-title: Guia do Live Search
-source-git-commit: 93f7157135ae3eb1adb880752585565b8bfd9fbb
+user-guide-title: '"[!DNL Live Search] Guia"'
+user-guide-description: '"Este guia fornece instruções detalhadas sobre como usar [!DNL Live Search] do Adobe Commerce."'
+breadcrumb-title: '"[!DNL Live Search] Guia"'
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '90'
+source-wordcount: '72'
 ht-degree: 2%
 
 ---
 
-# Live Search for Commerce {#live-search}
+# [!DNL Live Search] para comércio {#live-search}
 
 - [Visão geral do guia](guide-overview.md)
-- [Introdução ao Live Search](overview.md)
+- [Introdução ao [!DNL Live Search]](overview.md)
 - [Notas de versão](release-notes.md)
 - Live Search integrado {#onboard}
    - [Visão geral da integração](onboarding-overview.md)
-   - [Instalar o Live Search](install.md)
-- Loja do Live Search {#live-search-storefront}
+   - [Instalar [!DNL Live Search]](install.md)
+- [!DNL Live Search] Loja {#live-search-storefront}
    - [Tour rápido](quick-tour.md)
-   - [Popover de frente de loja](storefront-popover.md)
-   - [Alterar estilo de elementos pop-up](storefront-popover-styling.md)
-- Administrador do Live Search{#live-search-admin}
+   - [Loja [!DNL Popover]](storefront-popover.md)
+   - [Estilo [!DNL Popover] Elementos](storefront-popover-styling.md)
+- [!DNL Live Search] Administrador{#live-search-admin}
    - [Workspace](workspace.md)
    - [Desempenho](performance.md)
    - Aspectos {#facets}

@@ -1,10 +1,10 @@
 ---
-title: Alterar estilo de elementos pop-up
-description: Notas técnicas sobre como personalizar a loja do Live Search.
+title: '"Estilo [!DNL Popover] Elementos"'
+description: '"Notas técnicas sobre a personalização da variável [!DNL Live Search storefront popover]"'
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 65126f10574801f7ea8d0a863e9bb512dca13f39
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '205'
 ht-degree: 0%
 
 ---

@@ -1,10 +1,10 @@
 ---
-title: Visão geral da integração
-description: Fluxo de integração do Live Search, requisitos do sistema, limites e limitações
+title: '"Visão geral de integração"'
+description: '"[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"'
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 66ffbf2576615bb1f6015a13c65af86e8d7ea700
+source-git-commit: bffbede99865e9085f60392e474065a454446370
 workflow-type: tm+mt
-source-wordcount: '343'
+source-wordcount: '341'
 ht-degree: 0%
 
 ---
