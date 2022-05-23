@@ -4,9 +4,9 @@ description: Use o relatório de Pagamentos para obter total transparência sobr
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '947'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,16 @@ Na visualização Payouts , é possível personalizar o período para as transa�
 1. Clique no filtro Seletor de calendário de datas de transação .
 1. Escolha o intervalo de datas aplicável.
 1. Exiba os status de pagamento na grade para as datas especificadas.
+
+## Mostrar e ocultar colunas
+
+Por padrão, o relatório Saídas mostra a maioria das colunas de informações disponíveis. Entretanto, é possível personalizar quais colunas você vê em seu relatório.
+
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Payouts]**.
+1. Clique no botão _Configurações de coluna_ ícone (![ícone de configurações de coluna](assets/column-settings.png)).
+1. Para personalizar quais colunas você vê no relatório, marque ou desmarque as colunas na lista.
+
+   O relatório Saídas mostrará imediatamente quaisquer alterações feitas no menu Configurações de coluna . As preferências de coluna serão salvas e permanecerão em vigor se você sair da visualização do relatório.
 
 ## Baixar transações
 

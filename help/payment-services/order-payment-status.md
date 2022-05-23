@@ -4,9 +4,9 @@ description: Use o relatório Status do pagamento da Ordem para obter visibilida
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
 workflow-type: tm+mt
-source-wordcount: '1174'
+source-wordcount: '1268'
 ht-degree: 0%
 
 ---
@@ -93,11 +93,21 @@ Na exibição do relatório Status do pagamento da ordem, é possível personali
 1. Escolha o intervalo de datas aplicável.
 1. Exibir os status de pagamento da ordem para as datas especificadas na grade.
 
+## Mostrar e ocultar colunas
+
+O relatório Status do Pagamento da Ordem mostra todas as colunas disponíveis de informações por padrão. Entretanto, é possível personalizar quais colunas você vê em seu relatório.
+
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Clique no botão _Configurações de coluna_ ícone (![ícone de configurações de coluna](assets/column-settings.png)).
+1. Para personalizar quais colunas você vê no relatório, marque ou desmarque as colunas na lista.
+
+   O relatório Status do pagamento da ordem mostrará imediatamente as alterações feitas no menu Configurações de coluna . As preferências de coluna serão salvas e permanecerão em vigor se você sair da visualização do relatório.
+
 ## Exibir status
 
 Por padrão, 30 dias de status de pagamento de ordem são mostrados na grade.
 
-Role para a esquerda e para a direita para exibir [informações sobre o status do pagamento da ordem](#column-descriptions), incluindo data de pedido, data autorizada, faturada, enviada, status de pagamento e muito mais.
+Role para a esquerda e para a direita para exibir [informações sobre o status do pagamento da ordem](#column-descriptions), incluindo data do pedido, data autorizada, faturada, enviada, status de pagamento e muito mais.
 
 O número de linhas retornadas em uma pesquisa, ou mostradas nos status padrão de 30 dias de pagamento da ordem, são mostradas acima da grade de exibição Status do pagamento da ordem ao lado do filtro seletor de calendário Datas da ordem .
 
