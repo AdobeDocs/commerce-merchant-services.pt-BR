@@ -4,9 +4,9 @@ description: Use o relatório de Pagamentos para obter total transparência sobr
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: 4554ea65ded73e9552f307ff51e0e7eff64cd2e9
 workflow-type: tm+mt
-source-wordcount: '947'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,10 @@ ht-degree: 0%
 ![Exibição de relatórios financeiros](assets/reports-view.png)
 
 O relatório de Pagamentos mostra informações abrangentes sobre o pagamento imediatamente, permitindo que você tenha total transparência sobre a quantia de pagamento, o volume processado e o relatório detalhado sobre o nível da transação para reconciliação financeira.
+
+>[!NOTE]
+>
+>Os relatórios de pagamentos mostram apenas as ordens capturadas — a ação de pagamento está definida como [`Authorize and Capture`](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method))—ou [marcado como `Invoiced`](https://docs.magento.com/user-guide/sales/invoice-create.html).
 
 Não é necessário abrir várias exibições para fazer referência cruzada a ordens e pagamentos ou reconciliar contas. [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O permite que você execute todas essas ações em um único local, relatório de Pagamentos, para que possa visualizar e gerenciar seus pagamentos com eficiência.
 
@@ -106,7 +110,7 @@ Os relatórios de pagamento incluem as seguintes informações.
 | [!UICONTROL Provider] | Fornecedor de pagamento |
 | [!UICONTROL Provider trans] | ID da transação |
 | [!UICONTROL Trans date] | Data e hora em que a transação foi iniciada |
-| [!UICONTROL Type] | Tipo de transação—*[!UICONTROL PAYMENT]*, *[!UICONTROL AUTH]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Consulte [Tipos de transação](#transaction-types) para obter mais informações. |
+| [!UICONTROL Type] | Tipo de transação—*[!UICONTROL PAYMENT]*, *[!UICONTROL BONUS]*, *[!UICONTROL CHARGEBACK]*, *[!UICONTROL CORRECTION]*, *[!UICONTROL CURRENCY_CONVERSATION]*, *[!UICONTROL DEPOSIT]*, *[!UICONTROL DISBURSEMENT]*, *[!UICONTROL DISPUTE]*, *[!UICONTROL FEES]*, *[!UICONTROL HOLD]*, *[!UICONTROL HOLD_RELEASE]*, *[!UICONTROL INCENTIVES]*, *[!UICONTROL OTHERS]*, *[!UICONTROL RECOUP]*, *[!UICONTROL REFUND]*, *[!UICONTROL REVERSAL]*, *[!UICONTROL WITHDRAWAL]* <br> <br>Consulte [Tipos de transação](#transaction-types) para obter mais informações. |
 | [!UICONTROL Status] | Situação atual da operação—*[!UICONTROL SUCCESS]*, *[!UICONTROL DENIED]*, *[!UICONTROL PENDING]* |
 | [!UICONTROL Code] | Código de transação que indica Crédito (*CR*) ou Débito (*DR*) |
 | [!UICONTROL Reference ID] | ID da transação original à qual esse evento está relacionado |
