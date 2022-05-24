@@ -3,10 +3,10 @@ title: Integrado "[!DNL Store Fulfillment]"
 description: Conecte sua instância do Commerce à [!DNL Store Fulfillment Manager] concluindo algumas etapas de integração.
 role: User, Admin
 level: Intermediate
-source-git-commit: 24639b75d3c629856fbb8fc74e7eb072d4197815
+source-git-commit: f3148d575088fff3b4178f3c03e9d45ce461fbe2
 workflow-type: tm+mt
-source-wordcount: '599'
-ht-degree: 1%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +37,7 @@ Após concluir a integração, configure e gerencie a solução no Administrador
 
 ## Pré-requisitos
 
-* **Informações da conta comercial**-Download e instalação [!DNL Channel Manager] exige um [Conta comercial](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] ou [!DNL Magento Open Source] instância.
+* **Informações da conta comercial**-Instalação [!DNL Store Fulfillment by Walmart Technologies] exige um [Conta comercial](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] ou [!DNL Magento Open Source] instância.
 
 * Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter o seguinte acesso ao [!DNL Commerce] instância:
 
@@ -47,7 +47,7 @@ Após concluir a integração, configure e gerencie a solução no Administrador
 
       Consulte [Gerenciar o acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-* **Acesso ao arquivo de software Store Fulfillment by Walmart Technologies para instalar a solução Store Fulfillment em sua instância do Adobe Commerce**-Seu representante de conta do cliente pode fornecer acesso ao arquivo de instalação da extensão.
+* **Acesso ao Arquivo de software da Loja da Walmart Technologies (arquivo .zip) para instalar a solução Store Fulfillment em sua instância do Adobe Commerce**-Seu representante de conta do cliente pode fornecer acesso ao arquivo de instalação da extensão.
 
 * **Experiência usando o Composer e a[!DNL Commerce CLI]** -Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obter informações sobre o uso dessas ferramentas para instalar e gerenciar extensões no [!DNL Adobe Commerce] e [!DNL Magento Open Source] plataformas.
 
