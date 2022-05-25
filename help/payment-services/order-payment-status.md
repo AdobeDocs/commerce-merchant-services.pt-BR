@@ -4,9 +4,9 @@ description: Use o relatório Status do pagamento da Ordem para obter visibilida
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 4fc2b3bdf9f319337939905bca2b9525985702d4
+source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
 workflow-type: tm+mt
-source-wordcount: '1268'
+source-wordcount: '1359'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ O relatório Status do Pagamento da Ordem mostra todas as colunas disponíveis d
 
 Por padrão, 30 dias de status de pagamento de ordem são mostrados na grade.
 
-Role para a esquerda e para a direita para exibir [informações sobre o status do pagamento da ordem](#column-descriptions), incluindo data do pedido, data autorizada, faturada, enviada, status de pagamento e muito mais.
+Role para a esquerda e para a direita para exibir [informações sobre o status do pagamento da ordem](#column-descriptions), incluindo data de pedido, data autorizada, faturada, enviada, status de pagamento e muito mais.
 
 O número de linhas retornadas em uma pesquisa, ou mostradas nos status padrão de 30 dias de pagamento da ordem, são mostradas acima da grade de exibição Status do pagamento da ordem ao lado do filtro seletor de calendário Datas da ordem .
 
@@ -121,6 +121,18 @@ Você também pode forçar manualmente uma atualização dos dados do relatório
 1. Clique no botão _Atualizar_ ícone (![ícone atualizar](assets/refresh-button-med.png)).
 
    Os dados do relatório de status do pagamento da ordem são atualizados e um *[!UICONTROL Update complete]* é exibida e as informações mais recentes estão presentes na grade.
+
+## Visualizar litígios
+
+Você pode visualizar qualquer contestação nos pedidos da sua loja e navegar até o Centro de Resolução do PayPal para tomar medidas, a partir do relatório de status do Pagamento da Ordem.
+
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. Navegue até o **[!UICONTROL Disputes column]**.
+1. Veja quaisquer contestações para uma ordem específica e consulte [estatuto de litígio](#order-payment-status-information).
+1. Clique no link da ID de litígio (começando com _PP-D-_) para acessar o [Centro de Resolução PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Tomar as medidas adequadas para o litígio, se necessário.
+
+   Para classificar contestações de ordem por status, clique no cabeçalho da coluna Disputes .
 
 ## Baixar status de pagamento da ordem
 
@@ -171,7 +183,7 @@ Os relatórios de status do pagamento da ordem incluem as seguintes informaçõe
 | [!UICONTROL Refund Status] | Status de reembolso em um pedido (como informações de devoluções, RMAs e avisos de crédito)—   *[!UICONTROL Requires refund]*, *[!UICONTROL Refund requested]*, *[!UICONTROL Refunded]*, *[!UICONTROL Refund failed]* ou *[!UICONTROL Voided]* |
 | [!UICONTROL Refund Amount] | Total do montante reembolsado de um pedido |
 | [!UICONTROL Cur] | Tipo de moeda do valor reembolsado de uma ordem |
-| [!UICONTROL Dispute Status] | Estatuto de qualquer litígio relativo a uma injunção (informações sobre litígios e retornos de encargos) —*[!UICONTROL New]*, *[!UICONTROL Representment]*, *[!UICONTROL Accepted]*, *[!UICONTROL Pre-arbitration received]*, *[!UICONTROL Arbitration]* ou *[!UICONTROL Arbitration received]* |
+| [!UICONTROL Disputes] | Estatuto de qualquer litígio relativo a uma injunção (informações sobre litígios e retornos de encargos) —*[!UICONTROL Open]*, *[!UICONTROL Waiting for buyer response]*, *[!UICONTROL Waiting for seller response]*, *[!UICONTROL Under review]*, *[!UICONTROL Resolved]* ou *[!UICONTROL Other]* |
 | [!UICONTROL Payment Method] | Método de pagamento usado na transação Comércio de uma ordem |
 | [!UICONTROL Website] | Site do qual o pedido foi feito |
 | [!UICONTROL Store] | Armazenar a partir do qual o pedido foi feito |
