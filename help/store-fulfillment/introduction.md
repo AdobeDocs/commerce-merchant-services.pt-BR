@@ -4,9 +4,9 @@ description: '"Saiba como [!DNL Store Fulfillment for Adobe Commerce by Walmart 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '576'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ O Cumprimento da Loja também oferece um fluxo de trabalho completo de cumprimen
 
 ## Extensão de Arquivo de Cumprimento
 
-A extensão Cumprimento da loja integra-se ao Adobe Commerce para que você possa gerenciar a configuração das operações do Adobe Commerce e das interfaces do cliente do Administrador.
+Suporta e aprimora recursos nativos do Adobe Commerce
 
 * Suporta a maioria dos tipos de produtos simples, configuráveis, agrupados, agrupados e virtuais
 
@@ -39,11 +39,11 @@ A extensão Cumprimento da loja integra-se ao Adobe Commerce para que você poss
 
 * Integra-se aos sistemas de merchant de ponto de venda (POS), como ERP, OMS e WMS) para gerenciamento de inventário
 
-* Totalmente compatível com o tema Luma.
+* Totalmente compatível com o tema Luma
 
-* Fornece suporte GraphQL para vitrines sem periféricos e Venia.
+* Fornece suporte GraphQL para vitrines sem periféricos e Venia
 
-* Oferece suporte ao aplicativo Store Assist da Walmart Commerce Technology. Este aplicativo envia pedidos de retirada diretamente para o dispositivo portátil do funcionário na loja certa, para que os itens possam ser escolhidos e rápida e precisamente e entregues aos clientes quando chegarem para a retirada.
+* Oferece suporte ao aplicativo Store Assist da Walmart Commerce Technology. Este aplicativo envia pedidos de retirada diretamente para o dispositivo portátil do funcionário na loja certa, para que os itens possam ser escolhidos e escolhidos, preparados e entregues aos clientes de forma rápida e precisa no momento do seu check-in.
 
 ## Aplicativo de assistência de loja
 
@@ -61,7 +61,7 @@ O aplicativo de assistência à loja para dispositivos iOS e Android™ interage
 
 O Cumprimento da loja aprimora o Adobe Commerce, adicionando os seguintes recursos para fornecer experiências de compras aprimoradas e fluxos de trabalho de cumprimento simplificados:
 
-* **Seletor de local de armazenamento (SLS)**-Adiciona opções de retirada de loja, disponibilidade de inventário e seletores de loja às interfaces de produto, carrinho e check-out da Adobe Commerce.
+* **Seletor de local de armazenamento (SLS)**-Expõe a opção de retirada de loja, a disponibilidade do inventário e o seletor de loja nas páginas do produto e do carrinho, além do check-out nativo.
 
 * **Disponibilidade do inventário**-Adiciona opções adicionais de produto e configuração global ao Adobe Commerce Inventory management para oferecer suporte à alocação de inventário no nível da loja para impulsionar o cumprimento local em tempo hábil.
 
