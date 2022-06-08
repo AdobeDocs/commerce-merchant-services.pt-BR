@@ -2,9 +2,9 @@
 title: Habilitar [!DNL Payment Services] para produção
 description: Conclua o processo de integração habilitando [!DNL Payment Services] para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
 workflow-type: tm+mt
-source-wordcount: '685'
+source-wordcount: '709'
 ht-degree: 0%
 
 ---
@@ -64,7 +64,7 @@ Consulte [Configurar serviços de pagamento](settings.md) para obter mais inform
 
    >[!IMPORTANT]
    >
-   >Se você revogar o consentimento para [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para processar seus pagamentos (nas configurações da conta PayPal), os pedidos em sua loja não podem ser processados por [!DNL Payment Services].
+   >Se você revogar o consentimento para [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] para processar seus pagamentos (nas configurações da conta PayPal), os pedidos em sua loja não podem ser processados por [!DNL Payment Services]. Na Página inicial dos Serviços de Pagamento, é exibido um alerta sobre o consentimento revogado.
 
 ## Solicitar direitos de pagamento do Adobe
 
@@ -115,7 +115,7 @@ Consulte [Configurar no Administrador](configure-admin.md) para opções de conf
 
 >[!IMPORTANT]
 >
->Se você revogar o consentimento para [!DNL Payment Services] para processar seus pagamentos (nas configurações da conta PayPal), os pedidos em sua loja não podem ser processados por [!DNL Payment Services]. Se quiser reativar o processamento do pagamento, conclua a integração novamente.
+>Se você revogar o consentimento para [!DNL Payment Services] para processar seus pagamentos (nas configurações da conta PayPal), os pedidos em sua loja não podem ser processados por [!DNL Payment Services]. Se quiser reativar o processamento do pagamento, conclua a integração novamente. Na Página inicial dos Serviços de Pagamento, é exibido um alerta sobre o consentimento revogado.
 
 ## Teste na produção
 
