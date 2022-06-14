@@ -4,7 +4,7 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: b30c15ab808be4526424a4a3be19e3d0aedcc662
+source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -43,6 +43,7 @@ Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sa
    >
    >Seu _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ são geradas automaticamente e estão presentes em seus respectivos campos quando você conclui a integração com a sandbox e/ou produção. Não remova ou altere essas IDs.
 
+1. Selecione a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual você deseja ativar um método de pagamento.
 1. Para alterar as configurações padrão das funções de pagamento e da tela de loja, defina as opções adicionais conforme necessário:
 
    - [Campos de cartão de crédito](#credit-card-fields)
