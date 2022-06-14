@@ -1,13 +1,13 @@
 ---
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
-user-guide-description: Este guia fornece informações detalhadas sobre a instalação e configuração dos serviços de fornecimento de armazenamento para a Adobe Commerce ou a Magento Open Source store.
-breadcrumb-title: Guia de tecnologias Walmart para armazenamento de dados
+user-guide-description: Informações detalhadas sobre a instalação, configuração e uso do Cumprimento da loja para lojas Adobe Commerce
+breadcrumb-title: Armazenar o fornecimento para o Adobe Commerce
 index: false
 hidden: true
-source-git-commit: 26d0ddbcbe648b336d527788668caef1f8e688ed
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '63'
-ht-degree: 3%
+source-wordcount: '84'
+ht-degree: 2%
 
 ---
 
@@ -16,15 +16,27 @@ ht-degree: 3%
 
 - [Visão geral do guia](guide-overview.md)
 - [Introdução ao [!DNL Store Fulfillment]](introduction.md)
+- [Fluxo de trabalho do Store Assist](store-assist-modules.md)
+- [Requisitos](solution-requirements.md)
 - [Notas de versão](release-notes.md)
 - Cumprimento da loja integrada {#onboarding}
    - [Visão geral da integração](onboard.md)
-   - [Instalação](install.md)
-   - [Conexão e configuração do serviço](connect-set-up-service.md)
-   - [Teste e implantação](test-deploy.md)
-- Configuração de recurso {#configuration}
+   - [Instalar a extensão](install.md)
+   - [Atendimento da loja de conexões](connect-set-up-service.md)
+   - [Testar e implantar](test-and-deploy.md)
+- [Visão geral da configuração](service-config-settings-overview.md)
+- Configuração da loja {#store-configuration}
    - [Configuração geral](enable-general.md)
    - [Emails de vendas](sales-emails.md)
+   - [Fontes de loja de merchant](merchant-store-configuration.md)
    - [Gerenciamento de estoque de produtos](product-stock.md)
-   - [Armazenar fontes](store-sources.md)
+   - [Transferência de origem do Inventory management](inventory-stock-transfer.md)
+   - [Vários Sites/Escopo](multi-site-and-scope-config.md)
+- Configuração do sistema {#system-configuration}
    - [Processos em segundo plano](background-processes.md)
+   - [Localização e configuração de mapeamento da loja](store-location-map-provider-setup.md)
+   - [Configuração da experiência de check-in](check-in-experience-setup.md)
+   - [Configuração do usuário](user-setup.md)
+   - [Configuração do aplicativo](app-setup.md)
+
+

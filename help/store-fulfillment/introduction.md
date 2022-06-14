@@ -1,12 +1,12 @@
 ---
 title: '"Introdução ao [!DNL Store Fulfillment]"'
-description: '"Saiba como [!DNL Store Fulfillment for Adobe Commerce by Walmart Technologies] O suporta compra online, compra na loja (BOPIS) para clientes. Use o dispositivo móvel de assistência de loja para simplificar o atendimento e o processamento de pedidos de BOPIS para parceiros de loja e clientes do Commerce."'
+description: '"Saiba como [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] O suporta compra online, compra na loja (BOPIS) para clientes. Use o dispositivo móvel de assistência de loja para simplificar o atendimento e o processamento de pedidos de BOPIS para parceiros de loja e clientes do Commerce."'
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 33d8ed57f5a4b8419bd30375a1fb5bec6be37a5e
+source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
 workflow-type: tm+mt
-source-wordcount: '576'
+source-wordcount: '575'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 O fornecimento de serviços para Adobe Commerce pela Walmart Commerce Technologies é uma solução avançada de cumprimento de omnicanais que se integra ao seu [!DNL Commerce] armazenar para fornecer uma compra superior on-line, recuperar na loja (BOPIS) experiência do cliente.
 
-![Armazenar o atendimento pela configuração de administração das tecnologias Walmart](assets/store-fulfillment-admin-home.png)
+![Configuração do Adobe da solução de preenchimento da loja](assets/store-fulfillment-admin-home.png)
 
 O Cumprimento da Loja também oferece um fluxo de trabalho completo de cumprimento que ajuda os comerciantes a reduzir custos, além de aumentar as taxas de conversão, o valor médio do pedido e as taxas de satisfação do cliente. Este workflow fornece:
 
