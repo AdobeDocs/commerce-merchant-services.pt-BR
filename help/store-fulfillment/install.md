@@ -1,25 +1,26 @@
 ---
 title: Instalação
-description: Adicionar descrição
+description: '"Instale o [!DNL Store Fulfillment solution] para uma loja da Adobe Commerce usando o Composer para PHP."'
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '638'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
 
+
 # Instalação
 
-Conclua a instalação inicial do [!DNL Store Fulfillment] em um ambiente de não produção com o gerenciador de filas em execução e o armazenamento em cache configurado para permitir a manipulação de exceções. Seu ambiente deve incluir quaisquer outras ferramentas de desenvolvimento para garantir as práticas recomendadas para operar e manter sua instância do Adobe Commerce.
+Conclua a instalação inicial do [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] em um ambiente de não produção com o gerenciador de filas em execução e o armazenamento em cache configurado para permitir a manipulação de exceções. Certifique-se de que seu ambiente de desenvolvimento inclua ferramentas de desenvolvimento para garantir práticas recomendadas para operar e manter sua instância do Adobe Commerce.
 
 ## Pré-requisitos
 
 Revise o [requisitos](solution-requirements.md) para a solução Store Fulfillment e reúna as informações necessárias antes de instalar o [!DNL Store Fulfillment] para Adobe Commerce.
 
-Se você instalou uma versão de pré-lançamento ou beta da extensão Store Fulfillment for Adobe Commerce, remova-a antes de instalar a versão atual.
+Se tiver instalado uma versão de pré-lançamento ou beta da extensão Loja de fornecimento para Adobe Commerce, use o seguinte comando para removê-la antes de instalar a versão atual.
 
 ```terminal
 rm -rf composer.lock vendor/walmart &&
@@ -38,9 +39,9 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Experiência ao instalar extensões de terceiros no Adobe Commerce**-Para referência, consulte a documentação do Adobe Commerce.
 
-   - [Instalar uma extensão para uma instância do Adobe Commerce on cloud Infrastructure](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension)
+   - [Instalar uma extensão para uma instância do Adobe Commerce on cloud Infrastructure](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Instalar uma extensão para uma instância local do Adobe Commerce](https://devdocs.magento.com/extensions/install/)
+   - [Instalar uma extensão para uma instância local do Adobe Commerce](https://devdocs.magento.com/extensions/install/).
 
 ### Etapa 1: Baixe o pacote de extensão
 
@@ -79,7 +80,7 @@ Use o Composer para configurar o diretório de origem para a instalação e inst
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Adicione a extensão Store Fulfillment Services a `composer.json`
+1. Adicione a extensão Store Fulfillment Services a `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -128,7 +129,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 1. Faça logon no servidor.
 
-   Para instalações no Adobe Commerce na infraestrutura de nuvem, use SSH para fazer logon no ambiente remoto.
+   Para instalações no Adobe Commerce na infraestrutura de nuvem, [usar SSH para fazer logon no ambiente remoto](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Verifique se os módulos de Serviços de Atendimento da Loja estão ativados.
 
@@ -182,7 +183,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 ### Etapas adicionais
 
-Se necessário, use a [configuração:static-content: implantar](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy) comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
+Se necessário, use a `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -193,4 +194,3 @@ O `-f` é necessária se você estiver usando um tema em branco.
 >[!NOTE]
 >
 >Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) no Centro de ajuda da Adobe Commerce.
-

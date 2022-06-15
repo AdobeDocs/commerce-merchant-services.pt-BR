@@ -1,11 +1,11 @@
 ---
-title: Configuração do sistema de mapeamento e localização de armazenamento
-description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização da loja na interface do usuário da loja.
+title: Localização do armazenamento e configuração do sistema de mapeamento
+description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização da loja na interface do usuário da loja. As soluções de fornecimento de armazenamento exigem um provedor de distância para permitir a pesquisa em lojas de varejo e outros recursos de mapeamento e agendamento para o fluxo de trabalho de cumprimento completo.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '152'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,3 @@ Para configurar o provedor de distância:
    - Adicione seu **Chave da API do Google**.
 
    - Definir **[!UICONTROL Computation Mode]** para `Driving` e **[!UICONTROL Value]** para `Distance`
-

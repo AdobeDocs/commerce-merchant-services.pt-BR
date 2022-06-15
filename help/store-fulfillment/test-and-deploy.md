@@ -3,7 +3,7 @@ title: Testar e implantar o fornecimento da loja
 description: Testar plano para verificar a funcionalidade de fornecimento de armazenamento. Os testes abrangem a API de Sincronização de inventário, o fluxo de trabalho de preenchimento completo para pedidos cancelados, o gerenciamento de usuários do aplicativo Store Fulfillment e a experiência de Check-in do cliente.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
@@ -55,9 +55,6 @@ Este plano de ensaio de amostra abrange as seguintes áreas funcionais:
 | Adobe Commerce Frontend | Tipos de produto | Cliente, Administrador |
 | Check-out de fronteira</br>Formulário de check-in | Experiência de Check-in | Cliente, Administrador |
 | Aplicativo de assistência de loja | Pedido</br>Selecionar</br>Fase</br>e Handoff | Store Associate |
-
-
-
 
 ### Sincronização da API de inventário
 
@@ -639,8 +636,6 @@ Esta seção do plano de teste cobre cenários para workflows de ordem de teste,
 </tbody>
 </table>
 
-
-
 ## Implantar
 
 Após verificar que a solução foi configurada e testada de acordo com suas especificações, você estará pronto para implantar do armazenamento temporário à produção.
@@ -650,7 +645,6 @@ A implantação e o teste variam dependendo da infraestrutura e das capacidades.
 >[!TIP]
 >
 >Para obter diretrizes de implantação, listas de verificação e práticas recomendadas do Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Implantar a loja](https://devdocs.magento.com/cloud/live/stage-prod-live.html) na documentação do desenvolvedor do Adobe Commerce.
-
 
 
 

@@ -1,17 +1,17 @@
 ---
-title: Requisitos de serviço
-description: '"Requisitos de provisionamento e integração [!DNL Store Fulfillment Manager] service"'
+title: Requisitos de cumprimento da loja
+description: '"Requisitos de provisionamento e integração [!DNL Store Fulfillment solution]."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '232'
+source-wordcount: '231'
 ht-degree: 3%
 
 ---
 
 
-# Requisitos para o cumprimento da loja na Adobe Commerce
+# Armazenar requisitos de conformidade para o Adobe Commerce
 
 Você deve atender aos seguintes requisitos técnicos e comerciais para instalar e habilitar a solução Store Fulfillment para Adobe Commerce.
 
@@ -40,9 +40,9 @@ Para saber mais sobre os requisitos, consulte a Adobe Commerce [Requisitos do si
 
 Sua empresa deve atender aos seguintes critérios mínimos para implementar a solução de fornecimento de armazenamento.
 
-* Somente para empresas com base nos EUA
+* Somente empresas com base nos EUA
 
-* Varejistas B2C, fabricantes de CPG que vendem D2C ou distribuidores que vendem D2C ou a pequenas empresas
+* Retalhistas B2C, fabricantes de CPG que vendem D2C ou distribuidores que vendem D2C ou a pequenas empresas
 
 * Pelo menos um armazém físico
 

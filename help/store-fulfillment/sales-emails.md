@@ -1,15 +1,16 @@
 ---
 title: Emails de vendas
-description: Defina as configurações para os modelos de email transacional para se comunicar com clientes e armazenar administradores durante o processo de pedido e cumprimento.
+description: Configure os modelos de email transacional para comunicação com clientes e administradores de armazenamento durante o processo de atendimento dos pedidos de retirada da loja.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '1216'
 ht-degree: 0%
 
 ---
+
 
 # Emails de vendas
 

@@ -1,9 +1,9 @@
 ---
 title: Visão geral de integração para serviços de fornecimento de loja
-description: '"[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"'
+description: '"[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
 source-wordcount: '363'
 ht-degree: 0%
@@ -26,9 +26,6 @@ Introdução a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
    |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
    | ![[!DNL Store Assist App Getting Started] exibir em dispositivo móvel](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] em dispositivo móvel](assets/store-assist-orders-small.png) |
 
-
-
-
 ## Etapas de provisionamento
 
 - **Inscreva-se para[!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies]**-Preencha o formulário de inscrição em [business.adobe.com](https://business.adobe.com/resources/store-fulfillment.html)ou entre em contato com seu Gerente de conta da Adobe Commerce para obter assistência.
@@ -47,12 +44,11 @@ Introdução a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Configure a extensão de armazenamento de dados do administrador do Adobe Commerce](service-config-settings-overview.md).
 
-1. [Conecte o [!DNL Store Fulfillment] usando as credenciais de Arquivo de Cumprimento fornecidas a você.](connect-set-up-service.md)
+1. [Conecte o [!DNL Store Fulfillment] usando as credenciais de Arquivo de Cumprimento fornecidas a você](connect-set-up-service.md).
 
-1. [Criar usuários e funções para o aplicativo de assistência da loja](user-setup.md)
+1. [Criar usuários e funções para o aplicativo de assistência da loja](user-setup.md).
 
-1. [Baixar o [!DNL Store Assist] aplicativo para o dispositivo desejado. O aplicativo está disponível na App Store (iOS) e na Play Store (Android)](app-setup.md)
+1. [Baixar o [!DNL Store Assist] aplicativo para o dispositivo desejado. O aplicativo está disponível na App Store (iOS) e na Play Store (Android)](app-setup.md).
 
 Após ter instalado, configurado, concluído a integração e ter acesso ao [!DNL Store Assist] app, você pode [comece a criar pedidos e a testar](test-and-deploy.md).
-
 

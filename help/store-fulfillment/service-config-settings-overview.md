@@ -1,14 +1,15 @@
 ---
 title: Visão geral da configuração para o cumprimento da loja
-description: Saiba mais sobre as categorias de configurações de Administração disponíveis para a solução de disponibilização de loja e como elas são configuradas.
+description: Saiba mais sobre os tipos de configurações de Administração disponíveis para personalizar os recursos de cumprimento estendido fornecidos pela solução de fornecimento de armazenamento e link para instruções de conclusão da configuração.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '375'
+source-wordcount: '386'
 ht-degree: 0%
 
 ---
+
 
 # Visão geral da configuração para o cumprimento da loja
 
@@ -26,10 +27,9 @@ No Administrador do Adobe Commerce, as configurações dos Serviços de fornecim
 | [Configuração de Vários Sites/Escopo](multi-site-and-scope-config.md) | Configure estoques e métodos de entrega para vários sites/escopos de loja. | Não |
 | [Configuração do Sistema de Processos em Segundo Plano](background-processes.md) | Configure os agendamentos para processos em segundo plano usados na sincronização de dados com os serviços de cumprimento. | Não |
 | [Configuração de localização e mapeamento da loja](store-location-map-provider-setup.md) | Configure a capacidade de usar um provedor de distância para procurar lojas de varejo e exibir essas informações no mapa do SLS | Sim |
-| [Configuração da experiência de check-in](store-location-map-provider-setup.md) | Configure a cor do carro e as opções de fabricação do carro que estarão disponíveis durante o processo de check-in | Sim |
+| [Configuração da experiência de check-in](check-in-experience-setup.md) | Configure a cor do carro e as opções de fabricação do carro que estarão disponíveis durante o processo de check-in | Sim |
 | [Configuração do usuário](user-setup.md) | Gerencie contas de usuário, funções e permissões para os associados da loja que usam o aplicativo Store Assist. escopos. | Sim |
 | [Configuração do aplicativo](app-setup.md) | Revise as configurações disponíveis para o aplicativo de assistência da loja necessário para concluir o processo de integração. Essas configurações não podem ser configuradas no Administrador do Adobe Commerce. | Sim |
-
 
 ## Usar a referência de configuração
 

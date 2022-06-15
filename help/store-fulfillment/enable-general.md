@@ -1,14 +1,15 @@
 ---
 title: Configuração geral
-description: Defina as configurações gerais para ativar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para permitir a integração entre o Adobe Commerce e os serviços de fornecimento de armazenamento.
+description: '"Configure as definições gerais para ativar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para permitir a integração entre o Adobe Commerce e os serviços de fornecimento de armazenamento."'
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '2409'
+source-wordcount: '2413'
 ht-degree: 0%
 
 ---
+
 
 # Configuração geral
 
@@ -18,27 +19,23 @@ A integração deve ser conectada ao serviço de Atendimento da loja. Além diss
 
 A configuração geral para [!DNL Store Fulfillment] O inclui as seguintes configurações:
 
-- [Habilitar a extensão](#enable-the-extension)
+- [Ativar a solução](#enable-the-store-fulfillment-solution)
 - [Gerenciar credenciais da conta para se conectar aos serviços de fornecimento de armazenamento](#account-credentials)
 - [Configurar o registro](#configure-logging)
-- [Definir opções para gerenciar operações de [sincronização de pedidos]](#order-synchronization)
+- [Definir opções para gerenciar operações de sincronização de ordem e erro](#order-synchronization)
 - [Ativar as opções de entrega do Cumprimento da Loja](#enable-store-fullment-shipping-options)
 - [Definir configurações de segurança e autenticação para o aplicativo de fornecimento de loja](#store-fulfillment-app)
 - [Definir a disponibilidade do método de entrega e a configuração das mensagens](#in-store-delivery-methods)
 
-
-## Habilitar a extensão
+## Ativar a solução de preenchimento da loja
 
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Ative ou desative a solução. Quando habilitado, configure e use os recursos de Entrega da loja e estabeleça a conexão entre a loja da Adobe Commerce e os serviços de Entrega da loja. Quando desativado, todos os recursos de Entrega de loja são desativados e não há comunicação entre o Adobe Commerce e os serviços de Entrega de loja. As informações do pedido não podem ser processadas ou recebidas. | Global | Sim |
 
-
 Para concluir essa configuração, consulte **Armazena → Configuração → Serviços → Armazenar o Cumprimento por Tecnologias Walmart Commerce**.
 
 ## Adicionar credenciais de conta
-
-
 
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |----------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -92,7 +89,6 @@ Configure as opções de envio da Loja de Atendimento que determinam a disponibi
 
 ### Entregar para Armazenamento
 
-
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |---------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enable Ship To Store]** | A configuração de entrega para loja aproveita seus recursos existentes de entrega para loja. Se você usar o Inventory management, ou se puder aceitar e atender pedidos em locais do comerciante sem inventário por meio de transferências de inventário de armazenamento para armazenamento, defina essa opção como `Yes`.</br></br>Se não for possível oferecer suporte à opção de entrega para loja ou se não quiser oferecê-la, defina como `No`. Quando desativado, os itens no catálogo com inventário zero de uma loja de merchant ou os itens que estão abaixo dessa localização [!DNL Out of Stock Threshold], não são oferecidas com opções de retirada na loja.</br></br>Esta é uma configuração global que pode ser ajustada por localização do comerciante. | Global | Não |
@@ -117,7 +113,6 @@ Defina as configurações para a conta de usuário e a segurança de senha do ap
 | **[!UICONTROL Lockout Time (minutes)]** | Número de minutos para bloquear uma conta após uma falha de logon. | Global | Não |
 | **[!UICONTROL Force Password Change]** | Determina se é necessária uma alteração da senha do usuário.</br></br>`Yes`: Exigir que o usuário altere sua senha após a configuração da conta.</br>`No`: Recomenda que o usuário altere a senha após a configuração da conta. | Global | Não |
 | **Duração da senha** | O número de dias em que uma senha permanece válida antes de uma alteração de senha necessária. Deixe em branco para desativar essa opção. | Global | Não |
-
 
 ### Autenticação de dois fatores
 
@@ -150,7 +145,6 @@ In-store pickup, says its global setting, but scope is Website.  How do you conf
 | **Ativar a retirada do lado do cursor** | Ative ou desative a opção de coleta de lado da borda durante o processo de finalização para clientes que escolhem a retirada da loja.</br></br>Essa configuração global se aplica a todos os locais da loja de varejo. Quando ativado, você pode desativá-lo seletivamente no local da loja de varejo. | Site | Não |
 
 Para obter detalhes sobre como personalizar os métodos de entrega em locais selecionados da loja de varejo, consulte **Configuração da loja de varejo**.
-
 
 #### Configuração do Título do Método de Entrega
 
@@ -262,8 +256,3 @@ Para obter detalhes sobre como personalizar os métodos de entrega em locais sel
 <td>Não</td>
 </tr>
 </tbody></table>
-
-
-
-
-

@@ -1,12 +1,12 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Visão geral do guia"'
-description: Informações abrangentes sobre [!DNL Store Fulfillment] para administradores do Adobe Commerce, incluindo instalação e integração
+title: '''[!DNL Store Fulfillment] Visão geral do guia"'
+description: '"Informações abrangentes sobre [!DNL Store Fulfillment] para administradores do Adobe Commerce, incluindo instalação e integração."'
 seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '200'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Este guia não aborda os principais recursos do Adobe Commerce.
 
 | Guia | Descrição |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Guia do usuário do Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentação com foco em merchant para ambos os Adobe Commerce |
+| [Guia do usuário do Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentação com foco em merchant para Adobe Commerce |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentação focada no desenvolvedor usada para criar e personalizar o Adobe Commerce |
 
 ## Suporte

@@ -3,9 +3,9 @@ title: Conecte a solução de preenchimento da loja
 description: Estabeleça as conexões entre o Adobe Commerce e a solução de fornecimento de armazenamento, criando e autorizando uma integração do Adobe Commerce e adicionando as credenciais da conta de fornecimento de armazenamento à configuração do serviço Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '373'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Para integrar o Adobe Commerce aos serviços de Entrega da loja, crie uma integr
 
 Após preencher o formulário de entrada, uma conta de Atendimento da loja Walmart é criada para você. Você receberá as seguintes credenciais quando estiverem disponíveis:
 
-- [!DNL Merchant I]D
+- [!DNL Merchant ID]
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]

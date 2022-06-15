@@ -1,14 +1,15 @@
 ---
 title: Configuração do usuário
-description: 'Configure fontes aprimoradas do Inventory management como lojas de merchant. '
+description: 'Configure fontes aprimoradas do Inventory management como lojas de merchant para oferecer suporte à solução de fornecimento de loja para Adobe Commerce. '
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
 workflow-type: tm+mt
-source-wordcount: '383'
+source-wordcount: '392'
 ht-degree: 0%
 
 ---
+
 
 # Configuração do usuário
 
@@ -42,7 +43,6 @@ Configurar funções de usuário de **[!UICONTROL System > Store Fulfillment App
 
 Gerencie perfis de usuário do aplicativo de assistência da loja nas configurações do Sistema de administração:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
-
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL is Active]** | Ative ou desative o usuário. | Global | Sim |
@@ -54,8 +54,3 @@ Gerencie perfis de usuário do aplicativo de assistência da loja nas configura�
 | **Localidade da interface** | Se a loja tiver vários idiomas, defina a Localidade da interface para o idioma a ser usado na interface do Administrador. | Global | Não |
 | **Ativo de** | Para definir uma data inicial, selecione o ícone de calendário. | Global | Não |
 | **Ativo para** | Defina a Data de expiração selecionando o ícone do calendário. Definir uma data de expiração é útil para configurar atribuições temporárias de usuário ou função. Após a data de expiração, o status da conta de usuário é alterado para `Inactive`, mas a conta ainda pode ser atualizada, se necessário. | Global | Não |
-
-
-
-
-
