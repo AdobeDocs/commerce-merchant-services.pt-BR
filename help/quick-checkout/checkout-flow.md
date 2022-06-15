@@ -2,9 +2,9 @@
 title: '"Fluxo de check-out"'
 description: '"Visão geral da [!DNL Quick Checkout] no Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -90,7 +90,7 @@ Se uma [!DNL Bolt] for encontrada, os compradores continuarão com a verificaç�
 - Método de remessa
 - Revisar método de pagamento
 
-Consulte a [solução de problemas](../quick-checkout/troubleshooting.md) para obter mais informações se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce.
+Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://support.magento.com/hc/en-us/articles/6909450342541) artigo na Central de ajuda do Adobe Commerce.
 
 >[!NOTE]
 >
