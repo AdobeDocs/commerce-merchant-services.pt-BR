@@ -4,9 +4,9 @@ description: '"Saiba como [!DNL Store Fulfillment for Adobe Commerce by Walmart 
 role: User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
 workflow-type: tm+mt
-source-wordcount: '575'
+source-wordcount: '603'
 ht-degree: 0%
 
 ---
@@ -74,3 +74,8 @@ O Cumprimento da loja aprimora o Adobe Commerce, adicionando os seguintes recurs
 * **Emails transacionais**-Estende os recursos de Administração para [!UICONTROL Sales Emails] para adicionar modelos de email para compras online, selecione transações na loja. Os modelos são compatíveis com a comunicação em tempo real entre clientes e associados de loja durante o processo de retirada de pedidos.
 
 * **Cumprimento flexível**-Estende [!DNL Commerce] recursos para oferecer suporte a cenários de processamento de backorders, reduções de quantidade e cumprimento parcial de pedidos, além de facilitar os cancelamentos e avisos de crédito necessários para oferecer suporte a esses cenários.
+
+>[!TIP]
+>
+> Para obter uma rápida demonstração da solução Store Fulfillment, consulte o [Visão geral do cumprimento da loja](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/orders/store-fulfillment.html) disponível em _Vídeos e Tutorials do Adobe Commerce_.
+
