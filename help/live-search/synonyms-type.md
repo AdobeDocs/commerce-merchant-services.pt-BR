@@ -2,9 +2,9 @@
 title: '"Tipos de sinônimos"'
 description: '"Um e dois sentidos [!DNL Live Search] os sinônimos expandem a definição de palavras-chave."'
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
 workflow-type: tm+mt
-source-wordcount: '447'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -31,9 +31,13 @@ Um sinônimo unidirecional é um subconjunto de uma palavra-chave, mas com um si
 
 Lembre-se das seguintes práticas recomendadas para aproveitar ao máximo os sinônimos do Live Search.
 
-### Mapeamento de palavra-chave
+### Evite &quot;palavras inativas&quot;
 
-Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://docs.magento.com/user-guide/catalog/search-results.html).
+O Live Search filtra &quot;palavras inúteis&quot; comuns em inglês de sinônimos, como:
+
+a, an, e, são, como, ser, mas, por exemplo, se, in, for, é, não, não, de, on, ou, tal, os, seus, então, lá, esses, eles, isto, para, era, vontade, com
+
+Palavras de interrupção não fazem os sinônimos mais significativos, mas aumentam a quantidade de dados que devem ser processados.
 
 ### Usar palavras simples
 
@@ -46,3 +50,7 @@ Não é necessário definir as formas singular e plural de uma palavra como sin�
 ### Consistência
 
 Seja consistente com a maneira como a terminologia é usada no catálogo. Lembre-se de que pode haver diferenças regionais no uso e, às vezes, diferenças dentro de um setor.
+
+### Mapeamento de palavra-chave
+
+Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://docs.magento.com/user-guide/catalog/search-results.html).
