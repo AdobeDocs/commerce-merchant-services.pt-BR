@@ -1,9 +1,10 @@
 ---
 title: Criar Nova Recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
+source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -44,6 +45,14 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    _Nome da recomendação e posicionamento_
 
 1. No _Selecionar tipo de recomendação_ especifique a [tipo de recomendação](type.md) você deseja aparecer na página selecionada. Para algumas páginas, a variável [placement](placement.md) O de recomendações está limitado a certos tipos de recomendações.
+
+   Alguns tipos de recomendação usam dados comportamentais de seus compradores para [modelos de aprendizagem de máquina de comboio](behavioral-data.md) para criar recomendações personalizadas. Para ajudá-lo a visualizar o progresso de treinamento de cada tipo de recomendação, esta seção exibe uma medida de disponibilidade para cada tipo. Esses indicadores de prontidão são calculados com base em dois fatores:
+
+   - Tamanho suficiente do conjunto de resultados: Há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
+
+   - Variedade suficiente do conjunto de resultados: Os produtos que estão sendo retornados representam uma variedade de produtos do seu catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
+
+   Com base nos fatores acima, um valor de prontidão é calculado e exibido. Um tipo de recomendação é considerado pronto para ser implantado quando seu valor de prontidão for 75% ou superior. Um tipo de recomendação é considerado parcialmente pronto quando sua prontidão é de pelo menos 50%. Finalmente, um tipo de recomendação é considerado como não pronto para ser implantado quando seu valor de prontidão for inferior a 50%.
 
 1. No _Rótulo de exibição da frente de loja_ digite o [label](placement.md#recommendation-labels) que é visível para seus compradores, como &quot;Mais vendidos&quot;.
 

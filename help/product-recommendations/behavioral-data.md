@@ -1,9 +1,10 @@
 ---
 title: Dados comportamentais
 description: Saiba mais sobre dados comportamentais e quando você pode começar a usá-los.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
+source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
 workflow-type: tm+mt
-source-wordcount: '567'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -34,9 +35,11 @@ Outras variáveis que podem afetar o tempo necessário para treinar:
 - Alguns tipos de recomendação treinam mais rápido que outros
 - O Adobe Commerce recomenda dados comportamentais a cada quatro horas. Embora você possa tecnicamente implantar suas unidades de recomendação no momento, saiba que as recomendações se tornam mais precisas quanto mais tempo forem usadas no site.
 
+Para ajudá-lo a visualizar o progresso de treinamento de cada tipo de recomendação, a variável [criar recomendação](create.md) exibe indicadores de prontidão.
+
 Embora os dados sejam coletados na produção e os modelos de aprendizado por máquina sejam treinados, é possível implementar a variável [tarefas restantes](implementation-workflow.md) necessário para implantar recomendações na loja. Quando você terminar de testar e configurar as recomendações, os modelos de aprendizado de máquina coletarão e calcularão dados suficientes para criar recomendações relevantes, permitindo que você implante as recomendações na loja.
 
-## Recomendações de backup
+## Recomendações de backup {#backuprecs}
 
 Se não houver dados de entrada suficientes para fornecer todos os itens de recomendação solicitados em uma unidade, o Adobe Commerce fornece recomendações de backup para preencher unidades de recomendação. Por exemplo, se você implantar a variável `Recommended for you` tipo de recomendação para sua página inicial, um comprador pela primeira vez no site não gerou dados comportamentais suficientes para direcionar com precisão os produtos personalizados. Nesse caso, o Adobe Commerce exibe itens com base na variável `Most viewed` tipo de recomendação para este comprador.
 

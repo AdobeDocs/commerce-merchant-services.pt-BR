@@ -1,9 +1,10 @@
 ---
 title: Workspace
 description: Saiba como configurar, gerenciar e monitorar o desempenho das recomendações de produtos.
-source-git-commit: 4ad607c8595b25d01b5f5020b787fc1d35d4df25
+exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
+source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
 workflow-type: tm+mt
-source-wordcount: '637'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -101,5 +102,5 @@ Na página de detalhes da recomendação, clique em **Criar**. Para saber mais, 
 | Receita | A receita gerada pela recomendação para o intervalo de tempo atual. |
 | Receita Lt | (Receita vitalícia) A receita vitalícia guiada por uma recomendação. |
 | Viabilidade | A porcentagem de unidades de recomendação que se registram para a exibição. |
-| Ctr | (Porcentagem de cliques registrados) A porcentagem de impressões da unidade para a recomendação que registra um clique. |
-| vCtr | (Porcentagem de cliques registrados visualizáveis) A porcentagem de impressões visualizáveis para a unidade de recomendação que registra um clique. |
+| Ctr | (Taxa de click-through) A porcentagem de impressões da unidade para a recomendação que registra um clique. |
+| vCtr | (Taxa de click-through visualizável) A porcentagem de impressões visualizáveis para a unidade de recomendação que registra um clique. |
