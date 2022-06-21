@@ -1,9 +1,9 @@
 ---
 title: Visão geral do guia
 description: O conector Adobe Experience Platform para Adobe Commerce conecta seu [!DNL Commerce] para outros produtos da Adobe Experience Cloud.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '435'
 ht-degree: 0%
 
 ---
@@ -12,7 +12,7 @@ ht-degree: 0%
 
 A extensão do conector Experience Platform permite que os comerciantes da Adobe Commerce enviem dados para a borda do Adobe Experience Platform, de modo que outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target, possam usar essa [!DNL Commerce] dados. Ao conectar seu [!DNL Commerce] para outros produtos na Adobe Experience Cloud, você pode realizar tarefas, como analisar o comportamento do usuário em seu site, realizar testes AB e criar campanhas personalizadas.
 
-Eventos de vitrine capturam interações do comprador, como `View Page`, `View Product`, `Add to Cart`e assim por diante. Os dados capturados não incluem informações de identificação pessoal (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são estritamente anonimizados. [Saiba mais](https://www.adobe.com/privacy/experience-cloud.html). Consulte a lista completa de eventos de vitrine no final desta página.
+Eventos de vitrine capturam interações do comprador, como `View Page`, `View Product`, `Add to Cart`e assim por diante. Os dados capturados não incluem informações de identificação pessoal (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são estritamente anonimizados. [Saiba mais](https://www.adobe.com/privacy/experience-cloud.html). Veja a lista completa de [eventos storefront](events.md).
 
 ## Pré-requisitos para usar o conector de Experience Platform {#prereqs}
 
@@ -43,7 +43,7 @@ Este guia foi projetado para o comerciante da Adobe Commerce que deve conectar s
 Atualmente, o conector do Experience Platform tem os seguintes problemas conhecidos:
 
 - Os eventos de pesquisa não são suportados em uma Adobe Commerce Enterprise Edition com o módulo B2B instalado.
-- Os dados de vitrine levam algumas horas para chegar do Commerce aos vários destinos após se conectar à borda do Adobe Experience Platform.
+- Os dados de vitrine levam cerca de uma hora para chegar do Adobe Commerce aos vários destinos após se conectar à borda do Adobe Experience Platform.
 
 ## Suporte
 
