@@ -2,9 +2,9 @@
 title: Criar Nova Recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 1d2b4b8d85e5ccea1c4258869fbfd191a2e7987b
+source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '841'
 ht-degree: 0%
 
 ---
@@ -41,8 +41,8 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    É possível criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Construtor de página. O tipo de página é esmaecido quando o limite é atingido.
 
-   ![Nome da recomendação](assets/create-recommendation.png)
-   _Nome da recomendação e posicionamento_
+   ![Nome e página da recomendação](assets/create-recommendation.png)
+   _Nome da recomendação e posicionamento da página_
 
 1. No _Selecionar tipo de recomendação_ especifique a [tipo de recomendação](type.md) você deseja aparecer na página selecionada. Para algumas páginas, a variável [placement](placement.md) O de recomendações está limitado a certos tipos de recomendações.
 
@@ -54,10 +54,10 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    Com base nos fatores acima, um valor de prontidão é calculado e exibido. Um tipo de recomendação é considerado pronto para ser implantado quando seu valor de prontidão for 75% ou superior. Um tipo de recomendação é considerado parcialmente pronto quando sua prontidão é de pelo menos 50%. Finalmente, um tipo de recomendação é considerado como não pronto para ser implantado quando seu valor de prontidão for inferior a 50%.
 
-1. No _Rótulo de exibição da frente de loja_ digite o [label](placement.md#recommendation-labels) que é visível para seus compradores, como &quot;Mais vendidos&quot;.
-
-   ![Nome da recomendação](assets/create-recommendation-select-type.png)
+   ![Tipo de recomendação](assets/create-recommendation-select-type.png)
    _Tipo de recomendação_
+
+1. No _Rótulo de exibição da frente de loja_ digite o [label](placement.md#recommendation-labels) que é visível para seus compradores, como &quot;Mais vendidos&quot;.
 
 1. No _Escolha o número de produtos_ use o controle deslizante para especificar quantos produtos você deseja exibir na unidade de recomendação.
 
@@ -72,12 +72,12 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    O _Escolher posição_ exibe todas as recomendações (se houver) criadas para o tipo de página selecionado.
 
-   ![Nome da recomendação](assets/create-recommendation-select-placement.png)
-   _Tipo de recomendação_
+   ![Ordem de recomendação](assets/create-recommendation-select-placement.png)
+   _Ordem de recomendação na página_
 
 1. (Opcional) Na seção _Filtros_ seção, [aplicar filtros](filters.md) para controlar quais produtos aparecem na unidade de recomendação.
 
-   ![Nome da recomendação](assets/create-recommendation-select-placement.png)
+   ![Filtros de recomendação](assets/create-recommendation-filter-products.png)
    _Filtros de produto de recomendação_
 
 1. Ao concluir, clique em uma das seguintes opções:
