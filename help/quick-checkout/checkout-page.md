@@ -2,7 +2,7 @@
 title: '"Página de check-out"'
 description: '"Visão geral da página de check-out no Adobe Commerce."'
 exl-id: afe3a93d-8aba-428e-ac9d-0be8d23ceb47
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
@@ -28,4 +28,4 @@ Pronto para uso, o check-out consiste em duas etapas:
 >
 > Após a conclusão da primeira etapa, o check-out exibe os totais de check-out e as informações correspondentes da barra lateral.
 
-Consulte a [fluxo de finalização](../quick-checkout/onboarding.md) tópico para obter mais informações sobre [!DNL Quick Checkout] fluxo.
+Consulte a [fluxo de finalização](../quick-checkout/checkout-flow.md) tópico para obter mais informações sobre [!DNL Quick Checkout] fluxo.

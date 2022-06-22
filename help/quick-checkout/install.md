@@ -2,22 +2,20 @@
 title: '"Instale o [!DNL Quick Checkout] para extensão do Adobe Commerce"'
 description: '"Siga estas etapas para instalar o [!DNL Quick Checkout] no seu projeto do Adobe Commerce."'
 exl-id: e1dabc9a-0ab0-4f8d-98d3-7a32abbedcb8
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: dc13c1e38c92341cfd3221a72e6568220b44690a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '424'
 ht-degree: 0%
 
 ---
 
 # Instale o [!DNL Quick Checkout]
 
-O [!DNL Quick Checkout] O para Adobe Commerce alimenta uma experiência de check-out contínua projetada para converter compradores convidados únicos em titulares de conta fiéis.
-
-O [!DNL Quick Checkout] extensão para Adobe Commerce e [!DNL Magento Open Source] pode ser instalado com [!DNL Composer keys], que estão vinculadas ao [Magento ID (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} foi fornecido no processo de assinatura. O Composer usa essas chaves durante a instalação inicial do Adobe Commerce ou em situações em que o [!DNL Composer keys] não foram salvas anteriormente no `auth.json` arquivo.
+O [!DNL Quick Checkout] pode ser instalada com a extensão para Adobe Commerce e Magento Open Source [!DNL Composer keys], que estão vinculadas ao [Magento ID (mageid)](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions){target=&quot;_blank&quot;} foi fornecido no processo de assinatura. O Composer usa essas chaves durante a instalação inicial do Adobe Commerce ou em situações em que o [!DNL Composer keys] não foram salvas anteriormente no `auth.json` arquivo.
 
 Consulte [obter as chaves de autenticação](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html)Tópico {target=&quot;_blank&quot;} para obter mais informações sobre como obter [!DNL Composer keys].
 
-Há duas maneiras de instalar essa extensão — para [Adobe Commerce na infraestrutura de nuvem](#magento-commerce-cloud) ou [no local](#on-premises) instalações. Esses métodos exigem o uso da CLI (Command Line Interface, interface de linha de comando).
+Há duas maneiras de instalar essa extensão — para [Adobe Commerce na infraestrutura de nuvem](#magento-commerce-cloud) ou [no local](#on-premises) instalações. Esses métodos exigem que você use a interface de linha de comando (CLI).
 
 ## Atualizar configuração de estabilidade mínima
 
