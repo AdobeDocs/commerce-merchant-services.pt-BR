@@ -4,9 +4,9 @@ description: '"Instale o [!DNL Store Fulfillment solution] para uma loja da Adob
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
 workflow-type: tm+mt
-source-wordcount: '649'
+source-wordcount: '651'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Acesso ao Arquivo de software da Loja da Walmart Commerce Technologies (arquivo .zip)**-Durante o processo de integração e ativação, trabalhe com seu Gerente de conta para obter acesso ao arquivo de instalação da extensão de disponibilização da loja.
 
-- **Informações da conta do Adobe Commerce**-Instalação [!DNL Channel Manager] exige um [Conta comercial](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
+- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] a solução exige um [Conta comercial](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
 
 - Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto do Cloud. Consulte [Gerenciar o acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
 
