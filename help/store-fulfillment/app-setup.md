@@ -1,15 +1,15 @@
 ---
 title: Configuração do aplicativo
-description: '"Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de trabalho e processos completos de preenchimento de lojas para compra online, recuperação em pedidos de lojas." '
+description: Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de trabalho e processos completos de preenchimento de lojas para compra online, recuperação em pedidos de lojas.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Configuração do aplicativo
 
@@ -55,14 +55,15 @@ O aplicativo Store Assist requer dois tipos de configuração:
    - **Processo de desativação da mão**—Ative processos opcionais quando a Store Associate fornecer ordem ao cliente, por exemplo, exigir uma assinatura do cliente ou solicitar que o associado verifique a ID do cliente.
 
    - **Ativar rejeição de item ao passar o mouse**-Permitir que os clientes retornem ou cancele os itens de pedido durante o manuseio do pedido.
-
    Trabalhe com a equipe de Serviços ao Cliente de Tecnologias do Walmart para concluir a configuração de primeiro plano do aplicativo de assistência da loja.
 
 ## Download e instalação do aplicativo
 
 Depois que a configuração do aplicativo Store Assist for concluída, os Store Associates poderão baixar, instalar e fazer logon no aplicativo Store Assist a partir de seus dispositivos móveis.
 
-- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390) ou na loja da Google Play.
+- Verifique se o dispositivo móvel atende à função [requisitos de hardware e software](solution-requirements.md#store-assist-app-requirements) para a solução Store Fulfillment.
+
+- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} ou o [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - As Associações de Armazenamento exigem as seguintes informações para fazer logon:
 
@@ -70,4 +71,3 @@ Depois que a configuração do aplicativo Store Assist for concluída, os Store 
 
    - Armazenar credenciais de conta do Auxiliar—credenciais de nome de usuário e senha de sua conta.
    Um administrador do Adobe Commerce pode criar uma conta de usuário e definir permissões para as contas de usuário do aplicativo de assistência da loja para locais da loja que tenham [Seleção na loja](merchant-store-configuration.md#pickup-location-configuration) habilitado nas configurações das Lojas de administração.
-

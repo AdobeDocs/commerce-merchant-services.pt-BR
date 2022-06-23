@@ -1,15 +1,15 @@
 ---
 title: Requisitos de cumprimento da loja
-description: '"Requisitos de provisionamento e integração [!DNL Store Fulfillment solution]."'
+description: Requisitos em matéria de provisionamento e integração [!DNL Store Fulfillment solution].
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
+source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
 workflow-type: tm+mt
-source-wordcount: '231'
-ht-degree: 3%
+source-wordcount: '291'
+ht-degree: 2%
 
 ---
-
 
 # Armazenar requisitos de conformidade para o Adobe Commerce
 
@@ -19,8 +19,8 @@ Você deve atender aos seguintes requisitos técnicos e comerciais para instalar
 
 O [!DNL Store Fulfillment] A solução está disponível para clientes da Adobe Commerce nas seguintes plataformas.
 
-* Adobe Commerce on cloud Infrastructure (ECE)
-* Adobe Commerce nas instalações (EE)
+- Adobe Commerce on cloud Infrastructure (ECE)
+- Adobe Commerce nas instalações (EE)
 
 A solução Store Fulfillment é compatível com as seguintes versões de software.
 
@@ -36,22 +36,36 @@ A solução Store Fulfillment é compatível com as seguintes versões de softwa
 
 Para saber mais sobre os requisitos, consulte a Adobe Commerce [Requisitos do sistema](https://devdocs.magento.com/guides/v2.4/install-gde/system-requirements.html) na documentação do Desenvolvedor.
 
+## Requisitos do aplicativo Store Assist
+
+O processo completo para gerenciar pedidos de retirada de loja é gerenciado por meio do aplicativo Store Assist instalado em dispositivos móveis. Esses dispositivos—fornecidos pela varejista ou por funcionários de loja usando seus smartphones pessoais—devem atender aos seguintes requisitos:
+
+**Requisitos mínimos do sistema operacional**
+
+- Android 6
+- iOS 12
+
+**Requisitos mínimos de hardware**
+
+- 1 GB de RAM
+- 600MB de espaço livre em disco
+
 ## Requisitos de empresa
 
 Sua empresa deve atender aos seguintes critérios mínimos para implementar a solução de fornecimento de armazenamento.
 
-* Somente empresas com base nos EUA
+- Somente empresas com base nos EUA
 
-* Retalhistas B2C, fabricantes de CPG que vendem D2C ou distribuidores que vendem D2C ou a pequenas empresas
+- Retalhistas B2C, fabricantes de CPG que vendem D2C ou distribuidores que vendem D2C ou a pequenas empresas
 
-* Pelo menos um armazém físico
+- Pelo menos um armazém físico
 
-* Gerencie o inventário de produtos com o Inventory management for Adobe Commerce (também conhecido como MSI)
+- Gerencie o inventário de produtos com o Inventory management for Adobe Commerce (também conhecido como MSI)
 
-* Capacidade de sindicalizar inventário de merchant
+- Capacidade de sindicalizar inventário de merchant
 
-* Armazene a disponibilidade do Wi-Fi em todos os locais que oferecem suporte à solução de disponibilização da loja
+- Armazene a disponibilidade do Wi-Fi em todos os locais que oferecem suporte à solução de disponibilização da loja: Velocidade mínima de Internet de 3 Mbps
 
-* Os associados de armazenamento e depósito têm acesso a dispositivos móveis iOS ou Android durante seus turnos, pessoais ou fornecidos pelo comerciante
+- Os associados de armazenamento e depósito têm acesso a dispositivos móveis iOS ou Android durante seus turnos, pessoais ou fornecidos pelo comerciante
 
-* Os produtos gerenciados por meio da solução Store Fulfillment devem ter atributos de produto que incluam um código de produto SKU ou UPC
+- Os produtos gerenciados por meio da solução Store Fulfillment devem ter atributos de produto que incluam um código de produto SKU ou UPC
