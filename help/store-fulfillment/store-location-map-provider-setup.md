@@ -3,13 +3,13 @@ title: Localização do armazenamento e configuração do sistema de mapeamento
 description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização da loja na interface do usuário da loja. As soluções de fornecimento de armazenamento exigem um provedor de distância para permitir a pesquisa em lojas de varejo e outros recursos de mapeamento e agendamento para o fluxo de trabalho de cumprimento completo.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Configuração de localização e mapeamento do armazenamento
 
@@ -21,13 +21,13 @@ Durante o processo de configuração, você fornece uma chave de API do Google p
 
 Para configurar o provedor de distância:
 
-1. No [!UICONTROL Stores > General] no Admin, adicione a integração Google Maps para o tipo de conteúdo Map .
+1. No **[!UICONTROL Stores > General]** no Admin, adicione a integração Google Maps para o tipo de conteúdo Map .
 
    - Ir para **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
    - Adicionar sua chave de API do Google a **[!UICONTROL Google Maps API Key]** campo.
 
-1. No [!UICONTROL Stores > Inventory] na configuração Admin, selecione o provedor de distância para o Cumprimento da Loja.
+1. No **[!UICONTROL Stores > Inventory]** na configuração Admin, selecione o provedor de distância para o Cumprimento da Loja.
 
    - Ir para **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 

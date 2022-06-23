@@ -4,9 +4,9 @@ description: '"Instale o [!DNL Store Fulfillment solution] para uma loja da Adob
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 66c4ca972004c43fa55795006b1511820ca9b514
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '661'
 ht-degree: 0%
 
 ---
@@ -29,15 +29,15 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Requisitos de instalação
 
-- **Acesso ao Arquivo de software da Loja da Walmart Commerce Technologies (arquivo .zip)**-Durante o processo de integração e ativação, trabalhe com seu Gerente de conta para obter acesso ao arquivo de instalação da extensão de disponibilização da loja.
+- **Acesso ao Arquivo de software da Loja da Walmart Commerce Technologies (arquivo .zip)**—Durante o processo de integração e capacitação, trabalhe com seu Gerente de conta para obter acesso ao arquivo de instalação da extensão Cumprimento da loja.
 
-- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] a solução exige um [Conta comercial](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
+- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] a solução exige um [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
 
 - Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto do Cloud. Consulte [Gerenciar o acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
 
 - **Experiência usando o Composer e a[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões no [!DNL Adobe Commerce] plataforma.
 
-- **Experiência ao instalar extensões de terceiros no Adobe Commerce**-Para referência, consulte a documentação do Adobe Commerce.
+- **Experiência ao instalar extensões de terceiros no Adobe Commerce**—Para referência, consulte a documentação do Adobe Commerce.
 
    - [Instalar uma extensão para uma instância do Adobe Commerce on cloud Infrastructure](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
@@ -94,7 +94,8 @@ Use o Composer para configurar o diretório de origem para a instalação e inst
 
 Conclua a instalação usando o `bin/magento setup:upgrade` para atualizar o esquema do banco de dados e os dados com as alterações para oferecer suporte à solução de disponibilização da loja.
 
->Observação:
+>[!NOTE]
+>
 >Para projetos de infraestrutura em nuvem do Adobe Commerce, não é necessário registrar a extensão . Em vez disso, confirme as alterações de código da etapa anterior e envie-as para a ramificação de ambiente. Os comandos para atualizar o schema do banco de dados e os dados são executados automaticamente durante o processo de build e implantação da nuvem.
 
 ### Etapa 5: Conclua a instalação
@@ -183,7 +184,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 ### Etapas adicionais
 
-Se necessário, use a `[setup:static-content: deploy](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy)` comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
+Se necessário, use a [configuração:static-content:implantar](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f

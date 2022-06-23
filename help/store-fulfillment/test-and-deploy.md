@@ -3,13 +3,13 @@ title: Testar e implantar o fornecimento da loja
 description: Testar plano para verificar a funcionalidade de fornecimento de armazenamento. Os testes abrangem a API de Sincronização de inventário, o fluxo de trabalho de preenchimento completo para pedidos cancelados, o gerenciamento de usuários do aplicativo Store Fulfillment e a experiência de Check-in do cliente.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2652'
 ht-degree: 0%
 
 ---
-
 
 # Testar e implantar o fornecimento da loja no Adobe Commerce
 
@@ -136,7 +136,6 @@ Esta seção do plano de teste inclui cenários para testar o fluxo de trabalho 
 </td>
 <td>
 <ul>
-<td>
 <li>Histórico de pedidos atualizado com <code>We refunded $X online. Transaction ID: transactionID</code> e <code>Received Cancel acknowledgment from the BOPIS solution.</code></li>
 <li>O status do pedido é <code>Closed</code>. (Definimos a REVISÃO DE PAGAMENTO agora.)</li>
 <li>Aviso de crédito criado no Adobe Commerce. (Aguarde até que o cron funcione.)</li>
@@ -449,7 +448,7 @@ Esta seção do plano de teste cobre a experiência de check-in para pedidos de 
 
 - Contato de retirada alternativo — Verifique o fluxo de trabalho para adicionar um [!UICONTROL Alternate Pickup Contact] e selecionando um [!UICONTROL Preferred Contact] em Ordens de retirada da loja.
 
-- Formulário de check-in - Verifique o fluxo de trabalho para enviar uma solicitação de check-in para pedidos de retirada da Loja.
+- Formulário de check-in — Verifique o fluxo de trabalho para enviar uma solicitação de check-in para pedidos de retirada da Loja.
 
 **Áreas funcionais:** Check-out do carrinho, Formulário de check-in para pedidos de retirada de loja</br>
 **Função:** Administrador, Cliente, Store Associate</br>
@@ -566,7 +565,7 @@ Esta seção do plano de teste cobre cenários para workflows de ordem de teste,
 </tr>
 <tr>
 <td>
-<strong>Caminho feliz de escolha de pedido único, retirada de lado da curva</strong></td>
+<strong>Separação de pedido único — caminho feliz, retirada de lado da curva</strong></td>
 <td>Escolha itens de quantidade única e múltipla. Sem nilpicks e coleta de lado da curva (com preparo).
 </td>
 <td>
@@ -645,22 +644,3 @@ A implantação e o teste variam dependendo da infraestrutura e das capacidades.
 >[!TIP]
 >
 >Para obter diretrizes de implantação, listas de verificação e práticas recomendadas do Adobe Commerce em projetos de infraestrutura em nuvem, consulte [Implantar a loja](https://devdocs.magento.com/cloud/live/stage-prod-live.html) na documentação do desenvolvedor do Adobe Commerce.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -4,9 +4,9 @@ description: Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 421c90f4c8bd687216cd48c72f30301a32115522
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '606'
 ht-degree: 0%
 
 ---
@@ -48,13 +48,13 @@ O aplicativo Store Assist requer dois tipos de configuração:
 
    - Personalize todas as instruções no aplicativo (escolha, preparo, entrega).
 
-   - **Notificações por separação**-Especifique se deseja enviar uma notificação por push para iniciar o processo de separação depois que um cliente colocar um pedido.
+   - **Notificações por separação**—Especifique se deseja enviar uma notificação por push para iniciar o processo de separação depois que o cliente colocar um pedido.
 
-   - **Notificações de check-in**-Especifique se deseja enviar uma notificação por push durante o processo de check-in para pedidos de compra após o check-in, depois que o tempo de espera do cliente exceder um período especificado. Ou desative a notificação.
+   - **Notificações de check-in**—Especifique se deseja enviar uma notificação por push durante o processo de check-in para pedidos de compra após check-in, depois que o tempo de espera do cliente exceder um período especificado. Ou desative a notificação.
 
    - **Processo de desativação da mão**—Ative processos opcionais quando a Store Associate fornecer ordem ao cliente, por exemplo, exigir uma assinatura do cliente ou solicitar que o associado verifique a ID do cliente.
 
-   - **Ativar rejeição de item ao passar o mouse**-Permitir que os clientes retornem ou cancele os itens de pedido durante o manuseio do pedido.
+   - **Ativar rejeição de item ao passar o mouse**—Permitir que os clientes devolvam ou anulem itens de pedido durante o processamento do pedido.
    Trabalhe com a equipe de Serviços ao Cliente de Tecnologias do Walmart para concluir a configuração de primeiro plano do aplicativo de assistência da loja.
 
 ## Download e instalação do aplicativo
@@ -67,7 +67,7 @@ Depois que a configuração do aplicativo Store Assist for concluída, os Store 
 
 - As Associações de Armazenamento exigem as seguintes informações para fazer logon:
 
-   - O nome da empresa associado à sua conta de assistência da loja
+   - **[!UICONTROL Company name]** associado à conta de assistência de loja
 
-   - Armazenar credenciais de conta do Auxiliar—credenciais de nome de usuário e senha de sua conta.
+   - **Credenciais da conta do Auxiliar de Armazenamento**—credenciais de nome de usuário e senha para sua conta.
    Um administrador do Adobe Commerce pode criar uma conta de usuário e definir permissões para as contas de usuário do aplicativo de assistência da loja para locais da loja que tenham [Seleção na loja](merchant-store-configuration.md#pickup-location-configuration) habilitado nas configurações das Lojas de administração.

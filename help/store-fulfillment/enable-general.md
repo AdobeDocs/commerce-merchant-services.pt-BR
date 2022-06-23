@@ -1,15 +1,15 @@
 ---
 title: Configuração geral
-description: '"Configure as definições gerais para ativar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para permitir a integração entre o Adobe Commerce e os serviços de fornecimento de armazenamento."'
+description: Defina as configurações gerais para ativar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para permitir a integração entre o Adobe Commerce e os serviços de fornecimento de armazenamento.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
+source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
 workflow-type: tm+mt
 source-wordcount: '2413'
 ht-degree: 0%
 
 ---
-
 
 # Configuração geral
 
@@ -33,7 +33,7 @@ A configuração geral para [!DNL Store Fulfillment] O inclui as seguintes confi
 |--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
 | **[!UICONTROL Enabled]** | Ative ou desative a solução. Quando habilitado, configure e use os recursos de Entrega da loja e estabeleça a conexão entre a loja da Adobe Commerce e os serviços de Entrega da loja. Quando desativado, todos os recursos de Entrega de loja são desativados e não há comunicação entre o Adobe Commerce e os serviços de Entrega de loja. As informações do pedido não podem ser processadas ou recebidas. | Global | Sim |
 
-Para concluir essa configuração, consulte **Armazena → Configuração → Serviços → Armazenar o Cumprimento por Tecnologias Walmart Commerce**.
+Para concluir essa configuração, consulte **Lojas > Configuração > Serviços > Armazenamento de informações por tecnologias do Walmart Commerce**.
 
 ## Adicionar credenciais de conta
 
@@ -69,7 +69,7 @@ Você pode visualizar detalhes sobre as operações de sincronização de pedido
 
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |-----------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|------------|--------------|
-| **Erro Crítico na Tentativa** | Especifica as tentativas de repetição de uma operação de sincronização de registro após ocorrer um erro crítico.</br></br>Erros críticos ocorrem sempre que a integração não obtém uma resposta positiva do serviço de cumprimento. Isso pode ocorrer quando o serviço está inativo ou quando há um erro nos dados do pedido que estão sendo enviados.</br></br>Quando o limite de repetição é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros de **[!UICONTROL System → Tools → Store Fulfillment Queue]** Gerenciamento no Administrador. Para solucionar problemas consistentemente de itens com falha, entre em contato com seu Gerente de conta. | Global | Não |
+| **Erro Crítico na Tentativa** | Especifica as tentativas de repetição de uma operação de sincronização de registro após ocorrer um erro crítico.</br></br>Erros críticos ocorrem sempre que a integração não obtém uma resposta positiva do serviço de cumprimento. Isso pode ocorrer quando o serviço está inativo ou quando há um erro nos dados do pedido que estão sendo enviados.</br></br>Quando o limite de repetição é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros de **[!UICONTROL System > Tools > Store Fulfillment Queue]** Gerenciamento no Administrador. Para solucionar problemas consistentemente de itens com falha, entre em contato com seu Gerente de conta. | Global | Não |
 | **Ativar Email de Notificação de Erro** | Ative as notificações de erro para receber um email quando a função [!UICONTROL Retry Critical Error Threshold] é acessado para um pedido. A notificação inclui todos os detalhes disponíveis sobre o erro. | Global | Não |
 | **Enviar email de notificação de erro para** | Uma lista delimitada por vírgulas de endereços de email de destinatários para notificações de erro. | Global | Não |
 | **Modelo de Email de Exceção de Sincronização de Pedido** | Especifica o template de email usado para notificar os recipients sobre erros de sincronização de pedidos. Um template padrão é fornecido. Ele não oferece suporte à personalização. | Exibição da loja | Não |
