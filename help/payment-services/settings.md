@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 724abe973094c1aa631ca34bd8096052fa1e9195
+source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '695'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,9 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 1. Para alterar o nome do método de pagamento exibido durante o check-out, edite o valor no **[!UICONTROL Checkout title]** campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
+
+   Quando você ativa o modo de depuração, informações de depuração adicionais sobre o pagamento do cartão de crédito são gravadas no `var/log/payment.log` arquivo. Essas informações podem fornecer mais informações sobre um pagamento específico para ajudar na solução de problemas.
+
 1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
@@ -88,6 +91,9 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
 
 1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button), alterne a **[!UICONTROL Display Pay Later message]** opção.
 1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
+
+   Quando você ativa o modo de depuração, informações de depuração adicionais sobre o pagamento PayPal são gravadas no `var/log/payment.log` arquivo. Essas informações podem fornecer mais informações sobre um pagamento específico para ajudar na solução de problemas.
+
 1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
