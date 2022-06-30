@@ -1,9 +1,10 @@
 ---
-title: '"Crie um pedido com [!DNL Quick Checkout] em Admin"'
-description: '"O Administrador fornece a capacidade de fazer um pedido usando [!DNL Quick Checkout] diretamente do administrador por um comerciante para seus clientes que precisam de assistência."'
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+title: Criar um pedido com [!DNL Quick Checkout] em Admin
+description: O Administrador fornece a capacidade de fazer um pedido usando [!DNL Quick Checkout] diretamente do Administrador por um comerciante para seus clientes que precisam de assistência.
+exl-id: 52cb8afb-fb23-468d-94b4-9f9142c54ce0
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '199'
+source-wordcount: '194'
 ht-degree: 1%
 
 ---
@@ -26,4 +27,4 @@ Ao fazer pedidos em nome do comprador, a [!DNL Quick Checkout] aparece como uma 
 
 >[!IMPORTANT]
 >
-> Durante o Programa de Adoção Antecipada (EAP), os usuários não podem usar o logon OTP para preencher automaticamente os detalhes de envio e pagamento.
+> Os usuários não podem usar o logon OTP para preencher automaticamente todos os detalhes de envio e pagamento.

@@ -2,9 +2,9 @@
 title: '"Fluxo de check-out"'
 description: '"Visão geral da [!DNL Quick Checkout] no Adobe Commerce."'
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: c0b1185a53cb84be2335e2e1beb392c9f23070c9
+source-git-commit: 01bb92d1de1f6a6da1d6326c0190eb7711274045
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
@@ -39,73 +39,8 @@ O [!DNL Quick Checkout] é compatível com as opções padrão adicionais de che
 
 O [!DNL Quick Checkout] O permite vários casos de uso durante um fluxo de finalização:
 
-- Usuário convidado com um registro [!DNL Bolt] conta.
-- Usuário convidado com um novo [!DNL Bolt] conta.
-- Um usuário existente do Adobe Commerce com/sem um registro [!DNL Bolt] conta.
-
-## Check-out do usuário convidado: Como funciona
-
-A experiência de check-out de convidado é diferente da experiência de logon. Quando um comprador insere um endereço de email no check-out, a variável [!DNL Quick Checkout] O valida para localizar um [!DNL Bolt] conta.
-
-### Registrado [!DNL Bolt] account
-
-Se uma [!DNL Bolt] for encontrada, os compradores continuarão com suas [!DNL Quick Checkout] experiência de finalização contínua:
-
-1. Insira a Senha única (OTP) enviada para isso [!DNL Bolt] endereço de email da conta ou dispositivo móvel, dependendo das preferências do usuário no [!DNL Bolt] conta.
-1. Depois de fazer logon com o [!DNL Bolt] preenche os detalhes de check-out automaticamente:
-
-   - Informações sobre envio
-   - Método de pagamento
-
-1. Colocar pedido.
-
->[!TIP]
->
-> O usuário convidado coloca o pedido e pode se registrar no Adobe Commerce.
-
-### Novo [!DNL Bolt] account
-
-Se não [!DNL Bolt] for encontrada, os compradores continuarão com a verificação predefinida do Adobe Commerce e o comprador fornecerá todos os detalhes necessários para fazer o pedido:
-
-- Informações sobre remessa e faturamento
-- Método de remessa
-- Revisar método de pagamento
-- Uma caixa de seleção aparece para se registrar no [!DNL Bolt] para finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar seus [!DNL Bolt] conta.
-
-   ![Lembrar [!DNL Bolt]](assets/checked-bolt.png)
-
-- O usuário convidado coloca o pedido e pode se registrar no Adobe Commerce.
-
-## Um usuário existente do Adobe Commerce: Como funciona
-
-Um usuário existente pode selecionar detalhes existentes quando o usuário colocar um pedido com a variável [!DNL Quick Checkout] para obter uma experiência de finalização mais rápida.
-
-Quando um comprador insere um endereço de email no check-out, a variável [!DNL Quick Checkout] O valida para localizar um [!DNL Bolt] conta.
-
-### Registrado [!DNL Bolt] conta com um usuário do Adobe Commerce
-
-Se uma [!DNL Bolt] for encontrada, os compradores continuarão com a verificação predefinida do Adobe Commerce e o comprador fornecerá todos os detalhes necessários e colocará o pedido:
-
-- Informações sobre remessa e faturamento
-- Método de remessa
-- Revisar método de pagamento
-
-Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://support.magento.com/hc/en-us/articles/6909450342541) artigo na Central de ajuda do Adobe Commerce.
-
->[!NOTE]
->
-> Se o usuário tiver uma [!DNL Bolt] A conta e o email não aparecem como registrados no Adobe Commerce, ele aciona o logon OTP (One-Time Password, Senha única). Consulte a [registrado [!DNL Bolt] account](#registered-bolt-account) fluxo.
-
-### Novo [!DNL Bolt] account
-
-Se não [!DNL Bolt] for encontrada, os compradores continuarão com o check-out padrão do Adobe Commerce e o comprador selecionará todos os detalhes necessários de suas informações salvas para colocar o pedido:
-
-- Informações sobre remessa e faturamento
-- Método de remessa
-- Revisar método de pagamento
-- Uma caixa de seleção aparece para se registrar no [!DNL Bolt] para finalizações mais rápidas antes de fazer o pedido. Eles podem concordar com os termos e condições para criar seus [!DNL Bolt] conta.
-
-   ![Lembrar [!DNL Bolt]](assets/checked-bolt.png)
+- [Usuário convidado](../quick-checkout/checkout-adobe-commerce.md) com um registro ou [!DNL Bolt] conta.
+- Um [Usuário do Adobe Commerce](../quick-checkout/checkout-adobe-commerce.md) com/sem registro [!DNL Bolt] conta.
 
 ## Obter ajuda
 
