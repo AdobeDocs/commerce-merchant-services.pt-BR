@@ -1,9 +1,10 @@
 ---
 title: Cabeça
 description: Saiba como integrar [!DNL Product Recommendations] em uma vitrine sem cabeça.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,7 @@ Você pode executar ambas as ações usando os SDKs disponíveis, conforme descr
 
 1. [Instalar](install-configure.md) o [!DNL Product Recommendations] módulo.
 
-1. Instalar e usar o [SDK de eventos de vitrine](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) para acionar a [eventos comportamentais](https://devdocs.magento.com/recommendations/events.html).
+1. Instalar e usar o [SDK do evento de loja da Adobe Commerce](https://devdocs.magento.com/shared-services/storefront-events-sdk.html) para acionar a [eventos comportamentais](https://devdocs.magento.com/recommendations/events.html).
 
    Os eventos mínimos necessários para retornar [!DNL Product Recommendations] resultados:
 
@@ -43,7 +44,7 @@ Você pode executar ambas as ações usando os SDKs disponíveis, conforme descr
    | `rec-click` | unidade de recomendação |
    | `rec-add-to-cart-click` | unidade de recomendação (se um botão adicionar ao carrinho estiver presente no modelo de recomendações) |
 
-1. Quando os eventos forem acionados, use a variável [Coletor de eventos de vitrine](https://devdocs.magento.com/shared-services/storefront-event-collector.html) para lidar com os eventos e enviá-los para o Adobe Sensei.
+1. Quando os eventos forem acionados, use a variável [Coletor de eventos de vitrine do Adobe Commerce](https://devdocs.magento.com/shared-services/storefront-event-collector.html) para lidar com os eventos e enviá-los para o Adobe Sensei.
 
 1. Depois que os dados comportamentais forem coletados, você poderá [criar](create.md) [!DNL Product Recommendations] em Admin.
 

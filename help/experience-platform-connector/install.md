@@ -1,9 +1,10 @@
 ---
 title: Instalar e configurar o Adobe Experience Platform Connector no Adobe Commerce
 description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Experience Platform Connector do Adobe Commerce.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
+source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
 workflow-type: tm+mt
-source-wordcount: '235'
+source-wordcount: '229'
 ht-degree: 0%
 
 ---
@@ -17,29 +18,15 @@ Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs)
 1. Instale o metapackage do conector Experience Platform.
 
    ```bash
-   composer require magento/platform-connector
+   composer require magento/experience-platform-connector
    ```
 
-   Este metapackage contém os seguintes módulos:
+   Esse metapackage contém os seguintes módulos e extensões:
 
-   * `module-platform-connector-admin` - Atualiza a interface do usuário do administrador
-   * `module-platform-connector` - Define o `ImsOrgId` e `datastreamId` no SDK de Eventos da loja do Magento
-
-1. Instale a extensão Commerce Data Services para incluir eventos de perfil e de check-out.
-
-   ```bash
-   composer require magento/data-services
-   ```
-
-   A extensão Commerce Data Services fornece contexto de atributo para eventos de vitrine. Por exemplo, quando um evento de check-out ocorre, informações sobre quantos itens estavam no carrinho e os dados do atributo do produto para esses itens são incluídos.
-
-1. Instale o Conector de serviço do Commerce.
-
-   ```bash
-   composer require magento/commerce-services
-   ```
-
-   O Commerce Service Connector permite conectar sua instância do Adobe Commerce ao [Adobe Commerce SaaS](../landing/saas.md) e à Adobe Experience Platform.
+   * `module-platform-connector-admin` - Atualiza a interface do usuário do administrador para que você possa configurar a ID do conjunto de dados
+   * `module-platform-connector` - Define o `ImsOrgId` e `datastreamId` no SDK do Evento de loja da Adobe Commerce
+   * `data-services` - Fornece contexto de atributo para eventos de vitrine. Por exemplo, quando um evento de check-out ocorre, informações sobre quantos itens estavam no carrinho e os dados do atributo do produto para esses itens são incluídos.
+   * `commerce-services` - Conecta sua instância do Adobe Commerce ao [Adobe Commerce SaaS](../landing/saas.md) usando chaves de sandbox e de API de produção e para a Adobe Experience Platform usando a IMS Organization ID.
 
 1. (Opcional) Para incluir [!DNL Live Search] os dados, que incluem eventos de pesquisa, instale o [[!DNL Live Search]](../live-search/install.md) extensão.
 
@@ -48,7 +35,7 @@ Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs)
 Para atualizar o conector de Experience Platform, execute o seguinte na linha de comando:
 
 ```bash
-composer update magento/platform-connector --with-dependencies
+composer update magento/experience-platform-connector --with-dependencies
 ```
 
 Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz do projeto [!DNL Composer] `.json` como segue:
@@ -60,7 +47,7 @@ Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz d
    ```json
    "require": {
       ...
-      "magento/platform-connector": "^2.0",
+      "magento/experience-platform-connector": "^2.0",
       ...
     }
    ```
@@ -68,7 +55,7 @@ Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz d
 1. **Salvar** `composer.json`. Em seguida, execute o seguinte na linha de comando:
 
    ```bash
-   composer update magento/platform-connector –-with-dependencies
+   composer update magento/experience-platform-connector –-with-dependencies
    ```
 
 ## Desinstale o conector do Experience Platform {#uninstall}
