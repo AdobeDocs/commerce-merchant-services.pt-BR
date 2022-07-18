@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: aed9469d6acf638d86389cbf1c178fccd8d42759
+source-git-commit: 7c02bb8dcb7b5daa68664bd12672ac389f84cfa1
 workflow-type: tm+mt
-source-wordcount: '695'
+source-wordcount: '688'
 ht-degree: 0%
 
 ---
@@ -47,7 +47,7 @@ Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sa
 1. Para alterar as configurações padrão das funções de pagamento e da tela de loja, defina as opções adicionais conforme necessário:
 
    - [Campos de cartão de crédito](#credit-card-fields)
-   - [Botões inteligentes PayPal](#paypal-smart-buttons)
+   - [Botões de pagamento](#payment-buttons)
    - [Estilo do botão](#button-style)
 
 1. Clique em **[!UICONTROL Save]**.
@@ -74,22 +74,22 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
-### Botões inteligentes PayPal
+### Botões de pagamento
 
 O [!DNL PayPal Smart Buttons] as opções de pagamento oferecem um processo de check-out simples, rápido e seguro para o cliente. Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para obter mais informações.
 
-Você pode ativar e configurar as opções de pagamento dos botões inteligentes PayPal:
+Você pode ativar e configurar os botões Pagamento:
 
 1. Para alterar o nome do método de pagamento, como mostrado durante o check-out, edite o valor no **[!UICONTROL Checkout Title]** campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Use os seletores de alternância para ativar ou desativar [!DNL PayPal smart button] recursos de exibição:
-   - **[!UICONTROL Show buttons on product detail page]**
-   - **[!UICONTROL Show buttons in mini cart preview]**
-   - **[!UICONTROL Show buttons on cart page]**
-   - **[!UICONTROL PayPal Pay Later enabled]**
+   - **[!UICONTROL Show PayPal buttons on product detail page]**
+   - **[!UICONTROL Show PayPal buttons on mini cart preview]**
+   - **[!UICONTROL Show PayPal buttons on cart page]**
+   - **[!UICONTROL Show PayPal Pay Later button]**
    - **[!UICONTROL Show Venmo button]**
 
-1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button), alterne a **[!UICONTROL Display Pay Later message]** opção.
+1. Para alterar o [Pagar Mensagens Mais Tarde](payments-options.md#pay-later-button), alterne a **[!UICONTROL Show PayPal Pay Later message]** opção.
 1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 
    Quando você ativa o modo de depuração, informações de depuração adicionais sobre o pagamento PayPal são gravadas no `var/log/payment.log` arquivo. Essas informações podem fornecer mais informações sobre um pagamento específico para ajudar na solução de problemas.
@@ -102,13 +102,13 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
 
 #### Estilo do botão
 
-Você também pode configurar o _[!UICONTROL Button style]_opções dos botões inteligentes PayPal:
+Você também pode configurar o _[!UICONTROL Button style]_opções dos botões Pagamento:
 
 1. Para alterar o **[!UICONTROL Layout]**, selecione `Vertical` ou `Horizontal`.
 
    >[!NOTE]
    >
-   > Se o estilo do botão estiver configurado como `Horizontal` e a sua loja está configurada para mostrar vários botões inteligentes do PayPal, você só pode ver dois botões exibidos na página do produto, na página de checkout e no minicarrinho, e um botão exibido no carrinho.
+   > Se o estilo do botão estiver configurado como `Horizontal` e sua loja está configurada para mostrar vários botões Pagamento, você só pode ver dois botões exibidos na página do produto, na página de check-out e no minicarrinho, e um botão exibido no carrinho.
 
 1. Para ativar o slogan em um layout horizontal, alterne a **[!UICONTROL Show tagline]** seletor.
 1. Para modificar o **[!UICONTROL Color]**, selecione a opção de cor desejada.
