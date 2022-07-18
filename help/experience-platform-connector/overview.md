@@ -1,9 +1,10 @@
 ---
 title: Visão geral do guia
 description: O conector Adobe Experience Platform para Adobe Commerce conecta seu [!DNL Commerce] para outros produtos da Adobe Experience Cloud.
-source-git-commit: dc4bb1ea7d2ffc953cca31637bf5aefba6266241
+exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '435'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,10 +24,13 @@ Para usar o conector Experience Platform, primeiro você deve:
 Quando o acesso é concedido:
 
 1. [Fazer logon](https://helpx.adobe.com/manage-account/using/access-adobe-id-account.html) para sua conta Adobe.
-1. Veja o seu [organização](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). A ID da organização é a ID associada à empresa provisionada pela Experience Cloud. Essa ID é uma sequência de 24 caracteres alfanuméricos seguidos por (e deve incluir) @AdobeOrg.
-1. Acesse o espaço de trabalho do armazenamento de dados e [criar um conjunto de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en).
+1. Veja o seu [organização](https://experienceleague.adobe.com/docs/core-services/interface/administration/organizations.html?lang=en#concept_EA8AEE5B02CF46ACBDAD6A8508646255). A ID da organização é a ID associada à empresa provisionada pela Experience Cloud. Essa ID é uma sequência de 24 caracteres alfanuméricos seguidos por (e deve incluir) `@AdobeOrg`.
+1. Crie ou atualize seu [Esquema XDM](update-xdm.md) com grupos de campos específicos de Comércio.
+1. [Criar um conjunto de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html?lang=en) e selecione o esquema XDM que contém o específico de Comércio **Grupos de campos**.
 
-A ID da organização e o armazenamento de dados são usados ao conectar a instância do Adobe Commerce à Adobe Experience Platform.
+>[!NOTE]
+>
+> A ID da organização e o armazenamento de dados são usados para conectar a instância do Adobe Commerce à Adobe Experience Platform.
 
 ## Próximas etapas
 

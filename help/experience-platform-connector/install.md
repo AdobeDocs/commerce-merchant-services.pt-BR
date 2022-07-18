@@ -2,14 +2,14 @@
 title: Instalar e configurar o Adobe Experience Platform Connector no Adobe Commerce
 description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Experience Platform Connector do Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: b503c369f12696a2a791af77055a7b53000b827f
+source-git-commit: 334ee967ec2379a87acfc5fb427d7ada6fa25ee7
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
-# Instalar e configurar o conector do Experience Platform
+# Instale e configure o conector Experience Platform
 
 Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs).
 
@@ -23,10 +23,10 @@ Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs)
 
    Esse metapackage contém os seguintes módulos e extensões:
 
-   * `module-platform-connector-admin` - Atualiza a interface do usuário do administrador para que você possa configurar a ID do conjunto de dados
+   * `module-platform-connector-admin` - Atualiza a interface do usuário do administrador para que você possa selecionar a ID do conjunto de dados para uma instância específica do Adobe Commerce
    * `module-platform-connector` - Define o `ImsOrgId` e `datastreamId` no SDK do Evento de loja da Adobe Commerce
    * `data-services` - Fornece contexto de atributo para eventos de vitrine. Por exemplo, quando um evento de check-out ocorre, informações sobre quantos itens estavam no carrinho e os dados do atributo do produto para esses itens são incluídos.
-   * `commerce-services` - Conecta sua instância do Adobe Commerce ao [Adobe Commerce SaaS](../landing/saas.md) uso de chaves de sandbox e de API de produção e para a Adobe Experience Platform usando a IMS Organization ID
+   * `services-id` - Conecta sua instância do Adobe Commerce ao [Adobe Commerce SaaS](../landing/saas.md) uso de chaves de sandbox e de API de produção e para a Adobe Experience Platform para recuperar a IMS Organization ID
 
 1. (Opcional) Para incluir [!DNL Live Search] os dados, que incluem eventos de pesquisa, instale o [[!DNL Live Search]](../live-search/install.md) extensão.
 

@@ -1,9 +1,10 @@
 ---
-title: Notas de versão do Beacon do projeto
-description: As informações mais recentes da versão do Beacon do projeto no Adobe Commerce.
-source-git-commit: ce1ce5a7e028d1c957a9a36c73c371eedfb1e1e8
+title: Notas de versão
+description: As informações mais recentes do Adobe Experience Platform Connector da Adobe Commerce.
+exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
+source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
 workflow-type: tm+mt
-source-wordcount: '78'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,8 +19,8 @@ Essas notas de versão descrevem as versões mais recentes do conector de Experi
 
 ## Conector de Experience Platform 1.1.0
 
-* Compatível com Adobe Commerce (EE): 2.4.x
-* Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
+* Compatível com Adobe Commerce (EE): 2.4.4
+* Compatível com Adobe Commerce for Cloud (ECE): 2.4.4
 * Estabilidade: Estável
 
 ## Documentação
