@@ -4,9 +4,9 @@ description: Use o relatório Status do pagamento da Ordem para obter visibilida
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: fde5844ad6c602708f9a5ad76ce8c9b5547dba76
+source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
 workflow-type: tm+mt
-source-wordcount: '1359'
+source-wordcount: '1436'
 ht-degree: 0%
 
 ---
@@ -73,14 +73,14 @@ If _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as inf
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
-* Se você não tiver lojas que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assume como padrão [!UICONTROL Sandbox]_.
+* Se você não tiver lojas que usem [!DNL Payment Services] no modo Online, a seleção da fonte de dados assume como padrão _[!UICONTROL Sandbox]_.
 * Se você tiver lojas (uma ou várias) que usam [!DNL Payment Services] no modo Online, a seleção da fonte de dados assume como padrão _[!UICONTROL Live]_.
 * As exportações de relatório sempre seguem a seleção da fonte de dados.
 
 Para selecionar a fonte de dados para seu [!UICONTROL Order Payment Status] relatório:
 
 1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Clique em **[!UICONTROL Data source]** e selecione _[!UICONTROL Live]_ou [!UICONTROL Sandbox]_.
+1. Clique em **[!UICONTROL Data source]** e selecione _[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_.
 
    Os resultados do relatório são gerados com base na fonte de dados selecionada.
 
@@ -105,11 +105,23 @@ O relatório Status do Pagamento da Ordem mostra todas as colunas disponíveis d
 
 ## Exibir status
 
+A exibição do relatório Status do pagamento da Ordem mostra informações abrangentes sobre o status da transação e do pagamento para cada ordem dos Serviços de Pagamento.
+
+### Status da transação
+
 Por padrão, 30 dias de status de pagamento de ordem são mostrados na grade.
 
 Role para a esquerda e para a direita para exibir [informações sobre o status do pagamento da ordem](#column-descriptions), incluindo data de pedido, data autorizada, faturada, enviada, status de pagamento e muito mais.
 
 O número de linhas retornadas em uma pesquisa, ou mostradas nos status padrão de 30 dias de pagamento da ordem, são mostradas acima da grade de exibição Status do pagamento da ordem ao lado do filtro seletor de calendário Datas da ordem .
+
+### Status do pagamento
+
+A coluna Status do pagamento mostra o status atual de qualquer pagamento. A `Capture failed` pagamento mostra um status de alerta vermelho e um `Voided` pagamento mostra um status de alerta cinza.
+
+### Status do reembolso
+
+A coluna Status de reembolso mostra o status atual de qualquer reembolso. A `Capture failed` pagamento mostra um status de alerta vermelho e um `Voided` pagamento mostra um status de alerta cinza.
 
 ## Atualizar dados do relatório
 
