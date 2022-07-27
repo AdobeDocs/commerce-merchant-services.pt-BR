@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de versão"'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 169593cdf069f9ee95be5bcff3783cc8cfc82c3f
+source-git-commit: 78f17e82a820a8be73c6abc0ef25d1bb240ea238
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,8 @@ _29 de junho de 2022_
 ### Atualizações do serviço hospedado
 
 Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão, entre a versão atual da v1.2.0 e a versão anterior da 1.1.0 para o serviço hospedado.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-3420 --> O Apple Pay agora está disponível como um botão inteligente do PayPal. Essa [opção de pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permite que os clientes usem a ID de toque em seus dispositivos para usar o Apple Pay, que usa credenciais de pagamento de cartão de crédito e débito armazenadas em seus dispositivos iOS ou macOS.
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-1720 --> Os litígios para pedidos de armazenamento agora estão disponíveis em [o relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Você pode navegar diretamente para o PayPal Resolution Center (Centro de resolução do PayPal) de [!DNL Payment Services] tomar medidas em caso de litígio.
 
