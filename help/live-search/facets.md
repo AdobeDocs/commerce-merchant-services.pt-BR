@@ -2,9 +2,9 @@
 title: '"Aspectos"'
 description: '"[!DNL Live Search] as facetas usam várias dimensões de valores de atributos como critérios de pesquisa."'
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 238ce2f774207f387970d3c833e0a29f0ede6550
 workflow-type: tm+mt
-source-wordcount: '386'
+source-wordcount: '388'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Os requisitos de atributo de categoria e produto para lapidação são semelhant
 |--- |--- |
 | [Configurações de exibição de categoria](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Âncora - `Yes` |
 | [Propriedades do atributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo de entrada do catálogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
-| Propriedades da vitrine de atributos | Usar na navegação em camadas - `Filterable (with results)` |
+| Propriedades da vitrine de atributos | Usar na navegação em camadas dos resultados da pesquisa - `Yes` |
 
 ## Valores de atributo padrão
 
