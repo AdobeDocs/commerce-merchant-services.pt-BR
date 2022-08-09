@@ -1,9 +1,10 @@
 ---
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
+source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
 workflow-type: tm+mt
-source-wordcount: '2126'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
@@ -21,7 +22,7 @@ Neste tópico, você aprenderá a mapear os valores de evento da loja fornecidos
 
 Para coletar dados de evento do Commerce:
 
-- Instale o [SDK de evento do Adobe Commerce](https://www.npmjs.com/package/@adobe/magento-storefront-events-sdk). Para vitrines do PHP, consulte [instalar](install.md) tópico. Para vitrines do PWA Studio, consulte [guia PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
+- Instale o [SDK de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Para vitrines do PHP, consulte [instalar](install.md) tópico. Para vitrines do PWA Studio, consulte [guia PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
    >[!NOTE]
    >
@@ -161,7 +162,7 @@ Crie os seguintes elementos de dados:
    - **Nome**: `Account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
-   - **[Opcional] caminho**: `accountContext.accountEmail`
+   - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
@@ -210,7 +211,7 @@ Crie os seguintes elementos de dados:
    - **Nome**: `Account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
-   - **[Opcional] caminho**: `accountContext.accountEmail`
+   - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
@@ -259,7 +260,7 @@ Crie os seguintes elementos de dados:
    - **Nome**: `Account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
-   - **[Opcional] caminho**: `accountContext.accountEmail`
+   - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
@@ -344,12 +345,23 @@ Crie os seguintes elementos de dados:
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.sku`
 
-1. Código monetário:
+1. Moeda do produto:
 
-   - **Nome**: `Currency code`
+   - **Nome**: `Product currency`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.currencyCode`
+
+1. Código monetário:
+
+   - **Nome**: `Currency code`
+   - **Extensão**: `Core`
+   - **Tipo de elemento de dados**: `Custom Code`
+   - **Abrir editor**:
+
+   ```bash
+   return _satellite.getVar('product currency') || _satellite.getVar('storefront').storeViewCurrencyCode
+   ```
 
 1. Preço especial:
 
@@ -370,7 +382,11 @@ Crie os seguintes elementos de dados:
    - **Nome**: `Product price`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
-   - **Abrir editor**: `return _satellite.getVar('product regular price') || _satellite.getVar('product special price')`
+   - **Abrir editor**:
+
+   ```bash
+   return _satellite.getVar('product regular price') || _satellite.getVar('product special price')
+   ```
 
 1. Exibição do produto:
 
@@ -414,7 +430,7 @@ Crie os seguintes elementos de dados:
    - **Abrir editor**:
 
    ```bash
-   `return _satellite.getVar('search input').phrase;`
+   return _satellite.getVar('search input').phrase;
    ```
 
 1. Pesquisar classificação de entrada
@@ -517,7 +533,7 @@ Crie os seguintes elementos de dados:
    - **Abrir editor**:
 
    ```bash
-   return _satellite.getVar('search result').productCount;
+   return _satellite.getVar('search result').products.length;
    ```
 
 1. Produtos do resultado da pesquisa:
@@ -712,13 +728,13 @@ Crie os seguintes elementos de dados:
    - **Abrir editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -898,13 +914,13 @@ Crie os seguintes elementos de dados:
    - **Abrir editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,
@@ -1058,13 +1074,13 @@ Crie os seguintes elementos de dados:
    - **Abrir editor**:
 
    ```bash
-   const searchResult = _satellite.getVar('storefront');
+   const storefrontContext = _satellite.getVar('storefront');
    const cart = _satellite.getVar('cart');
    
    const returnList = [];
    cart.items.forEach(item => {
        const selectedOptions = [];
-       item.configurableOptions.forEach(option => {
+       item.configurableOptions?.forEach(option => {
            selectedOptions.push({
                attribute: option.optionLabel,
                value: option.valueLabel,

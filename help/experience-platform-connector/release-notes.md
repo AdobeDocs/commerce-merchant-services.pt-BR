@@ -2,14 +2,14 @@
 title: Notas de versão
 description: As informações mais recentes do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 3b71b8cd6ba0036d660d078a7f80371e7671ea9f
+source-git-commit: 1c881bd5783653304d71a7a4a3db9f3471bd0ae3
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '63'
+ht-degree: 6%
 
 ---
 
-# Notas de versão do conector do Experience Platform
+# Notas de versão
 
 Essas notas de versão descrevem as versões mais recentes do conector de Experience Platform e incluem:
 
@@ -17,11 +17,9 @@ Essas notas de versão descrevem as versões mais recentes do conector de Experi
 * ![Correção](../assets/fix.svg) - Correções e melhorias
 * ![Bug](../assets/bug.svg) - Problemas conhecidos
 
-## Conector de Experience Platform 1.1.0
+## Conector Experience Platform 1.0.0
 
-* Compatível com Adobe Commerce (EE): 2.4.4
-* Compatível com Adobe Commerce for Cloud (ECE): 2.4.4
-* Estabilidade: Estável
+* ![Novo](../assets/new.svg) - Versão de disponibilidade geral
 
 ## Documentação
 

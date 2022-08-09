@@ -2,16 +2,16 @@
 title: Criar eventos personalizados
 description: Saiba como criar eventos personalizados para conectar seus dados do Adobe Commerce a outros produtos Adobe DX.
 exl-id: 5a754106-c66a-4280-9896-6d065df8a841
-source-git-commit: ce437d7a991affd2665c86c9e91bb7f39ec626c0
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '213'
+source-wordcount: '222'
 ht-degree: 0%
 
 ---
 
 # Criar eventos personalizados
 
-É possível estender o [plataforma de eventos](events.md) ao criar seus próprios eventos de loja para coletar dados exclusivos do seu setor. Ao criar e configurar um evento personalizado, ele é enviado para a [Coletor de eventos do Adobe Commerce](https://www.npmjs.com/package/@adobe/magento-storefront-event-collector).
+É possível estender o [plataforma de eventos](events.md) ao criar seus próprios eventos de loja para coletar dados exclusivos do seu setor. Ao criar e configurar um evento personalizado, ele é enviado para a [Coletor de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
 ## Gerenciar eventos personalizados
 
@@ -21,7 +21,7 @@ Para qualquer `custom` , o coletor adiciona um `personId` (`ecid`) a `customCont
 
 Exemplo:
 
-Evento personalizado publicado por meio do SDK do MSE:
+Evento personalizado publicado pelo SDK de Eventos do Adobe Commerce:
 
 ```javascript
 mse.publish.custom({
@@ -53,7 +53,7 @@ Para qualquer evento com um conjunto `customContext`, o coletor substitui `perso
 
 Exemplos:
 
-Exibição de produto com substituições publicadas pelo SDK do MSE:
+Exibição de produto com substituições publicadas pelo SDK de Eventos do Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -78,7 +78,7 @@ No Experience Platform Edge:
 }
 ```
 
-A exibição de produto com Adobe Commerce substitui publicadas pelo SDK do MSE:
+A exibição de produto com o Adobe Commerce substitui publicadas pelo SDK de Eventos do Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({

@@ -1,9 +1,10 @@
 ---
 title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar seus dados de Comércio à Adobe Experience Platform.
-source-git-commit: 9b5f2da08167e22bbba504009bccc87d0ab02c48
+exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '372'
 ht-degree: 0%
 
 ---
@@ -34,7 +35,7 @@ A ID do conjunto de dados permite o encaminhamento de eventos do Adobe Experienc
 | Organização IMS (Global) | ID que pertence à organização que comprou o produto Adobe DX. Essa ID vincula sua instância do Adobe Commerce ao Adobe Experience Platform. |
 | ID do fluxo de dados (Storeview) | ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID pode ser associada a um storeView específico na instância específica do Adobe Commerce. |
 
-Com a extensão do conector Experience Platform instalada, o link entre o Adobe Commerce e o Adobe Experience Platform criado e a ID do conjunto de dados especificada, [!DNL Commerce] os dados começam a fluir para a borda do Adobe Experience Platform e para outros produtos Adobe DX.
+Com a extensão do conector Experience Platform instalada, o link entre o Adobe Commerce e o Adobe Experience Platform criado e a ID de fluxo de dados especificada, os dados do Commerce começam a fluir para a borda do Adobe Experience Platform e para outros produtos Adobe DX.
 
 ## Dados de comércio na borda
 

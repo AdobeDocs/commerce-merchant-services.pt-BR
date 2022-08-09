@@ -1,17 +1,17 @@
 ---
 title: Visão geral do guia
-description: O conector Adobe Experience Platform para Adobe Commerce conecta seu [!DNL Commerce] para outros produtos da Adobe Experience Cloud.
+description: O conector Adobe Experience Platform para Adobe Commerce conecta sua instância do Commerce a outros produtos da Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 15b7a8be65e5063606bb58755d0719b0ca54de37
+source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
 workflow-type: tm+mt
-source-wordcount: '500'
+source-wordcount: '528'
 ht-degree: 0%
 
 ---
 
 # Visão geral do conector Experience Platform
 
-A extensão do conector Experience Platform permite que os comerciantes da Adobe Commerce enviem dados para a borda do Adobe Experience Platform, de modo que outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target, possam usar essa [!DNL Commerce] dados. Ao conectar seu [!DNL Commerce] para outros produtos na Adobe Experience Cloud, você pode realizar tarefas, como analisar o comportamento do usuário em seu site, realizar testes AB e criar campanhas personalizadas.
+A extensão do conector Experience Platform permite que os comerciantes da Adobe Commerce enviem dados para a borda do Adobe Experience Platform para que outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target, possam usar esses dados do Commerce. Ao conectar seus dados do Commerce a outros produtos na Adobe Experience Cloud, você pode realizar tarefas, como analisar o comportamento do usuário no seu site, realizar testes AB e criar campanhas personalizadas.
 
 Eventos de vitrine capturam interações do comprador, como `View Page`, `View Product`, `Add to Cart`e assim por diante. Os dados capturados não incluem informações de identificação pessoal (PII). Todos os identificadores de usuário, como IDs de cookies e endereços IP, são estritamente anonimizados. [Saiba mais](https://www.adobe.com/privacy/experience-cloud.html). Veja a lista completa de [eventos storefront](events.md).
 
@@ -36,7 +36,7 @@ Quando o acesso é concedido:
 
 - Instale o [Extensão do conector Experience Platform](install.md).
 
-   A extensão Experience Platform connector é instalada a partir da linha de comando do servidor e se conecta à instalação do Adobe Commerce como uma [service](../landing/saas.md). Quando o processo estiver concluído, o conector de Experience Platform aparecerá no **Sistema** menu em **Serviços** no [!DNL Commerce] _Administrador_.
+   A extensão Experience Platform connector é instalada a partir da linha de comando do servidor e se conecta à instalação do Adobe Commerce como uma [service](../landing/saas.md). Quando o processo estiver concluído, o conector de Experience Platform aparecerá no **Sistema** menu em **Serviços** no Commerce _Administrador_.
 - [Fazer upload de perfis de consumidor](profile.md) para que os dados da loja possam ser atribuídos a compradores específicos para melhorar a experiência de compra.
 
 ## Público
@@ -54,8 +54,8 @@ Atualmente, o conector do Experience Platform tem os seguintes problemas conheci
 - Os eventos de pesquisa não são suportados em uma Adobe Commerce Enterprise Edition com o módulo B2B instalado.
 - Os dados de vitrine levam cerca de uma hora para chegar do Adobe Commerce aos vários destinos após se conectar à borda do Adobe Experience Platform.
 
-## Suporte
+Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, poste no seguinte canal do Slack:
-
-- `#beacon-ama`
+- [Central de ajuda](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
+- [Tíquetes de suporte](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — Envie um tíquete para receber ajuda adicional.
+- No Slack: `#beacon-ama`
