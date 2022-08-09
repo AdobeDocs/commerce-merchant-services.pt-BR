@@ -4,9 +4,9 @@ description: Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 68e615671f4e465d7fe89794613dbf129ae66dbf
 workflow-type: tm+mt
-source-wordcount: '606'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Depois que a configuração do aplicativo Store Assist for concluída, os Store 
 
 - Verifique se o dispositivo móvel atende à função [requisitos de hardware e software](solution-requirements.md#store-assist-app-requirements) para a solução Store Fulfillment.
 
-- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} ou o [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} ou o [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
 
 - As Associações de Armazenamento exigem as seguintes informações para fazer logon:
 
