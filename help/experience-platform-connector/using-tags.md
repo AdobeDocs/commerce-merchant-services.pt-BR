@@ -2,9 +2,9 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: b5fb915f6ffcc24e72310bc79cba4b08a65128e3
+source-git-commit: 4af50842c883d3aef7bf50d6a68b82321b784591
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2276'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Por exemplo, vamos adicionar a Adobe Commerce `signOut` para tags Adobe Experien
    ![Criar novo elemento de dados](assets/create-new-data-elements.png)
    _Criar novo elemento de dados_
 
-1. Definir **Nome** para `Sign out`.
+1. Definir **Nome** para `sign out`.
 
 1. Definir **Extensão** para `Adobe Experience Platform Web SDK`.
 
@@ -76,16 +76,22 @@ Por exemplo, vamos adicionar a Adobe Commerce `signOut` para tags Adobe Experien
    ![Atualizar valor de Sair](assets/signout-value.png)
    _Atualizar valor de Sair_
 
+1. Selecionar **Salvar**.
+
 1. Criar uma regra:
 
    ![Criar nova regra](assets/create-new-rule.png)
    _Criar nova regra_
+
+1. Selecionar **Adicionar** under **EVENTOS**.
 
 1. Definir **Extensão** para `Adobe Client Data Layer`.
 
 1. Definir **Tipo de evento** para `Data Pushed`.
 
 1. Selecionar **Evento específico** e defina a **Evento/Chave para registrar-se para** para `sign-out`.
+
+1. Selecionar **Manter alterações** para salvar a nova regra.
 
 1. Adicione uma ação .
 
@@ -159,36 +165,44 @@ Crie os seguintes elementos de dados:
 
 1. E-mail da conta:
 
-   - **Nome**: `Account email`
+   - **Nome**: `account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
-   - **Nome**: `Account type`
+   - **Nome**: `account type`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
 1. ID da conta:
 
-   - **Nome**: `Account ID`
+   - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho***: `accountContext.accountId`
 
 1. Fazer logon:
 
-   - **Nome**: `Sign in`
+   - **Nome**: `sign in`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
+   - **Grupo de campos**: `person` > `accountID`
+   - **ID da conta**: **Valor** = `%account id%`
+   - **Grupo de campos**: `person` > `accountType`
+   - **Tipo de conta**: **Valor** = `%account type%`
+   - **Grupo de campos**: `person` > `personalEmailID`
+   - **Endereço de email pessoal**: **Valor** = `%account email%`
+   - **Grupo de campos**: `personalEmail` > `address`
+   - **Endereço**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `login`
    - **Logon do visitante**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Sign in`
+- **Nome**: `sign in`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `sign-in`
@@ -198,7 +212,7 @@ Crie os seguintes elementos de dados:
 - **Extensão**: `Adobe Experience Platform Web SDK`
 - **Tipo de ação**: `Send event`
 - **Tipo**: `userAccount.login`
-- **Dados XDM**: `%sign-in%`
+- **Dados XDM**: `%sign in%`
 
 ### createAccount {#createaccount}
 
@@ -208,30 +222,38 @@ Crie os seguintes elementos de dados:
 
 1. E-mail da conta:
 
-   - **Nome**: `Account email`
+   - **Nome**: `account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
-   - **Nome**: `Account type`
+   - **Nome**: `account type`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
 1. ID da conta:
 
-   - **Nome**: `Account ID`
+   - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
-   - **[Opcional] caminho***: `accountContext.accountId`
+   - **[Opcional] caminho**: `accountContext.accountId`
 
 1. Criar conta:
 
    - **Nome**: `Create account`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
+   - **Grupo de campos**: `person` > `accountID`
+   - **ID da conta**: **Valor** = `%account id%`
+   - **Grupo de campos**: `person` > `accountType`
+   - **Tipo de conta**: **Valor** = `%account type%`
+   - **Grupo de campos**: `person` > `personalEmailID`
+   - **Endereço de email pessoal**: **Valor** = `%account email%`
+   - **Grupo de campos**: `personalEmail` > `address`
+   - **Endereço**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `createProfile`
    - **Criação de perfil da conta**: **Valor** = `1`
 
@@ -257,30 +279,38 @@ Crie os seguintes elementos de dados:
 
 1. E-mail da conta:
 
-   - **Nome**: `Account email`
+   - **Nome**: `account email`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Tipo de conta:
 
-   - **Nome**: `Account type`
+   - **Nome**: `account type`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
 1. ID da conta:
 
-   - **Nome**: `Account ID`
+   - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
-   - **[Opcional] caminho***: `accountContext.accountId`
+   - **[Opcional] caminho**: `accountContext.accountId`
 
 1. Editar conta:
 
    - **Nome**: `Edit account`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
+   - **Grupo de campos**: `person` > `accountID`
+   - **ID da conta**: **Valor** = `%account id%`
+   - **Grupo de campos**: `person` > `accountType`
+   - **Tipo de conta**: **Valor** = `%account type%`
+   - **Grupo de campos**: `person` > `personalEmailID`
+   - **Endereço de email pessoal**: **Valor** = `%account email%`
+   - **Grupo de campos**: `personalEmail` > `address`
+   - **Endereço**: **Valor** = `%account email%`
    - **Grupo de campos**: `userAccount` > `updateProfile`
    - **Criação de perfil da conta**: **Valor** = `1`
 
@@ -306,17 +336,17 @@ Crie os seguintes elementos de dados:
 
 1. Nome da página:
 
-   - **Nome**: `Page name`
+   - **Nome**: `page name`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `pageContext.pageName`
 
 #### Regras 
 
-- **Nome**: `Page view`
+- **Nome**: `page view`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
-- **Evento específico**: `Core-Library Loaded`
+- **Evento específico**: `page-view`
 
 ##### Ações
 
@@ -333,28 +363,28 @@ Crie os seguintes elementos de dados:
 
 1. Nome do produto:
 
-   - **Nome**: `Product name`
+   - **Nome**: `product name`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.name`
 
 1. SKU do produto:
 
-   - **Nome**: `Product sku`
+   - **Nome**: `product sku`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.sku`
 
 1. Moeda do produto:
 
-   - **Nome**: `Product currency`
+   - **Nome**: `product currency`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.currencyCode`
 
 1. Código monetário:
 
-   - **Nome**: `Currency code`
+   - **Nome**: `currency code`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -365,21 +395,21 @@ Crie os seguintes elementos de dados:
 
 1. Preço especial:
 
-   - **Nome**: `Special price`
+   - **Nome**: `special price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.specialPrice`
 
 1. Preço normal:
 
-   - **Nome**: `Regular price`
+   - **Nome**: `regular price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.regularPrice`
 
 1. Preço do produto:
 
-   - **Nome**: `Product price`
+   - **Nome**: `product price`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -390,14 +420,24 @@ Crie os seguintes elementos de dados:
 
 1. Exibição do produto:
 
-   - **Nome**: `Product view`
+   - **Nome**: `product view`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Selecionar **Fornecer itens individuais** e clique no botão **Adicionar item** botão. Como essa exibição é para um PDP, você pode preencher com um único item.
+   - **Grupo de campos**: `productListItems` > `name`
+   - **Nome**: **Valor** = `%product name%`
+   - **Grupo de campos**: `productListItems` > `SKU`
+   - **SKU**: **Valor** = `%product sku%`
+   - **Grupo de campos**: `productListItems` > `priceTotal`
+   - **Preço total**: **Valor** = `%product price%`
+   - **Grupo de campos**: `productListItems` > `currencyCode`
+   - **Código monetário**: **Valor** = `%currency code%`
+   - **Grupo de campos**: `commerce` > `productViews` > `value`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Product view`
+- **Nome**: `product view`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `product-page-view`
@@ -417,14 +457,14 @@ Crie os seguintes elementos de dados:
 
 1. Entrada de pesquisa
 
-   - **Nome**: `Search input`
+   - **Nome**: `search input`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `searchInputContext.units[0]`
 
 1. Pesquisar frase de entrada
 
-   - **Nome**: `Search input phrase`
+   - **Nome**: `search input phrase`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -435,7 +475,7 @@ Crie os seguintes elementos de dados:
 
 1. Pesquisar classificação de entrada
 
-   - **Nome**: `Search input sort`
+   - **Nome**: `search input sort`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -454,7 +494,7 @@ Crie os seguintes elementos de dados:
 
 1. Pesquisar filtros de entrada
 
-   - **Nome**: `Search input filters`
+   - **Nome**: `search input filters`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -488,7 +528,7 @@ Crie os seguintes elementos de dados:
 
 1. Solicitação de pesquisa:
 
-   - **Nome**: `Search request`
+   - **Nome**: `search request`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `siteSearch` > `phrase`
@@ -500,7 +540,7 @@ Crie os seguintes elementos de dados:
 
 #### Regras 
 
-- **Nome**: `Search request sent`
+- **Nome**: `search request sent`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `search-request-sent`
@@ -520,14 +560,14 @@ Crie os seguintes elementos de dados:
 
 1. Resultados da pesquisa:
 
-   - **Nome**: `Search results`
+   - **Nome**: `search results`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `searchResultsContext.units[0]`
 
 1. Número de produtos do resultado da pesquisa:
 
-   - **Nome**: `Search result number of products`
+   - **Nome**: `search result number of products`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -538,7 +578,7 @@ Crie os seguintes elementos de dados:
 
 1. Produtos do resultado da pesquisa:
 
-   - **Nome**: `Search result products`
+   - **Nome**: `search result products`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -556,7 +596,7 @@ Crie os seguintes elementos de dados:
 
 1. Sugestões do resultado da pesquisa:
 
-   - **Nome**: `Search result products`
+   - **Nome**: `search result products`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -570,19 +610,21 @@ Crie os seguintes elementos de dados:
 
 1. Resposta de pesquisa:
 
-   - **Nome**: `Search response`
+   - **Nome**: `search response`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `siteSearch` > `suggestions`. Selecionar **Fornecer todo o objeto**.
+   - **Elemento de dados**: `%search result suggestions%`
    - **Grupo de campos**: `siteSearch` > `numberOfResults`
    - **value**: `%search result number of products%`
    - **Grupo de campos**: `productListItems`. Selecionar **Fornecer todo o objeto**.
+   - **Elemento de dados**: `%search result products%`
    - **Grupo de campos**: `searchResponse` > `value`
    - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Search Response Received`
+- **Nome**: `search response received`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `search-response-received`
@@ -602,42 +644,42 @@ Crie os seguintes elementos de dados:
 
 1. Nome do produto:
 
-   - **Nome**: `Product name`
+   - **Nome**: `product name`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.name`
 
 1. SKU do produto:
 
-   - **Nome**: `Product sku`
+   - **Nome**: `product sku`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.sku`
 
 1. Código monetário:
 
-   - **Nome**: `Currency code`
+   - **Nome**: `currency code`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.currencyCode`
 
 1. Preço especial do produto:
 
-   - **Nome**: `Product special price`
+   - **Nome**: `product special price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.specialPrice`
 
 1. Preço normal do produto:
 
-   - **Nome**: `Product regular price`
+   - **Nome**: `product regular price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.regularPrice`
 
 1. Preço do produto:
 
-   - **Nome**: `Product price`
+   - **Nome**: `product price`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -648,14 +690,14 @@ Crie os seguintes elementos de dados:
 
 1. Carrinho:
 
-   - **Nome**: `Cart`
+   - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
 
 1. ID do carrinho:
 
-   - **Nome**: `Cart id`
+   - **Nome**: `cart id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -666,18 +708,26 @@ Crie os seguintes elementos de dados:
 
 1. Adicionar ao carrinho:
 
-   - **Nome**: `Add to cart`
+   - **Nome**: `add to cart`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Selecionar **Fornecer itens individuais** e clique no botão **Adicionar item** botão. Como essa exibição é para um PDP, você pode preencher com um único item.
+   - **Grupo de campos**: `productListItems` > `name`
+   - **Nome**: **Valor** = `%product name%`
+   - **Grupo de campos**: `productListItems` > `SKU`
+   - **SKU**: **Valor** = `%product sku%`
+   - **Grupo de campos**: `productListItems` > `priceTotal`
+   - **Preço total**: **Valor** = `%product price%`
+   - **Grupo de campos**: `productListItems` > `currencyCode`
+   - **Código monetário**: **Valor** = `%currency code%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID do carrinho**: **Valor** = `%cart id%`
-   - **Grupo de campos**: `commerce` > `productListAdds` > `id`
-   - **Identificador exclusivo**: **value** = `1`
+   - **Grupo de campos**: `commerce` > `productListAdds` > `value`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Add to cart`
+- **Nome**: `add to cart`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `add-to-cart`
@@ -697,21 +747,21 @@ Crie os seguintes elementos de dados:
 
 1. Loja:
 
-   - **Nome**: `Storefront`
+   - **Nome**: `storefront`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `storefrontInstanceContext`
 
 1. Carrinho:
 
-   - **Nome**: `Cart`
+   - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
 
 1. ID do carrinho:
 
-   - **Nome**: `Cart id`
+   - **Nome**: `cart id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -722,7 +772,7 @@ Crie os seguintes elementos de dados:
 
 1. Itens da lista de produtos:
 
-   - **Nome**: `Product list items:`
+   - **Nome**: `product list items:`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -757,18 +807,19 @@ Crie os seguintes elementos de dados:
 
 1. Exibir carrinho:
 
-   - **Nome**: `View cart`
+   - **Nome**: `view cart`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, pode haver vários itens pré-calculados. Selecionar **productListItems** > **Preencher toda a matriz**.
+   - **Elemento de dados**: `%product list items%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID do carrinho**: **Valor** = `%cart id%`
-   - **Grupo de campos**: `commerce` > `productListAdds` > `id`
-   - **Identificador exclusivo**: **value** = `1`
+   - **Grupo de campos**: `commerce` > `productListViews` > `value`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `View cart`
+- **Nome**: `view cart`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `shopping-cart-view`
@@ -788,42 +839,42 @@ Crie os seguintes elementos de dados:
 
 1. Nome do produto:
 
-   - **Nome**: `Product name`
+   - **Nome**: `product name`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.name`
 
 1. SKU do produto:
 
-   - **Nome**: `Product sku`
+   - **Nome**: `product sku`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.sku`
 
 1. Código monetário:
 
-   - **Nome**: `Currency code`
+   - **Nome**: `currency code`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.currencyCode`
 
 1. Preço especial do produto:
 
-   - **Nome**: `Product special price`
+   - **Nome**: `product special price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.specialPrice`
 
 1. Preço normal do produto:
 
-   - **Nome**: `Product regular price`
+   - **Nome**: `product regular price`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.pricing.regularPrice`
 
 1. Preço do produto:
 
-   - **Nome**: `Product price`
+   - **Nome**: `product price`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -834,14 +885,14 @@ Crie os seguintes elementos de dados:
 
 1. Carrinho:
 
-   - **Nome**: `Cart`
+   - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
 
 1. ID do carrinho:
 
-   - **Nome**: `Cart id`
+   - **Nome**: `cart id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -852,18 +903,26 @@ Crie os seguintes elementos de dados:
 
 1. Remover do carrinho:
 
-   - **Nome**: `Remove from cart`
+   - **Nome**: `remove from cart`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Selecionar **Fornecer itens individuais** e clique no botão **Adicionar item** botão. Como essa exibição é para um PDP, você pode preencher com um único item.
+   - **Grupo de campos**: `productListItems` > `name`
+   - **Nome**: **Valor** = `%product name%`
+   - **Grupo de campos**: `productListItems` > `SKU`
+   - **SKU**: **Valor** = `%product sku%`
+   - **Grupo de campos**: `productListItems` > `priceTotal`
+   - **Preço total**: **Valor** = `%product price%`
+   - **Grupo de campos**: `productListItems` > `currencyCode`
+   - **Código monetário**: **Valor** = `%currency code%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID do carrinho**: **Valor** = `%cart id%`
-   - **Grupo de campos**: `commerce` > `productListRemovals`
-   - **Identificador exclusivo**: **value** = `1`
+   - **Grupo de campos**: `commerce` > `productListRemovals` > `value`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Remove from cart`
+- **Nome**: `remove from cart`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `remove-from-cart`
@@ -883,21 +942,21 @@ Crie os seguintes elementos de dados:
 
 1. Loja:
 
-   - **Nome**: `Storefront`
+   - **Nome**: `storefront`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `storefrontInstanceContext`
 
 1. Carrinho:
 
-   - **Nome**: `Cart`
+   - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
 
 1. ID do carrinho:
 
-   - **Nome**: `Cart id`
+   - **Nome**: `cart id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -908,7 +967,7 @@ Crie os seguintes elementos de dados:
 
 1. Itens da lista de produtos:
 
-   - **Nome**: `Product list items`
+   - **Nome**: `product list items`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -943,18 +1002,19 @@ Crie os seguintes elementos de dados:
 
 1. Iniciar check-out:
 
-   - **Nome**: `Initiate checkout`
+   - **Nome**: `initiate checkout`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, pode haver vários itens pré-calculados. Selecionar **productListItems** > **Preencher toda a matriz**.
+   - **Elemento de dados**: `%product list items%`
    - **Grupo de campos**: `commerce` > `cart` > `cartID`
    - **ID do carrinho**: **Valor** = `%cart id%`
-   - **Grupo de campos**: `commerce` > `checkouts`
-   - **Identificador exclusivo**: **value** = `1`
+   - **Grupo de campos**: `commerce` > `checkouts` > `value`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Initiate checkout`
+- **Nome**: `initiate checkout`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `initiate-checkout`
@@ -974,21 +1034,21 @@ Crie os seguintes elementos de dados:
 
 1. Loja:
 
-   - **Nome**: `Storefront`
+   - **Nome**: `storefront`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `storefrontInstanceContext`
 
 1. Carrinho:
 
-   - **Nome**: `Cart`
+   - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
 
 1. ID do carrinho:
 
-   - **Nome**: `Cart id`
+   - **Nome**: `cart id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -999,14 +1059,14 @@ Crie os seguintes elementos de dados:
 
 1. Pedido:
 
-   - **Nome**: `Order`
+   - **Nome**: `order`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `orderContext`
 
 1. Pedido de comércio:
 
-   - **Nome**: `Commerce order`
+   - **Nome**: `commerce order`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -1042,7 +1102,7 @@ Crie os seguintes elementos de dados:
 
 1. Envio de pedidos:
 
-   - **Nome**: ` Order shipping`
+   - **Nome**: `order shipping`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -1057,7 +1117,7 @@ Crie os seguintes elementos de dados:
 
 1. ID de promoção:
 
-   - **Nome**: `Promotion id`
+   - **Nome**: `promotion id`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -1068,7 +1128,7 @@ Crie os seguintes elementos de dados:
 
 1. Itens da lista de produtos:
 
-   - **Nome**: `Product list items`
+   - **Nome**: `product list items`
    - **Extensão**: `Core`
    - **Tipo de elemento de dados**: `Custom Code`
    - **Abrir editor**:
@@ -1103,22 +1163,23 @@ Crie os seguintes elementos de dados:
 
 1. Colocar pedido:
 
-   - **Nome**: `Place order`
+   - **Nome**: `place order`
    - **Extensão**: `Adobe Experience Platform Web SDK`
    - **Tipo de elemento de dados**: `XDM object`
    - **Grupo de campos**: `productListItems`. Para `productListItems`, pode haver vários itens pré-calculados. Selecionar **productListItems** > **Preencher toda a matriz**.
+   - **Elemento de dados**: `%product list items%`
    - **Grupo de campos**: `commerce` > `order`
    - **Identificador exclusivo**: **Valor** = `%commerce order%`
    - **Grupo de campos**: `commerce` > `shipping`
-   - **Identificador exclusivo**: **value** = ` %order shipping%`
+   - **Identificador exclusivo**: **Valor** = `%order shipping%`
    - **Grupo de campos**: `commerce` > `promotionID`
    - **ID de promoção**: **Valor** = `%promotion id%`
    - **Grupo de campos**: `commerce` > `purchases` > `value`
-   - **Valor**: **Valor** = `1`
+   - **value**: **Valor** = `1`
 
 #### Regras 
 
-- **Nome**: `Place order`
+- **Nome**: `place order`
 - **Extensão**: `Adobe Client Data Layer`
 - **Tipo de evento**: `Data Pushed`
 - **Evento específico**: `place-order`

@@ -2,9 +2,9 @@
 title: Visão geral do guia
 description: O conector Adobe Experience Platform para Adobe Commerce conecta sua instância do Commerce a outros produtos da Adobe Experience Cloud.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: 2b735c292920bb0e9052d86bf152748e7ce96079
+source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
 workflow-type: tm+mt
-source-wordcount: '528'
+source-wordcount: '526'
 ht-degree: 0%
 
 ---
@@ -58,4 +58,3 @@ Se você precisar de informações ou se tiver dúvidas que não são abordadas 
 
 - [Central de ajuda](https://support.magento.com/hc/en-us){target=&quot;_blank&quot;}
 - [Tíquetes de suporte](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket){target=&quot;_blank&quot;} — Envie um tíquete para receber ajuda adicional.
-- No Slack: `#beacon-ama`
