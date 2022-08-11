@@ -2,11 +2,11 @@
 user-guide-title: '"[!DNL Store FulFillment Guide]"'
 user-guide-description: Informações detalhadas sobre a instalação, configuração e uso do Cumprimento da loja para Adobe Commerce stores.
 breadcrumb-title: Armazenar o fornecimento para o Adobe Commerce
-index: false
-source-git-commit: 87818d3a0eb8f0cb4bc9fac2aef3c56a2e620aaf
+index: true
+source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
 workflow-type: tm+mt
-source-wordcount: '84'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
