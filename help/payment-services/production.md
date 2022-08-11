@@ -2,16 +2,20 @@
 title: Habilitar [!DNL Payment Services] para produção
 description: Conclua o processo de integração habilitando [!DNL Payment Services] para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 51722d7045ccb6ccfdc7ab5bd93d5ca46b52cf03
+source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
 workflow-type: tm+mt
-source-wordcount: '709'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Habilitar [!DNL Payment Services] para produção
 
-Após a extensão dos Serviços de Pagamentos ser [instalado](install.md), sua instância é [configurado e conectado](connect.md)e você [configurar a sandbox](sandbox.md) e testado, você pode continuar colocando o serviço em produção e concluir a [processo de integração](onboard.md).
+Você pode colocar o serviço em produção e concluir a [processo de integração](onboard.md), de acordo com as etapas neste tópico, depois de:
+
+* [Instalar](install.md) a extensão dos serviços de pagamento
+* [Configurar e conectar](connect.md) sua instância
+* [Configurar](sandbox.md) e [teste](test-validate.md) seu sandbox
 
 ## Definir [!DNL Payment Services] como método de pagamento
 
