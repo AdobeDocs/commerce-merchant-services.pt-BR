@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Notas de versão"'
-description: '"As informações mais recentes da versão para [!DNL Catalog Service] para Adobe Commerce."'
-source-git-commit: 3959cc5d07f9a0da0ba772a4f3bc56adeb3c6bf3
+title: '''[!DNL Catalog Service] Notas de versão'''
+description: As últimas informações da versão para [!DNL Catalog Service] para Adobe Commerce.
+exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
+source-git-commit: 72913e0c0b7364e38d37fe1a8279c40a4e849c02
 workflow-type: tm+mt
-source-wordcount: '146'
-ht-degree: 2%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Notas de versão
 
@@ -32,6 +32,7 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Catalog Serv
 
 ## Limitações conhecidas
 
+* Não há suporte para pacotes e produtos agrupados.
 * Os preços de camada não são suportados.
 * Em uma matriz de imagens, somente a primeira imagem contém funções.
 * As imagens para variantes não são recuperadas.
