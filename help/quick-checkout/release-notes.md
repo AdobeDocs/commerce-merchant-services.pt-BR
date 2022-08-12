@@ -2,9 +2,9 @@
 title: '''[!DNL Quick Checkout] Notas de versão'''
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 6162141e1ddf4428126178bd172e8d9bd250c485
+source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
 workflow-type: tm+mt
-source-wordcount: '263'
+source-wordcount: '320'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,17 @@ Consulte [Próximas versões](https://devdocs.magento.com/release/) para saber m
 
 Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html) na documentação do desenvolvedor para saber mais sobre compatibilidade de produtos.
 
+## v1.1.0
+
+_12 de agosto de 2022_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-375 --> Melhorias na experiência do usuário em [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) agora inclui apenas os parâmetros que estão visíveis e validados quando a extensão está ativada.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-349 --> Melhorias de compatibilidade para endereços de envio existentes com a wallet Bolt.
+
 ## v1.0.0
+
+_9 de agosto de 2022_
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-341 --> Versão geral de disponibilidade—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) O agora é compatível com as versões 2.4.1 a 2.4.4 do Adobe Commerce.
 
@@ -41,4 +51,6 @@ Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-288 --> Personalizado [duração da sessão do usuário](user-session-lifetime.md) para [!DNL Quick Checkout] para Adobe Commerce.
 
-![Problema conhecido](../assets/bug.svg)<!-- Issue BOLT-342 --> Usando [chaves do Composer incorretas](https://support.magento.com/hc/en-us/articles/6909450342541) durante a instalação do [!DNL Quick Checkout] impede que o usuário [autenticação](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) com as `MAGEID`.
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-375 --> Melhorias na experiência do usuário em [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) O permite salvar sua configuração quando todos os parâmetros necessários forem fornecidos.
+
+![Problema conhecido](../assets/bug.svg)<!-- Issue BOLT-342 --> Frequentes [solução de problemas](https://support.magento.com/hc/en-us/articles/6909450342541) problemas durante a instalação de [!DNL Quick Checkout].
