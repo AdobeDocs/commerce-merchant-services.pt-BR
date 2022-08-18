@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentação
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: 24a82d4ccf492237f50a7cb08d8c0bcf57b43a61
+source-git-commit: 9dd9564a45aa1de13bbdaed81d79fe136b55cb68
 workflow-type: tm+mt
-source-wordcount: '475'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -79,18 +79,18 @@ O Adobe fornece uma coleção de serviços para ajudar os comerciantes a suporta
 
 O [Conector do Commerce Services](saas.md) O fornece a integração para a instância do Adobe Commerce ou Magento Open Source usando uma chave API e uma chave privada. Para serviços de dados (somente Adobe Commerce), também é possível especificar o espaço de dados na configuração.
 
-## Sincronização do catálogo
+## Serviço de catálogo
 
-Para serviços que usam dados de catálogo (Recommendations do Produto e Live Search), a variável [Sincronização do catálogo](catalog-sync.md) O processa exportações de dados do produto do servidor Commerce para o Commerce Services de forma contínua, a fim de manter os serviços atualizados.
+O Serviço de catálogo fornece dados avançados de catálogo somente leitura para renderizar de forma rápida e completa o conteúdo relacionado ao produto na loja, incluindo páginas de detalhes do produto e páginas de lista de produtos. Ele oferece aos clientes uma experiência de produto otimizada, além de melhorar o desempenho, melhorar a escalabilidade e aumentar as conversões.
 
 ## Novidades
 
 Os itens a seguir são alterações recentes na documentação:
 
-* Atualização do [!DNL Live Search] notas de versão da [Versão 2.0](/help/live-search/release-notes.md).
-* Adição de uma seção (_Limites e limites_) à [Instalar [!DNL Live Search]](/help/live-search/install.md) tópico.
-* Adicionado [[!DNL Payment Services] guia](/help/payment-services/guide-overview.md) com as informações mais recentes da nova extensão do marketplace e do serviço hospedado v1.0.0.
-* O [!DNL Live Search] [Painel de relatórios de desempenho](/help/live-search/performance.md) fornece informações sobre a eficácia dos termos de pesquisa que os compradores usam.
-* Adição de suporte B2B em [[!DNL Product Recommendations]](/help/product-recommendations/overview.md).
-* Adicionado o [[!DNL Channel Manager User Guide]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html) para clientes que desejam gerenciar as vendas do Walmart a partir de seus [!DNL Commerce] instância.
-* Adicionado o [[!DNL Store Fulfillment User Guide]](https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html) para clientes que desejam melhorar sua compra on-line, escolha na loja (BOPIS) experiência do cliente e forneça um fluxo de trabalho de cumprimento de omnicanal habilitado para dispositivos móveis e perfeito para retirada na loja e na curbside.
+* *Serviços de pagamento*—Foram adicionadas instruções para [download da extensão](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/install.html#download-the-extension), melhoria do fluxo de trabalho de [conectar-se ao Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html)e [informações adicionadas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html) ao tópico Conectar o serviço para o usuário determinar se seus serviços já estão conectados (e o que fazer se não estiverem).
+* Agora disponível!—[Serviço de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/overview.html) para Adobe Commerce
+* *Live Search*—Novas informações adicionadas a [Instalar o Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html) e [Visão geral da integração](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/onboarding-overview.html) tópicos sobre o mecanismo de pesquisa OpenSearch introduzido em novos módulos (para disponibilidade no Adobe Commerce v2.4.6).
+* *Conector Experience Platform*—Adição de um tópico [sobre o uso de tags](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/event-forwarding/using-tags.html) e um tópico [sobre como fazer upload de um perfil de comprador](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/profile.html) tópicos que explicam como criar perfis e usar a tag AEP.
+* *Check-out rápido*—Melhorado [Tópico de integração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) reorganizando etapas e incluindo as alterações mais recentes do produto presentes na interface do usuário do administrador.
+* *Serviços de pagamento*—[Apple Pay disponível](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) em Serviços de pagamento.
+* *Conector Experience Platform*—Adição de um novo [tópico sobre como atualizar o esquema XDM](https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/fundamentals/update-xdm.html) com nomes de campo específicos do Adobe Commerce.
