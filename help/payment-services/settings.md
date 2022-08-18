@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 60d04755b29f107a0543bd71e19ca5b2b6997b4d
+source-git-commit: ecfe1448a0272fe5401090b322f4b69dffd1a8fa
 workflow-type: tm+mt
-source-wordcount: '1032'
+source-wordcount: '1087'
 ht-degree: 0%
 
 ---
@@ -108,6 +108,8 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
       >
       > Para usar o Apple Pay [deve ter uma conta de desenvolvedor do Apple](test-validate.md#test-in-sandbox-environment) (completo com informações falsas de cartão de crédito e faturamento) para testá-lo. Quando estiver pronto para usar o Apple Pay na sandbox *ou* modo de produção, após concluir qualquer [teste e validação](test-validate.md), entre em contato com seu representante de vendas para ativá-lo em sua(s) loja(s) ativa(s).
 
+      À medida que você ativa/desativa a visibilidade dos botões de pagamento ou da mensagem Pagamento PayPal Mais Tarde, uma visualização dessa configuração é exibida na parte inferior da página Configurações.
+
 1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 1. Clique em **[!UICONTROL Save]**.
 
@@ -145,6 +147,9 @@ Você também pode configurar o _[!UICONTROL Button style]_opções dos botões 
 1. Para modificar o **[!UICONTROL Shape]**, selecione `Pill` ou `Rect`.
 1. Para ativar o seletor de altura do botão, alterne a **[!UICONTROL Responsive button height]** seletor.
 1. Para modificar o **[!UICONTROL Label]**, selecione a opção de rótulo desejada.
+
+   À medida que você altera as opções de configuração para layout, cor, forma, altura e rótulo, uma visualização dessa configuração é exibida na parte inferior da página Configurações.
+
 1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
