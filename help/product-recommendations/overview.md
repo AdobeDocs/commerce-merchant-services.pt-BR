@@ -1,14 +1,15 @@
 ---
-title: Visão geral
-description: '"[!DNL Product Recommendations] são uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador."'
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+title: Introdução ao [!DNL Product Recommendations]
+description: '''[!DNL Product Recommendations] são uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador.'
+exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '360'
 ht-degree: 0%
 
 ---
 
-# Visão geral
+# Introdução ao [!DNL Product Recommendations]
 
 As recomendações de produto são uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o envolvimento do comprador. As recomendações de produto do Adobe Commerce são fornecidas por [Adobe Sensei](https://www.adobe.com/sensei.html), que usa inteligência artificial e algoritmos de aprendizado automatizado para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados ao seu catálogo do Adobe Commerce, resultam em uma experiência altamente envolvente, relevante e personalizada.
 
@@ -31,3 +32,9 @@ As recomendações de produto permitem:
 - Escolha entre nove tipos de recomendação inteligentes distintos com base nas seguintes áreas: baseado em compras, baseado em itens, baseado em popularidade, tendência e baseado em similaridade
 - Usar dados comportamentais para personalizar recomendações na jornada da loja do comprador
 - Meça as métricas principais relevantes para cada recomendação para ajudá-lo a entender o impacto de suas recomendações
+
+## [!DNL Product Recommendations] demonstração
+
+Assista a este vídeo para saber mais sobre [!DNL Product Recommendations]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343991?quality=12)

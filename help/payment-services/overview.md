@@ -4,9 +4,9 @@ description: Saiba como instalar e usar o [!DNL Payment Services] como uma solu�
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 3f753f6a91c9f2c29def90d323c004a689056e71
 workflow-type: tm+mt
-source-wordcount: '384'
+source-wordcount: '391'
 ht-degree: 0%
 
 ---
@@ -67,3 +67,9 @@ Integração e configuração [!DNL Payment Services] O é concluído em apenas 
 1. Ativar [!DNL Payment Services] no modo Online para começar a processar pagamentos em tempo real.
 
 Para obter as instruções completas e iniciar o processo de integração, consulte [Integrado [!DNL Payment Services]](onboard.md).
+
+## [!DNL Payment Services] demonstração
+
+Assista a este vídeo para saber mais sobre [!DNL Payment Services]:
+
+>[!VIDEO](https://video.tv.adobe.com/v/343990?quality=12)
