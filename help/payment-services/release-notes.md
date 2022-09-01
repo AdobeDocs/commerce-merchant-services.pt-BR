@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de versão"'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4489fb72eb6b6066aa2a1360d5d8c9af533e99ee
+source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
 workflow-type: tm+mt
-source-wordcount: '924'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
@@ -22,6 +22,32 @@ Para ver as alterações e correções dos recursos lançadas fora da versão no
 Consulte [Próximas versões](https://devdocs.magento.com/release/) para saber mais sobre os cronogramas de lançamento e suporte.
 
 Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html) na documentação do desenvolvedor para saber mais sobre compatibilidade de produtos.
+
+## Atualizações do serviço hospedado
+
+Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão para o serviço hospedado.
+
++++Atualizações do serviço hospedado
+
+_31 de agosto de 2022_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3629 --> Quando um novo comerciante acessa a Página inicial dos Serviços de Pagamento pela primeira vez, a página agora é carregada imediatamente para exibir o conteúdo, em vez de exigir uma atualização da página.
+
+_9 de agosto de 2021_
+
+![Novo](../assets/new.svg)<!-- Issue PAY-3420 --> O Apple Pay agora está disponível como um botão inteligente do PayPal. Essa [opção de pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permite que os clientes usem o recurso de ID de toque em seus dispositivos iOS ou macOS para selecionar o Apple Pay. O Apple Pay processa o pagamento usando as credenciais de pagamento de cartão de crédito e débito armazenadas no dispositivo.
+
+_28 de junho de 2021_
+
+![Novo](../assets/new.svg)<!-- Issue PAY-1720 --> Os litígios para pedidos de armazenamento agora estão disponíveis em [o relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Você pode tomar medidas em disputas navegando diretamente para o Centro de Resolução do PayPal de [!DNL Payment Services].
+
+![Novo](../assets/new.svg)<!-- Issue PAY-2854 --> Melhorias na experiência do usuário em [!DNL Payment Services] Home inclui a capacidade de modificar uma configuração no nível de herança atual e melhorias na exibição do cabeçalho e da navegação.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-2854 --> Agora você pode ver avisos ao alternar do modo sandbox para o modo de produção e ao tentar sair de uma exibição com atualizações que não foram salvas.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna .
+
++++
 
 ## v1.3.0
 
@@ -46,20 +72,6 @@ _29 de junho de 2022_
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3338 PAY-2502 --> Quando as credenciais do Commerce Services forem inválidas, a variável [!DNL Payment Services] A página inicial agora será exibida no Administrador. Um erro de credenciais é exibido para alertá-lo de que suas credenciais são inválidas.
 
 ![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-0 --> [!DNL Payment Services] atualmente é incompatível com o `commerce-data-export` v101.20 e superior, o que o torna incompatível com o [[!DNL Channel manager] extensão](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html).
-
-### Atualizações do serviço hospedado
-
-Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão, entre a versão atual da v1.2.0 e a versão anterior da 1.1.0 para o serviço hospedado.
-
-![Novo](../assets/new.svg)<!-- Issue PAY-3420 --> O Apple Pay agora está disponível como um botão inteligente do PayPal. Essa [opção de pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-options.html#apple-pay-button) permite que os clientes usem a ID de toque em seus dispositivos para usar o Apple Pay, que usa credenciais de pagamento de cartão de crédito e débito armazenadas em seus dispositivos iOS ou macOS.
-
-![Novo](../assets/new.svg)<!-- Issue PAY-1720 --> Os litígios para pedidos de armazenamento agora estão disponíveis em [o relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#view-disputes). Você pode navegar diretamente para o PayPal Resolution Center (Centro de resolução do PayPal) de [!DNL Payment Services] tomar medidas em caso de litígio.
-
-![Novo](../assets/new.svg)<!-- Issue PAY-2854 --> Melhorias na experiência do usuário em [!DNL Payment Services] Home inclui a capacidade de modificar uma configuração no nível de herança atual e melhorias para exibir o cabeçalho e a navegação.
-
-![Novo](../assets/new.svg)<!-- Issue PAY-2854 --> Agora você pode ver avisos ao alternar do modo sandbox para o modo de produção e ao tentar sair de uma exibição com atualizações que não foram salvas.
-
-![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna .
 
 ## v1.1.0
 
