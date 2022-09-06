@@ -2,9 +2,9 @@
 title: '"[!DNL Payment Services] Notas de versão"'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 36eafb5729910440d257ab2d89d16f6b8f01aa68
+source-git-commit: 1f88c66d0c12dcde2c8fdde1dd3b4838ae6d462d
 workflow-type: tm+mt
-source-wordcount: '959'
+source-wordcount: '986'
 ht-degree: 0%
 
 ---
@@ -48,6 +48,12 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna .
 
 +++
+
+## v1.3.1
+
+_6 de setembro de 2022_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3663 --> Agora, quando uma loja de um comerciante está capturando um pedido autorizado com uma moeda não global, o processo de captura é concluído e nenhum erro é mostrado.
 
 ## v1.3.0
 
