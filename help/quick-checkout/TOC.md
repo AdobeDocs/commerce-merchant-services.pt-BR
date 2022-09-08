@@ -1,11 +1,11 @@
 ---
-user-guide-title: '"[!DNL Quick Checkout] para Adobe Commerce"'
-user-guide-description: '"Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."'
+user-guide-title: "[!DNL Quick Checkout] para Adobe Commerce"
+user-guide-description: "Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."
 breadcrumb-title: Guia de serviços de merchant
-source-git-commit: 05d967573f645db1e8473798df279712d6d2dfc9
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '66'
-ht-degree: 3%
+source-wordcount: '72'
+ht-degree: 2%
 
 ---
 
@@ -18,6 +18,9 @@ ht-degree: 3%
    - [Pré-requisitos](prerequisites.md)
    - [Instalar](install.md)
    - [Integração](onboarding.md)
+   - [!DNL Quick Checkout] Painel de administração {#quick-checkout-admin-panel}
+      - [[!DNL Quick Checkout] Painel de administração](admin-panel.md)
+      - [Configuração do usuário](user-roles-setup.md)
 - Testar e validar {#test-validate}
    - [Teste](testing.md)
    - [Informações do desenvolvedor](developer.md)

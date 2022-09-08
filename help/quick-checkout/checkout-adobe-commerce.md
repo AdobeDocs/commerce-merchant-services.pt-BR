@@ -1,10 +1,10 @@
 ---
-title: Fluxo de finalização
-description: Visão geral da [!DNL Quick Checkout] fluxo para um usuário do Adobe Commerce.
+title: "Fluxo de check-out para um usuário do Adobe Commerce"
+description: "Visão geral da [!DNL Quick Checkout] fluxo para um usuário do Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: a95d2ed92c69feba03d1b84d44abf08c1d1b4029
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '300'
+source-wordcount: '305'
 ht-degree: 0%
 
 ---

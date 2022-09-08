@@ -1,10 +1,10 @@
 ---
-title: '"Integrar a [!DNL Quick Checkout] para extensão do Adobe Commerce"'
-description: '"Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."'
+title: "Integrar a [!DNL Quick Checkout] para extensão do Adobe Commerce"
+description: "Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 27e91a640999cf83a0f0d6701e616f7ceecde12d
+source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # [!DNL Quick Checkout] integração
 
 Para começar a usar o [!DNL Quick Checkout] para a extensão Adobe Commerce, você deve concluir algumas etapas de integração para conectar sua instância com nossa funcionalidade de check-out.
+
+![Check-out rápido](assets/overview-admin-panel.png)
 
 1. [Obter extensão](#get-extension).
 1. [Criar uma conta comercial de produção ou sandbox com [!DNL Bolt]](#create-account-with-bolt). Forneça todas as informações necessárias para verificar sua identidade.
@@ -21,6 +23,16 @@ Para começar a usar o [!DNL Quick Checkout] para a extensão Adobe Commerce, vo
 1. [Definir as configurações do serviço](#complete-admin-configuration) para configurar o [!DNL Quick Checkout] extensão.
 1. [Clique no botão Salvar configuração](#enable-live-quick-checkout) para ativar a extensão.
 1. Alterar escopo para **Site principal** e [clique em Configurar URL de retorno](#check-shopper-valid-account) botão.
+
+Se o Gainsight estiver ativado, ele aciona a variável **Faça o tour** no seu [!DNL Quick Checkout] Painel de administração sobre [!DNL Quick Checkout] para Adobe Commerce:
+
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Stores]** > **[!UICONTROL Configuration]** > Avançado:
+
+   ![Check-out rápido](assets/gainsight-admin.png)
+
+Se o Gainsight não estiver ativado, continue com as etapas de integração.
+
+Consulte a [[!DNL Quick Checkout] Painel de administração](../quick-checkout/admin-panel.md) para obter mais informações.
 
 >[!NOTE]
 >
