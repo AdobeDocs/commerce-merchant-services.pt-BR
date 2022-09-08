@@ -1,8 +1,8 @@
 ---
-title: '''[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de versão'''
-description: '"Revise as notas de versão para obter informações sobre todas as [!DNL Store Fulfillment by Walmart Commerce Technologies] versões."'
+title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de versão'
+description: "Revise as notas de versão para obter informações sobre todas as [!DNL Store Fulfillment by Walmart Commerce Technologies] versões."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
 workflow-type: tm+mt
 source-wordcount: '135'
 ht-degree: 4%
@@ -17,7 +17,7 @@ Essas notas de versão descrevem a versão inicial do [!DNL Store Fulfillment Se
 ![Problema corrigido](../assets/fix.svg) Correções e melhorias
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
-## v1.0.1
+## v1.1.0
 
 ![Problema corrigido](../assets/fix.svg) <!-- Issue WM-x -->Simplificado o [Configuração da experiência de check-in](check-in-experience-setup.md) para o aplicativo Store Assist , adicionando seleções padrão de marca de carro e modelo. Na versão anterior, os comerciantes precisavam configurar manualmente a marca do carro e as seleções de modelo.
 
@@ -31,4 +31,4 @@ Versão inicial, compatível com as seguintes versões do Commerce:
 
 ## Aplicativo de assistência da loja
 
-Para obter informações sobre novas versões do aplicativo Store Assist, consulte as informações do aplicativo no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id16092815390){target=&quot;_blank&quot;} ou [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+Para obter informações sobre novas versões do aplicativo Store Assist, consulte as informações do aplicativo no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} ou [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
