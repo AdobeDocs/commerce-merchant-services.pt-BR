@@ -4,9 +4,9 @@ description: Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '635'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ O aplicativo Store Assist requer dois tipos de configuração:
 
    - **Cancelamento da loja**—Especifique se os pedidos podem ser cancelados da loja e quais funções têm permissões de cancelamento
 
-   - **Janela de limpeza do pedido**—Especifique por quanto tempo passou o tempo agendado de retirada em que uma ordem selecionada permanece em preparação antes de ser rebloqueada — por exemplo, três dias.
+   - **Janela de limpeza do pedido**—Especifique por quanto tempo passou [Lead Time de retirada estimado](enable-general.md#delivery-method-title-configuration) que um pedido selecionado permanece em preparação antes de ser rearmazenado, por exemplo, três dias. O valor padrão é de 7 dias. Se essa configuração estiver ativada, a ordem será automaticamente cancelada quando esse tempo expirar. Os itens são rearmazenados e o comerciante recebe um email de cancelamento.
 
    - Personalize todas as instruções no aplicativo (escolha, preparo, entrega).
 

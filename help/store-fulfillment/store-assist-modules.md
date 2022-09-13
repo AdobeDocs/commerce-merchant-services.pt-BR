@@ -1,15 +1,15 @@
 ---
-title: '"Armazenar fluxos de trabalho de fornecimento de assistência"'
-description: '"Saiba mais sobre os módulos de Escolha, Estágio, Mão-de-Obra e Pedidos disponíveis no aplicativo de assistência da loja. Esses módulos ativam o fluxo de trabalho de preenchimento de armazenamento completo para pedidos BOPIS. A Store Associates usa esses módulos para gerenciar e fornecer pedidos de retirada de loja aos clientes."'
+title: Fluxos de Trabalho de Cumprimento de Assistência de Armazenamento
+description: Saiba mais sobre os módulos de Escolha, Estágio, Mão-de-Obra e Pedidos disponíveis no aplicativo de assistência da loja. Esses módulos ativam o fluxo de trabalho de preenchimento de armazenamento completo para pedidos BOPIS. A Store Associates usa esses módulos para gerenciar e fornecer pedidos de retirada de loja aos clientes.
 role: User
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
+source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
 workflow-type: tm+mt
-source-wordcount: '791'
+source-wordcount: '806'
 ht-degree: 0%
 
 ---
-
 
 # Fluxos de Trabalho de Cumprimento de Assistência de Armazenamento
 
@@ -17,7 +17,7 @@ O aplicativo Store Assist fornece quatro módulos à Store Associates para geren
 
 - **[Selecionar](#pick-module)**—Obtenha visibilidade total em todos os itens solicitados e nas ferramentas para garantir que os itens corretos e as quantidades certas sejam escolhidos. Os associados de armazenamento podem escolher um ou vários pedidos simultaneamente para maior eficiência.
 
-- **[Fase](#stage-module)**—Insira um local onde os pedidos são colocados enquanto os clientes estão viajando para a loja para que a Store Associates possa encontrá-los facilmente para handoff do pedido
+- **[Fase](#stage-module)**—Insira um local onde os pedidos são colocados enquanto os clientes estão viajando para a loja para que a Store Associates possa encontrá-los facilmente para handoff do pedido.
 
 - **[Desligar](#hand-off-module)**—Obtenha notificações em tempo real depois que os clientes chegarem à loja para minimizar o tempo de espera e os pedidos de transição sem interrupções
 
@@ -65,3 +65,5 @@ Se os clientes chegarem sem fazer o check-in, seus associados poderão fazer o c
 ## Módulo Pedidos
 
 O módulo Pedidos exibe todos os pedidos existentes e seu status. Quando um cliente chama para verificar seu pedido, a Store Associates pode encontrar as informações rapidamente, pesquisando o número ou pesquisando a partir do módulo Pedidos .
+
+Os Associados da Loja também podem cancelar pedidos da página Pedidos no aplicativo de Assistência da Loja.
