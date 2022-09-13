@@ -4,7 +4,7 @@ description: Use o relatório Status do pagamento da Ordem para obter visibilida
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 59cceb1cab1ed2bcfaa7d59c54a40255a38dea29
+source-git-commit: ac1d0a4e64f358da44796edb0138b3656a907440
 workflow-type: tm+mt
 source-wordcount: '1436'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa obter uma visão clara dos pedidos e pagamentos da sua loja.
 
-![Exibição de relatórios financeiros](assets/reports-view.png)
+![Exibição de relatórios financeiros](assets/reports-view-new.png)
 
 O relatório de status do pagamento da ordem ajuda você a entender facilmente onde uma ordem específica está dentro do fluxo do processo de pagamento da ordem. Este relatório permite que você visualize rapidamente o status do pagamento de suas ordens e identifique possíveis problemas.
 
