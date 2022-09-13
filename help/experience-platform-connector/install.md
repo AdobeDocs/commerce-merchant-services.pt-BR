@@ -2,9 +2,9 @@
 title: Instalar e configurar o Adobe Experience Platform Connector no Adobe Commerce
 description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Experience Platform Connector do Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 7f64e9e4b061e2c0f9813d390adefe11ce98ee87
+source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
 workflow-type: tm+mt
-source-wordcount: '257'
+source-wordcount: '300'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs).
 
 ## Instalar a extensão
+
+A extensão Experience Platform connector é instalada a partir da linha de comando do servidor e se conecta à instalação do Adobe Commerce como uma [service](../landing/saas.md). Quando o processo estiver concluído, **Conector Experience Platform** aparece no **Sistema** menu em **Serviços** no Commerce _Administrador_.
 
 O conector Experience Platform é instalado como uma extensão de [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
