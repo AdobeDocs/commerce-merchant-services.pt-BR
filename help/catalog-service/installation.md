@@ -1,13 +1,13 @@
 ---
-title: '"Integração e instalação"'
-description: '"Saiba como instalar [!DNL Catalog Service]"'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: Integração e instalação
+description: Saiba como instalar [!DNL Catalog Service]
+exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
+source-git-commit: 595d7644374b066b7608748cf09df1c41bf0eaee
 workflow-type: tm+mt
-source-wordcount: '381'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
-
 
 # Integração e instalação
 
@@ -46,19 +46,19 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância Comm
 
    ```json
    "require": {
-     "magento/magento-cloud-metapackage": ">=2.4.3 <2.4.4",
-     "magento/composer-root-update-plugin": "~1.1",
-     "magento/saas-export": "^101.3.1",
-     "magento/commerce-data-export": "^101.2.4",    
-     "magento/commerce-data-export-ee": "^101.2.4",
-     "magento/services-id": "^3.0.0",
-     "magento/services-connector": "1.2.1"
-   }
+    "magento/composer-root-update-plugin": "^2.0.2",
+    "magento/magento-cloud-metapackage": ">=2.4.5 <2.4.6",
+    "magento/saas-export": "^101.4.0",
+    "magento/commerce-data-export": "^101.3.1",
+    "magento/commerce-data-export-ee": "^101.3.1",
+    "magento/services-id": "^3.0.1",
+    "magento/services-connector": "1.2.1"
+    }
    ```
 
    <!-- What if the customer already has other services installed, and some of these lines are already present? Do they need to delete the duplications? What if the version numbers are different? -->
 
-1. Atualize as dependências e instale a extensão:
+1. Teste a nova configuração localmente e atualize as dependências:
 
    ```bash
    composer update
@@ -66,7 +66,7 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância Comm
 
    O comando atualiza todas as dependências.
 
-1. Confirme e envie suas alterações por push.
+1. Confirme e envie suas alterações para `composer.json` e `composer.lock`.
 
 ### No local
 
@@ -110,4 +110,8 @@ Use este método para instalar o [!DNL Catalog Service] extensão para uma inst�
 
 Depois de instalar [!DNL Catalog Service], você deve configurar o [Conector do Commerce Services](../landing/saas.md) especificando chaves de API e selecionando um espaço de dados SaaS.
 
-Para garantir que a exportação do catálogo esteja sendo executada corretamente, confirme se a variável [trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) e [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) estão em execução e o indexador Feed do produto está definido como Atualizar por agendamento.
+Para garantir que a exportação do catálogo esteja sendo executada corretamente:
+
+- Confirme que [trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) estão em execução.
+- Verifique o [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) estão em execução.
+- Certifique-se de que `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`e `Product Variant Feed` os indexadores são definidos como `Update by Schedule`.
