@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão para [!DNL Live Search] do Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 07d8a80cc8afe34cd0363a7705465b5565f5c196
+source-git-commit: 974c77fb427f85058bb2c59d8e3818cb7c148e04
 workflow-type: tm+mt
-source-wordcount: '886'
+source-wordcount: '885'
 ht-degree: 1%
 
 ---
@@ -39,7 +39,7 @@ Recomendamos que os usuários atualizem e testem antes de enviar para a produç�
 * ![Bug](../assets/bug.svg) - Os produtos não são exibidos se não forem adicionados ao &quot;Catálogo compartilhado padrão&quot;.
 * O B2B com Live Search for PWA Studio não estará disponível até que o PWA Studio adicione suporte para ele.
 * Substituições de produto e atributos de produto no feed podem ter problemas de sincronização que exigem a execução de administradores `bin/magento indexer:reset` e `bin/magento indexer:reindex` para sincronizar novamente corretamente.
-* Se você ativar ou desativar os recursos Permissões do catálogo/Catálogo compartilhado/B2B, a variável `productOverrides` os indexadores não são atualizados e marcados incorretamente como &#39;valid&#39;. Use `bin/magento saas:resync --feed=productOverrides` para corrigir o problema.
+* Se você ativar ou desativar os recursos Permissões do catálogo/Catálogo compartilhado/B2B, a variável `catalog_data_exporter_product_overrides` indexer não é atualizado e marcado incorretamente como `valid`. Use `bin/magento saas:resync --feed=productOverrides` para corrigir o problema.
 
 ## [!DNL Live Search] 2,0
 
