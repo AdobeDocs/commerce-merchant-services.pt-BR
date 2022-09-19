@@ -1,10 +1,10 @@
 ---
-title: '"Componentes da regra"'
-description: '"Saiba mais sobre [!DNL Live Search] componentes e operadores da regra."'
+title: "Componentes da regra"
+description: "Saiba mais sobre [!DNL Live Search] componentes e operadores da regra."
 exl-id: 4065aec3-a8d4-4d55-b939-16ad7b0f33ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -15,10 +15,10 @@ Uma regra descreve as condições necessárias para acionar eventos que alteram 
 
 ## Requisitos
 
-Uma regra simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até vinte e cinco eventos.
+Uma regra simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até 25 eventos.
 As regras podem ter:
 
-* Até 10 condições
+* Até dez condições
 * Até 25 eventos
 
 O texto da consulta pode conter:

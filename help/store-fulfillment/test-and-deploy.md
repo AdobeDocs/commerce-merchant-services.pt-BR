@@ -4,9 +4,9 @@ description: Testar plano para verificar a funcionalidade de fornecimento de arm
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '2652'
+source-wordcount: '2657'
 ht-degree: 0%
 
 ---
@@ -96,12 +96,12 @@ Esta seção do plano de teste abrange a sincronização de inventário e pedido
 <tr>
 <td><strong>Nova Envio de Pedido, Sincronização de API — Pedido do Cliente</strong></td>
 <td>O cliente envia uma ordem de retirada de loja.</td>
-<td><ul><li>Na exibição da Ordem de administração, uma <strong>Usuário administrador do Adobe Commerce</strong> vê que o status da Sincronização de pedidos foi atualizado para <code>Sent</code></li><li>O log de detalhes do pedido inclui a mensagem <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Na exibição da Ordem de administração, uma <strong>Usuário administrador do Adobe Commerce</strong> vê que o status da Sincronização de pedidos foi atualizado para <code>Sent</code></li><li>O log de detalhes do pedido inclui a mensagem <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nova Envio de Pedido, Sincronização de API — Envio de ordem de administrador</strong></td>
 <td>Uma Adobe Commerce <strong>Administrador</strong> envia uma ordem de retirada.</td>
-<td><ul><li>Na exibição Ordem de administração, o status da Sincronização de pedido é atualizado para <code>Sent</code>.</li><li>O log de detalhes do pedido inclui a mensagem <code>Order was sent to BOPIS solution for sync, it’s not yet acknowledged yet.</code></li></ul></td>
+<td><ul><li>Na exibição Ordem de administração, o status da Sincronização de pedido é atualizado para <code>Sent</code>.</li><li>O log de detalhes do pedido inclui a mensagem <code>Order was sent to BOPIS solution for sync, it's not yet acknowledged yet.</code></li></ul></td>
 </tr>
 <tr>
 <td><strong>Nova Envio de Ordem, Fila de Exceção<strong></td>
@@ -161,7 +161,7 @@ Esta seção do plano de teste inclui cenários para testar o fluxo de trabalho 
 <li>Recebimento do email de reembolso de pedidos: <code>$x amount was refunded</code></li>
 <li>O status do pedido é <code>Processing</code>.</li>
 <li>Aviso de crédito criado no Adobe Commerce (aguarde até que o cron funcione).</li>
-<li>Se alguns itens não foram selecionados, confirme se a variável [!UICONTROL Ready for Pickup] é exibido um email com a seção de separação ou reembolso. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
+<li>Se alguns itens não foram selecionados, confirme se a variável [!UICONTROL Ready for Pickup] é exibido um email com a seção de separação ou reembolso nulo. <code>DISPLAY COMMENT HISTORY</code> shows <code>Order is ready for pickup, but some items not available.</code>.</li>
 <li><code>CUSTOMER NOTIFIED</code> sinalizador é <code>true</code>.</li>
 </ul>
 </td>
@@ -566,25 +566,25 @@ Esta seção do plano de teste cobre cenários para workflows de ordem de teste,
 <tr>
 <td>
 <strong>Separação de pedido único — caminho feliz, retirada de lado da curva</strong></td>
-<td>Escolha itens de quantidade única e múltipla. Sem nilpicks e coleta de lado da curva (com preparo).
+<td>Escolha itens de quantidade única e múltipla. Nenhuma separação nula e coleta de lado da curva (com preparação).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Separação de várias ordens — caminho feliz, retirada de lado da curva</strong></td>
-<td>Itens únicos e de várias quantidades. Sem nilpicks e coleta de lado da curva (com preparo)</td>
+<td>Itens únicos e de várias quantidades. Sem opções nulas e coleta de lado da curva (com preparação)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Escolha de pedido único — caminho feliz na loja</strong></td>
-<td>Itens únicos e de várias quantidades. Sem links e coleta de instância (com armazenamento temporário)</td>
+<td>Itens únicos e de várias quantidades. Nenhuma separação nil e coleta de instância (com armazenamento temporário)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Separação de vários pedidos — caminho feliz, retirada na loja</strong></td>
-<td>Escolha itens de quantidade única e múltipla. Sem nilpicks e coleta de lado da curva (com preparo).</td>
+<td>Escolha itens de quantidade única e múltipla. Nenhuma separação nula e coleta de lado da curva (com preparação).</td>
 <td></td>
 </tr>
 <tr>

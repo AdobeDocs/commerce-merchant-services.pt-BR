@@ -1,7 +1,7 @@
 ---
-source-git-commit: f03ca23f659d08d48715a4bd9d4d32a53c4a3a95
+source-git-commit: bd428fcbd592de91054710a50bfea8d10905f734
 workflow-type: tm+mt
-source-wordcount: '431'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ## Nosso compromisso
 
-Com o intuito de promover um ambiente aberto e acolhedor, nós, contribuidores e mantenedores nos comprometemos a fazer da participação em nosso projeto e na nossa comunidade uma experiência sem assédio para todos, independentemente da idade, porte físico, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
+Com o intuito de promover um ambiente aberto e acolhedor, os contribuidores e mantenedores se comprometem a tornar a participação em nosso projeto e na nossa comunidade uma experiência sem assédio para todos, independentemente da idade, porte físico, deficiência, etnia, identidade e expressão de gênero, nível de experiência, nacionalidade, aparência pessoal, raça, religião ou identidade e orientação sexual.
 
 ## Nossos padrões
 
@@ -41,11 +41,11 @@ Este Código de Conduta aplica-se tanto em espaços de projeto como em espaços 
 
 ## Execução
 
-Instâncias de comportamento abusivo, assédio ou de outra forma inaceitável podem ser relatadas ao entrar em contato com a equipe do projeto em Grp-opensourceoffice@adobe.com. Todas as denúncias serão revisadas e investigadas e resultarão em uma resposta considerada necessária e adequada às circunstâncias. A equipe do projeto é obrigada a manter a confidencialidade em relação ao relator de um incidente.
+Instâncias de comportamento abusivo, assédio ou de outra forma inaceitável podem ser relatadas ao entrar em contato com a equipe do projeto em Grp-opensourceoffice@adobe.com. Todas as reclamações são revisadas e investigadas, resultando em uma resposta que é considerada necessária e adequada às circunstâncias. A equipe do projeto é obrigada a manter a confidencialidade em relação ao relator de um incidente.
 Podem ser publicados separadamente mais pormenores sobre as políticas de execução específicas.
 
 Os mantenedores de projetos que não seguirem ou aplicarem o Código de Conduta de boa fé podem enfrentar repercussões temporárias ou permanentes, determinadas por outros membros da liderança do projeto.
 
 ## Atribuição
 
-O presente Código de Conduta é adaptado a partir da [Contrato do colaborador](https://contributor-covenant.org), versão 1.4, disponível em [https://contributor-covenant.org/version/1/4](https://contributor-covenant.org/version/1/4/)
+O presente Código de Conduta é adaptado a partir da [Contrato do colaborador](https://www.contributor-covenant.org/), versão 1.4, disponível em [https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/](https://www.contributor-covenant.org/it/version/1/4/code-of-conduct/).

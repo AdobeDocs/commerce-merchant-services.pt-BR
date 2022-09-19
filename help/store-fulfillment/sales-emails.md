@@ -4,9 +4,9 @@ description: Configure os modelos de email transacional para comunicação com c
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
 workflow-type: tm+mt
-source-wordcount: '1215'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>Enviar Pedido Pronto Para O Método De Cópia De Correio Eletrônico De Escolha</strong></td>
-<td>O método de email "cópia de carbono" é enviado para uso.</td>
+<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -136,7 +136,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>O Enviar Foi Selecionado Por Método De Cópia De Email</strong></td>
-<td>O método de email "cópia de carbono" enviado para uso.</td>
+<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -185,7 +185,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>Enviar Método de Cópia Atrasada do Pedido</strong></td>
-<td>O método de email "cópia de carbono" enviado para uso.</td>
+<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -236,7 +236,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>Método de Cópia Cancelada do Pedido de Envio</strong></td>
-<td>O método de email "cópia de carbono" enviado para uso.</td>
+<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -292,7 +292,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>Enviar Pedido Parcialmente Cancelado Método de Cópia</strong></td>
-<td>O método de email "cópia de carbono" enviado para uso.</td>
+<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>

@@ -1,10 +1,10 @@
 ---
-title: '"Adicionar regras"'
-description: '"Saiba como criar [!DNL Live Search] regras."'
+title: "Adicionar regras"
+description: "Saiba como criar [!DNL Live Search] regras."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
 workflow-type: tm+mt
-source-wordcount: '1282'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -22,9 +22,9 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 
    ![Espaço de trabalho Regras](assets/rules-workspace-add-rule.png)
 
-## Etapa 2: Descreva a(s) condição(ões)
+## Etapa 2: Descreva as condições
 
-Condição(ões) são os requisitos para acionar um evento. Uma regra pode ter até dez condições e vinte e cinco eventos.
+As condições são os requisitos para acionar um evento. Uma regra pode ter até dez condições e 25 eventos.
 
 ![Regra - Criar sua regra](assets/rules-add-workspace.png)
 
@@ -47,12 +47,12 @@ Inicialmente, o painel de teste renderiza a consulta na caixa de pesquisa Condi�
    ![Regra - atualizar teste](assets/rule-update-test.png)
 
 1. Se desejar o resultado, atualize o texto na *Condições* caixa de pesquisa. Em seguida, clique em qualquer lugar na página para atualizar os resultados no painel de teste.
-1. Para criar uma regra simples com uma condição, vá para a Etapa 3: [Adicionar evento(s)](#events).
+1. Para criar uma regra simples com uma condição, vá para a Etapa 3: [Adicionar eventos](#events).
 
 ### Várias condições
 
 1. Para criar uma regra com várias condições, clique em **Adicionar condição**.
-Uma regra pode ter até 10 condições. O operador lógico que une duas condições se baseia no *Corresponder* configuração. Por padrão, *Corresponder* é `All` e o operador lógico é `AND`.
+Uma regra pode ter até dez condições. O operador lógico que une duas condições se baseia no *Corresponder* configuração. Por padrão, *Corresponder* é `All` e o operador lógico é `AND`.
 
    ![Regras - A consulta de pesquisa contém](assets/rules-search-query-contains-and.png)
 
@@ -67,24 +67,24 @@ Uma regra pode ter até 10 condições. O operador lógico que une duas condiç�
 
    O *Corresponder* determina o operador lógico usado para unir várias condições. Alteração do *Corresponder* definir altera todos os operadores lógicos na regra. Não é possível combinar `AND` e `OR` na mesma regra.
 
-   Neste exemplo, em vez de pesquisar por &quot;calças de yoga&quot;, há duas consultas separadas que pesquisam por &quot;yoga&quot; ou &quot;calças&quot;. Essa regra é menos específica e será acionada com mais frequência na loja do que na outra.
+   Neste exemplo, em vez de pesquisar por &quot;calças de yoga&quot;, há duas consultas separadas que pesquisam por &quot;yoga&quot; ou &quot;calças&quot;. Essa regra é menos específica e é acionada com mais frequência na loja do que na outra.
 
    ![Regras - Corresponder](assets/rules-match.png)
 
 1. Para adicionar outra condição, clique em **Adicionar condição** e repita o processo.
 
-## Etapa 3: Adicionar evento(s)
+## Etapa 3: Adicionar eventos
 
-Evento(s) são ações que alteram os resultados da pesquisa quando as condições são atendidas. Uma única regra pode ter até 25 eventos.
+são ações que alteram os resultados da pesquisa quando as condições são cumpridas. Uma única regra pode ter até 25 eventos.
 
-1. Em *Eventos*, escolha o **Evento** para ocorrer quando a(s) condição(ões) associada(s) for(em) atendida(s).
+1. Em *Eventos*, escolha o **Evento** para ocorrer quando as condições associadas forem cumpridas.
 
    Por exemplo, escolha `Pin a product`. Em seguida, insira o nome do produto que deseja prender. Se precisar de ajuda, poderá encontrar o nome no painel de teste.
 Em seguida, insira o *Position* onde deve aparecer o produto fixado. O produto é movido para a nova posição no painel de ensaio e marcado com uma *Fixo* selo de visualização.
 
    ![Regras - Corresponder](assets/rule-event-pin-product.png)
 
-1. Para vários eventos, escolha quaisquer outros eventos que deseja acionar quando as condições forem atendidas.
+1. Para vários eventos, escolha quaisquer outros eventos que você deseja acionar quando as condições forem atendidas.
 
    * Aumentar - Selecione Aumentar. Em seguida, insira o nome do produto ou SKU que você deseja mover para cima nos resultados da pesquisa. No painel de teste, cada produto impulsionado tem um *Reforçado* selo de visualização.
    * Bury - Move um SKU para baixo nos resultados da pesquisa. Cada SKU está marcada com uma *Enterrado* selo de visualização no painel de teste.
@@ -97,7 +97,7 @@ As informações inseridas aqui aparecem no [Detalhes da regra](rules-workspace.
 
 1. Em *Detalhes*, insira um **Nome** para a regra.
 1. Insira um resumo **Descrição** da regra.
-1. Insira o **Data inicial** e **Data final** quando a regra estará ativa ou escolha as datas no calendário.
+1. Insira o **Data inicial** e **Data final** para a regra estar ativa ou escolher as datas do calendário.
 
    Para selecionar um intervalo de datas, clique na primeira data e arraste para selecionar o intervalo.
 

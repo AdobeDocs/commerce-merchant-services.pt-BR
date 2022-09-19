@@ -1,17 +1,23 @@
 ---
-title: '"[!DNL Live Search] Indexando"'
-description: '"Saiba como [!DNL Live Search] indexa as propriedades do atributo do produto."'
+title: "[!DNL Live Search] Indexando"
+description: "Saiba como [!DNL Live Search] indexa as propriedades do atributo do produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 2835209ad881db388894c5b1da213312436d3550
+source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
 workflow-type: tm+mt
-source-wordcount: '547'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Indexação
 
-As propriedades (metadados) do atributo de produto determinam como um atributo pode ser usado no catálogo, sua aparência e comportamento na loja e os dados incluídos nas operações de transferência de dados. O escopo dos metadados do atributo é `website/store/store view`.
+As propriedades do atributo do produto (metadados) determinam:
+
+* Como um atributo pode ser usado no catálogo
+* Sua aparência e comportamento na loja
+* Os dados incluídos em operações de transferência de dados
+
+O escopo dos metadados do atributo é `website/store/store view`.
 
 O [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto que tenha a variável [propriedade storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` defina como `Yes` no Administrador do Adobe Commerce. Quando ativado, `Search Weight` e `Visible in Advanced Search` pode ser definido para o atributo .
 
@@ -53,7 +59,7 @@ Por exemplo, alterar a variável `Use in Search` da `color` atributo de `No` par
 
 Depois que o índice inicial é criado durante [integração](install.md#synchronize-catalog-data), as seguintes atualizações de produtos incrementais são sincronizadas e reindexadas continuamente:
 
-* Novo(s) produto(s) adicionado(s) ao catálogo
+* Novos produtos adicionados ao catálogo
 * Alterações nos valores do atributo do produto
 
 Por exemplo, adicionar um novo valor de amostra ao `color` é tratado como uma atualização de produto de streaming.
@@ -61,7 +67,7 @@ Fluxo de trabalho de atualização de fluxo:
 
 1. Os produtos atualizados são sincronizados da instância do Adobe Commerce para o serviço de catálogo.
 1. O serviço de indexação procura continuamente atualizações de produtos do serviço de catálogo. Os produtos atualizados são indexados à medida que chegam ao serviço de catálogo.
-1. Pode levar até quinze minutos para que uma atualização do produto fique disponível em [!DNL Live Search].
+1. Pode levar até 15 minutos para que uma atualização de produto fique disponível em [!DNL Live Search].
 
 ## Pesquisa de cliente
 
