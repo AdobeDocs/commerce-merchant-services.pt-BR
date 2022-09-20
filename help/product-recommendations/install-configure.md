@@ -2,9 +2,9 @@
 title: Instalar e configurar
 description: Saiba como instalar, atualizar e desinstalar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: cfeb8b4f8e2dc1e9d2d4c0be7a7bc522488418bc
+source-git-commit: 09609fd0b5bd3da9e884115de001bc33832ad792
 workflow-type: tm+mt
-source-wordcount: '484'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -37,6 +37,10 @@ composer require magento/module-page-builder-product-recommendations
 ```
 
 Ao ativar [!DNL Product Recommendations] no Page Builder, é possível adicionar um [unidade de recomendação](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html) para qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
+
+>[!NOTE]
+>
+>[!DNL Page Builder] as unidades de recomendação podem ser criadas somente para a exibição de loja padrão.
 
 ### Adicionar tipo de recomendação de semelhança visual {#vissimsupport}
 
