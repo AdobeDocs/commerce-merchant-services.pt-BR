@@ -1,7 +1,7 @@
 ---
 title: consulta productSearch
 description: '"Um guia de referência para a consulta GraphQL do `productSearch'' para o serviço de catálogo Adobe Commerce.'''
-source-git-commit: 7edfdd71c0900a6bdc7c064a29a6cce405a361ab
+source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # consulta productSearch
 
-O serviço de catálogo do Adobe Commerce `productSearch` O query pode usar o LiveSearch para retornar detalhes sobre os SKUs especificados como entrada. Embora esse query seja o mesmo que o [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), o LiveSearch retorna um `productView` objeto. Consulte a [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) tópico para informações de referência.
+O serviço de catálogo do Adobe Commerce `productSearch` O query pode usar o Live Search para retornar detalhes sobre os SKUs especificados como entrada. Embora esse query seja o mesmo que o [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), o Live Search retorna um `productView` objeto. Consulte a [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) tópico para informações de referência.
 
 ## Sintaxe
 
@@ -32,7 +32,7 @@ Você deve especificar os seguintes cabeçalhos HTTP para executar esta consulta
 | Cabeçalho | Descrição |
 |--- | ---|
 | `Magento-Customer-Group` | Para clientes da loja, esse valor estará disponível na loja na `dataservices_customer_group` cookie. |
-| `Magento-Environment-Id` | Esse valor é exibido em **Sistema** > **Conector do Commerce Services** > **Identificador SaaS** > **ID do espaço de dados** ou pode ser obtida executando o `bin/magento config:show services_connector/services_id/environment_id` comando. |
+| `Magento-Environment-Id` | Esse valor pode ser obtido executando o `bin/magento config:show services_connector/services_id/environment_id` comando. Consulte o campo &quot;Espaço de dados&quot; em [Commerce Services](https://docs.magento.com/user-guide/configuration/services/saas.html) |
 | `Magento-Store-Code` | O código atribuído à loja associado à exibição de loja ativa. Por exemplo, `main_website_store`. |
 | `Magento-Store-View-Code` | O código atribuído à exibição de loja ativa. Por exemplo, `default`. |
 | `Magento-Website-Code` | O código atribuído ao site associado à exibição de loja ativa. Por exemplo, `base`. |
