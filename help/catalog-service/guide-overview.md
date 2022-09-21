@@ -1,13 +1,13 @@
 ---
-title: '"[!DNL Catalog Service] Visão geral do guia"'
-description: '"[!DNL Catalog Service for Adobe Commerce] O fornece uma maneira de recuperar o conteúdo de Páginas de exibição de produto e Páginas de lista de produtos mais rapidamente do que as consultas GraphQL nativas da Adobe Commerce."'
-source-git-commit: 7f6955ffc52669ff3b95957642b3a115bf1eb741
+title: '''[!DNL Catalog Service] Visão geral do guia"'
+description: '[!DNL Catalog Service for Adobe Commerce] O fornece uma maneira de recuperar o conteúdo de Páginas de exibição de produto e Páginas de lista de produtos mais rapidamente do que as consultas GraphQL nativas da Adobe Commerce.'
+exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
+source-git-commit: 372dc1cb567121ab86f606d2ace9f19d8e01170b
 workflow-type: tm+mt
-source-wordcount: '192'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # [!DNL Catalog Service] Visão geral do guia
 
@@ -20,8 +20,6 @@ Este guia destina-se aos administradores do Adobe [!DNL Commerce]. Inclui inform
 * Adobe [!DNL Commerce] administradores de sistema instalam e mantêm o serviço. [!DNL Catalog Service] O não tem uma interface do usuário de administrador ou recursos para usuários de Administração padrão.
 
 * Os integradores criam consultas GraphQL e as integram em uma loja que usa um cliente front-end.
-
-Você pode encontrar informações detalhadas da integração em [Serviço de catálogo do Adobe Commerce](https://devdocs.magento.com/catalog-service/index.html).
 
 ## Documentação adicional
 
