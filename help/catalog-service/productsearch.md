@@ -1,7 +1,7 @@
 ---
 title: consulta productSearch
 description: '"Um guia de referência para a consulta GraphQL do `productSearch'' para o serviço de catálogo Adobe Commerce.'''
-source-git-commit: 49692cf4375ebb975b2cf132d21ac8debe609a90
+source-git-commit: d9b8c89f6d04aa9d569b450af2893b92938119ad
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # consulta productSearch
 
-O serviço de catálogo do Adobe Commerce `productSearch` O query pode usar o Live Search para retornar detalhes sobre os SKUs especificados como entrada. Embora esse query seja o mesmo que o [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html), o Live Search retorna um `productView` objeto. Consulte a [`productSearch` query](https://devdocs.magento.com//live-search/product-search.html) tópico para informações de referência.
+O serviço de catálogo do Adobe Commerce `productSearch` O query pode usar o Live Search para retornar detalhes sobre os SKUs especificados como entrada. Embora esse query seja o mesmo que o [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html), o Live Search retorna um `productView` objeto. Consulte a [`productSearch` query](https://devdocs.magento.com/live-search/product-search.html) tópico para informações de referência.
 
 ## Sintaxe
 
