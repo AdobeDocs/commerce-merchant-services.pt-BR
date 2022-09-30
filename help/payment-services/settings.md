@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1555'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,13 @@ Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magen
 >
 > Para obter configurações de várias lojas ou legadas, consulte [Configurar no Administrador](configure-admin.md) tópico.
 
-## Ativar serviços de pagamento
+## Definir configurações gerais
 
-Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sandbox ou os pagamentos em tempo real, na [!UICONTROL General] seção.
+O [!UICONTROL General] As configurações fornecem a capacidade de ativar ou desativar os Serviços de Pagamento como método de pagamento e adicionar informações às transações do cliente para marcar ou prefixar um site ou exibição de loja com informações personalizadas.
+
+### Ativar serviços de pagamento
+
+Você pode ativar [!DNL Payment Services] para o seu site e ative o teste de sandbox ou os pagamentos em tempo real.
 
 1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 
@@ -33,7 +37,7 @@ Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sa
 
    O _[!UICONTROL General]_seção inclui configurações usadas para ativar [!DNL Payment Services] como método de pagamento.
 
-1. Para ativar [!DNL Payment Services] como método de pagamento para a sua loja, no _[!UICONTROL General]_seção, alternar (**[!UICONTROL Enable Payment Services as payment method]**) a `Yes`.
+1. Para ativar [!DNL Payment Services] como método de pagamento para a sua loja, no _[!UICONTROL General]_seção, alternar **[!UICONTROL Enable Payment Services as payment method]**para `Yes`.
 
 1. Se você ainda estiver testando [!DNL Payment Services] para sua loja, defina **Modo de pagamento** para `Sandbox`. Se estiver pronto para ativar os pagamentos em tempo real, defina-o como `Production`.
 
@@ -49,7 +53,31 @@ Você pode ativar [!DNL Payment Services] para o seu site e ativar o teste de sa
 
 Agora você pode continuar alterando as configurações padrão de [opções de pagamento](#configure-payment-options) funções e vitrine são exibidas.
 
-### Opções gerais de configuração
+### Adicionar descritor suave
+
+Você pode adicionar uma [!UICONTROL Soft Descriptor] para o(s) site(s) ou a configuração de exibição(s) de loja individual. Descritores suaves são exibidos em demonstrativos bancários de transação do cliente. Se você tiver várias lojas/marcas/catálogos, por exemplo, é possível delinear facilmente entre eles adicionando texto personalizado à variável [!UICONTROL Soft Descriptor] campo.
+
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Exibição da página inicial](assets/payment-services-menu-small.png)
+
+1. Clique em **[!UICONTROL Settings]**. Consulte [Introdução ao [!DNL Payment Services] Início](payments-home.md) para obter mais informações.
+1. Selecione o site ou a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual deseja criar um descritor suave. Para a configuração inicial, deixe como **[!UICONTROL Default]** para definir o valor padrão.
+1. Adicione o texto personalizado (até 22 caracteres) no campo de texto, substituindo `Custom descriptor`.
+1. Clique em **[!UICONTROL Save]**.
+1. Para criar um descritor suave diferente do padrão configurado para um site ou exibição de loja:
+   1. Selecione o site ou a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual deseja criar um descritor suave.
+   1. Alternar *off* **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
+   1. Adicione o texto personalizado no campo de texto.
+   1. Clique em **[!UICONTROL Save]**.
+1. Para ativar um site ou armazenar, visualize o descritor flexível padrão *ou* o descritor suave usado para o site principal:
+   1. Selecione o site ou a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual você deseja ativar um descritor suave existente.
+   1. Alternar *on* **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
+   1. Clique em **[!UICONTROL Save]**.
+
+   Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
+
+### Opções de configuração
 
 | Campo | Escopo | Descrição |
 |---|---|---|
@@ -57,6 +85,7 @@ Agora você pode continuar alterando as configurações padrão de [opções de 
 | [!UICONTROL Payment mode] | exibição de loja | Defina o método ou o ambiente da sua loja. Opções: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 | [!UICONTROL Sandbox Merchant ID] | exibição de loja | Sua ID de comerciante da sandbox, que é gerada automaticamente durante a integração com a sandbox. |
 | [!UICONTROL Production Merchant ID] | exibição de loja | Sua ID de comerciante de produção, que é gerada automaticamente durante a integração com a sandbox. |
+| [!UICONTROL Soft Descriptor] | exibição de site ou loja | Adicione um descritor suave ao(s) site(s) e às visualizações de armazenamento para adicionar informações às transações do cliente que delineiam marcas, lojas ou linhas de produto. O [!UICONTROL Use website] O alternador aplica qualquer descritor suave adicionado no nível do site. O [!UICONTROL Use default] a alternância aplica qualquer descritor suave adicionado como padrão. |
 
 ## Configurar opções de pagamento
 
@@ -144,7 +173,7 @@ Você também pode configurar o _[!UICONTROL Button style]_opções dos botões 
 
 1. Para ativar o slogan em um layout horizontal, alterne a **[!UICONTROL Show tagline]** seletor.
 1. Para modificar o **[!UICONTROL Color]**, selecione a opção de cor desejada.
-1. Para modificar o **[!UICONTROL Shape]**, selecione `Pill` ou `Rect`.
+1. Para modificar o **[!UICONTROL Shape]**, selecione `Pill` ou `Rectangle`.
 1. Para ativar o seletor de altura do botão, alterne a **[!UICONTROL Responsive button height]** seletor.
 1. Para modificar o **[!UICONTROL Label]**, selecione a opção de rótulo desejada.
 
