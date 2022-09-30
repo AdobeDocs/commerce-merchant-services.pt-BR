@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 65787d91c098e8f5d4ae46cba4d5e226b6301ecc
+source-git-commit: 785528d5940af28fa8bf6873d636b40d8e7bc05f
 workflow-type: tm+mt
-source-wordcount: '1555'
+source-wordcount: '1594'
 ht-degree: 0%
 
 ---
@@ -100,7 +100,8 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 1. Selecione a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual você deseja ativar um método de pagamento.
 1. Para alterar o nome do método de pagamento exibido durante o check-out, edite o valor no **[!UICONTROL Checkout title]** campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
-1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
+1. Para ativar ou desativar os campos do cartão de crédito na página de check-out, alterne a **[!UICONTROL Show on checkout page]** seletor.
+1. Para ativar ou desativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
@@ -113,6 +114,7 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 |---|---|---|
 | [!UICONTROL Title] | exibição de loja | Adicione o texto para exibição como o título para esta opção de pagamento na exibição Método de Pagamento durante o check-out. Opções: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | site | O [ação de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show on checkout page] | site | Ative ou desative a exibição de campos de cartão de crédito na página de check-out. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Botões de pagamento
@@ -125,6 +127,7 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
 1. Para alterar o nome do método de pagamento, como mostrado durante o check-out, edite o valor no **[!UICONTROL Checkout Title]** campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Use os seletores de alternância para ativar ou desativar [!DNL PayPal smart button] recursos de exibição:
+   - **[!UICONTROL Show PayPal buttons on product checkout page]**
    - **[!UICONTROL Show PayPal buttons on product detail page]**
    - **[!UICONTROL Show PayPal buttons in mini-cart preview]**
    - **[!UICONTROL Show PayPal buttons on cart page]**
@@ -152,6 +155,7 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
 |---|---|---|
 | [!UICONTROL Title] | exibição de loja | Adicione o texto a ser exibido como o título para esta opção de pagamento na exibição Método de Pagamento durante o check-out. Opções: campo de texto |
 | [!UICONTROL Payment Action] | site | O [ação de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Show PayPal buttons on checkout page] | exibição de loja | Ativar ou desativar [!DNL PayPal Smart Buttons] na página de checkout. Opções: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on product detail page] | exibição de loja | Ativar ou desativar [!DNL PayPal Smart Buttons] na página de detalhes do produto. Opções: [!UICONTROL  Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons in mini-cart preview] | exibição de loja | Ativar ou desativar [!DNL PayPal Smart Buttons] na visualização do minicarrinho. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Show PayPal buttons on cart page] | exibição de loja | Ativar ou desativar [!DNL PayPal Smart Buttons] na página do carrinho. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
