@@ -4,7 +4,7 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 31ad67d3f3d11c68341de0306eea37f231b2d9b9
+source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -169,3 +169,11 @@ Você pode configurar [!DNL PayPal Smart Buttons] estilo [na configuração herd
 | [!UICONTROL Responsive Button Height] | Exibição da loja | Define se os botões de pagamento usam uma altura padrão. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Height] | Exibição da loja | Defina a altura dos botões de pagamento. Valor padrão: nenhum |
 | [!UICONTROL Label] | Exibição da loja | Defina o rótulo que aparece nos botões de pagamento. Opções: [!UICONTROL PayPal] / [!UICONTROL Checkout] / [!UICONTROL Buynow] / [!UICONTROL Pay] / [!UICONTROL Installment] |
+
+## Usar várias contas do PayPal
+
+Em Serviços de Pagamento, você pode usar várias contas do PayPal dentro de **one** conta comercial no nível do site. Por exemplo, se você estiver operando sua(s) loja(s) em vários países (que usam diferentes [moedas](https://docs.magento.com/user-guide/stores/currency.html)) ou deseja usar o Adobe Commerce para algumas partes de sua empresa, mas não *all*, você pode configurar sua conta comercial para usar várias contas PayPal.
+
+Consulte [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) para obter mais informações sobre a hierarquia de sites, lojas e visualizações de loja.
+
+Seu representante de vendas pode criar um novo [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) para sua conta comercial e o site adicional com o PayPal, de modo que qualquer um dos botões do PayPal configurados para serem exibidos apareça em seu site. Entre em contato com seu representante de vendas para obter ajuda com o uso de várias contas PayPal para seus sites.
