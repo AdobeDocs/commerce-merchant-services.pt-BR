@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 5d791896f647391993f668a018b3eb9194c4cf3f
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -57,11 +57,11 @@ _28 de junho de 2021_
 
 _30 de setembro de 2022_
 
-![Novo](../assets/new.svg)<!-- Issue PAY-784 --> Os Serviços de Pagamento incluem agora a capacidade de configurar uma conta comercial para [usar várias contas comerciais PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-business-accounts). Isso permite que o comerciante opere suas lojas em vários países usando moedas diferentes, ou use o Adobe Commerce para parte de seu negócio.
+![Novo](../assets/new.svg)<!-- Issue PAY-784 --> Os Serviços de Pagamento incluem agora a capacidade de configurar uma conta comercial para [usar várias contas comerciais PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#use-multiple-paypal-accounts). Isso permite que o comerciante opere suas lojas em vários países usando moedas diferentes, ou use o Adobe Commerce para parte de seu negócio.
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-3231 --> Merchants podem [adicione uma [!UICONTROL Soft Descriptor]](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#add-soft-descriptor) para sites da Web ou configurações de visualizações de loja individuais que mostram nas instruções bancárias de transação do cliente delinear marcas, lojas ou linhas de produto.
 
-![Novo](../assets/new.svg)<!-- Issue PAY-3707 --> [Ativar ou desativar campos de cartão de crédito e botões inteligentes PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html) para check-out nas configurações dos Serviços de Pagamento.
+![Novo](../assets/new.svg)<!-- Issue PAY-3707 --> [Ativar ou desativar campos de cartão de crédito e botões inteligentes PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-payment-options) para check-out nas configurações dos Serviços de Pagamento.
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3546 --> Quando um cliente clica em **[!UICONTROL Edit cart]**, a página redireciona para a página do carrinho e mostra os itens atualizados em vez de mostrar um carrinho vazio.
 

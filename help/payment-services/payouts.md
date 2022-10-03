@@ -4,7 +4,7 @@ description: Use o relatório de Pagamentos para obter total transparência sobr
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 0bd6137ec7cd5da04ae6a48f06cd5aec254b46ef
+source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa obter uma visão clara dos pedidos e pagamentos da sua loja.
 
-![Exibição de relatórios financeiros](assets/reports-view-new.png)
+![Exibição de relatórios financeiros](assets/report-view.png)
 
 Há duas exibições de relatórios de Reembolsos disponíveis para que você possa ver informações detalhadas sobre todos os seus pagamentos:
 
@@ -34,7 +34,7 @@ A visualização de dados de Reembolsos está disponível na página inicial dos
 
 No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** para ver o gráfico de visualização de dados de créditos vs. débitos e as médias móveis ao longo do tempo.
 
-![Visualização de dados de pagamento no Administrador](assets/payouts-data.png)
+![Visualização de dados de pagamento no Administrador](assets/payouts-report.png)
 
 Clique em **[!UICONTROL View Report]** para navegar até a tabela detalhada [Exibição do relatório de pagamentos](#payouts-report-view).
 
