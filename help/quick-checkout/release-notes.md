@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '644'
 ht-degree: 1%
 
 ---
@@ -20,6 +20,24 @@ Essas notas de versão descrevem a versão inicial do [!DNL Quick Checkout] e in
 Consulte [Próximas versões](https://devdocs.magento.com/release/) para saber mais sobre os cronogramas de lançamento e suporte.
 
 Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html) na documentação do desenvolvedor para saber mais sobre compatibilidade de produtos.
+
+## Atualizações do painel de administração
+
+Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão para o painel Administrador.
+
++++Atualizações no painel de administração
+
+_5 de outubro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] O painel de administração integra um [tour de recursos com Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração contém o outline dos diagramas e as informações de relatórios que estarão disponíveis em breve.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração mostra o intervalo de datas do filtro para diagramas e informações de relatórios que estarão disponíveis em breve.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) agora exibe a versão do aplicativo de reação no rodapé.
+
++++
 
 ## v1.2.0
 

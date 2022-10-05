@@ -1,10 +1,10 @@
 ---
-title: "Fluxo de check-out no Adobe Commerce"
+title: "Fluxo de check-out de um usuário Bolt no Adobe Commerce"
 description: Visão geral da [!DNL Quick Checkout] fluxo para um usuário Bolt no Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 4dd8008901dbdbfaf1de5b1aa166dc70dd02440f
+source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
 workflow-type: tm+mt
-source-wordcount: '198'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
