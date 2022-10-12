@@ -4,9 +4,9 @@ description: Use o relatório de Pagamentos para obter total transparência sobr
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 39c0140961fa9de5075087bbc3fbec0e14560860
+source-git-commit: ddd9fa9b2a709858239c88477f19e8787a0b65c2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1339'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa obter uma visão clara dos pedidos e pagamentos da sua loja.
 
-![Exibição de relatórios financeiros](assets/report-view.png)
+![Exibição de relatórios financeiros](assets/reports-justpayouts.png)
 
 Há duas exibições de relatórios de Reembolsos disponíveis para que você possa ver informações detalhadas sobre todos os seus pagamentos:
 
