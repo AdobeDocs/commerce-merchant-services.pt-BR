@@ -2,9 +2,9 @@
 title: Visão geral do guia
 description: Saiba como integrar dados do Adobe Commerce com o Adobe Experience Platform usando o conector Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '442'
 ht-degree: 0%
 
 ---
@@ -43,6 +43,10 @@ Este guia foi projetado para o comerciante da Adobe Commerce que deseja conectar
 ### Suporte a PWA Studio
 
 Consulte a [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/) documentação para obter informações sobre como usar o conector Experience Platform em uma loja de PWA Studio.
+
+### Suporte AEM {#aem-support}
+
+Consulte a [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html) documentação para saber como enviar dados de evento da loja de uma página de produto renderizada AEM para o Experience Platform usando o Conector CIF - Experience Platform.
 
 Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
