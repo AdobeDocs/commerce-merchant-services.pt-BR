@@ -2,7 +2,7 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] O para Adobe Commerce fornece uma maneira de recuperar o conteúdo das Páginas de exibição do produto e das Páginas de lista do produto muito mais rapidamente do que as consultas GraphQL nativas da Adobe Commerce.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dfe3d9b8738ea68257831c445f1f0b2c8c8b6859
+source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
@@ -10,8 +10,6 @@ ht-degree: 0%
 ---
 
 # [!DNL Catalog Service] para Adobe Commerce
-
-{{catalog-service-beta}}
 
 O [!DNL Catalog Service] A extensão para Adobe Commerce fornece dados de catálogo do modelo de visualização avançada (somente leitura) para renderizar rápida e totalmente as experiências de vitrine relacionadas ao produto, incluindo:
 
