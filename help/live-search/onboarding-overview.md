@@ -1,10 +1,10 @@
 ---
-title: '"Visão geral de integração"'
-description: '"[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"'
+title: "Visão geral de integração"
+description: "[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 5a17c601f84c7e366801c17fad96c1e598b1adfe
 workflow-type: tm+mt
-source-wordcount: '341'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -38,14 +38,20 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 * Indexa somente produtos do banco de dados do Adobe Commerce
 * Não indexa páginas CMS
 
-### Sinônimos
-
-* [!DNL Live Search] O pode gerenciar até 200 sinônimos por `Data Space ID`.
-
 ### Query
 
 * [!DNL Live Search] não tem acesso à taxonomia completa da árvore de categorias, o que faz com que alguns cenários de pesquisa de navegação em camadas estejam além do seu alcance.
 * [!DNL Live Search] O usa um endpoint GraphQL exclusivo para consultas para oferecer suporte a recursos como lapidamento inteligente e pesquisa por tipo. Embora semelhantes ao [API Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), há algumas diferenças e alguns campos podem não ser totalmente compatíveis no momento.
+
+### Regras
+
+* O número máximo de regras por ID de espaço de dados é 50.
+* O número máximo de condições por regra é 10.
+* O número máximo de eventos por regra é 25.
+
+### Sinônimos
+
+* [!DNL Live Search] O pode gerenciar até 200 sinônimos por `Data Space ID`.
 
 ### Versão beta do PWA
 
