@@ -2,9 +2,9 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c7344efead97b0562a146f096123dd84f998fd5e
+source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
 workflow-type: tm+mt
-source-wordcount: '2504'
+source-wordcount: '2574'
 ht-degree: 0%
 
 ---
@@ -124,6 +124,7 @@ Para cada um dos eventos a seguir, mapeie os eventos do Adobe Commerce para seu 
 - [&quot;searchRequestSent&quot;](#searchrequestsent)
 - [&quot;searchResponseReceived&quot;](#searchresponsereceived)
 - [`addToCart`](#addtocart)
+- [&quot;openCart&quot;](#opencart)
 - [&quot;viewCart&quot;](#viewcart)
 - [&quot;removeFromCart&quot;](#removefromcart)
 - [&quot;initiateCheckout&quot;](#initiatecheckout)
@@ -783,6 +784,39 @@ Crie os seguintes elementos de dados:
 - **Tipo de ação**: `Send event`
 - **Tipo**: `commerce.productListAdds`
 - **Dados XDM**: `%add to cart%`
+
+### openCart {#opencart}
+
+Disparado quando um novo carrinho é criado, o que acontece quando um produto é adicionado a um carrinho vazio.
+
+#### Elementos de dados
+
+Crie o seguinte elemento de dados:
+
+1. Abrir carrinho:
+
+   - **Nome**: `open cart`
+   - **Extensão**: `Adobe Experience Platform Web SDK`
+   - **Tipo de elemento de dados**: `XDM object`
+   - **Grupo de campos**: `commerce` > `productListOpens` > `value`
+   - **value**: **Valor** = `1`
+   - **Grupo de campos**: `commerce` > `cart` > `cartID`
+   - **ID do carrinho**: **Valor** = `%cart id%`
+   - **Grupo de campos**: `productListItems`. Para `productListItems`, vários itens podem ser pré-calculados. Selecionar **productListItems** > **Fornecer todo o array**.
+
+#### Regras 
+
+- **Nome**: `open cart`
+- **Extensão**: `Adobe Client Data Layer`
+- **Tipo de evento**: `Data Pushed`
+- **Evento específico**: `open-cart`
+
+##### Ações
+
+- **Extensão**: `Adobe Experience Platform Web SDK`
+- **Tipo de ação**: `Send event`
+- **Tipo**: `commerce.productListOpens`
+- **Dados XDM**: `%open cart%`
 
 ### viewCart {#viewcart}
 
