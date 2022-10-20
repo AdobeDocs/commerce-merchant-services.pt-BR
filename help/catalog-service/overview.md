@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] O para Adobe Commerce fornece uma maneira de recuperar o conteúdo das Páginas de exibição do produto e das Páginas de lista do produto muito mais rapidamente do que as consultas GraphQL nativas da Adobe Commerce.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: bb557e130a7dbef96c625d65cbe191a4ccbe26d0
+source-git-commit: fb229136728a8e7a8afa077120dbad388d1e4089
 workflow-type: tm+mt
-source-wordcount: '527'
+source-wordcount: '890'
 ht-degree: 0%
 
 ---
@@ -42,6 +42,30 @@ Como o serviço ignora a comunicação direta com o aplicativo, ele pode reduzir
 Os sistemas GraphQL principal e de serviço não se comunicam diretamente uns com os outros. Você acessa cada sistema a partir de um URL diferente e as chamadas exigem informações de cabeçalho diferentes. Os dois sistemas GraphQL foram projetados para serem usados juntos. O [!DNL Catalog Service] O sistema GraphQL aumenta o sistema principal para tornar as experiências de loja de produtos mais rápidas.
 
 Opcionalmente, é possível implementar [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/) para integrar os dois sistemas Adobe Commerce GraphQL com APIs privadas e de terceiros e outras interfaces de software usando o Adobe Developer. A malha pode ser configurada para garantir que as chamadas roteadas para cada endpoint contenham as informações de autorização corretas nos cabeçalhos.
+
+## Detalhes da arquitetura
+
+As seções a seguir descrevem algumas das diferenças entre os dois sistemas GraphQL.
+
+### Gerenciamento de esquemas
+
+Como o Serviço de catálogo opera como um serviço, os integradores não precisam se preocupar com a versão subjacente do Commerce. A sintaxe dos queries é a mesma para todas as versões. Além disso, o schema é consistente para todos os comerciantes. Essa consistência facilita o estabelecimento de práticas recomendadas e aumenta significativamente o reuso de widgets de vitrine.
+
+### Simplificação dos tipos de produtos
+
+O esquema reduz a diversidade de tipos de produtos para dois casos de uso:
+
+* Produtos simples são aqueles definidos com um único preço e quantidade. O Serviço de catálogo mapeia os tipos de produtos simples, virtuais, baixáveis e de cartão-presente para `simpleProductViews`.
+
+* Produtos complexos são compostos de vários produtos simples. O componente produtos simples pode ter preços diferentes. Um produto complexo também pode ser definido para que o comprador possa especificar a quantidade de produtos simples do componente. O Serviço de catálogo mapeia os tipos de produto configuráveis, agrupados e agrupados para `complexProductViews`.
+
+Opções de produto complexas são unificadas e distinguidas pelo seu comportamento, não pelo tipo. Cada valor de opção representa um produto simples. Esse valor de opção tem acesso aos atributos simples do produto, incluindo o preço. Quando o comprador seleciona todas as opções para um produto complexo, a combinação das opções selecionadas aponta para um produto simples específico. O produto simples permanece ambíguo até que o comprador selecione um valor para todas as opções disponíveis.
+
+### Preços
+
+Produtos simples representam a unidade de venda básica que tem um preço. O Serviço de Catálogo calcula o preço normal antes dos descontos, bem como o preço final após os descontos. Os cálculos de preços podem incluir impostos fixos do produto. Eles excluem promoções personalizadas.
+
+Um produto complexo não tem um preço definido. Em vez disso, o Serviço de catálogo retorna os preços do simples vinculado. Como exemplo, um comerciante pode inicialmente atribuir os mesmos preços a todas as variantes de um produto configurável. Se determinados tamanhos ou cores forem impopulares, o comerciante pode reduzir os preços dessas variantes. Assim, o preço do produto complexo (configurável) mostra inicialmente um intervalo de preços, refletindo o preço das variantes padrão e impopulares. Depois que o comprador tiver selecionado um valor para todas as opções disponíveis, a loja exibirá um único preço.
 
 ## Implementação
 
