@@ -2,9 +2,9 @@
 title: Instalar [!DNL Payment Services]
 description: Instale a extensão Payments Services.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 4d6c9a3017575e9adbf5dc11cf0717511592dbcf
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -48,10 +48,10 @@ Esse método é usado para instalar o [!DNL Payment Services] para uma instânci
 1. Atualize as dependências e instale a extensão:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   O `composer update` O comando atualiza todas as dependências. Se você não quiser atualizar todas as dependências ao mesmo tempo, use este comando: `composer require magento/payment-services`.
+   Use o `composer update` para atualizar todas as dependências raiz.
 
 1. Confirme e envie suas alterações por push.
 
@@ -68,10 +68,10 @@ Esse método é usado para instalar o [!DNL Payment Services] extensão de uma i
 1. Atualize as dependências e instale a extensão:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   O `composer update` O comando atualiza todas as dependências. Se você não quiser atualizar todas as dependências ao mesmo tempo, use este comando: `composer require magento/payment-services`.
+   Use o `composer update` para atualizar todas as dependências raiz.
 
 1. Atualize sua instância:
 
@@ -95,10 +95,10 @@ Quando uma nova versão de [!DNL Payment Services] for lançado, você poderá a
 1. Para obter a versão mais recente do pacote:
 
    ```bash
-   composer update
+   composer update magento/payment-services --with-dependencies
    ```
 
-   O `composer update` O comando atualiza todas as dependências. Se você não quiser atualizar todas as dependências ao mesmo tempo, use este comando: `composer update magento/payment-services`.
+   Use o `composer update` para atualizar todas as dependências raiz.
 
 1. Confirme e envie suas alterações por push.
 
@@ -114,7 +114,7 @@ Se você vir o seguinte erro indicando que você tem as chaves do Composer incor
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
-Verifique se as chaves do Composer estão vinculadas ao `MageID` usado durante [!DNL Payment Services] registro.
+Verifique se as chaves do Composer são válidas e se você tem acesso a outros pacotes Magento.
 
 Para ver quais chaves do Composer estão configuradas:
 
