@@ -2,10 +2,10 @@
 title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão para [!DNL Live Search] do Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: baa2587fc9d048d7a7915b9370b63ac6c2ff93d2
 workflow-type: tm+mt
-source-wordcount: '931'
-ht-degree: 1%
+source-wordcount: '1114'
+ht-degree: 0%
 
 ---
 
@@ -16,6 +16,22 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search]
 * ![Novo](../assets/new.svg) - Novos recursos
 * ![Correção](../assets/fix.svg) - Correções e melhorias
 * ![Bug](../assets/bug.svg) - Problemas conhecidos
+
+## [!DNL Live Search] 2.0.4
+
+* Compatível com Adobe Commerce (EE): 2.4.x
+* Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
+* Estabilidade: Estável
+
+* ![Novo](../assets/new.svg) - O Live Search agora oferece suporte à filtragem pela configuração &quot;Exibir produtos esgotados&quot; no administrador. Se &quot;Exibir Produtos Fora de Estoque&quot; estiver definido como falso, `inStock = true` é adicionado ao filtro.
+* ![Correção](../assets/fix.svg) - Para melhorar o desempenho, o bloco &quot;Sugestões&quot; foi removido do pop-up do Live Search. Os dados ainda são transmitidos por GraphQL, caso deseje substituir o recurso.
+* ![Correção](../assets/fix.svg) - `categories` e `categoryPath` substituídos `categoryIds` para filtragem de categoria. Leia mais na [productSearch](https://devdocs.magento.com/live-search/product-search.html#filter) tópico.
+* ![Correção](../assets/fix.svg) - Anteriormente, um usuário vinculado a uma empresa B2B recebia um Código incorreto do grupo de clientes ao fazer pesquisas. O Live Search agora retorna o valor correto.
+* ![Correção](../assets/fix.svg) - Anteriormente, ao procurar por um termo que não existe, o Live Search retornaria um erro. Esse erro foi corrigido.
+
+Os comerciantes devem atualizar a versão da extensão do Live Search >= 2.0.4 para acessar esses recursos.
+
+Recomendamos que os usuários atualizem e testem antes de enviar para a produção. Considere atualizar o ambiente de produção durante horários fora de pico após verificar os resultados do ambiente de teste.
 
 ## [!DNL Live Search] 2.0.3
 
