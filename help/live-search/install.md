@@ -2,7 +2,7 @@
 title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] do Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -251,7 +251,7 @@ Para desinstalar [!DNL Live Search], consulte [Desinstalar módulos](https://dev
 |--- |--- |
 | `module-live-search` | Permite que os comerciantes definam suas configurações de pesquisa para lapidamento, sinônimos, regras de consulta etc., além de fornecer acesso a um playground GraphQL somente leitura para testar consultas da *Administrador*. |
 | `module-live-search-adapter` | Envia solicitações de pesquisa da loja para a [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação por categoria - Roteia solicitações da loja [navegação superior](https://docs.magento.com/user-guide/catalog/navigation-top.html) ao serviço de pesquisa.<br />- Pesquisa global - Rota solicitações do [pesquisa rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) na parte superior direita da loja até a [!DNL Live Search] serviço. |
-| `module-live-search-storefront-popover` | Uma oferta de &quot;pesquisa ao digitar&quot; substitui a pesquisa rápida padrão e retorna sugestões dinâmicas de produtos e miniaturas dos principais resultados de pesquisa. |
+| `module-live-search-storefront-popover` | Um provedor de &quot;pesquisa ao digitar&quot; substitui a pesquisa rápida padrão e retorna dados e miniaturas dos principais resultados de pesquisa. |
 
 ## [!DNL Live Search] dependências {#dependencies}
 

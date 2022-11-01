@@ -1,10 +1,10 @@
 ---
-title: '"Estilo [!DNL Popover] Elementos"'
-description: '"Notas técnicas sobre a personalização da variável [!DNL Live Search storefront popover]"'
+title: "Estilo [!DNL Popover] Elementos"
+description: "Notas técnicas sobre a personalização da variável [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: ba3d983372eb60d5cb42e503c3c26c693668a01e
 workflow-type: tm+mt
-source-wordcount: '205'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -36,13 +36,10 @@ Para obter mais informações sobre elementos de loja de estilos, consulte [Folh
 
 ## Seletores de classes
 
-Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a sugestão e os elementos do produto na [!DNL popover].
+Os seletores de classe a seguir podem ser usados para estilizar o contêiner e os elementos do produto no [!DNL popover].
 
 * `.livesearch.popover-container`
 * `.livesearch.view-all-footer`
-* `.livesearch.suggestions-container`
-* `.livesearch.suggestions-header`
-* `.livesearch.suggestion`
 * `.livesearch.products-container`
 * `.livesearch.product-result`
 * `.livesearch.product-name`
@@ -50,37 +47,30 @@ Os seletores de classe a seguir podem ser usados para estilizar o contêiner, a 
 
 ### Seletores de classe do contêiner
 
-`.livesearch.popover-container`
+#### .livesearch.pover-container
 
 ![[!DNL Popover] container](assets/livesearch-popover-container.png)
 
-`.livesearch.view-all-footer`
+#### .livesearch.view-all-footer
 
 ![Exibir todo o rodapé](assets/livesearch-view-all-footer.png)
 
-### Seletores de classe de sugestão
-
-`.livesearch.suggestions-container`
-![Contêiner de sugestões](assets/livesearch-suggestions-container.png)
-
-`.livesearch.suggestions-header`
-![Cabeçalho de sugestões](assets/livesearch-suggestions-header.png)
-
-`.livesearch.suggestion`
-![Sugestão](assets/livesearch-suggestion.png)
-
 ### Seletores de classe de produto
 
-`.livesearch.products-container`
+#### .livesearch.products-container
+
 ![Contêiner de produto](assets/livesearch-product-container.png)
 
-`.livesearch.product-result`
+#### .livesearch.product-result
+
 ![Resultado do produto](assets/livesearch-product-result.png)
 
-`.livesearch.product-name`
+#### .livesearch.product-name
+
 ![Nome do produto](assets/livesearch-product-name.png)
 
-`.livesearch.product-price`
+#### .livesearch.product-price
+
 ![Preço do produto](assets/livesearch-product-price.png)
 
 ## Trabalhar com um tema modificado {#working-with-modified-theme}
