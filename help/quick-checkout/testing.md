@@ -1,8 +1,8 @@
 ---
-title: '"Testando o [!DNL Quick Checkout] para extensão do Adobe Commerce"'
-description: '"Testar e validar garante que a função [!DNL Quick Checkout] A extensão funciona conforme o esperado."'
+title: "Testando o [!DNL Quick Checkout] para extensão do Adobe Commerce"
+description: "Testar e validar garante que a função [!DNL Quick Checkout] A extensão funciona conforme o esperado."
 exl-id: 308f39e1-e2f6-40d8-b876-0f9013effed3
-source-git-commit: 9841db7616c8aa6d5bc5af3e6e92c0abe9a4a1e2
+source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
@@ -44,15 +44,15 @@ Você também deve verificar se as informações que aparecem nos demonstrativos
 Conclua um check-out bem-sucedido em sua loja:
 
 1. Vá para a loja e coloque os itens desejados no carrinho.
-2. Prossiga para o check-out.
-3. Insira um endereço de email associado a um [!DNL Bolt] quando solicitado.
-4. Insira a Senha única (OTP) enviada ao endereço de email da conta.
-5. Selecione o painel de ambiente:
+1. Prossiga para o check-out.
+1. Insira um endereço de email associado a um [!DNL Bolt] quando solicitado.
+1. Insira a Senha única (OTP) enviada ao endereço de email da conta.
+1. Selecione o painel de ambiente:
 
    - Sandbox
    - Produção
 
-6. Coloque o pedido.
+1. Coloque o pedido.
 
 Depois que um pedido é feito, você pode visualizar os detalhes de seus pedidos na _Grade de pedidos_ exibir:
 
