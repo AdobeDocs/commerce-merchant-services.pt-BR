@@ -2,10 +2,10 @@
 title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: dd9131059030f687dfff44b379dc0e8ddbb9f32f
 workflow-type: tm+mt
-source-wordcount: '644'
-ht-degree: 1%
+source-wordcount: '888'
+ht-degree: 0%
 
 ---
 
@@ -27,17 +27,39 @@ Essas notas de versão descrevem as alterações de recursos e correções que o
 
 +++Atualizações no painel de administração
 
+_2 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-293 --> Agora, o [relatórios](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) na guia no [!DNL Quick Checkout] O painel de administração mostra gráficos e informações de relatório das estatísticas de experiência de check-out da sua loja.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-422 --> O [_Visão geral_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-overview) A seção do tópico Relatórios mostra informações detalhadas sobre o desempenho de check-out da sua loja, incluindo o tempo médio de check-out, novas contas criadas durante o check-out e o abandono do check-out.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-423 --> O [_Tendências_](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#reports-trends) A seção da guia Relatórios mostra suas tendências de experiência de check-out filtradas por tipo de conta e novas contas criadas durante o check-out.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-439 --> O **Relatórios** exibições de guia [predefinições de filtro padrão](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html#filter-data) que podem ser usados para mostrar intervalos de dados específicos.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-433 --> Agora você pode ver um _Nenhum dado disponível_ aviso para um gráfico quando uma solicitação não retorna dados.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-473 --> Melhorias na experiência do usuário na [!DNL Quick Checkout] O painel de administração inclui a capacidade de ativar um [rastreamento de checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) configuração que permite que o Adobe Commerce compartilhe informações de relatórios com Bolt.
+
 _5 de outubro de 2022_
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] O painel de administração integra um [tour de recursos com Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html).
+![Novo](../assets/new.svg)<!-- Issue BOLT-379 --> Agora, quando um novo comerciante acessa o [!DNL Quick Checkout] Painel de administração pela primeira vez em [tour de recursos com Gainsight](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) é exibido.
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração contém o outline dos diagramas e as informações de relatórios que estarão disponíveis em breve.
+![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração mostra gráficos e análises de relatórios.
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração mostra o intervalo de datas do filtro para diagramas e informações de relatórios que estarão disponíveis em breve.
+![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> O **Relatórios** na guia no [!DNL Quick Checkout] O painel de administração mostra o intervalo de datas e as predefinições de filtro para gráficos e análises de relatórios.
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) agora exibe a versão do aplicativo de reação no rodapé.
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> Agora, o [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) exibe a versão do aplicativo no rodapé.
 
 +++
+
+## v1.3.0
+
+_2 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-293 --> Agora, [!DNL Quick Checkout] inclui a capacidade de ativar uma [rastreamento de checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/settings-quick-checkout.html#service-settings) configuração que permite que o Adobe Commerce compartilhe informações de relatórios com Bolt.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-461 --> Agora você pode ver uma mensagem de aviso em [!DNL Quick Checkout] Painel de administração se [rastreamento de checkout](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) está desativada.
 
 ## v1.2.0
 
@@ -51,7 +73,7 @@ _8 de setembro de 2022_
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-377 --> [!DNL Quick Checkout] O painel de administração agora contém um cabeçalho de página que inclui seções específicas, como **Visão geral**, **Relatórios** e **Configurações**.
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-379 --> [!DNL Quick Checkout] O painel de administração adiciona um widget de Boas-vindas que fornece um tour de recursos fornecido pelo Gainsight.
+![Novo](../assets/new.svg)<!-- Issue BOLT-379 --> Quando um novo comerciante acessa o [!DNL Quick Checkout] Painel de administração pela primeira vez em que um widget de Boas-vindas é exibido, que fornece um tour de recursos.
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-378 --> [!DNL Quick Checkout] [Exibição do painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) incorpora um **Configuração** etapa exibida quando a API e as chaves publicáveis não são fornecidas na variável [Configurações](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) exibir.
 
