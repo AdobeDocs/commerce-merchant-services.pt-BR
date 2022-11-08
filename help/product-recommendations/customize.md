@@ -1,9 +1,10 @@
 ---
 title: Personalizar
 description: Saiba como personalizar as recomendações do produto.
-source-git-commit: 478c5bf7d7830d971c576ce50ff0bf3ffd4fe9e5
+exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
+source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -110,7 +111,7 @@ Geralmente, os desenvolvedores precisam acessar valores personalizados de atribu
 
 Por exemplo, se sua loja vende alguns produtos orgânicos, você pode ter um atributo personalizado nesses produtos designando-os como `Organic = Yes`. Você pode precisar acessar esse valor de atributo na loja para poder dar a esses produtos um tratamento visual especial quando eles forem exibidos no Recommendations. Da mesma forma, o acesso a esses valores personalizados de atributos do produto permite que você embale os produtos ou direcione a lógica personalizada na camada de apresentação do site.
 
-![Adicionar emblema](assets/unit.png)
+![Adicionar emblema](assets/unit-custom.png)
 
 Para garantir que um atributo de produto personalizado esteja disponível ao renderizar a unidade de recomendação na página, defina a variável `Used in Product Listing` propriedade para `Yes` no [Atributos do produto](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) na página Admin.
 
