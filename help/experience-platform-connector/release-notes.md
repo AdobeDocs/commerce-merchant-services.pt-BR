@@ -2,10 +2,10 @@
 title: Notas de versão
 description: As informações mais recentes do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b0f729a8035d89a8cd45b583df28dedfb36c19d4
+source-git-commit: f3d35772d75d1d0711d389a00023834720d63bd9
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '219'
+ht-degree: 3%
 
 ---
 
@@ -35,6 +35,12 @@ _12 de outubro de 2022_
 * ![Novo](../assets/new.svg) - Suporte adicionado para um [Loja AEM](overview.md#aem-support)
 
 +++
+
+## 2.0.1
+
+_10 de novembro de 2022_
+
+* ![Problema corrigido](../assets/fix.svg) - Agora, o contexto do Adobe Experience Platform é definido somente após o Coletor de eventos de vitrine e o SDK do evento de vitrine serem carregados com êxito.
 
 ## 2.0.0
 
