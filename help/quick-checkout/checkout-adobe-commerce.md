@@ -2,9 +2,9 @@
 title: "Fluxo de check-out para um usuário do Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] fluxo para um usuário do Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
-source-wordcount: '305'
+source-wordcount: '308'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Se uma [!DNL Bolt] for encontrada durante o check-out, os compradores poderão c
 
 Se o comprador estiver conectado à Adobe Commerce antes do check-out, a variável [!DNL Bolt] O pop-up OTP não aparecerá durante o check-out.
 
-Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://support.magento.com/hc/en-us/articles/6909450342541) artigo na Central de ajuda do Adobe Commerce.
+Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artigo na Central de ajuda do Adobe Commerce.
 
 ## Novo [!DNL Bolt] account
 

@@ -2,7 +2,7 @@
 title: "Fluxo de check-out no Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] no Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: d4b58b0ee3da866d460cf18d96ec9dd27b195f7a
+source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
 workflow-type: tm+mt
 source-wordcount: '194'
 ht-degree: 0%
@@ -47,4 +47,4 @@ O [!DNL Quick Checkout] O permite vários casos de uso durante um fluxo de final
 
 ## Obter ajuda
 
-Entre em contato com o Suporte da Adobe Commerce por meio do [Central de ajuda da Adobe Commerce](https://support.magento.com/hc/en-us/articles/360000913794-Adobe-Commerce-Help-Center-User-Guide) para qualquer assistência.
+Entre em contato com o Suporte da Adobe Commerce por meio do [Central de ajuda da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html) para qualquer assistência.
