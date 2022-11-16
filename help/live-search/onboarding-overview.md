@@ -2,9 +2,9 @@
 title: "Visão geral de integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: b4cdbc3b166a3aae5b4219196a86cb681744d435
+source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
@@ -62,9 +62,6 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 ### Não suportado no momento
 
 * O [Pesquisa avançada](https://docs.magento.com/user-guide/catalog/search-advanced.html) está desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
-* [Grupos de clientes](https://docs.magento.com/user-guide/customers/customer-groups.html)
 * [Grupos de preços personalizados](https://docs.magento.com/user-guide/catalog/product-price-group.html)
 * Várias localizações de inventário, conforme usado por [MCOM](https://docs.magento.com/user-guide/mcom.html) ou outras extensões OMS
-* [Recursos B2B integrados](https://business.adobe.com/products/magento/b2b-ecommerce.html)
 * Os preços do produto não incluem [imposto sobre o valor acrescentado](https://docs.magento.com/user-guide/tax/vat.html) (IVA).
-* Os produtos indisponíveis são exibidos nos resultados da pesquisa, independentemente do [Opções de Estoque](https://docs.magento.com/user-guide/catalog/inventory-options-global.html) configuração.
