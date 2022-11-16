@@ -1,13 +1,13 @@
 ---
-title: "[!DNL Quick Checkout] relatórios"
-description: "[!DNL Quick Checkout] oferece informações abrangentes sobre relatórios."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] relatórios'
+description: '''[!DNL Quick Checkout] oferece informações completas sobre relatórios."'
+exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
+source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
 workflow-type: tm+mt
-source-wordcount: '265'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
-
 
 # Relatórios
 
@@ -28,9 +28,9 @@ Os gráficos na seção Visão geral mostram informações detalhadas sobre o de
 | Gráfico | Descrição |
 |---|---|
 | [!UICONTROL Checkout abandonment] | A porcentagem de visitantes que saem do processo de finalização sem concluir uma compra. |
-| [!UICONTROL Checkout abandonment breakdown] | O abandono do checkout é dividido por tipo de visitante. Opções: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Checkout abandonment breakdown] | O abandono do checkout é dividido por tipo de visitante. Dica de ferramenta mostra uma diferença percentual entre Bolt e Guest. Opções: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Average checkout time] | O tempo médio que um visitante leva para concluir o processo de finalização. |
-| [!UICONTROL Average checkout time breakdown] | Tempo médio de finalização dividido por tipo de visitante. Opções: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
+| [!UICONTROL Average checkout time breakdown] | Tempo médio de finalização dividido por tipo de visitante. Dica de ferramenta mostra uma diferença percentual entre Bolt e Guest. Opções: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 | [!UICONTROL Orders by account type] | Pedidos colocados divididos por tipo de visitante. Opções: [!UICONTROL Bolt] / [!UICONTROL Merchant] / [!UICONTROL Guest] |
 
 ## Relatórios de tendências
@@ -55,4 +55,3 @@ Você pode filtrar os resultados mostrados por data ou predefinições existente
 |---|---|
 | [!UICONTROL Preset] | Uma lista suspensa que exibe predefinições padrão que podem ser usadas para mostrar intervalos de dados específicos. Por padrão: Últimos 30 dias |
 | [!UICONTROL Date range] | Uma lista suspensa que permite selecionar um intervalo de dados específico dependendo das datas selecionadas. |
-
