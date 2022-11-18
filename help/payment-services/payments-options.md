@@ -2,9 +2,9 @@
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para os clientes da loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c7afa798096e07409fb36a3d08f7e5b2a5ce40db
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '948'
+source-wordcount: '1001'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Há comportamentos diferentes para cada método de pagamento, dependendo de onde
 ## [!UICONTROL Credit Card Fields]
 
 [!UICONTROL Credit Card Fields] fornecer uma verificação simples e segura dos métodos de pagamento com cartão de crédito ou cartão de débito. Quando um comprador faz o check-out usando campos de cartão de crédito, ele informa o nome, o endereço de cobrança e as informações do cartão de crédito ou de débito, para fazer o pedido. As informações do cliente são usadas com segurança durante a sessão de compra para orientá-las perfeitamente durante o fluxo de finalização.
+
+Habilitar [validação do cartão de crédito](#vaulting) para que suas lojas permitam que os compradores cofrem (salve) as informações do cartão de crédito para um check-out rápido mais tarde.
 
 Você pode configurar [!UICONTROL Credit Card Fields] na configuração da loja ou na Página inicial dos serviços de pagamento. Consulte [Configurações](settings.md#credit-card-fields) para obter mais informações.
 
@@ -104,6 +106,12 @@ Quando um cliente faz o check-out diretamente da página do produto, usando o Pa
 Se o cliente cancelar o pedido, o item na página de produto atual será adicionado ao carrinho do cliente, unindo quaisquer outros itens presentes no carrinho. Essa função permite que o cliente compre rapidamente o item que está visualizando no momento, além de manter quaisquer outros itens que adicionou ao carrinho anteriormente ao navegar pelos produtos.
 
 Quando um cliente entra no fluxo de finalização da página do produto, a página de finalização é simplificada. A visualização mostra apenas dados e opções relacionados ao pedido.
+
+## Vazamento do cartão de crédito
+
+Os compradores podem guardar — ou &quot;guardar&quot; — as informações do cartão de crédito para compras futuras no nível do site (qualquer loja na conta do mesmo comerciante).
+
+Consulte [Vazamento do cartão de crédito](vaulting.md) para obter mais informações.
 
 ## Segurança
 

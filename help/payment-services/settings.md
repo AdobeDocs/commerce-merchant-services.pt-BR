@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 6c14f062336926ead7e0ce285fb4251586698240
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1778'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Você pode personalizar [!DNL Payment Services] de acordo com suas necessidades com as configurações úteis na [!DNL Payment Services] Casa.
 
-Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Essas opções de configuração se aplicam somente ao ambiente definido na variável _[!UICONTROL Payment mode]_do[_ Geral _opções de configuração](#general-configuration-options).
+Para configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] click **[!UICONTROL Settings]**. Essas opções de configuração se aplicam somente ao ambiente definido na variável _[!UICONTROL Payment mode]_do[_ Geral _opções de configuração](#configure-general-settings).
 
 Para obter configurações de várias lojas ou legadas, consulte [Configurar no Administrador](configure-admin.md).
 
@@ -65,12 +65,12 @@ Você pode adicionar uma [!UICONTROL Soft Descriptor] para o(s) site(s) ou a con
 1. Clique em **[!UICONTROL Save]**.
 1. Para criar um descritor suave diferente do padrão configurado para um site ou exibição de loja:
    1. Selecione o site ou a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual deseja criar um descritor suave.
-   1. Alternar *off* **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
+   1. Alternar _off_ **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
    1. Adicione o texto personalizado no campo de texto.
    1. Clique em **[!UICONTROL Save]**.
-1. Para ativar um site ou armazenar, visualize o descritor flexível padrão *ou* o descritor suave usado para o site principal:
+1. Para ativar um site ou armazenar, visualize o descritor flexível padrão _ou_ o descritor suave usado para o site principal:
    1. Selecione o site ou a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual você deseja ativar um descritor suave existente.
-   1. Alternar *on* **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
+   1. Alternar _on_ **[!UICONTROL Use website]** ou **[!UICONTROL Use default]**, dependendo do escopo selecionado).
    1. Clique em **[!UICONTROL Save]**.
 
    Se você tentar sair dessa exibição sem salvar as alterações, será exibido um modal que solicitará que você descarte as alterações, continue a editar ou salve as alterações.
@@ -89,16 +89,28 @@ Você pode adicionar uma [!UICONTROL Soft Descriptor] para o(s) site(s) ou a con
 
 Agora que você ativou os Serviços de Pagamento do seu site, é possível alterar as configurações padrão para funções de pagamento e exibição da loja.
 
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Exibição da página inicial](assets/payment-services-menu-small.png)
+
+1. Clique em **[!UICONTROL Settings]**. Consulte [Introdução ao [!DNL Payment Services] Início](payments-home.md) para obter mais informações.
+1. Configurar opções de pagamento para [cartões de crédito](#credit-card-fields), [botões de pagamento](#payment-buttons)e [estilo do botão](#button-style), de acordo com as seções a seguir.
+
 ### Campos de cartão de crédito
 
 O _[!UICONTROL Credit Card Fields]_As configurações oferecem uma opção de check-out simples e segura para os métodos de pagamento com cartão de crédito ou cartão de débito.
 
 Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para obter mais informações.
 
+1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+   ![Exibição da página inicial](assets/payment-services-menu-small.png)
+
 1. Selecione a exibição de loja na **[!UICONTROL Scope]** menu suspenso, para o qual você deseja ativar um método de pagamento.
 1. Para alterar o nome do método de pagamento exibido durante o check-out, edite o valor no **[!UICONTROL Checkout title]** campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), alternar **[!UICONTROL Payment action]** para `Authorize` ou `Authorize and Capture`.
 1. Para ativar ou desativar os campos do cartão de crédito na página de check-out, alterne a **[!UICONTROL Show on checkout page]** seletor.
+1. Para ativar ou desativar [compartimentalização de cartão](#card-vaulting), alterne a **[!UICONTROL Vault enabled]** seletor.
 1. Para ativar ou desativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 1. Clique em **[!UICONTROL Save]**.
 
@@ -113,6 +125,7 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 | [!UICONTROL Title] | exibição de loja | Adicione o texto para exibição como o título para esta opção de pagamento na exibição Método de Pagamento durante o check-out. Opções: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | site | O [ação de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target=&quot;_blank&quot;} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | site | Ative ou desative a exibição de campos de cartão de crédito na página de check-out. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | site | Ative ou desative a compartimentação do cartão de crédito. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Botões de pagamento
@@ -136,10 +149,10 @@ Você pode ativar e configurar as opções de pagamento dos botões inteligentes
 
       >[!NOTE]
       >
-      > Para usar o Apple Pay [deve ter uma conta de desenvolvedor do Apple](test-validate.md#test-in-sandbox-environment) (completo com informações falsas de cartão de crédito e faturamento) para testá-lo. Quando estiver pronto para usar o Apple Pay na sandbox *ou* modo de produção, após concluir qualquer [teste e validação](test-validate.md), entre em contato com seu representante de vendas para ativá-lo em sua(s) loja(s) ativa(s).
+      > Para usar o Apple Pay [deve ter uma conta de desenvolvedor do Apple](test-validate.md#test-in-sandbox-environment) (completo com informações falsas de cartão de crédito e faturamento) para testá-lo. Quando estiver pronto para usar o Apple Pay na sandbox _ou_ modo de produção, após concluir qualquer [teste e validação](test-validate.md), entre em contato com seu representante de vendas para ativá-lo em sua(s) loja(s) ativa(s).
 
       À medida que você ativa/desativa a visibilidade dos botões de pagamento ou da mensagem Pagamento PayPal Mais Tarde, uma visualização dessa configuração é exibida na parte inferior da página Configurações.
-git
+
 1. Para ativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 1. Clique em **[!UICONTROL Save]**.
 
@@ -212,11 +225,18 @@ Se qualquer Tipo de Cache na tabela Gerenciamento de Cache tiver um `INVALIDATED
 
 Para garantir que sua loja esteja mostrando a configuração correta, periodicamente [liberar o cache](https://docs.magento.com/user-guide/system/cache-management.html).
 
+## Salto de cartão
+
+Você pode ativar a funcionalidade que permite que seus clientes cofrem — ou &quot;salvem&quot; — suas informações de cartão de crédito em sua conta para usá-las em compras futuras.
+
+Ative ou desative a compartimentalização de cartão no [Configurações do campo de cartão de crédito](#credit-card-fields).
+
+Consulte [Vazamento do cartão de crédito](vaulting.md) para obter mais informações sobre compartimentalização.
+
 ## Usar várias contas do PayPal
 
-Em Serviços de Pagamento, você pode usar várias contas do PayPal dentro de **one** conta comercial no nível do site. Por exemplo, se você estiver operando sua(s) loja(s) em vários países (que usam diferentes [moedas](https://docs.magento.com/user-guide/stores/currency.html)) ou deseja usar o Adobe Commerce para algumas partes de sua empresa, mas não *all*, você pode configurar sua conta comercial para usar várias contas PayPal.
+Em Serviços de Pagamento, você pode usar várias contas do PayPal dentro de **one** conta comercial no nível do site. Por exemplo, se você estiver operando sua(s) loja(s) em vários países (que usam diferentes [moedas](https://docs.magento.com/user-guide/stores/currency.html)) ou deseja usar o Adobe Commerce para algumas partes de sua empresa, mas não _all_, você pode configurar sua conta comercial para usar várias contas PayPal.
 
 Consulte [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) para obter mais informações sobre a hierarquia de sites, lojas e visualizações de loja.
 
 Seu representante de vendas pode criar um novo [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) para sua conta comercial e o site adicional com o PayPal, de modo que qualquer um dos botões do PayPal configurados para serem exibidos apareça em seu site. Entre em contato com seu representante de vendas para obter ajuda com o uso de várias contas PayPal para seus sites.
-

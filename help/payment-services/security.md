@@ -2,9 +2,9 @@
 title: Segurança e conformidade
 description: Analise os requisitos de segurança e conformidade do seu site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '296'
+source-wordcount: '369'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Os comerciantes podem concluir uma [questionário de autoavaliação (SAQ)](http
 ### Campos de cartão de crédito
 
 Com os Campos de cartão de crédito, nenhum dado regulamentado por PCI é transmitido pelos seus serviços. Você não precisa armazenar ou manter esses dados, o que reduz amplamente os problemas de conformidade com o PCI.
+
+### Salto de cartão
+
+Quando um comprador [cofres — ou &quot;salva&quot; — suas informações de cartão de crédito](vaulting.md) para compras futuras em suas lojas, informações mínimas de cartão de crédito são compartilhadas com o comprador (últimos quatro dígitos, data de expiração do cartão e marca do cartão). As informações relativas ao cartão de crédito são armazenadas junto do prestador de pagamento. Quando um cartão expira ou já não necessita das informações guardadas, pode eliminar esse token de modo a que as informações deixem de estar armazenadas pelo prestador de serviços de pagamento.
 
 ### Botões inteligentes PayPal
 

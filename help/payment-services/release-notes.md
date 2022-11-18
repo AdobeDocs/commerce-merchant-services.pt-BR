@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 77fbe32ec285bd6ab55100971459f685e19f8425
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '1208'
+source-wordcount: '1286'
 ht-degree: 0%
 
 ---
@@ -53,11 +53,19 @@ _28 de junho de 2021_
 
 +++
 
+## v1.5.0
+
+_18 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue PAY-3880 --> Um comprador agora pode [cofre (salvar) as informações de cartão de crédito durante o check-out](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) para uso em uma compra posterior para o mesmo ou outro armazenamento na mesma conta comercial.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-3950 --> Os comerciantes agora podem habilitar o [Recurso Comércio de compra instantânea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) para as suas lojas, de modo a que os compradores possam (utilizar [informações de cartão de crédito válidas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html)) para acelerar o check-out.
+
 ## v1.4.1
 
 _14 de outubro de 2022_
 
-![Novo](../assets/new.svg)<!-- Issue PAY-3766 --> Quando o método de pagamento de um cliente é recusado, a mensagem de erro visível é mais descritiva. Ele aconselha o cliente a informar novamente as informações sobre pagamento e tentar novamente, tentar outro método de pagamento ou entrar em contato com o banco sobre o cancelamento da transação.
+![Correção](../assets/fix.svg)<!-- Issue PAY-3766 --> Quando o método de pagamento de um cliente é recusado, a mensagem de erro visível é mais descritiva. Ele aconselha o cliente a informar novamente as informações sobre pagamento e tentar novamente, tentar outro método de pagamento ou entrar em contato com o banco sobre o cancelamento da transação.
 
 ## v1.4.0
 

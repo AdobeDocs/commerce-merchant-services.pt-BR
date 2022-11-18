@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 2e9a611cf94bb83733c9cad1e04f4244f62d4272
+source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '802'
 ht-degree: 0%
 
 ---
@@ -61,6 +61,8 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 1. No _[!UICONTROL Payment Services]_expanda a seção_[!UICONTROL Credit Card Fields]_ seção.
 1. Para **[!UICONTROL Title]**, insira o texto (se necessário) para alterar o nome do método de pagamento, conforme mostrado durante o check-out.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **Autorizar e capturar**.
+1. Para **[!UICONTROL Show on checkout page]**, escolha `Yes` para ativar ou desativar campos de cartão de crédito na página de check-out.
+1. Para **[!UICONTROL Vault Enabled]**, escolha `Yes` para habilitar a compartimentalização do cartão de crédito para check-out.
 1. Para **Modo de depuração**, escolha `Yes` para ativar o modo de depuração (ou `No` para desativá-lo).
 1. Clique em **[!UICONTROL Save Config]** para salvar as alterações.
 1. Navegar para **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e, em seguida, clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
