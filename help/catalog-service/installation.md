@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: Saiba como instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: c740e75c9fe12b062683fa957d0c6623d8180e4f
+source-git-commit: ea4b386d7e378b30641e623cb190923dc50563d8
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '456'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,6 @@ Use este método para instalar o [!DNL Catalog Service] extensão para uma inst�
    bin/magento cache:clean
    ```
 
-
 ## Serviço de catálogo e malha de API
 
 O [Malha da API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
@@ -103,7 +102,16 @@ Para concluir a configuração, será necessário [Pacote Adobe IO CLI](https://
 Depois que a malha for configurada no Adobe IO, execute o seguinte comando para conectar a nova malha.
 
 ```bash
-aio api-mesh:source:install "CommerceCatalogServiceGraph"
+aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
+```
+
+em que `variables.json` é um arquivo separado que armazena valores comumente usados para Adobe IO.
+Por exemplo, a chave da API pode ser salva no arquivo :
+
+```json
+{
+    "CATALOG_SERVICE_API_KEY":"your_api_key"
+}
 ```
 
 Após executar esse comando, o Serviço de catálogo deve estar sendo executado pela malha da API.
