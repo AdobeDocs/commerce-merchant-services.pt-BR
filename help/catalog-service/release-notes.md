@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de versão'
 description: As últimas informações da versão para [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: d84996bc76a44b39aeaee7f8b0ed4973fbe5de37
+source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,9 +28,20 @@ Data de lançamento: 2022-11-18 Compatível com Adobe Commerce (EE): Compatível
 
 Esses recursos ainda não são compatíveis:
 
+* Pacotes de produtos com preço fixo
+* Nenhuma atualização é recebida quando as variantes são excluídas do catálogo.
+* O tamanho máximo para a carga de atributos dinâmicos é de 9 MB.
+* Preço do produto do grupo. Pode ser calculado com preços simples do produto.
+* Em uma matriz de imagens, somente a primeira imagem contém funções.
+* Amostras de cores
+* Carregando a Página de detalhes do produto pelo URL do produto.
+
+As seguintes limitações podem ser solucionadas com o uso da API GraphQL:
+
+* Preço Mínimo Anunciado
 * Preços de camada
-* Nenhuma atualização é recebida quando as variantes são excluídas do catálogo
-* O tamanho máximo para a carga dos atributos dinâmicos é de 9 MB
+* Produtos para download e cartões-presente
+* Categorias (`categories` e `categoryList`)
 
 ## Versão V1.0
 
