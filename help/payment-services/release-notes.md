@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
 workflow-type: tm+mt
-source-wordcount: '1286'
+source-wordcount: '1334'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,14 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna .
 
 +++
+
+## v1.5.1
+
+_23 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue PAY-3923 --> Os Serviços de Pagamento agora incluem o número da versão no cabeçalho do agente do usuário para que as solicitações possam rastrear, filtrar ou descontinuar pontos de extremidade não utilizados.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3968 --> Os Serviços de Pagamento agora exibem corretamente os dados do pedido quando um pedido é feito a partir da página do produto usando botões inteligentes.
 
 ## v1.5.0
 
