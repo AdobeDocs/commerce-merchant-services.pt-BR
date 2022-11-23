@@ -2,9 +2,9 @@
 title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] do Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: c4039dbf203198ea1218f4e1516a2690fb7c61c4
+source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1267'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente as solicitações 
 
    Você deve poder adicionar facetas depois de `cron` O executa os feeds de produto e atributo e exporta os metadados do atributo para [!DNL Live Search] serviços.
 
-1. Aguarde pelo menos uma hora para que os dados sejam indexados e sincronizados. Em seguida, use o [Reprodução GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) com a consulta padrão para verificar o seguinte:
+1. Aguarde pelo menos uma hora para que os dados sejam indexados e sincronizados. Em seguida, use o [Reprodução GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) com a consulta padrão para verificar o seguinte:
 
    * A contagem de produtos retornados está próxima do que você espera para a exibição de loja.
    * As facetas são retornadas.

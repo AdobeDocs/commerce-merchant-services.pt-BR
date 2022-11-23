@@ -2,7 +2,7 @@
 title: "Visão geral de integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 8e541924d6a69f963e150057b82e682e1e5d3801
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
 source-wordcount: '332'
 ht-degree: 0%
@@ -41,7 +41,7 @@ Nesse momento, a variável [!DNL Live Search] a API search/category tem os segui
 ### Query
 
 * [!DNL Live Search] não tem acesso à taxonomia completa da árvore de categorias, o que faz com que alguns cenários de pesquisa de navegação em camadas estejam além do seu alcance.
-* [!DNL Live Search] O usa um endpoint GraphQL exclusivo para consultas para oferecer suporte a recursos como lapidamento inteligente e pesquisa por tipo. Embora semelhantes ao [API Magento GraphQL](https://devdocs.magento.com/guides/v2.4/graphql), há algumas diferenças e alguns campos podem não ser totalmente compatíveis no momento.
+* [!DNL Live Search] O usa um endpoint GraphQL exclusivo para consultas para oferecer suporte a recursos como lapidamento inteligente e pesquisa por tipo. Embora semelhantes ao [API Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/), há algumas diferenças e alguns campos podem não ser totalmente compatíveis no momento.
 
 ### Regras
 

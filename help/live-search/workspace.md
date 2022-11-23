@@ -2,9 +2,9 @@
 title: Workspace
 description: A área de trabalho do Live Search é usada para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 19f0c987ab6b43b6fac1cad266b5fd47a7168e73
+source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
 workflow-type: tm+mt
-source-wordcount: '229'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,6 @@ Inicialmente, o [escopo](https://docs.magento.com/user-guide/configuration/scope
 | [Faceta](facets.md) | Filtragem de alto desempenho que usa várias dimensões de valores de atributos para refinar critérios de pesquisa. |
 | [Sinônimos](synonyms.md) | Estenda o alcance da pesquisa para incluir palavras que os compradores podem usar para encontrar produtos que diferem daqueles em seu catálogo. |
 | [Regras](rules.md) | Formate a experiência de pesquisa com regras lógicas que acionem ações programadas. Aumente, enterre, prenda ou oculte os produtos para calibrar os resultados da pesquisa para oferecer suporte às suas metas comerciais. |
-| [GraphQL](https://devdocs.magento.com/live-search/graphql-support.html) | Os desenvolvedores que estão conectados ao Administrador da sua loja podem compor e testar consultas com dados de catálogo reais. Para saber mais, acesse [Visão geral de GraphQL](https://devdocs.magento.com/guides/v2.4/graphql/index.html) no [!DNL Live Search] documentação do desenvolvedor. |
+| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Os desenvolvedores que estão conectados ao Administrador da sua loja podem compor e testar consultas com dados de catálogo reais. Para saber mais, acesse [Visão geral de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) no [!DNL Live Search] documentação do desenvolvedor. |
 | [Feedback](feedback.md) | Envie seus comentários diretamente para a [!DNL Live Search] equipe. |
 | [Configurações](settings.md) | Determine como os valores da faceta de preço são agrupados por faixa de preço na loja. |
