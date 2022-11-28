@@ -2,9 +2,9 @@
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para os clientes da loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
 workflow-type: tm+mt
-source-wordcount: '1001'
+source-wordcount: '1002'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ O [!DNL Apple Pay] é visível da página do produto, do minicarrinho, do carrin
 
 >[!NOTE]
 >
-> Para usar o Apple Pay, entre em contato com seu representante de vendas para habilitá-lo em sua(s) loja(s) ativa(s).
+> Para usar o Apple Pay, entre em contato com seu representante de vendas ou gerente de conta para habilitá-lo em suas lojas ao vivo.
 
 ### [!DNL Pay Later] botão
 
