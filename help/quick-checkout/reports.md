@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] relatórios'
 description: '''[!DNL Quick Checkout] oferece informações completas sobre relatórios."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
-source-git-commit: dd9eab0d6b88a6c723ec10b882a4bb668d66973f
+source-git-commit: bdfac90aa221f39dfc53eee833c473c7dcb0a042
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '294'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ ht-degree: 0%
 
 >[!WARNING]
 >
-> Você deve ativar [**Rastreamento de check-out**](../quick-checkout/settings-quick-checkout.md) no painel Administrador, para que a Adobe Commerce possa compartilhar informações de check-out com Bolt. Por padrão, essa opção de configuração é definida como **Sim**. Se esta opção estiver desativada (defina como **Não**), os relatórios serão afetados.
+> Para permitir que o Adobe Commerce compartilhe informações de check-out com o Bolt, a variável [**Rastreamento de check-out**](../quick-checkout/settings-quick-checkout.md)  deve estar ativada em Admin. Por padrão, essa opção de configuração é definida como **Sim**. Se essa opção estiver definida como **Não**, os relatórios serão afetados. O Bolt atualiza as informações dos relatórios uma vez por dia às 03:00 AM Hora Padrão do Leste (EST).
 
 ## Relatórios de visão geral
 
