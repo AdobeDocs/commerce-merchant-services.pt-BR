@@ -2,9 +2,9 @@
 title: "Integrar a [!DNL Quick Checkout] para extensão do Adobe Commerce"
 description: "Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -132,11 +132,23 @@ Para verificar se o comprador tem um [!DNL Bolt] conta:
 1. Alterar o escopo para **Site principal**.
 1. Clique no botão **Configurar URL de retorno** botão. Isso habilita [!DNL Bolt] para determinar se o comprador tem uma conta. Se o fizerem, a janela pop-up OTP será exibida.
 
->[!CAUTION]
->
-> Alternar o escopo para a **Site principal** garante que o URL correto seja definido. Cada site pode ter vários domínios.
+   >[!CAUTION]
+   >
+   > Alternar o escopo para a **Site principal** garante que o URL correto seja definido. Cada site pode ter vários domínios.
 
 Consulte a [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Tópico {target=&quot;_blank&quot;} para obter mais informações sobre escopos no Adobe Commerce.
+
+## Definir configurações de serviço
+
+![Check-out rápido](assets/service-settings.png)
+
+1. Definir **Ativar o rastreamento de finalização** para `Yes`.
+
+   >[!CAUTION]
+   >
+   > Desativar essa opção afetará os relatórios, pois o Adobe Commerce não tem permissão para compartilhar informações de rastreamento de check-out com Bolt.
+
+1. Selecione o **Próximo estágio após o logon** para alterar o fluxo de navegação depois que o cliente fizer logon. Por padrão, é definido como **Pagamentos** página.
 
 ## Obter ajuda
 

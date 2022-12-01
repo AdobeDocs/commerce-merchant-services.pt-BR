@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d28e8ccd4362b4e32b2eb8c6e1faf38d7c99a4c2
+source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
 workflow-type: tm+mt
-source-wordcount: '891'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -26,6 +26,14 @@ Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html
 Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão para o painel Administrador.
 
 +++Atualizações no painel de administração
+
+_30 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-502 --> Agora, o [relatórios](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html) tem uma nova predefinição &quot;Ano passado&quot;.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-471 --> Melhorias na experiência do usuário na [!DNL Quick Checkout] O painel de administração mostra mais informações em [Dicas de ferramentas](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-reporting/reports.html).
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-514 --> Melhorias na experiência do usuário na [!DNL Quick Checkout] O painel de administração mostra os números totais corretos dos pedidos, a consistência em cores e as legendas corretas para todos os gráficos.
 
 _2 de novembro de 2022_
 
@@ -52,6 +60,16 @@ _5 de outubro de 2022_
 ![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> Agora, o [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) exibe a versão do aplicativo no rodapé.
 
 +++
+
+## v1.4.0
+
+_30 de novembro de 2022_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-513 --> Agora, quando um cliente do Adobe Commerce está conectado à loja durante o processo de finalização e tem uma conta Bolt, uma opção para fazer logon na conta Bolt do comprador é exibida.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-512 --> Uma nova configuração detecta automaticamente se os compradores conectados também podem ser conectados no Bolt.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-480 --> Uma nova configuração no [!DNL Quick Checkout] O Painel de administração permite que você altere o fluxo de navegação padrão para a variável **Envio** assim que um cliente Bolt fizer logon. Por padrão, ele é configurado para **Pagamentos** página.
 
 ## v1.3.0
 
