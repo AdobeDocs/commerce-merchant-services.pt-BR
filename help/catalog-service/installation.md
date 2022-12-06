@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: Saiba como instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 4604aacc19d7740c63b39134bd9f4c146479ac8f
+source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
 workflow-type: tm+mt
-source-wordcount: '456'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -114,15 +114,25 @@ Use este método para instalar o [!DNL Catalog Service] extensão para uma inst�
    bin/magento cache:clean
    ```
 
+## Configurar exportação de catálogo
+
+Depois de instalar [!DNL Catalog Service], você deve configurar o [Conector do Commerce Services](../landing/saas.md) especificando chaves de API e selecionando um espaço de dados SaaS.
+
+Para garantir que a exportação do catálogo esteja sendo executada corretamente:
+
+- Confirme que [trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) estão em execução.
+- Verifique o [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) estão em execução.
+- Certifique-se de que `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`e `Product Variant Feed` os indexadores são definidos como `Update by Schedule`.
+
 ## Serviço de catálogo e malha de API
 
-O [Malha da API](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
+O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
 
 A primeira etapa para usar a malha de API com o serviço de catálogo é conectar a malha de API à sua instância. Veja as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
 Para concluir a configuração, será necessário [Pacote Adobe IO CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado.
 
-Depois que a malha for configurada no Adobe IO, execute o seguinte comando para conectar a nova malha.
+Quando a malha estiver configurada no Adobe IO, execute o seguinte comando que adiciona um `CommerceCatalogServiceGraph` origem da sua malha.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
@@ -137,17 +147,7 @@ Por exemplo, a chave da API pode ser salva no arquivo :
 }
 ```
 
-Após executar esse comando, o Serviço de catálogo deve estar sendo executado pela malha da API.
-
-## Configurar exportação de catálogo
-
-Depois de instalar [!DNL Catalog Service], você deve configurar o [Conector do Commerce Services](../landing/saas.md) especificando chaves de API e selecionando um espaço de dados SaaS.
-
-Para garantir que a exportação do catálogo esteja sendo executada corretamente:
-
-- Confirme que [trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) estão em execução.
-- Verifique o [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) estão em execução.
-- Certifique-se de que `Catalog Attributes Feed`, `Product Feed`, `Product Overrides Feed`e `Product Variant Feed` os indexadores são definidos como `Update by Schedule`.
+Após executar esse comando, o Serviço de catálogo deve estar sendo executado pela malha da API. Você pode executar o `aio api-mesh:get` para exibir a configuração da malha atualizada.
 
 ## [!DNL Catalog Service] demonstração
 
