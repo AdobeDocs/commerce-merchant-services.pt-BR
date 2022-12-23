@@ -2,10 +2,10 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 955dc08e6b67acc18380248b2ddf1b8f8c70ec03
+source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
 workflow-type: tm+mt
-source-wordcount: '1334'
-ht-degree: 0%
+source-wordcount: '1373'
+ht-degree: 1%
 
 ---
 
@@ -52,6 +52,14 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna .
 
 +++
+
+## v1.5.2
+
+_22 de dezembro de 2022_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3992 --> Faturamento aprimorado nos Serviços de Pagamento quando um método de pagamento é recusado.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3999 --> Os Serviços de Pagamento agora exibem corretamente os botões inteligentes do PayPal com [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html)Modelo personalizado {target=_blank} para a página de finalização.
 
 ## v1.5.1
 
