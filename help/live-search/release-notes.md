@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão para [!DNL Live Search] do Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: bece7022324da4b38d3cb9b375dc0e391ffb3a88
+source-git-commit: 4566727b4e672033997491bcaf075c48e2a55cc8
 workflow-type: tm+mt
-source-wordcount: '1191'
+source-wordcount: '1004'
 ht-degree: 1%
 
 ---
@@ -36,7 +36,7 @@ Os comerciantes devem atualizar a versão da extensão do Live Search >= 2.0.5 p
 * Estabilidade: Estável
 
 * ![Novo](../assets/new.svg) - O Live Search agora oferece suporte à filtragem pela configuração &quot;Exibir produtos esgotados&quot; no administrador. Se &quot;Exibir Produtos Fora de Estoque&quot; estiver definido como falso, `inStock = true` é adicionado ao filtro.
-* ![Correção](../assets/fix.svg) - Para melhorar o desempenho, o bloco &quot;Sugestões&quot; foi removido do pop-up do Live Search. Os dados ainda são transmitidos por GraphQL, caso deseje substituir o recurso.
+* ![Correção](../assets/fix.svg) - Para melhorar o desempenho, o bloco &quot;Sugestões&quot; foi removido do pop-up do Live Search. Os dados ainda são transmitidos pelo GraphQL, caso você queira substituir o recurso.
 * ![Correção](../assets/fix.svg) - `categories` e `categoryPath` substituídos `categoryIds` para filtragem de categoria. Leia mais na [productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) tópico.
 * ![Correção](../assets/fix.svg) - Anteriormente, um usuário vinculado a uma empresa B2B recebia um Código de grupo do cliente incorreto ao fazer pesquisas. O Live Search agora retorna o valor correto.
 * ![Correção](../assets/fix.svg) - Anteriormente, ao procurar por um termo que não existe, o Live Search retornaria um erro. Esse erro foi corrigido.
@@ -57,21 +57,7 @@ Os comerciantes devem atualizar a versão da extensão do Live Search >= 2.0.3 p
 
 Recomendamos que os usuários atualizem e testem antes de enviar para a produção. Considere atualizar o ambiente de produção durante horários fora de pico após verificar os resultados do ambiente de teste.
 
->[!NOTE]
->
->O suporte B2B será adicionado em fases a partir de 9 de agosto nos serviços de back-end, com uma migração esperada a ser concluída até o final de agosto. Se a extensão Live Search não for atualizada, sua loja continuará a funcionar normalmente, mas sem recursos B2B.
-
-### Limitações/bugs conhecidos:
-
-* ![Bug](../assets/bug.svg) - As sugestões são fornecidas a partir de produtos que não podem ser exibidos para o grupo de clientes.
-* ![Bug](../assets/bug.svg) - Os produtos não são exibidos se não forem adicionados ao &quot;Catálogo compartilhado padrão&quot;.
-* ![Bug](../assets/bug.svg) - O Adaptador de pesquisa não renderiza o bucket &quot;Não&quot; para atributos de produtos booleanos, mesmo que os produtos estejam configurados com o atributo e o bucket &quot;Não&quot; seja retornado na resposta.
-* Embora alguns produtos e consultas possam retornar resultados que não sejam em inglês, no momento as consultas em vários idiomas não são compatíveis.
-* O B2B com Live Search for PWA Studio não estará disponível até que o PWA Studio adicione suporte para ele.
-* Substituições de produto e atributos de produto no feed podem ter problemas de sincronização que exigem a execução de administradores `bin/magento indexer:reset` e `bin/magento indexer:reindex` para sincronizar novamente corretamente.
-* Se você ativar ou desativar os recursos Permissões do catálogo/Catálogo compartilhado/B2B, a variável `catalog_data_exporter_product_overrides` indexer não é atualizado e marcado incorretamente como `valid`. Use `bin/magento saas:resync --feed=productOverrides` para corrigir o problema.
-
-## [!DNL Live Search] 2,0 {#20}
+## [!DNL Live Search] 2.0 {#20}
 
 * Compatível com Adobe Commerce (EE): 2.4.x
 * Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
@@ -85,10 +71,10 @@ Existente [!DNL Live Search] As instalações devem ser atualizadas para [!DNL L
 * ![Novo](../assets/new.svg) - Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatibilidade para [!DNL Live Search].
 * ![Novo](../assets/new.svg) - O [!DNL Live Search] o processo de instalação é atualizado com alterações avançadas do processo.
 * ![Correção](../assets/fix.svg) - [Pesquisa avançada](https://docs.magento.com/user-guide/catalog/search-advanced.html) link removido do rodapé da loja.
-* ![Bug](../assets/bug.svg) - Os seguintes atributos de produto não são compatíveis com [API Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) quando utilizado em relação à versão beta do PWA: `description`, `name`, `short_description`
+* ![Bug](../assets/bug.svg) - Os seguintes atributos de produto não são compatíveis com [API do Magento GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) quando utilizado em relação à versão beta do PWA: `description`, `name`, `short_description`
 * ![Bug](../assets/bug.svg) - A versão beta do PWA para [!DNL Live Search] não suporta [tratamento de evento](https://devdocs.magento.com/shared-services/storefront-events-sdk.html).
 
-## [!DNL Live Search] 1.3.1. {#131}
+## [!DNL Live Search] 1.3.1 {#131}
 
 * Compatível com Adobe Commerce (EE): 2.4.x
 * Compatível com Adobe Commerce for Cloud (ECE): 2.4.x
