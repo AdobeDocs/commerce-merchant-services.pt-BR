@@ -1,10 +1,10 @@
 ---
-user-guide-title: '"[!DNL Live Search] Guia"'
-user-guide-description: '"Este guia fornece instruções detalhadas sobre como usar [!DNL Live Search] do Adobe Commerce."'
-breadcrumb-title: '"[!DNL Live Search] Guia"'
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+user-guide-title: "[!DNL Live Search] Guia"
+user-guide-description: "Este guia fornece instruções detalhadas sobre como usar [!DNL Live Search] do Adobe Commerce."
+breadcrumb-title: "[!DNL Live Search] Guia"
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '72'
+source-wordcount: '68'
 ht-degree: 2%
 
 ---
@@ -39,10 +39,8 @@ ht-degree: 2%
    - Regras {#rules}
       - [Visão geral](rules.md)
       - [Workspace de regras](rules-workspace.md)
-      - [Componentes da regra](rule-components.md)
       - [Adicionar regras](rules-add.md)
       - [Gerenciar regras](rules-manage.md)
-      - [Notas técnicas](rule-technical-notes.md)
    - [Configurações](settings.md)
    - [Indexação](indexing.md)
 - [Feedback](feedback.md)

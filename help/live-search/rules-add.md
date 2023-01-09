@@ -2,9 +2,9 @@
 title: "Adicionar regras"
 description: "Saiba como criar [!DNL Live Search] regras."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: ed245e440f6db59d8eba66afeddb840420da0cf7
+source-git-commit: 941fdc25f93679593cb3c5db0d29d7a561fcce58
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -95,7 +95,7 @@ Em seguida, insira o *Position* onde deve aparecer o produto fixado. O produto �
 
 As informações inseridas aqui aparecem no [Detalhes da regra](rules-workspace.md) painel.
 
-1. Em *Detalhes*, insira um **Nome** para a regra.
+1. Em *Detalhes*, insira um **Nome** para a regra. Todos os nomes de regras devem ser exclusivos.
 1. Insira um resumo **Descrição** da regra.
 1. Insira o **Data inicial** e **Data final** para a regra estar ativa ou escolher as datas do calendário.
 
@@ -154,7 +154,7 @@ As informações inseridas aqui aparecem no [Detalhes da regra](rules-workspace.
 
 | Campo | Descrição |
 |--- |--- |
-| Nome | O nome da regra. |
+| Nome | O nome da regra. Os nomes de regras devem ser exclusivos. |
 | Data de início | A data de início da regra, se agendada. |
 | Data final | A data final da regra, se agendada. |
 | Descrição | Uma breve descrição da regra. |
