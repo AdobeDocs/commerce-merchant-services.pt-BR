@@ -5,9 +5,9 @@ seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentação
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
-source-git-commit: bbc97eff4cd0c5b544df34061a1e156e72b91d18
+source-git-commit: 60848c4f34f7f894b6b2fa09e5d1462801ffb2ab
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '333'
 ht-degree: 0%
 
 ---
@@ -54,9 +54,9 @@ O Adobe fornece uma coleção de serviços de comércio, integração e dados pa
   </td>
     </tr>
 <tr>
-    <td valign="top">
+    <td valign="top" width="200px">
        <img alt="Arquivo de Cumprimento" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Arquivo de Cumprimento</strong></a> <br><em>(Disponível para Magento Open Source)</em>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Arquivo de Cumprimento</strong></a></br>
     <div>Ofereça uma compra superior on-line, escolha na loja (BOPIS) experiência do cliente e maximize a produtividade do funcionário fornecendo um fluxo de trabalho abrangente e habilitado por meio de um dispositivo móvel.</div>
   </td>
    </tr>
