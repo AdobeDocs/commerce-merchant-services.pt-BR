@@ -2,7 +2,7 @@
 title: Configurar a sandbox de teste
 description: Usar uma conta de sandbox PayPal para usar [!DNL Payment Services] no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: ab4a2f4d432f74cb48dc4b92468305c93088593a
+source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
@@ -20,9 +20,9 @@ Uma conta de sandbox PayPal permite usar [!DNL Payment Services] no modo de test
 Para concluir a integração de sandbox:
 
 1. Navegue até o [Página Conta de Desenvolvedor do PayPal](https://developer.paypal.com/developer/accounts/).
-1. Clique em **[!UICONTROL Log in to Home]** e faça logon com sua conta de teste de caixa de proteção de negócios gerada pelo Portal de desenvolvedores do PayPal ou clique em **Inscrever-se** para criar uma conta.
+1. Clique em **[!UICONTROL Log in to Dashboard]** e faça logon com sua conta de teste de caixa de proteção de negócios gerada pelo Portal de desenvolvedores do PayPal ou clique em **Inscrever-se** para criar uma conta.
 1. Criar uma conta de sandbox PayPal:
-   1. Ir para _[!UICONTROL SANDBOX]_>**[!UICONTROL Accounts]**.
+   1. Ir para _[!UICONTROL Testing Tools]_>**[!UICONTROL Sandbox Accounts]**.
    1. Clique em **[!UICONTROL Create account]**.
 
       Se você criou uma conta de sandbox PayPal durante o processo de integração do sandbox PayPal, é necessário [redefinir sua sandbox de integração](#reset-your-sandbox-account) ou você não pode verificar seu email.

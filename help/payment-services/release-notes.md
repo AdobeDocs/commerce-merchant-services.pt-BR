@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 6d8ce56d8fd26d8dbfebc87a50512570e9f69b2b
+source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
 workflow-type: tm+mt
-source-wordcount: '1373'
+source-wordcount: '1382'
 ht-degree: 1%
 
 ---
@@ -59,7 +59,7 @@ _22 de dezembro de 2022_
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3992 --> Faturamento aprimorado nos Serviços de Pagamento quando um método de pagamento é recusado.
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3999 --> Os Serviços de Pagamento agora exibem corretamente os botões inteligentes do PayPal com [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html)Modelo personalizado {target=_blank} para a página de finalização.
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3999 --> Os Serviços de Pagamento agora exibem corretamente os botões inteligentes PayPal para comerciantes usando [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html)Modelo personalizado {target=_blank} para a página de finalização. Anteriormente, o minicart exibia intermitentemente os botões.
 
 ## v1.5.1
 
