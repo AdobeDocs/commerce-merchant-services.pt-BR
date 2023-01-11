@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: Saiba como instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: fd1c6c385efb2f0e632f74959e75b3b7240b7ada
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '476'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ Você pode instalar o [!DNL Catalog Service] extensão para o Adobe Commerce na 
 
 O [!DNL Catalog Service] O é instalado com chaves Composer, que estão vinculadas à conta do Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornecido no processo de assinatura. O Composer usa essas chaves durante a instalação inicial do [!DNL Adobe Commerce]ou em situações em que as chaves do Composer não eram salvas anteriormente no `auth.json` arquivo.
 
-Consulte [Obter as chaves de autenticação](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) para obter mais informações sobre como obter chaves Composer.
+Consulte [Obter as chaves de autenticação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) para obter mais informações sobre como obter chaves Composer.
 
 ### Adobe Commerce na infraestrutura de nuvem
 

@@ -1,10 +1,10 @@
 ---
-title: '"Tipos de sinônimos"'
-description: '"Um e dois sentidos [!DNL Live Search] os sinônimos expandem a definição de palavras-chave."'
+title: "Tipos de sinônimos"
+description: "Um e dois sentidos [!DNL Live Search] os sinônimos expandem a definição de palavras-chave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: cd1b40ffb350a87ea1317be82789f702922881b9
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '516'
 ht-degree: 0%
 
 ---
@@ -53,4 +53,4 @@ Seja consistente com a maneira como a terminologia é usada no catálogo. Lembre
 
 ### Mapeamento de palavra-chave
 
-Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://docs.magento.com/user-guide/catalog/search-results.html).
+Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).

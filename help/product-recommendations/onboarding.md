@@ -2,9 +2,9 @@
 title: Integração
 description: Saiba mais sobre os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: ab7bb72826ff3aee1ce93d30dde0a752ef8069de
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
@@ -40,4 +40,4 @@ O processo de integração para [!DNL Product Recommendations] O requer acesso �
 
 ### Suporte a B2B {#b2bsupport}
 
-As lojas B2B geralmente exigem uma lógica complexa que dita a visibilidade e o preço do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade ao atender [permissões de categoria](https://docs.magento.com/user-guide/catalog/category-permissions.html), [catálogos compartilhados](https://docs.magento.com/user-guide/catalog/catalog-shared.html)e [preços específicos do grupo de clientes](https://docs.magento.com/user-guide/catalog/pricing-advanced.html). Por exemplo, se você ocultou determinadas categorias do segmento de clientes de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores verão recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
+As lojas B2B geralmente exigem uma lógica complexa que dita a visibilidade e o preço do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade ao atender [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)e [preços específicos do grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você ocultou determinadas categorias do segmento de clientes de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores verão recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.

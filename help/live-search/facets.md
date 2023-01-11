@@ -1,17 +1,17 @@
 ---
-title: '"Aspectos"'
-description: '"[!DNL Live Search] as facetas usam várias dimensões de valores de atributos como critérios de pesquisa."'
+title: "Aspectos"
+description: "[!DNL Live Search] as facetas usam várias dimensões de valores de atributos como critérios de pesquisa."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 40e7da1cb71bd3c977acb77714c2cab55b3b7bf8
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '382'
+source-wordcount: '399'
 ht-degree: 0%
 
 ---
 
 # Aspectos
 
-Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributos como critérios de pesquisa. A pesquisa com facetas é semelhante, mas consideravelmente &quot;mais inteligente&quot; que o padrão [navegação em camadas](https://docs.magento.com/user-guide/catalog/navigation-layered.html). A lista de filtros disponíveis é determinada pela variável [atributos filtráveis](https://docs.magento.com/user-guide/catalog/navigation-layered-filterable-attributes.html) de produtos retornados nos resultados da pesquisa.
+Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributos como critérios de pesquisa. A pesquisa com facetas é semelhante, mas consideravelmente &quot;mais inteligente&quot; que o padrão [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). A lista de filtros disponíveis é determinada pela variável [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de produtos retornados nos resultados da pesquisa.
 
 ![Resultados da pesquisa filtrada](assets/storefront-search-results-run.png)
 
@@ -28,13 +28,13 @@ O Live Search suporta até:
 
 | Configuração | Descrição |
 |--- |--- |
-| [Configurações de exibição de categoria](https://docs.magento.com/user-guide/catalog/categories-display-settings.html) | Âncora - `Yes` |
-| [Propriedades do atributo](https://docs.magento.com/user-guide/stores/attribute-product-create.html) | [Tipo de entrada do catálogo](https://docs.magento.com/user-guide/stores/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
+| [Configurações de exibição de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Âncora - `Yes` |
+| [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada do catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price` |
 | Propriedades da vitrine de atributos | Usar na navegação em camadas dos resultados da pesquisa - `Yes` |
 
 ## Valores de atributo padrão
 
-Os atributos de produto a seguir têm [propriedades storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) que são usados por [!DNL Live Search] e ativadas por padrão.
+Os atributos de produto a seguir têm [propriedades storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que são usados por [!DNL Live Search] e ativadas por padrão.
 
 | Propriedade | Propriedade Storefront | Atributo |
 |---|---|---|

@@ -2,9 +2,9 @@
 title: "Espaço de trabalho de regras"
 description: "Saiba mais sobre a [!DNL Live Search] espaço de trabalho de regras."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 12fc4e0ee4399a50ad3d2ced2664e41aced7198d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '585'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ O espaço de trabalho de regras lista a seleção atual de regras e seu status, 
 
 ## Definir o escopo
 
-Se a instalação do Adobe Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://docs.magento.com/user-guide/configuration/scope.html) onde suas regras se aplicam.
+Se a instalação do Adobe Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde suas regras se aplicam.
 
 ## Mostrar/ocultar colunas
 

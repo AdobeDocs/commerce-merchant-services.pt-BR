@@ -2,16 +2,16 @@
 title: Configurações
 description: Saiba como alterar a fonte de seu [!DNL Product Recommendations] e como ativar as recomendações visuais.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 6d0c7c749fe90c7c204afe47446f3483d8668b53
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '410'
+source-wordcount: '411'
 ht-degree: 0%
 
 ---
 
 # Configurações
 
-Quando você [configurar um espaço de dados SaaS](https://docs.magento.com/user-guide/configuration/services/saas.html) para o Recommendations, o espaço de dados SaaS coleta dados de catálogo e dados comportamentais da loja. [Adobe Sensei](https://www.adobe.com/sensei.html) O analisa esses dados e calcula as associações de produtos usadas para fornecer o Recommendations do produto.
+Quando você [configurar um espaço de dados SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) para o Recommendations, o espaço de dados SaaS coleta dados de catálogo e dados comportamentais da loja. [Adobe Sensei](https://www.adobe.com/sensei.html) O analisa esses dados e calcula as associações de produtos usadas para fornecer o Recommendations do produto.
 
 Ambientes não relacionados à produção para teste ou armazenamento temporário geralmente não têm a quantidade ou a qualidade dos dados comportamentais da loja para fornecer recomendações realistas do produto. O comportamento real do comprador em escala pode ser capturado somente em um ambiente de produção. Para resolver esse problema, o Adobe Commerce permite usar recomendações de produto do ambiente de produção com outros espaços de dados SaaS de não produção. Usar os dados de vitrine reais em um ambiente de não produção permite que você visualize as recomendações que seus compradores veem e experimente com diferentes tipos de recomendação e locais de posicionamento. O Recommendations de um espaço de dados SaaS diferente pode ser visualizado por compradores, mas não clicado.
 

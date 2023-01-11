@@ -2,9 +2,9 @@
 title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] do Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: 11f961ea7e2e01d5d9efdaf2191f25f3a1dc8878
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '1267'
+source-wordcount: '1279'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Este tópico fornece instruções para fazer o seguinte:
 
 Faça o seguinte:
 
-1. Confirme que [trabalhos cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html) e [indexadores](https://docs.magento.com/user-guide/system/index-management.html) estão em execução.
+1. Confirme que [trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) e [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) estão em execução.
 
 1. Escolha o método de integração que atenda aos seus requisitos e siga as instruções.
 
@@ -68,7 +68,7 @@ Nesse cenário, as operações de vitrine são interrompidas enquanto o [!DNL Li
    >
    > Embora os dados sejam indexados e sincronizados, as operações de pesquisa e navegação de categoria não estão disponíveis na loja. Dependendo do tamanho do catálogo, o processo pode demorar pelo menos uma hora a partir do momento `cron` O é executado para sincronizar os dados com o [!DNL Live Search] serviços.
 
-1. Verifique se o seguinte [indexadores](https://docs.magento.com/user-guide/system/index-management.html) estão definidas como `Update by Schedule`:
+1. Verifique se o seguinte [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) estão definidas como `Update by Schedule`:
 
    * Feed do produto
    * Feed da variante do produto
@@ -116,7 +116,7 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente as solicitações 
 
    [!DNL Elasticsearch] O continua a gerenciar solicitações de pesquisa da loja enquanto o [!DNL Live Search] O serviço sincroniza dados do catálogo e indexa produtos em segundo plano.
 
-1. Verifique se o seguinte [indexadores](https://docs.magento.com/user-guide/system/index-management.html) estão definidas como `Update by Schedule`:
+1. Verifique se o seguinte [indexadores](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) estão definidas como `Update by Schedule`:
 
    * Feed do produto
    * Feed da variante do produto
@@ -128,7 +128,7 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente as solicitações 
 
    Você deve poder adicionar facetas depois de `cron` O executa os feeds de produto e atributo e exporta os metadados do atributo para [!DNL Live Search] serviços.
 
-1. Aguarde pelo menos uma hora para que os dados sejam indexados e sincronizados. Em seguida, use o [Reprodução GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) com a consulta padrão para verificar o seguinte:
+1. Aguarde pelo menos uma hora para que os dados sejam indexados e sincronizados. Em seguida, use o [Reprodução do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) com a consulta padrão para verificar o seguinte:
 
    * A contagem de produtos retornados está próxima do que você espera para a exibição de loja.
    * As facetas são retornadas.
@@ -243,14 +243,14 @@ Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz d
 
 ## Desinstalação [!DNL Live Search] {#uninstall}
 
-Para desinstalar [!DNL Live Search], consulte [Desinstalar módulos](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Para desinstalar [!DNL Live Search], consulte [Desinstalar módulos](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).
 
 ## [!DNL Live Search] pacotes {#packages}
 
 | Embalagem | Descrição |
 |--- |--- |
-| `module-live-search` | Permite que os comerciantes definam suas configurações de pesquisa para lapidamento, sinônimos, regras de consulta etc., além de fornecer acesso a um playground GraphQL somente leitura para testar consultas da *Administrador*. |
-| `module-live-search-adapter` | Envia solicitações de pesquisa da loja para a [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação por categoria - Roteia solicitações da loja [navegação superior](https://docs.magento.com/user-guide/catalog/navigation-top.html) ao serviço de pesquisa.<br />- Pesquisa global - Rota solicitações do [pesquisa rápida](https://docs.magento.com/user-guide/catalog/search-quick.html) na parte superior direita da loja até a [!DNL Live Search] serviço. |
+| `module-live-search` | Permite que os comerciantes definam suas configurações de pesquisa para lapidamento, sinônimos, regras de consulta etc., além de fornecer acesso a um playground do GraphQL somente leitura para testar consultas da *Administrador*. |
+| `module-live-search-adapter` | Envia solicitações de pesquisa da loja para a [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação por categoria - Roteia solicitações da loja [navegação superior](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-top.html) ao serviço de pesquisa.<br />- Pesquisa global - Rota solicitações do [pesquisa rápida](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) na parte superior direita da loja até a [!DNL Live Search] serviço. |
 | `module-live-search-storefront-popover` | Um provedor de &quot;pesquisa ao digitar&quot; substitui a pesquisa rápida padrão e retorna dados e miniaturas dos principais resultados de pesquisa. |
 
 ## [!DNL Live Search] dependências {#dependencies}

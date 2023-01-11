@@ -1,9 +1,10 @@
 ---
 title: Posicionamento e rótulos
 description: Saiba onde você pode colocar recomendações em várias páginas do seu site e sugestões para rótulos usados com frequência para cada tipo de recomendação.
-source-git-commit: b3ac6ab9c5877b5c722cd08cc50d746595386ba9
+exl-id: e1025138-49dc-4833-92bb-27e8e415d724
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '557'
 ht-degree: 0%
 
 ---
@@ -58,4 +59,4 @@ A tabela a seguir lista as páginas de loja onde você pode colocar recomendaç�
 | Detalhes do produto | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência<br>Similaridade visual |
 | Carrinho | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência |
 | Confirmação | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência |
-| Page Builder | [Arrastar e soltar](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html#add-an-existing-recommendation-unit) para posicionar o tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Recomendado para você<br>Tendência |
+| Page Builder | [Arrastar e soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para posicionar o tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Recomendado para você<br>Tendência |

@@ -2,9 +2,9 @@
 title: Instalar e configurar o Adobe Experience Platform Connector no Adobe Commerce
 description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Experience Platform Connector do Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: bd1cf8a3b4740594cf6b8678d899d771a886cb2e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '298'
+source-wordcount: '297'
 ht-degree: 0%
 
 ---
@@ -64,4 +64,4 @@ Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz d
 
 ## Desinstale o conector do Experience Platform {#uninstall}
 
-Para desinstalar o conector Experience Platform, consulte [módulos de desinstalação](https://devdocs.magento.com/guides/v2.4/install-gde/install/cli/install-cli-uninstall-mods.html).
+Para desinstalar o conector Experience Platform, consulte [módulos de desinstalação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html).

@@ -1,10 +1,10 @@
 ---
-title: '"Faceting Workspace"'
-description: '"Saiba mais sobre a [!DNL Live Search] faceting workspace."'
+title: "Faceting Workspace"
+description: "Saiba mais sobre a [!DNL Live Search] faceting workspace."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '262'
+source-wordcount: '265'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O [!DNL Live Search] A área de trabalho lista todas as facetas disponíveis no 
 
 ## Definir o escopo
 
-Se a instalação do Adobe Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://docs.magento.com/user-guide/configuration/scope.html) onde suas configurações de faceta se aplicam.
+Se a instalação do Adobe Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde suas configurações de faceta se aplicam.
 
 ## Filtrar a lista
 

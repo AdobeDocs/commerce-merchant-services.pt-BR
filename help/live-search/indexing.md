@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexando"
 description: "Saiba como [!DNL Live Search] indexa as propriedades do atributo do produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '553'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ As propriedades do atributo do produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-O [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto que tenha a variável [propriedade storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) `Use in Search` defina como `Yes` no Administrador do Adobe Commerce. Quando ativado, `Search Weight` e `Visible in Advanced Search` pode ser definido para o atributo .
+O [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto que tenha a variável [propriedade storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) `Use in Search` defina como `Yes` no Administrador do Adobe Commerce. Quando ativado, `Search Weight` e `Visible in Advanced Search` pode ser definido para o atributo .
 
 >[!NOTE]
 >
@@ -71,7 +71,7 @@ Fluxo de trabalho de atualização de fluxo:
 
 ## Pesquisa de cliente
 
-O [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto classificável definindo a variável [propriedade storefront](https://docs.magento.com/user-guide/catalog/product-attributes.html), *Usado para classificação em listas de produtos* para `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no [Classificar por](https://docs.magento.com/user-guide/catalog/navigation.html) controle de paginação em páginas de catálogo. Até 300 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades storefront](https://docs.magento.com/user-guide/stores/attributes-product.html) que podem ser pesquisados e filtrados.
+O [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto classificável definindo a variável [propriedade storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Usado para classificação em listas de produtos* para `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no [Classificar por](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) controle de paginação em páginas de catálogo. Até 300 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que podem ser pesquisados e filtrados.
 Os metadados de índice são armazenados no pipeline de indexação e são acessíveis pelo serviço de pesquisa.
 
 ![[!DNL Live Search] diagrama da API de metadados de índice](assets/index-metadata-api.svg)

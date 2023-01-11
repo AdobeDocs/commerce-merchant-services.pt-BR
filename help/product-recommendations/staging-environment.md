@@ -1,9 +1,10 @@
 ---
 title: Teste no ambiente de preparo
 description: Saiba como usar [!DNL Product Recommendations] do ambiente de produção em seu ambiente de preparo para fins de teste.
-source-git-commit: 7fe89df32dc5363817f957180e5b75e7217fc14a
+exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '428'
+source-wordcount: '429'
 ht-degree: 0%
 
 ---
@@ -35,7 +36,7 @@ Para obter as recomendações do ambiente de produção, você deve garantir que
 
 1. Implante o `magento/product-recommendations` para um ambiente de não produção em que os dados do catálogo são semelhantes ao catálogo de produção.
 
-1. Usar uma das IDs do espaço de dados de não produção para [configuração](https://docs.magento.com/user-guide/configuration/services/saas.html) em Admin.
+1. Usar uma das IDs do espaço de dados de não produção para [configuração](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) em Admin.
 
 1. Gere os dados por conta própria clicando em sua loja para imitar o comportamento dos compradores reais (ou crie um script de automação). Por meio dos testes, você gera eventos comportamentais em seu ambiente de não produção. Esses eventos são usados para produzir afinidades de produto que alimentam as recomendações. Para testes, [!DNL Commerce] O sugere que você interaja com os seguintes tipos de recomendação:
 

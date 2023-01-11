@@ -2,9 +2,9 @@
 title: Workspace
 description: Saiba como configurar, gerenciar e monitorar o desempenho das recomendações de produtos.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 9f1f05475b2d8401ec33272e3f12e3cc7285478d
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ _Recommendations Workspace_
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://docs.magento.com/user-guide/stores/websites-stores-views.html) de todas as configurações de recomendação definidas como `Default Store View`. Se a sua instalação do Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://docs.magento.com/user-guide/configuration/scope.html) onde suas recomendações se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de todas as configurações de recomendação definidas como `Default Store View`. Se a sua instalação do Commerce incluir várias exibições de loja, defina **Escopo** para [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde suas recomendações se aplicam.
 
 ## Definir o intervalo de datas das métricas
 

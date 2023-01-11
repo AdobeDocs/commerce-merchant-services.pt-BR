@@ -1,10 +1,10 @@
 ---
-title: '"Tour rápido"'
-description: '"Faça um rápido tour por [!DNL Live Search] da loja."'
+title: "Tour rápido"
+description: "Faça um rápido tour por [!DNL Live Search] da loja."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '306'
+source-wordcount: '313'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é
 
 ## Pesquisar à medida que você digita
 
-[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados de pesquisa em um [proveta](storefront-popover.md) como compradores, digite queries no [Pesquisar](https://docs.magento.com/user-guide/catalog/search-quick.html) caixa. O [detalhes do produto](https://docs.magento.com/user-guide/quick-tour/product-page.html) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir tudo_ no rodapé da janela exibe a página de resultados da pesquisa.
+[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados de pesquisa em um [proveta](storefront-popover.md) como compradores, digite queries no [Pesquisar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) caixa. O [detalhes do produto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir tudo_ no rodapé da janela exibe a página de resultados da pesquisa.
 
 [!DNL Live Search] retorna resultados de &quot;pesquisa conforme você digita&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na query não é configurável. Os seguintes campos estão incluídos no portador: `name`, `sku`e `category_ids`.
 

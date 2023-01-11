@@ -2,9 +2,9 @@
 title: Workspace
 description: A área de trabalho do Live Search é usada para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '236'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ O espaço de trabalho é onde você configura, gerencia e monitora o desempenho 
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://docs.magento.com/user-guide/configuration/scope.html) de todos [!DNL Live Search] está definida como `Default Store View`. Se o seu [!DNL Commerce] instalação inclui várias visualizações de loja, conjunto **Escopo** para [exibição de loja](https://docs.magento.com/user-guide/stores/websites-stores-views.html) onde suas configurações de faceta se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) de todos [!DNL Live Search] está definida como `Default Store View`. Se o seu [!DNL Commerce] instalação inclui várias visualizações de loja, conjunto **Escopo** para [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) onde suas configurações de faceta se aplicam.
 
 ## Opções de menu
 
@@ -27,6 +27,6 @@ Inicialmente, o [escopo](https://docs.magento.com/user-guide/configuration/scope
 | [Faceta](facets.md) | Filtragem de alto desempenho que usa várias dimensões de valores de atributos para refinar critérios de pesquisa. |
 | [Sinônimos](synonyms.md) | Estenda o alcance da pesquisa para incluir palavras que os compradores podem usar para encontrar produtos que diferem daqueles em seu catálogo. |
 | [Regras](rules.md) | Formate a experiência de pesquisa com regras lógicas que acionem ações programadas. Aumente, enterre, prenda ou oculte os produtos para calibrar os resultados da pesquisa para oferecer suporte às suas metas comerciais. |
-| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Os desenvolvedores que estão conectados ao Administrador da sua loja podem compor e testar consultas com dados de catálogo reais. Para saber mais, acesse [Visão geral de GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) no [!DNL Live Search] documentação do desenvolvedor. |
+| [GraphQL](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/) | Os desenvolvedores que estão conectados ao Administrador da sua loja podem compor e testar consultas com dados de catálogo reais. Para saber mais, acesse [Visão geral da GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) no [!DNL Live Search] documentação do desenvolvedor. |
 | [Feedback](feedback.md) | Envie seus comentários diretamente para a [!DNL Live Search] equipe. |
 | [Configurações](settings.md) | Determine como os valores da faceta de preço são agrupados por faixa de preço na loja. |

@@ -2,9 +2,9 @@
 title: "Gerenciar aspectos"
 description: "Saiba como gerenciar as [!DNL Live Search] facetas."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: a17c9ef193394d86f5439f900ebba3dd68d33b45
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '441'
 ht-degree: 0%
 
 ---
@@ -36,7 +36,7 @@ Consulte [Configurações](settings.md) para configurar intervalos e agrupamento
 
 1. Para editar o rótulo da faceta, siga um destes procedimentos:
 
-   * Para um [!DNL Commerce] loja, edite a [rótulo do atributo](https://docs.magento.com/user-guide/stores/attributes-product.html).
+   * Para um [!DNL Commerce] loja, edite a [rótulo do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
    * Para uma implementação sem cabeçalho, clique no valor na primeira coluna e edite o texto conforme necessário.
 
    ![Editar rótulo](assets/facet-edit-label.png)

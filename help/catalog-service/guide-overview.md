@@ -2,9 +2,9 @@
 title: '''[!DNL Catalog Service] Visão geral do guia"'
 description: '[!DNL Catalog Service for Adobe Commerce] O fornece uma maneira de recuperar o conteúdo de Páginas de exibição de produto e Páginas de lista de produtos mais rapidamente do que as consultas nativas do Adobe Commerce GraphQL.'
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
-source-git-commit: fdc8482b22b11261265af52e3ab0c780a14c3342
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '244'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
@@ -23,8 +23,8 @@ Este guia destina-se aos administradores do Adobe [!DNL Commerce]. Inclui inform
 
 | Guia | Descrição |
 |------ | ----------- |
-| [Guia do usuário do Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentação com foco em merchant para Adobe Commerce e Magento Open Source |
-| [Guia do desenvolvedor do Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
+| [Guia do usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação com foco em merchant para Adobe Commerce e Magento Open Source |
+| [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |
 
 ## Suporte
 

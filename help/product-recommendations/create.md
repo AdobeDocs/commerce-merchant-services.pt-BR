@@ -2,9 +2,9 @@
 title: Criar Nova Recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5fa08429a97c9ed59a339a0eca268f99c1023b7e
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '841'
+source-wordcount: '848'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. No _Administrador_ barra lateral, vá para **Marketing** > _Promoções_ > **Recommendations do produto** para exibir o _Recommendations do produto_ espaço de trabalho.
 
-1. Especifique a [Exibição da loja](https://docs.magento.com/user-guide/configuration/scope.html) onde deseja que as recomendações sejam exibidas.
+1. Especifique a [Exibição da loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder podem ser criadas somente para a exibição de loja padrão. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recommendations do produto](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html).
+   > As unidades de recomendação do Page Builder podem ser criadas somente para a exibição de loja padrão. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recommendations do produto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
 
 1. Clique em **Criar recomendação**.
 
@@ -37,7 +37,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    - Detalhes do produto
    - Carrinho
    - Confirmação
-   - [Page Builder](https://docs.magento.com/user-guide/cms/page-builder-add-recommendations.html)
+   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    É possível criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Construtor de página. O tipo de página é esmaecido quando o limite é atingido.
 

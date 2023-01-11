@@ -1,10 +1,10 @@
 ---
-title: '"Adicionar sinônimos"'
-description: '"Adicionar [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."'
+title: "Adicionar sinônimos"
+description: "Adicionar [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
-source-wordcount: '393'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Aumente a participação do cliente adicionando sua própria lista com curadoria
 ## Etapa 1: Adicionar um sinônimo
 
 1. Em Admin, acesse **Marketing** > SEO &amp; Pesquisar > **[!DNL Live Search]**.
-1. Para várias lojas, defina **Escopo** para [exibição de loja](https://docs.magento.com/user-guide/configuration/scope.html) onde as configurações de sinônimo se aplicam.
+1. Para várias lojas, defina **Escopo** para [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde as configurações de sinônimo se aplicam.
 1. Clique no botão **Sinônimos** guia .
 1. Clique no botão **Adicionar sinônimos** botão.
 
