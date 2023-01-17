@@ -3,9 +3,9 @@ user-guide-title: "[!DNL Catalog Service] Guia"
 user-guide-description: "Este guia fornece instruções detalhadas sobre como usar [!DNL Catalog Service] para Adobe Commerce."
 breadcrumb-title: "[!DNL Catalog Service] Guia"
 hide: true
-source-git-commit: 1a55f2fb3d56183e5e73d172ebdc40f340e4d520
+source-git-commit: ce07de2e22fc75e5b22a7db08f9f753a6c3567a3
 workflow-type: tm+mt
-source-wordcount: '59'
+source-wordcount: '64'
 ht-degree: 3%
 
 ---
@@ -15,8 +15,9 @@ ht-degree: 3%
 - [Visão geral do guia](guide-overview.md)
 - [Introdução ao [!DNL Catalog Service]](overview.md)
 - [Integração e instalação](installation.md)
-- Consultas GraphQL {#graphql}
+- Consultas do GraphQL {#graphql}
    - [consulta de produtos](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/)
    - [consulta productSearch](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/)
    - [consulta refineProduct](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/refine-product/)
+- [Serviço de catálogo e malha de API](mesh.md)
 - [Notas de versão](release-notes.md)

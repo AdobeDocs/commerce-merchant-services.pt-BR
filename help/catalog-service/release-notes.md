@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de versão'
 description: As últimas informações da versão para [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 624c959119958f9fdd15d3d9559092c35d079c2c
+source-git-commit: cfa0b505b0fb793bbc072f9f837551b7e67e9721
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '658'
 ht-degree: 0%
 
 ---
@@ -16,6 +16,34 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Catalog Serv
 * ![Novo](../assets/new.svg) Novos recursos
 * ![Correção](../assets/fix.svg) Correções e melhorias
 * ![Bug](../assets/bug.svg) Problemas conhecidos
+
+## Versão V1.3
+
+Data de lançamento: 2023-1-17 Compatível com Adobe Commerce (EE): Compatível com 2.4.x com Adobe Commerce for Cloud (ECE): 2.4.x Estabilidade: Disponibilidade geral
+
+![Novo](../assets/new.svg) A experiência de integração foi simplificada e aprimorada.
+![Novo](../assets/new.svg) Os novos endpoints de sandbox do cliente estão disponíveis para testes de pré-produção.
+![Novo](../assets/new.svg) Suporte adicionado para produtos virtuais.
+![Correção](../assets/fix.svg) Melhorias na escalabilidade e no desempenho da API.
+
+### Limitações conhecidas
+
+Esses recursos ainda não são compatíveis:
+
+* Pacotes de produtos com preço fixo
+* Nenhuma atualização é recebida quando as variantes são excluídas do catálogo.
+* O tamanho máximo para a carga de atributos dinâmicos é de 9 MB.
+* Preço do produto do grupo. Pode ser calculado com preços simples do produto.
+* Em uma matriz de imagens, somente a primeira imagem contém funções.
+* Amostras de cores
+* Carregando a Página de detalhes do produto pelo URL do produto.
+
+As seguintes limitações podem ser solucionadas com o uso da API do GraphQL:
+
+* Preço Mínimo Anunciado
+* Preços de camada
+* Produtos para download e cartões-presente
+* Categorias (`categories` e `categoryList`)
 
 ## Versão V1.1
 
@@ -36,7 +64,7 @@ Esses recursos ainda não são compatíveis:
 * Amostras de cores
 * Carregando a Página de detalhes do produto pelo URL do produto.
 
-As seguintes limitações podem ser solucionadas com o uso da API GraphQL:
+As seguintes limitações podem ser solucionadas com o uso da API do GraphQL:
 
 * Preço Mínimo Anunciado
 * Preços de camada
