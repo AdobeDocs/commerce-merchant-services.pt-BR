@@ -2,9 +2,9 @@
 title: "Integrar a [!DNL Quick Checkout] para extensão do Adobe Commerce"
 description: "Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -56,7 +56,7 @@ Consulte a [instalar](../quick-checkout/install.md) para obter informações det
 
 ## Criar conta com [!DNL Bolt]
 
-Antes de configurar o [!DNL Quick Checkout] no administrador do Adobe Commerce, é necessário criar um [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} e [produção](https://merchant.bolt.com/register?platform=magento2){target=&quot;_blank&quot;} contas comerciais em [!DNL Bolt]. Forneça todos os detalhes necessários para criar uma conta no [!DNL Bolt].
+Antes de configurar o [!DNL Quick Checkout] no administrador do Adobe Commerce, é necessário criar um [sandbox](https://merchant-sandbox.bolt.com/register?platform=magento2){target="_blank"} and [production](https://merchant.bolt.com/register?platform=magento2){target="_blank"}  contas de comerciantes em [!DNL Bolt]. Forneça todos os detalhes necessários para criar uma conta no [!DNL Bolt].
 
 Consulte a [testar e validar](../quick-checkout/testing.md) para obter mais informações.
 
@@ -70,7 +70,7 @@ Para usar o [!DNL Quick Checkout] é necessário [!DNL Bolt] chaves exclusivas e
 
    ![Check-out rápido](assets/account-credentials.png)
 
-Consulte a [[!DNL Bolt] detalhes do ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys)página {target=&quot;_blank&quot;} para saber mais sobre chaves e assinar segredo de [!DNL Bolt] para [!DNL Quick Checkout] extensão.
+Consulte a [[!DNL Bolt] detalhes do ambiente](https://help.bolt.com/developers/references/environment-details/#about-keys){target="_blank"} página para saber mais sobre chaves e assinar o segredo de [!DNL Bolt] para [!DNL Quick Checkout] extensão.
 
 >[!CAUTION]
 >
@@ -78,7 +78,7 @@ Consulte a [[!DNL Bolt] detalhes do ambiente](https://help.bolt.com/developers/r
 
 ## Configurar provedores de pagamento
 
-Para conectar seu provedor de serviços de pagamento, siga as etapas descritas na [configuração do processador](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/)desenvolvedor {target=&quot;_blank&quot;} [!DNL Bolt] página.
+Para conectar seu provedor de serviços de pagamento, siga as etapas descritas na [configuração do processador](https://help.bolt.com/integrations/adobe-quick-checkout/set-up/){target="_blank"} desenvolvedor [!DNL Bolt] página.
 
 ## Habilitar extensão
 
@@ -99,7 +99,7 @@ Para conectar seu provedor de serviços de pagamento, siga as etapas descritas n
 
 1. Valide as credenciais após fornecer sua API exclusiva e [!DNL Publishable keys].
 
-![Check-out rápido](assets/quick-checkout-main-view-react.png)
+![Check-out rápido](assets/quick-checkout-main-view.png)
 
 Consulte a [Configurações](../quick-checkout/settings-quick-checkout.md) tópico para obter mais informações sobre as opções de configuração do [!DNL Quick Checkout] para extensão do Adobe Commerce.
 
@@ -136,7 +136,7 @@ Para verificar se o comprador tem um [!DNL Bolt] conta:
    >
    > Alternar o escopo para a **Site principal** garante que o URL correto seja definido. Cada site pode ter vários domínios.
 
-Consulte a [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings)Tópico {target=&quot;_blank&quot;} para obter mais informações sobre escopos no Adobe Commerce.
+Consulte a [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings){target="_blank"} para obter mais informações sobre escopos no Adobe Commerce.
 
 ## Definir configurações de serviço
 
@@ -149,6 +149,7 @@ Consulte a [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/
    > Desativar essa opção afetará os relatórios, pois o Adobe Commerce não tem permissão para compartilhar informações de rastreamento de check-out com Bolt.
 
 1. Selecione o **Próximo estágio após o logon** para alterar o fluxo de navegação depois que o cliente fizer logon. Por padrão, é definido como **Pagamentos** página.
+1. Definir se [!DNL Quick Checkout] permite **logon automático** durante o check-out. Por padrão, ele é ativado para fazer logon automaticamente no [!DNL Bolt] rede.
 
 ## Obter ajuda
 

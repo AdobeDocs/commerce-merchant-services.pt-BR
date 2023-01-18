@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: 8b915cd0a8f25934675a2ae00ee2694b7facc1bd
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '1056'
+source-wordcount: '1185'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,20 @@ _5 de outubro de 2022_
 ![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> Agora, o [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) exibe a versão do aplicativo no rodapé.
 
 +++
+
+## v1.5.0
+
+_18 de janeiro de 2023_
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-522 --> Uma nova configuração pode ser ativada/desabilitada para detectar se [compradores](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-options/checkout-adobe-commerce.html) pode ser conectado automaticamente no Bolt.
+
+![Novo](../assets/new.svg)<!-- Issue BOLT-523 --> Uma nova configuração pode ser ativada/desativada, permitindo que os comerciantes especifiquem se os compradores podem fazer logon automaticamente em ambas as redes ou apenas Bolt network.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-542 --> Melhorias na experiência do usuário ao [salvar cartão ou endereço em uma conta Bolt](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html) quando um comprador fornece email.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-550 --> Melhorias na experiência do usuário em [logon automático](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#configure-service-settings) quando um usuário Bolt fornece email.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-544 --> Aprimoramentos de compatibilidade para [URLs de retorno de chamada](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#check-shopper-valid-account) com [vários sites](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/multi-sites/ms-overview.html) em Bolt.
 
 ## v1.4.0
 

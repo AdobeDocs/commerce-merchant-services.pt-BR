@@ -2,9 +2,9 @@
 title: "Fluxo de check-out para um usuário do Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] fluxo para um usuário do Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1f2305df7566cd77a6be161cc9d1265c0291171c
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '405'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,19 @@ Se uma [!DNL Bolt] for encontrada durante o check-out, os compradores poderão c
 Se o comprador estiver conectado à Adobe Commerce antes do check-out, a variável [!DNL Bolt] A pop-up OTP não aparecerá durante o check-out, mas será exibida uma mensagem sugerindo que o comprador faça logon para acessar sua Bolsa de Bolt.
 
 Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artigo na Central de ajuda do Adobe Commerce.
+
+### Logon automático
+
+É possível configurar um logon automático para [!DNL Quick Checkout] usuários. Você pode ativar uma configuração para fazer logon automático em um usuário durante o check-out.
+
+1. No _Administrador_ barra lateral, navegue até **Lojas** > **Configuração** > **Check-out** para acessar a página de configuração geral do administrador de check-out .
+1. No _Configurações de serviço_ seção para [!DNL Quick Checkout], forneça todos os detalhes necessários para configurar o logon automático.
+
+Consulte [[!DNL Quick Checkout] definir configurações de serviço](../quick-checkout/onboarding.md#configure-service-settings) para obter mais informações.
+
+>[!NOTE]
+>
+> Primeiro login quando **logon automático** estiver ativado requer o consentimento do usuário para autorizá-lo aceitando uma janela pop-up.
 
 ## Novo [!DNL Bolt] account
 

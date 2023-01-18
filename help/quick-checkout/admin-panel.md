@@ -1,22 +1,19 @@
 ---
-title: "[!DNL Quick Checkout] para o painel de administração do Adobe Commerce"
-description: "Saiba como a função [!DNL Quick Checkout] O painel de administração pode ajudar a integrar, configurar e visualizar com sucesso a extensão."
-source-git-commit: bd02a8083d3f4c9cb0422b27d61bd5462187ffc3
+title: '[!DNL Quick Checkout] para o painel Administrador do Adobe Commerce'
+description: Saiba como a [!DNL Quick Checkout] O painel de administração pode ajudar a integrar, configurar e visualizar com sucesso a extensão.
+exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
+source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
 workflow-type: tm+mt
-source-wordcount: '201'
+source-wordcount: '198'
 ht-degree: 0%
 
 ---
-
 
 # Introdução ao [!DNL Quick Checkout] Painel de administração
 
 [!DNL Quick Checkout] O para Adobe Commerce e Magento Open Source fornece uma visualização do Painel de administração com todas as informações necessárias para configurar e usar a extensão do .
 
 1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-
-   ![Menu Quick Checkout](assets/sales-quickcheckout.png)
-
 1. Nesta visualização, você pode acessar a variável _Painel de administração_ visão geral, _Recursos_ about [!DNL Quick Checkout], obter _Ajuda e suporte_ ou configure a extensão via _Configurações_.
 
    ![Menu Quick Checkout](assets/admin-panel-view.png)
