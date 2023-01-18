@@ -2,9 +2,9 @@
 title: Sincronização do catálogo
 description: Saiba como exportar dados do produto do [!DNL Commerce] para [!DNL Commerce Services] de forma contínua, a fim de manter os serviços atualizados.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: fe5bbceb7f443e7b177ecd4812b981d6e7fd0a6b
 workflow-type: tm+mt
-source-wordcount: '864'
+source-wordcount: '878'
 ht-degree: 0%
 
 ---
@@ -20,6 +20,10 @@ O processo de sincronização de catálogo é executado por hora para permitir [
 > Para usar o _Sincronização do catálogo_ no painel ou na interface da linha de comando, é necessário ter um [Chave da API e um espaço de dados SaaS configurado](saas.md).
 
 ## Acesso ao painel Sincronização de catálogo
+
+>[!NOTE]
+>
+> O _Sincronização do catálogo_ O painel só estará disponível quando o serviço Recommendations do produto for instalado.
 
 Para acessar o painel Sincronização de catálogo, selecione **Sistema** > _Transferência de dados_ > **Sincronização do catálogo**.
 
