@@ -2,16 +2,16 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: f3c37c9c50c608f9f0ea4582fbcca2b99a3428b5
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '2574'
+source-wordcount: '2522'
 ht-degree: 0%
 
 ---
 
 # Coletar dados de comércio usando tags do Adobe Experience Platform
 
-Embora você possa usar o conector do Experience Platform para publicar e assinar eventos de loja, alguns comerciantes já podem estar usando uma solução de coleta de dados, como o [Tags do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html?lang=en). Para esses comerciantes, o Adobe Commerce fornece uma opção de publicação somente no conector do Experience Platform que usa o SDK de eventos do Adobe Commerce.
+Embora você possa usar o conector do Experience Platform para publicar e assinar eventos de loja, alguns comerciantes já podem estar usando uma solução de coleta de dados, como o [Tags do Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/data-collection/tags/create-a-property.html). Para esses comerciantes, o Adobe Commerce fornece uma opção de publicação somente no conector do Experience Platform que usa o SDK de eventos do Adobe Commerce.
 
 ![Fluxo de dados do conector de Experience Platform](assets/tags-data-flow.png)
 _Fluxo de dados do conector de Experience Platform com tags_
@@ -32,7 +32,7 @@ Para coletar dados de evento do Commerce:
 
 Para mapear os dados da loja do Commerce para o Adobe Experience Platform, configure e instale o seguinte de dentro das tags do Adobe Experience Platform:
 
-1. [Configurar uma propriedade de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html?lang=en) na Coleta de dados do Adobe Experience Platform.
+1. [Configurar uma propriedade de tag](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/create-a-property.html) na Coleta de dados do Adobe Experience Platform.
 
 1. Em **Criação**, selecione **Extensões** e instale e configure as seguintes extensões:
 
@@ -130,7 +130,7 @@ Para cada um dos eventos a seguir, mapeie os eventos do Adobe Commerce para seu 
 - [&quot;initiateCheckout&quot;](#initiatecheckout)
 - [&quot;placeOrder&quot;](#placeorder)
 
-### signOut {#signout}
+### signOut
 
 Disparado quando um comprador tenta sair.
 
@@ -160,7 +160,7 @@ Crie o seguinte elemento de dados:
 - **Tipo**: `userAccount.logout`
 - **Dados XDM**: `%sign-out%`
 
-### signIn {#signin}
+### signIn
 
 Disparado quando um comprador tenta entrar.
 
@@ -219,7 +219,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `userAccount.login`
 - **Dados XDM**: `%sign in%`
 
-### createAccount {#createaccount}
+### createAccount
 
 Disparado quando um comprador tenta criar uma conta.
 
@@ -278,7 +278,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `userAccount.createProfile`
 - **Dados XDM**: `%create account%`
 
-### editAccount {#editaccount}
+### editAccount
 
 Disparado quando um comprador tenta editar uma conta.
 
@@ -337,7 +337,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `userAccount.updateProfile`
 - **Dados XDM**: `%edit account%`
 
-### pageView {#pageview}
+### pageView
 
 Disparado quando qualquer página é carregada.
 
@@ -366,7 +366,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `web.webPageDetails.pageViews`
 - **Dados XDM**: `%page view%`
 
-### productView {#productview}
+### productView
 
 Disparado quando qualquer página de produto é carregada.
 
@@ -471,7 +471,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.productViews`
 - **Dados XDM**: `%product view%`
 
-### searchRequestSent {#searchrequestsent}
+### searchRequestSent
 
 Disparado por eventos no provedor &quot;pesquisar à medida que você digita&quot; e por eventos nas páginas de resultados da pesquisa.
 
@@ -576,7 +576,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `searchRequest`
 - **Dados XDM**: `%search request%`
 
-### searchResponseReceived {#searchresponsereceived}
+### searchResponseReceived
 
 Disparado quando o Live Search retorna resultados para a página de resultados de &quot;pesquisa ao digitar&quot; ou de pesquisa.
 
@@ -671,7 +671,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `searchResponse`
 - **Dados XDM**: `%search response%`
 
-### addToCart {#addtocart}
+### addToCart
 
 Disparado quando um produto é adicionado ao carrinho ou sempre que a quantidade de um produto no carrinho é aumentada.
 
@@ -785,7 +785,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.productListAdds`
 - **Dados XDM**: `%add to cart%`
 
-### openCart {#opencart}
+### openCart
 
 Disparado quando um novo carrinho é criado, o que acontece quando um produto é adicionado a um carrinho vazio.
 
@@ -818,7 +818,7 @@ Crie o seguinte elemento de dados:
 - **Tipo**: `commerce.productListOpens`
 - **Dados XDM**: `%open cart%`
 
-### viewCart {#viewcart}
+### viewCart
 
 Disparado quando qualquer página de carrinho é carregada.
 
@@ -921,7 +921,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.productListViews`
 - **Dados XDM**: `%view cart%`
 
-### removeFromCart {#removefromcart}
+### removeFromCart
 
 Disparado quando um produto é removido de um carrinho ou sempre que a quantidade de um produto no carrinho é diminuída.
 
@@ -1026,7 +1026,7 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.productListRemovals`
 - **Dados XDM**: `%remove from cart%`
 
-### initiateCheckout {#initiatecheckout}
+### initiateCheckout
 
 Disparado quando o comprador clica em um botão de finalização.
 
@@ -1129,13 +1129,20 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.checkouts`
 - **Dados XDM**: `%initiate checkout%`
 
-### placeOrder {#placeorder}
+### placeOrder
 
 Disparado quando o comprador faz um pedido.
 
 #### Elementos de dados
 
 Crie os seguintes elementos de dados:
+
+1. E-mail da conta:
+
+   - **Nome**: `account email`
+   - **Extensão**: `Adobe Client Data Layer`
+   - **Tipo de elemento de dados**: `Data Layer Computed State`
+   - **[Opcional] caminho**: `accountContext.emailAddress`
 
 1. Loja:
 
@@ -1290,6 +1297,9 @@ Crie os seguintes elementos de dados:
    - **ID de promoção**: **Valor** = `%promotion id%`
    - **Grupo de campos**: `commerce` > `purchases` > `value`
    - **value**: **Valor** = `1`
+   - **Endereço de email pessoal**: **Valor** = `%account email%`
+   - **Grupo de campos**: `personalEmail` > `address`
+   - **Endereço**: **Valor** = `%account email%`
 
 #### Regras 
 
@@ -1307,19 +1317,16 @@ Crie os seguintes elementos de dados:
 
 ## Definindo identidade
 
-Os perfis do conector do Experience Platform são unidos e gerados com base no `personID` e `personalEmail` campos de identidade em eventos de experiência XDM. 
+Os perfis do conector do Experience Platform são unidos e gerados com base no `identityMap` e `personalEmail` campos de identidade em eventos de experiência XDM. 
 
 Se você tiver uma configuração anterior que depende de campos diferentes, poderá continuar a usá-los. Para definir os campos de identidade do perfil do conector de Experience Platform, você deve definir os seguintes campos:
 
-- `personalEmail` - Somente eventos de conta - siga as etapas descritas acima para eventos de conta
-- `personID` - Todos os outros acontecimentos:
-
-   - Se você já estiver capturando `ECID` em tags, você pode definir `personID` em todas as regras do SDK da Web da Adobe Experience Platform para `%ECID%`.
-   - Para capturar `ECID` nas tags , é necessário adicionar um **Código personalizado** para enviar regras de evento seguindo a [Documentação de tags](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/accessing-the-ecid.html). Veja o exemplo abaixo.
+- `personalEmail` - Somente eventos de conta - siga as etapas descritas acima para [eventos da conta](#createaccount)
+- `identityMap` - Todos os outros acontecimentos. Veja o exemplo a seguir.
 
 ### Exemplo
 
-As imagens a seguir mostram como configurar um `pageView` com `personID` no conector Experience Platform:
+As etapas a seguir mostram como configurar um `pageView` com `identityMap` no conector Experience Platform:
 
 1. Configure o elemento de dados com código personalizado para ECID:
 
@@ -1328,13 +1335,24 @@ As imagens a seguir mostram como configurar um `pageView` com `personID` no cone
 
 1. Adicionar código personalizado ECID:
 
-   ![Código para definir o ECID no elemento de dados](assets/code-to-set-ecid.png)
-   _Código para definir o ECID no elemento de dados_
+   ```javascript
+   return alloy("getIdentity").then((result) => {
+       var identityMap = {
+           ECID: [
+           {
+               id: ecid,
+               primary: true
+           }
+           ]
+       };
+     _satelite.setVar("identityMap", identityMap);
+   });
+   ```
 
-1. Atualizar esquema XDM com personID definido como ECID:
+1. Atualizar esquema XDM com `identityMap` definido como ECID:
 
-   ![Definir personID como ECID](assets/set-personid-as-ecid.png)
-   _Definir personID como ECID_
+   ![Definir identityMap como ECID](assets/identity-map-data-element.png)
+   _Definir identityMap como ECID_
 
 1. Defina as ações da regra que recuperam a ECID:
 
@@ -1343,7 +1361,7 @@ As imagens a seguir mostram como configurar um `pageView` com `personID` no cone
 
 ## Configuração do consentimento
 
-O consentimento da coleta de dados do conector do Adobe Commerce e Experience Platform é ativado por padrão. O cancelamento é gerenciado por meio da variável [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Você pode seguir as etapas descritas aqui se optar por usar `mg_dnt` para gerenciar o consentimento. O [Documentação do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en) O tem várias opções adicionais para gerenciar o consentimento.
+O consentimento da coleta de dados do conector do Adobe Commerce e Experience Platform é ativado por padrão. O cancelamento é gerenciado por meio da variável [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Você pode seguir as etapas descritas aqui se optar por usar `mg_dnt` para gerenciar o consentimento. O [Documentação do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) O tem várias opções adicionais para gerenciar o consentimento.
 
 1. Crie um **Código personalizado principal** elemento de dados (`%do not track cookie%`) para o `mg_dnt` cookie:
 

@@ -2,9 +2,9 @@
 title: Adicionar grupos de campos ao esquema XDM
 description: Saiba como adicionar grupos de campos específicos do Adobe Commerce a um esquema XDM.
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
-source-git-commit: f5d1c39fe1b02d2a661b92f971fba5b3e836dd6a
+source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
 workflow-type: tm+mt
-source-wordcount: '266'
+source-wordcount: '347'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ Um dos [etapas de integração](overview.md#onboarding-steps) usar o conector do
    - Detalhes de contato pessoal
    - Detalhes de comércio
    - Comércio de evento do Adobe Analytics Experience (se desejar enviar dados para o Adobe Analytics)
-   - Identificador de pessoa
+   - Mapa de identidade
 
    >[!NOTE]
    >
@@ -32,4 +32,10 @@ Um dos [etapas de integração](overview.md#onboarding-steps) usar o conector do
 
    Seu esquema XDM agora contém grupos de campos específicos de comércio para que os dados coletados da loja do Commerce [events](events.md) é representado no XDM.
 
-1. [Criar um conjunto de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) e selecione o esquema XDM que contém os grupos de campos específicos de Comércio.
+1. [Criar um conjunto de dados](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/experience-cloud/platform.html#create-a-dataset) com base no esquema criado ou atualizado.
+
+   Um conjunto de dados é uma construção de armazenamento e gerenciamento para uma coleção de dados, normalmente uma tabela, que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados.
+
+1. [Criar um conjunto de dados](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html) e selecione o esquema XDM que contém os grupos de campos específicos de Comércio e o conjunto de dados correspondente.
+
+   O datastream encaminha os dados coletados para o conjunto de dados. Os dados são representados no conjunto de dados com base no schema selecionado.

@@ -1,9 +1,10 @@
 ---
 title: Fazer upload de perfis de comprador para o Adobe Experience Platform
 description: Saiba como fazer upload de perfis de comprador para o Adobe Experience Platform.
-source-git-commit: 93133019f8004437ef85db32ff336bfd0e8c6fc2
+exl-id: fd0ee7fa-5274-4640-ba00-bcb2ec78f314
+source-git-commit: 9bf28159fdac3a7237956a536f6a522b4e2918fe
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '358'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Neste tópico, você aprenderá a fazer upload dos perfis de clientes do Adobe C
 
 1. Determine onde você armazena os dados do cliente. Para alguns comerciantes, esses dados são armazenados no Adobe Commerce e podem ser [exportado](https://docs.magento.com/user-guide/system/data-export.html) como um arquivo CSV. Para outros, pode estar em um sistema de gerenciamento de relacionamento com o cliente (CRM) separado.
 
-1. Depois de determinar onde você armazena os dados do cliente, localize as [conector de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html?lang=en) com base em onde os dados do cliente são armazenados. Se você não vir um conector de origem apropriado, use o [upload de arquivo local](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) e importe seus perfis de comprador de um arquivo CSV.
+1. Depois de determinar onde você armazena os dados do cliente, localize as [conector de origem](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html) com base em onde os dados do cliente são armazenados. Se você não vir um conector de origem apropriado, use o [upload de arquivo local](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/local-system/local-file-upload.html) e importe seus perfis de comprador de um arquivo CSV.
 
    >[!NOTE]
    >
