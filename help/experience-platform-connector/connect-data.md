@@ -2,7 +2,7 @@
 title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar seus dados de Comércio à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 710a18a63c84f0ae0a5aa3b3ad50fdfce0358db6
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 0%
@@ -37,9 +37,9 @@ Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, voc
 >
 >Para comerciantes já inscritos em nosso programa beta do back office, você verá uma caixa de seleção para ativar eventos do back office. Se você deseja participar do programa back office beta, entre em contato com [drios@adobe.com](mailto:drios@adobe.com).
 
-![Configuração do conector Experience Platform beta](assets/epc-config-beta.png)
-
 No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para a borda do Experience Platform. Por padrão, os eventos de vitrine são enviados automaticamente, desde que o SDK da Web da AEP e a ID da organização sejam válidos. Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#beta-order-status-events) eventos.
+
+![Configuração do conector Experience Platform beta](assets/epc-config-beta.png)
 
 >[!NOTE]
 >

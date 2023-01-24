@@ -2,7 +2,7 @@
 title: Eventos
 description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 975854dbdae32e5e51bb57593cf122627d01571f
+source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
 workflow-type: tm+mt
 source-wordcount: '3141'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Além dos dados que os eventos a seguir coletam, você também obtém [outros da
 
 ## Eventos de vitrine
 
-+++ Os eventos da loja coletam dados comportamentais anônimos dos compradores durante a navegação no site. Os dados coletados por esses eventos podem ser usados para criar promoções e campanhas direcionadas a um conjunto específico de compradores.
+Os eventos da loja coletam dados comportamentais anônimos dos compradores durante a navegação no site. Os dados coletados por esses eventos podem ser usados para criar promoções e campanhas direcionadas a um conjunto específico de compradores.
 
 >[!NOTE]
 >
@@ -215,11 +215,10 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `currencyCode` | O [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para os totais da ordem. |
 | `productImageUrl` | URL da imagem principal do produto |
 | `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
-+++
+
 
 ## Eventos de perfil
 
-+++
 Os eventos de perfil incluem informações da conta, como `signIn`, `signOut`, `createAccount`e `editAccount`. Esses dados são usados para ajudar a preencher os principais detalhes do cliente, necessários para melhor definir segmentos ou executar campanhas de marketing, como se você quisesse direcionar os compradores que moram em Nova York.
 
 ### signIn
@@ -316,17 +315,16 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica quaisquer detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `updateProfile` | Indica se um usuário atualizou seu perfil de conta |
-+++
 
 ## Pesquisar eventos
 
-+++ Os eventos de pesquisa fornecem dados relevantes para a intenção do comprador. O insight da intenção de um comprador ajuda os comerciantes a ver como os compradores estão procurando itens, no que clicam e, por fim, comprando ou abandonando. Um exemplo de como você pode usar esses dados é se deseja direcionar os compradores existentes que pesquisam pelo seu produto principal, mas nunca compram o produto.
+Os eventos de pesquisa fornecem dados relevantes para a intenção do comprador. O insight da intenção de um comprador ajuda os comerciantes a ver como os compradores estão procurando itens, no que clicam e, por fim, comprando ou abandonando. Um exemplo de como você pode usar esses dados é se deseja direcionar os compradores existentes que pesquisam pelo seu produto principal, mas nunca compram o produto.
 
 ### searchRequestSent
 
 | Descrição | Nome do evento XDM |
 |---|---|
-| Disparado pelos seguintes eventos no provedor &quot;pesquisar à medida que você digita&quot;:<br>Pressione Enter, Clique _Exibir todos_<br> Disparado pelos seguintes eventos nas páginas de resultados da pesquisa:<br>Selecione um filtro, Altere a ordem de classificação (_Ordenar por_), Altere a direção da classificação (crescente ou decrescente), Altere o número de resultados por página (_Mostrar número por página_), Navegue até a próxima página, Navegue até a página anterior, Navegue até uma página diferente | `searchRequest` |
+| Disparado pelos seguintes eventos no provedor &quot;pesquisar à medida que você digita&quot;:<br><br>Pressione Enter, Clique _Exibir todos_<br><br> Disparado pelos seguintes eventos nas páginas de resultados da pesquisa:<br><br>Selecione um filtro, Altere a ordem de classificação (_Ordenar por_), Altere a direção da classificação (crescente ou decrescente), Altere o número de resultados por página (_Mostrar número por página_), Navegue até a próxima página, Navegue até a página anterior, Navegue até uma página diferente | `searchRequest` |
 
 >[!NOTE]
 >
@@ -372,15 +370,13 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `name` | O nome de exibição ou nome legível do produto |
 | `productImageUrl` | URL da imagem principal do produto |
 
-+++
-
 ## (Beta) Eventos do back-office
 
 >[!NOTE]
 >
 >Para comerciantes já inscritos em nosso programa beta de back office, você tem acesso a eventos back office. Se você deseja participar do programa back office beta, entre em contato com [drios@adobe.com](mailto:drios@adobe.com).
 
-+++ Os eventos de back-office contêm informações sobre o status de um pedido, como se um pedido foi feito, cancelado, reembolsado ou enviado. Os dados coletados por esses eventos do lado do servidor mostram uma visualização 360 do pedido do comprador. Isso pode ajudar os comerciantes a direcionar melhor ou analisar todo o status do pedido ao desenvolver campanhas de marketing. Por exemplo, você pode detectar tendências em determinadas categorias de produtos que têm um bom desempenho em épocas diferentes do ano. Por exemplo, roupas de inverno que vendem melhor durante meses mais frios ou certas cores de produtos que os compradores estão interessados ao longo dos anos. Além disso, os dados de status do pedido podem ajudar você a calcular o valor do cliente do tempo de vida, entendendo a propensão de um comprador para converter com base em pedidos anteriores.
+Os eventos de back-office contêm informações sobre o status de um pedido, como se um pedido foi feito, cancelado, reembolsado ou enviado. Os dados coletados por esses eventos do lado do servidor mostram uma visualização 360 do pedido do comprador. Isso pode ajudar os comerciantes a direcionar melhor ou analisar todo o status do pedido ao desenvolver campanhas de marketing. Por exemplo, você pode detectar tendências em determinadas categorias de produtos que têm um bom desempenho em épocas diferentes do ano. Por exemplo, roupas de inverno que vendem melhor durante meses mais frios ou certas cores de produtos que os compradores estão interessados ao longo dos anos. Além disso, os dados de status do pedido podem ajudar você a calcular o valor do cliente do tempo de vida, entendendo a propensão de um comprador para converter com base em pedidos anteriores.
 
 ### orderPlaced
 
@@ -455,4 +451,3 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 A tabela a seguir descreve os dados coletados para esse evento.
 |Campo|Descrição| |—|—| |`identityMap`|Contém o endereço de email que identifica o cliente| |`address`|O endereço técnico, por exemplo, `name@domain.com` como normalmente definido em RFC2822 e padrões subsequentes| |`eventType`|`commerce.creditMemoIssued`| |`productListItems`|Uma matriz de produtos na ordem| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador único atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`purchaseOrderNumber`|Identificador único atribuído pelo comprador para esta compra ou contrato|
-+++
