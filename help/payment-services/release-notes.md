@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: c26023b1b63362d42ab351e451168dd50ff962a2
+source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
 workflow-type: tm+mt
-source-wordcount: '1382'
+source-wordcount: '1445'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,10 @@ Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html
 Essas notas de versão descrevem as alterações de recursos e correções que ocorreram e foram lançadas fora das versões regulares de recursos com versão para o serviço hospedado.
 
 +++Atualizações do serviço hospedado
+
+_25 de janeiro de 2023_
+
+![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-4102 --> As novas instalações dos Serviços de Pagamento não conseguem configurar os Serviços de Comércio, tornando os Serviços de Pagamento inoperantes. Para corrigir esse problema, atualize sua extensão Payment Services para a versão 1.5.3.
 
 _12 de setembro de 2022_
 
@@ -53,13 +57,19 @@ _28 de junho de 2021_
 
 +++
 
+## v1.5.3
+
+_25 de janeiro de 2022_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4102 --> Correção de um problema conhecido incompatível com o fundo. Esta versão bloqueia a versão da extensão de ID de serviço para a versão estável mais recente, que reativa as novas instalações de Serviços de Pagamento para configurar os Serviços de Comércio.
+
 ## v1.5.2
 
 _22 de dezembro de 2022_
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3992 --> Faturamento aprimorado nos Serviços de Pagamento quando um método de pagamento é recusado.
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3999 --> Os Serviços de Pagamento agora exibem corretamente os botões inteligentes PayPal para comerciantes usando [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html)Modelo personalizado {target=_blank} para a página de finalização. Anteriormente, o minicart exibia intermitentemente os botões.
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-3999 --> Os Serviços de Pagamento agora exibem corretamente os botões inteligentes PayPal para comerciantes usando [Fire Checkout&#39;s](https://marketplace.magento.com/swissup-firecheckout.html){target=_blank} modelo personalizado para a página de finalização. Anteriormente, o minicart exibia intermitentemente os botões.
 
 ## v1.5.1
 
