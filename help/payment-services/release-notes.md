@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 1b86831f04250a0a45c09842da0018e20c422e62
+source-git-commit: 275390c001e5b57ea7545af58643c97c26b98f25
 workflow-type: tm+mt
 source-wordcount: '1445'
 ht-degree: 1%
@@ -59,7 +59,7 @@ _28 de junho de 2021_
 
 ## v1.5.3
 
-_25 de janeiro de 2022_
+_25 de janeiro de 2023_
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4102 --> Correção de um problema conhecido incompatível com o fundo. Esta versão bloqueia a versão da extensão de ID de serviço para a versão estável mais recente, que reativa as novas instalações de Serviços de Pagamento para configurar os Serviços de Comércio.
 
