@@ -1,12 +1,12 @@
 ---
 title: Instalação
-description: '"Instale o [!DNL Store Fulfillment solution] para uma loja da Adobe Commerce usando o Composer para PHP."'
+description: "Instale o [!DNL Store Fulfillment solution] para uma loja da Adobe Commerce usando o Composer para PHP."
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
 workflow-type: tm+mt
-source-wordcount: '661'
+source-wordcount: '656'
 ht-degree: 0%
 
 ---
@@ -31,11 +31,11 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Acesso ao Arquivo de software da Loja da Walmart Commerce Technologies (arquivo .zip)**—Durante o processo de integração e capacitação, trabalhe com seu Gerente de conta para obter acesso ao arquivo de instalação da extensão Cumprimento da loja.
 
-- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] a solução exige um [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target=&quot;_blank&quot;}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
+- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] a solução exige um [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao [!DNL Adobe Commerce] projeto.
 
 - Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto do Cloud. Consulte [Gerenciar o acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Experiência usando o Composer e a[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target=&quot;_blank&quot;} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões no [!DNL Adobe Commerce] plataforma.
+- **Experiência usando o Composer e a[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões no [!DNL Adobe Commerce] plataforma.
 
 - **Experiência ao instalar extensões de terceiros no Adobe Commerce**—Para referência, consulte a documentação do Adobe Commerce.
 
@@ -184,7 +184,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 ### Etapas adicionais
 
-Se necessário, use a [configuração:static-content:implantar](https://devdocs.magento.com/guides/v2.4/reference/cli/magento-commerce.html#setupstatic-contentdeploy){target=&quot;_blank&quot;} comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
+Se necessário, use a [configuração:static-content:implantar](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} comando CLI para implantar arquivos de visualização estáticos no ambiente de produção.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
@@ -194,4 +194,4 @@ O `-f` é necessária se você estiver usando um tema em branco.
 
 >[!NOTE]
 >
->Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://support.magento.com/hc/en-us/articles/360031624091) no Centro de ajuda da Adobe Commerce.
+>Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) no Centro de ajuda da Adobe Commerce.

@@ -2,9 +2,9 @@
 title: "Integrar a [!DNL Quick Checkout] para extensão do Adobe Commerce"
 description: "Saiba como a função [!DNL Quick Checkout] pode beneficiar sua instância do Adobe Commerce e como integrar e configurar com êxito a extensão."
 exl-id: 8caf746c-e31b-4331-8b0d-ea0f1e545bdd
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '834'
+source-wordcount: '832'
 ht-degree: 0%
 
 ---
@@ -155,6 +155,6 @@ Consulte a [Site, Loja e Exibir Escopo](https://experienceleague.adobe.com/docs/
 
 O processo de integração foi projetado para orientá-lo pelas etapas necessárias para configurar e ativar o [!DNL Express Checkout] funcionalidade.
 
-Entre em contato com o Suporte da Adobe Commerce por meio do [Central de ajuda da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en) para qualquer assistência.
+Entre em contato com o Suporte da Adobe Commerce por meio do [Central de ajuda da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para qualquer assistência.
 
 Consulte a [testar e validar](../quick-checkout/testing.md) para obter mais informações.

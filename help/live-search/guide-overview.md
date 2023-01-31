@@ -1,10 +1,10 @@
 ---
-title: '"[!DNL Live Search] Visão geral do guia"'
-description: '"[!DNL Live Search] A Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva."'
+title: "[!DNL Live Search] Visão geral do guia"
+description: "[!DNL Live Search] A Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
@@ -30,8 +30,8 @@ O Live Search tem três áreas para administradores:
 
 Se você precisar de informações ou se tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-[Central de ajuda](https://support.magento.com/hc/en-us) - Consulte os artigos de solução de problemas relacionados ao Live Search.
-[Tíquetes de suporte](https://support.magento.com/hc/en-us/articles/360000913794#submit-ticket) - Envie um tíquete para receber ajuda adicional.
+[Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Consulte os artigos de solução de problemas relacionados ao Live Search.
+[Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) - Envie um tíquete para receber ajuda adicional.
 
 Antes de enviar um tíquete de suporte, execute o seguinte na linha de comando para verificar a versão do Live Search que está instalada no momento:
 

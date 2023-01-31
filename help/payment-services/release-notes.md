@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 4bd3e4bb791ac3688206dd2d671bae5c47dfa7c8
+source-git-commit: a9970d8ac1400a63ef60b289150556b70e71ef22
 workflow-type: tm+mt
-source-wordcount: '1476'
+source-wordcount: '1488'
 ht-degree: 0%
 
 ---
@@ -165,7 +165,7 @@ _31 de março de 2022_
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-2561 --> Os produtos removidos anteriormente não aparecem no carrinho da _Pedido de revisão_ página.
 
-![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2842 --> Testar transações com cartão de crédito [pode falhar com o PayPal](https://support.magento.com/hc/en-us/articles/5201041963917) ao processar pagamentos em um ambiente sandbox.
+![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2842 --> Testar transações com cartão de crédito [pode falhar com o PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-cc-sandbox-failure.html) ao processar pagamentos em um ambiente sandbox.
 
 ## v1.0.0
 
@@ -187,8 +187,8 @@ _29 de novembro de 2021_
 
 ![Novo](../assets/new.svg)<!-- Issue PAY-1443 --> Você pode facilmente [personalizar a aparência](payments-options.md) de botões inteligentes PayPal e campos de cartão de crédito para [!DNL Payment Services] extensão.
 
-![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2473 --> Usando [chaves do Composer incorretas](https://support.magento.com/hc/en-us/articles/4406603542541) durante a instalação da extensão, impede que o usuário [autenticação](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) com as `MAGEID`.
+![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2473 --> Usando [chaves do Composer incorretas](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-install.html) durante a instalação da extensão, impede que o usuário [autenticação](https://devdocs.magento.com/guides/v2.4/install-gde/prereq/connect-auth.html) com as `MAGEID`.
 
-![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] relatórios [pode não sincronizar imediatamente](https://support.magento.com/hc/en-us/articles/4406114741517).
+![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2474 --> [!DNL Payment Services] relatórios [pode não sincronizar imediatamente](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-report-info-delayed.html).
 
-![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2475 --> Seu [Conta de sandbox PayPal](https://support.magento.com/hc/en-us/articles/4406954952461) para [!DNL Payment Services] não pode ser verificado se você criou essa conta durante a integração.
+![Problema conhecido](../assets/bug.svg)<!-- Issue PAY-2475 --> Seu [Conta de sandbox PayPal](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/payments/payservices-paypal-acct.html) para [!DNL Payment Services] não pode ser verificado se você criou essa conta durante a integração.

@@ -4,9 +4,9 @@ description: Defina as configurações gerais para ativar [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 0cf5a99891fb6ec0b6e446aac05e64bc97d70e7c
+source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
 workflow-type: tm+mt
-source-wordcount: '2543'
+source-wordcount: '2541'
 ht-degree: 0%
 
 ---
@@ -151,7 +151,7 @@ Como o arquivo de log do aplicativo pode crescer rapidamente, ative o registro d
 
 >[!TIP]
 >
->Para instalações no local do Adobe Commerce, peça ao administrador do sistema para configurar a rotação do log para o `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de log](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html?lang=en#server-settings) no _Guia de instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Visualizar e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Para instalações no local do Adobe Commerce, peça ao administrador do sistema para configurar a rotação do log para o `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de log](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) no _Guia de instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Visualizar e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
