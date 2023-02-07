@@ -2,9 +2,9 @@
 title: Sincronização do catálogo
 description: Saiba como exportar dados do produto do [!DNL Commerce] para [!DNL Commerce Services] de forma contínua, a fim de manter os serviços atualizados.
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '909'
+source-wordcount: '932'
 ht-degree: 0%
 
 ---
@@ -108,7 +108,7 @@ O `saas:resync` faz parte do comando `magento/saas-export` pacote. Você pode in
 
 >[!NOTE]
 >
-> Quando você aciona uma ressincronização de dados a partir da linha de comando, pode levar até uma hora para que os dados sejam atualizados.
+> Ao executar uma sincronização de dados pela primeira vez, é importante executar a variável `productattributes` primeiro, seguido por `productoverrides`, antes de executar o `products` feed.
 
 Opções de comando:
 
@@ -130,6 +130,8 @@ O nome do feed pode ser um dos seguintes:
 - `variants`— Variações de produto de um produto configurável, como cor e tamanho
 - `productattributes`— Atributos de produto como `activity`, `gender`, `tops`, `bottoms`e assim por diante
 - `productoverrides`— Regras específicas de preço e visibilidade de catálogo do cliente, como aquelas baseadas em permissões de categoria
+
+Quando você aciona uma ressincronização de dados a partir da linha de comando, pode levar até uma hora para que os dados sejam atualizados.
 
 ### Exemplos
 

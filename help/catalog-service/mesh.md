@@ -1,9 +1,9 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um terminal GraphQL comum.'
-source-git-commit: 7b95be48c21e17cb6ba88d326fd061f7de2f8fb5
+source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -11,6 +11,8 @@ ht-degree: 0%
 # [!DNL Catalog Service and API Mesh]
 
 O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
+
+![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
 
 A primeira etapa para usar a malha de API com o serviço de catálogo é conectar a malha de API à sua instância. Veja as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
