@@ -2,9 +2,9 @@
 title: "Fluxo de check-out para um usuário do Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] fluxo para um usuário do Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '405'
+source-wordcount: '443'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,9 @@ Se o comprador estiver conectado à Adobe Commerce antes do check-out, a variáv
 
 Se encontrar problemas ao colocar um pedido como um usuário existente do Adobe Commerce, consulte a [Solução de problemas de check-out rápido](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/quick-checkout-issues.html) artigo na Central de ajuda do Adobe Commerce.
 
-### Logon automático
+## Logon automático
+
+O componente Logon automático detecta quando um comprador tem uma sessão Bolt ativa e faz o logon automático do comprador. Isso ignora as etapas de detecção de conta e código de acesso único (OTP), pois o comprador as concluiu em uma sessão anterior.
 
 É possível configurar um logon automático para [!DNL Quick Checkout] usuários. Você pode ativar uma configuração para fazer logon automático em um usuário durante o check-out.
 

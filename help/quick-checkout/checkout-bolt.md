@@ -2,9 +2,9 @@
 title: "Fluxo de check-out de um usuário Bolt no Adobe Commerce"
 description: Visão geral da [!DNL Quick Checkout] fluxo para um usuário Bolt no Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: 7c99f1aa4bed9878625d855509448494d5547d56
+source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '210'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Usuários convidados
 
 A experiência de check-out de convidado é diferente da experiência de usuário do Adobe. Quando um comprador insere um endereço de email no check-out, a variável [!DNL Quick Checkout] O valida e encontra um [!DNL Bolt] conta.
+
+>[!WARNING]
+>
+> O [!DNL In-Store Pickup] A funcionalidade (ISPU) não é suportada quando a variável [!DNL Quick Checkout] estiver ativado.
 
 ## Registrado [!DNL Bolt] account
 
