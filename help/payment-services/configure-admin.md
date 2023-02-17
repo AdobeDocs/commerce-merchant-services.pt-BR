@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '868'
 ht-degree: 0%
 
 ---
@@ -63,6 +63,7 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **Autorizar e capturar**.
 1. Para **[!UICONTROL Show on checkout page]**, escolha `Yes` para ativar os campos do cartão de crédito na página de check-out.
 1. Para **[!UICONTROL Vault Enabled]**, escolha `Yes` para habilitar a compartimentalização do cartão de crédito para check-out.
+1. Para **[!UICONTROL Vault Enabled in Admin]**, escolha `Yes` permitir que o comerciante crie ordens para clientes que usam o cartão de crédito válido.
 1. Para **[!UICONTROL Debug Mode]**, escolha `Yes` para ativar o modo de depuração (ou `No` para desativá-lo).
 1. Para ativar **[!UICONTROL 3DS Secure authentication]** (`Off` por padrão) escolha `Always` ou `When required`.
 1. Clique em **[!UICONTROL Save Config]** para salvar as alterações.
@@ -73,9 +74,10 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 | Campo | Escopo | Descrição |
 |---|---|---|
 | [!UICONTROL Title] | exibição de loja | Adicione o texto para exibição como o título para esta opção de pagamento na exibição Método de Pagamento durante o check-out. Opções: [!UICONTROL text field] |
-| [!UICONTROL Payment Action] | site | O [ação de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
+| [!UICONTROL Payment Action] | site | O [ação de pagamento](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | site | Ative ou desative os campos do cartão de crédito na página de check-out. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault Enabled] | site | Ative ou desative a compartimentação do cartão de crédito. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | exibição de loja | Ativar ou desativar [validação do cartão de crédito](vaulting.md). Opções: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled in Admin] | exibição de loja | Ativar ou desativar a capacidade para [comerciante para concluir pedidos para clientes no Administrador](vaulting.md) usando um método de pagamento válido. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL 3DS Secure authentication] | site | Ativar ou desativar [Autenticação segura 3DS](security.md#3ds). Opções: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 

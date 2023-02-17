@@ -1,9 +1,10 @@
 ---
 title: Vazamento do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
+source-git-commit: fb0a8295772fc6e23f2910019e1beadd64d7ed70
 workflow-type: tm+mt
-source-wordcount: '165'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -24,7 +25,22 @@ Também podem facilmente excluir os seus cartões de crédito válidos de [Méto
 
 ## Ativar compartimentalização
 
-Você pode ativar a compartimentalização de cartão de crédito para suas lojas nos Serviços de Pagamento [Configurações](settings.md#card-vaulting).
+Você pode ativar a compartimentalização do cartão de crédito — para clientes _e_ comerciantes no Administrador — para suas lojas no [!DNL Payment Services] [Configurações](settings.md#card-vaulting).
+
+## Use compartimentalização no Administrador
+
+Se um cliente tiver um cartão de crédito previamente validado, um comerciante pode criar uma ordem subsequente para esse cliente no Administrador usando seus métodos de pagamento válidos.
+
+Você só poderá usar cartões com valor no Administrador se o cliente tiver uma conta existente e um token válido armazenado no sistema a partir de um pagamento concluído anteriormente.
+
+Para criar um pedido no Administrador para um cliente usando seu cartão de crédito válido:
+
+1. [Criar um pedido e adicionar produtos](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html).
+1. Em _[!UICONTROL Payment & Shipping Information]_, selecione **[!UICONTROL Stored Cards]**como método de pagamento.
+1. Selecione o método de pagamento de cartão de crédito válido desejado.
+1. Depois de concluir quaisquer outras etapas necessárias para o pedido, [apresentar](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
+
+   ![Usar cartão de crédito válido em Admin para cliente](assets/admin-vaultedcard.png)
 
 ## Segurança
 

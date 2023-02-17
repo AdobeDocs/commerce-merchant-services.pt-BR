@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
-source-git-commit: 17ba23192fed6cd219411420c5d56b42c94af0f5
+source-git-commit: 482182dca95964e68f1637ff1cc7aad84b00e3eb
 workflow-type: tm+mt
-source-wordcount: '1825'
+source-wordcount: '1892'
 ht-degree: 0%
 
 ---
@@ -112,6 +112,7 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 1. Para ativar [Autenticação segura 3DS](security.md#3ds) (`Off` por padrão) alterne a **[!UICONTROL 3DS Secure authentication]** seletor para `Always` ou `When required`.
 1. Para ativar ou desativar os campos do cartão de crédito na página de check-out, alterne a **[!UICONTROL Show on checkout page]** seletor.
 1. Para ativar ou desativar [compartimentalização de cartão](#card-vaulting), alterne a **[!UICONTROL Vault enabled]** seletor.
+1. Para ativar ou desativar [métodos de pagamento válidos no Administrador](#card-vaulting) (para os comerciantes concluírem as ordens dos clientes no Administrador utilizando o seu método de pagamento válido), alterne a variável **[!UICONTROL Show vaulted methods in Admin]** seletor.
 1. Para ativar ou desativar o modo de depuração, alterne a função **[!UICONTROL Debug Mode]** seletor.
 1. Clique em **[!UICONTROL Save]**.
 
@@ -127,7 +128,8 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 | [!UICONTROL Payment Action] | site | O [ação de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html#payment-actions){target="_blank"} para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL 3DS Secure authentication] | site | Ativar ou desativar [Autenticação segura 3DS](security.md#3ds). Opções: [!UICONTROL Always] / [!UICONTROL When Required] / [!UICONTROL Off] |
 | [!UICONTROL Show on checkout page] | site | Ative ou desative a exibição de campos de cartão de crédito na página de check-out. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
-| [!UICONTROL Vault enabled] | site | Ativar ou desativar [validação do cartão de crédito](#card-vaulting). Opções: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Vault enabled] | exibição de loja | Ativar ou desativar [validação do cartão de crédito](vaulting.md). Opções: [!UICONTROL Yes] / [!UICONTROL No] |
+| [!UICONTROL Show vaulted payment methods in Admin] | exibição de loja | Habilite ou desabilite a capacidade do comerciante de concluir pedidos para clientes no Administrador [usando um método de pagamento válido](vaulting.md). Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 
 ### Botões de pagamento
@@ -230,6 +232,8 @@ Para garantir que sua loja esteja mostrando a configuração correta, periodicam
 ## Salto de cartão
 
 Você pode ativar a funcionalidade que permite que seus clientes cofrem — ou &quot;salvem&quot; — suas informações de cartão de crédito em sua conta para usá-las em compras futuras.
+
+Você também pode usar a compartimentalização de cartão no Admin para concluir os pedidos subsequentes de clientes existentes.
 
 Ative ou desative a compartimentalização de cartão no [Configurações do campo de cartão de crédito](#credit-card-fields).
 
