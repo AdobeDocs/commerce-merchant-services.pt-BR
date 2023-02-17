@@ -2,7 +2,7 @@
 title: Conecte sua instância
 description: Conecte sua instância do Commerce usando uma chave API e uma chave privada, e especifique o espaço de dados na configuração.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
-source-git-commit: a983cf30872544d72bd13c3f04f04a35eebcf85d
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
 source-wordcount: '621'
 ht-degree: 0%
@@ -51,4 +51,4 @@ Agora que você obteve suas credenciais, é possível configurar seu projeto Saa
 
    Você é direcionado para a área de configuração em Admin, **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**>**[!UICONTROL Commerce Services Connector]**, para configurar o Conector de serviços do Commerce.
 
-1. Para configurar seus Commerce Services, siga as etapas descritas em [Configuração de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-commerce-services).
+1. Para configurar seus Commerce Services, siga as etapas descritas em [Configuração de SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#saasenv).

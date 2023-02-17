@@ -2,9 +2,9 @@
 title: Configurar a sandbox de teste
 description: Usar uma conta de sandbox PayPal para usar [!DNL Payment Services] no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 3596e3e156a834e39da2105e7ac79588d1edd408
+source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '595'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,8 @@ Para concluir a integração de sandbox:
 
    Você recebe uma janela PayPal para conectar uma conta PayPal para começar a aceitar pagamentos.
 
-1. Insira o email da sua conta comercial do PayPal (não conta de sandbox do PayPal) e seu país ou região e clique em **[!UICONTROL Next]**.
+1. Digite o email e a senha da conta de sandbox do PayPal que você gerou na etapa 3 (não as informações da conta comercial do PayPal) e o país ou região.
+1. Clique em **[!UICONTROL Next]**.
 
    ![PayPal - Conta PayPal de Conexão para pagamentos](assets/paypal-connectacct.png)
 
