@@ -2,7 +2,7 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e701fe8284ccb021c20ee7233b66d888b2803a23
+source-git-commit: 09d79c80a53355ac113067b1b7ae3dca68a98f20
 workflow-type: tm+mt
 source-wordcount: '1564'
 ht-degree: 0%
@@ -63,7 +63,7 @@ _17 de fevereiro de 2023_
 
 ![Novo](../assets/fix.svg)<!-- Issue PAY-3540 --> Adicionado [Recurso de conformidade com o PCI 3DS para comerciantes que operam na União Europeia (UE) e na Grã-Bretanha](security.md#3ds). Esta camada adicional de segurança, que requer que os compradores se autentiquem junto do emitente do cartão de crédito, ajuda a prevenir fraudes em linha e é exigida como parte dos regulamentos de conformidade da União Europeia (UE).
 
-![Novo](../assets/fix.svg)<!-- Issue PAY-3609 --> Adicionada a capacidade de [habilitar o controle de cartão no Admin](vaulting.md##use-vaulting-in-the-admin). Isso permite que os comerciantes criem uma ordem para clientes no Administrador usando seus métodos de pagamento válidos.
+![Novo](../assets/fix.svg)<!-- Issue PAY-3609 --> Adicionada a capacidade de [habilitar o controle de cartão no Admin](vaulting.md#use-vaulting-in-the-admin). Isso permite que os comerciantes criem uma ordem para clientes no Administrador usando seus métodos de pagamento válidos.
 
 ## v1.5.4
 
