@@ -2,7 +2,7 @@
 title: Configurar a sandbox de teste
 description: Usar uma conta de sandbox PayPal para usar [!DNL Payment Services] no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
-source-git-commit: 5aba246ce2a7802954a90c08c7dac2247a71ff6d
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '595'
 ht-degree: 0%

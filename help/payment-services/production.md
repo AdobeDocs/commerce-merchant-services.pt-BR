@@ -2,9 +2,9 @@
 title: Habilitar [!DNL Payment Services] para produção
 description: Conclua o processo de integração habilitando [!DNL Payment Services] para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
-source-git-commit: 7b31fe7a71c3c238e6448627b2edfe06bbfbc80e
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ Depois de [configurar seus Commerce Services](connect.md#configure-commerce-serv
 
    Essa opção estará visível se você ainda não tiver configurado [!DNL Payment Services] como método de pagamento para um ou mais de seus sites.
 
-   Você é direcionado para a área de configurações na exibição Início, com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde você pode ativar a variável [!DNL Payment Services] opções como [método de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target=&quot;_blank&quot;}.
+   Você é direcionado para a área de configurações na exibição Início, com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde você pode ativar a variável [!DNL Payment Services] opções como [método de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. Em _[!UICONTROL General Configuration]_, definir **[!UICONTROL Enable]**para `Yes`.
 1. Definir **[!UICONTROL Payment Action]** para ambos _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal Smart Buttons]_, para uma das seguintes opções:
@@ -38,7 +38,7 @@ Depois de [configurar seus Commerce Services](connect.md#configure-commerce-serv
 
 1. Clique em **[!UICONTROL Save]**.
 1. Clique em **[!UICONTROL Go to Payment Services]** para ser direcionado de volta ao [!DNL Payment Services] Casa.
-1. [Limpar o cache](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Limpar o cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    A limpeza deve ser feita após cada alteração de configuração.
 
@@ -107,7 +107,7 @@ Para permitir pagamentos em tempo real:
 1. Na página inicial, clique em **[!UICONTROL Settings]** na parte superior direita da página. Consulte [Início](payments-home.md) para obter mais informações.
 1. No _[!UICONTROL General Configuration]_conjunto de seções **[!UICONTROL Payment mode]**para `Production`.
 1. Clique em **[!UICONTROL Save]**.
-1. [Limpar o cache](https://docs.magento.com/user-guide/system/cache-management.html){target=&quot;_blank&quot;}.
+1. [Limpar o cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
 
    >[!IMPORTANT]
    >

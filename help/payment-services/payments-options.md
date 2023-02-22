@@ -2,7 +2,7 @@
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para os clientes da loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: e3270098edff3931b02a9803c8db4b3e9c75d636
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
 source-wordcount: '1002'
 ht-degree: 0%

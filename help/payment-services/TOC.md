@@ -3,10 +3,10 @@ user-guide-title: '[!DNL Payment Services] Guia'
 user-guide-description: Este guia fornece informações detalhadas sobre a instalação e configuração [!DNL Payment Services] para seu [!DNL Adobe Commerce] ou [!DNL Magento Open Source] armazenar.
 breadcrumb-title: '[!DNL Payment Services] Guia'
 index: true
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: 28bf1a8e9758acbe3415fd270476ad8cc4dcbf17
 workflow-type: tm+mt
-source-wordcount: '79'
-ht-degree: 3%
+source-wordcount: '78'
+ht-degree: 0%
 
 ---
 
@@ -22,18 +22,18 @@ ht-degree: 3%
 - Integrado [!DNL Payment Services] {#get-started}
    - [Visão geral da integração](onboard.md)
    - [Instale o [!DNL Payment Services] extensão](install.md)
-   - [Conectar o serviço](connect.md)
+   - [Conecte sua instância](connect.md)
    - [Configurar sandbox de teste](sandbox.md)
    - [Ativar para produção](production.md)
 - Configurar [!DNL Payment Services] {#configure}
    - [[!DNL Payment Services] Início](payments-home.md)
    - [[!DNL Payment Services] Configurações](settings.md)
    - [Configuração da linha de comando](configure-cli.md)
-   - [Configuração de pagamentos herdados](configure-admin.md)
+   - [Configuração herdada](configure-admin.md)
 - [Testar e validar](test-validate.md)
 - [Criar um pedido](create-order.md)
 - Relatórios financeiros {#reporting}
-   - [Relatório de status de pagamentos de pedidos](order-payment-status.md)
+   - [Relatório de status do pagamento da ordem](order-payment-status.md)
    - [Relatório de pagamentos](payouts.md)
    - [Dados disponíveis](data.md)
 - Gerenciar pagamentos {#manage}

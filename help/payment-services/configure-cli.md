@@ -4,9 +4,9 @@ description: Após a instalação, você pode configurar [!DNL Payment Services]
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
-source-git-commit: 9596815e31402f23b399b223f3221074331c1773
+source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '489'
 ht-degree: 0%
 
 ---
@@ -47,11 +47,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Se você não especificar nenhum indexador em seu comando, todos os indexadores serão atualizados para o mesmo valor. Se quiser alterar um indexador específico, você deve listá-lo em seu comando.
 
-Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target=&quot;_blank&quot;} na documentação do desenvolvedor. Para saber como alterá-lo no Administrador, consulte [Gerenciamento de índices](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target=&quot;_blank&quot;} no guia do usuário principal.
+Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} no guia do usuário principal.
 
 ### Reindexar dados manualmente
 
-Você pode reindexar dados manualmente, em vez de esperar que aconteça automaticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target=&quot;_blank&quot;} em [Gerenciar os indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target=&quot;_blank&quot;} para obter mais informações.
+Você pode reindexar dados manualmente, em vez de esperar que aconteça automaticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obter mais informações.
 
 When `BY SCHEDULE` for definido, o sistema rastreará entidades alteradas e o trabalho cron atualizará o índice para elas com base em um agendamento definido. Consulte [Execute cron a partir da linha de comando](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) em [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) para saber como acionar manualmente a indexação usando trabalhos cron.
 
