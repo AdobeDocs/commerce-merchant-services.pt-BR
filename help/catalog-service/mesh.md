@@ -1,30 +1,30 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
 description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um terminal GraphQL comum.'
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: bdceeeeb1ed58c4ffbc87bee24c1eb3754b1cde9
 workflow-type: tm+mt
-source-wordcount: '231'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
+O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
 
 ![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
 
 A primeira etapa para usar a malha de API com o serviço de catálogo é conectar a malha de API à sua instância. Veja as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Para concluir a configuração, será necessário [Pacote Adobe IO CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/) instalado.
+Para concluir a configuração, instale o [Pacote Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Quando a malha estiver configurada no Adobe IO, execute o seguinte comando que adiciona um `CommerceCatalogServiceGraph` origem da sua malha.
+Depois que a malha for configurada no Adobe I/O Runtime, execute o seguinte comando que adiciona uma `CommerceCatalogServiceGraph` origem da sua malha.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-em que `variables.json` é um arquivo separado que armazena valores comumente usados para Adobe IO.
+Onde `variables.json` é um arquivo separado que armazena valores comumente usados para o Adobe I/O Runtime.
 Por exemplo, a chave da API pode ser salva no arquivo :
 
 ```json
@@ -40,7 +40,7 @@ Após executar esse comando, o Serviço de catálogo deve estar sendo executado 
 A malha da API permite que os usuários consumam fontes de dados externas para aprimorar sua instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para ativar uma nova funcionalidade.
 
 Neste exemplo, a Mensagem da API é usada para habilitar preços de camada no Adobe Commerce.
-Substitua o `name `, `endpoint` e `x-api-key` valores.
+Substitua o `name `, `endpoint`e `x-api-key` valores.
 
 ```json
 {
