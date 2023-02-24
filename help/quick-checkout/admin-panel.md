@@ -1,8 +1,8 @@
 ---
-title: '[!DNL Quick Checkout] para o painel Administrador do Adobe Commerce'
-description: Saiba como a [!DNL Quick Checkout] O painel de administração pode ajudar a integrar, configurar e visualizar com sucesso a extensão.
+title: '[!DNL Quick Checkout] para o painel de administração do Adobe Commerce'
+description: Saiba como a [!DNL Quick Checkout] O Painel de administração pode ajudar a integrar, configurar e visualizar com sucesso a extensão.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
-source-git-commit: 1b2847b71e2a6aa843de2e73dfe5f3ad295c7b5f
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '198'
 ht-degree: 0%

@@ -2,14 +2,14 @@
 title: "Fluxo de check-out no Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] no Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: 66082614ffe6456e2c24a1e8d9baaa1113fb7ffb
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
 
 ---
 
-# [!DNL Quick Checkout] fluxo
+# [!DNL Quick Checkout] Fluxo
 
 Esta seção fornece uma visão geral da experiência típica de check-out usando o [!DNL Quick Checkout] para extensão do Adobe Commerce.
 

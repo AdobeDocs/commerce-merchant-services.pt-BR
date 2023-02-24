@@ -2,9 +2,9 @@
 title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre todas as [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
-source-git-commit: d0d205b394a772ca84ffb561d0695bd79144f2c6
+source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -64,6 +64,12 @@ _5 de outubro de 2022_
 ![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-369 --> Agora, o [[!DNL Quick Checkout] Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/onboarding.html#enable-extension) exibe a versão do aplicativo no rodapé.
 
 +++
+
+## v1.8.0
+
+_24 de fevereiro de 2023_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-592 --> Melhorias na experiência do usuário ao fazer um pedido na [Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) usar [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) como método de pagamento. Essa funcionalidade permite que os clientes façam um pedido com o Braintree como método de pagamento durante o check-out quando [!DNL Quick Checkout] estiver ativado.
 
 ## v1.7.0
 
