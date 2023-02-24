@@ -1,11 +1,11 @@
 ---
-user-guide-title: '"[!DNL Store FulFillment Guide]"'
+user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Informações detalhadas sobre a instalação, configuração e uso do Cumprimento da loja para Adobe Commerce stores.
 breadcrumb-title: Armazenar o fornecimento para o Adobe Commerce
 index: true
-source-git-commit: 27ed666954f445eb99e0bf370d1155924bfb8ad3
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '84'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 - [Visão geral do guia](guide-overview.md)
 - [Introdução ao [!DNL Store Fulfillment]](introduction.md)
-- [Fluxos de trabalho de assistência de armazenamento](store-assist-modules.md)
+- [Fluxos de trabalho do Store Assist](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
 - [Notas de versão](release-notes.md)
 - Cumprimento da loja integrada {#onboarding}
@@ -26,16 +26,15 @@ ht-degree: 0%
 - [Visão geral da configuração](service-config-settings-overview.md)
 - Configuração da loja {#store-configuration}
    - [Configuração geral](enable-general.md)
-   - [Emails de vendas](sales-emails.md)
+   - [Templates de email de vendas](sales-emails.md)
    - [Loja de merchant (fontes)](merchant-store-configuration.md)
    - [Gerenciamento de estoque de produtos](product-stock.md)
    - [Transferência de origem do Inventory management](inventory-stock-transfer.md)
-   - [Vários Sites/Escopo](multi-site-and-scope-config.md)
+   - [Vários sites/escopo](multi-site-and-scope-config.md)
 - Configuração do sistema {#system-configuration}
    - [Processos em segundo plano](background-processes.md)
    - [Localização e configuração de mapeamento da loja](store-location-map-provider-setup.md)
    - [Configuração da experiência de check-in](check-in-experience-setup.md)
    - [Configuração do usuário](user-setup.md)
    - [Configuração do aplicativo](app-setup.md)
-
 

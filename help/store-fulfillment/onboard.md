@@ -1,12 +1,12 @@
 ---
-title: Visão geral de integração para serviços de fornecimento de loja
+title: Visão geral de integração para os serviços de fornecimento de loja
 description: '''[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações."'
 role: User, Admin
 level: Intermediate
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 1fb22b4644d41ea5c60aead3fe2c455dfa3382f8
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
@@ -49,6 +49,6 @@ Introdução a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 1. [Criar usuários e funções para o aplicativo de assistência da loja](user-setup.md).
 
-1. [Baixar o [!DNL Store Assist] aplicativo para o dispositivo desejado. O aplicativo está disponível no aplicativo Apple (iOS) e Google Play (Android™)](app-setup.md) lojas.
+1. [Baixe o Walmart [!DNL Store Assist] aplicativo para o dispositivo desejado. O aplicativo está disponível no aplicativo Apple (iOS) e Google Play (Android™)](app-setup.md) lojas.
 
 Após ter instalado, configurado, concluído a integração e ter acesso ao [!DNL Store Assist] app, você pode [comece a criar pedidos e a testar](test-and-deploy.md).

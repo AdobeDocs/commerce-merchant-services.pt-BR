@@ -1,17 +1,17 @@
 ---
-title: Localização do armazenamento e configuração do sistema de mapeamento
+title: Configuração do sistema de mapeamento e localização de armazenamento
 description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização da loja na interface do usuário da loja. As soluções de fornecimento de armazenamento exigem um provedor de distância para permitir a pesquisa em lojas de varejo e outros recursos de mapeamento e agendamento para o fluxo de trabalho de cumprimento completo.
 role: User, Admin
 level: Intermediate
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 556cbf803a0f8569e8561d2b33b7a976065ae814
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '176'
 ht-degree: 0%
 
 ---
 
-# Configuração de localização e mapeamento do armazenamento
+# Configuração de localização e mapeamento da loja
 
 Ative o local da loja e os recursos de mapeamento para o Cumprimento da loja configurando um [fornecedor de distância](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) para procurar locais de loja de varejo.
 

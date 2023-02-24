@@ -3,7 +3,7 @@ title: Visão geral da configuração do sistema
 description: Saiba mais sobre as categorias de configurações de Administração disponíveis para a solução de disponibilização de loja e como elas são configuradas.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%
@@ -38,3 +38,4 @@ Na referência de configuração para cada tipo, os detalhes de configuração s
 - **Obrigatório** indica se um valor deve ser definido no campo
 
 Para referência técnica, também é possível encontrar o caminho de configuração interna para cada campo.
+

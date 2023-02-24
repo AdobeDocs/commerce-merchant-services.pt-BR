@@ -4,9 +4,9 @@ description: Configure o [!DNL Store Assist] aplicativo para gerenciar fluxos de
 role: User, Admin
 level: Intermediate
 exl-id: bcb5b02b-0141-407a-ad55-6e10e8e1aa90
-source-git-commit: fda4620f57aa7aa9fb930b10f5717fee98983378
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '623'
 ht-degree: 0%
 
 ---
@@ -44,7 +44,7 @@ O aplicativo Store Assist requer dois tipos de configuração:
 
    - **Cancelamento da loja**—Especifique se os pedidos podem ser cancelados da loja e quais funções têm permissões de cancelamento
 
-   - **Janela de limpeza do pedido**—Especifique por quanto tempo passou [Lead Time de retirada estimado](enable-general.md#delivery-method-title-configuration) que um pedido selecionado permanece em preparação antes de ser rearmazenado, por exemplo, três dias. O valor padrão é de 7 dias. Se essa configuração estiver ativada, a ordem será automaticamente cancelada quando esse tempo expirar. Os itens são rearmazenados e o comerciante recebe um email de cancelamento.
+   - **Janela de limpeza do pedido**—Especifique por quanto tempo passou [Lead Time de retirada estimado](enable-general.md#delivery-method-title-configuration) que um pedido selecionado permanece em preparação antes de ser rearmazenado, por exemplo, três dias. O valor padrão é de sete dias. Se essa configuração estiver ativada, a ordem será automaticamente cancelada quando esse tempo expirar. Os itens são rearmazenados e o comerciante recebe um email de cancelamento.
 
    - Personalize todas as instruções no aplicativo (escolha, preparo, entrega).
 
@@ -63,11 +63,11 @@ Depois que o aplicativo Store Assist é configurado e configurado, os Store Asso
 
 - Verifique se o dispositivo móvel atende à função [requisitos de hardware e software](solution-requirements.md#store-assist-app-requirements) para a solução Store Fulfillment.
 
-- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target=&quot;_blank&quot;} ou o [Loja Google Play](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target=&quot;_blank&quot;}.
+- Baixe o aplicativo Store Assist no [Apple App Store](https://apps.apple.com/us/app/store-assist-by-walmart/id1609281539){target="_blank"} or the [Google Play store](https://play.google.com/store/apps/details?id=com.walmart.faas.storeassist){target="_blank"}.
 
 - As Associações de Armazenamento exigem as seguintes informações para fazer logon:
 
    - **[!UICONTROL Company name]** associado à conta de assistência de loja
 
    - **Credenciais da conta do Auxiliar de Armazenamento**—credenciais de nome de usuário e senha para sua conta.
-   Um administrador do Adobe Commerce pode criar uma conta de usuário e definir permissões para o [!DNL Store Assist app] contas de usuário para locais de armazenamento que tenham [Seleção na loja](merchant-store-configuration.md#pickup-location-configuration) habilitado nas configurações das Lojas de administração.
+   Um Administrador da Adobe Commerce pode criar e gerenciar [!DNL Store Assist app] contas de usuário para todas as localizações de loja que têm [Seleção na loja](merchant-store-configuration.md#pickup-location-configuration) habilitado nas configurações das Lojas de administração.

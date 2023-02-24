@@ -1,10 +1,10 @@
 ---
 title: Configuração da experiência de check-in
-description: Configure a marca do carro e as seleções de modelo disponíveis para os clientes que selecionam o lado do lado do cursor ao preencherem o formulário de ordem de retirada.
+description: Configure as seleções de marca e modelo de carro disponíveis para selecionar os clientes quando preencherem o formulário de ordem de retirada.
 role: User, Admin
 level: Intermediate
 exl-id: 341b96cd-bb83-4d07-965c-b09fab24dc81
-source-git-commit: 5e7dcc48c65b2f3f75a33c6e556dcef882a80549
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

@@ -3,13 +3,13 @@ title: Visão geral da configuração para o cumprimento da loja
 description: Saiba mais sobre os tipos de configurações de Administração disponíveis para personalizar os recursos de cumprimento estendido fornecidos pela solução de fornecimento de armazenamento e link para instruções de conclusão da configuração.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: c432791a-94a0-457d-9ed9-8937846ce4f4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 0%
 
 ---
-
 
 # Visão geral da configuração para o cumprimento da loja
 

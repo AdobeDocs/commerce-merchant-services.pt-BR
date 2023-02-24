@@ -4,7 +4,7 @@ description: Defina as configurações gerais para ativar [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: c68bf177f79c37cc57b4cc5979b18e1fd4a7e17d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -92,7 +92,7 @@ Ative o [!DNL Store Fulfillment] solução para adicionar os recursos de retirad
 </tbody>
 </table>
 
-## Adicionar credenciais de conta
+## Adicionar credenciais da conta
 
 <table>
 <tr>
@@ -141,7 +141,7 @@ Ative o [!DNL Store Fulfillment] solução para adicionar os recursos de retirad
 
 Depois de configurar o [!UICONTROL Account Credentials], selecione <strong>[!UICONTROL Validate Credentials]</strong> para verificar e estabelecer uma conexão com o serviço de cumprimento da loja pela primeira vez.
 
-## Configurar o registro
+## Configurar registro
 
 Os registros para serviços de cumprimento de armazenamento estão disponíveis no arquivo de log `var/log/walmart-bopis.log`.
 
@@ -420,7 +420,7 @@ Com o método de delivery na loja, o cliente pode selecionar uma fonte a ser usa
 </tbody>
 </table>
 
-### Configuração do Título do Método de Entrega
+### Configuração do título do método de delivery
 
 <table>
 <thead>
@@ -500,7 +500,7 @@ Com o método de delivery na loja, o cliente pode selecionar uma fonte a ser usa
 </tr>
 </tbody></table>
 
-### Configuração de Títulos de Disponibilidade de Estoque
+### Configuração de títulos de disponibilidade de estoque
 
 <table>
 <thead>
@@ -530,3 +530,4 @@ Com o método de delivery na loja, o cliente pode selecionar uma fonte a ser usa
 <td>Não</td>
 </tr>
 </tbody></table>
+

@@ -1,17 +1,17 @@
 ---
-title: Várias configurações de site e escopo
+title: Configuração de vários sites e escopo
 description: Configure estoques e métodos de entrega para vários sites e escopos de armazenamento.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '189'
 ht-degree: 0%
 
 ---
 
-
-# Várias configurações de site e escopo
+# Configuração de vários sites e escopo
 
 É possível definir a variável [Escopo](https://docs.magento.com/user-guide/configuration/scope.html) para obter alguns elementos para acomodar vários sites, lojas e visualizações de loja:
 

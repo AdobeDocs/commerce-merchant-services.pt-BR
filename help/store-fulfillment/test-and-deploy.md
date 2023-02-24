@@ -4,9 +4,9 @@ description: Testar plano para verificar a funcionalidade de fornecimento de arm
 role: User, Admin
 level: Intermediate
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 0a1d70465247422db44daee302c67fe1a5a29d32
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '2657'
+source-wordcount: '2660'
 ht-degree: 0%
 
 ---
@@ -37,7 +37,7 @@ A configuração da conexão deve ser concluída antes que você possa criar qua
 
 1. Na grade da loja, verifique se as lojas foram marcadas como `Synced` antes de criar pedidos de teste.
 
-## Exemplo de plano de teste
+## Plano de ensaio de amostragem
 
 Os varejistas validam a funcionalidade básica da solução Store Fulfillment durante as fases de configuração e teste de uma implantação. Este plano de teste de amostra fornece um ponto de partida para os testes. Adicione cenários adicionais com base em suas necessidades.
 
@@ -277,7 +277,7 @@ Esta seção do plano de teste inclui cenários para testar o fluxo de trabalho 
 <ol>
 <li>Coloque o pedido.</li>
 <li>Aguarde até que a ordem seja sincronizada.</li>
-<li>Verifique se a fatura foi criada (se autorizada e capturada) e se o email de fatura foi recebido.</li>
+<li>Se a opção de autorização e captura estiver configurada, verifique se a fatura foi criada e se o cliente recebeu o email da fatura.</li>
 <li>Escolha todos os produtos com o Postman.</li>
 <li>Fazer check-in.</li>
 <li>Faça uma despesa.</li>
@@ -373,7 +373,7 @@ Esta seção do plano de teste cobre o gerenciamento de conta para usuários do 
 </tr>
 </table>
 
-## Tipos de produtos Adobe Commerce
+## Tipos de produtos do Adobe Commerce
 
 Os cenários de teste para os Tipos de produto do Adobe Commerce verificam se os clientes veem as informações corretas de produto, estoque e método de entrega para diferentes tipos de produto:
 
@@ -566,39 +566,39 @@ Esta seção do plano de teste cobre cenários para workflows de ordem de teste,
 <tr>
 <td>
 <strong>Separação de pedido único — caminho feliz, retirada de lado da curva</strong></td>
-<td>Escolha itens de quantidade única e múltipla. Nenhuma separação nula e coleta de lado da curva (com preparação).
+<td>Escolha itens de quantidade única e múltipla. Nenhuma retirada nil e retirada de lado curbside (com preparação).
 </td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Separação de várias ordens — caminho feliz, retirada de lado da curva</strong></td>
-<td>Itens únicos e de várias quantidades. Sem opções nulas e coleta de lado da curva (com preparação)</td>
+<td>Itens únicos e de várias quantidades. Nenhuma separação nil e retirada de lado da curva (com preparação)</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Escolha de pedido único — caminho feliz na loja</strong></td>
-<td>Itens únicos e de várias quantidades. Nenhuma separação nil e coleta de instância (com armazenamento temporário)</td>
+<td>Itens únicos e de várias quantidades. Nenhuma separação nil e retirada na loja (com preparação)</td>
 <td>
 </td>
 </tr>
 <tr>
 <td><strong>Separação de vários pedidos — caminho feliz, retirada na loja</strong></td>
-<td>Escolha itens de quantidade única e múltipla. Nenhuma separação nula e coleta de lado da curva (com preparação).</td>
+<td>Escolha itens de quantidade única e múltipla. Nenhuma retirada nil e retirada de lado curbside (com preparação).</td>
 <td></td>
 </tr>
 <tr>
 <td><strong>Escolha de pedido único — caminho não feliz, retirada na loja</strong></td>
-<td>Escolha itens únicos e de várias quantidades com separação parcial e automática e coleta instantânea (com armazenamento temporário)</td>
+<td>Escolha itens de quantidade única e múltipla com retirada parcial e nilselect e na loja (com armazenamento temporário)</td>
 </td>
 <td></td>
 </tr>
 <td><strong>Separação de várias ordens — não a retirada de lado de caminho feliz</strong></td>
-<td>Escolha itens únicos e de várias quantidades com separação parcial e automática e coleta instantânea (com armazenamento temporário)</td>
+<td>Escolha itens de quantidade única e múltipla com retirada parcial e nilselect e na loja (com armazenamento temporário)</td>
 <td></td>
 </tr>
 <td><strong>Escolha de pedido único — caminho não feliz, escolha de lado a lado</strong></td>
-<td>Escolha itens únicos e de várias quantidades com separação parcial e pontiaguda e curva (com armazenamento temporário)</strong></td>
+<td>Escolha itens únicos e de várias quantidades com retirada parcial e pontilhada e de lado curvo (com armazenamento temporário)</strong></td>
 </td>
 <td></td>
 </tr>

@@ -3,16 +3,17 @@ title: Conecte a solução de preenchimento da loja
 description: Estabeleça as conexões entre o Adobe Commerce e a solução de fornecimento de armazenamento, criando e autorizando uma integração do Adobe Commerce e adicionando as credenciais da conta de fornecimento de armazenamento à configuração do serviço Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '372'
+source-wordcount: '370'
 ht-degree: 0%
 
 ---
 
 # Conecte a solução de preenchimento da loja
 
-Estabeleça a conexão entre os serviços Adobe Commerce e Store Fulfillment configurando as credenciais de autenticação necessárias e os dados de conexão do Administrador.
+Conecte os Serviços de Atendimento da Loja com a Adobe Commerce, adicionando as credenciais de autenticação necessárias e os dados de conexão ao Administrador da Adobe Commerce.
 
 - **[Configurar [!DNL Commerce integration settings]](#create-the-commerce-integration)**-Crie uma integração do Adobe Commerce para os serviços de Atendimento da loja e gere os tokens de acesso para autenticar solicitações recebidas dos servidores de Atendimento da loja.
 
@@ -47,7 +48,7 @@ Para integrar o Adobe Commerce aos serviços de Entrega da loja, crie uma integr
 
 ## Configurar as credenciais da conta de preenchimento da loja
 
-Após preencher o formulário de entrada, uma conta de Atendimento da loja Walmart é criada para você. Você receberá as seguintes credenciais quando estiverem disponíveis:
+Após preencher o formulário de entrada, uma conta de Atendimento da loja Walmart é criada para você. Você recebe as seguintes credenciais quando elas estiverem disponíveis:
 
 - [!DNL Merchant ID]
 - [!DNL Consumer ID]
@@ -59,7 +60,7 @@ Essas credenciais são necessárias para configurar e usar o Cumprimento da loja
 
 >[!NOTE]
 >
->O processo de criação da conta pode levar algum tempo para ser concluído. Enquanto espera por credenciais, [revise e configure outras configurações para a solução Store Fulfillment](service-config-settings-overview.md).
+>O processo de criação da conta pode levar algum tempo para ser concluído. Enquanto espera por credenciais, [revisar e definir outras configurações para a solução Store Fulfillment](service-config-settings-overview.md).
 
 ### Adicionar credenciais para se conectar ao Cumprimento da Loja
 
@@ -76,11 +77,3 @@ Essas credenciais são necessárias para configurar e usar o Cumprimento da loja
 >[!NOTE]
 >
 >Se as credenciais forem inválidas, verifique se você inseriu os valores corretos para cada ambiente e revalide. Entre em contato com seu representante de conta caso ainda tenha problemas para se conectar.
-
-
-
-
-
-
-
-

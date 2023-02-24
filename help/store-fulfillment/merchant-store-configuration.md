@@ -1,9 +1,10 @@
 ---
-title: Configuração da loja de merchant
-description: 'Configure fontes aprimoradas do Inventory management como lojas de merchant. '
+title: Configuração de lojas de merchant
+description: Configure fontes aprimoradas do Inventory management como lojas de merchant.
 role: User, Admin
 level: Intermediate
-source-git-commit: 4ea03b3be11056526adc42d875b1e26a24736d15
+exl-id: 7c3444d0-5ecb-4ac1-aa81-e48eea290f5d
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '1209'
 ht-degree: 0%
@@ -107,7 +108,7 @@ Gerencie a configuração das Lojas de merchant no Administrador: **[!UICONTROL 
 
 {style=&quot;table-layout:auto&quot;}
 
-## Configuração do Local de Coleta
+## Configuração do local de coleta
 
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |-----------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -141,10 +142,3 @@ Gerencie a configuração das Lojas de merchant no Administrador: **[!UICONTROL 
 | **[!UICONTROL Is Car Make a Mandatory Field?]**</br>`Extension Attribute: car_make_mandatory` | Especifique se a identificação da marca de veículo é necessária para os clientes durante a Check-in.</br></br>Se estiver habilitado, o cliente será solicitado a especificar a marca do veículo à chegada. Se estiver desativado, o cliente poderá ignorar esta entrada. | Global | Não |
 | **[!UICONTROL Use Additional Information]**</br> `Extension Attribute: use_additional_information` | Especifique se deseja oferecer suporte à coleta de informações adicionais do cliente durante o Check-in. | Global | Não |
 | **[!UICONTROL Is Additional Information a Mandatory Field?]**</br>`Extension Attribute: additional_information_mandatory` | Especifique se são necessárias informações adicionais para os clientes durante o Check-in. </br></br>Se estiver habilitado, será solicitado ao cliente que insira informações adicionais na chegada. Se estiver desativado, o cliente poderá ignorar esta entrada. | Global | Não |
-
-
-
-
-
-
-

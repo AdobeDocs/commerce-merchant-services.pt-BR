@@ -4,9 +4,9 @@ description: "Instale o [!DNL Store Fulfillment solution] para uma loja da Adobe
 role: User, Admin
 level: Intermediate
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: d8be88f47f103c5d632540dae743ede398a9b7ad
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
-source-wordcount: '656'
+source-wordcount: '660'
 ht-degree: 0%
 
 ---
@@ -59,7 +59,7 @@ Extraia o arquivo de arquivamento que contém o pacote de integração para inst
 
 1. Extraia o arquivo de arquivamento para o novo diretório.
 
-1. Verifique se os arquivos extraídos estão revisando a lista de arquivos.
+1. Verifique se os arquivos foram extraídos com êxito revisando a lista de arquivos.
 
    ```
    ../var/www/html/artifacts]$ ls -a
@@ -194,4 +194,5 @@ O `-f` é necessária se você estiver usando um tema em branco.
 
 >[!NOTE]
 >
->Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) no Centro de ajuda da Adobe Commerce.
+>Para obter mais informações, consulte o [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) artigo na Central de ajuda do Adobe Commerce.
+

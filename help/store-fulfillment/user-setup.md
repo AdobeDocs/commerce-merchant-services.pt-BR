@@ -1,15 +1,15 @@
 ---
 title: Configuração do usuário
-description: 'Configure fontes aprimoradas do Inventory management como lojas de merchant para oferecer suporte à solução de fornecimento de loja para Adobe Commerce. '
+description: Configure fontes aprimoradas do Inventory management como lojas de merchant para oferecer suporte à solução de fornecimento de loja para Adobe Commerce.
 role: User, Admin
 level: Intermediate
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+exl-id: eb735bef-c339-4d0b-b3e7-10328915725b
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '392'
 ht-degree: 0%
 
 ---
-
 
 # Configuração do usuário
 

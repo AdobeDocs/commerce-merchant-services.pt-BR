@@ -1,10 +1,10 @@
 ---
 title: Transferência de origem do Inventory management
-description: '"Configure os estoques para o [!DNL Store Fulfillment solution] com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o inventário do estoque padrão para que você possa atribuí-lo a fontes configuradas para ativar os recursos de Coleta da loja exigidos pela solução de Encerramento da loja."'
+description: "Configure os estoques para o [!DNL Store Fulfillment solution] com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o inventário do estoque padrão para que você possa atribuí-lo a fontes configuradas para ativar os recursos de Coleta da loja exigidos pela solução de Encerramento da loja."
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 42b0118b427b1e04186793b4a57c058bc1cabdd4
+source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
