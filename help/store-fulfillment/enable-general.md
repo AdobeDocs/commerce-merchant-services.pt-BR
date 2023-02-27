@@ -4,7 +4,7 @@ description: Defina as configurações gerais para ativar [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
 workflow-type: tm+mt
 source-wordcount: '2541'
 ht-degree: 0%
@@ -86,7 +86,7 @@ Ative o [!DNL Store Fulfillment] solução para adicionar os recursos de retirad
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
 <td>Ative ou desative a solução. Quando estiver habilitado, configure e use os recursos de Entrega da loja e estabeleça a conexão entre a loja da Adobe Commerce e [!DNL Store Fulfillment] serviços. Quando desativado, todos os recursos de Entrega de loja são desativados e não há comunicação entre o Adobe Commerce e os serviços de Entrega de loja. As informações do pedido não podem ser processadas ou recebidas.</td>
-<td>Global</td>
+<td>Site</td>
 <td>Sim</td>
 </tr>
 </tbody>
