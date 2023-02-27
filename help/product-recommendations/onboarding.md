@@ -2,9 +2,9 @@
 title: Integração
 description: Saiba mais sobre os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
-source-wordcount: '241'
+source-wordcount: '240'
 ht-degree: 0%
 
 ---
@@ -34,9 +34,7 @@ O processo de integração para [!DNL Product Recommendations] O requer acesso �
 
 [!DNL Product Recommendations] pode ser adicionado a uma página como um tipo de conteúdo do Page Builder. Para adicionar suporte do Page Builder ao Product Recommendations, consulte [Instalar e configurar](install-configure.md).
 
->[!NOTE]
->
->[!DNL Page Builder] as unidades de recomendação podem ser criadas somente para a exibição de loja padrão.
+Consulte [[!DNL Page Builder] Integração](page-builder.md) para obter instruções sobre como adicionar [!DNL Product Recommendations] em [!DNL Page Builder] conteúdo.
 
 ### Suporte a B2B {#b2bsupport}
 
