@@ -2,10 +2,10 @@
 title: '[!DNL Store Fulfillment by Walmart Commerce Technologies] Notas de versão'
 description: "Revise as notas de versão para obter informações sobre todas as [!DNL Store Fulfillment by Walmart Commerce Technologies] versões."
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: 258820e9591f3f47e74c4c9497376fd34512334a
 workflow-type: tm+mt
-source-wordcount: '180'
-ht-degree: 2%
+source-wordcount: '224'
+ht-degree: 1%
 
 ---
 
@@ -19,38 +19,30 @@ Essas notas de versão descrevem a versão inicial do [!DNL Store Fulfillment Se
 
 ## v1.3.0
 
-<!-- Add release notes when version 1.3.0 is released -->
+Data de lançamento: 2023-02-27 Compatível com Adobe Commerce (EE): Compatível com a versão 2.4.x do Adobe Commerce (ECE): 2.4.x Estabilidade: Disponibilidade geral
+
+Esta versão contém a seguinte atualização:
+
+![Novo](../assets/fix.svg)<!-- WMTP-795 --> Foi adicionada a capacidade de desativar a solução de preenchimento da loja para um site específico, alterando o escopo padrão da configuração Configuração do sistema do site para global.
 
 ## v1.2.0
 
-Compatível com as seguintes versões do Commerce:
+Data de lançamento: 2022-09-27 Compatível com Adobe Commerce (EE): Compatível com a versão 2.4.x do Adobe Commerce (ECE): 2.4.x Estabilidade: Disponibilidade geral
 
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce para nuvem (ECE): 2.4.x
-* Estabilidade: Estável
-
-Esta versão contém as seguintes atualizações:
+Esta versão contém a seguinte atualização:
 
 ![Novo](../assets/fix.svg) [!DNL Store Fulfillment] é agora [compatível com [!DNL Adobe Commerce] 2.4.0 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0
 
-Compatível com as seguintes versões do Commerce:
-
-* Adobe Commerce (EE): 2.4.0 - 2.4.4
-* Adobe Commerce para nuvem (ECE): 2.4.0 - 2.4.4
-* Estabilidade: Estável
+Data de lançamento: 2022-07-15 Compatível com Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatível com Adobe Commerce (ECE): 2.4.0 - 2.4.4 Estabilidade: Disponibilidade geral
 
 ![Novo](../assets/fix.svg)<!-- WMTP-731 --> Simplificado o [Configuração da experiência de check-in](check-in-experience-setup.md) para o aplicativo Store Assist , adicionando seleções padrão de marca de carro e modelo. Na versão anterior, os comerciantes precisavam configurar manualmente a marca do carro e as seleções de modelo.
 
 ## v1.0.0
 
-Versão inicial, compatível com as seguintes versões do Commerce:
-
-* Adobe Commerce (EE): 2.4.x
-* Adobe Commerce para nuvem (ECE): 2.4.x
-* Estabilidade: Estável
+Data de lançamento: 2022-03-04 Compatível com Adobe Commerce (EE): 2.4.0 - 2.4.4 Compatível com Adobe Commerce (ECE): 2.4.0 - 2.4.4 Estabilidade: Disponibilidade geral
 
 ## Aplicativo de assistência da loja
 
