@@ -4,9 +4,9 @@ description: "Configure os estoques para o [!DNL Store Fulfillment solution] com
 role: User, Admin
 level: Intermediate
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '358'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ ht-degree: 0%
 # Transferência de origem do Inventory management
 
 O [!DNL Store Fulfillment] A solução usa a Adobe Commerce Inventory management nativa. Por padrão, a variável [!DNL Commerce] a configuração atribui todo o inventário da Web ao estoque padrão, que não pode ter fontes adicionais atribuídas. Como um site só pode receber um único estoque, um comerciante deve configurar um novo estoque e, opcionalmente, transferir seu inventário de origem padrão para uma origem que esteja atribuída ao escopo apropriado. Em seguida, a fonte pode ser atribuída ao novo estoque.
+
+>[!IMPORTANT]
+>
+>Os comerciantes devem manter a origem padrão para todos os produtos incluídos nos tipos de produtos de grupo e pacote. Esses produtos precisam de uma quantidade de estoque que atenda ao limite mínimo de quantidade para itens em estoque e inclua um status de estoque de [!UICONTROL In Stock].
 
 Essas alterações de configuração ajudam você a realizar três tarefas:
 

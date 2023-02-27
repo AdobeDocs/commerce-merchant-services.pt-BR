@@ -4,9 +4,9 @@ description: Defina as configurações gerais para ativar [!DNL Store Fulfillmen
 role: User, Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 81723645efc5dd1f0179e32ba80bc57fbfc9d799
+source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
 workflow-type: tm+mt
-source-wordcount: '2541'
+source-wordcount: '2440'
 ht-degree: 0%
 
 ---
@@ -337,39 +337,6 @@ Defina as configurações para a conta de usuário e a segurança de senha do ap
 <tr>
 <td><strong>[!UICONTROL Password Lifetime]</strong></td>
 <td>O número de dias em que uma senha permanece válida antes de uma alteração de senha necessária. Deixe em branco para desativar essa opção.</td>
-<td>Global</td>
-<td>Não</td>
-</tr>
-</tbody>
-</table>
-
-### Autenticação de dois fatores
-
-<table>
-<thead>
-<tr>
-<td><strong>Campo</strong></td>
-<td><strong>Descrição</strong></td>
-<td><strong>Escopo</strong></td>
-<td><strong>Obrigatório</strong></td>
-</tr>
- </thead>
- <tbody>
-<tr>
-<td><strong>[!UICONTROL APP User 2FA]</strong></td>
-<td>Ative ou desative a autenticação de dois fatores para os associados da loja. Quando ativado, o associado da loja é solicitado a fornecer uma senha única gerada por um provedor de autenticação.</td>
-<td>Global</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL APP 2FA Policy]</strong></td>
-<td>Define a política de aplicação para autenticação de dois fatores.<br></br><strong>[!UICONTROL Optional]</strong>: O associado da loja pode ignorar a autenticação de dois fatores se nenhum provedor estiver definido.<br></br><strong>[!UICONTROL Mandatory]</strong>: O associado da loja é necessário para concluir a autenticação de dois fatores.</td>
-<td>Global</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>[!UICONTROL 2FA Providers]</strong></td>
-<td>Selecione um ou mais serviços de provedor de autenticação para oferecer associações de loja. Para configurar a autenticação de dois fatores e a autenticação, os associados da loja devem instalar o aplicativo de autenticação de um dos provedores disponíveis instalados em seus dispositivos móveis.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
