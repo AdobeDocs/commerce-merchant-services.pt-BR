@@ -1,11 +1,11 @@
 ---
-user-guide-title: Serviços para o Adobe Commerce
-user-guide-description: Documentação e recursos para serviços hospedados que fornecem recursos estendidos para o Adobe Commerce e o Magento Open Source.
-title: Serviços para o Adobe Commerce
+user-guide-title: Serviços para Adobe Commerce
+user-guide-description: Documentação e recursos para serviços hospedados que fornecem recursos estendidos para a Adobe Commerce e o Magento Open Source.
+title: Serviços para Adobe Commerce
 source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
 workflow-type: tm+mt
 source-wordcount: '106'
-ht-degree: 23%
+ht-degree: 0%
 
 ---
 
