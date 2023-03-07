@@ -1,20 +1,20 @@
 ---
-title: Novidades na documentação do Commerce Services
-description: Coleta de alterações na documentação de todos os serviços do Commerce
+title: Novidades na documentação dos Commerce Services
+description: Coleção de alterações na documentação de todos os Commerce services
 seo-title: Adobe Commerce Services documentation changes
 seo-description: See a collated list of all documentation changes for Adobe Commerce Services and integration services.
 exl-id: dcc613e3-955e-4006-9984-bf05289d3bc1
-source-git-commit: dd498498ba4c3b387b473ef0202c3aa67a832885
+source-git-commit: 804080ecfaf3d8578161341e92f8260cfddc0078
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '310'
 ht-degree: 0%
 
 ---
 
-# Novidades na documentação do Commerce Services
+# Novidades na documentação dos Commerce Services
 
 Os itens a seguir são alterações recentes na documentação:
 
-| Serviço | Mudança | Tipo | | — | — | — | |[**Serviço de catálogo**](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html)|Adicionado o [Serviço de catálogo e malha de API](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/mesh.html) para o guia Serviço de catálogo.| Novo tópico |
+Serviço | | Alteração | Tipo | | — | — | — | | [**Serviço de catálogo**](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) | Adição de um novo [`categories` query](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) tópico e atualizou o Serviço de catálogo[ Notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/release-notes.html?lang=en) para a versão de 6 de março.| Novo tópico | |[**Recommendations do produto**](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html?lang=en)|Adição de um [Integração do Page Builder](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/getting-started/page-builder.html) tópico para o guia Recommendations do produto.| Novo tópico | | [**Check-out rápido**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)|Atualizou o [notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) página com a versão da extensão de Check-out rápido v1.8.0.| Atualizar| | [**Check-out rápido**](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html)|Atualizou o [notas de versão](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/release-notes.html) página com a versão da extensão de Check-out rápido v1.7.0.| Atualizar| | [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)|Atualizou o [Configurações](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#card-vaulting), [Configuração herdada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-credit-card-fields), e [Compartimentalização de cartão de crédito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html#use-vaulting-in-the-admin) tópicos sobre o uso de cartões de crédito com cofre no Administrador para concluir pedidos de clientes.| Atualizar| | [**Payment Services**](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html)| Atualização da documentação no [Configurações](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#3ds), [Configuração de administrador herdada](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/configure-admin.html#configure-credit-card-fields), e [Segurança](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html#3ds) tópicos sobre a nova funcionalidade de conformidade com o PCI 3DS disponível para comerciantes da UE e da Grã-Bretanha.| Atualizar| | [**Serviço de catálogo**](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html) | Adição de vídeos atualizados ao Serviço de catálogo [Integração e instalação](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/installation.html) tópico.| Atualização |
 
 Esta tabela é atualizada na primeira segunda-feira de cada mês.
