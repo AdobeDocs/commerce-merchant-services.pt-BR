@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: 2767de477e274c1855d21d6e678cc6139ff4faa4
+source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '513'
 ht-degree: 0%
 
 ---
@@ -26,13 +26,6 @@ Data de lançamento: 2023-3-6 Compatível com o Adobe Commerce (EE): 2.4.4+ Comp
 ![Novo](../assets/new.svg) Adicionado [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) funcionalidade do GraphQL.
 ![Correção](../assets/fix.svg) Melhor desempenho e escalabilidade da API.
 
-### Versão V1.4
-
-Data de lançamento: 2023-2-7 Compatível com o Adobe Commerce (EE): 2.4.x Compatível com o Adobe Commerce para nuvem (ECE): 2.4.x Estabilidade: disponibilidade geral
-
-![Novo](../assets/new.svg) Metappackage do serviço de catálogo publicado para simplificar as etapas de instalação.
-![Correção](../assets/fix.svg) Melhorias na escalabilidade e no desempenho da API.
-
 #### Limitações conhecidas
 
 Estes recursos ainda não são compatíveis:
@@ -50,7 +43,13 @@ As seguintes limitações podem ser resolvidas usando a API Core GraphQL:
 * Preço Mínimo Anunciado
 * Nível de preços
 * Produtos e cartões-presente baixáveis
-* Categorias (`categories` e `categoryList`)
+
+### Versão V1.4
+
+Data de lançamento: 2023-2-7 Compatível com o Adobe Commerce (EE): 2.4.x Compatível com o Adobe Commerce para nuvem (ECE): 2.4.x Estabilidade: disponibilidade geral
+
+![Novo](../assets/new.svg) Metappackage do serviço de catálogo publicado para simplificar as etapas de instalação.
+![Correção](../assets/fix.svg) Melhorias na escalabilidade e no desempenho da API.
 
 ### Versão V1.3
 
