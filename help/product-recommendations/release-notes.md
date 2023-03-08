@@ -1,10 +1,10 @@
 ---
 title: '[!DNL Product Recommendations] Notas de versão'
-description: As últimas informações da versão para [!DNL Product Recommendations] do Adobe Commerce.
+description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
-source-git-commit: fd3f71a1b3d958f3aa79f0ba6603d30e16e70507
+source-git-commit: 40cf5c5dc6242b5efe3822b9c574fe5b219cfcd8
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '1029'
 ht-degree: 0%
 
 ---
@@ -15,153 +15,207 @@ As notas de versão contêm atualizações para o seguinte [!DNL Product Recomme
 
 * [!DNL Product Recommendations] metapackage: `magento/product-recommendations`
 * Suporte ao Page Builder no [!DNL Product Recommendations] (opcional) módulo: `magento/module-page-builder-product-recommendations`
-* Suporte do tipo de recomendação de semelhança visual para [!DNL Product Recommendations] (opcional) módulo: `magento/module-visual-product-recommendations`
+* Suporte a tipo de recomendação de similaridade visual para [!DNL Product Recommendations] (opcional) módulo: `magento/module-visual-product-recommendations`
 
 As notas de versão incluem:
 
 ![Novo](../assets/new.svg) Novos recursos
-![Correção](../assets/fix.svg) Correções e melhorias
+![Correção](../assets/fix.svg) Correções e aprimoramentos
 
-Consulte a documentação do desenvolvedor para [saiba mais sobre compatibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consulte a documentação do desenvolvedor para [saiba mais sobre a compatibilidade do produto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Versão principal atual
 
-### 4.0.1 de magento/recomendações de produto
+### 4.0.1 do magento/product-recommendations
 
-![Correção](../assets/fix.svg) Anteriormente, o Product Recommendations mostrava um erro quando a moeda de exibição era alternada para uma moeda não padrão. A troca de moedas agora funciona corretamente.
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 4.0.0 da magento/recomendações de produto
+![Correção](../assets/fix.svg) Anteriormente, o Product Recommendations mostrava um erro quando a moeda de exibição era trocada para uma moeda não padrão. A troca de moedas agora funciona corretamente.
 
-![Novo](../assets/new.svg) Adicionado [indicadores de disponibilidade](create.md) para ajudá-lo a visualizar o progresso de treinamento de cada tipo de recomendação.
+### 4.0.0 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Adicionado [indicadores de disponibilidade](create.md) para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação.
 ![Novo](../assets/new.svg) Esta é uma versão principal. [Editar](install-configure.md#update) a raiz `composer.json` para o seu projeto. Esta versão também requer que você forneça duas chaves de API ao instalar e configurar o Product Recommendations: [uma chave de produção e uma chave de sandbox](../landing/saas.md).
 
 #### Limitações conhecidas
 
-* O `websiteCode` é retornado incorretamente se contiver um sublinhado (_).
+* A variável `websiteCode` o valor é retornado incorretamente se contiver um sublinhado (_).
 
 ### Versões anteriores
 
-+++3.3.7 e anterior
++++3.3.7 e anteriores
 
-### 3.3.7 da magento/recomendações de produto
+### 3.3.7 do magento/product-recommendations
 
-![Novo](../assets/new.svg) Adição do suporte a PHP 8.1
-![Novo](../assets/new.svg) Redimensionamento de imagem aprimorado para que o dimensionamento de imagens seja tratado de forma mais consistente no modelo de exibição de referência
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.3.6 da magento/recomendações de produto
+![Novo](../assets/new.svg) Suporte ao PHP 8.1 adicionado
+![Novo](../assets/new.svg) Redimensionamento de imagem aprimorado para que o dimensionamento de imagens seja manipulado de forma mais consistente no modelo de exibição de referência
 
-![Novo](../assets/new.svg) Otimizado [!DNL Product Recommendations] metapackage ao listar explicitamente as dependências
+### 3.3.6 do magento/product-recommendations
 
-### 3.3.5 da magento/recomendações de produto
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg) Adicionado [Suporte a B2B](onboarding.md#b2bsupport) no Product Recommendations
-![Novo](../assets/new.svg) Novos feeds adicionados a [sincronizar dados do catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) para o Commerce Services através da linha de comando
+![Novo](../assets/new.svg) Otimizado [!DNL Product Recommendations] metappackage listando explicitamente as dependências
 
-### 3.3.3 da magento/recomendações de produto
+### 3.3.5 do magento/product-recommendations
 
-![Novo](../assets/new.svg) Adicionado um novo [tipos de recomendação](type.md): Conversão (exibir no carrinho), Conversão (exibir na compra) e Visualização recente. Esses novos tipos de recomendação estão disponíveis no `magento/product-recommendations` módulo 3.2.2 e posterior.
-![Correção](../assets/fix.svg) Correção de um problema em que o Fastly&#39;s Web Application Firewall (WAF) estava bloqueando incorretamente um cookie
-![Correção](../assets/fix.svg) Correção de um problema em que os produtos atribuídos à Exibição de loja não padrão não eram exibidos no _Visualização de produto do Recommendations_ painel ao criar uma recomendação para a Exibição de loja específica
-![Correção](../assets/fix.svg) Correção de um problema em que determinados nomes de unidade de recomendação no Construtor de página impedia que a unidade de recomendação fosse exibida na loja
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.3.2 da magento/recomendações de produto
+![Novo](../assets/new.svg) Adicionado [Suporte B2B](onboarding.md#b2bsupport) no Recommendations do produto
+![Novo](../assets/new.svg) Adição de novos feeds ao [sincronizar dados do catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) para Commerce Services por meio da linha de comando
 
-![Correção](../assets/fix.svg) Correção da dependência ausente do suporte B2B
+### 3.3.3 do magento/product-recommendations
 
-### 3.3.1 da magento/recomendações de produto
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg) Adição de suporte para preços de grupos de clientes B2B. Ao definir um [filtro de preço](filters.md) em uma unidade de recomendação, os clientes B2B que estiverem conectados verão o conjunto de preços do grupo de clientes para os produtos exibidos.
+![Novo](../assets/new.svg) Adição de novo [tipos de recomendação](type.md): Conversão (exibição para carrinho), Conversão (exibição para compra) e Visualizado recentemente. Esses novos tipos de recomendações estão disponíveis no `magento/product-recommendations` módulos 3.2.2 e posteriores.
+![Correção](../assets/fix.svg) Correção de um problema em que o WAF (Web Application Firewall) do Fastly bloqueava incorretamente um cookie
+![Correção](../assets/fix.svg) Correção de um problema em que os produtos atribuídos ao Modo de exibição de loja não padrão não eram exibidos no _Visualização do produto Recommendations_ ao criar uma recomendação para essa Exibição de armazenamento específica
+![Correção](../assets/fix.svg) Correção de um problema em que determinados nomes de unidade de recomendação no Page Builder impediam que a unidade de recomendação fosse exibida na loja
 
-### 3.3.0 da magento/recomendações de produto
+### 3.3.2 do magento/product-recommendations
 
-![Novo](../assets/new.svg) Adição de suporte à Camada de dados do cliente do Adobe para padronizar a coleta de dados comportamentais entre recursos e serviços do Adobe Commerce. Consulte a [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) para saber mais.
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.2.6 da magento/recomendações de produto
+![Correção](../assets/fix.svg) Correção de uma dependência ausente para suporte B2B
+
+### 3.3.1 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Adição de suporte para preços de grupo de clientes B2B. Ao definir um [filtro de preço](filters.md) em uma unidade de recomendação, os clientes B2B que estão conectados veem o conjunto de preços do grupo de clientes para os produtos exibidos.
+
+### 3.3.0 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Adição de suporte para a Camada de dados de clientes Adobe para padronizar a coleta de dados comportamentais entre os recursos e serviços da Adobe Commerce. Consulte a [readme](https://github.com/adobe/magento-storefront-event-collector/blob/main/README.md) para saber mais.
+
+### 3.2.6 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) Correção de um erro modal de JavaScript
-![Correção](../assets/fix.svg) Correção de um problema em que o Fastly&#39;s Web Application Firewall (WAF) estava bloqueando incorretamente um cookie
+![Correção](../assets/fix.svg) Correção de um problema em que o WAF (Web Application Firewall) do Fastly bloqueava incorretamente um cookie
 
-### 3.2.5 da magento/recomendações de produto
+### 3.2.5 do magento/product-recommendations
 
-![Novo](../assets/new.svg) Serviços de Magento renomeados para [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) e melhor utilização no Administrador
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.2.4 da magento/recomendações de produto
+![Novo](../assets/new.svg) Serviços de Magento renomeados para [Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) e melhor usabilidade no Administrador
 
-![Correção](../assets/fix.svg) Correção do erro &quot;Não é possível recuperar dados de opções de produto configuráveis&quot; ao indexar atributos de produto
+### 3.2.4 do magento/product-recommendations
 
-### 3.2.3 da magento/recomendações de produto
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Correção](../assets/fix.svg) Correção do erro &quot;Não é possível recuperar dados de opções do produto configuráveis&quot; ao indexar atributos do produto
+
+### 3.2.3 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) Correção do erro &quot;Não é possível recuperar dados de opções do produto configuráveis&quot; durante a Sincronização do catálogo
-![Correção](../assets/fix.svg) Correção de um problema em que o código de armazenamento não estava sendo definido corretamente ao ativar a configuração &quot;Adicionar código de armazenamento ao URL&quot;
-![Correção](../assets/fix.svg) Detecção aprimorada de alterações na configuração do Painel de administração para garantir que essas alterações sejam refletidas nos dados de Sincronização do catálogo
+![Correção](../assets/fix.svg) Correção de um problema em que o código da loja não estava sendo definido corretamente quando você ativou a configuração &quot;Adicionar código da loja ao URL&quot;
+![Correção](../assets/fix.svg) Detecção aprimorada de alterações na configuração do Painel de administração para garantir que essas alterações sejam refletidas nos dados de sincronização do catálogo
 
-### 3.2.2 da magento/recomendações de produto
+### 3.2.2 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) Adicionada a capacidade de [visualizar resultados da recomendação](create.md) no momento da criação. Isso pode exigir que você atualize seu módulo para a versão mais recente.
-![Novo](../assets/new.svg) Adicionada a capacidade de [monitorar e gerenciar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) o processo de sincronização de catálogo do Administrador.
+![Novo](../assets/new.svg) Adicionada a capacidade de [monitorar e gerenciar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) o processo de sincronização do catálogo do Administrador.
 ![Novo](../assets/new.svg) Adicionado [filtros](filters.md) para controlar quais produtos são exibidos nas recomendações.
-![Novo](../assets/new.svg) Adicionado o [Similaridade visual](type.md#visualsim) tipo de recomendação.
+![Novo](../assets/new.svg) Adição de [Semelhança visual](type.md#visualsim) tipo de recomendação.
 
-### 1.2.1 de magento/module-page-builder-product-recommendations para o Page Builder
+### 1.2.1 do magento/module-page-builder-product-recommendations para o Page Builder
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) Adição de suporte para a versão 3.2.0+ do `magento/product-recommendations` módulo
 
-### 3.1.0 da magento/recomendações de produto
+### 3.1.0 do magento/product-recommendations
 
-![Novo](../assets/new.svg) Adicionada a capacidade de [resync](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) seu catálogo para os serviços SaaS por meio da linha de comando.
-![Novo](../assets/new.svg) Suporte adicionado para prefixos de tabela do banco de dados
-![Correção](../assets/fix.svg) Remoção do suporte PHP 7.1
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.0.8 de magento/recomendações de produto
+![Novo](../assets/new.svg) Adicionada a capacidade de [ressincronizar](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) seu catálogo para serviços SaaS por meio da linha de comando.
+![Novo](../assets/new.svg) Suporte adicionado para prefixos de tabela de banco de dados
+![Correção](../assets/fix.svg) Remoção do suporte ao PHP 7.1
 
-![Correção](../assets/fix.svg) Correção de um problema em que os eventos eram enviados para a coleta de dados antes da configuração do módulo, causando tráfego inválido
+### 3.0.8 do magento/product-recommendations
 
-### 3.0.6 de magento/recomendações de produto
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg) **(Beta)** Inclui suporte para novos [Similaridade visual](type.md#visualsim) tipo de recomendação.
+![Correção](../assets/fix.svg) Correção de um problema em que os eventos eram enviados para coleta de dados antes do módulo ser configurado, causando tráfego inválido
 
-### 1.0.0 de magento/módulo-visual-product-recommendations
+### 3.0.6 do magento/product-recommendations
 
-![Novo](../assets/new.svg) **(Beta)** [Similaridade visual](type.md#visualsim). Com o _Similaridade visual_ tipo de recomendação, você pode implantar uma unidade de recomendação na página de detalhes do produto, que exibe produtos visualmente semelhantes ao produto que está sendo visualizado.
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.0.5 de magento/recomendações de produto
+![Novo](../assets/new.svg) **(Beta)** Inclui suporte para novos [Semelhança visual](type.md#visualsim) tipo de recomendação.
+
+### 1.0.0 do magento/module-visual-product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) **(Beta)** [Semelhança visual](type.md#visualsim). Com o _Semelhança visual_ tipo de recomendação, é possível implantar uma unidade de recomendação na página de detalhes do produto que exibe produtos visualmente semelhantes ao produto que está sendo visualizado.
+
+### 3.0.5 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) Correção do erro &quot;Não é possível recuperar dados de opções do produto&quot; que poderia ocorrer durante a exportação do catálogo.
-![Correção](../assets/fix.svg) O símbolo de moeda no _Receita_ na coluna _Recommendations do produto_ agora, o painel reflete corretamente a moeda base configurada.
+![Correção](../assets/fix.svg) O símbolo da moeda na variável _Receita_ coluna na _Recommendations do produto_ O painel agora reflete corretamente a moeda base configurada.
 
-### 3.0.4 de magento/recomendações de produto
+### 3.0.4 do magento/product-recommendations
 
-![Correção](../assets/fix.svg) Adição de suporte para Adobe Commerce 2.4.0
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.0.3 de magento/recomendações de produto
+![Correção](../assets/fix.svg) Adição de suporte para o Adobe Commerce 2.4.0
+
+### 3.0.3 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) Implementação de símbolo aprimorada no modelo de loja
 
-### 1.0.4 de magento/module-page-builder-product-recommendations para o Page Builder
+### 1.0.4 do magento/module-page-builder-product-recommendations para o Page Builder
 
-![Novo](../assets/new.svg) Adição do nome de Recomendação de produto ao editar o tipo de conteúdo do Page Builder
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 3.0.2 magento/recomendações de produto
+![Novo](../assets/new.svg) Adição do nome da Recomendação do produto ao editar o tipo de conteúdo do Page Builder
 
-![Novo](../assets/new.svg) Adicionada uma coluna de status na grade ao selecionar unidades de recomendação no Construtor de páginas
-![Correção](../assets/fix.svg) Correção de um problema com protocolos http/https incorretos em URLs de produto e imagem
+### 3.0.2 magento/product-recommendations
 
-### 3.0.1 de magento/recomendações de produto
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-Esta é uma versão principal. [Editar](install-configure.md#update) o arquivo composer.json raiz do seu projeto.
+![Novo](../assets/new.svg) Adição de uma coluna de status na grade ao selecionar unidades de recomendação no Page Builder
+![Correção](../assets/fix.svg) Correção de um problema com protocolos http/https incorretos em URLs de produtos e imagens
 
-![Novo](../assets/new.svg) Buscar [!DNL Product Recommendations] em Espaços de dados SaaS alternativos. Isso permite usar as recomendações de produto calculadas no ambiente do produto em outros ambientes que não sejam de produção. [Alternando Espaços de Dados SaaS](settings.md) descreve mais detalhadamente esse recurso.
+### 3.0.1 do magento/product-recommendations
 
-![Correção](../assets/fix.svg) Correção de um problema em que o check-out era inibido para compradores que usavam a origem uBlock
-![Correção](../assets/fix.svg) Correção de um problema no envio de eventos adicionais irrelevantes para o carrinho
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-### 1.0.3 de magento/module-page-builder-product-recommendations para o Page Builder
+Esta é uma versão principal. [Editar](install-configure.md#update) arquivo composer.json raiz do seu projeto.
 
-![Novo](../assets/new.svg) Suporte ao Page Builder. Com a integração do Page Builder, você pode colocar unidades de recomendação de maneira precisa e granular em qualquer local arbitrário no conteúdo criado pelo Page Builder. Você também pode criar um estilo para os próprios cabeçalhos e unidades de recomendação. Ir para [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para obter mais informações.
+![Novo](../assets/new.svg) Buscar [!DNL Product Recommendations] em Espaços de dados SaaS alternativos. Isso permite usar as recomendações de produtos computadas no ambiente de produtos em outros ambientes que não sejam de produção. [Alternar espaços de dados SaaS](settings.md) descreve esse recurso.
 
-### 2.0.0 da magento/recomendações de produto
+![Correção](../assets/fix.svg) Correção de um problema em que o check-out era inibido para compradores que usavam o uBlock Origin
+![Correção](../assets/fix.svg) Correção de um problema ao enviar eventos irrelevantes de adição ao carrinho
 
-![Novo](../assets/new.svg) Versão de disponibilidade geral!
+### 1.0.3 do magento/module-page-builder-product-recommendations para o Page Builder
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Suporte ao Page Builder. Com a integração do Page Builder, você pode colocar unidades de recomendação de maneira precisa e granular em qualquer local arbitrário no conteúdo criado pelo Page Builder. Também é possível estilizar os cabeçalhos e as próprias unidades de recomendação. Ir para [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para obter mais informações.
+
+### 2.0.0 do magento/product-recommendations
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Lançamento de disponibilidade geral!
 
 +++
 
