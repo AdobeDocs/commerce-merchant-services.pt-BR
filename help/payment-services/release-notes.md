@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: 39bd0763b7aa6f853d0bff80c8122e899c1c58d8
+source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '1758'
 ht-degree: 0%
 
 ---
@@ -56,6 +56,26 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e a variável [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.0.0
+
+_10 de março de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4152 --> Suporte adicionado para PHP 8.2 e Adobe Commerce 2.4.6. Não compatível com PHP 7.x.
+
+## v1.6.1
+
+_10 de março de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Correção](../assets/fix.svg)<!-- Issue PAY-4226 --> Correção de um problema que impedia novos comerciantes de Serviços de pagamento de usar o check-out no Administrador. Anteriormente, os Serviços de pagamento usavam a ID de cliente do Commerce, que não existe para novos clientes.
+
+![Correção](../assets/fix.svg)<!-- Issue PAY-4205 --> Correção de um problema que fazia com que o estado do endereço de entrega especificado fosse substituído pelo estado nas configurações de imposto padrão durante a finalização da compra usando o [Opção do PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#paypal-smart-buttons). Agora, os clientes podem ter seus pedidos entregues em um estado diferente daquele configurado como padrão nas configurações de imposto do comerciante.
+
+![Correção](../assets/fix.svg)<!-- Issue PAY-4202 --> Correção de um problema que impedia os clientes de usar a compartimentalização de cartão para concluir uma compra ou excluir um método de pagamento com cofre de uma loja [usando o `Authorize and Capture` ação de pagamento](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/production.html#set-payment-services-as-payment-method). Anteriormente, um erro &quot;ID do Provider Vault não encontrada&quot; aparecia quando o cliente tentava usar ou modificar seus cartões de crédito com cofre.
 
 ## v1.6.0
 
