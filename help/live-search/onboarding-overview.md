@@ -2,9 +2,9 @@
 title: "Visão geral da integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 484319fc1df6c29c972b57c13bd0ed711e374e99
+source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '494'
 ht-degree: 0%
 
 ---
@@ -19,8 +19,8 @@ Para começar a usar o [!DNL Live Search] para o Adobe Commerce, conclua o proce
 
 ## Requisitos {#requirements}
 
-* [Adobe Commerce](https://magento.com/products/magento-commerce) 2.4.4+
-* PHP 8.1, 8.2
+* [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
+* PHP 8.1 / 8.2
 * [!DNL Composer]
 
 ### Plataformas compatíveis
@@ -30,18 +30,25 @@ Para começar a usar o [!DNL Live Search] para o Adobe Commerce, conclua o proce
 
 ## Limites e limites
 
-Neste momento, a [!DNL Live Search] A API de pesquisa/categoria tem os seguintes limites e limites estáticos compatíveis:
+Atualmente, a [!DNL Live Search] A API de pesquisa/categoria tem os seguintes limites e limites estáticos compatíveis:
 
 ### Indexação
 
 * Indexa até 300 atributos de produto por exibição de loja.
 * Indexa somente produtos do banco de dados do Adobe Commerce.
+* Os produtos devem estar no Catálogo compartilhado padrão.
 * As páginas CMS não são indexadas.
 
 ### Query
 
 * [!DNL Live Search] O não tem acesso à taxonomia completa da árvore de categoria, o que torna alguns cenários de pesquisa de navegação em camadas fora de seu alcance.
-* [!DNL Live Search] O usa um endpoint exclusivo do GraphQL para consultas, a fim de oferecer suporte a recursos como facetas inteligentes e pesquisa conforme o tipo. Embora semelhante à [API MAGENTO GRAPHQL](https://developer.adobe.com/commerce/webapi/graphql/)Existem algumas diferenças e alguns campos podem não ser totalmente compatíveis no momento.
+* [!DNL Live Search] O usa um endpoint exclusivo do GraphQL para consultas, a fim de oferecer suporte a recursos como facetas dinâmicas e pesquisa conforme o tipo. Embora semelhante à [API do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)Existem algumas diferenças e alguns campos podem não ser totalmente compatíveis.
+
+Para restringir grupos de clientes usando permissões de Catálogo:
+
+* Os produtos devem ser atribuídos à categoria Raiz.
+* O grupo de clientes &quot;Não conectado&quot; deve receber permissões de navegação &quot;Permitir&quot;.
+* Para restringir produtos ao grupo de clientes Não Conectado, vá para cada categoria e defina permissões para cada grupo de clientes.
 
 ### Regras
 
@@ -53,15 +60,21 @@ Neste momento, a [!DNL Live Search] A API de pesquisa/categoria tem os seguintes
 
 * [!DNL Live Search] O pode gerenciar até 200 sinônimos por exibição de loja.
 
-### versão beta do PWA
+### suporte para PWA
 
-* A implementação beta atual do PWA do Live Search requer mais tempo de processamento para retornar resultados de pesquisa do que o Live Search com a loja nativa do Commerce.
-* A versão beta do PWA para [!DNL Live Search] não suporta [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
-* Os seguintes atributos de produto não são compatíveis com o GraphQL quando usados em relação à versão beta do [PWA](https://developer.adobe.com/commerce/pwa-studio/): `description`, `name`, `short_description`
+O suporte ao Live Search é considerado em beta porque nem todo o PWA foi testado com [!DNL Live Search]. Funcionalidades básicas, como pesquisa e listagem de produtos, funcionam em Venia, mas algumas permutas de Graphql podem não funcionar corretamente.
+
+* A atual implementação do PWA beta do [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
+* [!DNL Live Search] O no PWA não suporta [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* Filtrar diretamente em `description`, `name`, `short_description` não é compatível com o GraphQL quando usado com [PWA](https://developer.adobe.com/commerce/pwa-studio/), mas são retornados com um filtro mais geral.
 
 ### Não suportado no momento
 
 * A variável [Pesquisa avançada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) o módulo é desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
-* [Grupos de preços personalizados](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-group.html)
 * Várias localizações de estoque conforme usadas por [MCOM](https://experienceleague.adobe.com/docs/commerce-admin/systems/integrations/mcom.html) ou outras extensões OMS
 * Os preços do produto não incluem [imposto sobre o valor acrescentado](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (IVA)
+* [Preço da camada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) não é compatível com o Popover do Live Search e com o Widget de página de listagem de produtos.
+
+## Cookies
+
+[!DNL Live Search] O coleta dados de interação do usuário como parte de sua funcionalidade básica, e os cookies são usados para armazenar esses dados. Ao coletar qualquer informação do usuário, ele deve concordar em armazenar cookies. [!DNL Live Search] e [!DNL Product Recommendations] compartilhar o fluxo de dados e, portanto, o mesmo mecanismo de cookie. Leia mais sobre isso em [Lidar com restrições de cookies](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).

@@ -1,33 +1,33 @@
 ---
-title: "Gerenciar aspectos"
-description: "Saiba como gerenciar as [!DNL Live Search] facetas."
+title: "Gerenciar facetas"
+description: "Saiba como gerenciar arquivos existentes [!DNL Live Search] aspectos."
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
 workflow-type: tm+mt
-source-wordcount: '441'
+source-wordcount: '461'
 ht-degree: 0%
 
 ---
 
-# Gerenciar aspectos
+# Gerenciar facetas
 
-Siga estas instruções para atualizar as propriedades de facetas existentes ou alterar sua apresentação na loja.
+Siga estas instruções para atualizar as propriedades dos aspectos existentes ou alterar sua apresentação na loja.
 
 ## Configurar agrupamentos de facetas de preço
 
-Consulte [Configurações](settings.md) para configurar intervalos e agrupamentos de lapidamento de preço.
+Consulte [Configurações](settings.md) para configurar intervalos e agrupamentos de facetas de preços.
 
 ## Editar faceta
 
-1. Encontre a faceta que deseja editar.
-1. Se houver muitas facetas na lista, defina *Filtrar por* para um dos seguintes:
+1. Localize a faceta que deseja editar.
+1. Se houver muitas facetas na lista, defina *Filtrar por* a um dos seguintes:
 
-   * Fixo
+   * Fixado
    * Dinâmico
 
-   Para saber mais, acesse [Tipos de faceta](facets-type.md).
+   Para saber mais, acesse [Tipos de facetas](facets-type.md).
 
-   ![Filtrar aspectos](assets/facets-filter-by-cropped.png)
+   ![Filtrar facetas](assets/facets-filter-by-cropped.png)
 
 1. Para editar as propriedades da faceta, clique em **Mais** (...) opções.
 1. Clique em **Editar**
@@ -36,46 +36,50 @@ Consulte [Configurações](settings.md) para configurar intervalos e agrupamento
 
 1. Para editar o rótulo da faceta, siga um destes procedimentos:
 
-   * Para um [!DNL Commerce] loja, edite a [rótulo do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
-   * Para uma implementação sem cabeçalho, clique no valor na primeira coluna e edite o texto conforme necessário.
+   * Para um [!DNL Commerce] vitrine, edite o [rótulo do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html).
+   * Para uma implementação headless, clique no valor na primeira coluna e edite o texto conforme necessário.
 
    ![Editar rótulo](assets/facet-edit-label.png)
 
-1. (Somente cabeçalho) Para alterar o método usado para classificar valores de aspecto, clique no valor na *Tipo de classificação* e escolha uma das seguintes opções:
+1. (Somente headless) Para alterar o método usado para classificar valores de facetas, clique no valor na *Tipo de classificação* e escolha uma das seguintes opções:
 
-   * Alfabético
+   * Em ordem alfabética
    * Contagem
 
    ![Editar contagem](assets/facets-edit-count.png)
 
-1. No **Valor máx.** , defina o número máximo (de 0 a 10) dos valores do filtro de faceta a serem exibidos na loja.
-1. Ao concluir, clique em **Salvar**.
+1. No **Valor máximo** defina o número máximo (de 0 a 10) de valores de filtro de facetas a serem exibidos na vitrine eletrônica.
+1. Quando terminar, clique em **Salvar**.
 Suas alterações não aparecerão na loja até que sejam publicadas.
 
-## Fixar/desafixar faceta
+## Fixar/desfixar faceta
 
-O pino muda de cor ao ser clicado e é usado para mover a faceta para o *Aspectos fixados* ou *Aspectos dinâmicos* seção.
+O pino muda de cor quando clicado e é usado para mover a faceta para a *Facetas fixadas* ou o *Aspectos dinâmicos* seção.
 
-1. Para fixar uma faceta na parte superior do *Filtros* localize a faceta na lista *Aspectos dinâmicos* e clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png)).
-O pino fica azul e a faceta move-se para *Aspectos fixados* seção.
-1. Para desafixar uma faceta, encontre a faceta na *Aspectos fixados* e clique no pino azul (![Seletor de pinos](assets/btn-pin-blue.png)).
-O pino fica cinza e a faceta move-se para o *Aspectos dinâmicos* seção.
+1. Para fixar uma faceta na parte superior do *Filtros* , localize a faceta na *Aspectos dinâmicos* e clique no pino cinza (![Fixar seletor](assets/btn-pin-gray.png)).
+O pino fica azul e a faceta se move para o *Facetas fixadas* seção.
+1. Para desafixar uma faceta, localize a faceta na *Facetas fixadas* e clique no pino azul (![Fixar seletor](assets/btn-pin-blue.png)).
+O pino fica cinza e a faceta se move para a *Aspectos dinâmicos* seção.
 
-   ![Aspectos fixos e dinâmicos](assets/facets-pinned-unpinned.png)
+   ![Aspectos fixados e dinâmicos](assets/facets-pinned-unpinned.png)
 
-## Mover faceta afixada
+## Mover faceta fixada
 
-A ordem das facetas fixadas pode ser alterada movendo a linha para uma posição diferente. As facetas fixadas têm um *Mover* ícone (![Mover seletor](assets/btn-move.png)no início da linha. Ao contrário dos aspectos fixados, os aspectos dinâmicos não podem ser movidos.
+>[!NOTE]
+>
+>A ordenação de facetas fixadas só é suportada em implementações headless. Se facetas ordenadas forem necessárias, use o [!DNL Live Search] Widget PLP.
 
-1. Encontre a faceta na *Aspectos fixados* da lista.
-1. Use o **Mover** (![Mover seletor](assets/btn-move.png)) para arrastar a linha para uma nova posição na *Aspectos fixados* seção.
+A ordem das facetas fixadas pode ser alterada movendo a linha para uma posição diferente. As facetas fixadas têm um *Mover* ícone (![Mover seletor](assets/btn-move.png)) no início da linha. Diferentemente das facetas fixadas, as facetas dinâmicas não podem ser movidas.
+
+1. Encontre a faceta no *Facetas fixadas* seção da lista.
+1. Use o **Mover** (![Mover seletor](assets/btn-move.png)) para arrastar a linha para uma nova posição na *Facetas fixadas* seção.
 Depois que as alterações forem publicadas, as facetas reordenadas aparecerão na loja *Filtros* lista.
 
 ## Excluir faceta
 
-1. Encontre a faceta na lista e clique em **Mais** (...) opções.
+1. Localize a faceta na lista e clique em **Mais** (...) opções.
 1. Clique em **Excluir**.
-1. Quando solicitado a confirmar, clique em **Excluir faceta**.
+1. Quando for solicitada a confirmação, clique em **Excluir faceta**.
 A faceta é removida da loja após as alterações serem publicadas.
 
 ## Publicar alterações
