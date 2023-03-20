@@ -1,7 +1,8 @@
 ---
 title: Lidar com restrições de cookies
 description: Saiba como as recomendações de produto lidam com restrições de cookies.
-source-git-commit: 81ab2e22b0ec81e97d27ee135c88b50731a3986d
+exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
 source-wordcount: '170'
 ht-degree: 0%

@@ -2,9 +2,9 @@
 title: Personalizar
 description: Saiba como personalizar as recomendações do produto.
 exl-id: b1b8e770-45ec-4403-b79b-4f0a9f7bd959
-source-git-commit: a34c3c8a5caca1bbf611b2df650c562aeeab297b
+source-git-commit: acfaa1d72265e42b973677a7e014ba4b350ec56b
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ Quando você [criar](create.md) uma recomendação, você especifica a [localiza
    >
    >Os nomes de arquivo na variável `layout` pode ser diferente se a loja usar extensões de terceiros.
 
-1. Vamos modificar o `catalog_product_view.xml` para que a unidade de recomendação apareça depois da imagem do produto na página de detalhes do produto. Antes de personalizar este arquivo XML, vamos examinar o arquivo e entender as seções que serão necessárias para modificar:
+1. Modifique o `catalog_product_view.xml` para que a unidade de recomendação apareça depois da imagem do produto na página de detalhes do produto. Antes de personalizar esse arquivo XML, verifique o arquivo e entenda as seções que serão necessárias para modificar:
 
    ```xml
    <?xml version="1.0"?>
@@ -81,7 +81,7 @@ Quando você [criar](create.md) uma recomendação, você especifica a [localiza
 
 1. Vamos modificar esse arquivo especificando um bloco de conteúdo diferente.
 
-   Você alterará o bloco de referência `name` from `main.content` para `product.info.media`.
+   Alterar o bloco de referência `name` from `main.content` para `product.info.media`.
 
    ```xml
    <?xml version="1.0"?>

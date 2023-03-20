@@ -2,9 +2,9 @@
 title: Cabeça
 description: Saiba como integrar [!DNL Product Recommendations] em uma vitrine sem cabeça.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '272'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ Você pode executar ambas as ações usando os SDKs disponíveis, conforme descr
    | `impression-render` | unidade de recomendação |
    | `view` | unidade de recomendação |
    | `rec-click` | unidade de recomendação |
-   | `rec-add-to-cart-click` | unidade de recomendação (se um botão adicionar ao carrinho estiver presente no modelo de recomendações) |
+   | `rec-add-to-cart-click` | unidade de recomendação (se um botão &quot;Adicionar ao carrinho&quot; estiver presente no modelo de recomendações) |
 
 1. Quando os eventos forem acionados, use a variável [Coletor de eventos de vitrine do Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para lidar com os eventos e enviá-los para o Adobe Sensei.
 

@@ -2,9 +2,9 @@
 title: Instalar e configurar
 description: Saiba como instalar, atualizar e desinstalar [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
-source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
+source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Implantação [!DNL Product Recommendations] para sua loja e o Admin requer que 
 
 ## Instalar [!DNL Product Recommendations] {#install}
 
-Porque a variável [!DNL Product Recommendations] é um metapackage independente, as atualizações são lançadas com mais frequência do que a Adobe Commerce. Para verificar se você está atualizado com as correções e os recursos de erros mais recentes, consulte o [notas de versão](release-notes.md).
+Porque a variável [!DNL Product Recommendations] é um metapackage independente, as atualizações são lançadas com mais frequência do que a Adobe Commerce. Para verificar se você está atualizado com as correções e os recursos de erros mais recentes, consulte [notas de versão](release-notes.md).
 
 Instale o `magento/product-recommendations` módulo com Composer:
 
@@ -98,7 +98,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Nas versões 3.x.x do Product Recommendations, você só precisava de uma única chave de API. Nas versões 4.x.x e superior, você deve fornecer chaves de API públicas e privadas de produção, bem como chaves de API públicas e privadas de sandbox. Se você não fornecer ambos os pares de chaves de API, não poderá acessar o recurso Recommendations do produto no Administrador. A coleta de dados, no entanto, continuará em sua loja e as recomendações existentes continuarão a ser exibidas aos seus compradores.
+> Nas versões 3.x.x do Product Recommendations, você só precisava de uma única chave de API. Nas versões 4.x.x e superior, você deve fornecer chaves de API públicas e privadas de produção, bem como chaves de API públicas e privadas de sandbox. Se você não fornecer ambos os pares de chaves de API, não poderá acessar o recurso Product Recommendations no Administrador. A coleta de dados, no entanto, continuará em sua loja e as recomendações existentes continuarão a ser exibidas aos seus compradores.
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
