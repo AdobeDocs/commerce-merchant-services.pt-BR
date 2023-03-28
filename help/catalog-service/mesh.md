@@ -1,31 +1,31 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um endpoint comum do GraphQL.'
-source-git-commit: 41d6bed30769d3864d93d6b3d077987a810890cc
+description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um terminal GraphQL comum.'
+source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-A variável [Malha de API para o Construtor de aplicativos Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite aos desenvolvedores integrar APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
+O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
 
-![Diagrama da arquitetura de catálogo](assets/catalog-service-architecture-mesh.png)
+![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
 
-A primeira etapa para usar a API Mesh com o Serviço de catálogo é conectar a API Mesh à sua instância. Consulte as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+A primeira etapa para usar a malha de API com o serviço de catálogo é conectar a malha de API à sua instância. Veja as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Para concluir a configuração, instale o [Pacote CLI do Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Para concluir a configuração, instale o [Pacote Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Depois que o Mesh for configurado no Adobe I/O Runtime, execute o seguinte comando, que adiciona um `CommerceCatalogServiceGraph` para sua malha.
+Depois que a malha for configurada no Adobe I/O Runtime, execute o seguinte comando que adiciona uma `CommerceCatalogServiceGraph` origem da sua malha.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Onde `variables.json` é um arquivo separado que armazena os valores usados com frequência para o Adobe I/O Runtime.
-Por exemplo, a chave de API pode ser salva no arquivo:
+Onde `variables.json` é um arquivo separado que armazena valores comumente usados para o Adobe I/O Runtime.
+Por exemplo, a chave da API pode ser salva no arquivo :
 
 ```json
 {
@@ -33,14 +33,16 @@ Por exemplo, a chave de API pode ser salva no arquivo:
 }
 ```
 
-Após a execução desse comando, o Serviço de catálogo deve estar em execução por meio da API Mesh. Você pode executar o `aio api-mesh:get` comando para ver a configuração da malha atualizada.
+Após executar esse comando, o Serviço de catálogo deve estar sendo executado pela malha da API. Você pode executar o `aio api-mesh:get` para exibir a configuração da malha atualizada.
 
-## Uso da API Mesh
+## Exemplos de malha da API
 
-A API Mesh permite que os usuários consumam fontes de dados externas para aprimorar a instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para habilitar novas funcionalidades.
+A malha da API permite que os usuários consumam fontes de dados externas para aprimorar sua instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para ativar uma nova funcionalidade.
 
-Neste exemplo, a API Mesh é usada para ativar os preços da camada no Adobe Commerce.
-Substitua o `name `, `endpoint`, e `x-api-key` valores.
+### Ativar preços da camada
+
+Neste exemplo, a Mensagem da API é usada para habilitar preços de camada no Adobe Commerce.
+Substitua o `name `, `endpoint`e `x-api-key` valores.
 
 ```json
 {
@@ -124,9 +126,9 @@ Substitua o `name `, `endpoint`, e `x-api-key` valores.
 }
 ```
 
-Depois de configurado, consulte a Malha para obter preços diferenciados:
+Após a configuração, consulte a Malha para obter os preços em camadas:
 
-```json
+```graphql
 query {
   products(skus: ["24-MB04"]) {
     sku
@@ -149,6 +151,98 @@ query {
         }
       }
     }
+  }
+}
+```
+
+### Obter uma ID de entidade
+
+Essa malha anexa a variável `entityId` para a interface ProductView . Substitua o `name `, `endpoint`e `x-api-key` valores.
+
+```json
+{
+    "meshConfig": {
+      "sources": [
+        {
+          "name": "<Commerce Instance Name>",
+          "handler": {
+            "graphql": {
+              "endpoint": "<Adobe Commerce GraphQL endpoint>"
+            }
+          },
+          "transforms": [
+              {
+                  "prefix": {
+                      "includeRootOperations": true,
+                        "value": "Core_"
+                  }
+              }
+          ]
+        },
+        {
+          "name": "CommerceCatalogServiceGraph",
+          "handler": {
+            "graphql": {
+              "endpoint": "https://catalog-service.adobe.io/graphql",
+              "operationHeaders": {
+                "Magento-Store-View-Code": "{context.headers['magento-store-view-code']}",
+                "Magento-Website-Code": "{context.headers['magento-website-code']}",
+                "Magento-Store-Code": "{context.headers['magento-store-code']}",
+                "Magento-Environment-Id": "{context.headers['magento-environment-id']}",
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>",
+                "Magento-Customer-Group": "{context.headers['magento-customer-group']}"
+              },
+              "schemaHeaders": {
+                "x-api-key": "<YOUR_CATALOG_SERVICE_API_KEY>"
+              }
+            }
+          }
+        }
+      ],
+      "additionalTypeDefs": "extend interface ProductView {\n  entityId: String\n}\n extend type SimpleProductView {\n  entityId: String\n}\n extend type ComplexProductView {\n  entityId: String\n}\n",
+      "additionalResolvers": [
+        {  
+            "targetTypeName": "ComplexProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n    items {\n  sku\n uid\n  }\n    }",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          },
+          {
+            "targetTypeName": "SimpleProductView",
+            "targetFieldName": "entityId",
+            "sourceName": "MagentoCore",
+            "sourceTypeName": "Query",
+            "sourceFieldName": "Core_products",
+            "requiredSelectionSet": "{ sku\n }",
+            "sourceSelectionSet": "{\n items {\n  sku\n uid\n }}",
+            "sourceArgs": {
+                "filter.sku.eq": "{root.sku}"
+            },
+            "result": "items[0].uid",
+            "resultType": "String"
+          }
+      ]
+    }
+  }
+```
+
+`entityId` agora pode ser consultado:
+
+```graphql
+query {
+  products(skus: ["MH07"]){
+    sku
+    name
+    id
+    entityId
   }
 }
 ```
