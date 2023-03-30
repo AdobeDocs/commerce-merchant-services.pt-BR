@@ -2,9 +2,9 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: c9b1d7e34632f7a54544bc6944144b1833ecc5a5
+source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
 workflow-type: tm+mt
-source-wordcount: '2522'
+source-wordcount: '2535'
 ht-degree: 0%
 
 ---
@@ -559,6 +559,8 @@ Crie os seguintes elementos de dados:
    - **value**: Ainda não disponível
    - **Grupo de campos**: `siteSearch` > `sort`. Selecionar **Fornecer todo o objeto**.
    - **Grupo de campos**: `siteSearch` > `filter`. Selecionar **Fornecer todo o objeto**.
+   - **Grupo de campos**: `searchRequest` > `id`
+   - **Identificador exclusivo**: **Valor** = `%search request ID%`
    - **Grupo de campos**: `searchRequest` > `value`
    - **value**: **Valor** = `1`
 
@@ -654,6 +656,8 @@ Crie os seguintes elementos de dados:
    - **Grupo de campos**: `productListItems` > `ProductImageUrl`
    - **ProductImageUrl**: **Valor** = `%product image%`
    - **Elemento de dados**: `%search result products%`
+   - **Grupo de campos**: `searchResponse` > `id`
+   - **Identificador exclusivo**: **Valor** = `%search response ID%`
    - **Grupo de campos**: `searchResponse` > `value`
    - **value**: **Valor** = `1`
 
@@ -1361,7 +1365,7 @@ As etapas a seguir mostram como configurar um `pageView` com `identityMap` no co
 
 ## Configuração do consentimento
 
-O consentimento da coleta de dados do conector do Adobe Commerce e Experience Platform é ativado por padrão. O cancelamento é gerenciado por meio da variável [`mg_dnt` cookie](https://docs.magento.com/user-guide/stores/cookie-reference.html). Você pode seguir as etapas descritas aqui se optar por usar `mg_dnt` para gerenciar o consentimento. O [Documentação do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) O tem várias opções adicionais para gerenciar o consentimento.
+O consentimento da coleta de dados do conector do Adobe Commerce e Experience Platform é ativado por padrão. O cancelamento é gerenciado por meio da variável [`mg_dnt` cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html). Você pode seguir as etapas descritas aqui se optar por usar `mg_dnt` para gerenciar o consentimento. O [Documentação do SDK da Web da Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html) O tem várias opções adicionais para gerenciar o consentimento.
 
 1. Crie um **Código personalizado principal** elemento de dados (`%do not track cookie%`) para o `mg_dnt` cookie:
 

@@ -2,9 +2,9 @@
 title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar seus dados de Comércio à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 18edfec6dbc66ef0e94e9f54ca1061386104d90c
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '840'
+source-wordcount: '807'
 ht-degree: 0%
 
 ---
@@ -33,13 +33,9 @@ Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, voc
 
 ## Coleta de dados
 
->[!NOTE]
->
->Para comerciantes já inscritos em nosso programa beta do back office, você verá uma caixa de seleção para ativar eventos do back office. Se você deseja participar do programa back office beta, entre em contato com [drios@adobe.com](mailto:drios@adobe.com).
+No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para a borda do Experience Platform. Por padrão, os eventos de vitrine são enviados automaticamente, desde que o SDK da Web da AEP e a ID da organização sejam válidos. Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) eventos.
 
-No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para a borda do Experience Platform. Por padrão, os eventos de vitrine são enviados automaticamente, desde que o SDK da Web da AEP e a ID da organização sejam válidos. Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#beta-order-status-events) eventos.
-
-![Configuração do conector Experience Platform beta](assets/epc-config-beta.png)
+![Configuração do conector Experience Platform](assets/epc-config-dc.png)
 
 >[!NOTE]
 >
@@ -64,7 +60,7 @@ No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para 
 | O SDK da Web da AEP já foi implantado em seu site | Marque essa caixa de seleção se tiver implantado seu próprio SDK da Web da AEP no seu site |
 | AEP Web SDK Name (Global) | Se você já tiver um SDK da Web do Experience Platform implantado em seu site, especifique o nome desse SDK neste campo. Isso permite que o Coletor de eventos de vitrine e o SDK de eventos de vitrine usem seu SDK da Web do Experience Platform em vez da versão implantada pelo conector do Experience Platform. Se você não tiver um SDK da Web do Experience Platform implantado em seu site, deixe este campo em branco e o conector do Experience Platform implante um para você. |
 | Eventos de vitrine | É marcado por padrão, desde que a ID da organização e a ID do armazenamento de dados sejam válidas. Os eventos de vitrine coletam dados comportamentais anônimos dos compradores durante a navegação no site. |
-| Eventos de back-office (Beta) | Se marcado, a carga do evento contém informações de status de pedido anônimas, como se um pedido fosse feito, cancelado, reembolsado ou enviado. |
+| Eventos de back-office | Se marcado, a carga do evento contém informações de status de pedido anônimas, como se um pedido fosse feito, cancelado, reembolsado ou enviado. |
 | ID do fluxo de dados (site) | ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico na instância específica do Adobe Commerce. Se você especificar seu próprio SDK da Web do Experience Platform, não especifique uma ID de armazenamento de dados nesse campo. O conector Experience Platform usa a ID do armazenamento de dados associada a esse SDK e ignora qualquer ID do armazenamento de dados especificada nesse campo (se houver). |
 
 Com a extensão do conector Experience Platform instalada, o link entre o Adobe Commerce e o Adobe Experience Platform criado e a ID de fluxo de dados especificada, os dados do Commerce começam a fluir para a borda do Adobe Experience Platform e para outros produtos Adobe DX.
@@ -73,7 +69,7 @@ Com a extensão do conector Experience Platform instalada, o link entre o Adobe 
 >
 > O tempo necessário para os dados fluírem da borda para outros produtos Adobe DX pode variar.
 
-## Dados de comércio na borda
+## Verifique se os dados estão sendo enviados para o Experience Platform
 
 Quando os dados do Commerce são enviados para a borda do Adobe Experience Platform, você pode criar relatórios como os seguintes:
 

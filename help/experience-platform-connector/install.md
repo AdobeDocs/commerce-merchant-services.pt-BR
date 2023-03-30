@@ -2,9 +2,9 @@
 title: Instalar e configurar o Adobe Experience Platform Connector no Adobe Commerce
 description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Experience Platform Connector do Adobe Commerce.
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '365'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,8 @@ A extensão Experience Platform connector é instalada a partir da linha de coma
 
 O conector Experience Platform é instalado como uma extensão de [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html).
 
+![B2B para Adobe Commerce](../assets/b2b.svg) Para comerciantes B2B, há uma extensão separada que você deve instalar. Essa extensão adiciona suporte a eventos específicos B2B. [Saiba mais](#install-the-b2b-extension).
+
 1. Para baixar o `experience-platform-connector` , execute o seguinte na linha de comando:
 
    ```bash
@@ -27,12 +29,22 @@ O conector Experience Platform é instalado como uma extensão de [Adobe Marketp
 
    Esse metapackage contém os seguintes módulos e extensões:
 
-   * `module-platform-connector-admin` - Atualiza a interface do usuário do administrador para que você possa selecionar a ID do conjunto de dados para uma instância específica do Adobe Commerce
-   * `module-platform-connector` - Define o `Organization ID` e `datastreamId` no SDK de Eventos da loja
+   * `module-experience-connector-admin` - Atualiza a interface do usuário do administrador para que você possa selecionar a ID do conjunto de dados para uma instância específica do Adobe Commerce
+   * `module-experience-connector` - Define o `Organization ID` e `datastreamId` no SDK de Eventos da loja
    * `data-services` - Fornece contexto de atributo para eventos de vitrine. Por exemplo, quando um evento de check-out ocorre, informações sobre quantos itens estavam no carrinho e os dados do atributo do produto para esses itens são incluídos.
    * `services-id` - Conecta sua instância do Adobe Commerce ao [Adobe Commerce SaaS](../landing/saas.md) uso de chaves de sandbox e de API de produção e para a Adobe Experience Platform para recuperar a IMS Organization ID
 
 1. (Opcional) Para incluir [!DNL Live Search] os dados, que incluem eventos de pesquisa, instale o [[!DNL Live Search]](../live-search/install.md) extensão.
+
+### Instalar a extensão B2B
+
+Para comerciantes B2B, instale a seguinte extensão para incluir [lista de requisições](events.md#b2b-events) dados do evento.
+
+Baixe o `magento/experience-platform-connector-b2b` executando o seguinte na linha de comando:
+
+```bash
+composer require magento/experience-platform-connector-b2b
+```
 
 ## Atualize o conector de Experience Platform {#update}
 
@@ -40,6 +52,12 @@ Para atualizar o conector de Experience Platform, execute o seguinte na linha de
 
 ```bash
 composer update magento/experience-platform-connector --with-dependencies
+```
+
+ou, para os comerciantes B2B:
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
 ```
 
 Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz do projeto [!DNL Composer] `.json` como segue:
@@ -61,6 +79,12 @@ Para atualizar para uma versão principal, como de 1.0.0 a 2.0.0, edite a raiz d
    ```bash
    composer update magento/experience-platform-connector –-with-dependencies
    ```
+
+ou, para os comerciantes B2B:
+
+```bash
+composer update magento/experience-platform-connector-b2b --with-dependencies
+```
 
 ## Desinstale o conector do Experience Platform {#uninstall}
 

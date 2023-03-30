@@ -2,9 +2,9 @@
 title: Notas de versão
 description: As informações mais recentes do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 57d0d0604e871a0d8a76bfd2c006250b55f0eeb1
+source-git-commit: 735fd14fad22826b04320644e120d296de19a211
 workflow-type: tm+mt
-source-wordcount: '325'
+source-wordcount: '391'
 ht-degree: 1%
 
 ---
@@ -21,7 +21,7 @@ Para obter alterações de recursos e correções relacionadas às extensões us
 
 Consulte [Próximas versões](https://experienceleague.adobe.com/docs/commerce-operations/release/schedule.html) para saber mais sobre os cronogramas de lançamento e suporte.
 
-Consulte [Disponibilidade](https://experienceleague.adobe.com/docs/commerce-operations/release/availability.html) para saber mais sobre compatibilidade de produtos.
+Consulte a documentação do desenvolvedor para [saiba mais sobre compatibilidade de produtos](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 ## Atualizações de serviço suportadas
 
@@ -29,12 +29,24 @@ Essas notas de versão descrevem alterações de recursos e correções relacion
 
 +++Atualizações de serviço suportadas
 
+_30 de março de 2023_
+
+* ![Novo](../assets/new.svg) - Adição de uma nova extensão chamada `data-services-b2b` que inclui [eventos da lista de requisições](events.md#b2b-events) para comerciantes B2B
+* ![Novo](../assets/new.svg) - Adicionado o `uniqueIdentifier` campo para [pesquisa](events.md#search-events) eventos. Esse novo campo permite que os comerciantes façam referência cruzada de quais solicitações de pesquisa correspondem a quais respostas de pesquisa.
+
 _12 de outubro de 2022_
 
 * ![Novo](../assets/new.svg) - Adicionado dois [eventos storefront](events.md): `openCart` e `removeFromCart` para o SDK e o coletor de eventos de loja da Adobe Commerce
 * ![Novo](../assets/new.svg) - Suporte adicionado para um [Loja AEM](overview.md#aem-support)
 
 +++
+
+## 2.2.0
+
+_30 de março de 2023_
+
+* ![Novo](../assets/new.svg) - Pacote do `commerce-data-export` e `saas-export` dependências com o `experience-platform-connector` extensão. Anteriormente, você tinha que instalar essas dependências separadamente. Essas dependências, juntamente com a configuração do comerciante, permitem o processamento no servidor de [eventos de back-office](events.md#back-office-events).
+* ![Novo](../assets/new.svg) - Adição de um novo evento de back-office chamado [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
 
 ## 2.1.1
 
@@ -46,7 +58,7 @@ _28 de fevereiro de 2023_
 
 _17 de janeiro de 2023_
 
-* ![Novo](../assets/new.svg) - Atualização do [Admin do conector de Experience Platform](connect-data.md) assim, você pode especificar seu próprio SDK da Web da AEP (liga). Além disso, foi adicionada uma opção para comerciantes inscritos em nosso programa beta do back office para enviar [dados de evento de back-office](connect-data.md#data-collection) para a borda. Esses eventos contêm [informações do status do pedido](events.md#beta-order-status-events) sobre um pedido, como se um pedido fosse feito, cancelado, reembolsado ou enviado. Se você deseja participar do programa back office beta, entre em contato com [drios@adobe.com](mailto:drios@adobe.com).
+* ![Novo](../assets/new.svg) - Atualização do [Admin do conector de Experience Platform](connect-data.md) assim, você pode especificar seu próprio SDK da Web da AEP (liga). Além disso, foi adicionada uma opção para comerciantes inscritos em nosso programa beta do back office para enviar [dados de evento de back-office](connect-data.md#data-collection) para a borda. Esses eventos contêm [informações do status do pedido](events.md#beta-order-status-events) sobre um pedido, como se um pedido fosse feito, cancelado, reembolsado ou enviado.
 * ![Correção](../assets/fix.svg) Alterado para uso `identityMap` em vez de `personID` ao definir a identidade primária para quaisquer dados enviados para a borda.
 
 ## 2.0.1
