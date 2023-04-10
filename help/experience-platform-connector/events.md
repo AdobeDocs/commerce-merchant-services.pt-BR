@@ -2,9 +2,9 @@
 title: Eventos
 description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: 8e5fb65363b2fa39f44da86d7ba0cc5459b18768
 workflow-type: tm+mt
-source-wordcount: '4039'
+source-wordcount: '4100'
 ht-degree: 0%
 
 ---
@@ -338,7 +338,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `searchRequest` | Indica se uma solicitação de pesquisa foi enviada |
-| `uniqueIdentifier` | A ID exclusiva para esta solicitação de pesquisa específica |
+| `id` | A ID exclusiva para esta solicitação de pesquisa específica |
 | `filter` | Indica se algum filtro foi aplicado para limitar os resultados da pesquisa |
 | `attribute` (filtro) | A faceta de um item usada para determinar se ele deve ser incluído nos resultados da pesquisa |
 | `value` | Valores de atributos usados para determinar quais itens estão incluídos nos resultados da pesquisa |
@@ -365,7 +365,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `searchResponse` | Indica se uma resposta de pesquisa foi recebida |
-| `uniqueIdentifier` | A ID exclusiva para esta resposta de pesquisa específica |
+| `id` | A ID exclusiva para esta resposta de pesquisa específica |
 | `suggestions` | Uma matriz de sequências de caracteres que incluem os nomes de produtos e categorias existentes no catálogo que são semelhantes à consulta de pesquisa |
 | `numberOfResults` | O número de produtos devolvidos |
 | `productListItems` | Uma matriz de produtos no carrinho de compras. |
@@ -391,8 +391,10 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `requisitionListOpens` | Um valor de `1` indica que uma lista de requisições foi aberta |
-| `requisitionList` | Inclui um `ID` , `name`e `description` para a lista de requisições |
+| `requisitionList` | As propriedades da lista de requisições criada pelo cliente |
+| `ID` | Identificador exclusivo da lista de requisições |
+| `name` | Nome da lista de requisições especificada pelo cliente |
+| `description` | Descrição da lista de requisições especificada pelo cliente |
 
 ### addToRequisitionList
 
@@ -410,8 +412,10 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `requisitionListAdds` | Um valor de `1` indica que um produto foi adicionado à lista de requisições |
-| `requisitionList` | Inclui um `ID`,  `name`e `description` para a lista de requisições |
+| `requisitionList` | As propriedades da lista de requisições criada pelo cliente |
+| `ID` | Identificador exclusivo da lista de requisições |
+| `name` | Nome da lista de requisições especificada pelo cliente |
+| `description` | Descrição da lista de requisições especificada pelo cliente |
 | `productListItems` | Uma matriz de produtos que foram adicionados à lista de requisições |
 | `name` | O nome de exibição ou nome legível do produto |
 | `SKU` | Unidade de manutenção de estoque. O identificador exclusivo do produto. |
@@ -419,6 +423,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `discountAmount` | Indica a quantia de desconto aplicada |
 | `currencyCode` | O [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento |
+| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
 
 ### removeFromRequisitionList
 
@@ -432,8 +437,10 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `requisitionListRemovals` | Um valor de `1` indica que um produto foi removido da lista de requisições |
-| `requisitionList` | Inclui um `ID`e um `description` para a lista de requisições |
+| `requisitionList` | As propriedades da lista de requisições criada pelo cliente |
+| `ID` | Identificador exclusivo da lista de requisições |
+| `name` | Nome da lista de requisições especificada pelo cliente |
+| `description` | Descrição da lista de requisições especificada pelo cliente |
 | `productListItems` | Uma matriz de produtos que foram adicionados à lista de requisições |
 | `name` | O nome de exibição ou nome legível do produto |
 | `SKU` | Unidade de manutenção de estoque. O identificador exclusivo do produto. |
