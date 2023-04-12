@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service] Notas de versão'
 description: As últimas informações da versão para [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
-source-git-commit: c65717c449793dccfed101e1411b22c69fba308d
+source-git-commit: 47163a83d3c79abe7718121492970e34ffbf3643
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '434'
 ht-degree: 0%
 
 ---
@@ -19,21 +19,20 @@ Essas notas de versão descrevem as versões mais recentes da [!DNL Catalog Serv
 
 ## Versão principal atual
 
-### Versão V1.6
+### Versão V1.7
 
-_28 de março de 2023_
+_12 de abril de 2023_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg) Adição de amostras ao [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
-![Novo](../assets/new.svg) Adição da capacidade de obter `entityId` usar [Malha da API](mesh.md).
+![Novo](../assets/new.svg) O Serviço de catálogo agora limpa as variantes de produto excluídas.
+![Correção](../assets/fix.svg) Escalabilidade da infraestrutura e melhorias de desempenho.
 
 #### Limitações conhecidas
 
 Esses recursos ainda não são compatíveis:
 
 * Pacotes de produtos com preço fixo
-* Nenhuma atualização é recebida quando as variantes são excluídas do catálogo.
 * O tamanho máximo para a carga de atributos dinâmicos é de 9 MB.
 * Preço do produto do grupo. Pode ser calculado com preços simples do produto.
 * Em uma matriz de imagens, somente a primeira imagem contém funções.
@@ -43,6 +42,15 @@ As seguintes limitações podem ser solucionadas com o uso da malha da API e da 
 * Preço Mínimo Anunciado
 * [Preços de camada](mesh.md)
 * Produtos para download e cartões-presente
+
+### Versão V1.6
+
+_28 de março de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) Adição de amostras ao [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) query.
+![Novo](../assets/new.svg) Adição da capacidade de obter `entityId` usar [Malha da API](mesh.md).
 
 ### Versão V1.5
 
