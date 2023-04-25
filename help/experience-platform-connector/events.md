@@ -2,9 +2,9 @@
 title: Eventos
 description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: e31c550416d29f7733c7da7f8895749487965e5d
+source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
 workflow-type: tm+mt
-source-wordcount: '4592'
+source-wordcount: '4596'
 ht-degree: 0%
 
 ---
@@ -236,10 +236,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `eventType` | O tipo de evento principal para esse registro de série de tempo, como: `userAccount.login` |
 | `person` | Um ator, contato ou proprietário individual |
 | `accountID` | Captura a ID da conta do usuário |
-| `personalEmailID` | Especifica o identificador exclusivo para o email pessoal |
+| `accountType` | Captura o tipo de conta de usuário, como `Personal` ou `Company`, se aplicável |
+| `personalEmailID` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
+| `personalEmail` | Captura de detalhes de contato - um e-mail e informações associadas |
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica quaisquer detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `login` | Indica se um visitante tentou fazer logon |
@@ -260,7 +261,6 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `eventType` | O tipo de evento principal para esse registro de série de tempo, como: `userAccount.logout` |
 | `userAccount` | Indica quaisquer detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `logout` | Indica se um visitante tentou fazer logoff |
 
@@ -280,11 +280,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `eventType` | O tipo de evento principal para esse registro de série de tempo, como: `account.createProfile` |
 | `person` | Um ator, contato ou proprietário individual |
 | `accountID` | Captura a ID da conta do usuário |
 | `accountType` | Captura o tipo de conta de usuário, como `Personal` ou `Company`, se aplicável |
-| `personalEmailID` | Especifica o identificador exclusivo para o email pessoal |
+| `personalEmailID` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
+| `personalEmail` | Captura de detalhes de contato - um e-mail e informações associadas |
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica quaisquer detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `createProfile` | Indica se um usuário criou um perfil de conta |
@@ -305,12 +305,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Campo | Descrição |
 |---|---|
-| `eventType` | O tipo de evento principal para esse registro de série de tempo, como: `account.updateProfile` |
 | `person` | Um ator, contato ou proprietário individual |
 | `accountID` | Captura a ID da conta do usuário |
 | `accountType` | Captura o tipo de conta de usuário, como `Personal` ou `Company`, se aplicável |
-| `personalEmailID` | Especifica o identificador exclusivo para o email pessoal |
-| `personalEmail` | Especifica o endereço de email pessoal |
+| `personalEmailID` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
+| `personalEmail` | Captura de detalhes de contato - um e-mail e informações associadas |
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica quaisquer detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `updateProfile` | Indica se um usuário atualizou seu perfil de conta |
