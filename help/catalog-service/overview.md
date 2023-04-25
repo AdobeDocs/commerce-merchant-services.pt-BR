@@ -2,9 +2,9 @@
 title: '[!DNL Catalog Service]'
 description: '[!DNL Catalog Service] O para Adobe Commerce fornece uma maneira de recuperar o conteúdo das Páginas de exibição do produto e das Páginas de lista do produto muito mais rapidamente do que as consultas nativas do Adobe Commerce GraphQL.'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
-source-git-commit: dd9ba7171cf6a199701b1abb8083a65326e89f5d
+source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
 workflow-type: tm+mt
-source-wordcount: '889'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,8 @@ O [!DNL Catalog Service] A extensão para Adobe Commerce fornece dados de catál
 O [!DNL Catalog Service] uses [GraphQL](https://graphql.org/) para solicitar e receber dados do produto. GraphQL é uma linguagem de consulta que um cliente front-end usa para se comunicar com a API (interface de programação de aplicativos) definida em um back-end como o Adobe Commerce. O GraphQL é um método popular de comunicação porque é leve e permite que um integrador de sistemas especifique o conteúdo e a ordem de cada resposta.
 
 O Adobe Commerce tem dois sistemas GraphQL. O sistema GraphQL principal fornece uma grande variedade de consultas (operações de leitura) e mutações (operações de gravação) que permitem que o comprador interaja com muitos tipos de páginas, incluindo produto, conta do cliente, carrinho, check-out e muito mais. No entanto, as consultas que retornam informações do produto não são otimizadas para agilizar. O sistema GraphQL de serviços só pode realizar consultas sobre produtos e informações relacionadas. Essas consultas têm mais desempenho do que consultas principais semelhantes.
+
+Os clientes do Serviço de catálogo podem usar o novo [Indexador de preço SaaS](../price-index/index.md), que fornece atualizações de alteração de preço e tempo de sincronização mais rápidos.
 
 ## Arquitetura
 
@@ -66,6 +68,10 @@ Opções de produto complexas são unificadas e distinguidas pelo seu comportame
 Produtos simples representam a unidade de venda básica que tem um preço. O Serviço de Catálogo calcula o preço normal antes dos descontos, bem como o preço final após os descontos. Os cálculos de preços podem incluir impostos fixos do produto. Eles excluem promoções personalizadas.
 
 Um produto complexo não tem um preço definido. Em vez disso, o Serviço de catálogo retorna os preços do simples vinculado. Como exemplo, um comerciante pode inicialmente atribuir os mesmos preços a todas as variantes de um produto configurável. Se determinados tamanhos ou cores forem impopulares, o comerciante pode reduzir os preços dessas variantes. Assim, o preço do produto complexo (configurável) mostra inicialmente um intervalo de preços, refletindo o preço das variantes padrão e impopulares. Depois que o comprador tiver selecionado um valor para todas as opções disponíveis, a loja exibirá um único preço.
+
+>[!NOTE]
+>
+> Clientes comerciais com [!DNL Catalog Service] pode aproveitar as vantagens de atualizações de preço e tempo de sincronização mais rápido em seus sites com a variável [Indexador de preço SaaS](../price-index/index.md).
 
 ## Implementação
 

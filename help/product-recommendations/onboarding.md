@@ -1,17 +1,17 @@
 ---
 title: Integração
-description: Conheça os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
+description: Saiba mais sobre os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: fbc7feb29f3633eddbf521f41fc35a10a63dc564
+source-git-commit: 1bc15171e4e7402d808af3631b8b6d000d4fd3f2
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '256'
 ht-degree: 0%
 
 ---
 
 # Integração
 
-O processo de integração do [!DNL Product Recommendations] requer acesso à linha de comando do servidor e consiste nas seguintes etapas. Se você não estiver familiarizado com o trabalho a partir da linha de comando, peça ajuda a um desenvolvedor ou integrador de sistemas.
+O processo de integração para [!DNL Product Recommendations] O requer acesso à linha de comando do servidor e consiste nas etapas a seguir. Se você não estiver familiarizado com o trabalho a partir da linha de comando, peça ajuda a um desenvolvedor ou integrador de sistemas.
 
 - [Fluxo de trabalho de implementação](implementation-workflow.md)
 - [Instalar e configurar](install-configure.md)
@@ -23,19 +23,23 @@ O processo de integração do [!DNL Product Recommendations] requer acesso à li
 
 - Adobe Commerce 2.4.4+
 - PHP 8.1, 8.2
-- Compositor 2
+- Composer 2
 
 ### Plataformas compatíveis
 
-- Adobe Commerce no local (EE): 2.4.4+
-- Adobe Commerce na nuvem (ECE): 2.4.4+
+- Adobe Commerce no local (EE) : 2.4.4+
+- Adobe Commerce on Cloud (ECE) : 2.4.4+
 
 ### Suporte ao Page Builder
 
-[!DNL Product Recommendations] podem ser adicionados a uma página como um tipo de conteúdo do Page Builder. Para adicionar suporte do Page Builder ao Product Recommendations, consulte [Instalar e configurar](install-configure.md).
+[!DNL Product Recommendations] pode ser adicionado a uma página como um tipo de conteúdo do Page Builder. Para adicionar suporte do Page Builder ao Product Recommendations, consulte [Instalar e configurar](install-configure.md).
 
 Consulte [[!DNL Page Builder] Integração](page-builder.md) para obter instruções sobre como adicionar [!DNL Product Recommendations] em [!DNL Page Builder] conteúdo.
 
-### Suporte B2B {#b2bsupport}
+## Indexação de preços de SaaS
 
-As vitrines B2B geralmente exigem uma lógica complexa que determina a visibilidade e os preços do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade respeitando [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), e [preços específicos do grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você tiver ocultado determinadas categorias do segmento de cliente de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores veem recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
+Os clientes do Recommendations de produto podem usar [Indexação de preços de SaaS](../price-index/index.md), que oferece atualizações de preço e tempo de sincronização mais rápidos.
+
+### Suporte a B2B {#b2bsupport}
+
+As lojas B2B geralmente exigem uma lógica complexa que dita a visibilidade e o preço do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade ao atender [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)e [preços específicos do grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você ocultou determinadas categorias do segmento de clientes de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores verão recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
