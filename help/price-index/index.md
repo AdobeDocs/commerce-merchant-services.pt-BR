@@ -3,9 +3,10 @@ title: Indexação de Preço SaaS
 description: Usar a indexação de preço de SaaS para melhorar o desempenho
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
-source-git-commit: c13e836541c8f04c9621802e482754a483ef0a21
+exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
+source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
 workflow-type: tm+mt
-source-wordcount: '764'
+source-wordcount: '763'
 ht-degree: 0%
 
 ---
@@ -43,9 +44,11 @@ Para usar a indexação de preço SaaS, você precisa:
 
 A indexação de preço SaaS usa um conjunto de módulos para fornecer funcionalidade. A lista de módulos necessários pode ser um pouco diferente, dependendo da configuração da loja.
 
-Esses dois módulos adicionam os novos feeds ao Administrador. Esses feeds transferem dados necessários para cálculos de preço para o indexador SaaS e ignora o indexador de preço principal PHP.
+Esses módulos adicionam os novos feeds ao Administrador. Esses feeds transferem dados necessários para cálculos de preço para o indexador SaaS e ignora o indexador de preço principal PHP.
 
 ```
+magento/module-product-override-price-remover
+magento/module-bundle-product-override-data-exporter
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
