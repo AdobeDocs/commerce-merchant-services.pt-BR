@@ -2,7 +2,7 @@
 user-guide-title: Serviços para Adobe Commerce
 user-guide-description: Documentação e recursos para serviços hospedados que fornecem recursos estendidos para a Adobe Commerce e o Magento Open Source.
 title: Serviços para Adobe Commerce
-source-git-commit: cc7636dd6bb5dff0d1223279bd22b50df9758253
+source-git-commit: 2a3bd519eb4bb581d8394bed4e22305ea6878052
 workflow-type: tm+mt
 source-wordcount: '106'
 ht-degree: 0%
@@ -12,6 +12,9 @@ ht-degree: 0%
 # Documentação dos Serviços para Adobe Commerce {#user-guides}
 
 - [Visão geral](home.md)
+- Informações da versão {#release-information}
+   - [Notas de versão](/help/landing/release-notes-all.md)
+   - [Novidades nos documentos](/help/landing/whats-new.md)
 - Serviços comerciais {#commerce-services}
    - [[!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/guide-overview.html)
    - [[!DNL Product Recommendations]](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/guide-overview.html)
@@ -26,6 +29,3 @@ ht-degree: 0%
    - [Conector de serviços](/help/landing/saas.md)
 - Serviços de dados {#data-services}
    - [Sincronização do catálogo](/help/landing/catalog-sync.md)
-- Informações da versão {#release-information}
-   - [Notas de versão](/help/landing/release-notes-all.md)
-   - [Novidades nos documentos](/help/landing/whats-new.md)
