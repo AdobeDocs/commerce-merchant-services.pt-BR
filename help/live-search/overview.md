@@ -2,9 +2,9 @@
 title: Introdução ao [!DNL Live Search]
 description: "[!DNL Live Search] A Adobe Commerce oferece uma experiência de pesquisa rápida, superrelevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
-source-git-commit: 126cc4e050d8b37e784d1a5d925374fbd686af55
+source-git-commit: 5319c1474346ed3eb3cd2cf097813b00d8f56503
 workflow-type: tm+mt
-source-wordcount: '131'
+source-wordcount: '157'
 ht-degree: 0%
 
 ---
@@ -22,3 +22,5 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Administrador*,
 Assista a este vídeo para saber mais sobre [!DNL Live Search]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+Para obter um vídeo mais detalhado sobre como usar e configurar o Live Search, consulte o [Demonstração completa em [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/marketing/live-search-full-demonstration.html) tópico.
