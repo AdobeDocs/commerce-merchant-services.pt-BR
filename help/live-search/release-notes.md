@@ -2,16 +2,18 @@
 title: '[!DNL Live Search] Notas de versão'
 description: "As informações mais recentes da versão para [!DNL Live Search] do Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: 6371d737ef9591e4ad647650c9c9974dbd8b4555
+source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
 workflow-type: tm+mt
-source-wordcount: '1223'
+source-wordcount: '1241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Notas de versão
 
-Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search] e incluem:
+Essas notas de versão descrevem as versões mais recentes da [!DNL Live Search].
+É fornecido suporte para a versão principal mais recente. As notas de versão para versões mais antigas são fornecidas para referência.
+As atualizações incluem:
 
 ![Novo](../assets/new.svg) Novos recursos
 ![Correção](../assets/fix.svg) Correções e melhorias

@@ -4,16 +4,16 @@ description: Usar a indexação de preço de SaaS para melhorar o desempenho
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 45999b6499f248ea4138f7de4e910c274e747a04
+source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
 workflow-type: tm+mt
-source-wordcount: '763'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
 
 # Indexação de Preço SaaS
 
-A indexação de preços SaaS acelera o tempo necessário para que as alterações de preço sejam refletidas no site de um cliente depois de terem sido enviadas. Esse módulo opcional permite que os comerciantes com catálogos grandes e complexos ou com vários sites ou grupos de clientes processem alterações de preços de forma mais rápida e contínua.
+A indexação de preços do SaaS acelera o tempo necessário para que as alterações de preço sejam refletidas no site de um cliente do SaaS depois de terem sido enviadas. Esse módulo opcional permite que os comerciantes com catálogos grandes e complexos ou com vários sites ou grupos de clientes processem alterações de preços de forma mais rápida e contínua.
 
 O maior gargalo do gasoduto: processos complexos em computação, como indexação e cálculo de preço, foram transferidos do núcleo PHP para a infraestrutura Adobe Cloud. Isso permite que os comerciantes dimensionem recursos rapidamente para aumentar os tempos de indexação de preços e refletir essas alterações em sites a velocidades muito mais rápidas.
 
@@ -47,8 +47,8 @@ A indexação de preço SaaS usa um conjunto de módulos para fornecer funcional
 Esses módulos adicionam os novos feeds ao Administrador. Esses feeds transferem dados necessários para cálculos de preço para o indexador SaaS e ignora o indexador de preço principal PHP.
 
 ```
-magento/module-product-override-price-remover
-magento/module-bundle-product-override-data-exporter
+magento/module-saas-price
+magento/module-saas-scopes
 magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
