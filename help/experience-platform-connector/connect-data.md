@@ -2,28 +2,51 @@
 title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar seus dados de Comércio à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: 76bc0650f32e99f568c061e67290de6c380f46a4
+source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
 workflow-type: tm+mt
-source-wordcount: '807'
+source-wordcount: '1074'
 ht-degree: 0%
 
 ---
 
-# Conectar dados do Commerce ao Adobe Experience Platform {#connectaep}
+# Conectar dados do Commerce ao Adobe Experience Platform
 
-Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve fornecer uma ID da organização e uma ID do armazenamento de dados.
+Quando você instala o conector Experience Platform, duas novas páginas de configuração são exibidas na **Sistema** menu em **Serviços** no Commerce _Administrador_.
 
-![Configuração do conector Experience Platform](assets/epc-config-sf.png)
+- Conector do Commerce Services
+- Conector Experience Platform
+
+Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve configurar ambos os conectores, começando pelo conector do Commerce Services e terminando com o conector do Experience Platform.
+
+## Atualizar o conector do Commerce Services
+
+Se você já instalou um serviço Adobe Commerce anteriormente, provavelmente já configurou o conector Commerce Services. Caso contrário, você deverá concluir as seguintes tarefas no [Conector do Commerce Services](../landing/saas.md) página:
+
+1. Faça logon em sua conta do Commerce para [recuperar chaves de API de produção e sandbox](../landing/saas.md#credentials).
+1. Selecione um [Espaço de dados SaaS](../landing/saas.md#saas-configuration).
+1. Faça logon em sua conta do Adobe para [recuperar a ID da organização](../landing/saas.md#ims-organization-optional).
+
+Depois de configurar o conector do Commerce Services, configure o conector Experience Platform.
+
+## Atualize o conector de Experience Platform
+
+Nesta seção, você conecta a instância do Adobe Commerce à Adobe Experience Platform usando a ID da organização. Em seguida, você pode especificar o tipo de dados - loja ou escritório traseiro - para enviar para a borda do Experience Platform.
+
+![Configuração do conector Experience Platform](assets/epc-config-dc.png)
 
 ## Geral
 
 1. Faça logon na sua conta do Adobe na [Conector do Commerce Services](../landing/saas.md#organizationid) e selecione a ID da organização.
 
+   >[!NOTE]
+   >
+   >Se você configurou o conector do Commerce Services anteriormente, é possível ignorar essa etapa, pois a ID da organização já foi selecionada.
+
 1. Em Admin, acesse **Sistema** > Serviços > **Conector Experience Platform**.
 
 1. No **Escopo** , defina o contexto como **Site**.
 
-1. No **ID da organização** , você verá a ID associada à sua conta do Adobe Experience Platform, conforme configurado na variável [Conector do Commerce Services](../landing/saas.md#organizationid). A ID da organização é global. Somente uma ID de organização pode ser associada por instância do Adobe Commerce.
+1. No **ID da organização** verifique a ID associada à conta do Adobe Experience Platform, conforme configurado no campo [Conector do Commerce Services](../landing/saas.md#organizationid). A ID da organização é global. Somente uma ID de organização pode ser associada por instância do Adobe Commerce.
 
 1. (Opcional) Se você já tiver uma [AEP Web SDK (liga)](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) implantado em seu site, ative a caixa de seleção e adicione o nome do SDK da Web da AEP. Caso contrário, deixe esses campos em branco e o conector de Experience Platform implante um para você.
 
@@ -33,19 +56,43 @@ Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, voc
 
 ## Coleta de dados
 
-No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para a borda do Experience Platform. Por padrão, os eventos de vitrine são enviados automaticamente, desde que o SDK da Web da AEP e a ID da organização sejam válidos. Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) eventos.
+No **Coleta de dados** selecione storefront e/ou back office data para enviar para a borda do Experience Platform. Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, analise o [pré-requisitos](overview.md#prerequisites).
 
-![Configuração do conector Experience Platform](assets/epc-config-dc.png)
+Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) eventos.
 
 >[!NOTE]
 >
 >Todos os campos na **Coleta de dados** aplicar à **Site** escopo ou superior.
 
+1. Selecionar **Eventos de vitrine** se desejar enviar dados comportamentais da vitrine.
+
+   >[!NOTE]
+   >
+   >O **Eventos de vitrine** A caixa de seleção é ativada automaticamente se o SDK da Web da AEP e a ID da organização forem válidos.
+
 1. Selecionar **Eventos do back-office** se desejar enviar informações sobre o status do pedido, como se um pedido foi feito, cancelado, reembolsado ou enviado.
 
    >[!NOTE]
    >
-   >Por padrão, todos os dados do back office são enviados para a borda do Experience Platform. Se um comprador optar por rejeitar a coleta de dados, você deverá definir explicitamente a preferência de privacidade do comprador no Experience Platform. Isso é diferente dos eventos de loja, onde o coletor já lida com o consentimento com base nas preferências do comprador. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) sobre como definir a preferência de privacidade de um comprador no Experience Platform.
+   >Se você selecionar **Eventos do back-office**, todos os dados do back office são enviados para a borda do Experience Platform. Se um comprador optar por rejeitar a coleta de dados, você deverá definir explicitamente a preferência de privacidade do comprador no Experience Platform. Isso é diferente dos eventos de loja, onde o coletor já lida com o consentimento com base nas preferências do comprador. [Saiba mais](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/dataset.html) sobre como definir a preferência de privacidade de um comprador no Experience Platform.
+
+1. Para garantir atualizações de dados de eventos de back-office com base em uma programação de acordo com uma [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) você deve alterar o `Sales Orders Feed` indexar para `Update by Schedule`.
+
+   1. No _Administrador_ barra lateral, vá para **[!UICONTROL System]** > _[!UICONTROL Tools]_>**[!UICONTROL Index Management]**.
+
+   1. Marque a caixa de seleção para a `Sales Orders Feed` indexer.
+
+   1. Definir **[!UICONTROL Actions]** para `Update by Schedule`.
+
+   1. Se você estiver ativando os dados do back office pela primeira vez, execute os seguintes comandos para reindexar e acionar uma ressincronização. As ressincronizações subsequentes ocorrem automaticamente, desde que o temporizador [cron](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/cron.html) O trabalho está configurado corretamente.
+
+      ```bash
+      bin/magento index:reindex sales_order_data_exporter_v2
+      ```
+
+      ```bash
+      bin/magento saas:resync --feed orders
+      ```
 
 1. (Pule esta etapa se estiver usando seu próprio SDK da Web da AEP.) [Criar](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#create) um armazenamento de dados na Adobe Experience Platform ou selecione um armazenamento de dados existente que deseja usar para a coleta.
 
@@ -63,15 +110,11 @@ No **Coleta de dados** , especifique quais tipos de dados coletar e enviar para 
 | Eventos de back-office | Se marcado, a carga do evento contém informações de status de pedido anônimas, como se um pedido fosse feito, cancelado, reembolsado ou enviado. |
 | ID do fluxo de dados (site) | ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico na instância específica do Adobe Commerce. Se você especificar seu próprio SDK da Web do Experience Platform, não especifique uma ID de armazenamento de dados nesse campo. O conector Experience Platform usa a ID do armazenamento de dados associada a esse SDK e ignora qualquer ID do armazenamento de dados especificada nesse campo (se houver). |
 
-Com a extensão do conector Experience Platform instalada, o link entre o Adobe Commerce e o Adobe Experience Platform criado e a ID de fluxo de dados especificada, os dados do Commerce começam a fluir para a borda do Adobe Experience Platform e para outros produtos Adobe DX.
-
->[!NOTE]
->
-> O tempo necessário para os dados fluírem da borda para outros produtos Adobe DX pode variar.
-
 ## Verifique se os dados estão sendo enviados para o Experience Platform
 
-Quando os dados do Commerce são enviados para a borda do Adobe Experience Platform, você pode criar relatórios como os seguintes:
+Após a integração, os dados da loja começam a fluir para a borda do Experience Platform. Os dados do back-office levam cerca de 5 minutos após a integração para que os dados apareçam na borda. As atualizações subsequentes estão visíveis na borda com base na programação do cron.
 
-![Dados de comércio no Adobe Experience Manager](assets/aem-data-1.png)
-_Dados de comércio no Adobe Experience Manager_
+Quando os dados do Commerce são enviados para a borda do Experience Platform, você pode criar relatórios como os seguintes:
+
+![Dados de comércio no Adobe Experience Platform](assets/aem-data-1.png)
+_Dados de comércio no Adobe Experience Platform_

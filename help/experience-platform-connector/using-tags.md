@@ -2,9 +2,9 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bd4090c1b1ec417545e041a7c89f46019c07abea
+source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
 workflow-type: tm+mt
-source-wordcount: '2535'
+source-wordcount: '2650'
 ht-degree: 0%
 
 ---
@@ -1319,14 +1319,16 @@ Crie os seguintes elementos de dados:
 - **Tipo**: `commerce.order`
 - **Dados XDM**: `%place order%`
 
-## Definindo identidade
+## Definir a identidade em eventos de loja
 
-Os perfis do conector do Experience Platform são unidos e gerados com base no `identityMap` e `personalEmail` campos de identidade em eventos de experiência XDM. 
+Os eventos de frente de loja contêm informações de perfil com base em `personalEmail` (para eventos de conta) e `identityMap` (para todos os outros eventos de vitrine). O conector de Experience Platform é unido e gera perfis com base nesses dois campos. Cada campo, no entanto, tem diferentes etapas a serem seguidas para criar perfis:
 
-Se você tiver uma configuração anterior que depende de campos diferentes, poderá continuar a usá-los. Para definir os campos de identidade do perfil do conector de Experience Platform, você deve definir os seguintes campos:
+>[!NOTE]
+>
+>Se você tiver uma configuração anterior que depende de campos diferentes, poderá continuar a usá-los.
 
-- `personalEmail` - Somente eventos de conta - siga as etapas descritas acima para [eventos da conta](#createaccount)
-- `identityMap` - Todos os outros acontecimentos. Veja o exemplo a seguir.
+- `personalEmail` - Aplica-se somente a eventos de conta. Siga as etapas, regras e ações descritas [above](#createaccount)
+- `identityMap` - Aplica-se a todos os outros eventos de vitrine. Veja o exemplo a seguir.
 
 ### Exemplo
 
@@ -1337,7 +1339,7 @@ As etapas a seguir mostram como configurar um `pageView` com `identityMap` no co
    ![Configurar elemento de dados com código personalizado](assets/set-custom-code-ecid.png)
    _Configurar elemento de dados com código personalizado_
 
-1. Adicionar código personalizado ECID:
+1. Selecionar [!UICONTROL Open Editor] e adicione o seguinte código personalizado:
 
    ```javascript
    return alloy("getIdentity").then((result) => {
@@ -1346,6 +1348,12 @@ As etapas a seguir mostram como configurar um `pageView` com `identityMap` no co
            {
                id: ecid,
                primary: true
+           }
+           ],
+           email: [
+           {
+               id: email,
+               primary: false
            }
            ]
        };
@@ -1362,6 +1370,43 @@ As etapas a seguir mostram como configurar um `pageView` com `identityMap` no co
 
    ![Recuperar ECID](assets/rule-retrieve-ecid.png)
    _Recuperar ECID_
+
+## Definir a identidade em eventos do back office
+
+Ao contrário dos eventos de vitrine que usam a ECID para identificar e vincular informações de perfil, os dados do evento de back-office são baseados em SaaS e, portanto, nenhuma ECID está disponível. Para eventos de back-office, é necessário usar emails para identificar exclusivamente os compradores. Nesta seção, você aprenderá a vincular dados de evento de escritório a uma ECID usando email.
+
+1. Crie um elemento de mapa de identidade.
+
+   ![Mapa de identidade do back-office](assets/custom-code-backoffice.png)
+   _Criar mapa de identidade do back office_
+
+1. Selecionar [!UICONTROL Open Editor] e adicione o seguinte código personalizado:
+
+```javascript
+const IdentityMap = {
+  "ECID": [
+    {
+      id:  _satellite.getVar('ECID'),
+      primary: true,
+    },
+  ],
+};
+ 
+if (_satellite.getVar('account email')) {
+    IdentityMap.email = [
+        {
+            id: _satellite.getVar('account email'),
+            primary: false,
+        },
+    ];
+}
+return IdentityMap;
+```
+
+1. Adicionar este novo elemento a cada `identityMap` campo.
+
+   ![Atualizar cada identityMap](assets/add-element-back-office.png)
+   _Atualizar cada identityMap_
 
 ## Configuração do consentimento
 
