@@ -2,9 +2,9 @@
 title: Configure o [!DNL Quick Checkout] para extensão do Adobe Commerce
 description: Saiba mais sobre as opções de configuração do [!DNL Quick Checkout] e como integrar e configurar com êxito a extensão.
 exl-id: 892e04dc-17d6-45e9-b2ab-c7a0735a75bc
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '274'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Para acessar essas configurações:
 1. No _Administrador_ barra lateral, vá para **Lojas** > _Configurações_ > **Configuração**.
 1. No painel esquerdo, expanda **Vendas** e selecione **Check-out**.
 
-   ![Check-out rápido](assets/configuration-view.png)
+   ![Check-out rápido](assets/config-new-logo-view.png)
 
 Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais informações sobre como configurar o [!DNL Quick Checkout] para Adobe Commerce.
 
@@ -31,7 +31,7 @@ Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais infor
 | [!UICONTROL Enable] | site | Ativar ou desativar [!DNL Quick Checkout] para o seu site. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Method] | site | Defina o método ou o ambiente para [!DNL Quick Checkout]. Opções: [!UICONTROL Sandbox] / [!UICONTROL Production] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Credenciais da conta
 
@@ -43,7 +43,7 @@ Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais infor
 | [!UICONTROL Publishable key] | site | Uma chave usada pelo front-end para interagir com [!DNL Bolt] APIs. |
 | [!UICONTROL Signing secret] | site | Usado para verificação de assinatura em pedidos recebidos de [!DNL Bolt]. |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}
 
 ## Configurações de serviço
 
@@ -59,4 +59,4 @@ Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais infor
 | [!UICONTROL Automatic Login Enabled] | site | Definir se [!DNL Quick Checkout] O permite o logon automático durante o check-out. Ativado por padrão. Opções: [!UICONTROL Yes] / [!UICONTROL No] |
 | [!UICONTROL Automatic Login Network] | site | Selecione a rede em que o cliente faz logon automaticamente. Ativar Bolt por padrão. Opções: [!UICONTROL Bolt + Merchant] / [!UICONTROL Bolt] |
 
-{style=&quot;table-layout:auto&quot;}
+{style="table-layout:auto"}

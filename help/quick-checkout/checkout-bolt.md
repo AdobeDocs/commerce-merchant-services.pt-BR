@@ -2,9 +2,9 @@
 title: "Fluxo de check-out de um usuário Bolt no Adobe Commerce"
 description: Visão geral da [!DNL Quick Checkout] fluxo para um usuário Bolt no Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
-source-wordcount: '210'
+source-wordcount: '209'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Se uma [!DNL Bolt] for encontrada, os compradores continuarão com suas [!DNL Qu
 
 1. Insira a Senha única (OTP) enviada para isso [!DNL Bolt] endereço de email da conta ou dispositivo móvel, dependendo do [preferências do usuário na [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Pop-up OTP](assets/pop-up.png)
+![Pop-up OTP](assets/new-logo-otp-email.png)
 
 1. Depois de fazer logon com o [!DNL Bolt] , os detalhes são adicionados automaticamente:
 
@@ -44,7 +44,4 @@ Se não [!DNL Bolt] for encontrada, os compradores continuarão com o check-out 
 - Método de remessa
 - Revisar método de pagamento
 - Uma caixa de seleção aparece para se registrar no [!DNL Bolt] para finalizações mais rápidas antes de fazer o pedido. O comprador pode concordar com os termos e condições para criar seus [!DNL Bolt] conta.
-
-   ![Lembrar [!DNL Bolt]](assets/checkbox-remember-bolt.png)
-
 - O usuário convidado coloca o pedido e pode se registrar no Adobe Commerce.

@@ -2,7 +2,7 @@
 title: "Fluxo de check-out no Adobe Commerce"
 description: "Visão geral da [!DNL Quick Checkout] no Adobe Commerce."
 exl-id: 82761627-a0d4-4cb0-aad1-9865fcb550d4
-source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
+source-git-commit: f790732804e110aad298689c0ddf74547ff17618
 workflow-type: tm+mt
 source-wordcount: '217'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Um sucesso [!DNL Quick Checkout] O fluxo consiste nas seguintes etapas:
 1. Quando solicitado, insira um endereço de email associado a um [!DNL Bolt] conta.
 1. Insira a Senha única (OTP) enviada para isso [!DNL Bolt] endereço de email ou número de telefone da conta.
 
-![Pop-up OTP](assets/pop-up.png)
+![Pop-up OTP](assets/new-logo-otp-email.png)
 
 1. Depois de fazer logon com o [!DNL Bolt] Os detalhes de check-out são automaticamente preenchidos:
 
