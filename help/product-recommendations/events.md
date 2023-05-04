@@ -2,7 +2,7 @@
 title: Coletar dados
 description: Saiba como os eventos coletam dados para recomendações de produto.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
-source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
+source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
 workflow-type: tm+mt
 source-wordcount: '0'
 ht-degree: 0%
@@ -34,7 +34,13 @@ O [Coletor de eventos de vitrine do Adobe Commerce](https://developer.adobe.com/
 
 Se a loja estiver implementada com o PWA Studio, consulte a [Documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usar uma tecnologia de front-end personalizada, como React ou Vue JS, consulte o guia do usuário para saber como integrar o Recommendations do produto em uma [impiedoso](headless.md) ambiente.
 
+## Avisos
+
 Bloqueadores de anúncios e configurações de privacidade podem impedir que o `magento/product-recommendations` módulo de captura de eventos e pode causar envolvimento e receita [métricas](workspace.md) ser subnotificados.
+
+O evento não captura todas as transações que acontecem no site do comerciante. Um evento é para dar ao comerciante uma ideia geral dos eventos que estão acontecendo no site.
+
+As implementações headless devem implementar eventos para alimentar o painel do Product Recommendations.
 
 >[!NOTE]
 >

@@ -2,9 +2,9 @@
 title: Introdução ao [!DNL Product Recommendations]
 description: '''[!DNL Product Recommendations] são uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o engajamento do comprador.'
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 5359c737cc90135ab0db5c32aebcb0bb131d3671
 workflow-type: tm+mt
-source-wordcount: '366'
+source-wordcount: '396'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ As recomendações de produto são uma poderosa ferramenta de marketing que pode
 
 As recomendações de produto são exibidas na loja como unidades com rótulos, como &quot;Clientes que visualizaram este produto também visualizaram&quot;. Você pode criar, gerenciar e implantar recomendações nas exibições da loja diretamente do Administrador do Adobe Commerce.
 
+Se a loja estiver implementada usando o PWA Studio, consulte a [Documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usar uma tecnologia de primeiro plano personalizada, como React ou Vue JS, saiba como [integrar](headless.md) [!DNL Product Recommendations] em sua vitrine sem cabeça.
+
 >[!NOTE]
 >
-> Se a loja estiver implementada usando o PWA Studio, consulte a [Documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usar uma tecnologia de primeiro plano personalizada, como React ou Vue JS, saiba como [integrar](headless.md) [!DNL Product Recommendations] em sua vitrine sem cabeça.
+>Há muitas maneiras de desenvolver uma implementação sem periféricos ou personalizada. Este guia descreve uma maneira de fazer isso, usando o PWA Studio. Não abrange todos os cenários ou casos.
 
 ## Privacidade
 
