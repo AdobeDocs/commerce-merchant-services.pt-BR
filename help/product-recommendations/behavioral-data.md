@@ -2,9 +2,9 @@
 title: Dados comportamentais
 description: Saiba mais sobre dados comportamentais e quando você pode começar a usá-los.
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
-source-git-commit: 371ae21c97021912279381b5e32f953fe3b4f0dd
+source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -33,11 +33,14 @@ Outras variáveis que podem afetar o tempo necessário para treinar:
 
 - O maior volume de tráfego contribui para um aprendizado mais rápido
 - Alguns tipos de recomendação treinam mais rápido que outros
-- O Adobe Commerce recomenda dados comportamentais a cada quatro horas. Embora você possa tecnicamente implantar suas unidades de recomendação no momento, saiba que as recomendações se tornam mais precisas quanto mais tempo forem usadas no site.
+- O Adobe Commerce recomenda dados comportamentais a cada quatro horas. O Recommendations se torna mais preciso quanto mais tempo for usado em seu site.
 
 Para ajudá-lo a visualizar o progresso de treinamento de cada tipo de recomendação, a variável [criar recomendação](create.md) exibe indicadores de prontidão.
 
 Embora os dados sejam coletados na produção e os modelos de aprendizado por máquina sejam treinados, é possível implementar a variável [tarefas restantes](implementation-workflow.md) necessário para implantar recomendações na loja. Quando você terminar de testar e configurar as recomendações, os modelos de aprendizado de máquina coletarão e calcularão dados suficientes para criar recomendações relevantes, permitindo que você implante as recomendações na loja.
+
+Se não houver tráfego suficiente (exibições, produtos comprados, tendências) para a maioria dos SKUs, talvez não haja dados suficientes para concluir o processo de aprendizado. Isso pode fazer com que o indicador de prontidão no Administrador pareça estar preso.
+Os indicadores de prontidão são destinados a fornecer aos comerciantes outro ponto de dados na escolha do tipo de recomendações que é melhor para sua loja. Os números são um guia e podem nunca chegar a 100%.
 
 ## Recomendações de backup {#backuprecs}
 
