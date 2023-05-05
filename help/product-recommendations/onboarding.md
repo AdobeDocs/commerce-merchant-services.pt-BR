@@ -2,9 +2,9 @@
 title: Integração
 description: Saiba mais sobre os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: e74bc4aeaa154e751f8d986e0426dd19d55d335e
+source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '283'
 ht-degree: 0%
 
 ---
@@ -43,3 +43,7 @@ Os clientes do Recommendations de produto podem usar [Indexação de preços de 
 ### Suporte a B2B {#b2bsupport}
 
 As lojas B2B geralmente exigem uma lógica complexa que dita a visibilidade e o preço do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade ao atender [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html)e [preços específicos do grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você ocultou determinadas categorias do segmento de clientes de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores verão recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
+
+>[!NOTE]
+>
+>Os comerciantes podem personalizar e estender elementos de widgets ou vitrine usando o [Serviço de catálogo](../catalog-service/overview.md) A API Storefront, mas qualquer personalização está fora do escopo para a equipe de suporte do Adobe.
