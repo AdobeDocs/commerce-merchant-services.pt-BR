@@ -4,9 +4,9 @@ description: Usar a indexação de preço de SaaS para melhorar o desempenho
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 747c0f3e-dfde-4365-812a-5ab7768342ab
-source-git-commit: 7b2d90eb809eada732ed5d3ad4e038bd9733c440
+source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -53,7 +53,7 @@ magento/module-product-override-price-remover
 magento/module-bundle-product-override-data-exporter
 ```
 
-Os clientes que usam o Luma e o Adobe Commerce Core GraphQL podem instalar um módulo que oferece compatibilidade Luma e desativa o indexador de preço principal PHP:
+Os clientes que usam o Luma e o Adobe Commerce Core GraphQL podem instalar um módulo que oferece compatibilidade com o Luma e o Core GraphQL e desativa o indexador de preço principal PHP:
 
 ```
 adobe-commerce/catalog-adapter
@@ -67,17 +67,7 @@ O indexador de preço principal PHP pode ser reativado se necessário por uma ex
 Dependendo de fatores como tipos de produto, complexidade de preço e tamanho do catálogo, a indexação de preço de SaaS pode ser a solução correta para sua loja. Leia as limitações a seguir e determine se essa é uma boa solução para seu site.
 
 Atualmente, a indexação de preços SaaS suporta tipos de produtos Simples, Agrupado, Virtual, Configurável e Dinâmico de Pacote.
-O suporte para os tipos de produtos Baixáveis, Cartões de presente e Pacote fixo virá em breve.
-
-A indexação de preços SaaS suporta preços de base:
-
-* Preço normal mínimo/máximo
-* Preço final mínimo/máximo
-* Preços especiais
-* Preços do grupo de clientes
-* Preços da regra do catálogo
-
-Depois de optar por usar o novo feed de preços, você pode entrar em contato com o [Suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html) para ajudá-lo a desfazer.
+O suporte para os tipos de produtos Baixáveis, Cartões de presente e Pacote fixo será lançado em breve.
 
 Os novos feeds devem ser sincronizados manualmente com a variável `resync` [comando CLI](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html#resynccmdline). Caso contrário, os dados serão atualizados no processo de sincronização padrão. Obter mais informações sobre o [Sincronização do catálogo](../landing/catalog-sync.md) processo.
 
