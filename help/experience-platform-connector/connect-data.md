@@ -2,9 +2,9 @@
 title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar seus dados de Comércio à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
-source-git-commit: dead0b8dae69476c196652abd43c4966a38c4141
+source-git-commit: 386d5e4245401695d7123a87b7dfb703f1f849e9
 workflow-type: tm+mt
-source-wordcount: '1074'
+source-wordcount: '1307'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ Quando você instala o conector Experience Platform, duas novas páginas de conf
 - Conector do Commerce Services
 - Conector Experience Platform
 
-Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve configurar ambos os conectores, começando pelo conector do Commerce Services e terminando com o conector do Experience Platform.
+Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve configurar ambos os conectores, começando pelo conector do Commerce Services e terminando com o conector Experience Platform.
 
 ## Atualizar o conector do Commerce Services
 
@@ -56,7 +56,11 @@ Nesta seção, você conecta a instância do Adobe Commerce à Adobe Experience 
 
 ## Coleta de dados
 
-No **Coleta de dados** selecione storefront e/ou back office data para enviar para a borda do Experience Platform. Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, analise o [pré-requisitos](overview.md#prerequisites).
+Nesta seção, especifique o tipo de dados que deseja enviar para a borda do Experience Platform. Há dois tipos de dados: lado do cliente e lado do servidor.
+
+Os dados do lado do cliente são capturados na loja. Isso inclui interações do comprador, como `View Page`, `View Product`, `Add to Cart`e [lista de requisições](events.md#b2b-events) informações (para comerciantes B2B). Dados do lado do servidor ou dados do back office são dados capturados nos servidores do Commerce. Isso inclui informações sobre o status de um pedido, como se ele tivesse sido feito, cancelado, reembolsado, enviado ou concluído.
+
+No **Coleta de dados** selecione o tipo de dados que deseja enviar para a borda do Experience Platform. Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, analise a [pré-requisitos](overview.md#prerequisites).
 
 Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) eventos.
 
@@ -110,11 +114,32 @@ Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefro
 | Eventos de back-office | Se marcado, a carga do evento contém informações de status de pedido anônimas, como se um pedido fosse feito, cancelado, reembolsado ou enviado. |
 | ID do fluxo de dados (site) | ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico na instância específica do Adobe Commerce. Se você especificar seu próprio SDK da Web do Experience Platform, não especifique uma ID de armazenamento de dados nesse campo. O conector Experience Platform usa a ID do armazenamento de dados associada a esse SDK e ignora qualquer ID do armazenamento de dados especificada nesse campo (se houver). |
 
-## Verifique se os dados estão sendo enviados para o Experience Platform
+>[!NOTE]
+>
+>Após a integração, os dados da loja começam a fluir para a borda do Experience Platform. Os dados do back-office levam cerca de 5 minutos para serem exibidos na borda. As atualizações subsequentes estão visíveis na borda com base na programação do cron.
 
-Após a integração, os dados da loja começam a fluir para a borda do Experience Platform. Os dados do back-office levam cerca de 5 minutos após a integração para que os dados apareçam na borda. As atualizações subsequentes estão visíveis na borda com base na programação do cron.
+## Confirmar se os dados do evento são coletados
 
-Quando os dados do Commerce são enviados para a borda do Experience Platform, você pode criar relatórios como os seguintes:
+Para confirmar se os dados estão sendo coletados da loja do Commerce, use a variável [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) para examinar seu site do Commerce. Depois de confirmar que os dados estão sendo coletados, você pode verificar se os dados do evento de vitrine e back-office aparecem na borda executando um query que retorna dados do [conjunto de dados criado](overview.md#prerequisites).
 
-![Dados de comércio no Adobe Experience Platform](assets/aem-data-1.png)
-_Dados de comércio no Adobe Experience Platform_
+1. Selecionar **Queries** na navegação à esquerda do Experience Platform e clique em [!UICONTROL Create Query].
+
+   ![Editor de consultas](assets/query-editor.png)
+
+1. Quando o Editor de consultas for aberto, insira uma consulta que selecione dados do conjunto de dados.
+
+   ![Criar query](assets/create-query.png)
+
+   Por exemplo, seu query pode ser semelhante ao seguinte:
+
+   ```sql
+   SELECT * from `your_dataset_name` ORDER by TIMESTAMP DESC
+   ```
+
+1. Após a execução da query, os resultados são exibidos na variável **Resultados** , ao lado do **Console** guia . Esta exibição mostra a saída tabular do seu query.
+
+   ![Editor de consultas](assets/query-results.png)
+
+Neste exemplo, você vê os dados do evento da variável [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e assim por diante. Essa exibição permite verificar se os dados do Commerce chegaram à borda.
+
+Se os resultados não forem o que você espera, abra seu conjunto de dados e procure por importações em lotes com falha. Saiba mais sobre [solução de problemas de importações em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
