@@ -1,6 +1,6 @@
 ---
 title: Posicionamento e rótulos
-description: Saiba onde você pode colocar recomendações em várias páginas do seu site e sugestões para rótulos usados com frequência para cada tipo de recomendação.
+description: Saiba onde você pode fazer recomendações em várias páginas do site e obtenha sugestões para rótulos usados com frequência para cada tipo de recomendação.
 exl-id: e1025138-49dc-4833-92bb-27e8e415d724
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -11,52 +11,52 @@ ht-degree: 0%
 
 # Posicionamento e rótulos
 
-Com tantos tipos de recomendação para escolher, qual deve ser usado em cada página? Se não tiver certeza de onde começar, tente o seguinte:
+Com tantos tipos de recomendações para escolher, qual você deve usar em cada página? Se não tiver certeza de onde começar, tente o seguinte:
 
-| Página | Tipo de Recomendação |
+| Página | Tipo de recomendação |
 |---|---|
-| Página inicial | `Recommended for you` |
+| Home page | `Recommended for you` |
 | Página do produto | `Viewed this, viewed that` |
 | Carrinho | `Bought this, bought that` |
 
-Você pode rastrear o [métricas](workspace.md) e ajustar, se necessário. Lembre-se de que experimentação é fundamental.
+É possível rastrear a [métricas](workspace.md) e ajuste-as, se necessário. Lembre-se de que a experimentação é a chave.
 
-Algumas páginas de vitrine restringem onde você pode colocar as recomendações. Você pode colocar as recomendações em um dos seguintes locais da página. Consulte a tabela abaixo para obter mais informações.
+Algumas páginas de vitrine restringem o local em que você pode colocar as recomendações. Você pode colocar as recomendações em um dos seguintes locais de página. Consulte a tabela abaixo para obter mais informações.
 
-- Na parte superior do conteúdo principal - O Recommendations é exibido acima da área de conteúdo principal logo abaixo da barra de navegação superior.
+- Na parte superior do conteúdo principal - O Recommendations é exibido acima da área de conteúdo principal, logo abaixo da barra de navegação superior.
 - Na parte inferior do conteúdo principal (padrão) - O Recommendations é exibido abaixo da área de conteúdo principal e antes de qualquer outro bloco de conteúdo na página, como _Produtos relacionados_.
 
-![Inserção de recomendação](assets/storefront-home-page-top.png)
+![Posicionamento de recomendação](assets/storefront-home-page-top.png)
 _Recomendação na parte superior da página inicial_
 
-## Etiquetas de recomendação
+## Rótulos de recomendação
 
-O rótulo atribuído a uma recomendação na loja afeta como os compradores interpretam sua relevância para eles. Os rótulos a seguir são frequentemente usados para cada tipo de recomendação.
+O rótulo atribuído a uma recomendação na loja afeta como os compradores interpretam sua relevância para eles. Os rótulos a seguir são usados com frequência para cada tipo de recomendação.
 
-![Inserção de recomendação](assets/storefront-search-results-top.png)
-_Recomendação sobre os resultados da pesquisa_
+![Posicionamento de recomendação](assets/storefront-search-results-top.png)
+_Recomendação na parte superior dos resultados da pesquisa_
 
-| Tipo de Recomendação | Rótulos recomendados |
+| Tipo de recomendação | Rótulos recomendados |
 |---|---|
-| Mais visualizados<br> Mais adicionado ao carrinho<br>Mais comprados<br>Conversão (exibir no carrinho)<br>Conversão (exibir para compra) | Mais popular<br>Itens populares<br>Tendência<br>Popular agora<br>Recentemente popular<br>Itens populares inspirados neste item (PDP)<br>Mais vendidos<br>Você pode estar interessado em |
-| Recomendado para você | Só para você<br>Recomendado para você<br>Inspirado pelas suas tendências de compras |
-| Visualizou Isso, Visualizou Que | Clientes que visualizaram este item também visualizaram<br>Os clientes também visualizaram<br>Itens relacionados |
-| Visualizou isso, comprou aquilo | Clientes que viram isso acabaram comprando<br>Os clientes acabaram comprando<br>O que outros compram após visualizar este item? |
-| Comprou Isto, Comprou Aquilo | Obtenha tudo o que você precisa<br>Não se esqueça disso<br>Frequentemente comprados juntos |
-| Mais artigos como este | Mais itens como este<br>Semelhante a este |
-| Genérico | Você também pode<br>Os compradores também gostaram<br>Opções semelhantes<br>Itens relacionados |
-| Tendência | Tendência<br>Tendências agora<br>Tendências recentes<br>Itens quentes<br>Produtos relacionados com a tendência (PDP) |
-| Visualizados recentemente | Visualizados recentemente<br>Dê outra olhada |
+| Mais visualizados<br> Mais adicionados ao carrinho<br>Mais comprados<br>Conversão (exibir para carrinho)<br>Conversão (exibir para compra) | Mais popular<br>Itens populares<br>Tendências<br>Popular no momento<br>Recentemente popular<br>Itens populares inspirados por este item (PDP)<br>Mais vendidos<br>Talvez você esteja interessado em |
+| Recomendado para você | Apenas para você<br>Recomendado para você<br>Inspirado em suas tendências de compras |
+| Visualizou Isso, Visualizou Aquilo | Os clientes que visualizaram este item também visualizaram<br>Clientes também visualizaram<br>Itens relacionados |
+| Visualizou Isto, Comprou Aquilo | Clientes que visualizaram isto compraram<br>Clientes comprados<br>O que outras pessoas compram depois de visualizar este item? |
+| Comprei isto, comprei aquilo | Obtenha tudo de que precisa<br>Não se esqueça destes<br>Comprados frequentemente em conjunto |
+| Mais artigos como este | Mais itens como este<br>Semelhante a |
+| Genérico | Você também pode gostar de<br>Os compradores também gostaram<br>Opções semelhantes<br>Itens relacionados |
+| Tendências | Tendências<br>Tendências atuais<br>Tendências recentes<br>Itens quentes<br>PDP (Trending Related products, produtos relacionados às tendências) |
+| Visualizado recentemente | Visualizado recentemente<br>Dê outra olhada |
 
-## Recomendações suportadas por página
+## Recomendações compatíveis por página
 
-A tabela a seguir lista as páginas de loja onde você pode colocar recomendações e os tipos de recomendação permitidos em cada página.
+A tabela a seguir lista as páginas de vitrine onde você pode colocar recomendações e os tipos de recomendação permitidos em cada página.
 
-| Página | Colocar o Recommendations |
+| Página | Recommendations de posicionamento |
 |---|---|
-| Página inicial | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Recomendado para você<br>Tendência |
-| Categoria | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Recomendado para você<br>Tendência |
-| Detalhes do produto | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência<br>Similaridade visual |
-| Carrinho | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência |
-| Confirmação | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Visualizou isso, viu que<br>Visualizou isto, comprou aquilo<br>Comprou isto, comprou aquilo<br>Mais artigos como este<br>Tendência |
-| Page Builder | [Arrastar e soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para posicionar o tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionado ao carrinho<br>Recomendado para você<br>Tendência |
+| Home page | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |
+| Categoria | Na parte superior do conteúdo principal<br>Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |
+| Detalhes do produto | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizou isto, visualizou aquilo<br>Visualizou isto, comprou aquilo<br>Comprei isto, comprei aquilo<br>Veja mais aqui<br>Tendências<br>Semelhança visual |
+| Carrinho | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizou isto, visualizou aquilo<br>Visualizou isto, comprou aquilo<br>Comprei isto, comprei aquilo<br>Veja mais aqui<br>Tendências |
+| Confirmação | Na parte inferior do conteúdo principal (padrão) | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Visualizou isto, visualizou aquilo<br>Visualizou isto, comprou aquilo<br>Comprei isto, comprei aquilo<br>Veja mais aqui<br>Tendências |
+| Page Builder | [Arrastar e soltar](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) para posicionar tipo de conteúdo | Mais visualizados<br>Mais comprados<br>Mais adicionados ao carrinho<br>Recomendado para você<br>Tendências |

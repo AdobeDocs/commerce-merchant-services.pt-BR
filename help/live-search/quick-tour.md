@@ -1,6 +1,6 @@
 ---
 title: "Tour rápido"
-description: "Faça um rápido tour por [!DNL Live Search] da loja."
+description: "Faça um rápido tour pelo [!DNL Live Search] da loja."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
 source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
 workflow-type: tm+mt
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 # Tour rápido
 
-Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um alterador de jogos para compradores e comerciantes. Siga para um rápido tour de [!DNL Live Search] da loja.
+Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um divisor de águas tanto para compradores quanto para comerciantes. Siga para um rápido tour pelo [!DNL Live Search] da loja.
 
-## Pesquisar à medida que você digita
+## Pesquisar enquanto digita
 
-[!DNL Live Search] responde com produtos sugeridos e uma imagem em miniatura dos principais resultados de pesquisa em um [proveta](storefront-popover.md) como compradores, digite queries no [Pesquisar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) caixa. O [detalhes do produto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir tudo_ no rodapé da janela exibe a página de resultados da pesquisa.
+[!DNL Live Search] O responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em uma [popover](storefront-popover.md) à medida que os compradores digitam consultas na variável [Pesquisar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) caixa. A variável [detalhes do produto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
 
-[!DNL Live Search] retorna resultados de &quot;pesquisa conforme você digita&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na query não é configurável. Os seguintes campos estão incluídos no portador: `name`, `sku`e `category_ids`.
+[!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. Os seguintes campos estão incluídos no popover: `name`, `sku`, e `category_ids`.
 
 ![Exemplo de vitrine - pesquisar à medida que você digita](assets/storefront-search-as-you-type.png)
 
 ## Exibir todos os resultados da pesquisa
 
-Para listar todos os produtos retornados pela consulta &quot;pesquisar à medida que você digita&quot;, clique em _Exibir tudo_ no rodapé do portão.
+Para listar todos os produtos retornados pela consulta &quot;pesquisar ao digitar&quot;, clique em _Exibir todos_ no rodapé do popover.
 
 ![Exemplo de vitrine - aspectos de preço](assets/storefront-view-all-search-results.png)
 
 ## Pesquisa filtrada com facetas
 
-A pesquisa filtrada usa várias dimensões de valores de atributo, ou [facetas](facets.md), como critérios de pesquisa. A seleção de filtros é definida pelo comerciante e muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
+A pesquisa filtrada usa várias dimensões de valores de atributo ou [facetas](facets.md), como critério de pesquisa. A seleção de filtros é definida pelo comerciante e muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
 
 ## Sinônimos
 
-[Sinônimos](synonyms.md) expanda o alcance e ajuste o foco das consultas incluindo palavras que os compradores podem usar que diferem daquelas no catálogo. Você pode ajustar o dicionário de sinônimos para manter os compradores envolvidos e no caminho da compra.
+[Sinônimos](synonyms.md) expanda o alcance e ajuste a nitidez do foco das consultas ao incluir palavras que os compradores podem usar diferentes daquelas no catálogo. Você pode ajustar o dicionário de sinônimo para manter os compradores envolvidos e no caminho para comprar.
 
-## Regras de comercialização
+## Regras de merchandising
 
-Merchandising [regras](rules.md) molde a experiência de compra com instruções if-then que adicionam lógica e eventos a serem pesquisados. Você pode impulsionar ou enterrar facilmente produtos para uma promoção, temporada ou outro período de tempo.
+Merchandising [regras](rules.md) molde a experiência de compra com instruções if-then que adicionam lógica e eventos a serem pesquisados. Você pode facilmente impulsionar ou enterrar produtos para uma promoção, temporada ou outro período de tempo.

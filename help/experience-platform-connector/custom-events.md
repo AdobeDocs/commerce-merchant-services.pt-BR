@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Criar eventos personalizados
 
-É possível estender o [plataforma de eventos](events.md) ao criar seus próprios eventos de loja para coletar dados exclusivos do seu setor. Ao criar e configurar um evento personalizado, ele é enviado para a [Coletor de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
+É possível estender a variável [plataforma de evento](events.md) criando seus próprios eventos de vitrine eletrônica para coletar dados exclusivos de seu setor. Ao criar e configurar um evento personalizado, ele é enviado para o [Coletor de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-collectors).
 
-## Gerenciar eventos personalizados
+## Lidar com eventos personalizados
 
-Os eventos personalizados são compatíveis somente com a Adobe Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Adobe Commerce.
+Eventos personalizados são compatíveis somente com o Adobe Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Adobe Commerce.
 
-Para qualquer `custom` , o coletor adiciona um `personId` (`ecid`) a `customContext` e envolve uma `xdm` ao redor dele antes de encaminhar para o Edge.
+Para qualquer `custom` evento, o coletor adiciona um `personId` (`ecid`) para `customContext` e envolve um `xdm` antes de encaminhar para o Edge.
 
 Exemplo:
 
-Evento personalizado publicado pelo SDK de Eventos do Adobe Commerce:
+Evento personalizado publicado pelo SDK de eventos da Adobe Commerce:
 
 ```javascript
 mse.publish.custom({
@@ -29,7 +29,7 @@ mse.publish.custom({
 });
 ```
 
-No Experience Platform Edge:
+Na borda do Experience Platform:
 
 ```javascript
 {
@@ -45,15 +45,15 @@ No Experience Platform Edge:
 >
 > O uso de eventos personalizados pode afetar os relatórios padrão do Adobe Analytics.
 
-## Gerenciar substituições de evento (atributos personalizados)
+## Lidar com substituições de eventos (atributos personalizados)
 
-Substituições de atributos para eventos padrão são suportadas somente no Experience Platform. Os dados personalizados não são encaminhados para painéis de Comércio e rastreadores de métricas.
+As substituições de atributo para eventos padrão são compatíveis somente com o Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Commerce.
 
-Para qualquer evento com um conjunto `customContext`, o coletor substitui `personId` e contadores Adobe Analytics e encaminha todos os outros atributos definidos em `customContext`.
+Para qualquer evento com um conjunto `customContext`, o coletor substitui `personId` e Adobe Analytics e encaminha todos os outros atributos definidos no `customContext`.
 
 Exemplos:
 
-Exibição de produto com substituições publicadas pelo SDK de Eventos do Adobe Commerce:
+Exibição de produto com substituições publicadas pelo SDK de eventos do Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -61,7 +61,7 @@ mse.publish.productPageView({
 });
 ```
 
-No Experience Platform Edge:
+Na borda do Experience Platform:
 
 ```javascript
 {
@@ -78,7 +78,7 @@ No Experience Platform Edge:
 }
 ```
 
-A exibição de produto com o Adobe Commerce substitui publicadas pelo SDK de Eventos do Adobe Commerce:
+Exibição de produto com substituições do Adobe Commerce publicadas pelo SDK de eventos do Adobe Commerce:
 
 ```javascript
 mse.publish.productPageView({
@@ -86,7 +86,7 @@ mse.publish.productPageView({
 });
 ```
 
-No Experience Platform Edge:
+Na borda do Experience Platform:
 
 ```javascript
 {

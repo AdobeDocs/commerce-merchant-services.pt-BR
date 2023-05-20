@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Product Recommendations] Guia"
-user-guide-description: Este guia fornece instruções detalhadas sobre como usar [!DNL Product Recommendations] do Adobe Commerce.
+user-guide-description: Este guia fornece instruções detalhadas para usar o [!DNL Product Recommendations] do Adobe Commerce.
 breadcrumb-title: "[!DNL Product Recommendations] Guia"
 source-git-commit: d56fd57281a5b675e128cca75d4057756a0bf4bf
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] para comércio {#product-recommendations}
+# [!DNL Product Recommendations] para o Commerce {#product-recommendations}
 
 - [Visão geral do guia](guide-overview.md)
 - [Introdução ao [!DNL Product Recommendations]](overview.md)
@@ -18,17 +18,17 @@ ht-degree: 0%
    - [Integração](onboarding.md)
    - [Fluxo de trabalho de implementação](implementation-workflow.md)
    - [Dados comportamentais](behavioral-data.md)
-   - [Cabeça](headless.md)
+   - [Headless](headless.md)
    - [Instalar](install-configure.md)
    - [Configurações](settings.md)
    - [Verificar](verify.md)
    - [Ambiente de preparo](staging-environment.md)
    - [Integração do Page Builder](page-builder.md)
-- [!DNL Product Recommendations] Administrador {#admin}
+- [!DNL Product Recommendations] Admin {#admin}
    - [Workspace](workspace.md)
    - [Criar](create.md)
    - [Editar](edit.md)
-   - [Tipos de recomendação](type.md)
+   - [Tipos de Recomendação](type.md)
    - [Filtros](filters.md)
    - [Posicionamento e rótulos](placement.md)
 - [!DNL Product Recommendations] Desenvolvedor {#developer}

@@ -9,23 +9,23 @@ ht-degree: 0%
 
 ---
 
-# Página de checkout no Adobe Commerce
+# Página de check-out no Adobe Commerce
 
-A página de checkout é onde os clientes inserem as informações necessárias para fazer um pedido.
+A página de finalização é onde os clientes inserem as informações necessárias para fazer um pedido.
 
-Um exemplo de página de finalização:
+Um exemplo de uma página de check-out:
 
-![Página de checkout](assets/checkout-page.png)
+![Página de check-out](assets/checkout-page.png)
 
-Para obter mais informações sobre a página de check-out padrão do Adobe Commerce, consulte [página de checkout](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) tópico.
+Para obter mais informações sobre a página checkout padrão do Adobe Commerce, consulte [página de check-out](https://docs.magento.com/user-guide/quick-tour/checkout-page.html) tópico.
 
-Pronto para uso, o check-out consiste em duas etapas:
+Pronto para uso, a finalização consiste em duas etapas:
 
-- Informações sobre Envio
-- Informações sobre Revisar e Pagamento
+- Informações de envio
+- Informações de Revisão e Pagamento
 
 >[!NOTE]
 >
-> Após a conclusão da primeira etapa, o check-out exibe os totais de check-out e as informações correspondentes da barra lateral.
+> Depois que a primeira etapa for concluída, o check-out exibirá os totais do check-out e as informações da barra lateral correspondentes.
 
-Consulte a [fluxo de finalização](../quick-checkout/checkout-flow.md) tópico para obter mais informações sobre [!DNL Quick Checkout] fluxo.
+Consulte a [fluxo de finalização](../quick-checkout/checkout-flow.md) tópico para obter mais informações sobre o [!DNL Quick Checkout] fluxo.

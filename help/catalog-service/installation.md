@@ -23,7 +23,7 @@ Parte 2:
 
 ## Pré-requisitos
 
-O processo de integração para [!DNL Catalog Service] requer acesso à linha de comando do servidor. Se você não estiver familiarizado com o trabalho a partir da linha de comando, peça ajuda a um desenvolvedor ou integrador de sistemas.
+O processo de integração do [!DNL Catalog Service] requer acesso à linha de comando do servidor. Se você não estiver familiarizado com o trabalho a partir da linha de comando, peça ajuda a um desenvolvedor ou integrador de sistemas.
 
 ### Requisitos de software
 
@@ -33,19 +33,19 @@ O processo de integração para [!DNL Catalog Service] requer acesso à linha de
 
 ### Plataformas compatíveis
 
-- Adobe Commerce na infraestrutura de nuvem: 2.4.4+
-- Adobe Commerce nas instalações: 2.4.4+
+- Adobe Commerce na infraestrutura em nuvem: 2.4.4+
+- Adobe Commerce no local: 2.4.4+
 
 ## Ambientes
 
 O Serviço de catálogo tem dois ambientes disponíveis para integração:
 
-- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - usada para testes e validação antes de entrar em funcionamento
-- Produção (https://catalog-service.adobe.io/graphql)-) usada para tráfego ao vivo para comerciantes e sites do Commerce
+- Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - usada para teste e validação antes de entrar em funcionamento
+- Produção (https://catalog-service.adobe.io/graphql)- usado para tráfego direto para comerciantes e sites do Commerce
 
 ## Instalação e configuração
 
-Para começar a usar o Serviço de catálogo do Adobe Commerce , as etapas a seguir são necessárias:
+Para começar a usar o Serviço de catálogo do Adobe Commerce, as seguintes etapas são necessárias:
 
 - Instalar as extensões de exportação de dados
 - Configurar o serviço e a exportação de dados
@@ -53,19 +53,19 @@ Para começar a usar o Serviço de catálogo do Adobe Commerce , as etapas a seg
 
 ### Instalar as extensões de exportação de dados
 
-O processo de integração do Serviço de catálogo requer acesso à linha de comando do servidor.
+O processo de integração do Serviço de Catálogo requer acesso à linha de comando do servidor.
 
-A extensão Serviço de catálogo pode ser instalada na infraestrutura de nuvem da Adobe Commerce e em instâncias locais.
+A extensão do Serviço de catálogo pode ser instalada na infraestrutura em nuvem do Adobe Commerce e em instâncias locais.
 
-O Serviço de catálogo é instalado com chaves Composer, que estão vinculadas à conta Comércio [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornecido durante o processo de assinatura. O Composer usa essas chaves durante a instalação inicial do Adobe Commerce ou em situações em que as chaves do Composer não eram salvas anteriormente em uma chave externa `auth.json` arquivo.
+O Serviço de catálogo é instalado com chaves do Composer, que estão vinculadas à conta do Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-personal/#field-descriptions) fornecido durante o processo de inscrição. O Composer usa essas chaves durante a instalação inicial do Adobe Commerce ou em situações em que as chaves do Composer não eram salvas anteriormente em um ambiente externo `auth.json` arquivo.
 
-Consulte [Obter as chaves de autenticação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) para obter mais informações sobre como obter chaves Composer.
+Consulte [Obter suas chaves de autenticação](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/prerequisites/authentication-keys.html) para obter mais informações sobre como obter chaves do Composer.
 
-#### Adobe Commerce na infraestrutura de nuvem
+#### Adobe Commerce na infraestrutura em nuvem
 
-Use este método para instalar a extensão Serviço de Catálogo para uma instância do Commerce Cloud.
+Use esse método para instalar a extensão Serviço de Catálogo para uma instância do Commerce Cloud.
 
-1. Abra o `<Commerce_root>/composer.json` em um editor de texto e atualize a seção de solicitação da seguinte maneira:
+1. Abra o `<Commerce_root>/composer.json` em um editor de texto e atualize a seção exigida da seguinte maneira:
 
 ```json
 "require": {
@@ -85,9 +85,9 @@ O comando atualiza todas as dependências.
 
 #### No local
 
-Use este método para instalar a extensão Serviço de Catálogo para uma instância no local.
+Use esse método para instalar a extensão Serviço de Catálogo para uma instância local.
 
-1. Abra o `<Commerce_root>/composer.json` em um editor de texto e atualize a seção de solicitação da seguinte maneira:
+1. Abra o `<Commerce_root>/composer.json` em um editor de texto e atualize a seção exigida da seguinte maneira:
 
 ```json
 "require": {
@@ -117,28 +117,28 @@ bin/magento cache:clean
 
 ### Configurar o serviço e a exportação de dados
 
-Depois de instalar o Serviço de catálogo, você deve configurar o [Conector do Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) especificando as chaves da API e selecionando um espaço de dados SaaS.
+Depois de instalar o Serviço de Catálogo, você deve configurar o [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) especificando as chaves de API e selecionando um Espaço de dados SaaS.
 
-Após a conclusão da configuração do SaaS, execute uma sincronização de dados inicial seguindo o [Sincronização do catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guia.
+Após a configuração SaaS ser concluída, execute uma sincronização de dados inicial seguindo o [Sincronização de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guia.
 
-Para garantir que a exportação do catálogo esteja sendo executada corretamente:
+Para garantir que a exportação de catálogo esteja sendo executada corretamente:
 
-- Confirme se os trabalhos do cron estão em execução.
+- Confirme se os trabalhos cron estão em execução.
 - Verifique se os indexadores estão em execução.
-- Certifique-se de que `Catalog Attributes Feed, Product Feed, Product Overrides Feed`e `Product Variant Feed` os indexadores são definidos como &quot;Atualizar por agendamento&quot;.
+- Certifique-se de que o `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, e `Product Variant Feed` indexadores são definidos como &quot;Atualizar por programação&quot;.
 
-A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o Catálogo exporta os dados do produto do servidor do Commerce para os serviços do Commerce de forma contínua para manter os serviços atualizados.
+A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o catálogo exporta dados do produto do servidor do Commerce para os Commerce services de forma contínua, a fim de manter os serviços atualizados.
 
 ### Acessar o serviço
 
-A API do Serviço de catálogo pode ser acessada por comandos POST em HTTPS.
+A API do Serviço de catálogo é acessível por meio de comandos POST em HTTPS.
 
-Para obter a chave da api, acesse a área Conector do serviço de comércio no administrador e copie a chave da API pública.
+Para obter a chave de API, vá para a área Conector do Commerce Service no administrador e copie a chave de API pública.
 
 Leia o [Documentação do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) para entender como consultar e enviar os cabeçalhos necessários para gerar solicitações de API.
 
-## Serviço de catálogo e malha de API
+## Serviço de catálogo e API Mesh
 
-O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando Adobe IO.
+A variável [Malha de API para o Construtor de aplicativos Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite aos desenvolvedores integrar APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe IO.
 
-Consulte a  [Serviço de catálogo e malha de API](mesh.md) tópico para detalhes de instalação e configuração.
+Consulte a  [Serviço de catálogo e API Mesh](mesh.md) tópico para obter detalhes sobre instalação e configuração.

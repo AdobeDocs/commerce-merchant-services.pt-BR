@@ -1,19 +1,19 @@
 ---
-title: Instalação de Indexação de Preço SaaS
-description: Instalando A Indexação De Preços Do SaaS
+title: Instalação da indexação de preços do SaaS
+description: Instalando a indexação de preços do SaaS
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '254'
 ht-degree: 0%
 
 ---
 
-# Instalação de Indexação de Preço SaaS
+# Instalação da indexação de preços do SaaS
 
-Configurar a indexação de preço do SaaS requer a instalação de novos módulos e a execução de comandos CLI. Os administradores precisam de acesso à linha de comando para concluir esta instalação.
+A configuração da indexação de preços SaaS requer a instalação de novos módulos e a execução de comandos CLI. Os administradores precisam de acesso à linha de comando para concluir esta instalação.
 
 ## Pré-requisitos
 
@@ -29,7 +29,7 @@ Configurar a indexação de preço do SaaS requer a instalação de novos módul
 Dependendo da configuração, o processo de instalação pode ser um pouco diferente.
 Há extensões que adicionam os novos feeds e código de suporte e há uma extensão que remove o feed de preços padrão.
 
-1. Adicione os seguintes módulos à sua `composer.json` arquivo:
+1. Adicione os seguintes módulos ao `composer.json` arquivo:
 
    ```json
    "magento/module-saas-price": "102.2.0",
@@ -44,14 +44,14 @@ Há extensões que adicionam os novos feeds e código de suporte e há uma exten
    bin/magento setup:upgrade
    ```
 
-Após a atualização, três novos feeds ficam disponíveis:
+Depois da atualização, três novos feeds estarão disponíveis:
 
-* `prices` - responsável pela entrega de dados sobre preços ao serviço
-* `scopesCustomerGroup` - responsável por fornecer Grupos de clientes ao serviço
-* `scopesWebsite` - responsável por fornecer sites, grupos de armazenamento e visualizações de loja ao serviço
+* `prices` - responsável pela entrega de dados de preços ao serviço
+* `scopesCustomerGroup` - responsável por fornecer Grupos de Clientes ao serviço
+* `scopesWebsite` - responsável por fornecer sites, grupos de lojas e visualizações de lojas ao serviço
 
 
-1. Configure os novos feeds a serem definidos para o modo &quot;Atualizar de acordo com a programação&quot;:
+1. Configure os novos feeds a serem definidos para o modo &quot;Atualização programada&quot;:
 
    ```bash
    bin/magento indexer:set-mode schedule catalog_data_exporter_product_prices scopes_customergroup_data_exporter scopes_website_data_exporter
@@ -65,18 +65,18 @@ Após a atualização, três novos feeds ficam disponíveis:
    bin/magento saas:resync --feed=prices
    ```
 
-Execute os indexadores acima manualmente, conforme necessário. Caso contrário, os dados serão atualizados no processo de sincronização padrão. Leia mais sobre o [Sincronização do catálogo](../landing/catalog-sync.md) serviço.
+Execute os indexadores acima manualmente, conforme necessário. Caso contrário, os dados serão atualizados no processo de sincronização padrão. Leia mais sobre o [Sincronização de catálogo](../landing/catalog-sync.md) serviço.
 
-Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar a variável `catalog-adapter` módulo que fornece compatibilidade Luma e Core GraphQl e desativa o indexador de preço principal PHP.
-Para usar o `catalog-adapter` módulo, [!DNL Live Search] e [!DNL Catalog Service] deve primeiro ser instalado e configurado. Siga as [Instalar [!DNL Live Search]](../live-search/install.md) e [Instalação do Serviço de Catálogo](../catalog-service/installation.md) instruções antes de continuar.
+Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar o `catalog-adapter` módulo que fornece compatibilidade com o Luma e o Core GraphQl e desativa o indexador de preço principal do PHP.
+Para usar o `catalog-adapter` módulo, [!DNL Live Search] e [!DNL Catalog Service] O deve ser instalado e configurado primeiro. Siga as [Instalar [!DNL Live Search]](../live-search/install.md) e [Instalação do serviço de catálogo](../catalog-service/installation.md) instruções antes de continuar.
 
-Para configurar o Live Search e o Adaptador de Catálogo, siga [Conector do Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instruções.
+Para configurar o Live Search e o Adaptador do Catálogo, siga [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instruções.
 
 ```bash
 composer require adobe-commerce/catalog-adapter
 ```
 
-Se necessário, o indexador de preço principal PHP pode ser reativado com o seguinte comando:
+Se necessário, o indexador de preço principal do PHP pode ser reativado com o seguinte comando:
 
 ```bash
 bin/magento module:disable Magento_PriceIndexerDisabler

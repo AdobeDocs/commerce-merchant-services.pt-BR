@@ -1,6 +1,6 @@
 ---
-title: Configuração do sistema de mapeamento e localização de armazenamento
-description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização da loja na interface do usuário da loja. As soluções de fornecimento de armazenamento exigem um provedor de distância para permitir a pesquisa em lojas de varejo e outros recursos de mapeamento e agendamento para o fluxo de trabalho de cumprimento completo.
+title: Localização de armazenamento e configuração do sistema de mapeamento
+description: Configure um provedor de distância para oferecer suporte ao mapeamento de localização de loja na interface de loja. As soluções de Atendimento da Loja exigem um provedor à distância para habilitar a pesquisa na loja de varejo e outros recursos de mapeamento e agendamento para o fluxo de trabalho de atendimento completo.
 role: User, Admin
 level: Intermediate
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
@@ -11,32 +11,32 @@ ht-degree: 0%
 
 ---
 
-# Configuração de localização e mapeamento da loja
+# Localização de armazenamento e configuração de mapeamento
 
-Ative o local da loja e os recursos de mapeamento para o Cumprimento da loja configurando um [fornecedor de distância](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) para procurar locais de loja de varejo.
+Habilite o local de armazenamento e os recursos de mapeamento para Atendimento de Loja configurando um [provedor de distância](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) para pesquisar locais de loja de varejo.
 
 **Requisitos**
 
-Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps . Se não tiver um, [gerar um da plataforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps. Se você não tiver um, [gerar um a partir da plataforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
 
 Para configurar o provedor de distância:
 
-1. No **[!UICONTROL Stores > General]** no Admin, adicione a integração Google Maps para o tipo de conteúdo Map .
+1. No **[!UICONTROL Stores > General]** em Admin, adicione a integração do Google Maps para o tipo de conteúdo Map.
 
    - Ir para **[!UICONTROL Stores > Configuration  > General > Content Management]**.
 
-   - Adicionar sua chave de API do Google a **[!UICONTROL Google Maps API Key]** campo.
+   - Adicione sua chave de API do Google a **[!UICONTROL Google Maps API Key]** campo.
 
-1. No **[!UICONTROL Stores > Inventory]** na configuração Admin, selecione o provedor de distância para o Cumprimento da Loja.
+1. No **[!UICONTROL Stores > Inventory]** em Admin, selecione o provedor de distância para Atendimento da Loja.
 
    - Ir para **[!UICONTROL Stores > Configuration > Catalog > Inventory]**.
 
-   - Expanda o **[!UICONTROL Distance Provider for Distance Based SSA]** seção.
+   - Expanda a **[!UICONTROL Distance Provider for Distance Based SSA]** seção.
 
-   - Defina as **Provedor** para **Google Map**.
+   - Defina o **Provedor** para **Mapa do Google**.
 
-1. Defina as configurações para o **[!UICONTROL Google Distance Provider]**.
+1. Definir configurações para o **[!UICONTROL Google Distance Provider]**.
 
-   - Adicione seu **Chave da API do Google**.
+   - Adicione **Chave da API do Google**.
 
    - Definir **[!UICONTROL Computation Mode]** para `Driving` e **[!UICONTROL Value]** para `Distance`

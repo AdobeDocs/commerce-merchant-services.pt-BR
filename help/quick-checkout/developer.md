@@ -11,23 +11,23 @@ ht-degree: 0%
 
 # [!DNL Quick Checkout] Informações do desenvolvedor
 
-Este tópico contém informações para desenvolvedores que trabalham em conjunto com a Adobe Commerce e [!DNL Magento Open Source] e deseja obter informações detalhadas sobre o [!DNL Quick Checkout] extensão.
+Este tópico contém informações para desenvolvedores que trabalham em conjunto com a Adobe Commerce e [!DNL Magento Open Source] e quiser saber mais sobre as informações detalhadas do [!DNL Quick Checkout] extensão.
 
 ## Pontos de extensão
 
 Use pontos de extensão para personalizar o [!DNL Quick Checkout].
 
-Ao usar pontos de extensão, você pode fazer personalizações sem alterar os componentes principais no código do aplicativo.
+Ao usar pontos de extensão, você pode fazer personalizações sem realmente alterar os componentes principais no código do aplicativo.
 
-## Etapa de detalhes da remessa
+## Etapa de detalhes de remessa
 
-Um ponto de extensão pode ser usado para personalizar a navegação em etapas automatizadas após fazer logon com o [!DNL Bolt].
+Um ponto de extensão pode ser usado para personalizar a navegação de etapa automatizada depois de fazer logon com [!DNL Bolt].
 
-Uma vez que um comprador faz logon com [!DNL Bolt], todas as informações válidas são pré-preenchidas e redirecionadas para a etapa de detalhes do pagamento para colocar a ordem. Consulte a [fluxo de finalização](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) para obter mais informações.
+Uma vez que o comprador fizer logon com [!DNL Bolt], todas as informações válidas são preenchidas previamente e redirecionadas à etapa de detalhes do pagamento para fazer o pedido. Consulte a [fluxo de finalização](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/manage-checkout/checkout-flow.html) para obter mais informações.
 
-Esse ponto de extensão permite impedir a navegação para uma etapa de pagamento e pode ser útil caso existam extensões que exigem que um comprador execute ações adicionais na etapa de envio. Veja um exemplo abaixo sobre como usar o ponto de extensão com uma combinação:
+Esse ponto de extensão permite impedir a navegação para uma etapa de pagamento e pode ser útil caso haja extensões que exijam que um comprador execute ações adicionais na etapa de envio. Veja um exemplo abaixo sobre como usar o ponto de extensão com um mixin:
 
-1. Registre uma nova combinação no `require-config.js` arquivo localizado em `app/code/Vendor/ModuleName/view/frontend/`.
+1. Registre um novo mixin na `require-config.js` arquivo localizado em `app/code/Vendor/ModuleName/view/frontend/`.
 
    ```js
    var config = {
@@ -41,7 +41,7 @@ Esse ponto de extensão permite impedir a navegação para uma etapa de pagament
    };
    ```
 
-1. Estender o modelo no `can-navigate-to-payment.js` arquivo localizado em `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
+1. Estenda o modelo no `can-navigate-to-payment.js` arquivo localizado em `app/code/Vendor/ModuleName/view/frontend/web/js/model/`.
 
    ```js
    define([
@@ -60,6 +60,6 @@ Esse ponto de extensão permite impedir a navegação para uma etapa de pagament
 
 >[!WARNING]
 >
-> Este é um exemplo para um comprador na Alemanha (DE) que deseja permanecer na etapa Detalhes do frete.
+> Este é um exemplo para um comprador na Alemanha (DE) que deseja permanecer na etapa Detalhes de envio.
 
-Verificar [[!DNL Bolt] ajuda do desenvolvedor](https://help.bolt.com/developers/) para obter mais informações sobre [!DNL Bolt] para desenvolvedores.
+Marcar [[!DNL Bolt] ajuda do desenvolvedor](https://help.bolt.com/developers/) para obter mais informações sobre [!DNL Bolt] para desenvolvedores.

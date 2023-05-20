@@ -1,6 +1,6 @@
 ---
-title: Modelos de Email de Vendas
-description: Configure os modelos de email transacional para comunicação com clientes e administradores de armazenamento durante o processo de atendimento dos pedidos de retirada da loja.
+title: Modelos de e-mail de vendas
+description: Configure os modelos de email transacional para se comunicar com os clientes e administradores de loja durante o processo de preenchimento de pedidos de Retirada de loja.
 role: User, Admin
 level: Intermediate
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
@@ -12,13 +12,13 @@ ht-degree: 0%
 ---
 
 
-# Modelos de Email de Vendas
+# Modelos de e-mail de vendas
 
-O Cumprimento da Loja oferece um conjunto estendido de modelos de email transacionais para dar suporte a workflows de pedido e cumprimento. Eles oferecem comunicações e mensagens consistentes e automatizadas em todos os canais — notificando os administradores de clientes e lojas sobre alterações no status do pedido, instruções para pedidos de retirada na loja e muito mais.
+O Atendimento da loja oferece um conjunto estendido de modelos de email transacional para suportar workflows de pedidos e atendimento. Eles oferecem comunicação e mensagens consistentes e automatizadas entre canais, notificando os administradores de clientes e lojas sobre alterações no status dos pedidos, instruções para pedidos de coleta na loja e muito mais.
 
-Os modelos de email de Preenchimento da Loja são configurados com mensagens e configurações padrão. Os administradores de merchant no Adobe Commerce podem gerenciar e modificar configurações e selecionar os modelos de email para se comunicar com os clientes em diferentes cenários. Os administradores também podem configurar e personalizar modelos.
+Os modelos de email de Atendimento da loja são configurados com as mensagens e configurações padrão. Os administradores de comerciantes no Adobe Commerce podem gerenciar e modificar configurações e selecionar os modelos de email para se comunicar com os clientes em diferentes cenários. Os administradores também podem configurar e personalizar modelos.
 
-Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## Emails - Configurações gerais
 
@@ -33,7 +33,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Envio assíncrono</strong></td>
-<td>Desative este recurso. Não há suporte para envio assíncrono de email. Para obter a comunicação e o tempo de resposta mais rápidos para a retirada da loja, envie emails imediatamente em vez de agrupá-los em lote. </td>
+<td>Desative esse recurso. O envio assíncrono de email não é suportado. Para obter a comunicação e o tempo de resposta mais rápidos para a Coleta da loja, envie emails imediatamente, em vez de enviá-los em lote. </td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -52,49 +52,49 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Este email é enviado ao cliente quando o associado da loja concluiu a separação do pedido. Defina como "Não" para desativar a notificação por email. Se o template de email estiver desativado, ele não impede que um pedido seja escolhido pelo associado da loja.</td>
+<td>Este email é enviado ao cliente quando o associado da loja conclui a separação da ordem. Defina como "Não" para desativar a notificação por email. Se o template de email estiver desabilitado, isso não impedirá que um pedido seja escolhido pelo associado da loja.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Pedido pronto para retirada do remetente de email</strong></td>
+<td><strong>Pedido Pronto Para Remetente De Email De Retirada</strong></td>
 <td>A identidade do remetente usada ao enviar a notificação por email.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Pedido Pronto Para Obter Modelo De Email</strong></td>
-<td>O template de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo De Email De Pedido Pronto Para Retirada</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
-<td><strong>Pedido pronto para retirada de modelo de email para convidado</strong></td>
-<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração .</td>
-<td>Exibição da loja</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>Pedido pronto para retirada de modelo de email para contato de retirada alternativo</strong></td>
-<td>O template de mensagem de email usado para notificar contatos adicionais nomeados no pedido. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo de email de pedido pronto para retirada para convidado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Pronto Para Obter Cópia De Correio Eletrônico Para</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>Modelo de Email Pronto para Retirada para Contato de Retirada Alternativo</strong></td>
+<td>O modelo de mensagem de email usado para notificar contatos adicionais nomeados na ordem. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Pronto Para O Método De Cópia De Correio Eletrônico De Escolha</strong></td>
-<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
+<td><strong>Enviar Pedido Pronto Para Retirada E-Mail Copiar Para</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
+<td>Exibição da loja</td>
+<td>Não</td>
+</tr>
+<tr>
+<td><strong>Método De Cópia De Email De Enviar Pedido Pronto Para Retirada</strong></td>
+<td>O método de cópia de email (cópia carbono) a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 </tbody></table>
 
 
-## O pedido foi recebido na Loja
+## A ordem foi retirada na Loja
 
 <table>
 <thead>
@@ -107,42 +107,42 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Este email é enviado ao cliente quando para confirmar que ele retirou seu pedido da loja. Defina como "Não" para desativar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja recebido pelo cliente.</td>
+<td>Esse email é enviado ao cliente quando ele confirmar que selecionou seu pedido da loja. Defina como "Não" para desativar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja coletado pelo cliente.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Pedido Foi Selecionado Remetente de Email</strong></td>
+<td><strong>O Pedido Foi Retirado Do Remetente De Email</strong></td>
 <td>A identidade do remetente usada ao enviar a notificação por email.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>O Pedido Foi Selecionado No Modelo De Email</strong></td>
-<td>O template de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração</td>
+<td><strong>O pedido foi retirado do modelo de e-mail</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
-<td><strong>O Pedido foi Selecionado Modelo de Email para Convidado</strong></td>
-<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração .</td>
-<td>Exibição da loja</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>Enviar Foi Selecionado E-Mail Copy Para</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>O pedido foi retirado do modelo de e-mail do convidado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>O Enviar Foi Selecionado Por Método De Cópia De Email</strong></td>
-<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
+<td><strong>Envio Foi Retirado Cópia De E-Mail Para</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
+<td>Exibição da loja</td>
+<td>Não</td>
+</tr>
+<tr>
+<td><strong>Método De Cópia De Email De Envio Selecionado</strong></td>
+<td>O método de cópia de email (cópia carbono) a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 </tbody></table>
 
-## Pedido atrasado
+## Pedido Atrasado
 
 <table>
 <thead>
@@ -155,12 +155,12 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Esse email é enviado ao cliente para notificá-lo sobre um atraso no processamento ou na escolha de seu pedido na loja de produtos. Defina como "Não" para desativar a notificação por email. Se o modelo de email estiver desativado, o recurso não impedirá que um pedido seja atrasado.</td>
+<td>Esse email é enviado ao cliente para notificá-lo sobre um atraso no processamento ou na separação do pedido na loja do comerciante. Defina como "Não" para desativar a notificação por email. Se o template de email estiver desativado, o recurso não impede que um pedido seja atrasado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Remetente de email atrasado do pedido
+<td><strong>Ordenar Remetente de Email Atrasado
 </strong></td>
 <td>A identidade do remetente usada ao enviar a notificação por email.</td>
 <td>Exibição da loja</td>
@@ -168,24 +168,24 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 <tr>
 <td><strong>Modelo de email de pedido atrasado</strong></td>
-<td>O template de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração .</td>
+<td>O modelo de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
-<td><strong>Solicitar modelo de email atrasado para o convidado</strong></td>
-<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração .</td>
-<td>Exibição da loja</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>Enviar cópia de email atrasada do pedido para</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>Modelo de email de pedido atrasado para convidado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar Método de Cópia Atrasada do Pedido</strong></td>
-<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
+<td><strong>Enviar cópia de email com atraso do pedido para</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
+<td>Exibição da loja</td>
+<td>Não</td>
+</tr>
+<tr>
+<td><strong>Método de Cópia Atrasada da Ordem de Envio</strong></td>
+<td>O método de cópia de email (cópia carbono) a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -193,7 +193,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 
 
 
-## Pedido Cancelado
+## Pedido cancelado
 
 <table>
 <thead>
@@ -206,37 +206,37 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Esse email é enviado ao cliente para notificá-lo de que seu pedido foi cancelado na loja de merchant. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, o recurso não impede o cancelamento de um pedido.</td>
+<td>Esse email é enviado ao cliente para notificá-lo de que seu pedido foi cancelado na loja do comerciante. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, esse recurso não impedirá que um pedido seja cancelado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Solicitar Remetente de Email Cancelado
+<td><strong>Remetente de email de pedido cancelado
 </strong></td>
 <td>A identidade do remetente usada ao enviar a notificação por email.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Pedido Cancelado Modelo de Email</strong></td>
-<td>O template de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo de e-mail de pedido cancelado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
-<td><strong>Pedido Cancelado para Convidado</strong></td>
-<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração .</td>
-<td>Exibição da loja</td>
-<td>Não</td>
-</tr>
-<tr>
-<td><strong>Enviar Pedido Cancelou Cópia de Correio Eletrônico para</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>Pedido cancelado para convidado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Método de Cópia Cancelada do Pedido de Envio</strong></td>
-<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
+<td><strong>Enviar cópia do e-mail de pedido cancelado para</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
+<td>Exibição da loja</td>
+<td>Não</td>
+</tr>
+<tr>
+<td><strong>Método de Cópia de Ordem de Envio Cancelada</strong></td>
+<td>O método de cópia de email (cópia carbono) a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -256,49 +256,49 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Este email é enviado ao cliente para notificá-lo de que parte de seu pedido foi cancelada na loja de merchant. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja parcialmente cancelado.</td>
+<td>Esse email é enviado ao cliente para notificá-lo de que parte de seu pedido foi cancelada na loja do comerciante. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja parcialmente cancelado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Solicitar Remetente de Email Parcialmente Cancelado
+<td><strong>Remetente do e-mail do pedido parcialmente cancelado
 </strong></td>
 <td>A identidade do remetente usada ao enviar a notificação por email.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Solicitar Modelo de Email Parcialmente Cancelado</strong></td>
-<td>O template de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo de e-mail do pedido parcialmente cancelado</strong></td>
+<td>O modelo de mensagem de email usado para notificar clientes registrados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
-<td><strong>Solicitar Modelo de Email Parcialmente Cancelado para Contato de Seleção Alternativo</strong></td>
-<td>O template de mensagem de email usado para notificar contatos adicionais nomeados no pedido. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo de email do pedido parcialmente cancelado para contato de retirada alternativo</strong></td>
+<td>O modelo de mensagem de email usado para notificar contatos adicionais nomeados na ordem. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>Pedido parcialmente cancelado para convidado</strong></td>
-<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração .</td>
+<td>O modelo de mensagem de email usado para notificar clientes convidados. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Parcialmente Cancelado Cópia de Correio Eletrônico para</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>Enviar cópia de email do pedido parcialmente cancelado para</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar Pedido Parcialmente Cancelado Método de Cópia</strong></td>
-<td>O método de cópia de email — cópia de carbono — a ser usado.</td>
+<td><strong>Método de cópia Enviar pedido parcialmente cancelado</strong></td>
+<td>O método de cópia de email (cópia carbono) a ser usado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 </tbody></table>
 
-## Entregar para Armazenamento
+## Enviar para loja
 
 <table>
 <thead>
@@ -310,21 +310,21 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 </tr>
 </thead>
 <tbody><tr>
-<td><strong>A Ordem Enviou Para Armazenar Produtos Remetente de Email</strong></td>
-<td>Email enviado para a equipe de merchant especificada como um relatório agregado de todos os pedidos em aberto que não podem ser separados em um armazenamento de merchant até que seu inventário esteja disponível. </br></br> Os comerciantes podem usar esse relatório para iniciar e gerenciar transferências de inventário ou reposição de armazenamento para armazenamento. </br></br>Esta notificação só se aplica quando a variável [!DNL Ship-to-Store] estão ativados.
-</br></br>Este rótulo não afeta a transportadora selecionada nem os rótulos disponíveis do método de entrega.</br></br></td>
+<td><strong>O Pedido Tem Remetente De Email De Produtos De Entrega Para Armazenamento</strong></td>
+<td>Email enviado à equipe de comerciante especificada como um relatório agregado de todas as ordens em aberto que não podem ser separadas em um armazenamento de comerciante até que o estoque esteja disponível. </br></br> Os comerciantes podem usar este relatório para iniciar e gerenciar transferências de inventário de armazenamento para armazenamento ou reposição. </br></br>Esta notificação só se aplica quando a [!DNL Ship-to-Store] Os recursos do estão habilitados.
+</br></br>Essa etiqueta não afeta a transportadora de remessa selecionada ou suas etiquetas de método de remessa disponíveis.</br></br></td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Enviar para armazenamento de destinatários de email</strong></td>
-<td>Uma lista delimitada por vírgulas de endereços de email para envio de uma cópia de cada notificação.</td>
+<td><strong>Destinatários de Email da Loja de Destino</strong></td>
+<td>Uma lista delimitada por vírgulas de endereços de email para enviar uma cópia de cada notificação.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
-<td><strong>Modelo de email</strong></td>
-<td>O template de mensagem de email usado para notificar os recipients. Um template padrão é fornecido com a integração .</td>
+<td><strong>Modelo de e-mail</strong></td>
+<td>O modelo de mensagem de email usado para notificar os destinatários. Um template padrão é fornecido com a integração.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -332,7 +332,7 @@ Configure os modelos de Email de vendas no Administrador: **[!UICONTROL Stores >
 
 >[!NOTE]
 >
->Se você permitir backorders, deverá fornecer um endereço de email de administrador para receber notificações sobre esses pedidos. Adicione o endereço às seguintes configurações: **[!UICONTROL Send Order Delayed Email Copy To]** no [Atraso no pedido](#order-delayed) modelo e [!UICONTROL Ship To Store Email Recipients] no [Entregar para Armazenamento](#ship-to-store) modelo .
+>Se você permitir pedidos pendentes, deverá fornecer um endereço de email de administrador para receber notificações sobre esses pedidos. Adicione o endereço às seguintes definições de configuração: **[!UICONTROL Send Order Delayed Email Copy To]** no [Atraso do pedido](#order-delayed) modelo e [!UICONTROL Ship To Store Email Recipients] no [Enviar para loja](#ship-to-store) modelo.
 
 
 

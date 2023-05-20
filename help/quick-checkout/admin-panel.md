@@ -1,6 +1,6 @@
 ---
-title: '[!DNL Quick Checkout] para o painel de administração do Adobe Commerce'
-description: Saiba como a [!DNL Quick Checkout] O Painel de administração pode ajudar a integrar, configurar e visualizar com sucesso a extensão.
+title: '[!DNL Quick Checkout] para o Painel de administração do Adobe Commerce'
+description: Saiba como o [!DNL Quick Checkout] O Painel de administração pode ajudar a integrar, configurar e visualizar a extensão com êxito.
 exl-id: d91763ed-b4f6-4736-9503-0305edd77e91
 source-git-commit: b89427124cf76e7f36076454949191ee1d88f52c
 workflow-type: tm+mt
@@ -11,29 +11,29 @@ ht-degree: 0%
 
 # Introdução ao [!DNL Quick Checkout] Painel de administração
 
-[!DNL Quick Checkout] O para Adobe Commerce e Magento Open Source fornece uma visualização do Painel de administração com todas as informações necessárias para configurar e usar a extensão do .
+[!DNL Quick Checkout] O para Adobe Commerce e Magento Open Source fornece uma exibição do painel Administrador com todas as informações necessárias para configurar e usar a extensão.
 
-1. No _Administrador_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
-1. Nesta visualização, você pode acessar a variável _Painel de administração_ visão geral, _Recursos_ about [!DNL Quick Checkout], obter _Ajuda e suporte_ ou configure a extensão via _Configurações_.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**:
+1. Nesta visualização, é possível acessar a variável _Painel de administração_ visão geral, _Recursos_ sobre [!DNL Quick Checkout], obter _Ajuda e suporte_ ou configure a extensão por meio de _Configurações_.
 
-   ![Menu Quick Checkout](assets/admin-panel-view.png)
+   ![Menu Check-out rápido](assets/admin-panel-view.png)
 
-Verifique se o usuário tem as funções e permissões apropriadas concedidas para a variável [!DNL Quick Checkout] Painel de administração para mostrar. Consulte a [Funções e permissões do usuário](../quick-checkout/user-roles-setup.md) para obter mais informações.
+Verifique se o usuário tem as funções e permissões apropriadas concedidas para o [!DNL Quick Checkout] Painel de administração a ser exibido. Consulte a [Funções e permissões do usuário](../quick-checkout/user-roles-setup.md) para obter mais informações.
 
-Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais informações sobre como configurar o [!DNL Quick Checkout] para Adobe Commerce.
+Consulte a [Integração](../quick-checkout/onboarding.md) tópico para obter mais informações sobre como configurar a variável [!DNL Quick Checkout] para Adobe Commerce.
 
 ## Início
 
 | Campo | Descrição |
 |---|---|
-| [!UICONTROL Overview] | A guia Visão geral mostra todos os recursos para usar [!DNL Quick Checkout]. |
-| [!UICONTROL Reports] | A guia Relatórios mostra abrangente [!DNL Quick Checkout] informações. |
+| [!UICONTROL Overview] | A guia Visão geral mostra todos os recursos para usar o [!DNL Quick Checkout]. |
+| [!UICONTROL Reports] | A guia Relatórios mostra relatórios abrangentes [!DNL Quick Checkout] informações. |
 
 ## Ajuda e suporte
 
 | Campo | Descrição |
 |---|---|
-| [!UICONTROL Troubleshooting guide] | A Central de Ajuda do Adobe Commerce contém [!DNL Quick Checkout] artigo de solução de problemas. |
+| [!UICONTROL Troubleshooting guide] | A Central de ajuda do Adobe Commerce contém [!DNL Quick Checkout] solução de problemas. |
 | [!UICONTROL Feedback] | Forneça feedback à equipe. |
 
 ## Recursos
@@ -41,9 +41,9 @@ Consulte a [Integração](../quick-checkout/onboarding.md) para obter mais infor
 | Campo | Descrição |
 |---|---|
 | [!UICONTROL Open documentation] | Consulte os documentos mais recentes para [!DNL Quick Checkout]. |
-| [!UICONTROL [!DNL Bolt] merchant dashboard] | Acesse seu [!DNL Bolt] conta comercial e painel. |
-| [!UICONTROL Release notes] | Saiba mais sobre as alterações mais recentes da [!DNL Quick Checkout]. |
+| [!UICONTROL [!DNL Bolt] merchant dashboard] | Acessar o [!DNL Bolt] conta e painel do comerciante. |
+| [!UICONTROL Release notes] | Saiba mais sobre as alterações mais recentes do [!DNL Quick Checkout]. |
 
 ## Configurações
 
-Na exibição do Painel de administração, clique em **[!UICONTROL Settings]** para acessar o [!DNL Quick Checkout] configuração. Consulte [Configuração do administrador](onboarding.md#complete-admin-configuration) para obter mais informações.
+Na exibição do painel Admin, clique em **[!UICONTROL Settings]** para acessar o [!DNL Quick Checkout] configuração. Consulte [Configuração de administração](onboarding.md#complete-admin-configuration) para obter mais informações.

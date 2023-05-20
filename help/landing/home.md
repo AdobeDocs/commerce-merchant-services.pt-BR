@@ -1,6 +1,6 @@
 ---
-title: Documentação dos serviços
-description: Procurar serviços para a documentação do produto Adobe Commerce
+title: Documentação de serviços
+description: Procurar serviços para obter a documentação do produto Adobe Commerce
 seo-title: Services for Adobe Commerce
 seo-description: Access the product documentation for hosted services that help Adobe Commerce and Magento Open Source merchants support key components of their business.
 breadcrumb-title: Documentação
@@ -12,23 +12,23 @@ ht-degree: 0%
 
 ---
 
-# Guias dos Serviços Adobe Commerce
+# Guias de serviços da Adobe Commerce
 
-O Adobe fornece uma coleção de serviços de comércio, integração e dados para ajudar os comerciantes a suportar os principais componentes de seus negócios.
+O Adobe fornece uma coleção de serviços de comércio, integração e dados para ajudar os comerciantes a dar suporte aos principais componentes de seus negócios.
 
->[!BEGINSHADEBOX &quot;Informações de lançamento&quot;]
+>[!BEGINSHADEBOX &quot;Informações sobre a versão&quot;]
 
 Consulte [novidades da documentação](whats-new.md) ou [notas de versão](release-notes-all.md) para cada serviço do Commerce.
 >[!ENDSHADEBOX]
 
-## Serviços comerciais
+## Commerce services
 
 <table>
 <tr>
   <td valign="top" width="200">
       <img alt="[!DNL Live Search]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/overview.html"><strong>[!DNL Live Search]</strong></a>  
-    <div>Implemente essa ferramenta de pesquisa alimentada por IA que oferece resultados mais inteligentes, rápidos e relevantes para compradores B2C.</div>
+    <div>Implemente essa ferramenta de pesquisa alimentada por IA que fornece resultados mais inteligentes, rápidos e relevantes para compradores B2C.</div>
   </td>
    </tr>
 <tr>
@@ -36,49 +36,49 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
        <img alt="[!UICONTROL Product Recommendations]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/overview.html"><strong>[!DNL Product Recommendations]</strong></a>
-    <div>Adicione recomendações alimentadas por IA com base no comportamento do comprador, nas tendências populares, na similaridade do produto e muito mais.</div>
+    <div>Adicione recomendações alimentadas por IA com base no comportamento do comprador, tendências populares, similaridade de produtos e muito mais.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Serviço de catálogo" src="assets/catalog-service.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/guide-overview.html"> <strong>Serviço de catálogo</strong></a> <br>
-    <div>Dê aos clientes uma experiência de produto otimizada, além de melhorar o desempenho, melhorar a escalabilidade e aumentar as conversões.</div>
+    <div>Dê aos seus clientes uma experiência de produto otimizada enquanto aumenta o desempenho, melhora a escalabilidade e aumenta as conversões.</div>
   </td>
    </tr>
 <tr>
   <td valign="top" width="200px">
-    <img alt="Serviços de pagamento" src="assets/payment-services.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Serviços de pagamento</strong></a>  <br><em>(Disponível para Magento Open Source)</em>
-    <div>Impulsionar a satisfação do cliente, oferecendo facilmente vários métodos de pagamento, incluindo parcelas de pagamento sem juros, e uma visão única sobre o processamento de pagamentos, ordens e faturas.</div>
+    <img alt="Payment Services" src="assets/payment-services.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Payment Services</strong></a>  <br><em>(Disponível para Magento Open Source)</em>
+    <div>Impulsionar a satisfação do cliente oferecendo facilmente vários métodos de pagamento, incluindo prestações de pagamento sem juros e uma única visualização do processamento de pagamentos, pedidos e faturas.</div>
   </td>
     </tr>
 <tr>
   <td valign="top" width="200px">
     <img alt="Check-out rápido" src="assets/quick-checkout.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Check-out rápido</strong></a>  <br><em>(Disponível para Magento Open Source)</em>
-    <div>Converta compradores únicos em titulares de conta fiéis ao fornecer uma experiência de compra rápida e intuitiva.</div>
+    <div>Converta compradores únicos em titulares de conta fiéis fornecendo uma experiência de compra rápida e intuitiva.</div>
   </td>
     </tr>
 <tr>
     <td valign="top" width="200px">
-       <img alt="Arquivo de Cumprimento" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Arquivo de Cumprimento</strong></a></br>
-    <div>Ofereça uma compra superior on-line, escolha na loja (BOPIS) experiência do cliente e maximize a produtividade do funcionário fornecendo um fluxo de trabalho abrangente e habilitado por meio de um dispositivo móvel.</div>
+       <img alt="Atendimento da loja" src="assets/store-fulfillment-landing-graphic.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/store-fulfillment/guide-overview.html"> <strong>Atendimento da loja</strong></a></br>
+    <div>Ofereça uma compra on-line superior, experiência do cliente de coleta na loja (BOPIS) e maximize a produtividade do funcionário fornecendo um fluxo de trabalho de atendimento abrangente habilitado por meio de um dispositivo móvel.</div>
   </td>
    </tr>
 <tr>
     <td valign="top" width="200px">
        <img alt="Sales Channel Amazon" src="assets/amazon-channel.png" width="170px"></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Canal de vendas da Amazon</strong></a> <br><em>(Disponível para Magento Open Source)</em>
-    <div>Integre-se ao maior destino global de compras online do mundo para permitir vendas da Amazon, fornecer automação e sincronização de dados, gerenciar listas do Amazon e muito mais por meio de um único painel.</div>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/amazon/guide-overview.html"> <strong>Canal de vendas do Amazon</strong></a> <br><em>(Disponível para Magento Open Source)</em>
+    <div>Integre-se ao maior destino global de compras online do mundo para habilitar as vendas do Amazon, fornecer automação e sincronização de dados, gerenciar listas do Amazon e muito mais por meio de um único painel.</div>
   </td>
    </tr>
 <tr>
     <td valign="top">
        <img alt="[!DNL Channel Manager]" src="assets/channel-manager.png" width="170px"></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/guide-overview.html"> <strong>Gerenciador de canais</strong></a> <br><em>(Disponível para Magento Open Source)</em>
-    <div>Aumente as vendas, alcance novos clientes, simplifique as operações e economize tempo integrando-se ao Walmart Marketplace. Permitir que a equipe gerencie as vendas, o inventário e os preços do Walmart de maneira simples — tudo no Commerce.</div>
+    <div>Aumente as vendas, alcance novos clientes, simplifique as operações e economize tempo integrando-se ao Walmart Marketplace. Permita que a equipe gerencie vendas, inventário e preços do Walmart Marketplace sem interrupções — tudo no Commerce.</div>
   </td>
    </tr>
 </table>
@@ -90,7 +90,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
   <td valign="top" width="200">
       <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
-    <div>Aproveite a conexão entre o Adobe Commerce e a borda do Adobe Experience Platform para utilizar os dados do Commerce para outros produtos da Adobe Experience Cloud, como Adobe Analytics e Adobe Target.</div>
+    <div>Aproveite a conexão entre o Adobe Commerce e a borda do Adobe Experience Platform para utilizar dados do Commerce para outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target.</div>
   </td>
    </tr>
 <tr>
@@ -98,7 +98,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
        <img alt="[!UICONTROL Services Connector]" src="assets/product-recs.png" width="170px"/></td>
    <td valign="top">
    <a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html"><strong>[!DNL Services Connector]</strong></a>
-    <div>O Conector de serviços do Commerce fornece a integração para a instância do Adobe Commerce ou Magento Open Source usando uma chave de API e uma chave privada. Para serviços de dados (somente Adobe Commerce), também é possível especificar o espaço de dados na configuração.</div>
+    <div>O Commerce Services Connector fornece a integração para sua instância Adobe Commerce ou Magento Open Source usando uma chave de API e uma chave privada. Para serviços de dados (somente Adobe Commerce), você também pode especificar o espaço de dados na configuração.</div>
   </td>
    </tr>
 </table>
@@ -110,7 +110,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>A sincronização de catálogo exporta dados do produto do servidor do Commerce para os serviços do Commerce para manter os serviços atualizados. Os indexadores, acionados por eventos como uma alteração no preço de um produto ou no nível de inventário, compilam dados de catálogo. Você pode observar e gerenciar esse processo através do painel *Catalog Sync* ou da interface da linha de comando.</div>
+    <div>A sincronização do catálogo exporta dados do produto do servidor Commerce para os Commerce services no para manter os serviços atualizados. Os indexadores, acionados por eventos como uma alteração no preço de um produto ou no nível do inventário, compilam os dados do catálogo. Você pode observar e gerenciar esse processo no painel *Catalog Sync* ou na interface de linha de comando.</div>
   </td>
 </tr>
 </table>

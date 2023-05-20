@@ -1,7 +1,8 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um terminal GraphQL comum.'
-source-git-commit: 1c377a9e5ad5d403e97d4dc7aa9c29c01ab8c819
+description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um endpoint comum do GraphQL.'
+exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
+source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
 workflow-type: tm+mt
 source-wordcount: '256'
 ht-degree: 0%
@@ -10,22 +11,22 @@ ht-degree: 0%
 
 # [!DNL Catalog Service and API Mesh]
 
-O [Mensagem de API para o Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
+A variável [Malha de API para o Construtor de aplicativos Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite aos desenvolvedores integrar APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
 
-![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
+![Diagrama da arquitetura de catálogo](assets/catalog-service-architecture-mesh.png)
 
-A primeira etapa para usar a malha de API com o serviço de catálogo é conectar a malha de API à sua instância. Veja as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+A primeira etapa para usar a API Mesh com o Serviço de catálogo é conectar a API Mesh à sua instância. Consulte as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Para concluir a configuração, instale o [Pacote Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Para concluir a configuração, instale o [Pacote CLI do Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Depois que a malha for configurada no Adobe I/O Runtime, execute o seguinte comando que adiciona uma `CommerceCatalogServiceGraph` origem da sua malha.
+Depois que o Mesh for configurado no Adobe I/O Runtime, execute o seguinte comando, que adiciona um `CommerceCatalogServiceGraph` para sua malha.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Onde `variables.json` é um arquivo separado que armazena valores comumente usados para o Adobe I/O Runtime.
-Por exemplo, a chave da API pode ser salva no arquivo :
+Onde `variables.json` é um arquivo separado que armazena os valores usados com frequência para o Adobe I/O Runtime.
+Por exemplo, a chave de API pode ser salva no arquivo:
 
 ```json
 {
@@ -33,16 +34,16 @@ Por exemplo, a chave da API pode ser salva no arquivo :
 }
 ```
 
-Após executar esse comando, o Serviço de catálogo deve estar sendo executado pela malha da API. Você pode executar o `aio api-mesh:get` para exibir a configuração da malha atualizada.
+Após a execução desse comando, o Serviço de catálogo deve estar em execução por meio da API Mesh. Você pode executar o `aio api-mesh:get` comando para ver a configuração da malha atualizada.
 
-## Exemplos de malha da API
+## Exemplos de API Mesh
 
-A malha da API permite que os usuários consumam fontes de dados externas para aprimorar sua instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para ativar uma nova funcionalidade.
+A API Mesh permite que os usuários consumam fontes de dados externas para aprimorar a instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para habilitar novas funcionalidades.
 
-### Ativar preços da camada
+### Habilitar preços de camada
 
-Neste exemplo, a Mensagem da API é usada para habilitar preços de camada no Adobe Commerce.
-Substitua o `name `, `endpoint`e `x-api-key` valores.
+Neste exemplo, a API Mesh é usada para ativar os preços da camada no Adobe Commerce.
+Substitua o `name `, `endpoint`, e `x-api-key` valores.
 
 ```json
 {
@@ -126,7 +127,7 @@ Substitua o `name `, `endpoint`e `x-api-key` valores.
 }
 ```
 
-Após a configuração, consulte a Malha para obter os preços em camadas:
+Depois de configurado, consulte a Malha para obter preços diferenciados:
 
 ```graphql
 query {
@@ -157,7 +158,7 @@ query {
 
 ### Obter uma ID de entidade
 
-Essa malha anexa a variável `entityId` para a interface ProductView . Substitua o `name `, `endpoint`e `x-api-key` valores.
+Essa malha anexa a `entityId` à interface do ProductView. Substitua o `name `, `endpoint`, e `x-api-key` valores.
 
 ```json
 {

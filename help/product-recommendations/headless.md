@@ -1,6 +1,6 @@
 ---
-title: Cabeça
-description: Saiba como integrar [!DNL Product Recommendations] em uma vitrine sem cabeça.
+title: Headless
+description: Saiba como integrar [!DNL Product Recommendations] em uma loja headless.
 exl-id: 316d0b0c-5938-4e2f-9d0d-747746cf6056
 source-git-commit: 521ea4fc2cce809fc12d3958e37089f3e34e1068
 workflow-type: tm+mt
@@ -9,49 +9,49 @@ ht-degree: 0%
 
 ---
 
-# Cabeça
+# Headless
 
-É possível integrar [!DNL Product Recommendations] em uma loja sem interface usando [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) ou uma tecnologia de primeiro plano personalizada, como React ou Vue JS.
+É possível integrar [!DNL Product Recommendations] em uma loja headless usando [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/) ou uma tecnologia de front-end personalizada, como React ou Vue JS.
 
-Os integradores personalizados e sem periféricos devem consultar essas instruções de Luma e PWA como uma implementação sugerida. Há muitas maneiras de implementar o Product Recommendations em soluções sem interface e essa documentação não cobre todos os cenários. Os integradores devem cobrir eventos, projetos e testes para suas implementações.
+Os integradores personalizados e headless devem consultar essas instruções Luma e PWA como uma implementação sugerida. Há várias maneiras de implementar o Product Recommendations em soluções headless e esta documentação não aborda todos os cenários. Os integradores devem cobrir o evento, o design e o teste de suas implementações.
 
-[!DNL Product Recommendations] exigir [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) para operar. O processo de sincronização de dados do catálogo permanece inalterado em uma implementação sem cabeçalho, mas as alterações são necessárias para a coleta de dados comportamentais.
+[!DNL Product Recommendations] exigir [dados comportamentais e de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/development-overview.html) para operar. O processo de sincronização de dados de catálogo permanece inalterado em uma implementação headless, mas são necessárias alterações para a coleta de dados comportamentais.
 
 >[!NOTE]
 >
->As instâncias headless devem implementar eventos para alimentar o painel do Recommendations do produto.
+>As instâncias headless devem implementar eventos para acionar o painel Product Recommendations.
 
-Para integrar [!DNL Product Recommendations] em uma vitrine sem interface, você deve:
+Para integrar [!DNL Product Recommendations] em uma loja headless, você deve:
 
-1. Envie dados comportamentais ao Adobe Sensei para analisar e calcular os resultados da Recomendação do produto. Também é possível enviar dados adicionais para ativar a recomendação do produto [relatórios de métricas](workspace.md).
+1. Envie dados comportamentais ao Adobe Sensei para analisar e calcular os resultados das Recomendações de produto. Também é possível enviar dados adicionais para habilitar a recomendação do produto [relatórios de métricas](workspace.md).
 
-1. Busque resultados de recomendações de produtos e renderize esses resultados na página.
+1. Buscar resultados de recomendações de produtos e renderizar esses resultados na página.
 
-Você pode executar ambas as ações usando os SDKs disponíveis, conforme descrito no seguinte workflow.
+Você pode executar essas duas ações usando os SDKs disponíveis, conforme descrito no fluxo de trabalho a seguir.
 
 1. [Instalar](install-configure.md) o [!DNL Product Recommendations] módulo.
 
-1. Instalar e usar o [SDK do evento de loja da Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para acionar a [eventos comportamentais](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
+1. Instale e use o [SDK de eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) para acionar o [eventos comportamentais](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/events.html).
 
-   Os eventos mínimos necessários para retornar [!DNL Product Recommendations] resultados:
+   O número mínimo de eventos necessários a serem retornados [!DNL Product Recommendations] resultados:
 
    | Evento | Categoria |
    |--- | ---|
    | `view` | produto |
    | `add-to-cart` | produto |
-   | `place-order` | checkout |
+   | `place-order` | check-out |
 
-   Para ativar [relatórios de métricas](workspace.md), os seguintes eventos adicionais são obrigatórios:
+   Para habilitar [relatórios de métricas](workspace.md), os seguintes eventos adicionais são obrigatórios:
 
    | Evento | Categoria |
    |--- | ---|
    | `impression-render` | unidade de recomendação |
    | `view` | unidade de recomendação |
    | `rec-click` | unidade de recomendação |
-   | `rec-add-to-cart-click` | unidade de recomendação (se um botão &quot;Adicionar ao carrinho&quot; estiver presente no modelo de recomendações) |
+   | `rec-add-to-cart-click` | unidade de recomendação (se um botão &quot;Adicionar ao carrinho&quot; estiver presente no template de recomendações) |
 
-1. Quando os eventos forem acionados, use a variável [Coletor de eventos de vitrine do Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para lidar com os eventos e enviá-los para o Adobe Sensei.
+1. Quando os eventos forem acionados, use o [Coletor de eventos da vitrine Adobe Commerce](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) para manipular os eventos e enviá-los para o Adobe Sensei.
 
 1. Depois que os dados comportamentais forem coletados, você poderá [criar](create.md) [!DNL Product Recommendations] em Admin.
 
-1. Use o [Recommendations SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para buscar as unidades de recomendação na loja. O SDK retorna os dados de produto necessários para renderizar unidades de recomendação em uma página.
+1. Use o [RECOMMENDATIONS SDK](https://developer.adobe.com/commerce/services/product-recommendations/) para buscar as unidades de recomendação na loja. O SDK retorna os dados do produto necessários para renderizar as unidades de recomendação em uma página.

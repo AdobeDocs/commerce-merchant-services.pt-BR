@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Lidar com restrições de cookies
 
-O Adobe Commerce e o Magento Open Source pedem consentimento antes que os dados sejam armazenados em cookies do navegador. Para obter mais informações, consulte [Modo de restrição de cookie](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
+O Adobe Commerce e o Magento Open Source solicitam consentimento antes que os dados sejam armazenados em cookies do navegador. Para obter mais informações, consulte [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
 
-Ao implantar o `magento/product-recommendations` para produção, ele começa a coletar eventos de interação do comprador na loja. Como os dados desses eventos podem ser armazenados em cookies do navegador ou no armazenamento local, o recurso suporta o modo de restrição de cookies não coletando eventos até que o comprador tenha dado consentimento de cookie.
+Ao implantar o `magento/product-recommendations` para produção, ele começa a coletar eventos de interação do comprador na loja. Como os dados desses eventos podem ser armazenados em cookies do navegador ou no armazenamento local, o recurso suporta o modo de restrição de cookie, pois não coleta eventos até que o comprador tenha dado o consentimento para o cookie.
 
-Isso pode não funcionar com soluções de consentimento de cookies de terceiros. É responsabilidade de cada comerciante garantir que a coleta de dados não ocorra antes de o consentimento do cookie ser dado, como geralmente é exigido por lei. Se você gerencia o consentimento do cookie com código personalizado, é possível usar um cookie de não rastreamento chamado `mg_dnt` para restringir a coleta de dados.
+Isso pode não funcionar com soluções de consentimento de cookies de terceiros. É responsabilidade de cada comerciante garantir que a coleta de dados não ocorra antes que o cookie tenha sido consentido, como é frequentemente exigido por lei. Se você gerenciar o consentimento do cookie com o código personalizado, poderá usar um cookie não rastreado chamado `mg_dnt` para restringir a coleta de dados.
 
 - Nome do cookie:
 
@@ -23,13 +23,13 @@ Isso pode não funcionar com soluções de consentimento de cookies de terceiros
    `const DNT_COOKIE = "mg_dnt";`
    ```
 
-- Defina o cookie do not track para desativar a coleta de dados:
+- Defina o cookie do-not-track para desativar a coleta de dados:
 
    ```text
    `$.mage.cookies.set(DNT_COOKIE, true);`
    ```
 
-- Para limpar o cookie quando o usuário tiver aceitado cookies:
+- Para limpar o cookie quando o usuário aceitar os cookies:
 
    ```text
    `$.mage.cookies.clear(DNT_COOKIE);`
