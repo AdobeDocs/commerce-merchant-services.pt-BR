@@ -2,9 +2,9 @@
 title: Conector dos Commerce Services
 description: Saiba como integrar sua instância do Adobe Commerce ou Magento Open Source a serviços usando chaves de API de produção e sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
 workflow-type: tm+mt
-source-wordcount: '853'
+source-wordcount: '862'
 ht-degree: 0%
 
 ---
@@ -111,4 +111,4 @@ Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, fa�
 
 ## Sincronização do catálogo
 
-Quando o [!DNL Commerce] instância se conecta com sucesso ao [!DNL Commerce Services], o processo de sincronização do catálogo exporta dados do produto do [!DNL Commerce] servidor para [!DNL Commerce Services]. [Saiba mais](catalog-sync.md) sobre o processo de sincronização de catálogo.
+Quando o [!DNL Commerce] instância se conecta com sucesso ao [!DNL Commerce Services], o processo de sincronização do catálogo exporta dados do produto do [!DNL Commerce] servidor para [!DNL Commerce Services]. Atualmente, somente o Recommendations de produto usa o serviço de sincronização de catálogo. [Saiba mais](catalog-sync.md) sobre o processo de sincronização de catálogo.
