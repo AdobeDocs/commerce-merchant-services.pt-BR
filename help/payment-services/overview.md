@@ -4,9 +4,9 @@ description: Saiba como instalar e usar o [!DNL Payment Services] como uma solu�
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
-source-git-commit: c993a2afe5b4da478ab57cbb391bb524d83c3d1a
+source-git-commit: c074b6dffea913e92dfa29159a79d0c389b810fa
 workflow-type: tm+mt
-source-wordcount: '432'
+source-wordcount: '439'
 ht-degree: 0%
 
 ---
@@ -45,14 +45,19 @@ Seja você uma pequena empresa, uma empresa de médio porte ou uma grande empres
 
 [!DNL Payment Services] está disponível para [!DNL Adobe Commerce] e [!DNL Magento Open Source]. A variável [!DNL Payment Services] a extensão agora é compatível com o [!DNL Adobe Commerce] versões 2.4.x.
 
-Consulte [Política de ciclo de vida](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} e a variável [[!DNL Payment Services] notas de versão](release-notes.md) páginas para obter mais informações sobre lançamentos e versões específicas.
+Atualmente, [!DNL Payment Services] O está disponível nos seguintes países:
 
-## Cartões de crédito e moedas aceitos
+* Estados Unidos (US)
+* Canadá (CA)
+* Austrália (AUS)
+* França (FR)
+* Reino Unido (UK)
 
-Atualmente, [!DNL Payment Services] só estão disponíveis em:
+Consulte [Política de ciclo de vida](https://devdocs.magento.com/release/lifecycle-policy.html){target="_blank"} e a variável [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
 
-* Estados Unidos (US) e aceita moeda Dólar dos Estados Unidos (USD).
-* Canadá (CA) e aceita moeda de Dólar canadense (CAD).
+### Cartões de crédito e moedas aceitos
+
+[!DNL Payment Services] aceita as moedas dos países [em que está disponível](#availability).
 
 Consulte a [Disponibilidade de moeda do PayPal](https://developer.paypal.com/docs/platforms/checkout/reference/country-availability-advanced-cards/) para obter mais informações.
 

@@ -2,9 +2,9 @@
 title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
-source-git-commit: e076864a117be007eeb8003d9d6a472b704996ba
+source-git-commit: e9209d7361d0dd6b6f502df9a898a5a35c53ec1a
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1971'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,16 @@ Consulte [Disponibilidade](https://devdocs.magento.com/release/availability.html
 Essas notas de versão descrevem alterações e correções de recursos que ocorreram e foram lançadas fora das versões de recursos com versão normal do serviço hospedado.
 
 +++Atualizações do serviço hospedado
+
+_9 de junho de 2023_
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4288 --> Agora, os comerciantes podem [configurar _somente_ Botões de pagamento do PayPal](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#use-only-paypal-payment-buttons)—e _não_ use a opção de pagamento com cartão de crédito do PayPal — para fornecer uma variedade de opções de pagamento sem solicitar aprovação do cartão de crédito do PayPal.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4050 --> Adição de um [visualização de visualização de dados](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#order-payment-status-data-visualization-view), que aparece na Página Inicial do Serviço de Pagamento, para o relatório Status do pagamento da ordem.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4486--> Anteriormente, o botão PayPal PayLater não aparecia no checkout para comerciantes do Reino Unido. Esse problema está resolvido.
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4485--> As exibições de visualização de dados de relatório agora aparecem na Página inicial dos Serviços de pagamento quando os Serviços de pagamento estão desativados.
 
 _25 de janeiro de 2023_
 
@@ -56,6 +66,22 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e a variável [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.1.0
+
+_9 de junho de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg)<!-- Issue xxx --> Adição de suporte para o Adobe Commerce 2.4.7-beta1.
+
+![Novo](../assets/new.svg)<!-- Issue xxx --> Adicionado [disponibilidade nos seguintes países e moedas associadas](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/overview.html#availability): Austrália, França, Reino Unido.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4296 --> Adicionado [recursos expandidos para funções de Administrador](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/configure/settings.html#configure-roles) para garantir que os usuários Administradores possam criar e gerenciar pedidos de clientes e visualizar Serviços de pagamento no menu Vendas.
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4236 --> Adicionado [anulação automática para pedidos que incorrem em erros durante a finalização da compra](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/checkout.html#order-auto-voided-if-error).
+
+![Novo](../assets/new.svg)<!-- Issue PAY-4183 --> Funcionalidade criada para [mostrar o botão de opção de pagamento de cartão de crédito/débito](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options.html#debit-or-credit-card-button) na página de check-out.
 
 ## v2.0.0
 

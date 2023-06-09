@@ -4,9 +4,9 @@ description: Use o relatório de Pagamentos para obter total transparência no v
 role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
-source-git-commit: 817a01e98876bddf5f41a253501984539b3351cd
+source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
 workflow-type: tm+mt
-source-wordcount: '1335'
+source-wordcount: '1326'
 ht-degree: 0%
 
 ---
@@ -14,8 +14,6 @@ ht-degree: 0%
 # Relatório de pagamentos
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja.
-
-![Exibição de relatórios financeiros](assets/reports-justpayouts.png)
 
 Há duas visualizações de relatórios de Pagamentos disponíveis para permitir que você veja informações detalhadas sobre todos os seus pagamentos:
 
@@ -34,7 +32,7 @@ A visualização de dados de Pagamentos está disponível na Página inicial dos
 
 No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** para ver o gráfico de visualização de dados de créditos vs. débitos e as médias móveis ao longo do tempo.
 
-![Visualização de dados de pagamento no Administrador](assets/payouts-report.png)
+![Visualização de dados de pagamento no Administrador](assets/payouts-report.png){zoomable=yes}
 
 Clique em **[!UICONTROL View Report]** para navegar até a tabela detalhada [Exibição do relatório de pagamentos](#payouts-report-view).
 
@@ -70,13 +68,13 @@ A visualização de relatório Pagamentos está disponível na visualização Pa
 
 No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Payouts]** para ver a visualização detalhada do relatório de Pagamentos em formato tabular.
 
-![Transações de pagamento no Administrador](assets/payouts-report-new.png)
+![Transações de pagamento no Administrador](assets/payouts-report-new.png){zoomable=yes}
 
 É possível configurar essa visualização, de acordo com as seções neste tópico, para apresentar melhor os dados que você deseja ver.
 
 Consulte IDs de ordem e transação vinculadas do Commerce, valores da transação, método de pagamento por transação e muito mais, tudo no relatório de Pagamentos no Administrador.
 
-Você pode fazer download de transações de pagamento em um formato de arquivo .csv para uso em software de contabilidade ou gerenciamento de pedidos existente.
+Você pode [baixar transações de pagamento](#download-transactions) em um formato de arquivo .csv para uso em software existente de contabilidade ou gerenciamento de pedidos.
 
 >[!NOTE]
 >
@@ -86,9 +84,9 @@ Você pode fazer download de transações de pagamento em um formato de arquivo 
 
 Na visualização de relatório de Pagamentos, é possível selecionar a fonte de dados —_[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_—para o qual você deseja ver os resultados do relatório.
 
-![Seleção de fontes de dados](assets/datasource.png)
+![Seleção de fontes de dados](assets/datasource.png){width=400px}
 
-Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver informações do relatório das suas lojas em tempo real. Se [!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações de relatório para seu ambiente de Sandbox.
+Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver informações do relatório de armazenamentos no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver as informações do relatório armazenadas no modo sandbox.
 
 As seleções de fonte de dados funcionam da seguinte maneira:
 
@@ -154,27 +152,27 @@ Os relatórios de pagamento incluem as seguintes informações.
 | [!UICONTROL Code] | Código da transação que indica Crédito (*CR*) ou Débito (*DR*) |
 | [!UICONTROL Reference ID] | ID da transação original para a qual este evento está relacionado |
 | [!UICONTROL Invoice] | ID da fatura (uma por pedido) da transação |
-| [!UICONTROL Commerce order] | ID da ordem de comércio <br> <br>Para ver as [informações do pedido](https://docs.magento.com/user-guide/sales/orders.html){target="_blank"}, clique no ID. |
-| [!UICONTROL Commerce trans] | ID de transação comercial <br> <br>Para ver as [informações da transação](https://docs.magento.com/user-guide/sales/transactions.html){target="_blank"}, clique no ID. |
-| [!UICONTROL Pay method] | Tipo de cartão de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL APPLE_PAY]*, *[!UICONTROL CREDIT_CARD]*—e o provedor de cartões associado (como *Visa* ou *MasterCard*) |
-| [!UICONTROL Trans amt] | Valor da transação |
-| [!UICONTROL Cur] | Unidade monetária para valor da transação |
-| [!UICONTROL Pending] | Valor a ser desembolsado |
-| [!UICONTROL Cur] | Unidade monetária para o valor pendente |
-| [!UICONTROL Seller amt] | Quantidade de fundos transferidos de ou para um cliente <br> <br>Os fundos que saem da conta do vendedor mostram um prefixo de traço (-). |
-| [!UICONTROL Cur] | Unidade monetária para o valor do vendedor |
-| [!UICONTROL Partner fee] | Taxas de parceiro associadas à transação <br> <br>Os fundos que saem da conta de taxa do parceiro mostram um prefixo de traço (-). |
-| [!UICONTROL Cur] | Unidade monetária da taxa do parceiro |
-| [!UICONTROL Prov fees] | Taxas associadas à transação <br> <br>Os fundos que saem da conta de taxas do provedor mostram um prefixo de traço (-). |
-| [!UICONTROL Cur] | Unidade monetária para a taxa do provedor |
-| [!UICONTROL Fee %] | Porcentagem do valor da transação cobrado como uma taxa |
-| [!UICONTROL Fixed fee] | Valor da taxa fixa do provedor |
-| [!UICONTROL Chbk fee] | Taxa de chargeback associada à transação <br> <br>Um prefixo de traço (-) indica que a taxa de chargeback foi revertida. |
-| [!UICONTROL Cur] | Unidade monetária para a taxa de substituição de débito |
-| [!UICONTROL Hold amt] | Quantia colocada em espera ou liberada da retenção <br> <br>Um prefixo de traço (-) indica que os fundos em espera estão sendo liberados. |
-| [!UICONTROL Cur] | Unidade monetária para o valor de retenção |
-| [!UICONTROL Recoup amt] | Valor recuperado da conta de recuperação <br> <br>Os fundos que saem da conta de recuperação mostram um prefixo de traço (-). |
-| [!UICONTROL Cur] | Unidade monetária para o valor de recuperação |
+| [!UICONTROL Commerce order] | ID da ordem de comércio <br> <br>Para ver as [informações do pedido](https://docs.magento.com/user-guide/sales/orders.html), clique no ID. |
+| [!UICONTROL Commerce trans] | ID de transação comercial |
+| [!UICONTROL Pay method] | Tipo de cartão de crédito—*[!UICONTROL BANK]*, *[!UICONTROL PAYPAL]*, *[!UICONTROL CREDIT_CARD]*—e o provedor de cartões associado (como *Visa* ou *MasterCard*) |
+| [!UICONTROL TRANS AMT] | Valor da transação |
+| [!UICONTROL CUR] | Unidade monetária para valor da transação |
+| [!UICONTROL PENDING] | Valor a ser desembolsado |
+| [!UICONTROL CUR] | Unidade monetária para o valor pendente |
+| [!UICONTROL SELLER AMT] | Quantidade de fundos transferidos de ou para um cliente <br> <br>Os fundos que saem da conta do vendedor mostram um prefixo de traço (-). |
+| [!UICONTROL CUR] | Unidade monetária para o valor do vendedor |
+| [!UICONTROL PARTNER FEE] | Taxas de parceiro associadas à transação <br> <br>Os fundos que saem da conta de taxa do parceiro mostram um prefixo de traço (-). |
+| [!UICONTROL CUR] | Unidade monetária da taxa do parceiro |
+| [!UICONTROL PROV FEES] | Taxas associadas à transação <br> <br>Os fundos que saem da conta de taxas do provedor mostram um prefixo de traço (-). |
+| [!UICONTROL CUR] | Unidade monetária para a taxa do provedor |
+| [!UICONTROL FEE %] | Porcentagem do valor da transação cobrado como uma taxa |
+| [!UICONTROL FIXED FEE] | Valor da taxa fixa do provedor |
+| [!UICONTROL CHBK FEE] | Taxa de chargeback associada à transação <br> <br>Um prefixo de traço (-) indica que a taxa de chargeback foi revertida. |
+| [!UICONTROL CUR] | Unidade monetária para a taxa de substituição de débito |
+| [!UICONTROL HOLD AMT] | Quantia colocada em espera ou liberada da retenção <br> <br>Um prefixo de traço (-) indica que os fundos em espera estão sendo liberados. |
+| [!UICONTROL CUR] | Unidade monetária para o valor de retenção |
+| [!UICONTROL RECOUP AMT] | Valor recuperado da conta de recuperação <br> <br>Os fundos que saem da conta de recuperação mostram um prefixo de traço (-). |
+| [!UICONTROL CUR] | Unidade monetária para o valor de recuperação |
 
 ### Tipos de transação
 

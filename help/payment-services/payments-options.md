@@ -2,9 +2,9 @@
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 9bc392f2ae12269ded6174b830562444d6827f5f
+source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
 workflow-type: tm+mt
-source-wordcount: '1041'
+source-wordcount: '1156'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Também é possível alterar o layout, a largura, a altura e o estilo externo do
 
 [!DNL PayPal Smart Buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
 
-![[!DNL PayPal Smart Buttons] opções](assets/buttons-md.png)
+![[!DNL PayPal Smart Buttons] opções](assets/payment-buttons.png){width="500"}
 
 Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na Página Inicial dos Serviços de Pagamento.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 
@@ -67,6 +67,14 @@ A variável [!DNL Apple Pay] O botão é visível nas exibições página do pro
 >
 > Para usar [!DNL Apple Pay] para suas lojas, conclua [autorregistro com [!DNL Apple Pay]](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) (_Registre seu domínio ativo_ (somente na seção ) e [configure-o para suas lojas no [!DNL Payment Services]](settings.md#payment-buttons).
 
+### Botão Cartão de crédito ou débito do PayPal
+
+Os clientes podem fazer check-out usando o botão PayPal Débito ou Cartão de crédito.
+
+O botão PayPal Debit or Credit card (Cartão de crédito ou débito do PayPal) está visível na página de check-out.
+
+Esta opção pode ser usada para apresentar uma opção de pagamento com cartão de crédito ou débito do PayPal aos seus compradores quando você não tem um provedor de cartão de crédito alternativo.
+
 ### [!DNL Pay Later] botão
 
 Ofereça aos clientes pagamentos de curto prazo, sem juros e outras opções de financiamento para que eles possam comprar agora e pagar posteriormente com o [!DNL Pay Later] botão.
@@ -76,9 +84,9 @@ A variável [!DNL Pay Later] O botão é visível nas exibições da página do 
 * **Quando um cliente seleciona um produto entre US$ 30 e US$ 600**, mensagens no PayPal e [!DNL Pay Later] fornece ao cliente mais informações sobre a [!DNL Pay in 4] opção de pagamento. Os clientes podem clicar em **Saiba mais** para saber mais sobre o &quot;[!DNL Pay in 4]opção &quot; _ou_ clique no texto &quot;Or see 6 months special financing&quot; no pop-up para saber mais e solicitar a opção PayPal Credit.
 * **Quando um cliente seleciona um ou mais produtos acima de US$ 98,99**, mensagens no PayPal e [!DNL Pay Later] oferece aos clientes mais informações sobre a opção de pagamento PayPal Credit. Os clientes podem clicar em **Saiba mais** para conhecer e solicitar a opção PayPal Credit, _ou_ clique no texto &quot;Ou veja Pagar em 4&quot; no pop-up para saber mais sobre a [!DNL Pay in 4] opção.
 
-   >[!NOTE]
-   >
-   >Os valores listados acima estão sujeitos a alterações.
+  >[!NOTE]
+  >
+  >Os valores listados acima estão sujeitos a alterações.
 
 Consulte [Configurações](settings.md#payment-buttons) para saber como desativar/ativar o [!DNL Pay Later] mensagens.
 
@@ -93,6 +101,29 @@ A variável [!DNL Pay Now] O botão está visível na janela pop-up do PayPal qu
 
 Se o valor final do pedido ainda não for conhecido (como quando você ainda não tem informações sobre o endereço de entrega) e o cliente estiver no processo de finalização da página do produto, do minicarrinho ou do carrinho de compras, uma _Continuar_ botão está disponível. Quando um cliente clica em _Continuar_ Depois de confirmar o método de pagamento, ele é direcionado a uma página de revisão do pedido para coletar os detalhes necessários antes de concluir a finalização da compra.
 
+## Usar somente botões de pagamento do PayPal
+
+Para colocar rapidamente sua loja no modo de produção, você pode configurar _somente_ Botões de pagamento do PayPal (Venmo, PayPal etc.)—em vez de também usar a opção de pagamento com cartão de crédito PayPal.
+
+Isso permite:
+
+* Forneça uma variedade de opções de pagamento para seus clientes sem solicitar aprovação de cartão de crédito por meio do PayPal.
+* Use seu fornecedor de cartão de crédito existente para pagamentos de cartão de crédito, ao mesmo tempo que utiliza outras opções de pagamento do PayPal.
+* Use os botões de pagamento do PayPal em uma região na qual o PayPal não oferece suporte a cartões de crédito como uma opção de pagamento.
+
+Para **capturar pagamentos com _somente_ Botões de pagamento do PayPal (_não_ a opção de pagamento com cartão de crédito do PayPal)**:
+
+1. Verifique se o armazenamento está [no modo de produção](settings.md#enable-payment-services).
+1. [Configurar os botões de pagamento do PayPal desejados](settings.md#payment-buttons) em Configurações.
+1. Girar _Desligado_ o **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** opção no _[!UICONTROL Payment buttons]_seção.
+
+Para **capture pagamentos com seu provedor de cartão de crédito atual _e_ Botões de pagamento do PayPal**:
+
+1. Verifique se o armazenamento está [no modo de produção](settings.md#enable-payment-services).
+1. [Configurar os botões de pagamento do PayPal desejados](settings.md#payment-buttons).
+1. Girar _Desligado_ o **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** opção no _[!UICONTROL Payment buttons]_seção.
+1. Girar _Desligado_ o **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** opção no _[!UICONTROL Credit card fields]_e use sua [conta do provedor de cartão de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).
+
 ## Recálculo de pedido
 
 Quando um cliente entra no fluxo de finalização do minicarrinho, carrinho de compras ou página do produto, ele é direcionado a uma página de revisão do pedido, onde pode ver o endereço de envio selecionado em uma janela pop-up do PayPal. Depois que o cliente selecionar o método de entrega, a quantia da ordem será recalculada apropriadamente e o cliente poderá ver os custos e impostos de entrega.
@@ -100,14 +131,6 @@ Quando um cliente entra no fluxo de finalização do minicarrinho, carrinho de c
 Quando um cliente entra no fluxo de finalização da página de finalização da compra, o sistema já sabe o endereço de entrega e o valor final calculado, e os totais são devidamente representados.
 
 Feriados fiscais, custos de envio e imposto sobre vendas podem variar amplamente de local para local. Depois [!DNL Payment Services] recebe o endereço e a taxa de entrega, ele recalcula rapidamente todos os custos aplicáveis e os exibe adequadamente durante os últimos estágios da finalização.
-
-## Check-out da página do produto
-
-Quando um cliente faz o check-out diretamente da página do produto, usando o PayPal ou [!DNL Pay Later] , somente o item representado na página atual do produto é comprado. Os itens que já residem no carrinho do cliente não são adicionados ao fluxo de check-out e não são comprados.
-
-Se o cliente cancelar o pedido, o item na página do produto atual será adicionado ao carrinho do cliente, juntando todos os outros itens presentes no carrinho. Essa função permite que o cliente compre rapidamente o item que está visualizando no momento, além de reter quaisquer outros itens adicionados ao carrinho anteriormente ao navegar pelos produtos.
-
-Quando um cliente entra no fluxo de check-out da página do produto, a página de check-out é simplificada — a visualização mostra apenas os dados e as opções relacionados ao pedido.
 
 ## Compartimentalização de cartão de crédito
 
