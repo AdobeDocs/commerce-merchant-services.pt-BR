@@ -2,9 +2,9 @@
 title: Eventos
 description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
-source-git-commit: ddacfc053f83be750c63ba376519169b38f7f478
+source-git-commit: 7b34b66d5fb199e75b321a7d7ff0f98a3a0dcf8b
 workflow-type: tm+mt
-source-wordcount: '4596'
+source-wordcount: '4605'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Além dos dados coletados pelos eventos a seguir, você também obtém [outros d
 
 ## Eventos da loja
 
-Os eventos da loja coletam dados comportamentais anônimos dos compradores enquanto eles navegam pelo site. Os dados coletados por esses eventos podem ser usados para criar promoções e campanhas direcionadas a um conjunto específico de compradores.
+Os eventos da loja coletam dados comportamentais anônimos dos compradores enquanto eles navegam pelo site. Você pode usar os dados que esses eventos coletam para criar promoções e campanhas direcionadas a um conjunto específico de compradores. Os dados de eventos da loja incluem apenas produtos simples e configuráveis.
 
 >[!NOTE]
 >

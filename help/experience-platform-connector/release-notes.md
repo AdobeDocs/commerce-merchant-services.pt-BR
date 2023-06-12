@@ -2,9 +2,9 @@
 title: Notas de versão
 description: As informações mais recentes da versão do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 22823b662eefa953fcca6ae78f6c37ee8abff3d1
+source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
 workflow-type: tm+mt
-source-wordcount: '345'
+source-wordcount: '371'
 ht-degree: 1%
 
 ---
@@ -28,6 +28,11 @@ Consulte a documentação do desenvolvedor para [saiba mais sobre a compatibilid
 Essas notas de versão descrevem alterações de recursos e correções relacionadas a extensões usadas pelo conector Experience Platform.
 
 +++Atualizações de serviço com suporte
+
+_10 de junho de 2023_
+
+* ![Correção](../assets/fix.svg) - Correção de um problema ao `orderId` não estava transmitindo no contexto devido a prefixos no identificador de pedido do Commerce.
+* ![Correção](../assets/fix.svg) - Configurações atualizadas da Política de segurança de conteúdo.
 
 _30 de março de 2023_
 
