@@ -2,9 +2,9 @@
 title: "Visão geral da integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
-source-git-commit: 86e6fdb653278f3e70640155d697897a2ea1b674
+source-git-commit: 8f842732334dc8b1f8ebdf76310e16abe4e6b1b6
 workflow-type: tm+mt
-source-wordcount: '515'
+source-wordcount: '545'
 ht-degree: 0%
 
 ---
@@ -66,11 +66,31 @@ Os clientes do Live Search podem usar o novo [Indexador de preços SaaS](../pric
 
 ### suporte para PWA
 
-O suporte ao Live Search é considerado em beta porque nem todo o PWA foi testado com [!DNL Live Search]. Funcionalidades básicas, como pesquisa e listagem de produtos, funcionam em Venia, mas algumas permutas de Graphql podem não funcionar corretamente.
+[!DNL Live Search] funciona com o PWA Studio, mas os usuários podem ver pequenas diferenças em comparação a outras implementações do Commerce. Funcionalidades básicas, como pesquisa e listagem de produtos, funcionam em Venia, mas algumas permutas de Graphql podem não funcionar corretamente. Também pode haver diferenças de desempenho.
 
-* A atual implementação do PWA beta do [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
-* [!DNL Live Search] O no PWA não suporta [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/).
+* A atual implementação do PWA de [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
+* [!DNL Live Search] O no PWA não suporta [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Por isso, o merchandising inteligente não funcionará.
 * Filtrar diretamente em `description`, `name`, `short_description` não é compatível com o GraphQL quando usado com [PWA](https://developer.adobe.com/commerce/pwa-studio/), mas são retornados com um filtro mais geral.
+
+Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
+
+1. Instalar [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
+1. Defina o `environmentId` no `storeDetails` objeto.
+
+   ```javascript
+   const storeDetails: StoreDetailsProps = {
+       environmentId: <Storefront_ID>,
+       websiteCode: "base",
+       storeCode: "main_website_store",
+       storeViewCode: "default",
+       searchUnitId: searchUnitId,
+       config: {
+           minQueryLength: 5,
+           pageSize: 8,
+           currencySymbol: "$",
+           },
+       };
+   ```
 
 ### Não suportado no momento
 

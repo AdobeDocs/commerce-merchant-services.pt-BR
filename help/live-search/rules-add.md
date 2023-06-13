@@ -2,9 +2,9 @@
 title: "Adicionar regras"
 description: "Saiba como criar [!DNL Live Search] regras."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 2d4c96679b93a97e032fcbb50a27cbd579554795
+source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
 workflow-type: tm+mt
-source-wordcount: '1401'
+source-wordcount: '1419'
 ht-degree: 0%
 
 ---
@@ -85,6 +85,10 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 * Nenhum: os produtos são ordenados por Relevância
 
 1. Selecione o tipo de estratégia para a regra. A janela Testar regra exibe os resultados esperados.
+
+>[!NOTE]
+>
+>Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
 
 ## Adição de eventos
 

@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Notas de versão'
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
-source-git-commit: f955cfc918c19a3c32126d8c9ef8a59b0e0dce0a
+source-git-commit: d4f22cdae9b4b0a19691465ae87e344847672698
 workflow-type: tm+mt
-source-wordcount: '1241'
+source-wordcount: '1277'
 ht-degree: 0%
 
 ---
@@ -19,6 +19,11 @@ As atualizações incluem:
 ![Correção](../assets/fix.svg) Correções e aprimoramentos
 ![Bug](../assets/bug.svg) Problemas conhecidos
 
+
+_13 de junho de 2023_
+
+![Novo](../assets/new.svg) O Live Search agora oferece suporte a mais 5 [valores de configuração](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/configuration.html).
+![Correção](../assets/fix.svg) Correção de um problema em que alguns caracteres, como aspas ou apóstrofos, causavam problemas de classificação. A reindexação resolverá esses problemas.
 
 _25 de abril de 2023_
 
