@@ -2,9 +2,9 @@
 title: Notas de versão
 description: As informações mais recentes da versão do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: b48f9eadda233f4996f1e1d806ecc973cfd241c2
+source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
 workflow-type: tm+mt
-source-wordcount: '371'
+source-wordcount: '390'
 ht-degree: 1%
 
 ---
@@ -45,6 +45,14 @@ _12 de outubro de 2022_
 * ![Novo](../assets/new.svg) - Adição de suporte para um [Loja AEM](overview.md#aem-support)
 
 +++
+
+## 3.0.0-beta1
+
+_13 de junho de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+* ![Novo](../assets/new.svg) - (Beta) Adição da capacidade de [enviar ordem histórica](connect-data.md#beta-send-historical-order-data) dados e status para o Experience Platform.
 
 ## 2.2.0
 
