@@ -2,9 +2,9 @@
 title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
-source-git-commit: 44d36c530ba95f38c264ac40123ea12ec98c32b3
+source-git-commit: 36dd961d06f279143e90f3a1f5a6114db14e8c1b
 workflow-type: tm+mt
-source-wordcount: '1156'
+source-wordcount: '1171'
 ht-degree: 0%
 
 ---
@@ -107,7 +107,7 @@ Para colocar rapidamente sua loja no modo de produção, você pode configurar _
 
 Isso permite:
 
-* Forneça uma variedade de opções de pagamento para seus clientes sem solicitar aprovação de cartão de crédito por meio do PayPal.
+* Forneça uma variedade de opções de pagamento para seus clientes, incluindo os botões de pagamento Venmo e PayPal, com a opção de desativar os campos de cartão hospedados no PayPal e usar um provedor de cartão de crédito existente.
 * Use seu fornecedor de cartão de crédito existente para pagamentos de cartão de crédito, ao mesmo tempo que utiliza outras opções de pagamento do PayPal.
 * Use os botões de pagamento do PayPal em uma região na qual o PayPal não oferece suporte a cartões de crédito como uma opção de pagamento.
 
