@@ -2,9 +2,9 @@
 title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
-source-git-commit: cccdcfe28150d929d9ff7de4459bbfef941860a4
+source-git-commit: 8b57f2269ae13033f26c0e5e468bc35ce9deaf9f
 workflow-type: tm+mt
-source-wordcount: '1288'
+source-wordcount: '1287'
 ht-degree: 0%
 
 ---
@@ -163,7 +163,7 @@ O desenvolvedor ou SI configura o espaço de dados SaaS conforme descrito na se�
 
 ## Sincronizar dados do catálogo {#synchronize-catalog-data}
 
-[!DNL Live Search] O requer dados de produto sincronizados para operações de pesquisa e dados de atributo sincronizados para configurar facetas. A sincronização inicial entre o catálogo de produtos e o serviço de catálogo começa quando [!DNL Live Search] é conectado pela primeira vez. Dependendo do método de instalação e do tamanho do catálogo, pode levar até oito horas para que os dados sejam exportados e indexados pelo [!DNL Live Search]. A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
+[!DNL Live Search] O requer dados de produto sincronizados para operações de pesquisa e dados de atributo sincronizados para configurar facetas. A sincronização inicial entre o catálogo de produtos e o serviço de catálogo começa quando [!DNL Live Search] é conectado pela primeira vez. Dependendo do método de instalação e do tamanho do catálogo, pode levar até 30 minutos para que os dados sejam exportados e indexados pelo [!DNL Live Search]. A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
