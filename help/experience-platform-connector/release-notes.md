@@ -2,9 +2,9 @@
 title: Notas de versão
 description: As informações mais recentes da versão do Adobe Experience Platform Connector da Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
-source-git-commit: 520a05f4cf944261a5f35baae045318e836b4a4b
+source-git-commit: 9dcb5a38f6ec2ed13a07d80b6a9d5a64efcc13ee
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '465'
 ht-degree: 1%
 
 ---
@@ -36,23 +36,35 @@ _10 de junho de 2023_
 
 _30 de março de 2023_
 
-* ![Novo](../assets/new.svg) - Uma nova extensão foi adicionada, chamada `data-services-b2b` que inclui [eventos da lista de requisições](events.md#b2b-events) para comerciantes B2B
+* ![Novo](../assets/new.svg) - Uma nova extensão foi adicionada, chamada `data-services-b2b` que inclui [eventos da lista de requisições](events.md#b2b-events) para os comerciantes B2B.
 * ![Novo](../assets/new.svg) - Adição da variável `uniqueIdentifier` campo para [pesquisa](events.md#search-events) eventos. Esse novo campo permite que os comerciantes façam referência cruzada de quais solicitações de pesquisa correspondem a quais respostas de pesquisa.
 
 _12 de outubro de 2022_
 
-* ![Novo](../assets/new.svg) - Adição de dois [eventos da loja](events.md): `openCart` e `removeFromCart` ao SDK de eventos e ao coletor da Adobe Commerce Storefront
-* ![Novo](../assets/new.svg) - Adição de suporte para um [Loja AEM](overview.md#aem-support)
+* ![Novo](../assets/new.svg) - Adição de dois [eventos da loja](events.md): `openCart` e `removeFromCart` ao SDK de eventos e ao coletor da Adobe Commerce Storefront.
+* ![Novo](../assets/new.svg) - Adição de suporte para um [Loja AEM](overview.md#aem-support).
 
 +++
 
-## 3.0.0-beta1
+## 2.3.0
+
+_27 de junho de 2023_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+* ![Novo](../assets/new.svg) - Adição da capacidade de [desativar envio de eventos da loja](connect-data.md#data-collection) ao Experience Platform.
+* ![Correção](../assets/fix.svg) - Configurações atualizadas da Política de segurança de conteúdo.
+* ![Correção](../assets/fix.svg) - Correção do suporte para eventos de back office na versão 2.4.7 do Commerce.
+* ![Novo](../assets/new.svg) - Adição de uma mensagem de notificação sobre a invalidação de cache ao salvar alterações no formulário Conector de Experience Platform.
+
+
+## 3.0.0-beta1 (somente interno)
 
 _13 de junho de 2023_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-* ![Novo](../assets/new.svg) - (Beta) Adição da capacidade de [enviar ordem histórica](connect-data.md#beta-send-historical-order-data) dados e status para o Experience Platform.
+* ![Novo](../assets/new.svg) - (Beta) Adição da capacidade de [enviar ordem histórica](connect-data.md#beta-send-historical-order-data) dados e status para o Experience Platform. Esse recurso está disponível somente para usuários beta. Você pode participar do beta enviando um email para o seguinte endereço: [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 ## 2.2.0
 
@@ -69,7 +81,7 @@ _28 de fevereiro de 2023_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-* ![Novo](../assets/new.svg) - Adição de suporte ao PHP 8.2 para todos os módulos de conector de Experience Platform
+* ![Novo](../assets/new.svg) - Adição de suporte ao PHP 8.2 para todas as extensões do conector Experience Platform.
 
 ## 2.1.0
 
@@ -94,8 +106,8 @@ _12 de outubro de 2022_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-* ![Novo](../assets/new.svg) - Adição da capacidade de especificar seu próprio AEP Web SDK quando [conectando](connect-data.md) sua instância do Adobe Commerce para o Experience Platform
-* ![Correção](../assets/fix.svg) - Atualização do requisito de escopo de sequência de dados para que as IDs de sequência de dados devam ser enviadas ao site em vez de armazenadas
+* ![Novo](../assets/new.svg) - Adição da capacidade de especificar seu próprio AEP Web SDK quando [conectando](connect-data.md) sua instância do Adobe Commerce para o Experience Platform.
+* ![Correção](../assets/fix.svg) - Atualização do requisito de escopo de sequência de dados para que as IDs de sequência de dados devam ser enviadas ao site em vez de armazenadas.
 
 ## 1.0.0
 
@@ -103,4 +115,4 @@ _9 de agosto de 2022_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-* ![Novo](../assets/new.svg) - Versão de disponibilidade geral
+* ![Novo](../assets/new.svg) - Versão de disponibilidade geral.
