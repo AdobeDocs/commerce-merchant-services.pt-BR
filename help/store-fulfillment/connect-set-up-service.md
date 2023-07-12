@@ -4,9 +4,9 @@ description: Estabeleça as conexões entre o Adobe Commerce e a solução Store
 role: User, Admin
 level: Intermediate
 exl-id: 74c71c43-305a-4ea7-84f8-95f3ce0a9482
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 19c4d3263c22914672b38c5dc5ec9908889bb9b6
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '453'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,10 @@ Para integrar o Adobe Commerce aos serviços de Atendimento da loja, crie uma in
    - Insira seu endereço de email
    - Digite a senha da sua conta de administrador
 
-1. Configurar [!UICONTROL API Resource Access permissions] para a integração - selecione `[!UICONTROL All]`
+1. Configure permissões de Acesso a recursos da API para a integração com o seguinte:
+
+   - Vendas > Atualização de ordem BOPIS
+   - Sistema > Armazenar Permissões de Aplicativo de Atendimento
 
 1. Gere os tokens de acesso para autenticação salvando e ativando a integração.
 
