@@ -2,7 +2,9 @@
 title: Conector dos Commerce Services
 description: Saiba como integrar sua instância do Adobe Commerce ou Magento Open Source a serviços usando chaves de API de produção e sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
-source-git-commit: 506b00e72d65fbafa071476608bb658cb59404b4
+feature: Services, Saas
+role: Admin, User
+source-git-commit: 541655aa268223959bb43e741bbd4b2615acddb1
 workflow-type: tm+mt
 source-wordcount: '862'
 ht-degree: 0%
