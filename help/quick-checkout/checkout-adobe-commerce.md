@@ -2,7 +2,8 @@
 title: "Fluxo de check-out para um usuário do Adobe Commerce"
 description: "Visão geral do [!DNL Quick Checkout] para um usuário do Adobe Commerce."
 exl-id: 085e393b-15f6-4d5a-a04d-927b1f95b74e
-source-git-commit: f790732804e110aad298689c0ddf74547ff17618
+feature: Checkout, Services, Storefront
+source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
 workflow-type: tm+mt
 source-wordcount: '443'
 ht-degree: 0%
@@ -64,4 +65,4 @@ Se não [!DNL Bolt] for encontrada, os compradores continuarão com o checkout p
 - Revisar método de pagamento
 - A opção de se registrar no [!DNL Bolt] para obter check-outs mais rápidos antes de fazer o pedido. O comprador pode concordar com os termos e condições para criar sua [!DNL Bolt] conta.
 
-   ![Lembrar [!DNL Bolt]](assets/checkbox-remember-bolt.png)
+  ![Lembrar [!DNL Bolt]](assets/checkbox-remember-bolt.png)
