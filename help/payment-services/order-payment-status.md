@@ -4,7 +4,8 @@ description: Use o relatório de status de pagamento de Pedido para obter visibi
 role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
-source-git-commit: 8295b7c4ea407f0528d6be69655a8b12f7defe15
+feature: Payments, Checkout, Orders
+source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '1828'
 ht-degree: 0%
@@ -106,7 +107,7 @@ Os únicos dados exportados e agrupados para fins de relatório são os dados us
 
 Mesmo que, por padrão, a reindexação ocorra em `ON SAVE` , é recomendável indexar no `BY SCHEDULE` modo. A variável `BY SCHEDULE` O índice é executado em uma programação cron de um minuto, e quaisquer dados alterados são exibidos no relatório Status do pedido dentro de dois minutos após qualquer alteração de dados. Essa reindexação programada ajuda a reduzir qualquer esforço na loja, especialmente se você tiver um grande volume de pedidos recebidos, pois isso acontece em um cronograma (não conforme cada pedido é feito).
 
-Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Administrador](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
 
 Para saber como configurar a exportação de dados, consulte [Configuração da linha de comando](configure-cli.md#configure-data-export).
 
