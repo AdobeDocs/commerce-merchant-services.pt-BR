@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: Saiba como instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 742af84407943e7df47f986717b6dc31dc067863
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '599'
 ht-degree: 0%
 
 ---
@@ -136,6 +136,8 @@ A API do Serviço de catálogo é acessível por meio de comandos POST em HTTPS.
 Para obter a chave de API, vá para a área Conector do Commerce Service no administrador e copie a chave de API pública.
 
 Leia o [Documentação do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/) para entender como consultar e enviar os cabeçalhos necessários para gerar solicitações de API.
+
+Para permitir o Serviço de Catálogo por meio de um firewall, adicione `commerce.adobe.io` à lista de permissões.
 
 ## Serviço de catálogo e API Mesh
 

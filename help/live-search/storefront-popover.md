@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "O [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 3820736a25942b147d6e2c7b8820c360d6a0a535
+source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
 workflow-type: tm+mt
-source-wordcount: '399'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -39,9 +39,20 @@ Por padrão, o valor Pesquisa no catálogo - Limite de preenchimento automático
 1. Defina o **Limite de preenchimento automático** ao número de linhas que você deseja permitir na variável [!DNL popover].
 1. Quando terminar, clique em **Salvar configuração**.
 
+## Serviço de catálogo
+
+A variável [Serviço de catálogo do Adobe Commerce](../catalog-service/overview.md) A extensão do fornece dados avançados de catálogo do modelo de visualização para renderizar de maneira rápida e completa as experiências da loja relacionadas ao produto. O Serviço de catálogo pode ser usado em conjunto com o Live Search para fornecer funcionalidades que atualmente não são compatíveis com a extensão nativa:
+
+* Amostras de cores
+* Atributos estendidos
+* Outras informações sobre o produto podem ser trazidas
+
+Os comerciantes podem personalizar e estender widgets ou elementos de vitrine usando o Serviço de catálogo, mas isso está fora do escopo da equipe de suporte do Adobe.
+
 ## Limitação
 
-* A variável [!DNL Live Search] [!DNL storefront popover] está disponível somente para lojas que usam o *Luma* tema ou um tema personalizado baseado em *Luma*.
+* A variável [!DNL Live Search] [!DNL storefront popover] está disponível somente para lojas que usam o *Luma* tema ou um tema personalizado baseado em *Luma*. As navegações estruturais na página de resultados da pesquisa não terão *Lume* estilo.
 * A variável [!DNL popover] não suporta o *Em branco* tema. Consulte [Estilo [!DNL Popover] Elementos](storefront-popover-styling.md) para saber mais.
 * A variável [!DNL popover] não é suportado no formulário Pedido rápido.
-* Os comerciantes podem personalizar e estender widgets ou elementos de vitrine (por exemplo: integrando amostras de cores aos resultados do Live Search) usando a variável [Serviço de catálogo](../catalog-service/overview.md) API da loja, mas está fora do escopo para a equipe de suporte do Adobe.
+* As listas de desejos e as comparações de produtos não são compatíveis.
+* Somente a moeda base é compatível.

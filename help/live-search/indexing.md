@@ -2,7 +2,7 @@
 title: "[!DNL Live Search] Indexação"
 description: "Saiba como [!DNL Live Search] indexa propriedades de atributo de produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 9be12e2ce8231dc188e3b79bba3e39d3cff52892
+source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
 workflow-type: tm+mt
 source-wordcount: '581'
 ht-degree: 0%
@@ -73,7 +73,7 @@ Fluxo de trabalho de atualização de transmissão:
 
 ## Pesquisa de cliente
 
-A variável [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto classificável definindo o [propriedade storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Usado para classificar em listagens de produtos* para `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no [Classificar por](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) controle de paginação em páginas de catálogo. Até 300 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades da loja](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que podem ser pesquisadas e filtradas.
+A variável [!DNL Live Search] A API permite que um cliente classifique por qualquer atributo de produto classificável definindo o [propriedade storefront](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Usado para classificar em listagens de produtos* para `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no [Classificar por](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) controle de paginação em páginas de catálogo. Até 200 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades da loja](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que podem ser pesquisadas e filtradas.
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 
 ![[!DNL Live Search] diagrama da API de metadados de índice](assets/index-metadata-api.svg)
