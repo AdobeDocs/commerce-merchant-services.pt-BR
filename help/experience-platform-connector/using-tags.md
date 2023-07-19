@@ -2,7 +2,9 @@
 title: Coletar dados de comércio usando tags do Adobe Experience Platform
 description: Saiba como coletar dados do Commerce usando tags do Adobe Experience Platform.
 exl-id: 852fc7d2-5a5f-4b09-8949-e9607a928b44
-source-git-commit: bdd1378dcbbe806c98e8486a985389b2d0d4f34e
+role: Admin, Developer
+feature: Personalization, Integration
+source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
 workflow-type: tm+mt
 source-wordcount: '2650'
 ht-degree: 0%
@@ -24,9 +26,9 @@ Para coletar dados do evento do Commerce:
 
 - Instale o [SDK de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/commerce-events-sdk). Para vitrines do PHP, consulte [instalar](install.md) tópico. Para lojas PWA Studio, consulte o [guia PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/).
 
-   >[!NOTE]
-   >
-   > Fazer **não** [configurar](connect-data.md) a ID da organização e a ID da sequência de dados.
+  >[!NOTE]
+  >
+  > Fazer **não** [configurar](connect-data.md) a ID da organização e a ID da sequência de dados.
 
 ## Mapear dados da vitrine do Commerce para o Adobe Experience Platform
 
@@ -843,13 +845,13 @@ Crie os seguintes elementos de dados:
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `productContext.mainImageUrl`
+
    1. Carrinho:
+
    - **Nome**: `cart`
    - **Extensão**: `Adobe Client Data Layer`
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `shoppingCartContext`
-
-
 
 1. ID do carrinho:
 
