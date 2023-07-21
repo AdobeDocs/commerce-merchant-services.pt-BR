@@ -1,10 +1,11 @@
 ---
 title: Transferência de origem do Inventory management
 description: "Configurar estoques para o [!DNL Store Fulfillment solution] com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o estoque do estoque padrão para que você possa atribuí-lo às fontes configuradas para habilitar os recursos de Retirada da Loja exigidos pela solução de Atendimento da Loja."
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '396'
 ht-degree: 0%
@@ -26,7 +27,7 @@ Essas alterações de configuração ajudam você a realizar três coisas:
 
 1. [Origens de atribuição em massa](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) para adicionar as novas fontes para todos os seus produtos.
 
-1. [Atualizações em massa completas para atributos do produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para adicionar o `Allow Store Pickup` e `Allow Home Delivery` atributos aos produtos existentes. Quando a solução é instalada, os atributos têm a configuração ideal *padrão* valores. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de atualizações em massa.
+1. [Atualizações em massa completas para atributos do produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para adicionar o `Allow Store Pickup` e `Allow Home Delivery` atributos aos produtos existentes. Quando a solução é instalada, os atributos têm a configuração ideal *padrão* valores. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de updaContes em massa.
 
 O estoque é deduzido da origem selecionada (localização da loja de varejo ou depósito de comércio eletrônico). As origens usadas como depósitos de comércio eletrônico devem ser atribuídas ao mesmo estoque que o local de retirada da loja e priorizadas antes dos locais de varejo. Para obter informações adicionais, consulte [Priorizando Origens de um Estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 

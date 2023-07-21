@@ -1,19 +1,19 @@
 ---
 title: Configuração geral
 description: Definir configurações gerais para habilitar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para habilitar a integração entre o Adobe Commerce e os serviços de Atendimento da loja.
-role: User, Admin
+role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: e7493618e00e28e2de5043ae2d7e05a81110d8f1
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2440'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
 
 # Serviço de armazenamento e configuração de vendas
 
-Configurar [!DNL Store Fulfillment] do [!DNL Commerce] Admin para habilitar a extensão, especificar configurações de extensão, definir as configurações de segurança para usuários do aplicativo Store Assist e definir opções para métodos de entrega.
+Ativar [!DNL Store Fulfillment] extensão do [!DNL Commerce] Admin definindo as configurações de extensão, as configurações de segurança para usuários do aplicativo Store Assist e as opções do método de entrega.
 
 >[!IMPORTANT]
 >
@@ -25,11 +25,11 @@ Gerenciar configurações para Serviços de Atendimento da Loja do [!DNL Commerc
 
 - Habilite a extensão, defina as configurações globais e especifique as opções de segurança para conexões de usuário e contas do aplicativo Store Assist selecionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-   ![Configuração de serviços da Loja do Administrador para Atendimento da Loja](assets/store-services-admin-sf-config.png)
+  ![Configuração de serviços da Loja do Administrador para Atendimento da Loja](assets/store-services-admin-sf-config.png)
 
 - Configurar métodos de delivery selecionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
-   ![Configuração de vendas da Loja do Administrador para Atendimento da Loja](assets/store-sales-admin-sf-deliver-config.png)
+  ![Configuração de vendas da Loja do Administrador para Atendimento da Loja](assets/store-sales-admin-sf-deliver-config.png)
 
 ## Configurações básicas
 
@@ -109,7 +109,7 @@ Ativar o [!DNL Store Fulfillment] solução para adicionar os recursos de retira
 </tr>
 <tr>
 <td><strong>[!UICONTROL API Server URL]</strong></td>
-<td>O URL para o endpoint da API de Atendimento da Walmart Store. Esse deve ser o URL totalmente qualificado fornecido durante o processo de integração. Os clientes de Atendimento da loja recebem um URL de Sandbox e Produção. Ao adicionar os valores, copie e cole o URL completo, incluindo a barra à direita "/".</td>
+<td>O URL para o endpoint da API de Atendimento da Walmart Store. O valor deve ser o URL totalmente qualificado fornecido durante o processo de integração. Os clientes de Atendimento da loja recebem um URL de Sandbox e Produção. Ao adicionar os valores, copie e cole o URL completo, incluindo a barra à direita "/".</td>
 <td>Global</td>
 <td>Sim</td>
 </tr>
@@ -190,7 +190,7 @@ Você pode exibir detalhes sobre operações de sincronização de ordens no pai
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Especifica as tentativas de repetição para uma operação de sincronização de registros após a ocorrência de um erro crítico.<br></br>Erros críticos ocorrem sempre que a integração não obtém uma resposta positiva do serviço de preenchimento. Isso pode ocorrer quando o serviço está inativo ou quando há um erro nos dados do pedido que estão sendo enviados.<br></br>Quando o limite de novas tentativas é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gerenciamento no Administrador. Para solucionar problemas de itens com falha consistente, entre em contato com o Gerente de conta.</td>
+<td>Especifica as tentativas de repetição para uma operação de sincronização de registros após a ocorrência de um erro crítico.<br></br>Erros críticos ocorrem sempre que a integração não obtém uma resposta positiva do serviço de preenchimento. Esses problemas ocorrem quando o serviço está inativo ou quando há um erro nos dados do pedido que está sendo enviado.<br></br>Quando o limite de novas tentativas é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gerenciamento no Administrador. Para solucionar problemas de itens com falha consistente, entre em contato com o Gerente de conta.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -228,7 +228,7 @@ Você pode exibir detalhes sobre operações de sincronização de ordens no pai
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>O atributo de catálogo que armazena o código digitalizável para itens correspondentes em seus locais de comerciante.<br></br>Se você tiver apenas uma localização de comerciante existente, é provável que você use códigos UPC, enquanto seu canal de comércio eletrônico identifica produtos por SKU. Se esse for o seu cenário, selecione o atributo de catálogo que contém o código UPC.<br></br>Essa configuração garante que as ordens enviadas aos itens da lista de lojas com o identificador correto, para que as associadas de loja possam verificar os itens com precisão durante o processo de separação.<br></br>Se não tiver certeza, verifique com seus associados de preenchimento no departamento de Entrega e Separação para determinar qual atributo deve ser enviado. Talvez seja necessário adicionar o atributo apropriado ao conjunto de atributos do produto Adobe Commerce se o atributo não estiver incluído no banco de dados.</td>
+<td>O atributo de catálogo que armazena o código digitalizável para itens correspondentes em seus locais de comerciante.<br></br>Se você tiver apenas uma localização de comerciante existente, é provável que você use códigos UPC, enquanto seu canal de comércio eletrônico identifica produtos por SKU. Nesse cenário, selecione o atributo de catálogo que contém o código UPC.<br></br>Essa configuração garante que as ordens enviadas aos itens da lista de lojas com o identificador correto, para que as associadas de loja possam verificar os itens com precisão durante o processo de separação.<br></br>Se não tiver certeza, verifique com seus associados de preenchimento no departamento de Entrega e Separação para determinar qual atributo deve ser enviado. Se o atributo não estiver incluído no banco de dados, você poderá adicioná-lo ao conjunto de atributos do produto Adobe Commerce.</td>
 <td>Site</td>
 <td>Sim</td>
 </tr>
@@ -240,7 +240,7 @@ Você pode exibir detalhes sobre operações de sincronização de ordens no pai
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>O número máximo de itens a serem enviados da fila de atendimento de armazenamento de uma vez.<br></br>As ordens de BOPIS são enviadas ao serviço de fulfillment em lotes, em intervalos regulares. Essa configuração permite controlar o tamanho do lote.<br></br>O valor padrão é 100 itens. Dependendo do volume e da capacidade do seu pedido, talvez seja necessário ajustar esse valor para cima ou para baixo.</td>
+<td>O número máximo de itens a serem enviados da fila de atendimento de armazenamento de uma vez.<br></br>As ordens de BOPIS são enviadas ao serviço de fulfillment em lotes, em intervalos regulares. Essa configuração permite controlar o tamanho do lote.<br></br>O valor padrão é 100 itens. Dependendo do volume e da capacidade do seu pedido, você pode ajustar o valor máximo para cima ou para baixo.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -265,7 +265,7 @@ Configure as opções de envio de Store Fulfillment que determinam a disponibili
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>A configuração de entrega para armazenamento baseia-se nos recursos existentes de entrega para armazenamento. Se você usa o Inventory management, ou se você pode aceitar e atender ordens em locais de comerciantes sem inventário por meio de transferências de inventário de loja para loja, defina esta opção como "Sim".<br></br>Se você não puder suportar a opção entregar para armazenamento ou não quiser oferecê-la, defina como "Não". Quando desabilitados, os itens do catálogo com inventário zero para uma loja de comerciantes ou os itens abaixo desse local [!DNL Out of Stock Threshold], não são oferecidos com opções de coleta na loja.<br></br>Essa é uma configuração global que pode ser ajustada por localização do comerciante.</td>
+<td>A configuração de entrega para armazenamento baseia-se nos recursos existentes de entrega para armazenamento. Se você usa o Inventory management, ou se você pode aceitar e atender ordens em locais de comerciantes sem inventário por meio de transferências de inventário de loja para loja, defina esta opção como "Sim".<br></br>Se você não puder suportar a opção entregar para armazenamento ou não quiser oferecê-la, defina como "Não". Quando desativados, os itens no catálogo com inventário zero para uma loja de comerciantes ou os itens que estão abaixo do [!DNL Out of Stock Threshold] para esse local, não são oferecidos com opções de coleta na loja.<br></br>É possível ajustar o valor dessa configuração por localização do comerciante.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -286,7 +286,7 @@ Configure as opções de envio de Store Fulfillment que determinam a disponibili
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Ativa ou desativa a opção Entrega em casa nas lojas do comerciante. Quando ativado, seus locais de loja de comerciantes são considerados em conjunto com outras fontes atribuídas no estoque associado ao seu site.<br></br>Nos serviços Inventory management padrão, a variável [!DNL Ship from Store] A opção is é inerente e não pode ser desativada. Com a solução Store Fulfillment, você pode ativá-la ou desativá-la.<br></br>Esta é uma configuração global. Você também pode ajustar essa configuração por localização e produto do comerciante.</td>
+<td>Ativa ou desativa a opção Entrega em casa nas lojas do comerciante. Quando ativado, seus locais de loja de comerciantes são considerados em conjunto com outras fontes atribuídas no estoque associado ao seu site.<br></br>Nos serviços Inventory management padrão, a variável [!DNL Ship from Store] A opção is é inerente e não pode ser desativada. Com a solução Store Fulfillment, você pode ativá-la ou desativá-la.<br></br>Você pode ajustar essa configuração por localização e produto do comerciante.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -347,7 +347,7 @@ Defina as configurações da segurança de senha e conta de usuário do Aplicati
 
 O Atendimento da loja funciona estendendo o Adobe Commerce nativo [!DNL In-Store Delivery] recursos. Após instalar a extensão, é possível configurar métodos de entrega na loja usando as seguintes configurações estendidas que são adicionadas ao Administrador.
 
-- **Coleta na loja**—Opções de oferta para entrega na loja durante o processo de finalização Este é o cenário de entrega mais comum para pedidos BOPIS.
+- **Coleta na loja**—Opções de oferta para entrega na loja durante o processo de finalização Essas configurações configuram os cenários de entrega mais comuns para pedidos BOPIS.
 
 - **[!UICONTROL Curbside pick up]**-Oferecer opções para que os clientes estacionem em um local de loja e tenham seu pedido entregue a eles por um associado de loja.
 
@@ -436,25 +436,25 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </tr>
 <tr>
 <td><strong>Instruções de retirada na loja</strong></td>
-<td>Quando um pedido estiver pronto para retirada em suas lojas de varejo, o cliente será notificado por e-mail. Se o cliente selecionou [!DNL In-Store Pickup] durante a finalização da compra, você pode personalizar as instruções de retirada aqui. </br></br>Essa é uma configuração global que se aplica a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
+<td>Quando um pedido estiver pronto para retirada em suas lojas de varejo, o cliente será notificado por e-mail. Se o cliente selecionou [!DNL In-Store Pickup] durante a finalização da compra, você pode personalizar as instruções de retirada aqui. </br></br>Essas instruções são definidas globalmente e se aplicam a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>Instruções de retirada da calçada</strong></td>
-<td>Especifica instruções personalizadas de retirada de ordem a serem incluídas nas notificações por email do cliente para ordens de retirada na borda. </br></br>Essa é uma configuração global que se aplica a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
+<td>Especifica instruções personalizadas de retirada de ordem a serem incluídas nas notificações por email do cliente para ordens de retirada na borda. </br></br>Essas instruções são definidas globalmente e se aplicam a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>Lead Time de Retirada Estimado</strong></td>
-<td>O número de minutos necessários antes de um pedido ser recebido, atendido e pronto para ser retirado. Essas informações são mostradas ao cliente ao selecionar um local de loja de varejo para a opção Entrega de retirada da loja. Essa é uma configuração global e se aplica a todos os locais de lojas de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</td>
+<td>O número de minutos necessários antes de um pedido ser recebido, atendido e pronto para ser retirado. Essas informações são mostradas ao cliente ao selecionar um local de loja de varejo para a opção Entrega de retirada da loja. Essa configuração se aplica a todos os locais de loja de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>Rótulo de tempo estimado de retirada</strong></td>
-<td>Exibe o tempo estimado até que um pedido esteja disponível para retirada do cliente. Essas informações são exibidas para os clientes quando eles selecionam um local de loja de varejo para a [!DNL In-Store Pickup] opção de entrega. </br></br>Ao personalizar esse rótulo, você pode usar o código <code>%1</code> para inserir seu <strong>Lead Time de Retirada Estimado</strong>. Por exemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Essa é uma configuração global que se aplica a todos os locais de lojas de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</br></br><code>Ready for Pickup in %1 minutes.</code></br></br></td>
+<td>Exibe o tempo estimado até que um pedido esteja disponível para retirada do cliente. Essas informações são exibidas para os clientes quando eles selecionam um local de loja de varejo para a [!DNL In-Store Pickup] opção de entrega. </br></br>Ao personalizar esse rótulo, você pode usar o código <code>%1</code> para inserir seu <strong>Lead Time de Retirada Estimado</strong>. Por exemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Essa configuração se aplica a todos os locais de loja de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 <tr>
@@ -480,7 +480,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </thead>
 <tbody><tr>
 <td><strong>Em Estoque</strong></td>
-<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para os itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL in-stock]</em> rótulo de status aqui.</br></br></td>
+<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para os itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL in-stock]</em> rótulo de status aqui.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -492,7 +492,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </tr>
 <tr>
 <td><strong>Parcialmente em Estoque</strong></td>
-<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para quaisquer itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL partially in-stock]</em> rótulo de status aqui.</br></br></td>
+<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para quaisquer itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL partially in-stock]</em> rótulo de status aqui.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>

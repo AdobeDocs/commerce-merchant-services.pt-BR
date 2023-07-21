@@ -1,10 +1,11 @@
 ---
 title: Fluxos de Trabalho de Atendimento de Assistência de Armazenamento
 description: Saiba mais sobre os módulos Separar, Estágio, Entrega e Pedidos disponíveis no aplicativo de assistência da loja. Esses módulos habilitam o fluxo de trabalho completo de preenchimento de loja para pedidos BOPIS. A Store Associates usa esses módulos para gerenciar e entregar ordens de retirada de armazenamento aos clientes.
-role: User
+role: Leader, Admin, User
 level: Intermediate
+feature: Shipping/Delivery, Tools and External Services, Customer Service
 exl-id: a8414f19-5489-41e9-84d6-39d2e61c2b08
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '806'
 ht-degree: 0%
@@ -19,7 +20,7 @@ O aplicativo Store Assist fornece à Store Associates quatro módulos para geren
 
 - **[Estágio](#stage-module)**—Insira um local onde os pedidos são feitos enquanto os clientes estão viajando para a loja para que a Store Associates possa encontrá-los facilmente para entrega do pedido.
 
-- **[Entrega](#hand-off-module)**— receba notificações em tempo real depois que os clientes chegarem à loja para minimizar o tempo de espera e os pedidos de entrega sem problemas
+- **[Entrega](#hand-off-module)**— receba notificações em tempo real depois que os clientes chegarem à loja para minimizar o tempo de espera e os pedidos de entrega sem problemas.
 
 - **[Pedidos](#orders-module)**—Visualize uma lista de todos os pedidos feitos para uma loja para que todos saibam o número de pedidos e o status de cada pedido.
 

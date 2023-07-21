@@ -3,8 +3,9 @@ title: Testar e Implantar Atendimento de Armazenamento
 description: Teste um plano para verificar a funcionalidade de Atendimento da Loja. Os testes abrangem a API de sincronização de inventário, o fluxo de trabalho de atendimento completo para pedidos cancelados, o gerenciamento de usuários do aplicativo Store Fulfillment e a experiência de check-in do cliente.
 role: User, Admin
 level: Intermediate
+feature: Shipping/Delivery, User Account, Roles/Permissions
 exl-id: 77285a66-5161-407b-94cd-b3f412d7949d
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '2660'
 ht-degree: 0%
@@ -84,7 +85,7 @@ Esta seção do plano de teste aborda a sincronização de estoque e pedido para
 <td>A operação de sincronização em tempo real envia os detalhes para o GIF do Walmart em 5 minutos</td>
 </tr>
 <tr>
-<td><strong>Origem do estoque de retirada</br><code>Is Synced</code> status</br><code>Is Synced</code></strong></td>
+<td><strong>Origem do estoque de retirada</br><code>Is Synced</code> status</strong></td>
 <td>Salvar atualizações em uma origem de estoque de retirada existente.</td>
 <td>Após uma operação bem-sucedida, a variável <code>Is Synced</code> coluna da página Gerenciar origem atualiza de <code>No</code> para <code>Yes</code>.</td>
 </tr>
@@ -166,7 +167,7 @@ Esta seção do plano de teste inclui cenários para testar o workflow completo 
 </ul>
 </td>
 </tr>
-<td><strong>Pronto para retirada</br></br>Cancelamento completo</br>(todos os produtos são definidos como separados com 0 qtd.)</br></strong></td>
+<td><strong>Pronto para retirada</br></br>Cancelamento completo</br>(todos os produtos são definidos como separados com 0 qtd.)</strong></td>
 <td>
 <ol>
 <li>Coloque o pedido.</li>
@@ -250,7 +251,7 @@ Esta seção do plano de teste inclui cenários para testar o workflow completo 
 </tr>
 <tr>
 <td><strong>Dispensada (durante a dispensação)</br></br>Cancelamento parcial</br>(Alguns produtos são dispensados; alguns são rejeitados.)</strong>
-</br></td>
+</td>
 <td>
 <ol>
 <li>Coloque o pedido.</li>
@@ -469,7 +470,7 @@ Esta seção do plano de teste aborda a Experiência de check-in para pedidos de
 </tr>
 <tr>
 <td><strong>Contato de Retirada Alternativo</br>
-Check-in</br><strong>
+Check-in<strong>
 </td>
 <td>
 Um cliente envia um pedido com a opção Coleta na loja.</td>

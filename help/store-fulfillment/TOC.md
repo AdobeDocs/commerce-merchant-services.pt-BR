@@ -3,7 +3,10 @@ user-guide-title: "[!DNL Store FulFillment Guide]"
 user-guide-description: Informações detalhadas sobre a instalação, configuração e uso do Atendimento da loja para lojas Adobe Commerce.
 breadcrumb-title: Abastecimento de loja para o Adobe Commerce
 index: true
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+feature: Shipping/Delivery
+role: Admin, User
+recommendations: noDisplay
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
 ht-degree: 0%

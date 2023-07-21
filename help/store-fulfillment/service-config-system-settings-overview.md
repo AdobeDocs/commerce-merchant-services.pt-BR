@@ -1,9 +1,10 @@
 ---
 title: Visão geral da configuração do sistema
 description: Saiba mais sobre as categorias de configurações de administrador disponíveis para a solução Store Fulfillment e como elas são configuradas.
-role: User, Admin
+role: Admin
+feature: Shipping/Delivery, System, Configuration
 level: Intermediate
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '227'
 ht-degree: 0%

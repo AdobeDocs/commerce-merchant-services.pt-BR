@@ -1,10 +1,11 @@
 ---
 title: Modelos de e-mail de vendas
 description: Configure os modelos de email transacional para se comunicar com os clientes e administradores de loja durante o processo de preenchimento de pedidos de Retirada de loja.
-role: User, Admin
+role: Admin
 level: Intermediate
+feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '1202'
 ht-degree: 0%
@@ -312,7 +313,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 <tbody><tr>
 <td><strong>O Pedido Tem Remetente De Email De Produtos De Entrega Para Armazenamento</strong></td>
 <td>Email enviado à equipe de comerciante especificada como um relatório agregado de todas as ordens em aberto que não podem ser separadas em um armazenamento de comerciante até que o estoque esteja disponível. </br></br> Os comerciantes podem usar este relatório para iniciar e gerenciar transferências de inventário de armazenamento para armazenamento ou reposição. </br></br>Esta notificação só se aplica quando a [!DNL Ship-to-Store] Os recursos do estão habilitados.
-</br></br>Essa etiqueta não afeta a transportadora de remessa selecionada ou suas etiquetas de método de remessa disponíveis.</br></br></td>
+</br></br>Essa etiqueta não afeta a transportadora de remessa selecionada ou suas etiquetas de método de remessa disponíveis.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>

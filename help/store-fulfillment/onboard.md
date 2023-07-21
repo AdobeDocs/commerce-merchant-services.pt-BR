@@ -1,10 +1,11 @@
 ---
 title: Visão geral de integração para serviços de fornecimento da loja
 description: '[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações.'
-role: User, Admin
+role: Admin, Leader
 level: Intermediate
+feature: Shipping/Delivery, Install
 exl-id: f8e403ac-9bbd-4ea2-b209-9b1a8d1e32a2
-source-git-commit: 4c10ab59ed304002cfde7398762bb70b223180ce
+source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 0%
@@ -17,15 +18,15 @@ Introdução a [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Te
 
 - **Extensão de Atendimento da Loja**-Instale e configure essa extensão de terceiros na sua instância do Adobe Commerce. Após a instalação, você pode configurar e gerenciar a solução Store Fulfillment do Administrador para oferecer suporte [!DNL buys online, pickup in store] (BOPIS) na vitrine do Commerce.
 
-   ![[!DNL Store Fulfillment Service] configuração na exibição Admin](assets/store-fulfillment-admin-home.png)
+  ![[!DNL Store Fulfillment Service] configuração na exibição Admin](assets/store-fulfillment-admin-home.png)
 
 - **Conta de Atendimento da Loja**-Durante o processo de habilitação, um Gerente de Conta cria sua conta de Atendimento de Loja e fornece as informações e credenciais da conta. Essas credenciais são necessárias para habilitar a conexão entre o Adobe Commerce e a solução Store Fulfillment.
 
 - **Aplicativo de assistência da loja**—Fornece às lojas associadas um fluxo de trabalho completo de atendimento de loja para gerenciar pedidos de BOPIS de dispositivos móveis. A Store Associates pode baixar e instalar o Walmart [!DNL Store Assist] para dispositivos iOS e Android™. O processo de integração de aplicativos é gerenciado pelo Centro de clientes de tecnologias do Walmart Commerce como um processo separado. No entanto, [algumas configurações de aplicativo](user-setup.md) são concluídas no Administrador do Adobe Commerce.
 
-   | Aplicativo de Assistência da Loja - Exibição de introdução | Aplicativo Store Assist — visualização Módulos |
-   |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-   | ![[!DNL Store Assist App Getting Started] exibir no dispositivo móvel](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] no dispositivo móvel](assets/store-assist-orders-small.png) |
+  | Aplicativo de Assistência da Loja - Exibição de introdução | Aplicativo Store Assist — visualização Módulos |
+  |-------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+  | ![[!DNL Store Assist App Getting Started] exibir no dispositivo móvel](assets/store-assist-get-started-small.png) | ![[!DNL Store Assist App Orders view] no dispositivo móvel](assets/store-assist-orders-small.png) |
 
 ## Etapas de provisionamento
 
