@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] Notas de versão'
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Quick Checkout] versões.
 exl-id: 511be2fc-d24d-4323-a47a-d376e38a5c47
 feature: Release Notes, Services, Checkout
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1422'
 ht-degree: 0%
@@ -84,7 +84,7 @@ _24 de fevereiro de 2023_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-520 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) O agora está pré-instalado nas versões 2.4.6 e mais recentes do Adobe Commerce Cloud.
+![Novo](../assets/new.svg)<!-- Issue BOLT-520 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) O agora está pré-instalado nas versões 2.4.6 e mais recentes do Adobe Commerce Cloud.
 
 ![Problema corrigido](../assets/fix.svg)<!-- Issue BOLT-592 --> Melhorias na experiência do usuário ao fazer um pedido no [Painel de administração](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/create-order-admin.html) usar [Braintree](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/stored-payment-methods.html) como um método de pagamento. Essa funcionalidade permite que os clientes façam um pedido com o Braintree como método de pagamento durante o checkout quando [!DNL Quick Checkout] está ativado.
 
@@ -150,7 +150,7 @@ _8 de setembro de 2022_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-341 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) O agora é compatível com o Adobe Commerce versões 2.4.5.
+![Novo](../assets/new.svg)<!-- Issue BOLT-341 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) O agora é compatível com o Adobe Commerce versões 2.4.5.
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-328 --> [!DNL Quick Checkout] para Adobe Commerce e Magento Open Source fornece uma [Exibição do painel do administrador](https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/getting-started/quick-checkout-admin-panel/admin-panel.html) com todas as informações necessárias para configurar e usar a extensão.
 
@@ -184,7 +184,7 @@ _9 de agosto de 2022_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg)<!-- Issue BOLT-341 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://marketplace.magento.com/magento-quick-checkout.html) O agora é compatível com as versões 2.4.1 a 2.4.4 do Adobe Commerce.
+![Novo](../assets/new.svg)<!-- Issue BOLT-341 --> Versão de disponibilidade geral—[[!DNL Quick Checkout]](https://commercemarketplace.adobe.com/magento-quick-checkout.html) O agora é compatível com as versões 2.4.1 a 2.4.4 do Adobe Commerce.
 
 ![Novo](../assets/new.svg)<!-- Issue BOLT-340 --> A variável [!DNL Quick Checkout] para Adobe Commerce pode ser instalado para Adobe Commerce [na infraestrutura em nuvem](install.md#adobe-commerce-on-cloud-infrastructure) ou [no local](install.md#on-premises) instâncias. Esses métodos exigem o uso de uma interface de linha de comando.
 

@@ -4,7 +4,7 @@ description: Saiba como instalar, configurar, atualizar e desinstalar o Adobe Ex
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 64273ad4c1a54b150746a54896caf73ed612c2d1
+source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '366'
 ht-degree: 0%
@@ -17,7 +17,7 @@ Antes de instalar a extensão, [revisar os pré-requisitos](overview.md#prereqs)
 
 ## Instalar a extensão
 
-A extensão do conector Experience Platform está disponível no [Adobe Marketplace](https://marketplace.magento.com/magento-experience-platform-connector.html). Ao instalar essa extensão a partir da linha de comando do servidor, ela se conecta à instalação do Adobe Commerce como um [serviço](../landing/saas.md). Quando o processo estiver concluído, **Conector Experience Platform** e **Conector dos Commerce Services** aparecerá no **Sistema** menu em **Serviços** no Commerce _Admin_.
+A extensão do conector Experience Platform está disponível no [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-experience-platform-connector.html). Ao instalar essa extensão a partir da linha de comando do servidor, ela se conecta à instalação do Adobe Commerce como um [serviço](../landing/saas.md). Quando o processo estiver concluído, **Conector Experience Platform** e **Conector dos Commerce Services** aparecerá no **Sistema** menu em **Serviços** no Commerce _Admin_.
 
 >[!NOTE]
 >
