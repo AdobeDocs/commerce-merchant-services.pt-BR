@@ -1,7 +1,7 @@
 ---
 title: Serviço de assimilação de feed
 description: Saiba mais sobre o serviço de assimilação de feed do Adobe Commerce
-source-git-commit: b484429a529acfa95f70c5a55b6a5fcdedc887b3
+source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
 workflow-type: tm+mt
 source-wordcount: '360'
 ht-degree: 0%
@@ -42,4 +42,4 @@ O serviço de assimilação de feed foi criado para:
 * Clientes com catálogos grandes e complexos
 * Clientes que não usam o administrador do Adobe Commerce para gerenciar dados de catálogo, em vez disso usam um ERP ou sistema de terceiros para gerenciar dados de catálogo
 
-Se você estiver interessado em participar do programa beta, entre em contato com a equipe em XXXXX@adobe.com.
+Se você estiver interessado em participar do programa beta, entre em contato com a equipe em sagonzal@adobe.com.
