@@ -2,9 +2,9 @@
 title: "Tour rápido"
 description: "Faça um rápido tour pelo [!DNL Live Search] da loja."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 3d0de3eeb4aa96c996bc9fa38cffd7597e89e7ca
+source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '328'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,8 @@ Para listar todos os produtos retornados pela consulta &quot;pesquisar ao digita
 ## Pesquisa filtrada com facetas
 
 A pesquisa filtrada usa várias dimensões de valores de atributo ou [facetas](facets.md), como critério de pesquisa. A seleção de filtros é definida pelo comerciante e muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
+
+Usar facetas como parâmetros de URL:`http://yourwebsite.com?color=red`, e o Live Search filtra os resultados com base nesses valores de atributo.
 
 ## Sinônimos
 
