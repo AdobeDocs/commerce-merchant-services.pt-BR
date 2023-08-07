@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 91ad3b5f1fb9248685fc67071a7191dfbf6c2472
 workflow-type: tm+mt
-source-wordcount: '1120'
+source-wordcount: '1144'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,11 @@ As notas de versão incluem:
 
 Consulte a documentação do desenvolvedor para [saiba mais sobre a compatibilidade do produto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
-## Versão principal atual
+## Atualizações do serviço hospedado
+
+Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
++++Atualizações do serviço hospedado
 
 _18 de julho de 2023_
 
@@ -36,6 +40,10 @@ _18 de julho de 2023_
 _25 de abril de 2023_
 
 ![Novo](../assets/new.svg) Os clientes do produto Recommendations agora podem aproveitar as vantagens do [Indexação de preços SaaS](../price-index/index.md).
+
++++
+
+## Versão principal atual
 
 ### 5.0.0 do magento/product-recommendations
 
@@ -140,7 +148,7 @@ _25 de abril de 2023_
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) Correção do erro &quot;Não é possível recuperar dados de opções do produto configuráveis&quot; durante a Sincronização do catálogo
-![Correção](../assets/fix.svg) Correção de um problema em que o código da loja não estava sendo definido corretamente quando você ativou a configuração &quot;Adicionar código da loja ao URL&quot;
+![Correção](../assets/fix.svg) Correção de um problema em que o código da loja não estava sendo definido corretamente quando você ativou a configuração &quot;Adicionar código da loja à URL&quot;
 ![Correção](../assets/fix.svg) Detecção aprimorada de alterações na configuração do Painel de administração para garantir que essas alterações sejam refletidas nos dados de sincronização do catálogo
 
 ### 3.2.2 do magento/product-recommendations
