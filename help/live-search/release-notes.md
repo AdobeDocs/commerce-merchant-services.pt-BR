@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notas de versão'
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: e7e45863dced36ecbd508931df5141bb6f1d8e64
+source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
 workflow-type: tm+mt
-source-wordcount: '1374'
+source-wordcount: '1390'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,10 @@ Os seguintes valores foram adicionados ao `storeDetails` objeto:
 ### Atualizações
 
 * Os módulos do Serviço de catálogo foram adicionados ao metapackage para oferecer suporte à recuperação avançada de dados.
+
+### Correções
+
+* A variável **Minha conta** a navegação da página não desaparece mais ao usar o widget Página de listagem de produtos.
 
 Os comerciantes devem atualizar o [!DNL Live Search] versão da extensão do >= 3.0.2 para acessar esses recursos.
 
