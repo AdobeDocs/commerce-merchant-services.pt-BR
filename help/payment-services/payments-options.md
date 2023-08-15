@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 27d121f862be99b41f467a00e5f6b9d28a40deab
+source-git-commit: 9a52976be16afa707b494f4da3b99192dd73b8f2
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1035'
 ht-degree: 0%
 
 ---
@@ -76,7 +76,7 @@ Os clientes podem fazer check-out usando o botão PayPal Débito ou Cartão de c
 
 O botão PayPal Debit or Credit card (Cartão de crédito ou débito do PayPal) está visível na página de check-out.
 
-Esta opção pode ser usada para apresentar uma opção de pagamento com cartão de crédito ou débito do PayPal aos seus compradores quando você não tem um provedor de cartão de crédito alternativo.
+Esta opção pode ser usada para apresentar uma opção de pagamento com cartão de crédito ou débito aos seus compradores com um botão hospedado no PayPal, como alternativa à integração com cartão de crédito.
 
 ### [!DNL Pay Later] botão
 
