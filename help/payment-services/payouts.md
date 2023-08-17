@@ -183,7 +183,7 @@ Esses tipos de transação podem ser observados nas transações de pagamento.
 | ------------ | -------------------- |
 | [!UICONTROL PAYMENT] | Dinheiro movido entre um comprador e um vendedor para um pedido |
 | [!UICONTROL AUTH] | Transações de anulação de autorização e autorização |
-| [!UICONTROL BONUS] | -- |
+| [!UICONTROL BONUS] | — |
 | [!UICONTROL CHARGEBACK] | Transações de estorno de taxa de substituição de débito e de taxa de substituição de débito |
 | [!UICONTROL CORRECTION] | -- |
 | [!UICONTROL CURRENCY_CONVERSION] | -- |

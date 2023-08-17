@@ -64,7 +64,7 @@ Para ver quais moedas o PayPal suporta, consulte [Documentação de moedas supor
 
 Para ver quais métodos de pagamento o PayPal aceita, consulte seus [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
 
-## Comece já
+## Introdução
 
 Integração e configuração [!DNL Payment Services] O é concluído em apenas algumas etapas:
 

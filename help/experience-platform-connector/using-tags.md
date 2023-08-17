@@ -184,7 +184,7 @@ Crie os seguintes elementos de dados:
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
-1. ID da conta:
+1. ID da Conta:
 
    - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`
@@ -243,7 +243,7 @@ Crie os seguintes elementos de dados:
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
-1. ID da conta:
+1. ID da Conta:
 
    - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`
@@ -302,7 +302,7 @@ Crie os seguintes elementos de dados:
    - **Tipo de elemento de dados**: `Data Layer Computed State`
    - **[Opcional] caminho**: `accountContext.accountType`
 
-1. ID da conta:
+1. ID da Conta:
 
    - **Nome**: `account id`
    - **Extensão**: `Adobe Client Data Layer`

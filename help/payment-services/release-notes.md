@@ -6,7 +6,7 @@ feature: Payments, Release Notes
 source-git-commit: 0c8d9498ea7a30a99f834694ef8a865ad24466ab
 workflow-type: tm+mt
 source-wordcount: '1989'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -120,7 +120,7 @@ _29 de janeiro de 2023_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4110 --> Correção de um problema que impedia os compradores de fazer um pedido usando botões inteligentes na página do produto, minicarrinho e carrinho. Os compradores agora podem concluir os pedidos com êxito.
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4110 --> Correção de um problema que impedia os compradores de fazer um pedido usando botões inteligentes na página do produto, minicarrinho e carrinho. Os compradores agora podem concluir os pedidos com sucesso.
 
 ## v1.5.3
 

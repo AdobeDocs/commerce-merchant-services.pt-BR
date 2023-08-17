@@ -330,7 +330,7 @@ Use o `uniqueIdentifier` campo encontrado em ambos os `searchRequestSent` e `sea
 
 >[!NOTE]
 >
->Os eventos de pesquisa não são suportados em um Adobe Commerce Enterprise Edition com a extensão B2B instalada.
+>Os eventos de pesquisa não são suportados em uma Adobe Commerce Enterprise Edition com a extensão B2B instalada.
 
 #### Dados coletados de searchRequestSent
 
@@ -357,7 +357,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 >[!NOTE]
 >
->Os eventos de pesquisa não são suportados em um Adobe Commerce Enterprise Edition com a extensão B2B instalada.
+>Os eventos de pesquisa não são suportados em uma Adobe Commerce Enterprise Edition com a extensão B2B instalada.
 
 #### Dados coletados de searchResponseReceived
 

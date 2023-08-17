@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Product Recommendations] Visão geral do guia'
+title: '[!DNL Product Recommendations] Visão geral do Guia'
 description: Informações abrangentes sobre [!DNL Product Recommendations] para administradores do Adobe Commerce, incluindo instalação e integração
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.
@@ -8,11 +8,11 @@ feature: Services, Recommendations
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '214'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# [!DNL Product Recommendations] Visão geral do guia
+# [!DNL Product Recommendations] Visão geral do Guia
 
 Este guia destina-se aos administradores do Adobe Commerce. Inclui informações detalhadas sobre a instalação e integração do [!DNL Product Recommendations], bem como configuração e gerenciamento dos serviços. Ele assume uma compreensão básica do núcleo [!DNL Commerce] configuração e funcionalidade.
 
@@ -30,7 +30,7 @@ Este guia não aborda os principais recursos do Adobe Commerce e do Magento Open
 
 ## Documentação adicional
 
-| Guia | Descrição |
+| Guia do  | Descrição |
 |------ | ----------- |
 | [Guia do usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/docs/commerce.html) | Documentação voltada para o comerciante do Adobe Commerce e do Magento Open Source |
 | [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |

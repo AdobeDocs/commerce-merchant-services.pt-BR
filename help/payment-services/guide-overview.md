@@ -35,7 +35,7 @@ Este guia não aborda os principais recursos do [!DNL Adobe Commerce] e [!DNL Ma
 
 ## Documentação adicional
 
-| Guia | Descrição |
+| Guia do  | Descrição |
 |------ | ----------- |
 | [[!DNL Adobe Commerce] Guia do usuário do 2.4](https://experienceleague.adobe.com/docs/commerce-admin/user-guides/home.html) | Documentação focada no comerciante para ambos [!DNL Adobe Commerce] e [!DNL Magento Open Source] |
 | [[!DNL Adobe Commerce] 2.4 Guia do desenvolvedor](https://developer.adobe.com/commerce/docs) | Documentação voltada para o desenvolvedor usada para criar e personalizar o [!DNL Adobe Commerce] ou [!DNL Magento Open Source] |

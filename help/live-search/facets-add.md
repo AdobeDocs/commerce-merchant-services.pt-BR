@@ -24,7 +24,7 @@ Qualquer atributo de produto filtrável pode ser usado como uma faceta. A variá
    * No *Atributos de faceta* escolha o atributo de produto que deseja usar como faceta e clique em **Adicionar**.
    * Para localizar um atributo de produto específico, insira os primeiros caracteres do nome do atributo na *Pesquisar* caixa. Em seguida, clique em **Adicionar**.
 
-      Para configurar intervalos e agrupamentos de facetas de preços, consulte [Configurações](settings.md). Para saber mais, acesse [Tipos de facetas](facets-type.md).
+     Para configurar intervalos e agrupamentos de facetas de preços, consulte [Configurações](settings.md). Para saber mais, acesse [Tipos de facetas](facets-type.md).
 A faceta é adicionada à parte inferior do *Aspectos dinâmicos* e a *Publicar alterações* fica disponível.
 
 1. Se a faceta que você deseja adicionar não puder ser encontrada, acesse **Lojas** > Atributos > **Produto** e verificar se o atributo tem a [propriedades obrigatórias](facets.md) para ser usado como faceta. Se necessário, atualize as seguintes propriedades da loja do atributo:

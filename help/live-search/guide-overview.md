@@ -1,16 +1,16 @@
 ---
-title: "[!DNL Live Search] Visão geral do guia"
+title: "[!DNL Live Search] Visão geral do Guia"
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa ultrarrápida, relevante e intuitiva."
 exl-id: 11e2ed97-ce80-4826-b914-71688dd29e4b
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
 source-wordcount: '233'
-ht-degree: 0%
+ht-degree: 2%
 
 ---
 
-# [!DNL Live Search] Visão geral do guia
+# [!DNL Live Search] Visão geral do Guia
 
 [!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa ultrarrápida, relevante e intuitiva para o Adobe Commerce sem custo adicional. [!DNL Live Search] powered by [Adobe Sensei](https://www.adobe.com/sensei.html) O usa inteligência artificial e algoritmos de aprendizado de máquina do para executar uma análise profunda dos dados agregados do visitante. Esses dados, quando combinados com seu catálogo do Adobe Commerce, resultam em experiências de compra altamente envolventes, relevantes e personalizadas. Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um divisor de águas tanto para compradores quanto para comerciantes.
 
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Documentação adicional
 
-| Guia | Descrição |
+| Guia do  | Descrição |
 |--- |--- |
 | Guia do usuário do Adobe Commerce 2.4 | Documentação voltada para o comerciante do Adobe Commerce e do Magento Open Source |
 | Guia do desenvolvedor do Adobe Commerce 2.4 | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce ou o Magento Open Source |

@@ -23,7 +23,7 @@ Ao instalar o `magento/product-recommendations module`, o Adobe Sensei agrega os
 >
 > Se sua loja for implementada usando o PWA Studio, consulte a [Documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usar uma tecnologia de front-end personalizada, como React ou Vue JS, saiba como [integrar](headless.md) [!DNL Product Recommendations] em sua loja headless.
 
-## Fluxo de trabalho
+## Fluxo de trabalho (WRK)
 
 1. **Implantar coleção de dados para produção**
 

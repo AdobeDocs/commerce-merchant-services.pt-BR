@@ -16,7 +16,7 @@ Antes de expor [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magent
 
 ## Teste em ambiente de sandbox
 
-Testes [!DNL Payment Services] em um ambiente de sandbox é uma etapa de validação importante, embora seja um ambiente simulado conectado somente à sandbox do PayPal, não aos bancos e comerciantes reais.
+Testes [!DNL Payment Services] em um ambiente de sandbox é uma etapa de validação importante, embora seja um ambiente simulado conectado apenas à sandbox do PayPal, não aos bancos e comerciantes reais.
 
 1. Conclua um check-out bem-sucedido de sua loja, com [Campos de cartão de crédito](payments-options.md#credit-card-fields) ou qualquer um dos [Botões Inteligentes do PayPal](payments-options.md#paypal-smart-buttons). Consulte [Testando credenciais](#testing-credentials) para obter mais informações sobre como usar cartões de crédito falsos para testes.
 1. Capturar (quando sua ação de pagamento for [definir como `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md)ou [void](voids.md) o pedido recém-concluído. Você também pode simplesmente [criar uma fatura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} para um pedido, se sua ação de pagamento estiver definida como `Authorize` em vez de `Authorize and Capture`.

@@ -8,7 +8,7 @@ feature: Payments, Checkout
 source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 0%
+ht-degree: 1%
 
 ---
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 | Campo | Descrição |
 |---|---|
 | [!UICONTROL Read documentation] | Consulte os documentos mais recentes de usuários e desenvolvedores para [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | Encontre tudo o que precisa para começar a usar o [!DNL Payment Services] recurso. |
+| [!UICONTROL How to onboard] | Encontre tudo o que você precisa para começar a configurar e usar o [!DNL Payment Services] recurso. |
 | [!UICONTROL Understand financial reports] | Explicação detalhada do relatório de gerenciamento de fluxo de caixa em [!DNL Payment Services]. |
 
 ## Ajuda

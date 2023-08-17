@@ -19,18 +19,18 @@ Isso pode não funcionar com soluções de consentimento de cookies de terceiros
 
 - Nome do cookie:
 
-   ```text
-   `const DNT_COOKIE = "mg_dnt";`
-   ```
+  ```text
+  `const DNT_COOKIE = "mg_dnt";`
+  ```
 
 - Defina o cookie do-not-track para desativar a coleta de dados:
 
-   ```text
-   `$.mage.cookies.set(DNT_COOKIE, true);`
-   ```
+  ```text
+  `$.mage.cookies.set(DNT_COOKIE, true);`
+  ```
 
 - Para limpar o cookie quando o usuário aceitar os cookies:
 
-   ```text
-   `$.mage.cookies.clear(DNT_COOKIE);`
-   ```
+  ```text
+  `$.mage.cookies.clear(DNT_COOKIE);`
+  ```

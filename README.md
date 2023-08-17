@@ -2,7 +2,7 @@
 source-git-commit: 19ba315a72f90be7c2177a783067c6a09d5bf767
 workflow-type: tm+mt
 source-wordcount: '426'
-ht-degree: 0%
+ht-degree: 6%
 
 ---
 # Documentação do usuário do Adobe Commerce
@@ -11,7 +11,7 @@ Agradecemos as contribuições de nossa comunidade, bem como de funcionários da
 
 ## Código de conduta de código aberto do Adobe
 
-Este projeto adotou a [Código de conduta de código aberto do Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte [Contribuição](contributing.md) artigo.
+Este projeto adotou o [Código de conduta de código aberto da Adobe](code-of-conduct.md) ou o [Código de conduta do .NET Foundation](https://dotnetfoundation.org/code-of-conduct). Para obter mais informações, consulte o artigo [Contribuição](contributing.md).
 
 ## Sobre suas contribuições para o conteúdo do Adobe
 
