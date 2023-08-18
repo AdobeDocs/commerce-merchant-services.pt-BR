@@ -5,9 +5,9 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Communications, Configuration
 exl-id: 688732e3-06f0-4613-a589-2d465597eb28
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '1202'
+source-wordcount: '1233'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 </thead>
 <tbody><tr>
 <td><strong>Envio assíncrono</strong></td>
-<td>Desative esse recurso. O envio assíncrono de email não é suportado. Para obter a comunicação e o tempo de resposta mais rápidos para a Coleta da loja, envie emails imediatamente, em vez de enviá-los em lote. </td>
+<td>Determina se os emails de vendas são enviados de forma assíncrona. Opções: <br/>**`Disable`** - (Padrão) Os emails de vendas são enviados quando acionados por um evento. Para obter a comunicação e o tempo de resposta mais rápidos para a Retirada da loja, use a configuração padrão. <br/>**`Habilitar`** - habilitar essa opção move os processos que manipulam notificações por email de check-out e processamento de pedidos para o segundo plano a serem enviados em intervalos regulares predeterminados.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>

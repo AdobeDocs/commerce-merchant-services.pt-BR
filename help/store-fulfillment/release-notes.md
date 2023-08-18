@@ -4,10 +4,10 @@ description: "Revise as notas de versão para obter informações sobre tudo [!D
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '194'
-ht-degree: 4%
+source-wordcount: '479'
+ht-degree: 2%
 
 ---
 
@@ -19,13 +19,53 @@ Estas notas de versão descrevem a versão inicial do [!DNL Store Fulfillment Se
 ![Problema corrigido](../assets/fix.svg) Correções e aprimoramentos
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
+## v1.5.0
+
+*3 de agosto de 2023*
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}[Adobe Commerce 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), incluindo as versões de patch de segurança 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
+
+Esta versão inclui as seguintes atualizações:
+
+![Novo](../assets/fix.svg) Atualização da extensão para oferecer suporte ao [Versões de patch de segurança do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/notes/security-patches/overview.html) 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
+
+![Novo](../assets/new.svg)<!-- WMTP-918 --> Adição de suporte para o [Envio assíncrono](sales-emails.md) opção de configuração para emails de vendas. Os comerciantes que atualizam para a versão 1.5.0 têm a opção de enviar emails imediatamente (padrão) ou de forma assíncrona.
+
+![Novo](../assets/new.svg)<!-- WMTP-916--> Atualização do [Configuração de origens](merchant-store-configuration.md) para suportar formatos de número de telefone internacionais.
+
+![Novo](../assets/new.svg) Foi adicionada uma lógica para impedir que os valores de reembolso excedam o valor restante ou faturado.
+
+![Novo](../assets/new.svg)<!-- WMTP-882 --> Substituído `google.map.LatLng` objeto com literais JSON para oferecer suporte à compatibilidade com versões mais antigas do [!DNL Google Maps].
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP- --> Atualização do script que cria o `[!DNL Available for Store Pickup]` e `[!DNL Available for Home Delivery]` atributos de produto para evitar conflito de categoria de atributo.
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP-915 --> Correção de um problema de compatibilidade que causava um loop infinito ao carregar e salvar algumas entidades.
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP-921 --> Correção de um problema que impedia [!DNL Ship to Store] validação de cota acionada quando um item é adicionado ao carrinho a partir de uma página de detalhes do produto (PDP).
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP- 932 --> Correção de um problema de check-out que permitia aos clientes selecionar o método de entrega residencial para itens que não eram qualificados para entrega residencial.
+
+![Problema corrigido](../assets/fix.svg) Atualizações de instalação:
+
+- <!-- WMTP-880--> Correção de um problema que fazia com que um código de site incorreto fosse retornado ao instalar o [!DNL Store Fulfillment] extensão.
+
+- <!-- WMTP-878--> Correção de um problema para inteiros SKU que exigia que o tipo de dados fosse convertido em tipo de string durante a instalação.
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP-915--> Correção de uma falha causada pela ausência de um código de erro de check-in.
+
+![Problema corrigido](../assets/fix.svg)<!-- WMTP-932 --> Correção de um erro relacionado à rejeição parcial durante operações de dispensação.
+
+![Novo](../assets/new.svg)<!-- WMTP-953 --> O endpoint da API Cancelar foi atualizado para consumir o parâmetro de status como um objeto opcional.
+
+![Novo](../assets/new.svg)<!-- WMTP-960 --> Detalhes de registro aprimorados para o endpoint da API Dispense.
+
 ## v1.4.0
 
 *13 de abril de 2023*
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.0 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.3.0
@@ -46,7 +86,7 @@ Esta versão inclui a seguinte atualização:
 
 Esta versão inclui a seguinte atualização:
 
-![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.0 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.5](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
 
 ## v1.1.0

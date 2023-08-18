@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '660'
+source-wordcount: '715'
 ht-degree: 0%
 
 ---
@@ -17,9 +17,13 @@ ht-degree: 0%
 
 Conclua a instalação inicial do [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensão em um ambiente de não produção com o gerenciador de filas em execução e armazenamento em cache configurado para permitir o tratamento de exceções. Certifique-se de que seu ambiente de desenvolvimento inclua ferramentas de desenvolvimento para garantir as práticas recomendadas para operar e manter sua instância do Adobe Commerce.
 
+>[!TIP]
+>
+>Atualize a extensão Store Fulfillment para Adobe Commerce no local seguindo o [instruções de atualização](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) no _Guia de atualização do Adobe Commerce_. Para o Adobe Commerce na infraestrutura em nuvem, consulte [Atualizar uma extensão](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) no *Guia do Commerce na infraestrutura em nuvem*.
+
 ## Pré-requisitos
 
-Revise o [requisitos](solution-requirements.md) para a solução Store Fulfillment e colete as informações necessárias antes de instalar o [!DNL Store Fulfillment] para o Adobe Commerce.
+Revise o [requisitos](solution-requirements.md) para a solução Store Fulfillment e coletar as informações necessárias antes de instalar ou atualizar o [!DNL Store Fulfillment] para o Adobe Commerce.
 
 Se você tiver instalado uma versão de pré-lançamento ou beta da extensão Store Fulfillment for Adobe Commerce, use o seguinte comando para removê-la antes de instalar a versão atual.
 
@@ -196,4 +200,5 @@ A variável `-f` será necessária se você estiver usando um tema em branco.
 >[!NOTE]
 >
 >Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) no Centro de ajuda da Adobe Commerce.
+
 
