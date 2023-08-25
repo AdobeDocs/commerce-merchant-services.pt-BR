@@ -4,9 +4,9 @@ description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0be39c5d46289a12bc2cfa704e942dc594fbded2
 workflow-type: tm+mt
-source-wordcount: '4779'
+source-wordcount: '6126'
 ht-degree: 0%
 
 ---
@@ -44,10 +44,17 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto adicionadas ao carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `cartID` | A ID exclusiva que identifica o carrinho do cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### openCart
 
@@ -68,10 +75,17 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto adicionadas ao carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `cartID` | A ID exclusiva que identifica o carrinho do cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### removeFromCart
 
@@ -92,10 +106,17 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto removidas do carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `cartID` | A ID exclusiva que identifica o carrinho do cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### shoppingCartView
 
@@ -116,10 +137,17 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto no carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `cartID` | A ID exclusiva que identifica o carrinho do cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### pageView
 
@@ -134,6 +162,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `pageViews` | Indica se uma página foi carregada. A `value` de `1` indica que a página foi carregada. |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### productPageView
 
@@ -153,9 +186,16 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `name` | O nome de exibição ou nome legível do produto |
 | `priceTotal` | O preço total do item de linha do produto |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### startCheckout
 
@@ -176,10 +216,17 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto no carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) moeda do produto |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `cartID` | A ID exclusiva que identifica o carrinho do cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### completeCheckout
 
@@ -198,13 +245,14 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `purchaseID` | Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva. |
 | `orderType` | Indica o tipo de pedido feito, como Check-out ou Compra instantânea |
 | `payments` | A lista de pagamentos deste pedido |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento. Por exemplo, `USD` ou `EUR`. |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `paymentAmount` | O valor do pagamento |
 | `paymentType` | O método de pagamento deste pedido. As opções são: `cash`, `credit_card`, `debit_card`, `gift_card`, `check`, `paypal`, `wire_transfer`, `credit_card_reference`, `other` |
 | `transactionID` | O identificador de transação exclusivo para este item de pagamento |
 | `shipping` | Detalhes de remessa de um ou mais produtos. |
 | `shippingMethod` | O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja etc. |
 | `shippingAmount` | O custo total de envio dos itens no carrinho |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `promotionID` | Identificador exclusivo da promoção, se houver |
 | `personalEmail` | Especifica o endereço de email pessoal |
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
@@ -214,9 +262,16 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `priceTotal` | O preço total do item de linha do produto |
 | `quantity` | O número de unidades de produto no carrinho |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para os totais do pedido. |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `productImageUrl` | URL da imagem principal do produto |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ## Eventos de perfil
 
@@ -246,6 +301,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `login` | Indica se um visitante tentou fazer logon |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### signOut
 
@@ -265,6 +325,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 |---|---|
 | `userAccount` | Indica detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `logout` | Indica se um visitante tentou fazer logoff |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### createAccount
 
@@ -290,6 +355,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `createProfile` | Indica se um usuário criou um perfil de conta |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### editAccount
 
@@ -315,6 +385,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `address` | O endereço técnico, por exemplo, `name@domain.com` como geralmente definido em RFC2822 e padrões subsequentes |
 | `userAccount` | Indica detalhes de fidelidade, preferências, processos de logon e outras preferências de conta |
 | `updateProfile` | Indica se um usuário atualizou seu perfil de conta |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ## Pesquisar eventos
 
@@ -348,6 +423,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `attribute` (classificar) | Um atributo usado para classificar itens nos resultados da pesquisa |
 | `order` | A ordem na qual retornar os resultados da pesquisa |
 | `query` | Os termos procurados |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### searchResponseReceived
 
@@ -373,6 +453,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `SKU` | Unidade de manutenção de estoque. O identificador exclusivo do produto. |
 | `name` | O nome de exibição ou nome legível do produto |
 | `productImageUrl` | URL da imagem principal do produto |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ## Eventos B2B
 
@@ -396,6 +481,11 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `ID` | Identificador exclusivo da lista de requisições |
 | `name` | Nome da lista de requisições especificada pelo cliente |
 | `description` | Descrição da lista de requisições especificada pelo cliente |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### addToRequisitionList
 
@@ -423,8 +513,15 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `quantity` | O número de unidades de produto adicionadas |
 | `priceTotal` | O preço total do item de linha do produto |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ### removeFromRequisitionList
 
@@ -448,8 +545,15 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `quantity` | O número de unidades de produto adicionadas |
 | `priceTotal` | O preço total do item de linha do produto |
 | `discountAmount` | Indica o valor do desconto aplicado |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento |
-| `selectedOptions` | Campo usado para um produto configurável. `attribute` identifica um atributo do produto configurável, como `size` ou `color` e `value` identifica o valor do atributo, como `small` ou `black`. |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
+| `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ## Eventos de back office
 
@@ -478,7 +582,12 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `SKU` | Unidade de manutenção de estoque. O identificador exclusivo do produto. |
 | `quantity` | O número de unidades de produto no carrinho |
 | `priceTotal` | O preço total do item de linha do produto |
-| `discountAmount` | Indica o valor do desconto aplicado |
+| `discountAmount` | Indica o valor do desconto aplicado ao item |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
+| `productImageUrl` | URL da imagem principal do produto |
+| `selectedOptions` | Campo usado para um produto configurável. |
+| `attribute` | Identifica um atributo do produto configurável, como `size` ou `color` |
+| `value` | Identifica o valor do atributo, como `small` ou `black`. |
 | `commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
 | `environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
 | `storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
@@ -487,17 +596,19 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `order` | Contém informações sobre o pedido |
 | `purchaseID` | Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva |
 | `priceTotal` | O preço total deste pedido após a aplicação de todos os descontos e impostos |
-| `currencyCode` | O código de moeda ISO 4217 usado para os totais do pedido |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `purchaseOrderNumber` | Identificador exclusivo atribuído pelo comprador para esta compra ou contrato |
 | `payments` | A lista de pagamentos deste pedido |
 | `paymentType` | O método de pagamento deste pedido. Valores personalizados enumerados são permitidos. |
-| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `paymentAmount` | O valor do pagamento |
 | `taxAmount` | O valor do imposto pago pelo comprador como parte do pagamento final |
+| `discountAmount` | Indica o valor do desconto aplicado a todo o pedido |
 | `createdDate` | A hora e a data em que um novo pedido é criado no sistema de comércio. Por exemplo, `2022-10-15T20:20:39+00:00` |
 | `shipping` | Detalhes de remessa de um ou mais produtos |
 | `shippingMethod` | O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja etc. |
 | `shippingAmount` | O valor que o cliente teve de pagar pelo envio. |
+| `currencyCode` | A variável [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR` |
 | `address` | Endereço de entrega físico |
 | `street1` | Informações no nível da rua principal, número do apartamento, número da rua e nome da rua |
 | `street2` | Campo adicional para informações no nível da rua |
@@ -524,7 +635,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 #### Dados coletados de orderItemsShipped
 
 A tabela a seguir descreve os dados coletados para esse evento.
-|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`commerceScope`|Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante).| |`environmentID`|A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens.| |`storeCode`|O código de armazenamento exclusivo. Você pode ter muitas lojas por site.| |`storeViewCode`|O código de exibição de loja exclusivo. Você pode ter muitas exibições de loja por loja.| |`websiteCode`|O código exclusivo do site. Você pode ter muitos sites em um ambiente.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`priceTotal`|O preço total deste pedido após a aplicação de todos os descontos e impostos| |`currencyCode`|O código de moeda ISO 4217 usado para os totais do pedido| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`payments`|A lista de pagamentos deste pedido| |`paymentType`|O método de pagamento deste pedido. Valores personalizados enumerados são permitidos.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento| |`paymentAmount`|O valor do pagamento| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`shipping`|Detalhes de remessa de um ou mais produtos| |`shippingMethod`|O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja e assim por diante| |`trackingNumber`|O número de rastreamento fornecido pela transportadora para uma remessa de item de pedido| |`trackingURL`|O URL para rastrear o status de envio de um item do pedido| |`shipDate`|A data em que um ou mais itens de uma ordem são remetidos| |`address`|Endereço físico de entrega| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`shippingAmount`|O valor que o cliente teve de pagar pelo envio.| |`billingAddress`|Endereço postal de cobrança| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
+|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`productImageUrl`|URL da imagem principal do produto| |`selectedOptions`|Campo usado para um produto configurável.| |`attribute`|Identifica um atributo do produto configurável, como `size` ou `color`| |`value`|Identifica o valor do atributo, como `small` ou `black`.| |`commerceScope`|Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante).| |`environmentID`|A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens.| |`storeCode`|O código de armazenamento exclusivo. Você pode ter muitas lojas por site.| |`storeViewCode`|O código de exibição de loja exclusivo. Você pode ter muitas exibições de loja por loja.| |`websiteCode`|O código exclusivo do site. Você pode ter muitos sites em um ambiente.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`priceTotal`|O preço total deste pedido após a aplicação de todos os descontos e impostos| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`payments`|A lista de pagamentos deste pedido| |`paymentType`|O método de pagamento deste pedido. Valores personalizados enumerados são permitidos.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`paymentAmount`|O valor do pagamento| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`shipping`|Detalhes de remessa de um ou mais produtos| |`shippingMethod`|O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja e assim por diante| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`trackingNumber`|O número de rastreamento fornecido pela transportadora para uma remessa de item de pedido| |`trackingURL`|O URL para rastrear o status de envio de um item do pedido| |`shipDate`|A data em que um ou mais itens de uma ordem são remetidos| |`address`|Endereço físico de entrega| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`shippingAmount`|O valor que o cliente teve de pagar pelo envio.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`billingAddress`|Endereço postal de cobrança| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
 
 ### orderCanceled
 
@@ -535,7 +646,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 #### Dados coletados de orderCanceled
 
 A tabela a seguir descreve os dados coletados para esse evento.
-|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`commerceScope`|Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante).| |`environmentID`|A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens.| |`storeCode`|O código de armazenamento exclusivo. Você pode ter muitas lojas por site.| |`storeViewCode`|O código de exibição de loja exclusivo. Você pode ter muitas exibições de loja por loja.| |`websiteCode`|O código exclusivo do site. Você pode ter muitos sites em um ambiente.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`cancelDate`|A data e a hora em que um comprador cancela um pedido| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
+|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`productImageUrl`|URL da imagem principal do produto| |`selectedOptions`|Campo usado para um produto configurável.| |`attribute`|Identifica um atributo do produto configurável, como `size` ou `color`| |`value`|Identifica o valor do atributo, como `small` ou `black`.| |`commerceScope`|Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante).| |`environmentID`|A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens.| |`storeCode`|O código de armazenamento exclusivo. Você pode ter muitas lojas por site.| |`storeViewCode`|O código de exibição de loja exclusivo. Você pode ter muitas exibições de loja por loja.| |`websiteCode`|O código exclusivo do site. Você pode ter muitos sites em um ambiente.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`cancelDate`|A data e a hora em que um comprador cancela um pedido| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
 
 ### creditMemoIssued
 
@@ -546,7 +657,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 #### Dados recolhidos de creditMemoIssued
 
 A tabela a seguir descreve os dados coletados para esse evento.
-|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
+|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`productImageUrl`|URL da imagem principal do produto| |`selectedOptions`|Campo usado para um produto configurável.| |`attribute`|Identifica um atributo do produto configurável, como `size` ou `color`| |`value`|Identifica o valor do atributo, como `small` ou `black`.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`lastUpdatedDate`|A hora em que um determinado registro de pedido foi atualizado pela última vez no sistema de comércio| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`taxAmount`|O valor do imposto pago pelo comprador como parte do pagamento final.| |`refunds`|A lista de reembolsos para este pedido| |`refundPaymentType`|O método de pagamento deste pedido. Valores personalizados enumerados são permitidos.| |`refundAmount`|Valor da restituição.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes|
 
 ### orderShippingCompleted
 
@@ -557,4 +668,4 @@ A tabela a seguir descreve os dados coletados para esse evento.
 #### Dados coletados de orderShippingCompleted
 
 A tabela a seguir descreve os dados coletados para esse evento.
-|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`priceTotal`|O preço total deste pedido após a aplicação de todos os descontos e impostos| |`currencyCode`|O código de moeda ISO 4217 usado para os totais do pedido| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`taxAmount`|O valor do imposto pago pelo comprador como parte do pagamento final.| |`createdDate`|A hora e a data em que um novo pedido é criado no sistema de comércio. Por exemplo, `2022-10-15T20:20:39+00:00`| |`payments`|A lista de pagamentos deste pedido| |`paymentType`|O método de pagamento deste pedido. Valores personalizados enumerados são permitidos.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado para este item de pagamento| |`paymentAmount`|O valor do pagamento| |`shipping`|Detalhes de remessa de um ou mais produtos| |`shippingMethod`|O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja e assim por diante| |`address`|Endereço físico de entrega| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`shippingAmount`|O valor que o cliente teve de pagar pelo envio.| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`billingAddress`|Endereço postal de cobrança| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, esses dados contêm apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
+|Campo|Descrição| |—|—| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`productListItems`|Uma variedade de produtos na ordem| |`id`|O identificador de item de linha para esta entrada de produto. O produto em si é identificado através da `product` campo.| |`name`|O nome de exibição ou o nome legível do produto| |`SKU`|Unidade De Manutenção De Estoque. O identificador exclusivo do produto.| |`quantity`|O número de unidades de produto no carrinho| |`priceTotal`|O preço total do item de linha do produto| |`discountAmount`|Indica o valor do desconto aplicado| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`productImageUrl`|URL da imagem principal do produto| |`selectedOptions`|Campo usado para um produto configurável.| |`attribute`|Identifica um atributo do produto configurável, como `size` ou `color`| |`value`|Identifica o valor do atributo, como `small` ou `black`.| |`order`|Contém informações sobre o pedido| |`purchaseID`|Identificador exclusivo atribuído pelo vendedor para esta compra ou contrato. Não há garantia de que a ID seja exclusiva| |`priceTotal`|O preço total deste pedido após a aplicação de todos os descontos e impostos| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`purchaseOrderNumber`|Identificador exclusivo atribuído pelo comprador para esta compra ou contrato| |`taxAmount`|O valor do imposto pago pelo comprador como parte do pagamento final.| |`createdDate`|A hora e a data em que um novo pedido é criado no sistema de comércio. Por exemplo, `2022-10-15T20:20:39+00:00`| |`payments`|A lista de pagamentos deste pedido| |`paymentType`|O método de pagamento deste pedido. Valores personalizados enumerados são permitidos.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`paymentAmount`|O valor do pagamento| |`shipping`|Detalhes de remessa de um ou mais produtos| |`shippingMethod`|O método de entrega escolhido pelo cliente, como entrega padrão, entrega expressa, retirada na loja e assim por diante| |`address`|Endereço físico de entrega| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, conterá apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`shippingAmount`|O valor que o cliente teve de pagar pelo envio.| |`currencyCode`|A [ISO 4217](https://en.wikipedia.org/wiki/ISO_4217) código de moeda usado, como `USD` ou `EUR`| |`address`|O endereço técnico, por exemplo, `name@domain.com` conforme geralmente definido em RFC2822 e padrões subsequentes| |`billingAddress`|Endereço postal de cobrança| |`street1`|Informações no nível da rua principal, número do apartamento, número da rua e nome da rua| |`street2`|Campo adicional para informações no nível da rua| |`city`|O nome da cidade| |`state`|O nome do estado. Este é um campo de forma livre.| |`postalCode`|O código postal da localização. Os códigos postais não estão disponíveis para todos os países. Em alguns países, esses dados contêm apenas parte do código postal.| |`country`|O nome do território administrado pelo governo. Exceto `xdm:countryCode`, este é um campo de formato livre que pode ter o nome do país em qualquer idioma.| |`personalEmail`|Um endereço de email pessoal| |`address`|O endereço técnico, por exemplo, &#39;name@domain.com&#39;, conforme geralmente definido em RFC2822 e padrões subsequentes|
