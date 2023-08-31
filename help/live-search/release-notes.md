@@ -3,9 +3,9 @@ title: '[!DNL Live Search] Notas de versão'
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 3edbbc054fdadfeaa710b8c096db63e0d1961d02
+source-git-commit: 282c652304ba362fcceca1faa35e1d0c1378041b
 workflow-type: tm+mt
-source-wordcount: '1390'
+source-wordcount: '1400'
 ht-degree: 1%
 
 ---
@@ -40,7 +40,7 @@ _25 de abril de 2023_
 
 _7 de agosto de 2023_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ### Novos recursos
 
@@ -72,7 +72,7 @@ Os comerciantes devem atualizar o [!DNL Live Search] versão da extensão do >= 
 
 _14 de março de 2023_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ### Novos recursos
 
@@ -114,7 +114,7 @@ Os comerciantes devem atualizar o [!DNL Live Search] versão da extensão do >= 
 
 ## [!DNL Live Search] 2.0.5 {#205}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 * ![Correção](../assets/fix.svg) - O Live Search geraria um erro quando os recursos do SDK não estivessem disponíveis devido a problemas de rede. Esse erro foi corrigido.
 
@@ -124,7 +124,7 @@ Os comerciantes devem atualizar a versão da extensão do Live Search >= 2.0.5 p
 
 ### [!DNL Live Search] 2.0.4 {#204}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) O Live Search agora oferece suporte à filtragem pela configuração &quot;Exibir produtos sem estoque&quot; no administrador. Se &#39;Exibir produtos esgotados&#39; estiver definido como falso, `inStock = true` é adicionado ao filtro.
 ![Correção](../assets/fix.svg) Para melhorar o desempenho, o bloco &quot;Sugestões&quot; foi removido do pop-up do Live Search. Os dados ainda são transmitidos pelo GraphQL, caso você queira substituir o recurso.
@@ -138,7 +138,7 @@ Os usuários são aconselhados a atualizar e testar antes de enviar para a produ
 
 ### [!DNL Live Search] 2.0.3 {#203}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) O Live Search agora oferece suporte a recursos B2B, respeitando permissões de categoria, catálogos compartilhados e preços específicos do grupo de clientes.
 
@@ -148,7 +148,7 @@ Os usuários são aconselhados a atualizar e testar antes de enviar para a produ
 
 ### [!DNL Live Search] 2.0 {#20}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL Live Search] 2.0.0 para aproveitar os seguintes novos recursos, correções e melhorias:
 
@@ -163,7 +163,7 @@ Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL L
 
 ### [!DNL Live Search] 1.3.1 {#131}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Correção](../assets/fix.svg) [Atributo de preço personalizado](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) O não retorna mais um erro quando configurado como [faceta]({% link live-search/facets-add.md %}).
 ![Correção](../assets/fix.svg) Correção de um problema que causava a ocorrência de um erro quando não [símbolo de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html#step-5%3A-customize-currency-symbols-(optional)) (`data-currency-symbol`) está disponível.
@@ -171,7 +171,7 @@ Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL L
 
 ### [!DNL Live Search] 1.3.0 {#130}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) [Desempenho](performance.md) o painel de relatórios fornece informações sobre os termos de pesquisa que os compradores usam.
 ![Novo](../assets/new.svg) [!DNL Live Search] [SDK de eventos da loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) O fornece acesso a uma camada de dados comum com serviços e métricas de publicação e assinatura de eventos.
@@ -182,7 +182,7 @@ Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL L
 
 ### [!DNL Live Search] 1.2.0 {#120}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) [[!DNL Storefront popover]](storefront-popover.md) O exibe produtos sugeridos e imagens em miniatura dos principais resultados da pesquisa, à medida que os compradores digitam as consultas na caixa Pesquisar.
 ![Novo](../assets/new.svg) Commerce *Admin* a sessão permanece aberta durante longos períodos de inatividade do teclado
@@ -195,7 +195,7 @@ Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL L
 
 ### [!DNL Live Search] 1.1.0 {#110}
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatibilidade]{type="Informativo" tooltip="Compatibilidade"}
 
 ![Bug](../assets/bug.svg) A variável [!DNL Live Search] o serviço oferece suporte somente ao [moeda de base](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) da instalação do Adobe Commerce.
 ![Bug](../assets/bug.svg) Ao adicionar uma faceta, o Feed de atributos do produto não é atualizado corretamente quando definido como `Update on Save`. Para evitar esse problema, acesse [Gerenciamento de índice](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html) e definir o Feed de atributos do produto como `Update by Schedule`.
