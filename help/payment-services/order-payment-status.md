@@ -5,16 +5,16 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '1828'
+source-wordcount: '1868'
 ht-degree: 0%
 
 ---
 
 # Relatório de Status do Pagamento do Pedido
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja.
+[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa ter uma visão clara das configurações da sua loja [transações](transactions.md), pedidos e pagamentos.
 
 Há duas exibições disponíveis do relatório de status do pagamento da ordem para permitir que você exiba rapidamente o status do pagamento de suas ordens:
 
@@ -23,7 +23,7 @@ Há duas exibições disponíveis do relatório de status do pagamento da ordem 
 
 As exibições de status do Pedido de pagamento ajudam você a entender facilmente onde uma ordem específica está dentro do fluxo do processo da ordem para caixa. Esses relatórios permitem visualizar rapidamente os pedidos, com base no status do pagamento e na data do pagamento, e identificar possíveis problemas.
 
-Você pode fazer download de transações de status de pagamento de pedidos em um formato de arquivo .csv para uso em software de contabilidade ou gerenciamento de pedidos existente.
+Você pode [baixar Status de pagamento de pedido](#download-order-payment-statuses) em um formato de arquivo .csv para uso em software existente de contabilidade ou gerenciamento de pedidos.
 
 >[!NOTE]
 >
@@ -33,11 +33,11 @@ Você pode fazer download de transações de status de pagamento de pedidos em u
 
 A visualização de dados do status do pagamento do pedido está disponível na Página inicial dos Serviços de pagamento. É uma representação visual dos status de pagamento agregados por dia a partir da tabela detalhada [Exibição do relatório de status do pagamento da ordem](#order-payment-status-report-view).
 
-No _Admin_ barra lateral, vá para **Vendas** > **Payment Services** para ver a visualização de dados [gráfico de status de pagamento](#statuses-information).
+No _Admin_ barra lateral, vá para **Vendas** > **Payment Services** > _Pedidos_ para ver a visualização de dados [gráfico de status de pagamento](#statuses-information).
 
 ![Visualização de dados de pagamento no Administrador](assets/orderpayment-dataviz.png){zoomable=yes}
 
-Clique em **Exibir Relatório** para navegar até a tabela detalhada [Exibição do relatório de status do pagamento da ordem](#order-payment-status-report-view).
+Clique em **[!UICONTROL View Report]** para navegar até a tabela detalhada [Exibição do relatório de status do pagamento da ordem](#order-payment-status-report-view).
 
 ### Personalizar período de status
 
@@ -45,7 +45,7 @@ Por padrão, são exibidos 30 dias de status de pagamento.
 
 Na exibição de visualização do status do pagamento da Ordem, é possível personalizar o período dos status de pagamento que você deseja exibir, selecionando um intervalo de datas:
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. A visualização de dados do status do pagamento do pedido está visível na seção Status do pagamento do pedido.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**. A visualização de dados do status do pagamento do pedido está visível no _Pedidos_ seção.
 1. Clique em **[!UICONTROL Range]** filtro seletor.
 1. Escolha o intervalo de datas aplicável: 30 dias, 15 dias ou 7 dias.
 1. Exiba as informações de status das datas especificadas.
@@ -69,9 +69,9 @@ A visualização de dados do status do pagamento do pedido inclui as seguintes i
 
 ## Exibição do relatório de status do pagamento da ordem
 
-A visualização do relatório Status do pagamento da ordem está disponível na visualização Status do pagamento da ordem dos Serviços de pagamento. Ele inclui status detalhados — pagamento, faturado, enviado, reembolso, contestação e muito mais — para todas as transações. A variável [Exibição da visualização de dados do status do pagamento da ordem](#order-payment-status-data-visualization-view) Na Página Inicial dos Serviços de Pagamento, há uma representação visual dos status de pagamento agregados por dia na exibição do relatório Status do pagamento de pedidos.
+A visualização do relatório Status do pagamento do pedido está disponível na visualização Início dos Serviços de pagamento. Ele inclui status detalhados — pagamento, faturado, enviado, reembolso, contestação e muito mais — para todas as transações.
 
-No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > **[!UICONTROL Order payment status]** para ver a exibição detalhada do relatório de status do pagamento da ordem.
+No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de status do pagamento da ordem.
 
 ![Transações de status de pagamento de pedido no Administrador](assets/orders-report-data.png)
 
@@ -87,11 +87,11 @@ Você pode [baixar transações de pagamento](#download-order-payment-statuses) 
 
 A variável [!DNL Payment Services] O módulo usa dados de pedido e os combina com dados de pagamento agregados de outras fontes (incluindo PayPal), para fornecer relatórios significativos e altamente úteis.
 
-Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [alterar ou adicionar status de pedido](https://docs.magento.com/user-guide/sales/order-status-custom.html){target="_blank"} or [edit a store view](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html){target="_blank"}, [store](https://docs.magento.com/user-guide/stores/store-information.html){target="_blank"}, ou nome do site, de que os dados são combinados com os dados de pagamento e o relatório de status de pagamento do pedido é preenchido com as informações combinadas.
+Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [alterar ou adicionar status de pedido](https://docs.magento.com/user-guide/sales/order-status-custom.html) ou [editar uma visualização de loja](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [loja](https://docs.magento.com/user-guide/stores/store-information.html), ou nome do site, de que os dados são combinados com os dados de pagamento e o relatório de status de pagamento do pedido é preenchido com as informações combinadas.
 
 Há duas etapas neste processo:
 
-1. O índice é alterado nos dados `ON SAVE` (sempre que as informações da ordem ou da loja forem alteradas) ou `BY SCHEDULE` (em uma programação cron pré-configurada), dependendo de como ela é configurada no [Gerenciamento de índice](https://docs.magento.com/user-guide/system/index-management.html){target="_blank"} em Admin.
+1. O índice é alterado nos dados `ON SAVE` (sempre que as informações da ordem ou da loja forem alteradas) ou `BY SCHEDULE` (em uma programação cron pré-configurada), dependendo de como ela é configurada no [Gerenciamento de índice](https://docs.magento.com/user-guide/system/index-management.html) em Admin.
 
    Por padrão, ocorre a indexação de dados `ON SAVE`, o que significa que sempre que algo for alterado no pedido, no status do pedido, na exibição da loja, na loja ou no site, o processo de reindexação ocorrerá imediatamente.
 
@@ -107,13 +107,13 @@ Os únicos dados exportados e agrupados para fins de relatório são os dados us
 
 Mesmo que, por padrão, a reindexação ocorra em `ON SAVE` , é recomendável indexar no `BY SCHEDULE` modo. A variável `BY SCHEDULE` O índice é executado em uma programação cron de um minuto, e quaisquer dados alterados são exibidos no relatório Status do pedido dentro de dois minutos após qualquer alteração de dados. Essa reindexação programada ajuda a reduzir qualquer esforço na loja, especialmente se você tiver um grande volume de pedidos recebidos, pois isso acontece em um cronograma (não conforme cada pedido é feito).
 
-Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"}.
+Você pode alterar o modo do índice—`ON SAVE` ou `BY SCHEDULE`—[no Admin](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode).
 
 Para saber como configurar a exportação de dados, consulte [Configuração da linha de comando](configure-cli.md#configure-data-export).
 
 ### Selecionar fonte de dados
 
-Na exibição do relatório Status de pagamento da ordem, é possível selecionar a fonte de dados —_[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_—para o qual você deseja ver os resultados do relatório.
+Na exibição do relatório Status de pagamento da ordem, é possível selecionar a fonte de dados —**[!UICONTROL Live]** _ ou **[!UICONTROL Sandbox]**—para o qual você deseja ver os resultados do relatório.
 
 ![Seleção de fontes de dados](assets/datasource.png){width=400px}
 
@@ -127,8 +127,8 @@ As seleções de fonte de dados funcionam da seguinte maneira:
 
 Para selecionar a fonte de dados para sua [!UICONTROL Order Payment Status] relatório:
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Clique em **[!UICONTROL Data source]** e selecione _[!UICONTROL Live]_ou_[!UICONTROL Sandbox]_.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Orders]** > **[!UICONTROL View Report]**.
+1. Clique em _[!UICONTROL Data source]_filtro do seletor e selecione **[!UICONTROL Live]**ou **[!UICONTROL Sandbox]**.
 
    Os resultados do relatório são gerados novamente com base na fonte de dados selecionada.
 
@@ -136,16 +136,26 @@ Para selecionar a fonte de dados para sua [!UICONTROL Order Payment Status] rela
 
 Na exibição do relatório Status de pagamento da ordem, você pode personalizar o período dos status que deseja exibir selecionando datas específicas. Por padrão, 30 dias de status de pedidos de pagamento são mostrados na grade.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
-1. Clique em **[!UICONTROL Order dates]** filtro seletor de calendário.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Clique em _[!UICONTROL Order dates]_filtro seletor de calendário.
 1. Escolha o intervalo de datas aplicável.
 1. Exiba os status de pagamento da ordem para as datas especificadas na grade.
+
+### Filtrar informações do relatório
+
+Na exibição do relatório Status de pagamento da ordem, você pode filtrar os resultados dos status que deseja exibir selecionando critérios de filtro.
+
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
+1. Clique em **[!UICONTROL Filter]** seletor.
+1. Alterne a _Status do pagamento_ opções para ver os resultados do relatório apenas para os status do pagamento da ordem selecionado.
+1. Insira um _Valor mínimo do pedido_ ou _Valor máximo do pedido_ para ver os resultados do relatório dentro dessa faixa de quantias da ordem.
+1. Clique em **[!UICONTROL Hide filters]** para ocultar o filtro.
 
 ### Mostrar e ocultar colunas
 
 O relatório Status do Pagamento da Ordem mostra todas as colunas de informações disponíveis por padrão. No entanto, você pode personalizar quais colunas verá no relatório.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique em _Configurações de coluna_ ícone (![ícone configurações de coluna](assets/column-settings.png)).
 1. Para personalizar quais colunas você vê no relatório, marque ou desmarque as colunas na lista.
 
@@ -153,9 +163,7 @@ O relatório Status do Pagamento da Ordem mostra todas as colunas de informaçõ
 
 ### Exibir status
 
-A exibição do relatório Status de pagamento da ordem mostra informações abrangentes sobre o status da transação e o status do pagamento de cada ordem de Serviços de Pagamento.
-
-#### Status da transação
+A exibição do relatório Status de pagamento da ordem mostra informações abrangentes de status de pagamento para cada ordem.
 
 Por padrão, 30 dias de status de pedidos de pagamento são mostrados na grade.
 
@@ -177,7 +185,7 @@ A exibição do relatório Status do pagamento da ordem mostra uma _[!UICONTROL 
 
 Você também pode forçar manualmente uma atualização dos dados do relatório Status de pagamento da ordem para ver as informações mais atualizadas do relatório.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique em _Atualizar_ ícone (![ícone de atualização](assets/refresh-button-med.png)).
 
    Os dados do relatório de status do pagamento da ordem são atualizados, e *[!UICONTROL Update complete]* a confirmação é exibida e as informações mais recentes estão presentes na grade.
@@ -186,7 +194,7 @@ Você também pode forçar manualmente uma atualização dos dados do relatório
 
 Você pode visualizar todas as contestações nos pedidos da sua loja e navegar até o Centro de Resolução do PayPal para tomar medidas sobre elas, a partir do relatório Order payment status.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Navegue até a **[!UICONTROL Disputes column]**.
 1. Veja todas as contestações de um pedido específico e veja [o status da contestação](#order-payment-status-information).
 1. Clique no link de ID de contestação (começando com _PP-D-_) para acessar o [Centro de resolução do PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
@@ -198,28 +206,13 @@ Você pode visualizar todas as contestações nos pedidos da sua loja e navegar 
 
 É possível baixar um arquivo .csv com todos os status visíveis na grade de exibição do status do Order payment, seja visualizando os status padrão de 30 dias ou um período personalizado.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Order payment status]**.
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Se quiser ver os status de um período diferente dos últimos 30 dias, [personalizar o período do intervalo de datas para seus status](#customize-dates-timeframe).
 1. Clique em _Baixar_ (![ícone de download](assets/icon-download.png)) ícone.
 
 Os status do seu pedido de pagamento são baixados em um formato .csv.
 
-<!-- ## Default order payment status timeframes
-
-These order payment status timeframes are currently available in [!DNL Payment Services].
-
-| Report       | Description          |
-| ------------ | -------------------- |
-| Yesterday | Available from the Order payment status dates selector, this shows information for the prior date. |
-| | Today | Available from the Order payment status dates selector, this shows information for the current day. |
-| Last 7 days | Available from the Order payment status dates selector, this shows information for the last seven days. |
-| Last 30 days | Available from the Order payment status dates selector and by default in the Order payment statuses view, this shows information for the last 30 days. |
-| Last 90 days | Available from the Order payment status dates selector, this shows information for the last 90 days. |
-| Year to date | Available from the Order payment status dates selector, this shows information for the the entire year to date. |
-| Custom range | Available from the Order payment status dates selector, this can be filtered to show a custom date range. |
--->
-
-#### Informações de status
+### Descrições da coluna
 
 Os relatórios de status do pagamento da ordem incluem as informações a seguir.
 

@@ -3,9 +3,10 @@ title: Segurança e conformidade
 description: Revisar os requisitos de segurança e conformidade do site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
+source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
 workflow-type: tm+mt
-source-wordcount: '524'
+source-wordcount: '549'
 ht-degree: 0%
 
 ---
@@ -61,3 +62,10 @@ Com os botões inteligentes do PayPal, nenhum dado regulado por PCI é transmiti
 Por motivos de segurança, o PayPal não passa o endereço de faturamento durante o check-out: país, email e nome são as únicas informações de faturamento usadas. Como opção, você pode ativar o check-out do PayPal do seu site para retornar o endereço de cobrança completo entrando em contato com o PayPal e concluindo um processo de verificação.
 
 O PayPal também tem proteção integrada contra fraude que usa aprendizagem de máquina para ajudá-lo a combater fraude. Consulte PayPal&#39;s [Documentação da Proteção ao vendedor](https://www.paypal.com/us/webapps/mpp/security/seller-protection) para obter mais informações.
+
+## Proteção contra fraude
+
+Você pode ativar a proteção automatizada contra fraude para Serviços de pagamento com o [Extensão Signifyd](https://commercemarketplace.adobe.com/signifyd-module-connect.html).
+
+Consulte [Proteção contra fraude Signifyd](fraud-protection.md) para obter mais informações.
+

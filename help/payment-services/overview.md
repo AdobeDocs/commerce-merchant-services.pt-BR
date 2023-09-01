@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: b1984085fa5d10c8202d2a982227e183d0b169e8
+source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
 workflow-type: tm+mt
-source-wordcount: '459'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -38,7 +38,7 @@ Seja você uma pequena empresa, uma empresa de médio porte ou uma grande empres
 
 * [**Integração**](onboard.md)— o processo o orienta por meio de inscrição comercial, configuração técnica, direitos, configuração de ambiente de sandbox e ativação de pagamento em tempo real.
 * [**Opções de pagamento**](payments-options.md)—Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja (ou de várias lojas).
-* **Relatórios financeiros de gerenciamento de fluxo de caixa**— Synchronize [detalhes do pagamento](order-payment-status.md) com pedidos para obter total transparência do volume processado, saldo de pagamento e detalhes [relatório de nível de transação](payouts.md) para reconciliação financeira.
+* **Relatórios financeiros de gerenciamento de fluxo de caixa**— Synchronize [detalhes do pagamento](order-payment-status.md) com pedidos para obter total transparência do volume processado, saldo de pagamento, [pagamentos](payouts.md)e detalhado [relatório de nível de transação](transactions.md) para reconciliação financeira e o máximo em visibilidade de transações.
 * **Preços transparentes**— os preços são claros e antecipados; o que você vê é o que você obtém.
 * **Experiência de finalização eficiente**—elimine quaisquer barreiras a um checkout rápido e simples e crie clientes fiéis, com [compartimentação de placa](https://experienceleague-review.com/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting.html) e [Compra instantânea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (ativado por padrão para o Adobe Commerce).
 
