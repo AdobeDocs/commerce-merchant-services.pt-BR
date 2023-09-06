@@ -5,7 +5,7 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '344'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Para começar a usar o [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DN
 
 ## Fluxo de integração
 
-![Fluxo de integração](assets/onboarding-diagram.svg)
+![Fluxo de integração](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
 Este diagrama de fluxo de integração mostra o processo geral de integração [!DNL Payment Services].
 

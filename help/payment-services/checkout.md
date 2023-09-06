@@ -2,7 +2,7 @@
 title: Check-out
 description: Personalize o checkout para atender às necessidades do seu cliente.
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '330'
 ht-degree: 0%
@@ -20,11 +20,11 @@ Se ocorrer um erro durante o check-out, [!DNL Payment Services] anula/cancela au
 
 Uma mensagem de erro é exibida na página de check-out do comprador. A mensagem pode variar.
 
-![Erro ao verificar](assets/user-checkout-error.png "Erro ao fazer check-out")
+![Erro ao verificar](assets/user-checkout-error.png "Erro ao fazer check-out"){width="600" zoomable="yes"}
 
 Um comentário sobre o pedido cancelado também é exibido no Administrador de um [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
 
-![Comentário do pedido cancelado no Admin para pedido](assets/admin-checkout-error.png "Comentário do pedido cancelado no Admin para pedido")
+![Comentário do pedido cancelado no Admin para pedido](assets/admin-checkout-error.png "Comentário do pedido cancelado no Admin para pedido"){width="600" zoomable="yes"}
 
 Se um comprador obtiver autorização para um pedido, mas o pedido não tiver sido criado e convertido em um `Capture`, a ordem é anulada automaticamente. Esse processo garante que nenhum crédito seja reservado no cartão de crédito do comprador e evita a taxa do provedor de pagamento que ocorre quando a autorização é anulada no final do período padrão de 29 dias.
 

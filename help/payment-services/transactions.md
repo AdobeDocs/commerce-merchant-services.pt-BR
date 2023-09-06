@@ -3,7 +3,7 @@ title: Relatório de Transações
 description: Use o relatório de Transações para obter visibilidade sobre taxas de autorização de transações e tendências de transações.
 role: User
 level: Intermediate
-source-git-commit: dab47a7dcac5d32f4b10cd8b4ce1f7e5dc7fd6c9
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1162'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa ter uma visão clara das transações, pedidos e pagamentos da loja.
 
-![Relatório de transações](assets/transactions-report.png){width="600" zoomable="yes"}
+![Relatório de transações](assets/transactions-report.png){width="700" zoomable="yes"}
 
 O relatório de Transações oferece visibilidade sobre taxas de autorização de transações e tendências de transações negativas, para que você possa monitorar efetivamente a integridade do armazenamento e identificar e resolver quaisquer problemas de transação.
 
@@ -91,7 +91,7 @@ Na exibição do relatório Transações, você pode filtrar os resultados de st
 O relatório de Transações mostra todas as colunas de informações disponíveis por padrão. No entanto, você pode personalizar quais colunas verá no relatório.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Clique em **[!UICONTROL Column settings]** ícone ![ícone configurações de coluna](assets/column-settings.png){width="25"}.
+1. Clique em **[!UICONTROL Column settings]** ícone ![ícone configurações de coluna](assets/column-settings.png){width="20" zoomable="yes"}.
 1. Para personalizar quais colunas você vê no relatório, marque ou desmarque colunas na lista.
 
    O relatório de Transações mostra imediatamente quaisquer alterações feitas no menu de configurações Coluna. As preferências de coluna são salvas e permanecem em vigor se você sair da exibição de relatório.
@@ -103,7 +103,7 @@ A visualização do relatório Transactions mostra uma _[!UICONTROL Last updated
 Você também pode forçar manualmente uma atualização dos dados do relatório para ver as informações mais atualizadas do relatório.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
-1. Clique em _Atualizar_ ícone (![ícone de atualização](assets/refresh-button-med.png)).
+1. Clique em _Atualizar_ ícone (![ícone de atualização](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Os dados do relatório de Transações são atualizados, e *[!UICONTROL Update complete]* a confirmação é exibida e as informações mais recentes estão presentes na grade.
 
@@ -113,7 +113,7 @@ Você também pode forçar manualmente uma atualização dos dados do relatório
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > **[!UICONTROL Transactions]**.
 1. Se quiser ver transações para um período diferente dos últimos 30 dias, [personalizar o período do intervalo de datas para seus status](#customize-dates-timeframe).
-1. Clique em _Baixar_ ![ícone de download](assets/icon-download.png){width="25"} ícone.
+1. Clique em _Baixar_ ![ícone de download](assets/icon-download.png){width="20" zoomable="yes"} ícone.
 
 Suas transações são baixadas em um formato .csv.
 

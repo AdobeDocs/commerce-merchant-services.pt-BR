@@ -3,7 +3,7 @@ title: "Fluxo de check-out de um usuário do Bolt no Adobe Commerce"
 description: Visão geral do [!DNL Quick Checkout] para um usuário do Bolt no Adobe Commerce.
 exl-id: 12f58b7e-1f86-4891-b225-9f4be82c2d5d
 feature: Checkout, Services, Storefront
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '209'
 ht-degree: 0%
@@ -24,7 +24,7 @@ Se um [!DNL Bolt] for encontrada, os compradores continuarão com seus [!DNL Qui
 
 1. Insira a OTP (One-Time Password - Senha ocasional) enviada para ele [!DNL Bolt] endereço de email ou celular da conta, dependendo do [preferências do usuário no [!DNL Bolt] account](https://help.bolt.com/shoppers/account/account-settings/#how-to-set-preferred-login-method){target=_blank}.
 
-![Pop-up OTP](assets/new-logo-otp-email.png)
+![Pop-up OTP](assets/new-logo-otp-email.png){width="300" zoomable="yes"}
 
 1. Depois de fazer logon com a [!DNL Bolt] os detalhes são adicionados automaticamente:
 

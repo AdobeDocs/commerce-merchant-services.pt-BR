@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 1%
@@ -18,7 +18,7 @@ ht-degree: 1%
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Exibição da página inicial](assets/home-view.png)
+   ![Exibição da página inicial](assets/home-view.png){width="700" zoomable="yes"}
 
 1. Nesta visualização inicial, você pode acessar _Início_ exibir, _Saiba mais_ sobre [!DNL Payment Services], configurar a extensão _Configurações_ ou obtenha _Ajuda_.
 

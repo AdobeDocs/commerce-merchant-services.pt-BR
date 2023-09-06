@@ -3,7 +3,7 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: a9045c13d35797ce1a85697b70849d718dbc2e87
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1048'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Você pode configurar [!UICONTROL Apple Pay] na configuração da loja ou na Pá
 
 [!DNL PayPal Smart Buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
 
-![[!DNL PayPal Smart Buttons] opções](assets/payment-buttons.png){width="500"}
+![[!DNL PayPal Smart Buttons] opções](assets/payment-buttons.png){width="400" zoomable="yes"}
 
 Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na Página Inicial dos Serviços de Pagamento.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 

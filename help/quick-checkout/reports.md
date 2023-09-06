@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] relatório'
 description: '''[!DNL Quick Checkout] informações completas sobre a elaboração de relatórios."'
 exl-id: 91c687f4-9953-4c2f-b240-73430603e6a1
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
@@ -14,7 +14,7 @@ ht-degree: 1%
 
 [!DNL Quick Checkout] O para Adobe Commerce e Magento Open Source oferece relatórios abrangentes para que você possa obter informações detalhadas das estatísticas de experiência de check-out da sua loja.
 
-![Exibição de relatórios](assets/reports-view-big-checkout.png)
+![Exibição de relatórios](assets/reports-view-big-checkout.png){width="600" zoomable="yes"}
 
 >[!WARNING]
 >
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Os gráficos na seção Visão geral mostram informações detalhadas sobre o desempenho de finalização da loja, incluindo o tempo médio de finalização, as novas contas criadas durante a finalização ou o abandono de finalização.
 
-![Visão geral dos relatórios](assets/overview-report-checkout.png)
+![Visão geral dos relatórios](assets/overview-report-checkout.png){width="600" zoomable="yes"}
 
 | Gráfico | Descrição |
 |---|---|
@@ -38,7 +38,7 @@ Os gráficos na seção Visão geral mostram informações detalhadas sobre o de
 
 Os gráficos na seção Tendências mostram as tendências da experiência de check-out filtradas por tipo de conta ou por novas contas criadas durante o check-out.
 
-![Relatórios de tendências](assets/trends-report-checkout.png)
+![Relatórios de tendências](assets/trends-report-checkout.png){width="600" zoomable="yes"}
 
 | Gráfico | Descrição |
 |---|---|
@@ -50,7 +50,7 @@ Os gráficos na seção Tendências mostram as tendências da experiência de ch
 
 É possível filtrar os resultados mostrados por data ou predefinições existentes, como **Últimos 30 dias**.
 
-![Filtrar exibição](assets/filter-view.png)
+![Filtrar exibição](assets/filter-view.png){width="300" zoomable="yes"}
 
 | Campo | Descrição |
 |---|---|

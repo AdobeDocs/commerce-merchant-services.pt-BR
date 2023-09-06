@@ -5,7 +5,7 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 366689fccdf3ae93700d458bf9cbcab63e4583a8
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
@@ -25,7 +25,7 @@ Você pode ativar [!DNL Payment Services] para sua loja e ative os testes de san
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
 
-   ![Exibição de métodos](assets/methods-view.png)
+   ![Exibição de métodos](assets/methods-view.png){width="400" zoomable="yes"}
 
 1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
 1. No _[!UICONTROL [!DNL Payment Services]]_, expanda a_[!UICONTROL General Configuration]_ seção.

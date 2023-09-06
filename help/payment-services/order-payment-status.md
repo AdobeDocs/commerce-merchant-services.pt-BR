@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
-source-wordcount: '1868'
+source-wordcount: '1864'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ A visualização de dados do status do pagamento do pedido está disponível na 
 
 No _Admin_ barra lateral, vá para **Vendas** > **Payment Services** > _Pedidos_ para ver a visualização de dados [gráfico de status de pagamento](#statuses-information).
 
-![Visualização de dados de pagamento no Administrador](assets/orderpayment-dataviz.png){zoomable=yes}
+![Visualização de dados de pagamento no Administrador](assets/orderpayment-dataviz.png){width="800" zoomable="yes"}
 
 Clique em **[!UICONTROL View Report]** para navegar até a tabela detalhada [Exibição do relatório de status do pagamento da ordem](#order-payment-status-report-view).
 
@@ -73,7 +73,7 @@ A visualização do relatório Status do pagamento do pedido está disponível n
 
 No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**para ver a exibição detalhada do relatório de status do pagamento da ordem.
 
-![Transações de status de pagamento de pedido no Administrador](assets/orders-report-data.png)
+![Transações de status de pagamento de pedido no Administrador](assets/orders-report-data.png){width="800" zoomable="yes"}
 
 É possível configurar essa visualização, de acordo com as seções neste tópico, para apresentar melhor os dados que você deseja ver.
 
@@ -115,7 +115,7 @@ Para saber como configurar a exportação de dados, consulte [Configuração da 
 
 Na exibição do relatório Status de pagamento da ordem, é possível selecionar a fonte de dados —**[!UICONTROL Live]** _ ou **[!UICONTROL Sandbox]**—para o qual você deseja ver os resultados do relatório.
 
-![Seleção de fontes de dados](assets/datasource.png){width=400px}
+![Seleção de fontes de dados](assets/datasource.png){width="300" zoomable="yes"}
 
 Se _[!UICONTROL Live]_for a fonte de dados selecionada, você poderá ver as informações do relatório das lojas que usam [!DNL Payment Services] no modo de produção. Se_[!UICONTROL Sandbox]_ for a fonte de dados selecionada, você poderá ver informações de relatório para o modo sandbox.
 
@@ -156,7 +156,7 @@ Na exibição do relatório Status de pagamento da ordem, você pode filtrar os 
 O relatório Status do Pagamento da Ordem mostra todas as colunas de informações disponíveis por padrão. No entanto, você pode personalizar quais colunas verá no relatório.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Clique em _Configurações de coluna_ ícone (![ícone configurações de coluna](assets/column-settings.png)).
+1. Clique em _Configurações de coluna_ ícone (![ícone configurações de coluna](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Para personalizar quais colunas você vê no relatório, marque ou desmarque as colunas na lista.
 
    O relatório de status do Pedido de pagamento mostrará imediatamente quaisquer alterações feitas no menu de configurações Coluna. As preferências de coluna serão salvas e permanecerão em vigor se você sair da exibição de relatório.
@@ -186,7 +186,7 @@ A exibição do relatório Status do pagamento da ordem mostra uma _[!UICONTROL 
 Você também pode forçar manualmente uma atualização dos dados do relatório Status de pagamento da ordem para ver as informações mais atualizadas do relatório.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
-1. Clique em _Atualizar_ ícone (![ícone de atualização](assets/refresh-button-med.png)).
+1. Clique em _Atualizar_ ícone (![ícone de atualização](assets/refresh-button-med.png){width="20" zoomable="yes"}).
 
    Os dados do relatório de status do pagamento da ordem são atualizados, e *[!UICONTROL Update complete]* a confirmação é exibida e as informações mais recentes estão presentes na grade.
 
@@ -208,7 +208,7 @@ Você pode visualizar todas as contestações nos pedidos da sua loja e navegar 
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Se quiser ver os status de um período diferente dos últimos 30 dias, [personalizar o período do intervalo de datas para seus status](#customize-dates-timeframe).
-1. Clique em _Baixar_ (![ícone de download](assets/icon-download.png)) ícone.
+1. Clique em _Baixar_ (![ícone de download](assets/icon-download.png){width="20" zoomable="yes"}) ícone.
 
 Os status do seu pedido de pagamento são baixados em um formato .csv.
 

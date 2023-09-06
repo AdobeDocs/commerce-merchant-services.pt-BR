@@ -3,7 +3,7 @@ title: '[!DNL Quick Checkout] configuração de usuário'
 description: Configurar funções e permissões de usuário para mostrar o [!DNL Quick Checkout] Painel de administração.
 exl-id: 76393840-8312-41bb-8447-412849815169
 feature: Checkout, Services
-source-git-commit: b1984a26463e14b8dc9a789421e49e5ea81ad039
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
@@ -18,7 +18,7 @@ Para acessar o [!DNL Quick Checkout] Painel de administração:
 
 1. No _Admin_ barra lateral, navegue até **[!UICONTROL Sales]** > **[!UICONTROL Quick Checkout]**.
 
-   ![Menu Check-out rápido](assets/overview-admin-panel.png)
+   ![Menu Check-out rápido](assets/overview-admin-panel.png){width="600" zoomable="yes"}
 
 Consulte a [integração](../quick-checkout/onboarding.md) tópico para obter mais informações sobre como configurar a variável [!DNL Quick Checkout] para Adobe Commerce.
 
@@ -26,12 +26,12 @@ Para permitir que o usuário acesse e visualize a [!DNL Quick Checkout] Painel d
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL System]** > Permissões > **[!UICONTROL User Roles]**.
 
-   ![Funções do usuário](assets/user-roles-small.png)
+   ![Funções do usuário](assets/user-roles-small.png){width="300" zoomable="yes"}
 
 1. No _Funções_ clique em **Adicionar nova função**
 1. Selecione o [!DNL Quick Checkout] recursos:
 
-   ![Funções e permissões do Check-out rápido](assets/role-resource-quick-checkout.png)
+   ![Funções e permissões do Check-out rápido](assets/role-resource-quick-checkout.png){width="300" zoomable="yes"}
 
 1. Clique em **Salvar Função**.
 

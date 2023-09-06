@@ -3,7 +3,7 @@ title: Compartimentalização do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
@@ -14,15 +14,15 @@ ht-degree: 0%
 
 Converta clientes ocasionais em compradores fiéis com cofre de cartão de crédito. Os compradores podem salvar — ou &quot;guardar&quot; — suas credenciais de cartão de crédito durante o checkout para uso em uma compra posterior para a mesma, ou outra, loja na mesma conta de comerciante.
 
-![Guarde seu cartão de crédito para uso posterior](assets/save-card-for-later.png)
+![Guarde seu cartão de crédito para uso posterior](assets/save-card-for-later.png){width="400" zoomable="yes"}
 
 Os compradores usam o token armazenado para concluir um check-out futuro com as informações de cartão de crédito salvas.
 
-![Usar credenciais armazenadas para compra futura](assets/use-stored-card.png)
+![Usar credenciais armazenadas para compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
 
 Eles também podem excluir facilmente seus cartões de crédito com cofre do [Métodos de pagamento armazenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) em sua conta.
 
-![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png)
+![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 
 ## Ativar compartimentação
 
@@ -41,7 +41,7 @@ Para criar um pedido no Administrador para um cliente usando seu cartão de cré
 1. Selecione o método de pagamento com cartão de crédito com cofre desejado.
 1. Depois de concluir quaisquer outras etapas necessárias para o pedido, [enviá-lo](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/assist/customer-account-create-order.html?lang=en#step-3%3A-submit-the-order).
 
-   ![Usar cartão de crédito com cofre no Administrador para o cliente](assets/admin-vaultedcard.png)
+   ![Usar cartão de crédito com cofre no Administrador para o cliente](assets/admin-vaultedcard.png){width="600" zoomable="yes"}
 
 ## Segurança
 
