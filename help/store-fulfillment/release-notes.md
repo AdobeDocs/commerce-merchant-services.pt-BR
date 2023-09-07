@@ -4,10 +4,10 @@ description: "Revise as notas de versão para obter informações sobre tudo [!D
 role: Admin, User, Leader
 feature: Shipping/Delivery, Release Notes
 exl-id: 04dcec10-fff8-483d-a2c1-4b58e063e0f0
-source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
+source-git-commit: db1d5523f48f5686c2a28c7dfb7b1175238b37cf
 workflow-type: tm+mt
-source-wordcount: '479'
-ht-degree: 2%
+source-wordcount: '514'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +19,15 @@ Estas notas de versão descrevem a versão inicial do [!DNL Store Fulfillment Se
 ![Problema corrigido](../assets/fix.svg) Correções e aprimoramentos
 ![Problema conhecido](../assets/bug.svg) Problemas conhecidos
 
+Consulte [Versões futuras](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para saber mais sobre as programações de lançamento e o suporte.
+
+Consulte [Disponibilidade do produto](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html) para saber quais versões do Adobe Commerce são compatíveis com essa extensão.
+
 ## v1.5.0
 
 *3 de agosto de 2023*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}[Adobe Commerce 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), incluindo as versões de patch de segurança 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4.
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}[Adobe Commerce 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html), incluindo as versões de patch de segurança 2.4.6-p1, 2.4.5-p3 e 2.4.4-p4
 
 Esta versão inclui as seguintes atualizações:
 
@@ -63,7 +67,7 @@ Esta versão inclui as seguintes atualizações:
 
 *13 de abril de 2023*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/fix.svg) [!DNL Store Fulfillment] agora é [compatível com [!DNL Adobe Commerce] 2.4.4 a 2.4.6](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
 
@@ -72,7 +76,7 @@ Esta versão inclui as seguintes atualizações:
 
 *27 de fevereiro de 2023*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 Esta versão inclui a seguinte atualização:
 
@@ -82,7 +86,7 @@ Esta versão inclui a seguinte atualização:
 
 *27 de setembro de 2022*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 Esta versão inclui a seguinte atualização:
 
@@ -93,7 +97,7 @@ Esta versão inclui a seguinte atualização:
 
 *15 de julho de 2022*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 Estabilidade: disponibilidade geral
 
@@ -103,7 +107,7 @@ Estabilidade: disponibilidade geral
 
 *4 de março de 2022*
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 Estabilidade: disponibilidade geral
 
