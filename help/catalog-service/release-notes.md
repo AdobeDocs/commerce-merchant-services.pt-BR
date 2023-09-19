@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 232dce5db4a82fcec367dce04fb6fba5826b9733
+source-git-commit: 4e1e50aad831f04c0fee105e4c45a28ff5ca65af
 workflow-type: tm+mt
 source-wordcount: '515'
 ht-degree: 0%
@@ -54,7 +54,7 @@ As seguintes limitações podem ser resolvidas usando a API Mesh e a Core GraphQ
 
 _18 de julho de 2023_
 
-[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg) O Serviço de catálogo agora é compatível com o [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Consulta do GraphQL para Recommendations do produto.
 
