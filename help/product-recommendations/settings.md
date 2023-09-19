@@ -2,9 +2,9 @@
 title: Configurações
 description: Saiba como alterar a origem do seu [!DNL Product Recommendations] dados e como ativar recomendações visuais.
 exl-id: 8c074e11-e0cb-4d55-b646-30279c79bbc2
-source-git-commit: 48e350167611a2737d79bf5decccd7f6f24c714c
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '437'
+source-wordcount: '457'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,8 @@ ht-degree: 0%
 Quando você [configurar um espaço de dados SaaS](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) para o Recommendations, o espaço de dados SaaS coleta dados de catálogo e dados comportamentais de vitrine. [Adobe Sensei](https://www.adobe.com/sensei.html) O analisa esses dados e calcula as associações de produtos usadas para servir o Recommendations de produtos.
 
 Ambientes de não produção para teste ou preparo geralmente não têm a quantidade ou a qualidade dos dados comportamentais da loja para atender às recomendações realistas do produto. O comportamento real do comprador em escala pode ser capturado somente em um ambiente de produção. Para resolver esse problema, o Adobe Commerce permite usar as recomendações de produto do ambiente de produção com outros espaços de dados SaaS que não sejam de produção. A utilização de dados reais da loja em um ambiente de não produção permite visualizar as recomendações que seus compradores veem e experimentar com diferentes tipos de recomendações e locais de posicionamento. O Recommendations de um espaço de dados SaaS diferente pode ser visualizado pelos compradores, mas não clicado.
+
+As ordens de preparo são registradas usando o preparo `environmentId`. Isso não afeta os dados de produção. Os dados de produção são recuperados usando o `alternateEnvironmentId`.
 
 >[!NOTE]
 >

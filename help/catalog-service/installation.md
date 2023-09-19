@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: Saiba como instalar [!DNL Catalog Service]
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 04b1553e7cc16d142b72553ca2a6bb9d6a6b5eb4
+source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '649'
 ht-degree: 0%
 
 ---
@@ -36,14 +36,16 @@ O processo de integração do [!DNL Catalog Service] requer acesso à linha de c
 - Adobe Commerce na infraestrutura em nuvem: 2.4.4+
 - Adobe Commerce no local: 2.4.4+
 
-## Ambientes
+## Endpoints
 
-O Serviço de catálogo tem dois ambientes disponíveis para integração:
+O Serviço de catálogo tem dois endpoints disponíveis para integração:
 
 - Sandbox (https://catalog-service-sandbox.adobe.io/graphql) - usada para teste e validação antes de entrar em funcionamento
 - Produção (https://catalog-service.adobe.io/graphql)- usado para tráfego direto para comerciantes e sites do Commerce
 
-O teste de carga só deve ser executado no ambiente de sandbox. Recomenda-se que uma [Tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ser aberto durante o teste de carga para que a equipe de Serviços possa antecipar o tráfego adicional do servidor.
+Todas as instâncias de teste do Commerce devem usar o ponto de extremidade da sandbox.
+
+O teste de carga só deve ser executado no endpoint da sandbox. Recomenda-se que uma [Tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket) ser aberto durante o teste de carga para que a equipe de Serviços possa antecipar o tráfego adicional do servidor.
 
 ## Instalação e configuração
 

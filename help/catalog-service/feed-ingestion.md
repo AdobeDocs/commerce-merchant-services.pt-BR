@@ -1,9 +1,9 @@
 ---
 title: Serviço de assimilação de feed
 description: Saiba mais sobre o serviço de assimilação de feed do Adobe Commerce
-source-git-commit: 12b1e89924a2eb89494bcb884fc3bc14e87b2b1c
+source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
 workflow-type: tm+mt
-source-wordcount: '360'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,9 +15,11 @@ ht-degree: 0%
 >
 >No momento, o Serviço de assimilação de feed está em beta privado. Ele ainda não está disponível para uso geral.
 
+O Serviço de assimilação de feed permite que clientes com catálogos grandes e/ou complexos enviem dados diretamente para os serviços da Adobe Commerce.
+
 O Serviço de assimilação de feeds diminui o tempo necessário para processar alterações de produtos (atualizações de preços, adição de novos atributos), ignorando a instância do Adobe Commerce e movendo os dados do catálogo de um ERP (Enterprise Resource Planning, planejamento de recursos corporativos) de terceiros diretamente para os serviços da Adobe Commerce.
 
-Este serviço é para clientes que armazenam e gerenciam seu catálogo de produtos em um sistema externo ao aplicativo principal do Adobe Commerce.
+Este serviço é para clientes que armazenam e gerenciam seu catálogo de produtos em um sistema externo ao aplicativo principal do Adobe Commerce. Ele é fornecido como uma API, para que os clientes possam integrá-lo aos sistemas existentes, fornecendo flexibilidade adicional na forma como é implantado.
 
 Clientes com catálogos grandes e complexos ou catálogos que recebem atualizações frequentes estão preocupados com o fato de que os novos dados podem levar mais tempo do que o desejado para serem exibidos no armazenamento dinâmico. Como o Serviço de catálogo sabe quais dados ele precisa para processar essas atualizações, não há necessidade de enviar os dados por meio do produto principal do Commerce, apenas para ser encaminhado ao Serviço de catálogo. A remoção desta etapa intermediária é onde os ganhos de eficiência são encontrados.
 
