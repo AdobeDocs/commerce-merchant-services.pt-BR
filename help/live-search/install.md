@@ -3,9 +3,9 @@ title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 96a5791c5716f612f473540f27bd3f99b1bfe7c8
+source-git-commit: 97a743b1f7162af01930a37db448432acb9f89d5
 workflow-type: tm+mt
-source-wordcount: '1299'
+source-wordcount: '1323'
 ht-degree: 0%
 
 ---
@@ -73,6 +73,9 @@ Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Li
    * Feed do produto
    * Feed de variante de produto
    * Feed de atributos do catálogo
+   * Feed de preços do produto
+   * Feed de dados do site de escopos
+   * Feed de dados dos grupos de clientes dos escopos
 
 1. Configurar o [Chaves de API](#configure-api-keys) e verifique se os dados do catálogo estão [sincronizado](#synchronize-catalog-data) com [!DNL Live Search] serviços.
 
@@ -121,6 +124,9 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente solicitações de 
    * Feed do produto
    * Feed de variante de produto
    * Feed de atributos do catálogo
+   * Feed de preços do produto
+   * Feed de dados do site de escopos
+   * Feed de dados dos grupos de clientes dos escopos
 
 1. Configurar o [Chaves de API](#configure-api-keys) e verifique se os dados do catálogo estão [sincronizado](#synchronize-catalog-data) com [!DNL Live Search] serviços.
 
@@ -211,7 +217,7 @@ Para atualizar [!DNL Live Search], execute o seguinte a partir da linha de coman
 composer update magento/live-search --with-dependencies
 ```
 
-Para atualizar para uma versão principal, como 2.0.0 para 3.0.1, edite a raiz do projeto [!DNL Composer] `.json` do seguinte modo:
+Para atualizar para uma versão principal, como a de 2.0.0 para 3.1.1, edite a raiz do projeto [!DNL Composer] `.json` do seguinte modo:
 
 1. Se o estiver instalado atualmente `magento/live-search` a versão é `2.0.3` ou abaixo, e você está atualizando para a versão `3.0.0` ou superior, execute o seguinte comando antes da atualização:
 

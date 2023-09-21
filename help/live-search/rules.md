@@ -1,15 +1,15 @@
 ---
-title: "Regras"
+title: "Regras de pesquisa"
 description: "[!DNL Live Search] as regras combinam lógica e ações para moldar a experiência de compra."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 7307702a62a6b2c3e6c6083a59f2ac3587b0985e
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '592'
 ht-degree: 0%
 
 ---
 
-# Regras
+# Regras de pesquisa
 
 [!DNL Live Search] as regras combinam a lógica com ações para moldar a experiência de pesquisa de um comprador em sua loja. Você pode usar regras para impulsionar, enterrar, fixar ou ocultar produtos a fim de calibrar os resultados da pesquisa em tempo real para apoiar suas metas comerciais.
 
@@ -23,7 +23,7 @@ Cada regra tem três componentes principais:
 
 ## Requisitos
 
-Uma regra simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até 25 eventos.
+Uma regra de pesquisa simples pode ter uma única condição e um único evento, enquanto uma regra complexa pode ter até dez condições que acionam até 25 eventos.
 As regras podem ter:
 
 * Até dez condições
@@ -49,7 +49,7 @@ Ao compor uma regra complexa, pode ser útil anotá-la com recuo para descrever 
 
 ## Ordem de precedência com várias regras
 
-Somente uma regra é aplicada a um termo de pesquisa por vez.
+Somente uma regra de pesquisa é aplicada a um termo de pesquisa de cada vez.
 Se várias regras forem consideradas aplicáveis a uma frase de pesquisa, todas elas serão aplicadas. Se houver uma colisão entre duas regras...`rule 1` que aumenta o sku1, mas `rule 2` oculta o mesmo SKU — em seguida, a regra aplicada mais recentemente (`rule 2`) tem precedência.
 
 * As regras são ordenadas pelo carimbo de data e hora &quot;Última modificação&quot;. A regra modificada mais recentemente é aplicada primeiro, e depois disso as regras mais antigas, na ordem do carimbo de data e hora.

@@ -1,17 +1,17 @@
 ---
-title: "Espaço de trabalho de regras"
+title: "Espaço de Trabalho de Regras de Pesquisa"
 description: "Saiba mais sobre o [!DNL Live Search] espaço de trabalho de regras."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 91d0713a3e57a3748609b6b4bcb723c21a461519
+source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
 workflow-type: tm+mt
-source-wordcount: '573'
+source-wordcount: '578'
 ht-degree: 1%
 
 ---
 
-# Espaço de Trabalho de Regras
+# Espaço de Trabalho de Regras de Pesquisa
 
-O espaço de trabalho de regras lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
+O espaço de trabalho Regras de pesquisa lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
 
 * Pesquisar regras
 * Exibir detalhes da regra
@@ -46,18 +46,18 @@ As colunas visíveis têm uma marca de seleção azul no menu de opções. O nom
    * Inativo
    * Agendado
 
-## Pesquisar regras por nome
+## Localizar regras de pesquisa por nome
 
 Comece digitando o nome da regra ou qualquer palavra no nome da regra.
 A pesquisa encontra as regras correspondentes à medida que você digita. A sequência de caracteres correspondentes é realçada no nome de cada regra encontrada.
 
-![Regras - pesquisar por nome](assets/rules-workspace-search-name.png)
+![Regras - Localizar por nome](assets/rules-workspace-search-name.png)
 
 ## Exibir detalhes
 
 O painel de detalhes mostra o nome da regra, o status, as condições e os eventos, as datas de início e término, a descrição e a data da última edição. As regras podem ser ativadas, editadas e excluídas no painel de detalhes.
 
-1. No *Regras* , localize na grade a regra que deseja exibir e clique em **Mais** (...)
+1. No *Regras de pesquisa* , localize na grade a regra que deseja exibir e clique em **Mais** (...)
 1. Clique em **Exibir detalhes**.
 Você pode executar qualquer um dos seguintes procedimentos a partir do painel Exibir detalhes:
 

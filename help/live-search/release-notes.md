@@ -3,10 +3,10 @@ title: '[!DNL Live Search] Notas de versão'
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: add4d61f1e97bdf889ab0de694f8c3921caaab50
+source-git-commit: 190ff4bd6442f77407675e48850e214e241b392a
 workflow-type: tm+mt
-source-wordcount: '1459'
-ht-degree: 1%
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -36,6 +36,52 @@ _25 de abril de 2023_
 
 +++
 
+## [!DNL Live Search] 3.1.1 {#311}
+
+_15 de setembro de 2023_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+### Novos recursos
+
+* A guia Nova categoria de merchandising foi adicionada. Agora, os usuários podem adicionar Classificações inteligentes e Classificações manuais (fixar, impulsionar, enterrar, ocultar) por categoria
+* Os usuários podem adicionar uma única regra de categoria com classificação inteligente ou manual
+* Agora, os usuários podem adicionar regras de Classificação inteligente a subcategorias
+* Informações detalhadas são fornecidas ao excluir subcategorias com classificação inteligente
+* Adição da capacidade de excluir regras para estratégias de classificação herdadas
+* Adição da capacidade de excluir regras para uma única categoria
+* Agora os usuários podem pesquisar por nome de categoria ao adicionar uma regra
+* Com a Visualização em árvore de categorias, os usuários podem visualizar qual categoria tem regras aplicadas.
+* Visualização de categoria mostra apenas a categoria selecionada.
+
+### Atualizações
+
+* A guia &quot;Regras&quot; foi renomeada para &quot;Regras de pesquisa&quot;
+* Ao classificar por &quot;tendência&quot;, agora é possível escolher entre:
+   * 3 dias (padrão)
+   * 14 dias
+   * 30 dias
+* &quot;Eventos&quot; (Aumentar/Fixar/Enterrar/Ocultar) foi renomeado para &quot;Classificação manual&quot;
+* O &quot;Tipo de classificação&quot; foi renomeado para &quot;Classificação inteligente&quot;
+
+### Correções
+
+* Correções de erros secundários
+
+Os comerciantes devem atualizar o [!DNL Live Search] versão da extensão >= 3.1.1 para acessar esses recursos.
+
+Após instalar a versão 3.1.1, estes novos indexadores devem ser ativados:
+
+* Feed de preços do produto
+* Feed de dados do site de escopos
+* Feed de dados dos grupos de clientes dos escopos
+
+É recomendável atualizar e testar no controle de qualidade ou preparo antes de enviar as alterações para a produção.
+
+## Versões anteriores
+
++++3.1.0 e anteriores
+
 ## [!DNL Live Search] 3.1.0 {#310}
 
 _1 de setembro de 2023_
@@ -45,10 +91,6 @@ _1 de setembro de 2023_
 ### Atualizações
 
 * O widget Lista de produtos foi atualizado para usar o [API do serviço de catálogo](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/product-search/).
-
-## Versões anteriores
-
-+++3.0.2 e anteriores
 
 ## [!DNL Live Search] 3.0.2 {#302}
 

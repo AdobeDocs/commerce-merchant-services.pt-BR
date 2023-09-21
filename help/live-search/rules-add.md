@@ -2,9 +2,9 @@
 title: "Adicionar regras"
 description: "Saiba como criar [!DNL Live Search] regras."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 0b0e9a630162c4c98c6a3af969002def03155267
+source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
 workflow-type: tm+mt
-source-wordcount: '1419'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 
 1. No Administrador, acesse **Marketing** > SEO E Pesquisa > **[!DNL Live Search]**.
 1. Defina o **Escopo** para identificar o [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
-1. Clique em **Regras** guia.
+1. Clique em **Regras de pesquisa** guia.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
 ## Condições
@@ -70,9 +70,9 @@ Uma regra pode ter até dez condições. O operador lógico que une duas condiç
 
 1. Para adicionar outra condição, clique em **Adicionar condição** e repita o processo.
 
-## Tipo de classificação
+## Classificação inteligente
 
-A classificação combina comportamentos de usuário e estatísticas do site para determinar a classificação do produto.
+A classificação inteligente combina comportamentos de usuário e estatísticas do site para determinar a classificação do produto.
 Os proprietários de lojas podem configurar os seguintes tipos de estratégias de classificação:
 
 ![Regras - Corresponder](assets/rules-ranking-type.png)
@@ -90,9 +90,9 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 >
 >Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
 
-## Adição de eventos
+## Classificação manual
 
-Eventos são ações que modificam os resultados da pesquisa quando condições definidas são atendidas. Uma única regra pode ter até 25 eventos.
+Classificação manual (anteriormente conhecida como Eventos) são ações que modificam os resultados da pesquisa quando condições definidas são atendidas. Uma única regra pode ter até 25 eventos.
 
 * Aumentar - Move um produto para cima nos resultados da pesquisa.
 * Enterro - Move um SKU para baixo nos resultados da pesquisa.
@@ -166,7 +166,7 @@ As informações inseridas aqui aparecem no campo [Detalhes da regra](rules-work
 | Qualquer | Altera todos os operadores lógicos na regra para `OR` e retorna o conjunto de produtos correspondentes. |
 | Todos | Altera todos os operadores lógicos na regra para `AND` e retorna o conjunto de produtos correspondentes. |
 
-### Eventos
+### Classificação manual
 
 | Evento | Descrição |
 |--- |--- |
