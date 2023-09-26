@@ -1,11 +1,11 @@
 ---
-title: '[!DNL Live Search] Notas de versão'
+title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: 21170ecc66891d803b6c45dd8e2fa2135f0e5de1
 workflow-type: tm+mt
-source-wordcount: '1691'
+source-wordcount: '1712'
 ht-degree: 0%
 
 ---
@@ -129,6 +129,7 @@ _14 de março de 2023_
 ![Novo](../assets/new.svg) Adição da capacidade de arrastar e soltar para criar eventos de Fixação
 ![Novo](../assets/new.svg) Novas ações de fixação: * Fixar no ponto - Botão Fixar para criar um evento Fixar com um clique * Fixar no topo - Coloca o produto na primeira posição * Fixar na parte inferior - Coloca o produto na parte inferior dos resultados * Desfixar um evento com um clique
 ![Novo](../assets/new.svg) [Classificação inteligente para regras](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/rules/rules-add.html#ranking-type)
+![Novo](../assets/new.svg) [!DNL Live Search] O agora é compatível com o Inventário de várias origens (MSI). Para usar o MSI, você deve [instalar](install.md#update) o `commerce-data-export` Módulo 102.2.0+. Verifique sua versão usando o seguinte comando: `composer update magento/live-search --with-dependencies`.
 
 ### Atualizações
 

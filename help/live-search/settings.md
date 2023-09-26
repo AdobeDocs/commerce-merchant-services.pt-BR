@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Configurações"
 description: "Definir configurações para o [!DNL Live Search] serviço."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: d367fdb0cb0ddf67ee1ce31b178fcb29ec5283ad
+source-git-commit: eefae3c849545062012cea1a7092c27f7df56b58
 workflow-type: tm+mt
-source-wordcount: '310'
+source-wordcount: '246'
 ht-degree: 0%
 
 ---
@@ -38,11 +38,11 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 | Número de seleções | Especifica o número de agrupamentos de intervalo de preços que podem ser usados como filtros de pesquisa na loja. Valor padrão: 8, Valor máximo: 50 |
 | Valor do intervalo | Especifica o intervalo de preço para cada grupo. Por exemplo, cinco seleções com um valor de intervalo de 20 cria cinco agrupamentos de 0-20, 20-40, 40-60, 60-80 e >80. Valor padrão: 5, Valor máximo: 10.000 |
 
-## Idioma
+<!-- ## Language
 
-A configuração Idioma informa [!DNL Live Search] qual idioma esperar ao ler o catálogo e gravar o índice.
+The Language setting tells [!DNL Live Search] which language to expect when reading the catalog and writing the index. 
 
-As línguas têm diferentes conjuntos de regras para a gramática: como as palavras são separadas, tempos verbais e sinônimos, por exemplo.
-A configuração Idioma garante que o conjunto correto de regras seja aplicado ao mecanismo de indexação.
+Languages have different sets of rules for grammar: how words are separated, verb tenses and synonyms, for example.
+The Language setting ensures that the correct set of rules are applied to the indexing mechanism.
 
-As Configurações de idioma devem ser definidas para o idioma principal do catálogo.
+The Language settings should be set to the primary language of the catalog. -->
