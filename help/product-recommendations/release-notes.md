@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: f3e94b20580fcd14b341b2b04a04966afd4be5ce
+source-git-commit: e568609ac1093b36d78250b45e581b63ff35a2ac
 workflow-type: tm+mt
-source-wordcount: '1177'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -79,6 +79,7 @@ _25 de abril de 2023_
 
 ![Novo](../assets/new.svg) Adicionado [indicadores de disponibilidade](create.md) para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação.
 ![Novo](../assets/new.svg) Esta é uma versão principal. [Editar](install-configure.md#update) a raiz `composer.json` para o seu projeto. Esta versão também requer que você forneça duas chaves de API ao instalar e configurar o Product Recommendations: [uma chave de produção e uma chave de sandbox](../landing/saas.md).
+![Novo](../assets/new.svg) [!DNL Product Recommendations] O agora oferece suporte completo [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) no Commerce (conhecido anteriormente como Inventário de várias origens ou MSI). Para habilitar o suporte completo, você deve [atualizar](install-configure.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
 
 #### Limitações conhecidas
 
