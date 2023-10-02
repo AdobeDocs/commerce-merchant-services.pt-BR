@@ -1,20 +1,21 @@
 ---
-title: Instalação da indexação de preços do SaaS
-description: Instalando a indexação de preços do SaaS
+title: Instalação manual da indexação de preços do SaaS
+description: Instalação de indexação de preços SaaS para versões mais antigas
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
 exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: be0b8f4c26f11c31da3e5422bb4f4c4af10f2a00
 workflow-type: tm+mt
-source-wordcount: '254'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
 
-# Instalação da indexação de preços do SaaS
+# Instalação manual da indexação de preços do SaaS
 
-A configuração da indexação de preços SaaS requer a instalação de novos módulos e a execução de comandos CLI. Os administradores precisam de acesso à linha de comando para concluir esta instalação.
+A indexação de preços SaaS está disponível imediatamente para suporte [versão mais recente](index.md#Requirements) de Commerce Services.
+Se você não tiver a versão mais recente e quiser habilitar a Indexação de preços SaaS para sua instância do Adobe Commerce, use este miniguia.
 
 ## Pré-requisitos
 
@@ -33,10 +34,10 @@ Há extensões que adicionam os novos feeds e código de suporte e há uma exten
 1. Adicione os seguintes módulos ao `composer.json` arquivo:
 
    ```json
-   "magento/module-saas-price": "102.2.0",
-   "magento/module-saas-scopes": "102.2.0",
-   "magento/module-product-override-price-remover": "102.2.0",
-   "magento/module-bundle-product-override-data-exporter": "102.2.0",
+   "magento/module-saas-price": "^102.2.0",
+   "magento/module-saas-scopes": ^"102.2.0",
+   "magento/module-product-override-price-remover": "^102.2.0",
+   "magento/module-bundle-product-override-data-exporter": "^102.2.0",
    ```
 
 1. Execute o comando de atualização:
@@ -68,17 +69,12 @@ Depois da atualização, três novos feeds estarão disponíveis:
 
 Execute os indexadores acima manualmente, conforme necessário. Caso contrário, os dados serão atualizados no processo de sincronização padrão. Leia mais sobre o [Sincronização de catálogo](../landing/catalog-sync.md) serviço.
 
-Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar o `catalog-adapter` módulo que fornece compatibilidade com o Luma e o Core GraphQl e desativa o indexador de preço principal do PHP.
-Para usar o `catalog-adapter` módulo, [!DNL Live Search] e [!DNL Catalog Service] O deve ser instalado e configurado primeiro. Siga as [Instalar [!DNL Live Search]](../live-search/install.md) e [Instalação do serviço de catálogo](../catalog-service/installation.md) instruções antes de continuar.
 
-Para configurar o Live Search e o Adaptador do Catálogo, siga [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html?lang=en) instruções.
+Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar o [`Catalog Adapter`](catalog-adapter.md) Extensão que fornece compatibilidade com o Luma e o Core GraphQl e desativa o indexador de Preço de produto do Adobe Commerce.
 
-```bash
-composer require adobe-commerce/catalog-adapter
-```
+## Avisos
 
-Se necessário, o indexador de preço principal do PHP pode ser reativado com o seguinte comando:
+Antes `103.0.0` versão, indexação de preços SaaS suportada simples, agrupado, virtual, configurável e tipos de produtos dinâmicos de pacote.
+O suporte para tipos de produto para download, cartões-presente e pacote fixo está disponível a partir de `magento/module-saas-price:103.0.0` versão e disponível imediatamente para os Commerce Services compatíveis.
 
-```bash
-bin/magento module:disable Magento_PriceIndexerDisabler
-```
+Os novos feeds devem ser sincronizados manualmente com o `resync` [comando CLI](../landing/catalog-sync.md#resynccmdline). Caso contrário, os dados serão atualizados no processo de sincronização padrão. Obter mais informações sobre o [Sincronização de catálogo](../landing/catalog-sync.md) processo.
