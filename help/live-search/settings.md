@@ -2,20 +2,18 @@
 title: "[!DNL Live Search] Configurações"
 description: "Definir configurações para o [!DNL Live Search] serviço."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 06dfc8fd5dc3619732a1f534e5770b6812eddc07
+source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
 workflow-type: tm+mt
-source-wordcount: '246'
+source-wordcount: '226'
 ht-degree: 0%
 
 ---
 
 # Configurações
 
-Use o *Configurações* guia para configurar as faixas e os intervalos de facetas de preços e o idioma padrão do índice.
+Use o *Configurações* guia para configurar as faixas e os intervalos de facetas de preços.
 
 A facetagem de preços especifica o número de grupos de faixas de preços e como os valores de preços são distribuídos entre eles.
-
-As configurações de idioma informam o [!DNL Live Search] serviço que idioma esperar ao gravar o índice.
 
 ![Configurações](assets/settings.png)
 
