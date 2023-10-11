@@ -3,16 +3,16 @@ title: Visão geral do Guia
 description: Saiba como integrar dados do Adobe Commerce com o Adobe Experience Platform usando o conector Experience Platform.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: 1d8609a607e0bcb74fdef47fb8e4e582085836e2
+source-git-commit: 0b30d78602e6fc033a05178de8454b4dbf197911
 workflow-type: tm+mt
-source-wordcount: '497'
+source-wordcount: '498'
 ht-degree: 1%
 
 ---
 
 # Visão geral do conector Experience Platform
 
-A extensão do conector Experience Platform permite que os comerciantes do Adobe Commerce enviem [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) para a borda do Adobe Experience Platform, para que outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target, possam usar esses dados do Commerce. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas, como analisar o comportamento do usuário no site, executar testes AB e criar campanhas personalizadas.
+A extensão do conector Experience Platform permite que os comerciantes do Adobe Commerce enviem [vitrine](events.md#storefront-events) e [back office](events.md#back-office-events) para a borda do Adobe Experience Platform, para que outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Journey Optimizer, possam usar esses dados do Commerce. Conectando os dados do Commerce a outros produtos na Adobe Experience Cloud, você pode executar tarefas, como analisar o comportamento do usuário no site, executar testes AB e criar campanhas personalizadas.
 
 [Eventos da loja](events.md#storefront-events) capturar interações do comprador, como `View Page`, `View Product`, `Add to Cart`, e [lista de requisições](events.md#b2b-events) informações (para os comerciantes B2B). [Back Office](events.md#back-office-events) os eventos capturam informações sobre o status de um pedido, como se um pedido foi feito, cancelado, reembolsado, enviado ou concluído. Os dados capturados não incluem informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. [Saiba mais](https://www.adobe.com/privacy/experience-cloud.html).
 
