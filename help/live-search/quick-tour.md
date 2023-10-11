@@ -2,9 +2,9 @@
 title: "Tour rápido"
 description: "Faça um rápido tour pelo [!DNL Live Search] da loja."
 exl-id: bcb19506-6617-4c8a-83df-9d961f81e9e8
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 9f045a049ac775ed4673e807ab5e21b8811cde2d
 workflow-type: tm+mt
-source-wordcount: '328'
+source-wordcount: '366'
 ht-degree: 0%
 
 ---
@@ -40,3 +40,7 @@ Usar facetas como parâmetros de URL:`http://yourwebsite.com?color=red`, e o Liv
 ## Regras de merchandising
 
 Merchandising [regras](rules.md) molde a experiência de compra com instruções if-then que adicionam lógica e eventos a serem pesquisados. Você pode facilmente impulsionar ou enterrar produtos para uma promoção, temporada ou outro período de tempo.
+
+## Suporte a termos de pesquisa
+
+[!DNL Live Search] oferece suporte ao Commerce [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.

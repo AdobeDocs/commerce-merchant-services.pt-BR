@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "O [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: 44c5d3f73d9cf658a978829ffaef6a79c5d90216
+source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
 workflow-type: tm+mt
-source-wordcount: '485'
+source-wordcount: '499'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,10 @@ Quando [!DNL Live Search] é [instalado](install.md), um [!DNL popover] aparece 
 
 [!DNL Live Search] retorna resultados para uma consulta de dois caracteres ou mais. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres em uma consulta &quot;pesquisar ao digitar&quot; não é configurável.
 
+Por padrão, [!DNL Live Search] suporta [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
+
+![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
+
 ## Atributos pesquisáveis
 
 Para produzir resultados altamente direcionados, revise o conjunto de [pesquisável](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos do produto. Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que embora ativadas por padrão para pesquisa, podem reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
@@ -24,8 +28,6 @@ Os seguintes atributos são sempre pesquisáveis:
 * `sku`
 * `name`
 * `categories`
-
-[[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
 
 ## [!DNL Popover] tamanho da página
 

@@ -3,9 +3,9 @@ title: "Visão geral da integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 68c96b6fc74e60ddd44ab8e953c022b8244da281
+source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
 workflow-type: tm+mt
-source-wordcount: '548'
+source-wordcount: '583'
 ht-degree: 0%
 
 ---
@@ -13,10 +13,6 @@ ht-degree: 0%
 # Visão geral da integração
 
 Para começar a usar o [!DNL Live Search] para o Adobe Commerce, conclua o processo de integração para instalar a extensão, configurar as chaves de API e sincronizar o catálogo.
-
-## Fluxo de integração
-
-![[!DNL Live Search] diagrama de integração](assets/onboarding-flow.svg)
 
 ## Requisitos {#requirements}
 
@@ -72,6 +68,12 @@ Este vídeo é uma introdução ao Merchandising por categoria.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
+## Inventory management
+
+[!DNL Live Search] suporta [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) no Commerce (conhecido anteriormente como Inventário de várias origens ou MSI). Para habilitar o suporte completo, você deve [atualizar](install.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
+
+[!DNL Live Search] retorna um valor booleano observando se um produto está disponível no Inventory management, mas não contém informações sobre qual origem tem o estoque.
+
 ## Indexador de preços
 
 Os clientes do Live Search podem usar o novo [Indexador de preços SaaS](../price-index/index.md), que oferece atualizações de alteração de preço e tempo de sincronização mais rápidos.
@@ -107,7 +109,6 @@ Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
 ## Não suportado no momento
 
 * A variável [Pesquisa avançada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) o módulo é desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
-* Os preços do produto não incluem [imposto sobre o valor acrescentado](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/taxes/vat.html) (IVA)
 * [Preço da camada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) não é compatível com o Popover do Live Search e com o Widget de página de listagem de produtos.
 
 ## Cookies

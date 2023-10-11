@@ -2,9 +2,9 @@
 title: "Facetas"
 description: "[!DNL Live Search] As facetas usam várias dimensões de valores de atributo como critérios de pesquisa."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: 9cf48f6f900385a5cb772adee8834ec9cfe5ee13
+source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
 workflow-type: tm+mt
-source-wordcount: '421'
+source-wordcount: '517'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,8 @@ ht-degree: 0%
 # Facetas
 
 Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa. A pesquisa facetada é semelhante, mas consideravelmente &quot;mais inteligente&quot; do que o padrão [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). A lista de filtros disponíveis é determinada pelo parâmetro [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de produtos retornados nos resultados da pesquisa.
+
+[!DNL Live Search] usa o `productSearch` consulta, que retorna facetas e outros dados específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/webapi/graphql/schema/live-search/queries/product-search/) na documentação do desenvolvedor para obter exemplos de código.
 
 ![Resultados da pesquisa filtrada](assets/storefront-search-results-run.png)
 
@@ -33,6 +35,14 @@ Os requisitos do atributo de categoria e produto para facetas são semelhantes a
 | [Configurações de exibição de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Âncora - `Yes` |
 | [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (somente widget), `Text swatch` (somente widget) |
 | Propriedades da vitrine do atributo | Usar na navegação em camadas dos resultados da pesquisa - `Yes` |
+
+## Agregação de facetas
+
+A agregação de facetas é executada da seguinte maneira: se a loja tiver três facetas (categorias, cor e preço) e os filtros do comprador nos três (cor = azul, preço vai de US$ 10,00 a US$ 50,00, categorias = `promotions`).
+
+* `categories` agregação - Agregados `categories`, aplica a variável `color` e `price` filtros, mas não os `categories` filtro.
+* `color` agregação - Agregados `color`, aplica a variável`price` e `categories` filtros, mas não os `color` filtro.
+* `price` agregação - Agregados `price`, aplica a variável `color` e `categories` filtros, mas não os `price` filtro.
 
 ## Valores de atributo padrão
 

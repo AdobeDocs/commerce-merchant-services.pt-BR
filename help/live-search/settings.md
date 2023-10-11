@@ -2,18 +2,20 @@
 title: "[!DNL Live Search] Configurações"
 description: "Definir configurações para o [!DNL Live Search] serviço."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba4836a67ffee5ae46b6c0efa1db3f1dcbd53116
+source-git-commit: 5e3cdae0e7362b921c51dc6edb12f4b58ffeb31e
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '419'
 ht-degree: 0%
 
 ---
 
 # Configurações
 
-Use o *Configurações* guia para configurar as faixas e os intervalos de facetas de preços.
+Use o *Configurações* guia para configurar as faixas e os intervalos de facetas de preços e o idioma padrão do índice.
 
 A facetagem de preços especifica o número de grupos de faixas de preços e como os valores de preços são distribuídos entre eles.
+
+A configuração Idioma informa o [!DNL Live Search] serviço que idioma esperar ao gravar o índice.
 
 ![Configurações](assets/settings.png)
 
@@ -35,3 +37,53 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 |--- |--- |
 | Número de seleções | Especifica o número de agrupamentos de intervalo de preços que podem ser usados como filtros de pesquisa na loja. Valor padrão: 8, Valor máximo: 50 |
 | Valor do intervalo | Especifica o intervalo de preço para cada grupo. Por exemplo, cinco seleções com um valor de intervalo de 20 cria cinco agrupamentos de 0-20, 20-40, 40-60, 60-80 e >80. Valor padrão: 5, Valor máximo: 10.000 |
+
+## Idioma
+
+A configuração Idioma informa [!DNL Live Search] qual idioma esperar ao ler o catálogo e gravar o índice.
+
+As línguas têm diferentes conjuntos de regras para a gramática: como as palavras são separadas, tempos verbais e formas de palavras, por exemplo.
+A configuração Idioma garante que o conjunto correto de regras seja aplicado ao mecanismo de indexação.
+
+Defina a configuração Idioma para o idioma principal do catálogo. Ao alterar o idioma do índice, pode levar de 5 a 60 minutos para refletir a alteração na loja, dependendo do tamanho e da complexidade do catálogo.
+
+| Idioma | Código |
+|----|----|
+| Árabe | ar |
+| Armênio | hy |
+| Basco | eu |
+| Bengali | bn |
+| Brasileiro | pt-br |
+| Búlgaro | bg |
+| Catalão | ca |
+| Chinês (simplificado) | zh-cn |
+| Chinês (tradicional) | zh-tw |
+| Tcheco | cs |
+| Dinamarquês | da |
+| Holandês | nl |
+| Inglês | en |
+| Estoniano | et |
+| Finlandês | fi |
+| Francês | fr |
+| Galego | gl |
+| Alemão | de |
+| Grego | el |
+| Hindi | oi |
+| Húngaro | hu |
+| Indonésio | id |
+| Irlandês | ga |
+| Italiano | it |
+| Japonês | ja |
+| Coreano | ko |
+| Letão | lv |
+| Lituano | lt |
+| Norueguês | não |
+| Persa | fa |
+| Português | pt |
+| Romeno | ro |
+| Russo | ru |
+| Sorani | ku |
+| Espanhol | es |
+| Sueco | sv |
+| Turco | tr |
+| Tailandês | th |
