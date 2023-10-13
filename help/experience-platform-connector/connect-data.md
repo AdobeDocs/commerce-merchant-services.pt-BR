@@ -3,9 +3,9 @@ title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar os dados do Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: f4ed7a485d5962530641203beec79061bfa7e33f
+source-git-commit: 24494546d6d21cf46e3cb9f0fdd503ec8007daf8
 workflow-type: tm+mt
-source-wordcount: '2320'
+source-wordcount: '2263'
 ht-degree: 0%
 
 ---
@@ -122,53 +122,15 @@ A Adobe Commerce coleta até cinco anos de [dados e status históricos do pedido
 
 Embora o Commerce já colete os dados históricos do pedido, há várias etapas que você deve concluir para enviar esses dados para o Experience Platform.
 
-Assista a este vídeo para saber mais sobre pedidos históricos e, em seguida, conclua as seguintes etapas para implementar a coleção e a configuração de pedidos históricos.
+Assista a este vídeo para saber mais sobre pedidos históricos e, em seguida, conclua as etapas a seguir para implementar a coleção de pedidos históricos.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424672)
 
-### Etapa 1: instalar a coleção de dados históricos de pedido
-
-Para habilitar a coleta de dados históricos de pedidos, atualize a raiz do projeto [!DNL Composer] `.json` do seguinte modo:
-
-1. Abra a raiz `composer.json` arquivo e pesquisa `magento/experience-platform-connector`.
-
-1. No `require` , atualize o número da versão da seguinte maneira:
-
-   ```json
-   "require": {
-      ...
-      "magento/experience-platform-connector": "^3.0.0",
-      ...
-    }
-   ```
-
-1. Para comerciantes B2B, atualize o `.json` do seguinte modo:
-
-   ```json
-   "require": {
-     ...
-     "magento/experience-platform-connector-b2b": "^2.0.0"
-     ...
-   }
-   ```
-
-1. **Salvar** `composer.json`. Em seguida, execute o seguinte a partir da linha de comando:
-
-   ```bash
-   composer update magento/experience-platform-connector –-with-dependencies
-   ```
-
-   ou, para os comerciantes B2B:
-
-   ```bash
-   composer update magento/experience-platform-connector-b2b --with-dependencies
-   ```
-
-### Etapa 2: criar um projeto no Console do Adobe Developer
+### Etapa 1: criar um projeto no Console do Adobe Developer
 
 >[!NOTE]
 >
->Se você já tiver instalado e ativado o [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) você já concluiu as etapas 2 e 3.
+>Se você já tiver instalado e ativado o [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensão, você já concluiu as etapas 1 e 2 e pode pular para a etapa 3.
 
 Crie um projeto no Console do Adobe Developer que autentica o Commerce para que ele possa fazer chamadas de API Experience Platform.
 
@@ -182,7 +144,7 @@ Para criar o projeto, siga as etapas descritas na seção [Autenticar e acessar 
 
 O resultado dessa etapa cria um arquivo de configuração que você usa na próxima etapa.
 
-### Etapa 3: baixar arquivo de configuração
+### Etapa 2: baixar arquivo de configuração
 
 Baixe o [arquivo de configuração do espaço de trabalho](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copie e cole o conteúdo desse arquivo na **Detalhes da Conta de Serviço/Credencial** página do Administrador do Commerce.
 
@@ -204,7 +166,7 @@ Baixe o [arquivo de configuração do espaço de trabalho](https://developer.ado
 
 1. Clique em **Salvar configuração**.
 
-### Etapa 4: Configurar o serviço de Sincronização de Pedidos
+### Etapa 3: Configurar o serviço de Sincronização de Pedidos
 
 Depois de inserir as credenciais do desenvolvedor, configure o serviço de sincronização de pedidos. O serviço de sincronização de pedidos usa o [Estrutura da fila de mensagens](https://developer.adobe.com/commerce/php/development/components/message-queues/) e RabbitMQ. Após concluir essas etapas, os dados do status do pedido podem ser sincronizados com o SaaS, que é necessário antes de ser enviado para o Experience Platform.
 
@@ -229,7 +191,7 @@ Depois de inserir as credenciais do desenvolvedor, configure o serviço de sincr
 
 Com o serviço de sincronização de pedidos ativado, você pode especificar o intervalo de datas do pedido histórico na página do conector Experience Platform.
 
-### Etapa 5: especificar o intervalo de datas do histórico da ordem
+### Etapa 4: especificar o intervalo de datas do histórico da ordem
 
 Especifique o intervalo de datas para as ordens históricas que você deseja enviar para o Experience Platform.
 
