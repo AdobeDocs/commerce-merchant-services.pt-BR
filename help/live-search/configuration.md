@@ -3,9 +3,9 @@ title: '"Configurações do Commerce e [!DNL Live Search] '''
 description: Descreve as configurações do Adobe Commerce que [!DNL Live Search] pode ler.
 exl-id: a4e9e2dd-e912-4ced-a44a-091ac5334e50
 features: Services, Search, Configuration
-source-git-commit: 694a1c91425f246e497de50530d02f09a3093953
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '233'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Há definições de configuração do Commerce que [!DNL Live Search] suporta. E
 
 | Definição da configuração de comércio | Suportado pelo Popover | Suportado pelo adaptador |
 |---|---|---|
-| Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Permitir todos os produtos por comprimento de página | Sim. Máximo de 500 produtos | Sim. Máximo de 500 produtos |
+| Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Permitir todos os produtos por duração da página | Sim. Máximo de 500 produtos | Sim. Máximo de 500 produtos |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Duração mínima da consulta | Sim | Sim |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Produtos por página em valores permitidos da grade | Sim | Sim |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Produtos por página no valor padrão da grade | Sim. Máximo de 500 produtos | Sim. Máximo de 500 produtos |
@@ -26,7 +26,11 @@ Há definições de configuração do Commerce que [!DNL Live Search] suporta. E
 | Lojas > Configuração > Moeda > Moeda de Exibição Padrão | Sim com 3.1.0+ | Sim com 3.1.0+ |
 | Lojas > Configuração > Geral > Configuração de Moeda > Opções de Moeda > Moeda Base | Sim | Sim |
 
-Os preços na Página de listagem de produtos do widget e Popover agora são convertidos para a Moeda de exibição padrão usando as Taxas de moeda configuradas
+Os preços na Página de listagem de produtos do widget e Popover agora são convertidos para a Moeda de exibição padrão usando as Taxas de moeda configuradas.
+
+## Pesquisar termos
+
+[!DNL Live Search] suporta [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html) em implementações em que o Adobe Commerce lida com o roteamento: Luma e outros temas baseados em php.
 
 ## Valores de configuração não suportados
 

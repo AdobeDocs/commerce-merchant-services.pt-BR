@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "O [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: bf44c04771069fe6502257b35517c62a5161f81b
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '499'
+source-wordcount: '533'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,10 @@ Por padrão, [!DNL Live Search] suporta [redirecionamentos de termo de pesquisa]
 
 ## Atributos pesquisáveis
 
-Para produzir resultados altamente direcionados, revise o conjunto de [pesquisável](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos do produto. Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que embora ativadas por padrão para pesquisa, podem reduzir a precisão dos resultados da pesquisa. Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
+Para produzir resultados altamente direcionados, revise o conjunto de [pesquisável](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos do produto. Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que embora ativadas por padrão para pesquisa, podem reduzir a precisão dos resultados da pesquisa.
+Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
+
+[!DNL Live Search] respeita igualmente a [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
 
 Os seguintes atributos são sempre pesquisáveis:
 

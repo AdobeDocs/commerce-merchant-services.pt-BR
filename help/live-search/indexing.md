@@ -2,9 +2,9 @@
 title: "[!DNL Live Search] Indexação"
 description: "Saiba como [!DNL Live Search] indexa propriedades de atributo de produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 7eece9b341a27637d7ac00216f18b7fad7c50740
+source-git-commit: 5d76d5537c8625296663239195abd26d4ee24db4
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ A variável [!DNL Live Search] A API permite que um cliente classifique por qual
 ## Pipeline de indexação
 
 O cliente chama o serviço de pesquisa da loja para recuperar (filtrável, classificável) os metadados do índice. Somente atributos de produto pesquisáveis com o *Usar na navegação em camadas* propriedade definida como `Filterable (with results)` e *Usar para classificar na lista de produtos* definir como `Yes` pode ser chamado pelo serviço de pesquisa.
-Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seu peso. [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
+Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e quais deles [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 

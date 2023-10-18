@@ -1,10 +1,10 @@
 ---
 title: "Adicionar regras"
-description: "Saiba como criar [!DNL Live Search] regras."
+description: "Saiba como criar regras de merchandising de pesquisa."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 8093cf72e9adf846f4c40d302d20c77142368c8e
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1430'
 ht-degree: 0%
 
 ---
@@ -17,7 +17,7 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 
 1. No Administrador, acesse **Marketing** > SEO E Pesquisa > **[!DNL Live Search]**.
 1. Defina o **Escopo** para identificar o [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde a regra se aplica.
-1. Clique em **Regras de pesquisa** guia.
+1. Clique em **Pesquisar merchandising** guia.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
 ## Condições

@@ -1,17 +1,17 @@
 ---
-title: "Espaço de Trabalho de Regras de Pesquisa"
-description: "Saiba mais sobre o [!DNL Live Search] espaço de trabalho de regras."
+title: "Pesquisar espaço de trabalho de merchandising"
+description: "Saiba mais sobre o espaço de trabalho de Merchandising de pesquisa."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 40bcae7a792660f02390f4d55967767b15c84f38
+source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '580'
 ht-degree: 1%
 
 ---
 
-# Espaço de Trabalho de Regras de Pesquisa
+# Pesquisar espaço de trabalho de merchandising
 
-O espaço de trabalho Regras de pesquisa lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
+O espaço de trabalho Pesquisar merchandising lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
 
 * Pesquisar regras
 * Exibir detalhes da regra
@@ -19,7 +19,7 @@ O espaço de trabalho Regras de pesquisa lista a seleção atual de regras e seu
 * Excluir regras
 * Acessar o editor de regras
 
-![Espaço de trabalho Regras](assets/rules-workspace.png)
+![Procurar espaço de trabalho de merchandising](assets/rules-workspace.png)
 
 ## Definir o escopo
 
@@ -57,7 +57,7 @@ A pesquisa encontra as regras correspondentes à medida que você digita. A sequ
 
 O painel de detalhes mostra o nome da regra, o status, as condições e os eventos, as datas de início e término, a descrição e a data da última edição. As regras podem ser ativadas, editadas e excluídas no painel de detalhes.
 
-1. No *Regras de pesquisa* , localize na grade a regra que deseja exibir e clique em **Mais** (...)
+1. No *Pesquisar merchandising* , localize na grade a regra que deseja exibir e clique em **Mais** (...)
 1. Clique em **Exibir detalhes**.
 Você pode executar qualquer um dos seguintes procedimentos a partir do painel Exibir detalhes:
 
