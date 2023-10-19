@@ -4,9 +4,9 @@ description: Use o relatório de Transações para obter visibilidade sobre taxa
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: ffbc5ca30a092f5ef2642b051f080fe47ce0e815
+source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
 workflow-type: tm+mt
-source-wordcount: '1216'
+source-wordcount: '1274'
 ht-degree: 0%
 
 ---
@@ -82,6 +82,8 @@ Na exibição do relatório Transações, você pode filtrar os resultados de st
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Transactions]_>**[!UICONTROL View Report]**.
 1. Clique em **[!UICONTROL Filter]** seletor.
 1. Alterne a _[!UICONTROL Transaction Result]_opções para ver os resultados do relatório somente para as transações de ordem selecionadas.
+1. Selecione o _[!UICONTROL Card Type]_para ver os resultados do relatório para o tipo de cartão selecionado. Uma dica de ferramenta com mais informações é exibida quando o processador de pagamento não consegue identificar o tipo de cartão.
+1. Selecione o _[!UICONTROL Card Brand]_para ver os resultados do relatório da marca de cartão selecionada. Uma dica de ferramenta com mais informações é exibida quando o processador de pagamento não consegue identificar a marca do cartão.
 1. Alterne a _[!UICONTROL Payment Method]_opções para ver os resultados do relatório somente para os métodos de pagamento selecionados.
 1. Insira um _Valor mínimo do pedido_ ou _Valor máximo do pedido_ para ver os resultados do relatório dentro dessa faixa de quantias da ordem.
 1. Insira um _[!UICONTROL Order ID]_para procurar uma transação específica.
