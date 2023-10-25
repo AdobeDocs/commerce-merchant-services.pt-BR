@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 2b5ee71618055c48bf4d6a86dbbd4708647b5d7c
+source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '1007'
 ht-degree: 0%
 
 ---
@@ -32,12 +32,12 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. No _Selecionar tipo de página_ selecione a página onde deseja que a recomendação seja exibida a partir das seguintes opções:
 
-   - Página inicial
-   - Categoria
-   - Detalhes do produto
-   - Carrinho
-   - Confirmação
-   - [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * Página inicial
+   * Categoria
+   * Detalhes do produto
+   * Carrinho
+   * Confirmação
+   * [Page Builder](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
 
    Você pode criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Page Builder. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -45,21 +45,6 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
    _Nome da recomendação e posicionamento da página_
 
 1. No _Selecionar tipo de recomendação_ especifique a [tipo de recomendação](type.md) que você deseja que apareça na página selecionada. Para algumas páginas, a variável [inserção](placement.md) de recomendações está limitado a certos tipos.
-
-   Alguns tipos de recomendações usam dados comportamentais de seus compradores para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas. Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, esta seção exibe uma medida de disponibilidade para cada tipo. Esses indicadores de prontidão são calculados com base em dois fatores:
-
-   - Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
-
-   - Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
-
-   Com base nos fatores acima, um valor de disponibilidade é calculado e exibido. Um tipo de recomendação é considerado pronto para implantação quando seu valor de disponibilidade é de 75% ou superior. Um tipo de recomendação é considerado parcialmente pronto quando sua disponibilidade é de pelo menos 50%. Um tipo de recomendação é considerado não pronto para implantação quando seu valor de disponibilidade é inferior a 50%.
-
-   >[!NOTE]
-   >
-   >O indicador pode nunca atingir 100%.
-
-   ![Tipo de recomendação](assets/create-recommendation-select-type.png)
-   _Tipo de recomendação_
 
 1. No _Rótulo de exibição da loja_ , insira o [rótulo](placement.md#recommendation-labels) visível para seus compradores, como &quot;Mais vendidos&quot;.
 
@@ -69,8 +54,8 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. No _Selecionar posicionamento_ especifique o local onde a unidade de recomendação deve aparecer na página.
 
-   - Na parte inferior do conteúdo principal
-   - Na parte superior do conteúdo principal
+   * Na parte inferior do conteúdo principal
+   * Na parte superior do conteúdo principal
 
 1. (Opcional) Para alterar a ordem das recomendações, selecione e mova as linhas na _Escolher posição_ tabela.
 
@@ -86,9 +71,50 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Quando terminar, clique em uma das opções a seguir:
 
-   - **Salvar como rascunho** para editar a unidade de recomendação mais tarde. Não é possível modificar o tipo de página ou de recomendação de uma unidade de recomendação em um estado de rascunho.
+   * **Salvar como rascunho** para editar a unidade de recomendação mais tarde. Não é possível modificar o tipo de página ou de recomendação de uma unidade de recomendação em um estado de rascunho.
 
-   - **Ativar** para ativar a unidade de recomendação na loja.
+   * **Ativar** para ativar a unidade de recomendação na loja.
+
+## Indicadores de disponibilidade
+
+Alguns tipos de recomendações usam dados comportamentais de seus compradores para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas.
+
+Requer apenas dados de catálogo. Não são necessários dados comportamentais para:
+
+* _Mais artigos como este_
+* _Visualizado recentemente_
+* _Similaridade visual_
+
+Com base nos últimos seis meses de dados comportamentais da loja:
+
+* _Visualizou isto, visualizou aquilo_
+* _Visualizou isto, comprou aquilo_
+* _Comprei isto, comprei aquilo_
+* _Recomendado para você_
+
+Os tipos de recomendação baseados em popularidade usam os últimos sete dias dos dados comportamentais da loja:
+
+* Mais visualizados
+* Mais comprados
+* Adicionado ao carrinho
+* Tendências
+
+Espera-se que os valores do indicador de disponibilidade flutuem devido a fatores como o tamanho geral do catálogo, o volume de eventos de interação do produto (visualizações, adições ao carrinho, compras) e a porcentagem de skus que registram esses eventos em uma determinada janela de tempo, conforme listado acima. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
+
+Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a variável _Selecionar tipo de recomendação_ exibe uma medida de prontidão para cada tipo. Esses indicadores de prontidão são calculados com base em dois fatores:
+
+* Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
+
+* Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
+
+Com base nos fatores acima, um valor de disponibilidade é calculado e exibido. Um tipo de recomendação é considerado pronto para implantação quando seu valor de disponibilidade é de 75% ou superior. Um tipo de recomendação é considerado parcialmente pronto quando sua disponibilidade é de pelo menos 50%. Um tipo de recomendação é considerado não pronto para implantação quando seu valor de disponibilidade é inferior a 50%. Essas são diretrizes gerais, mas cada caso individual pode diferir com base na natureza dos dados coletados, conforme descrito acima.
+
+![Tipo de recomendação](assets/create-recommendation-select-type.png)
+_Tipo de recomendação_
+
+>[!NOTE]
+>
+>Os indicadores podem nunca atingir 100%.
 
 ## Visualizar Recommendations {#preview}
 
