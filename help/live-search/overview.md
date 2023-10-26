@@ -3,9 +3,9 @@ title: Introdução ao [!DNL Live Search]
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa ultrarrápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4eddad715405f35ea063bab3cf4651fec3beeae5
+source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
 workflow-type: tm+mt
-source-wordcount: '223'
+source-wordcount: '234'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ O lado da Adobe Commerce na arquitetura inclui hospedar a pesquisa *Admin*, sinc
 
 * [!DNL Live Search] [popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
 * [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
-* O AEM [Componente CIF](https://github.com/adobe/aem-cif-guides-venia/pull/319) permite que os sites AEM aproveitem as [!DNL Live Search].
+* AEM Componentes CIF: o [Widget do Popover](https://github.com/adobe/aem-cif-guides-venia/pull/319) e a variável [Widget do PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permitir que sites AEM aproveitem as [!DNL Live Search].
 * [[!DNL Live Search] Admin](workspace.md) é onde regras, facetas e sinônimos são configurados.
 * O Adaptador de pesquisa é a implementação padrão do [!DNL Live Search].
 

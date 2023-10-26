@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
 workflow-type: tm+mt
-source-wordcount: '1771'
+source-wordcount: '1797'
 ht-degree: 0%
 
 ---
@@ -58,6 +58,7 @@ _15 de setembro de 2023_
 ![Novo](../assets/new.svg) Agora os usuários podem pesquisar por nome de categoria ao adicionar uma regra
 ![Novo](../assets/new.svg) Com a Visualização em árvore de categorias, os usuários podem visualizar qual categoria tem regras aplicadas.
 ![Novo](../assets/new.svg) Visualização de categoria mostra apenas a categoria selecionada.
+![Novo](../assets/new.svg) AEM CIF [Widget do Popover](https://github.com/adobe/aem-cif-guides-venia/pull/319) e [Widget do PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) Os componentes do permitem que os sites AEM aproveitem as [!DNL Live Search].
 
 ### Atualizações
 
