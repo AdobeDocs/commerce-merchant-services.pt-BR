@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 67b4f24828dfdda6bd166791d6c36922294b402f
+source-git-commit: a3f89b74f3cafb855e39b410c1ab60e09d789da0
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1803'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,9 @@ As atualizações incluem:
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
 
-+++Atualizações do serviço hospedado
+_27 de outubro de 2023_
+
+![Novo](../assets/new.svg) A variável [!DNL Live Search] O widget PLP agora é compatível com amostras de cores.
 
 _12 de outubro de 2023_
 
@@ -38,8 +40,6 @@ _13 de junho de 2023_
 _25 de abril de 2023_
 
 ![Novo](../assets/new.svg) [!DNL Live Search] agora, os clientes podem aproveitar o novo [Indexador de preços SaaS](../price-index/index.md).
-
-+++
 
 ## [!DNL Live Search] 3.1.1 {#311}
 
