@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 59de14773849dfd996b6eac115ed821342ccd48d
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '533'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ _18 de julho de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) O Serviço de catálogo agora é compatível com o [`recommendations`](https://developer.adobe.com/commerce/webapi/graphql/schema/product-recommendations/queries/recommendations/) Consulta do GraphQL para Recommendations do produto.
+![Novo](../assets/new.svg) O Serviço de catálogo agora é compatível com o [`recommendations`](https://developer.adobe.com/commerce/services/graphql/recommendations/recommendations/) Consulta do GraphQL para Recommendations do produto.
 
 ### Versão V1.10
 
@@ -90,7 +90,7 @@ _28 de março de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) Adição de amostras à [`products`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/products/) consulta.
+![Novo](../assets/new.svg) Adição de amostras à [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) consulta.
 ![Novo](../assets/new.svg) Adicionada a capacidade de obter `entityId` usar [API Mesh](mesh.md).
 
 ### Versão V1.5
@@ -99,7 +99,7 @@ _6 de março de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) Adicionado [`categories`](https://developer.adobe.com/commerce/webapi/graphql/schema/catalog-service/queries/categories/) funcionalidade do GraphQL.
+![Novo](../assets/new.svg) Adicionado [`categories`](https://developer.adobe.com/commerce/services/graphql/schema/catalog-service/categories/) funcionalidade do GraphQL.
 ![Correção](../assets/fix.svg) Melhor desempenho e escalabilidade da API.
 
 ### Versão V1.4

@@ -2,9 +2,9 @@
 title: Integração
 description: Conheça os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
-source-git-commit: 209bdf9c69ff81481d6df7cb8e8832deef13c9f4
+source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
 workflow-type: tm+mt
-source-wordcount: '283'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ O processo de integração do [!DNL Product Recommendations] requer acesso à li
 
 - Adobe Commerce no local (EE): 2.4.4+
 - Adobe Commerce na nuvem (ECE): 2.4.4+
+
+## Endpoint
+
+[!DNL Product Recommendations] se comunica por meio do endpoint em `https://catalog-service.adobe.io/graphql`.
 
 ### Suporte ao Page Builder
 
