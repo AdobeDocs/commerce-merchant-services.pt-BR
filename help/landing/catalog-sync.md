@@ -3,9 +3,9 @@ title: Sincronização de catálogo
 description: Saiba como exportar dados do produto do [!DNL Commerce] servidor para [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 151b57d7b31637178c645149d78c0d3670ee1c3e
+source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
 workflow-type: tm+mt
-source-wordcount: '1166'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Com o **Sincronização de catálogo** painel é possível:
 - Exibir o status da sincronização (**Em andamento**, **Sucesso**, **Failed**)
 - Exibir o número total de produtos sincronizados
 - Pesquisar produtos sincronizados para exibir seu estado atual
-- Pesquisar catálogo da loja por nome, SKU etc
+- Pesquise o catálogo da loja por nome, SKU etc.
 - Exibir detalhes do produto sincronizado no JSON para ajudar a diagnosticar uma discrepância de sincronização
 - Reiniciar o processo de sincronização
 
@@ -67,7 +67,6 @@ Se precisar iniciar uma ressincronização do catálogo antes que a sincronizaç
 1. No _Ressincronizar Dados_ clique em [!UICONTROL Resync].
 
    [!DNL Commerce] sincroniza seu catálogo durante a próxima janela de sincronização agendada. Dependendo do tamanho do catálogo, essa operação pode levar muito tempo.
-
 
 ## Produtos de catálogo sincronizados
 
@@ -193,7 +192,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 #### Criação de perfil
 
-Se o processo de reindexação de um feed específico demorar um tempo injustificável, execute o profiler para coletar dados adicionais que podem ser úteis para a Equipe de suporte. Para fazer isso, passe o `EXPORTER_PROFILER=1`variável de ambiente:
+Se o processo de reindexação de um feed específico demorar um tempo excessivo, execute o profiler para coletar dados adicionais que podem ser úteis para a Equipe de suporte. Para fazer isso, passe o `EXPORTER_PROFILER=1`variável de ambiente:
 
 ```bash
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products

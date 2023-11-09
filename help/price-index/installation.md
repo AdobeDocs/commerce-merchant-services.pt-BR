@@ -3,11 +3,11 @@ title: Instalação manual da indexação de preços do SaaS
 description: Instalação de indexação de preços SaaS para versões mais antigas
 seo-title: SaaS Price Indexing installation
 seo-description: Installing SaaS Price indexing
-exl-id: 4577111a-64a4-4e20-b970-3abfa6758247
+exl-id: a607e852-aa04-4be3-9576-a6bf45f8751f
 role: Admin, Developer
-source-git-commit: 3809d27fc3689519e4a162aa52f481d254aec656
+source-git-commit: b2ebf26c9a34e5e2e08b7adbabcc780f24363e3c
 workflow-type: tm+mt
-source-wordcount: '276'
+source-wordcount: '291'
 ht-degree: 0%
 
 ---
@@ -15,12 +15,12 @@ ht-degree: 0%
 # Instalação manual da indexação de preços do SaaS
 
 A indexação de preços SaaS está disponível imediatamente para suporte [versão mais recente](index.md#Requirements) de Commerce Services.
-Se você não tiver a versão mais recente e quiser habilitar a Indexação de preços SaaS para sua instância do Adobe Commerce, use este miniguia.
+Se você não tiver a versão mais recente e quiser habilitar a Indexação de preços SaaS para sua instância do Adobe Commerce, use este guia.
 
 ## Pré-requisitos
 
 * Adobe Commerce 2.4.4+
-* Pelo menos um dos seguintes serviços SaaS está instalado:
+* Pelo menos um dos seguintes serviços SaaS instalados:
 
    * [Serviço de catálogo](../catalog-service/overview.md)
    * [Live Search](../live-search/guide-overview.md)
@@ -29,7 +29,7 @@ Se você não tiver a versão mais recente e quiser habilitar a Indexação de p
 ## Instalar os módulos necessários
 
 Dependendo da configuração, o processo de instalação pode ser um pouco diferente.
-Há extensões que adicionam os novos feeds e o código de suporte.
+Há extensões que adicionam os novos feeds e código de suporte e há uma extensão que remove o feed de preços padrão.
 
 1. Adicione os seguintes módulos ao `composer.json` arquivo:
 
@@ -52,7 +52,6 @@ Depois da atualização, três novos feeds estarão disponíveis:
 * `scopesCustomerGroup` - responsável por fornecer Grupos de Clientes ao serviço
 * `scopesWebsite` - responsável por fornecer sites, grupos de lojas e visualizações de lojas ao serviço
 
-
 1. Configure os novos feeds a serem definidos para o modo &quot;Atualização programada&quot;:
 
    ```bash
@@ -69,8 +68,7 @@ Depois da atualização, três novos feeds estarão disponíveis:
 
 Execute os indexadores acima manualmente, conforme necessário. Caso contrário, os dados serão atualizados no processo de sincronização padrão. Leia mais sobre o [Sincronização de catálogo](../landing/catalog-sync.md) serviço.
 
-
-Para configurar o Live Search e o Adaptador do Catálogo, siga as [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html) instruções.
+Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar o [`Catalog Adapter`](catalog-adapter.md) Extensão que fornece compatibilidade com o Luma e o Core GraphQl e desativa o indexador de Preço de produto do Adobe Commerce.
 
 ## Avisos
 
