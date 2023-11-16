@@ -5,9 +5,9 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '191'
+source-wordcount: '188'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
       <td><strong>Serviços de integração</strong>
         <p>Saiba mais sobre as últimas melhorias nos serviços de integração que permitem que nossos Commerce Services se conectem a outros serviços e extensões e produtos do Adobe.</p>
           <ul>
-            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/release-notes.html">Conector Experience Platform</a></li>
+            <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/release-notes.html">[!DNL Data Connection]</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html">Conector de serviços</a></li>
           </ul>
       </td>

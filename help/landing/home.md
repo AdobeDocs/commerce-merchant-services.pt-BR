@@ -6,7 +6,7 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentação
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: d803cd9c78ac8c5529eadf39f361d7e46045359e
+source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -85,13 +85,13 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
    </tr>
 </table>
 
-## Serviços de dados
+## Serviços de integração
 
 <table>
 <tr>
   <td valign="top" width="200">
-      <img alt="[!DNL Experience Platform Connector]" src="assets/live-search.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/experience-platform-connector/overview.html"><strong>[!DNL Experience Platform Connector]</strong></a>  
+      <img alt="[!DNL Data Connection]" src="assets/live-search.png" width="170px"/></td>
+   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html"><strong>[!DNL Data Connection]</strong></a>  
     <div>Aproveite a conexão entre o Adobe Commerce e a borda do Adobe Experience Platform para utilizar dados do Commerce para outros produtos da Adobe Experience Cloud, como o Adobe Analytics e o Adobe Target.</div>
   </td>
    </tr>
@@ -105,7 +105,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
    </tr>
 </table>
 
-## Serviços de integração
+## Serviços de dados
 
 <table>
 <tr>
