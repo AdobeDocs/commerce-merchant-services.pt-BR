@@ -3,9 +3,9 @@ title: Configurar o teste de sandbox
 description: Usar uma conta de sandbox do PayPal para usar [!DNL Payment Services] no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
 workflow-type: tm+mt
-source-wordcount: '595'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
@@ -72,7 +72,7 @@ Para redefinir sua conta de sandbox:
 
 ## Habilitar número de telefone de contato
 
-O número de telefone de contato permite obter os números de telefone de contato que o PayPal coleta de seus clientes. O PayPal sempre coleta números de telefone de contato dos titulares de contas do PayPal para ajudar a confirmar suas identidades e contatá-los para resolver problemas em suas contas ou para concluir seus processos de atendimento. No entanto, o PayPal desencoraja o uso de números de telefone de contato diretamente do comerciante, pois pode afetar negativamente as vendas. Consulte a [PayPal obter números de telefone de contato](https://developer.paypal.com/docs/admin/checkout-settings/#get-contact-telephone-numbers) para obter mais informações.
+O número de telefone de contato permite obter os números de telefone de contato que o PayPal coleta de seus clientes. O PayPal sempre coleta números de telefone de contato dos titulares de contas do PayPal para ajudar a confirmar suas identidades e contatá-los para resolver problemas em suas contas ou para concluir seus processos de atendimento. No entanto, o PayPal desencoraja o uso de números de telefone de contato diretamente do comerciante, pois pode afetar negativamente as vendas. Consulte a [PayPal obter números de telefone de contato](https://www.sandbox.paypal.com/businessmanage/preferences/website) para obter mais informações.
 
 Este recurso é `off` por padrão. Ao ativá-lo, os administradores de loja podem ver números de telefone quando um cliente conclui um fluxo de Check-out de marca fora da página de check-out.
 
