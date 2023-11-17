@@ -4,9 +4,9 @@ user-guide-description: "Este guia fornece instruções detalhadas para usar o [
 breadcrumb-title: “Guia do [!DNL Live Search]”
 role: Admin
 feature: Services, Search
-source-git-commit: 0089d1bba0ebd18b0dbfea123ba8a6e0a33af1b2
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '94'
+source-wordcount: '96'
 ht-degree: 10%
 
 ---
@@ -34,6 +34,7 @@ ht-degree: 10%
       - [Gerenciar facetas](facets-manage.md)
    - [Indexação](indexing.md)
    - [Desempenho](performance.md)
+   - [GraphQL](graphql.md)
    - [Merchandising de categoria](category-merch.md)
    - Pesquisar merchandising {#rules}
       - [Visão geral](rules.md)
@@ -47,6 +48,7 @@ ht-degree: 10%
       - [Adicionar sinônimos](synonyms-add.md)
       - [Gerenciar sinônimos](synonyms-manage.md)
    - [Workspace](workspace.md)
+- [Eventos](events.md)
 - consultas do GraphQL {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)

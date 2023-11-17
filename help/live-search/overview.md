@@ -3,16 +3,16 @@ title: Introdução ao [!DNL Live Search]
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa ultrarrápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 3352bd1390704646f4c21599ebf204eda2e1488c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '257'
 ht-degree: 0%
 
 ---
 
 # Introdução ao [!DNL Live Search]
 
-[!DNL Live Search] O é um serviço para o Adobe Commerce que substitui os recursos de pesquisa padrão. A variável [!DNL Live Search] O módulo é instalado com o Composer e conecta o [!DNL Commerce] instalação no [!DNL Live Search] [serviço](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto.
+[!DNL Live Search] O é um serviço para o Adobe Commerce que substitui os recursos de pesquisa padrão. A variável [!DNL Live Search] O módulo é instalado com o Composer e conecta o [!DNL Commerce] instalação no [!DNL Live Search] [serviço](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto. [!DNL Live Search] O também instala o widget Página de listagem de produtos (PLP), que fornece recursos robustos de filtragem ao navegar pelos resultados da pesquisa.
 
 [!DNL Live Search] aparece no *Marketing* menu em *SEO e pesquisa* no [!DNL Commerce] *Admin*.
 
@@ -26,7 +26,7 @@ O lado da Adobe Commerce na arquitetura inclui hospedar a pesquisa *Admin*, sinc
 * [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
 * AEM Componentes CIF: o [Widget do Popover](https://github.com/adobe/aem-cif-guides-venia/pull/319) e a variável [Widget do PLP](https://github.com/adobe/aem-cif-guides-venia/pull/320) permitir que sites AEM aproveitem as [!DNL Live Search].
 * [[!DNL Live Search] Admin](workspace.md) é onde regras, facetas e sinônimos são configurados.
-* O Adaptador de pesquisa é a implementação padrão do [!DNL Live Search].
+* O Adaptador de pesquisa é a implementação padrão do [!DNL Live Search]. Recomendado para implementações headless e personalizadas.
 
 ## [!DNL Live Search] demonstração
 

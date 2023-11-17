@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
-source-wordcount: '1798'
+source-wordcount: '1869'
 ht-degree: 0%
 
 ---
@@ -41,13 +41,47 @@ _25 de abril de 2023_
 
 ![Novo](../assets/new.svg) [!DNL Live Search] agora, os clientes podem aproveitar o novo [Indexador de preços SaaS](../price-index/index.md).
 
+## [!DNL Live Search] 4.0.0 {#400}
+
+_13 de novembro de 2023_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+### Novos recursos
+
+![Novo](../assets/new.svg) [!DNL Live Search] O agora é compatível com amostras de cores no widget PLP.
+![Novo](../assets/new.svg) [!DNL Live Search] O agora exibe o nome da categoria em vez da ID da categoria.
+![Novo](../assets/new.svg) [!DNL Live Search] O agora suporta preços tachados no widget PLP.
+![Novo](../assets/new.svg) Foi introduzido o botão &quot;Ocultar filtros&quot; para ocultar o painel de filtros.
+
+
+### Atualizações
+
+![Correção](../assets/fix.svg) A variável [!DNL Live Search] O widget PLP agora está habilitado por padrão para novas instalações.
+![Correção](../assets/fix.svg) Estilos CSS reconfigurados para melhor isolar classes de widget.
+![Correção](../assets/fix.svg) Correções de erros secundários
+
+Os comerciantes devem atualizar o [!DNL Live Search] extensão para a versão >= 4.0.0 para acessar esses recursos.
+
+Após instalar a versão 3.1.1 ou superior, ative os novos indexadores:
+
+* Feed de preços do produto
+* Feed de dados do site de escopos
+* Feed de dados dos grupos de clientes dos escopos
+
+Depois da atualização, teste a configuração atualizada no controle de qualidade ou preparo antes de enviar as alterações para a produção.
+
+## Versões anteriores
+
++++3.1.1 e anteriores
+
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 de setembro de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-### Novos recursos
+
 
 ![Novo](../assets/new.svg) A guia Nova categoria de merchandising foi adicionada. Agora, os usuários podem adicionar Classificações inteligentes e Classificações manuais (fixar, impulsionar, enterrar, ocultar) por categoria
 ![Novo](../assets/new.svg) Os usuários podem adicionar uma única regra de categoria com classificação inteligente ou manual
@@ -68,20 +102,6 @@ _15 de setembro de 2023_
 ![Correção](../assets/fix.svg) &quot;Eventos&quot; (Aumentar/Fixar/Enterrar/Ocultar) foi renomeado para &quot;Classificação manual&quot;
 ![Correção](../assets/fix.svg) O &quot;Tipo de classificação&quot; foi renomeado para &quot;Classificação inteligente&quot;
 ![Correção](../assets/fix.svg) Correções de erros secundários
-
-Os comerciantes devem atualizar o [!DNL Live Search] versão da extensão >= 3.1.1 para acessar esses recursos.
-
-Após instalar a versão 3.1.1, estes novos indexadores devem ser ativados:
-
-* Feed de preços do produto
-* Feed de dados do site de escopos
-* Feed de dados dos grupos de clientes dos escopos
-
-É recomendável atualizar e testar no controle de qualidade ou preparo antes de enviar as alterações para a produção.
-
-## Versões anteriores
-
-+++3.1.0 e anteriores
 
 ## [!DNL Live Search] 3.1.0 {#310}
 

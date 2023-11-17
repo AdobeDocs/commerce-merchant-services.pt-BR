@@ -2,14 +2,16 @@
 title: "[!DNL Live Search] Indexação"
 description: "Saiba como [!DNL Live Search] indexa propriedades de atributo de produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: a062133d94cb4898149b9cc878351ca2fad3c09e
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '590'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
 
 # Indexação
+
+A variável [!DNL Live Search] o processo de indexação lê o catálogo de atributos do produto e cria um índice para que os produtos possam ser pesquisados, filtrados e apresentados rapidamente.
 
 As propriedades do atributo de produto (metadados) determinam:
 

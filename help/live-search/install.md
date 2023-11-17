@@ -3,7 +3,7 @@ title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
 workflow-type: tm+mt
 source-wordcount: '1264'
 ht-degree: 0%
@@ -28,17 +28,21 @@ Faça o seguinte:
 
 1. Escolha o método de integração que atenda aos seus requisitos e siga as instruções.
 
-   * [Método 1](#method-1): Instalar sem [!DNL Elasticsearch]
-   * [Método 2](#method-2): Instalar com [!DNL Elasticsearch] (Sem tempo de inatividade)
+   * [Método 1](#method-1): Instalar sem [!DNL OpenSearch]
+   * [Método 2](#method-2): Instalar com [!DNL OpenSearch] (Sem tempo de inatividade)
 
-## Método 1: instalação sem Elasticsearch {#method-1}
+>[!IMPORTANT]
+>
+>Devido ao anúncio do fim de suporte do Elasticsearch 7 para agosto de 2023, é recomendável que todos os clientes do Adobe Commerce migrem para o mecanismo de pesquisa OpenSearch 2.x. Para obter informações sobre como migrar o mecanismo de pesquisa durante a atualização do produto, consulte [Migração para o OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) no _Guia de atualização_.
+
+## Método 1: instalação sem OpenSearch {#method-1}
 
 Esse método de integração é recomendado ao instalar o [!DNL Live Search] para um:
 
 * Novo [!DNL Commerce] instalação
 * Ambiente de preparo
 
-Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Live Search] serviço indexa todos os produtos no catálogo. Durante a instalação, [!DNL Live Search] Os módulos do estão ativados e [!DNL Elasticsearch] Os módulos do estão desativados.
+Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Live Search] serviço indexa todos os produtos no catálogo. Durante a instalação, [!DNL Live Search] Os módulos do estão ativados e [!DNL OpenSearch] Os módulos do estão desativados.
 
 1. Instalar o Adobe Commerce 2.4.4+ sem [!DNL Live Search].
 
@@ -48,7 +52,7 @@ Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Li
    composer require magento/live-search
    ```
 
-1. Execute os seguintes comandos para desativar o [!DNL Elasticsearch] e módulos relacionados, e instalar [!DNL Live Search]:
+1. Execute os seguintes comandos para desativar o [!DNL OpenSearch] e módulos relacionados, e instalar [!DNL Live Search]:
 
    ```bash
    bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
@@ -81,17 +85,13 @@ Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Li
 
 1. [Teste](#test-the-connection) a conexão da loja.
 
-## Método 2: instalar com o Elasticsearch {#method-2}
-
->[!IMPORTANT]
->
->Devido ao anúncio do fim de suporte do Elasticsearch 7 para agosto de 2023, é recomendável que todos os clientes do Adobe Commerce migrem para o mecanismo de pesquisa OpenSearch 2.x. Para obter informações sobre como migrar o mecanismo de pesquisa durante a atualização do produto, consulte [Migração para o OpenSearch](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration.html) no _Guia de atualização_.
+## Método 2: instalar com OpenSearch {#method-2}
 
 Esse método de integração é recomendado ao instalar o [!DNL Live Search] para:
 
 * Uma produção existente [!DNL Commerce] instalação
 
-Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente solicitações de pesquisa da loja enquanto a [!DNL Live Search] o serviço indexa todos os produtos em segundo plano, sem interrupção das operações normais da loja. [!DNL Elasticsearch] está desativado e [!DNL Live Search] habilitado depois que todos os dados do catálogo são indexados e sincronizados.
+Nesse cenário, [!DNL OpenSearch] gerencia temporariamente solicitações de pesquisa da loja enquanto a [!DNL Live Search] o serviço indexa todos os produtos em segundo plano, sem interrupção das operações normais da loja. [!DNL OpenSearch] está desativado e [!DNL Live Search] habilitado depois que todos os dados do catálogo são indexados e sincronizados.
 
 1. Para baixar o `live-search` execute o seguinte a partir da linha de comando:
 
@@ -131,7 +131,7 @@ Nesse cenário, [!DNL Elasticsearch] gerencia temporariamente solicitações de 
    * A contagem de produtos retornada está próxima do que você espera da exibição da loja.
    * Facetas são retornadas.
 
-1. Execute os seguintes comandos para habilitar [!DNL Live Search] módulos, desativar [!DNL Elasticsearch], e execute `setup`.
+1. Execute os seguintes comandos para habilitar [!DNL Live Search] módulos, desativar [!DNL OpenSearch], e execute `setup`.
 
    ```bash
    bin/magento module:enable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover
@@ -209,9 +209,9 @@ Para atualizar [!DNL Live Search], execute o seguinte a partir da linha de coman
 composer update magento/live-search --with-dependencies
 ```
 
-Para atualizar para uma versão principal, como a de 2.0.0 para 3.1.1, edite a raiz do projeto [!DNL Composer] `.json` do seguinte modo:
+Para atualizar para uma versão principal, como 3.1.1 para 4.0.0, edite a raiz do projeto [!DNL Composer] `.json` do seguinte modo:
 
-1. Se o estiver instalado atualmente `magento/live-search` a versão é `2.0.3` ou abaixo, e você está atualizando para a versão `3.0.0` ou superior, execute o seguinte comando antes da atualização:
+1. Se o estiver instalado atualmente `magento/live-search` a versão é `3.1.1` ou abaixo, e você está atualizando para a versão `4.0.0` ou superior, execute o seguinte comando antes da atualização:
 
    ```bash
    bin/magento module:enable Magento_AdvancedSearch
@@ -230,7 +230,7 @@ Para atualizar para uma versão principal, como a de 2.0.0 para 3.1.1, edite a r
    ```json
    "require": {
       ...
-      "magento/live-search": "^3.0",
+      "magento/live-search": "^4.0",
       ...
     }
    ```

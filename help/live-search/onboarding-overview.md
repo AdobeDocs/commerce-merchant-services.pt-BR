@@ -3,9 +3,9 @@ title: "Visão geral da integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a6d8c259f232ab27d7ed64558d5d193d59d23cad
+source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
 workflow-type: tm+mt
-source-wordcount: '583'
+source-wordcount: '640'
 ht-degree: 0%
 
 ---
@@ -59,6 +59,22 @@ Para restringir grupos de clientes usando permissões de Catálogo:
 ### Sinônimos
 
 * [!DNL Live Search] O pode gerenciar até 200 sinônimos por exibição de loja.
+
+## Suporte de idioma
+
+[!DNL Live Search] os widgets suportam os seguintes idiomas:
+
+* en_US (padrão)
+* de_DE
+* es_MX
+* fr_FR
+* it_IT
+* ja_JA
+* nl_NL
+* no_NO
+* pt_PT
+
+Se o widget detectar que a configuração de idioma do administrador do Commerce (_Lojas_ > Configurações > _Configuração_ > _Geral_ > Opções de país) corresponde a um idioma suportado, o padrão é esse idioma. Caso contrário, os widgets padrão serão em inglês.
 
 ## Merchandising de categoria
 

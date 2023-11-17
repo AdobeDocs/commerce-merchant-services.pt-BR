@@ -2,9 +2,9 @@
 title: Widget da página de listagem de produtos
 description: Ativação e estilo do [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: 368059d50133d8b01be83e1616044a61ab094e3c
+source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
 workflow-type: tm+mt
-source-wordcount: '252'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,12 @@ A variável [!DNL Live Search Product Listing Page Widget] (PLP) usa a plataform
 ## Ativar o dispositivo PLP
 
 Quando a variável [!DNL Live Search] estiver instalado, a funcionalidade de pesquisa padrão será convertida em [!DNL Live Search] automaticamente.
-O widget PLP deve estar ativado no Administrador.
 
-1. Ir para **Lojas** > Configurações > **Configuração** > **[!DNL Live Search]** > **Recursos da loja** e defina **Ativar widgets de listagem de produtos** para &quot;Sim&quot;.
+A variável [!DNL Live Search] O widget PLP é habilitado por padrão para novas instalações. Se você estiver atualizando [!DNL Live Search] e o widget PLP já foi desligado, ele permanecerá assim.
+
+Para desativar o dispositivo PLP:
+
+1. Ir para **Lojas** > Configurações > **Configuração** > **[!DNL Live Search]** > **Recursos da loja** e defina **Ativar widgets de listagem de produtos** para &quot;Não&quot;.
 1. Selecionar **Salvar configuração** para salvar a configuração.
 
 ## Exemplo de estilo
@@ -28,7 +31,7 @@ Você pode personalizar a aparência do widget PLP para corresponder ao seu site
 >[!NOTE]
 >
 >Elementos com classes personalizadas em um tema do Adobe Commerce não são herdados. Esses elementos devem ser direcionados por sua classe específica para corresponder às classes personalizadas; as classes de ação principais não funcionarão em um botão de widget.
->Os elementos direcionados genéricos no CSS serão herdados; `button` será aplicado aos botões do widget.
+>Os elementos direcionados genéricos dentro do CSS são herdados; `button` aplica-se a botões de widget.
 
 Os divs destacados contêm a classe de destino `ds-sdk-product-item__product-name`.
 
@@ -126,7 +129,8 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 
 * `.ds-sdk-input`
 * `.ds-sdk-input__label`
-* `.ds-sdk-input__options`
+* `.ds-sdk-product-item__product-swatch-group`
+* `ds-sdk-product-item__product-swatch-item`
 * `.ds-sdk-input_fieldset_show-more`
 
 ![Entrada](assets/plp-css-sdk-input.png)
