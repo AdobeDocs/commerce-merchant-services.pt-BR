@@ -3,9 +3,9 @@ title: "Visão geral da integração"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 48f16a0c5ce6c2a3226acf4a61525cfbf4a0f35f
+source-git-commit: a98e8abe68b684dcddccbf7287126db159159bab
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '697'
 ht-degree: 0%
 
 ---
@@ -83,6 +83,15 @@ O merchandising por categoria permite configurar [!DNL Live Search] para trabalh
 Este vídeo é uma introdução ao Merchandising por categoria.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
+
+## Repositório de código do widget
+
+O widget Página de listagem de produtos e o widget Popover de pesquisa estão disponíveis para download no repositório do github.
+
+Isso permite que os desenvolvedores personalizem totalmente a funcionalidade e o estilo. Esses usuários hospedam o código enquanto ainda aproveitam o [!DNL Live Search] serviço.
+
+* [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
+* [Barra de pesquisa](https://github.com/adobe/storefront-search-as-you-type)
 
 ## Inventory management
 
