@@ -3,9 +3,9 @@ title: Compartimentalização do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '304'
+source-wordcount: '314'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ Os compradores usam o token armazenado para concluir um check-out futuro com as 
 Eles também podem excluir facilmente seus cartões de crédito com cofre do [Métodos de pagamento armazenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) em sua conta.
 
 ![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+>[!WARNING]
+>
+>Atualmente, o PayPal pode armazenar no máximo cinco cartões com cofre.
 
 ## Ativar compartimentação
 

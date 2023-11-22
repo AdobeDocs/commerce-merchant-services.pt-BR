@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
 workflow-type: tm+mt
-source-wordcount: '466'
+source-wordcount: '480'
 ht-degree: 0%
 
 ---
@@ -58,7 +58,7 @@ Consulte [Política de ciclo de vida](https://experienceleague.adobe.com/docs/co
 
 ### Cartões de crédito e moedas aceitos
 
-[!DNL Payment Services] aceita as moedas dos países [em que está disponível](#availability).
+[!DNL Payment Services] aceita as moedas dos países [em que está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obter mais informações.
 
 Para ver quais moedas o PayPal suporta, consulte [Documentação de moedas suportadas](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
