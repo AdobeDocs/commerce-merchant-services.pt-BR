@@ -3,9 +3,9 @@ title: "Instalar [!DNL Live Search]"
 description: "Saiba como instalar, atualizar e desinstalar [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 10b9f087da1346734735379846d50b53d36c1562
 workflow-type: tm+mt
-source-wordcount: '1264'
+source-wordcount: '1211'
 ht-degree: 0%
 
 ---
@@ -81,7 +81,21 @@ Neste cenário, as operações de vitrine são interrompidas enquanto a [!DNL Li
 
    Você poderá adicionar facetas depois de `cron` O executa os feeds de atributo e exporta metadados de atributo.
 
-1. Aguardar pelo menos uma hora depois `cron` O é executado para sincronizar dados. Em seguida, [verificar](#verify-export) que os dados foram exportados.
+1. Execute o seguinte comando nesta ordem:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. [Verificar](#verify-export) que os dados foram exportados.
 
 1. [Teste](#test-the-connection) a conexão da loja.
 
@@ -126,7 +140,21 @@ Nesse cenário, [!DNL OpenSearch] gerencia temporariamente solicitações de pes
 
    Você poderá adicionar facetas depois de `cron` O executa o produto e os feeds de atributo e exporta os metadados de atributo para o [!DNL Live Search] serviços.
 
-1. Aguarde pelo menos uma hora para que os dados sejam indexados e sincronizados. Em seguida, use o [Playground de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) com a query padrão para verificar o seguinte:
+1. Execute o seguinte comando nesta ordem:
+
+   ```bash
+   bin/magento saas:resync --feed productattributes
+   bin/magento saas:resync --feed products
+   bin/magento saas:resync --feed scopesCustomerGroup
+   bin/magento saas:resync --feed scopesWebsite
+   bin/magento saas:resync --feed prices
+   bin/magento saas:resync --feed productoverrides
+   bin/magento saas:resync --feed variants
+   bin/magento saas:resync --feed categories
+   bin/magento saas:resync --feed categoryPermissions
+   ```
+
+1. Após a conclusão da sincronização, use o [Playground de GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) com a query padrão para verificar o seguinte:
 
    * A contagem de produtos retornada está próxima do que você espera da exibição da loja.
    * Facetas são retornadas.
