@@ -2,9 +2,9 @@
 title: "Facetas"
 description: "[!DNL Live Search] As facetas usam várias dimensões de valores de atributo como critérios de pesquisa."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
-source-git-commit: a8643ca9567feb7dde67358eeae321825b0253f2
+source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '539'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Qualquer faceta definida pode ser usada como um parâmetro de URL e os resultado
 
 ## Requisitos de facetagem
 
-Os requisitos do atributo de categoria e produto para facetas são semelhantes aos atributos filtráveis usados para navegação em camadas. As propriedades de vitrine de cada atributo devem ser definidas como `filterable (with results)`.
+Os requisitos do atributo de categoria e produto para facetas são semelhantes aos atributos filtráveis usados para navegação em camadas. Cada propriedade da loja de um atributo deve ter o valor &quot;Usar na navegação em camadas dos resultados da pesquisa&quot; definido como &quot;Sim&quot;.
 
 [!DNL Live Search] suporta até:
 
