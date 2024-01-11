@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 85f8e158509231fb3b30c778309a9ac0fb468131
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2364'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 
 ### Apple Pay
 
-A variável [!UICONTROL Apple Pay] opção de pagamento de botão permite fornecer uma [!UICONTROL Apple Pay] botão de pagamento no check-out da loja.
+A variável [!UICONTROL Apple Pay] opção de pagamento de botão permite fornecer uma [!UICONTROL Apple Pay] botão de pagamento na finalização da loja pelo navegador Safari.
 
 Você só poderá usar o Apple Pay se concluir [Autoregistro Apple Pay via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) e depois [configurar o Apple Pay](settings.md/#payment-buttons) para suas lojas. Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obter mais informações.
 
@@ -230,7 +230,7 @@ Você também pode configurar as opções _[!UICONTROL Button style]_opções do
 1. Para ativar o seletor de altura do botão, alterne a **[!UICONTROL Responsive button height]** seletor.
 1. Para modificar a variável **[!UICONTROL Label]**, selecione a opção de rótulo desejada.
 
-   À medida que você altera as opções de configuração de layout, cor, forma, altura e rótulo, uma visualização visual dessa configuração é exibida na parte inferior da página Configurações.
+   À medida que você altera as opções de configuração de layout, cor, forma, altura e rótulo, uma visualização visual dessa configuração é exibida na parte inferior da página Configurações. Na imagem abaixo, a variável **[!UICONTROL Shape]** está definida como _Retângulo_ e a variável **[!UICONTROL Label]** está definida como _PayPal (recomendado)_.
 
    ![[!DNL PayPal Smart Buttons] opções](assets/payment-buttons.png){width="400" zoomable="yes"}
 

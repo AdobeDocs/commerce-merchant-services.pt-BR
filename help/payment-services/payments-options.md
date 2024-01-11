@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
 workflow-type: tm+mt
-source-wordcount: '1048'
+source-wordcount: '944'
 ht-degree: 0%
 
 ---
@@ -32,6 +32,8 @@ Há comportamentos diferentes para cada método de pagamento, dependendo de onde
 
 [!UICONTROL Credit Card Fields] forneça um checkout simples e seguro para métodos de pagamento com cartão de crédito ou débito. Quando um comprador faz o check-out usando campos de cartão de crédito, ele insere seu nome, endereço de cobrança e informações de cartão de crédito ou débito para fazer seu pedido. As informações de seus clientes são usadas com segurança durante a sessão de compra para orientá-los perfeitamente pelo fluxo de finalização.
 
+![Campos de cartão de crédito no check-out](assets/credit-card-fields.png){width="500" zoomable="yes"}
+
 Ativar [compartimentalização de cartão de crédito](#vaulting) para que suas lojas permitam que os compradores guardem (salvem) suas informações de cartão de crédito para um check-out rápido posteriormente.
 
 Você pode configurar [!UICONTROL Credit Card Fields] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md#credit-card-fields) para obter mais informações.
@@ -41,6 +43,10 @@ Também é possível alterar o layout, a largura, a altura e o estilo externo do
 ## [!DNL Apple Pay] botão
 
 Os clientes podem usar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utilizam credenciais de pagamento de cartão de crédito e débito armazenadas em um dispositivo iOS ou macOS, para fazer compras.
+
+[!DNL Apple Pay] O só está disponível no navegador Safari.
+
+![Botão Pagamento do Apple no minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
 
 A variável [!DNL Apple Pay] O botão é visível nas exibições página do produto, minicarrinho, carrinho de compras e check-out.
 
@@ -54,7 +60,7 @@ Você pode configurar [!UICONTROL Apple Pay] na configuração da loja ou na Pá
 
 [!DNL PayPal Smart Buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
 
-![[!DNL PayPal Smart Buttons] opções](assets/payment-buttons.png){width="400" zoomable="yes"}
+![Botão PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
 Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na Página Inicial dos Serviços de Pagamento.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 
@@ -89,12 +95,6 @@ A variável [!DNL Pay Later] O botão é visível nas exibições página do pro
 Consulte informações sobre as ofertas de Pagar mais tarde em [PayPal&#39;s Pay Later oferece documentação](https://developer.paypal.com/docs/checkout/pay-later/us/). Use o **País ou região** para selecionar uma região de interesse.
 
 Consulte [Configurações](settings.md#payment-buttons) para saber como desativar/ativar o [!DNL Pay Later] mensagens.
-
-### [!DNL Pay Now] botão
-
-A variável [!DNL Pay Now] O botão está visível na janela pop-up do PayPal quando um cliente clica em um botão de pagamento na tela de pagamentos.
-
-Se o valor final do pedido ainda não for conhecido (como quando você ainda não tem informações sobre o endereço de entrega) e o cliente estiver no processo de finalização da página do produto, do minicarrinho ou do carrinho de compras, uma _Continuar_ botão está disponível. Quando um cliente clica em _Continuar_ Depois de confirmar o método de pagamento, ele é direcionado a uma página de revisão do pedido para coletar os detalhes necessários antes de concluir a finalização da compra.
 
 ## Usar somente botões de pagamento do PayPal
 

@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: a7ad4130745957d596cba38892d77107e977e2e7
 workflow-type: tm+mt
-source-wordcount: '1407'
+source-wordcount: '1392'
 ht-degree: 0%
 
 ---
@@ -86,7 +86,7 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 
 ## [!UICONTROL Apple Pay]
 
-A variável [!UICONTROL Apple Pay] opção de pagamento permite que o comerciante ofereça o Apple Pay aos seus compradores, que podem usar o Touch ID em seus dispositivos para fazer compras
+A variável [!UICONTROL Apple Pay] A opção de pagamento permite que o comerciante ofereça o Apple Pay aos seus compradores, que podem usar o Touch ID em seus dispositivos para fazer compras no navegador Safari.
 
 Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obter mais informações.
 
