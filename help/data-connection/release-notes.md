@@ -3,10 +3,10 @@ title: Notas de versão
 description: As informações mais recentes da versão do [!DNL Data Connection] extensão do Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 69c1a5c00796f96cafe0169632ad5e1e3c53a297
+source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
 workflow-type: tm+mt
-source-wordcount: '755'
-ht-degree: 1%
+source-wordcount: '774'
+ht-degree: 0%
 
 ---
 
@@ -33,6 +33,10 @@ Consulte a documentação do desenvolvedor para [saiba quais versões do Commerc
 Essas notas de versão descrevem alterações de recursos e correções relacionadas a extensões usadas pelo [!DNL Data Connection] extensão.
 
 +++Atualizações de serviço com suporte
+
+_24 de janeiro de 2024_
+
+![Novo](../assets/new.svg) - Atualização do `data-services-b2b` extensão para incluir um novo evento de requisição chamado [deleteRequisitionList](events.md#deleterequisitionlist) para os comerciantes B2B.
 
 _16 de novembro de 2023_
 

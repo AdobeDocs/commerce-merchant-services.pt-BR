@@ -4,9 +4,9 @@ description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: f90ef4d2732a0b0676e0899712f94b41a1c2d85a
+source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
 workflow-type: tm+mt
-source-wordcount: '6894'
+source-wordcount: '6957'
 ht-degree: 0%
 
 ---
@@ -236,7 +236,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 | Descrição | Nome do evento XDM |
 |---|---|
-| Disparado quando o comprador faz um pedido. | `commerce.order` |
+| Disparado quando o comprador faz um pedido. | `commerce.purchases` |
 
 #### Dados coletados de completeCheckout
 
@@ -485,7 +485,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `commerce.requisitionListOpens` | Indica a inicialização de uma nova lista de requisições. |
-| `commerce.requisitionList` | As propriedades da lista de requisições criadas pelo cliente. |
+| `commerce.requisitionList` | As propriedades da lista de requisições criada pelo cliente. |
 | `commerce.requisitionList.ID` | Identificador exclusivo da lista de requisições. |
 | `commerce.requisitionList.name` | Nome da lista de requisições especificada pelo cliente. |
 | `commerce.requisitionList.description` | Descrição da lista de requisições especificada pelo cliente. |
@@ -508,7 +508,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `commerce.requisitionListAdds` | Indica a adição de um ou mais produtos a uma lista de requisições. |
-| `commerce.requisitionList` | As propriedades da lista de requisições criadas pelo cliente. |
+| `commerce.requisitionList` | As propriedades da lista de requisições criada pelo cliente. |
 | `commerce.requisitionList.ID` | Identificador exclusivo da lista de requisições. |
 | `commerce.requisitionList.name` | Nome da lista de requisições especificada pelo cliente. |
 | `commerce.requisitionList.description` | Descrição da lista de requisições especificada pelo cliente. |
@@ -541,7 +541,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | Campo | Descrição |
 |---|---|
 | `commerce.requsitionListRemovals` | Indica a remoção de um ou mais produtos de uma lista de requisições. |
-| `commerce.requisitionList` | As propriedades da lista de requisições criadas pelo cliente. |
+| `commerce.requisitionList` | As propriedades da lista de requisições criada pelo cliente. |
 | `commerce.requisitionList.ID` | Identificador exclusivo da lista de requisições. |
 | `commerce.requisitionList.name` | Nome da lista de requisições especificada pelo cliente. |
 | `commerce.requisitionList.description` | Descrição da lista de requisições especificada pelo cliente. |
@@ -560,6 +560,29 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `productListItems.selectedOptions` | Campo usado para um produto configurável. |
 | `productListItems.selectedOptions.attribute` | Identifica um atributo do produto configurável, como `size` ou `color`. |
 | `productListItems.selectedOptions.value` | Identifica o valor do atributo, como `small` ou `black`. |
+
+### deleteRequisitionList
+
+| Descrição | Nome do evento XDM |
+|---|---|
+| Disparado quando um comprador exclui uma lista de requisições. | `commerce.requisitionListDeletes` |
+
+#### Dados coletados de deleteRequisitionList
+
+A tabela a seguir descreve os dados coletados para esse evento.
+
+| Campo | Descrição |
+|---|---|
+| `commerce.requisitionListDeletes` | Indica que uma lista de requisições foi deletada. |
+| `commerce.requisitionList` | As propriedades da lista de requisições criada pelo cliente. |
+| `commerce.requisitionList.ID` | Identificador exclusivo da lista de requisições. |
+| `commerce.requisitionList.name` | Nome da lista de requisições especificada pelo cliente. |
+| `commerce.requisitionList.description` | Descrição da lista de requisições especificada pelo cliente. |
+| `commerce.commerceScope` | Indica onde um evento ocorreu (exibição de loja, loja, site e assim por diante). |
+| `commerce.commerceScope.environmentID` | A ID do ambiente. Uma ID alfanumérica de 32 dígitos separada por hifens. |
+| `commerce.commerceScope.storeCode` | O código de armazenamento exclusivo. Você pode ter muitas lojas por site. |
+| `commerce.commerceScope.storeViewCode` | O código exclusivo de exibição da loja. Você pode ter muitas exibições de loja por loja. |
+| `commerce.commerceScope.websiteCode` | O código exclusivo do site. Você pode ter muitos sites em um ambiente. |
 
 ## Eventos de back office
 
