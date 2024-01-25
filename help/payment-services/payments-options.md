@@ -3,30 +3,38 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 3276cdac48461cb61c8669e2019b567c70d6f493
+source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
 workflow-type: tm+mt
-source-wordcount: '944'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
 
 # Opções de pagamento
 
-Com [!DNL Adobe Commerce] e [!DNL Magento Open Source] [!DNL Payment Services], você tem várias opções de pagamento disponíveis. É possível configurar essas opções de pagamento por meio de:
+Com [!DNL Adobe Commerce] e [!DNL Magento Open Source] [!DNL Payment Services], você tem várias opções de pagamento disponíveis.
 
-* [Configurações da página inicial](payments-home.md)
-* [Armazenar configuração](configure-admin.md) (recomendado para opções de pagamento herdadas ou configuração de várias lojas)
+Você pode configurar essas opções de pagamento em [Configurações da página inicial](payments-home.md) ou [Armazenar configuração](configure-admin.md) (recomendado para opções de pagamento herdadas ou uma configuração de várias lojas).
 
 Há comportamentos diferentes para cada método de pagamento, dependendo de onde você está no processo de finalização:
 
 * Página do produto — A página de produto de um item
-* Minicarrinho — Disponível após clicar no ícone do carrinho quando um produto foi adicionado ao carrinho
+* Minicarrinho — Disponível após clicar no ícone do carrinho quando um produto foi adicionado aos carrinhos
 * Carrinho de compras — Disponível após clicar em _Exibir e editar carrinho_ do minicarrinho
 * Exibição de check-out — disponível ao clicar em _Prosseguir para o check-out_ do minicarrinho ou carrinho de compras
 
 >[!IMPORTANT]
 >
->A integração dos Serviços de pagamento deve ser concluída para que os pagamentos possam ser processados.
+>[!DNL Payment Services] a integração deve ser concluída para que os pagamentos possam ser processados.
+
+## Experiência de Pagamentos Padrão vs. Avançados
+
+[!DNL Payment Services] fornece **Avançado** (totalmente compatível) e **Padrão** (Check-out expresso) opções de pagamento e fluxos de integração, dependendo do país em que você opera.
+
+* **Avançado** - Todos disponíveis [opções de pagamentos](../payment-services/payments-options.md) estão disponíveis para o [países totalmente compatíveis](../payment-services/overview.md#availability). Durante a integração para ativar os pagamentos ao vivo, selecione o [Opção de integração avançada](../payment-services/production.md#advanced-onboarding).
+* **Padrão** - Um subconjunto de opções de pagamento (Check-out expresso)—cartões de crédito e débito PayPal—está disponível para outros países suportados disponíveis. [Campos de cartão de crédito](#credit-card-fields) e [Apple Pay](#apple-pay-button) não estão disponíveis para esta opção de integração. Durante a integração para ativar os pagamentos ao vivo, selecione o [Opção de integração padrão](../payment-services/production.md#standard-onboarding).
+
+Consulte [Ativar [!DNL Payment Services] para produção](../payment-services/production.md#complete-merchant-onboarding) para obter informações sobre como concluir a integração avançada e padrão.
 
 ## [!UICONTROL Credit Card Fields]
 
@@ -36,7 +44,7 @@ Há comportamentos diferentes para cada método de pagamento, dependendo de onde
 
 Ativar [compartimentalização de cartão de crédito](#vaulting) para que suas lojas permitam que os compradores guardem (salvem) suas informações de cartão de crédito para um check-out rápido posteriormente.
 
-Você pode configurar [!UICONTROL Credit Card Fields] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md#credit-card-fields) para obter mais informações.
+Você pode configurar [!UICONTROL Credit Card Fields] na configuração da loja ou na variável [!DNL Payment Services] Início. Consulte [Configurações](settings.md#credit-card-fields) para obter mais informações.
 
 Também é possível alterar o layout, a largura, a altura e o estilo externo dos campos de cartão de crédito. Consulte [Documentação do PayPal](https://developer.paypal.com/docs/checkout/advanced/customize/card-field-style/) para obter mais informações.
 
@@ -62,7 +70,7 @@ Você pode configurar [!UICONTROL Apple Pay] na configuração da loja ou na Pá
 
 ![Botão PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na Página Inicial dos Serviços de Pagamento.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
+Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na variável [!DNL Payment Services] Início.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 
 Consulte PayPal&#39;s [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) para saber em quais países cada método de pagamento está disponível atualmente.
 
