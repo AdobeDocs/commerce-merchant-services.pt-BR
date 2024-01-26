@@ -4,9 +4,9 @@ description: Revisar os requisitos de segurança e conformidade do site.
 exl-id: 083c5a12-1d78-48b5-b9e3-612b104ce7e0
 feature: Payments, Checkout, Compliance
 redirect_from: https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/security.html
-source-git-commit: fef972355565472f0d0851a2e3cace692fb2db67
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '549'
+source-wordcount: '525'
 ht-degree: 0%
 
 ---
@@ -55,9 +55,9 @@ Quando um comprador [compartimentos — ou &quot;salva&quot; — suas informaç�
 
 Consulte [Compartimentalização de cartão de crédito](vaulting.md) para obter mais informações.
 
-### Botões Inteligentes do PayPal
+### Botões de pagamento do PayPal
 
-Com os botões inteligentes do PayPal, nenhum dado regulado por PCI é transmitido em seus serviços. Você não precisa armazenar nem manter esses dados, o que reduz amplamente as preocupações com a conformidade com o PCI.
+Com os botões de pagamento PayPal, nenhum dado regulado por PCI é transmitido em seus serviços. Você não precisa armazenar nem manter esses dados, o que reduz amplamente as preocupações com a conformidade com o PCI.
 
 Por motivos de segurança, o PayPal não passa o endereço de faturamento durante o check-out: país, email e nome são as únicas informações de faturamento usadas. Como opção, você pode ativar o check-out do PayPal do seu site para retornar o endereço de cobrança completo entrando em contato com o PayPal e concluindo um processo de verificação.
 

@@ -3,9 +3,9 @@ title: Testar e validar
 description: O teste e a validação ajudam a garantir que [!DNL Payment Services] As funções funcionam conforme o esperado e fornecem as melhores opções de pagamento para seus clientes
 exl-id: 95b4615e-73b0-41e8-83e2-e65a0b22f10f
 feature: Payments, Checkout
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '492'
+source-wordcount: '469'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ Antes de expor [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magent
 
 Testes [!DNL Payment Services] em um ambiente de sandbox é uma etapa de validação importante, embora seja um ambiente simulado conectado apenas à sandbox do PayPal, não aos bancos e comerciantes reais.
 
-1. Conclua um check-out bem-sucedido de sua loja, com [Campos de cartão de crédito](payments-options.md#credit-card-fields) ou qualquer um dos [Botões Inteligentes do PayPal](payments-options.md#paypal-smart-buttons). Consulte [Testando credenciais](#testing-credentials) para obter mais informações sobre como usar cartões de crédito falsos para testes.
+1. Conclua um check-out bem-sucedido de sua loja, com [Campos de cartão de crédito](payments-options.md#credit-card-fields) ou qualquer um dos [Botões de pagamento do PayPal](payments-options.md#paypal-smart-buttons). Consulte [Testando credenciais](#testing-credentials) para obter mais informações sobre como usar cartões de crédito falsos para testes.
 1. Capturar (quando sua ação de pagamento for [definir como `Authorize and Capture`](onboard.md#set-payment-services-as-payment-method)), [reembolso](refunds.md)ou [void](voids.md) o pedido recém-concluído. Você também pode simplesmente [criar uma fatura](https://docs.magento.com/user-guide/sales/invoice-create.html){target="_blank"} para um pedido, se sua ação de pagamento estiver definida como `Authorize` em vez de `Authorize and Capture`.
 1. Em 24-48 horas, visualize a transação e outras informações no [Relatório de pagamentos](payouts.md).
 1. Veja detalhes do pedido no [Relatório de status do pagamento da ordem](order-payment-status.md).

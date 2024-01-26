@@ -4,9 +4,9 @@ description: Use o relatório de Transações para obter visibilidade sobre taxa
 role: User
 level: Intermediate
 exl-id: dd1d80f9-5983-4181-91aa-971522eb56fa
-source-git-commit: 91acc6e1dfd142caca77c0dc9ba55da34f75dd60
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
-source-wordcount: '1274'
+source-wordcount: '1240'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Paymen
 
 Consulte IDs de transação de fornecedor e ordem de comércio vinculados, valores da transação, método de pagamento por transação e muito mais, tudo nesse relatório.
 
-Nem todos os métodos de pagamento fornecem a mesma granularidade de informações. Por exemplo, as transações com cartão de crédito fornecem resposta, AVS, e códigos CCV, e os últimos quatro dígitos do cartão no relatório de Transações; os botões PayPal Smart não.
+Nem todos os métodos de pagamento fornecem a mesma granularidade de informações. Por exemplo, transações de cartão de crédito fornecem resposta, AVS, e códigos CCV, e os últimos quatro dígitos do cartão no relatório de Transações; botões de pagamento PayPal não.
 
 Você pode [transações de download](#download-transactions) em um formato de arquivo .csv para uso em software existente de contabilidade ou gerenciamento de pedidos.
 

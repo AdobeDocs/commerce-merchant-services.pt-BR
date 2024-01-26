@@ -3,7 +3,7 @@ title: Ativar [!DNL Payment Services] para produção
 description: Conclua o processo de integração ativando [!DNL Payment Services] para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
 workflow-type: tm+mt
 source-wordcount: '1006'
 ht-degree: 0%
@@ -30,7 +30,7 @@ Depois que você [configurar os Commerce Services](connect.md#configure-commerce
    Você será direcionado para a área de configurações na exibição Início com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde você pode ativar o [!DNL Payment Services] opções como seu [método de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
 
 1. Entrada _[!UICONTROL General Configuration]_, definir **[!UICONTROL Enable]**para `Yes`.
-1. Definir **[!UICONTROL Payment Action]**, para ambos _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal Smart Buttons]_, para uma das seguintes opções:
+1. Definir **[!UICONTROL Payment Action]**, para ambos _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal payment buttons]_, para uma das seguintes opções:
 
    | Configuração | Descrição |
    |---|---|
@@ -47,7 +47,7 @@ Depois que você [configurar os Commerce Services](connect.md#configure-commerce
 
    A limpeza deve ser feita após cada alteração de configuração.
 
-Consulte [Configurar serviços de pagamento](settings.md) para obter mais informações sobre como configurar Campos de cartão de crédito e Botões inteligentes do PayPal.
+Consulte [Configurar serviços de pagamento](settings.md) para obter mais informações sobre como configurar os Campos de cartão de crédito e os botões de pagamento do PayPal.
 
 ## Integração completa do comerciante
 

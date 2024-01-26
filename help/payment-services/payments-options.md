@@ -3,7 +3,7 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
 workflow-type: tm+mt
 source-wordcount: '1044'
 ht-degree: 0%
@@ -64,13 +64,13 @@ A variável [!DNL Apple Pay] O botão é visível nas exibições página do pro
 
 Você pode configurar [!UICONTROL Apple Pay] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md#apple-pay) para obter mais informações.
 
-## [!DNL PayPal Smart Buttons]
+## [!DNL PayPal Payment Buttons]
 
-[!DNL PayPal Smart Buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
+[!DNL PayPal payment buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
 
 ![Botão PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Você pode configurar [!UICONTROL PayPal Smart Buttons] na configuração da loja ou na variável [!DNL Payment Services] Início.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
+Você pode configurar [!UICONTROL PayPal payment buttons] na configuração da loja ou na variável [!DNL Payment Services] Início.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 
 Consulte PayPal&#39;s [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) para saber em quais países cada método de pagamento está disponível atualmente.
 
