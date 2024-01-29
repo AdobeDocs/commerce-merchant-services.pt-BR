@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: 108f2b24-39c1-4c87-8deb-d82ee1c24d55
 feature: Payments, Checkout, Configuration
-source-git-commit: 7ea19e5c47142e31995c570c5e1efb50850d99b2
+source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
 workflow-type: tm+mt
-source-wordcount: '2364'
+source-wordcount: '2372'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Consulte [Opções de pagamentos](payments-options.md#credit-card-fields) para o
 
 ### Apple Pay
 
-A variável [!UICONTROL Apple Pay] opção de pagamento de botão permite fornecer uma [!UICONTROL Apple Pay] botão de pagamento na finalização da loja pelo navegador Safari.
+A variável [!UICONTROL Apple Pay] opção de pagamento de botão permite fornecer uma [!UICONTROL Apple Pay] botão de pagamento na finalização da loja pelo navegador Safari (para até 99 domínios por conta de comerciante).
 
 Você só poderá usar o Apple Pay se concluir [Autoregistro Apple Pay via Paypal](https://developer.paypal.com/docs/checkout/apm/apple-pay/#register-your-live-domain) e depois [configurar o Apple Pay](settings.md/#payment-buttons) para suas lojas. Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obter mais informações.
 
