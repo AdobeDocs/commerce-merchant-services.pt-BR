@@ -4,7 +4,7 @@ description: Saiba quais dados cada evento captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 136cd11e65674ec6e797aeaabd80750a50324566
+source-git-commit: 9001cd24db0941b7c7edcfd5b10464dc90084fd7
 workflow-type: tm+mt
 source-wordcount: '6957'
 ht-degree: 0%
@@ -586,7 +586,7 @@ A tabela a seguir descreve os dados coletados para esse evento.
 
 ## Eventos de back office
 
-Os eventos de back office contêm informações sobre o status de um pedido, como se um pedido foi feito, cancelado, reembolsado, remetido ou concluído. Os dados coletados por esses eventos do lado do servidor mostram uma visualização 360 do pedido do comprador. Essa visualização ajuda os comerciantes a direcionar ou analisar melhor todo o status do pedido ao desenvolver campanhas de marketing. Por exemplo, você pode detectar tendências em determinadas categorias de produtos que apresentam um bom desempenho em diferentes épocas do ano. Tais como roupas de inverno que vendem melhor durante os meses mais frios ou certas cores do produto que os compradores estão interessados ao longo dos anos. Além disso, os dados de status do pedido podem ajudar você a calcular o valor vitalício do cliente, entendendo a propensão do comprador para converter com base em pedidos anteriores.
+Os eventos de back office contêm informações sobre o status de um pedido, como se um pedido fosse [colocado](#orderplaced), [cancelado](#ordercancelled), [reembolsado](#orderitemreturncompleted), [remetido](#ordershipmentcompleted)ou [concluído](#ordershipmentcompleted). Os dados coletados por esses eventos do lado do servidor mostram uma visualização 360 do pedido do comprador. Essa visualização ajuda os comerciantes a direcionar ou analisar melhor todo o status do pedido ao desenvolver campanhas de marketing. Por exemplo, você pode detectar tendências em determinadas categorias de produtos que apresentam um bom desempenho em diferentes épocas do ano. Tais como roupas de inverno que vendem melhor durante os meses mais frios ou certas cores do produto que os compradores estão interessados ao longo dos anos. Além disso, os dados de status do pedido podem ajudar você a calcular o valor vitalício do cliente, entendendo a propensão do comprador para converter com base em pedidos anteriores.
 
 >[!NOTE]
 >
