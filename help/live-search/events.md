@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Eventos'
 description: Saiba como os eventos coletam dados para [!DNL Live Search].
 feature: Services, Eventing
-source-git-commit: c14ba55bee54954ffcfe760e26dc1d69646ecd69
+exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
+source-git-commit: 8d669cf6042340659574c86a43836a02954f24ce
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '462'
 ht-degree: 0%
 
 ---
@@ -39,17 +40,17 @@ Esta tabela descreve os eventos usados pelo [!DNL Live Search] estratégias.
 
 ## Eventos de painel obrigatórios
 
-Alguns eventos são necessários para preencher o [Painel do Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/live-search-admin/performance.html)
+Alguns eventos são necessários para preencher o [Painel do Live Search](performance.md)
 
-| Área do painel | Eventos |
-| ----- | ---- | 
-| Pesquisas únicas | `search-request-sent`,`search-response-received` |
-| Nenhuma pesquisa de resultados | `search-request-sent`,`search-response-received` |
-| Taxa de resultados zero | `search-request-sent`,`search-response-received` |
-| Pesquisas populares | `search-request-sent`,`search-response-received` |
-| Média posição do clique | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Taxa de cliques | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click` |
-| Índice de conversão | `search-request-sent`,`search-response-received`, `search-results-view`, `search-product-click`,`product-view`,`add-to-cart`,`place-order` |
+| Área do painel | Eventos | Ingressar no campo |
+| ------------------- | ------------- | ---------- |
+| Pesquisas únicas | `page-view`, `search-request-sent`, | searchRequestId |
+| Nenhuma pesquisa de resultados | `page-view`, `search-request-sent`, | searchRequestId |
+| Taxa de resultados zero | `page-view`, `search-request-sent`, | searchRequestId |
+| Pesquisas populares | `page-view`, `search-request-sent`, | searchRequestId |
+| Média posição do clique | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
+| Taxa de cliques | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
+| Índice de conversão | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
 
 ### Contextos obrigatórios
 
