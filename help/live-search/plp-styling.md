@@ -2,9 +2,9 @@
 title: Widget da página de listagem de produtos
 description: Ativação e estilo do [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '304'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,16 @@ Para desativar o dispositivo PLP:
 
 1. Ir para **Lojas** > Configurações > **Configuração** > **[!DNL Live Search]** > **Recursos da loja** e defina **Ativar widgets de listagem de produtos** para &quot;Não&quot;.
 1. Selecionar **Salvar configuração** para salvar a configuração.
+
+## Recursos do widget
+
+O widget PLP fornece uma variedade de recursos esperados em uma página de produto pesquisável. Isso inclui:
+
+* Filtrar por atributos.
+* Suporte para amostras de cores
+* Funcionalidade Adicionar ao carrinho
+* Suporte a vários idiomas
+* Controles deslizantes de preço
 
 ## Exemplo de estilo
 

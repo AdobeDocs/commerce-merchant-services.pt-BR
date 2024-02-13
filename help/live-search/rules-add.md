@@ -2,9 +2,9 @@
 title: "Adicionar regras"
 description: "Saiba como criar regras de merchandising de pesquisa."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '1430'
+source-wordcount: '1536'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,16 @@ Para criar uma regra, a primeira etapa é usar o editor de regras para definir a
 1. Clique em **Pesquisar merchandising** guia.
 1. Clique em **Adicionar regra** para iniciar o editor de regras.
 
+## Tipo de regra
+
+Uma Consulta de pesquisa é onde você define um termo de pesquisa, condições e tipos de classificação específicos.
+
+Uma regra padrão pode ser definida, que é aplicada a todas as consultas, a menos que uma consulta de pesquisa mais específica seja definida. Somente uma regra padrão pode ser definida e não pode conter condições. Se você selecionar Padrão, a interface Condições não será exibida.
+Escolha o tipo de classificação Inteligente padrão e qualquer classificação manual que quiser aplicar a todas as pesquisas padrão. As classificações manuais são sempre aplicadas.
+
 ## Condições
 
-As condições são os requisitos para acionar um evento. Uma regra pode ter até dez condições e 25 eventos.
+As condições são os requisitos para acionar um evento. Uma regra pode ter até dez condições e 25 eventos. Uma regra padrão não pode ter condições.
 
 ![Regra - Criar sua regra](assets/rules-add-workspace.png)
 
@@ -52,8 +59,6 @@ Inicialmente, o painel de teste renderiza a consulta na caixa de pesquisa Condi�
 
 1. Para criar uma regra com várias condições, clique em **Adicionar condição**.
 Uma regra pode ter até dez condições. O operador lógico que une duas condições baseia-se no atual *Corresponder* configuração. Por padrão, *Corresponder* é `All` e o operador lógico estiver `AND`.
-
-   ![Regras - A consulta de pesquisa contém](assets/rules-search-query-contains-and.png)
 
 1. Selecione a segunda condição e insira o texto de consulta necessário.
 
@@ -180,6 +185,7 @@ As informações inseridas aqui aparecem no campo [Detalhes da regra](rules-work
 | Campo | Descrição |
 |--- |--- |
 | Nome | O nome da regra. Rule names must be unique. |
+| Tipo de regra | Padrão ou Consulta. O padrão é aplicado a todas as regras, a menos que uma regra de Query mais específica seja definida. |
 | Data inicial | A data de início da regra, se programada. |
 | Data final | A data final da regra, se programada. |
 | Descrição | Uma breve descrição da regra. |

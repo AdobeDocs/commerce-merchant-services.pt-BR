@@ -2,9 +2,9 @@
 title: "Pesquisar merchandising"
 description: "[!DNL Live Search] as regras de merchandising combinam lógica e ações para moldar a experiência de compra."
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '681'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ Cada regra tem três componentes principais:
 * Eventos - As ações que ocorrem quando as condições são atendidas.
 * Detalhes - O nome da regra e o intervalo de tempo e a descrição opcionais.
 
-É possível combinar várias condições e ações e agendar uma regra para ficar ativa por um período.
+É possível combinar várias condições e ações e agendar uma regra para ficar ativa por um período. Você também pode definir uma regra padrão que é aplicada mesmo quando nenhum termo de pesquisa é definido.
 
 ## Requisitos
 
@@ -46,6 +46,10 @@ Os operadores Match `All` e `Any` determine o operador lógico usado para unir v
 * `Any` - Usa o `OR` operador lógico para unir várias condições.
 
 Ao compor uma regra complexa, pode ser útil anotá-la com recuo para descrever as condições, os eventos associados e os nomes de produtos ou SKUs necessários para retornar os resultados que você deseja alcançar. Em seguida, crie a regra e teste o resultado.
+
+## Regra padrão
+
+Você pode definir uma regra padrão que é aplicada quando nenhum termo de pesquisa é fornecido, ou nenhuma outra regra de pesquisa pode ser aplicada. Se você definir a regra padrão como &quot;Mais comprados&quot;, todas as consultas assumirão como padrão esse tipo de classificação, a menos que sejam supercedidas por um termo de pesquisa mais específico. Nenhum termo de pesquisa pode ser definido para a regra padrão.
 
 ## Ordem de precedência com várias regras
 

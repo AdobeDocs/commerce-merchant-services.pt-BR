@@ -3,9 +3,9 @@ title: Sincronização de catálogo
 description: Saiba como exportar dados do produto do [!DNL Commerce] servidor para [!DNL Commerce Services].
 exl-id: 19d29731-097c-4f5f-b8c0-12f9c91848ac
 feature: Catalog Management, Data Import/Export, Catalog Service
-source-git-commit: 92129633adadd3ed699ae6427c01622dcb6ae3b4
+source-git-commit: 6513fd6dce9648407b0878785f5f59f9f39cd5e1
 workflow-type: tm+mt
-source-wordcount: '1167'
+source-wordcount: '1135'
 ht-degree: 0%
 
 ---
@@ -13,19 +13,15 @@ ht-degree: 0%
 
 # Sincronização de catálogo
 
+>[!NOTE]
+>
+> O Painel de sincronização do catálogo agora é o Painel de gerenciamento de dados. Esse painel renovado agora é compatível com [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service]. Os clientes podem obter o Painel de gerenciamento de dados atualizando para a versão mais recente de um desses serviços. Leia mais sobre isso no [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) documentação. Este tópico atual permanece para os usuários que ainda não atualizaram e ainda têm o painel Sincronização de catálogo.
+
 O Adobe Commerce usa indexadores para compilar dados de catálogo em tabelas. O processo é automaticamente acionado por [events](https://experienceleague.adobe.com/docs/commerce-admin/systems/tools/index-management.html#events-that-trigger-full-reindexing) como uma alteração no preço de um produto ou no nível do inventário.
 
 O serviço de Sincronização do catálogo move os dados do produto de um [!DNL Adobe Commerce] para a instância [!DNL Commerce Services] plataforma para manter os dados atualizados. Por exemplo, [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) exige informações atuais do catálogo para retornar com precisão as recomendações com nomes, preços e disponibilidade corretos. Use o _Sincronização de catálogo_ painel de controle para observar e gerenciar o processo de sincronização ou a [interface de linha de comando](#resynccmdline) para acionar uma sincronização de catálogo e reindexar dados do produto para consumo por [!DNL Commerce Services].
 
->[!NOTE]
->
-> Para usar o _Sincronização de catálogo_ ou na interface de linha de comando, você deve ter uma [Chave da API e um espaço de dados SaaS configurado](saas.md).
-
 ## Acesso ao painel Sincronização do catálogo
-
->[!NOTE]
->
-> A variável _Sincronização de catálogo_ o painel só estará disponível quando a variável _Recommendations do produto_ Os módulos do são instalados e refletem projeções de dados relacionadas somente a esse recurso. Suporte para outros Commerce Services, como _Live Search_ e _Serviço de catálogo_ estão planejados para o futuro.
 
 Para acessar o painel Sincronização de catálogo, selecione **Sistema** > _Transferência de dados_ > **Sincronização de catálogo**.
 
@@ -46,7 +42,7 @@ Relata um status de sincronização de:
 - **Failed** - Exibe a data e a hora em que a sincronização foi tentada
 - **Em andamento** - Exibe a data e a hora da última sincronização bem-sucedida
 
-O processo de sincronização de catálogo é executado automaticamente a cada hora. Se você não estiver vendo os produtos esperados na loja ou se os produtos não refletirem as alterações recentes feitas, é possível resolver [problemas de sincronização do catálogo](#resolvesync).
+O processo de sincronização de catálogo é executado por meio do processo cron. Se não encontrar os produtos esperados na loja ou se os produtos não refletirem as alterações recentes feitas, você poderá resolver [problemas de sincronização do catálogo](#resolvesync).
 
 ### Produtos sincronizados
 
@@ -54,7 +50,7 @@ Exibe o número total de produtos sincronizados do [!DNL Commerce] catálogo. Ap
 
 ## Ressincronizar {#resync}
 
-Se precisar iniciar uma ressincronização do catálogo antes que a sincronização agendada por hora ocorra, você poderá forçar uma ressincronização.
+Se você precisar iniciar uma ressincronização do catálogo antes que a sincronização agendada por hora ocorra, é possível forçar uma ressincronização.
 
 >[!NOTE]
 >

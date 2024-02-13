@@ -3,10 +3,10 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8996772883b001babc09a3ae5a63310b23e58ae0
+source-git-commit: 4ce37b03937cf5a8413831c720d05387031a6094
 workflow-type: tm+mt
-source-wordcount: '537'
-ht-degree: 1%
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -22,21 +22,20 @@ As atualizações incluem:
 
 ## Versão principal atual
 
-### Versão V1.13
+### Versão V1.16
 
-_12 de outubro de 2023_
+_13 de fevereiro de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) O Serviço de catálogo oferece suporte ao `inStock` sinalizador para grades de produtos.
-![Novo](../assets/new.svg) `urlKey` e `externalId` foram adicionados ao esquema do GraphQL.
-![Novo](../assets/new.svg) Produtos e cartões-presente baixáveis agora são compatíveis.
+![Novo](../assets/new.svg) Os vídeos de produtos agora são compatíveis com a API de serviço de catálogo.
+![Correção](../assets/fix.svg) Agora há suporte para pacotes de produtos com preços fixos.
+![Correção](../assets/fix.svg) As opções indisponíveis agora são mostradas no widget PDP.
 
 #### Limitações conhecidas
 
 Estes recursos ainda não são compatíveis:
 
-* Pacote de produtos com preço fixo
 * O tamanho máximo para a carga de atributos dinâmicos é de 9 MB.
 * Preço de produto de grupo. Pode ser calculada com preços simples de produtos.
 * Em uma matriz de imagens, somente a primeira imagem contém funções.
@@ -49,6 +48,16 @@ As seguintes limitações podem ser resolvidas usando a API Mesh e a Core GraphQ
 ## Versões anteriores
 
 +++ Versões anteriores
+
+### Versão V1.13
+
+_12 de outubro de 2023_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg) O Serviço de catálogo oferece suporte ao `inStock` sinalizador para grades de produtos.
+![Novo](../assets/new.svg) `urlKey` e `externalId` foram adicionados ao esquema do GraphQL.
+![Novo](../assets/new.svg) Produtos e cartões-presente baixáveis agora são compatíveis.
 
 ### Versão V1.12
 

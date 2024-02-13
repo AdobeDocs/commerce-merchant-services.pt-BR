@@ -1,19 +1,15 @@
 ---
 title: Serviço de assimilação de feed
 description: Saiba mais sobre o serviço de assimilação de feed do Adobe Commerce
-source-git-commit: b57fc43d23dbbcbcae31743fd0ab9c1b3d1c1084
+exl-id: bb5aec74-faca-42ec-9fdb-3261677d451e
+source-git-commit: d3798efa038c35f71bb0bb6874d954a8e66c7467
 workflow-type: tm+mt
-source-wordcount: '404'
+source-wordcount: '348'
 ht-degree: 0%
 
 ---
 
-
 # Serviço de assimilação de feed
-
->[!NOTE]
->
->No momento, o Serviço de assimilação de feed está em beta privado. Ele ainda não está disponível para uso geral.
 
 O Serviço de assimilação de feed permite que clientes com catálogos grandes e/ou complexos enviem dados diretamente para os serviços da Adobe Commerce.
 
@@ -36,12 +32,6 @@ Dependendo da configuração do Adobe Commerce, o armazenamento de dados e os fl
 
 Ao ignorar o aplicativo principal do Commerce e mover dados diretamente para os serviços do Commerce, as atualizações de produtos são refletidas na loja mais rapidamente. Os dados principais do catálogo, como SKUs, são enviados ao aplicativo principal do Commerce para processamento separado.
 
-## Associar-se ao beta
+## API
 
-O serviço de assimilação de feed foi criado para:
-
-* Clientes de empresas de médio porte com implementações headless
-* Clientes com catálogos grandes e complexos
-* Clientes que não usam o administrador do Adobe Commerce para gerenciar dados de catálogo, em vez disso usam um ERP ou sistema de terceiros para gerenciar dados de catálogo
-
-Se você estiver interessado em participar do programa beta, entre em contato com a equipe em sagonzal@adobe.com.
+A variável [Documentação da API do serviço de assimilação de feed](https://developer.adobe.com/commerce/services/feed-ingestion) A seção fornece detalhes sobre como implementar o serviço.

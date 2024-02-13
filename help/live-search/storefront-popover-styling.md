@@ -2,9 +2,9 @@
 title: "Estilo [!DNL Popover] Elementos"
 description: "Notas técnicas sobre a personalização do [!DNL Live Search storefront popover]"
 exl-id: 033049f2-976e-4299-b026-333ac4b481a3
-source-git-commit: 75ff893bf5867ededa49807835676ddf9b19adc9
+source-git-commit: 67da9016d4bca9750fa9e440cce08ad1ae7100e2
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '185'
 ht-degree: 0%
 
 ---
@@ -72,6 +72,10 @@ Os seletores de classe a seguir podem ser usados para estilizar os elementos de 
 #### .livesearch.product-price
 
 ![Preço do produto](assets/livesearch-product-price.png)
+
+#### link do produto .livesearch
+
+![Resultado do produto](assets/livesearch-product-link.png)
 
 ## Trabalhar com um tema modificado {#working-with-modified-theme}
 

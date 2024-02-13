@@ -3,9 +3,9 @@ title: "Visão geral técnica"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: 3d2b63280c2a890d7f84208efe3687c0d99e8e38
+source-git-commit: e235073031cae1304eaae4605d2f94332e52284f
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1028'
 ht-degree: 0%
 
 ---
@@ -133,7 +133,7 @@ Este vídeo é uma introdução ao Merchandising por categoria.
 
 ## Repositório de código do widget
 
-O widget Página de listagem de produtos e o widget Popover de pesquisa estão disponíveis para download no repositório do github.
+O widget Página de listagem de produtos e o widget de campo do Live Search estão disponíveis para download no repositório do github.
 
 Isso permite que os desenvolvedores personalizem totalmente a funcionalidade e o estilo. Esses usuários hospedam o código enquanto ainda aproveitam o [!DNL Live Search] serviço.
 
@@ -160,6 +160,8 @@ Atualmente, os preços básicos são suportados. Os preços avançados que não 
 * Preço Mínimo Anunciado
 
 Examinar [API Mesh](../catalog-service/mesh.md) para cálculos de preços mais complexos.
+
+O formato de preço oferece suporte à configuração de localidade na instância do Commerce: *Lojas* > Configurações > *Configuração* > Geral > *Geral* > Opções locais > Local.
 
 ## suporte para PWA
 
@@ -192,7 +194,7 @@ Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
 ## Não suportado no momento
 
 * A variável [Pesquisa avançada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) o módulo é desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
-* [Preços da camada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) e [Preços Especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) não são compatíveis com o [!DNL Live Search] Widget de página de listagem de popover e produto.
+* [Preços da camada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) e [Preços Especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) não são compatíveis com o [!DNL Live Search] Widget de página de listagem de campo e produto.
 
 ## Cookies
 

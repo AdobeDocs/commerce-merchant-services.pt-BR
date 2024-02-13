@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: ff7a2549893eab63f552a2a866939adc90de4a78
+source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt
-source-wordcount: '1869'
+source-wordcount: '1822'
 ht-degree: 0%
 
 ---
@@ -41,6 +41,38 @@ _25 de abril de 2023_
 
 ![Novo](../assets/new.svg) [!DNL Live Search] agora, os clientes podem aproveitar o novo [Indexador de preços SaaS](../price-index/index.md).
 
+## [!DNL Live Search] 4.1.0 {#410}
+
+_13 de fevereiro de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+### Novos recursos
+
+![Novo](../assets/new.svg) [!DNL Live Search] agora oferece suporte à configuração de uma regra padrão para [Pesquisar merchandising](rules.md).
+![Novo](../assets/new.svg) Vários novos recursos foram adicionados ao [Widget do PLP](plp-styling.md):
+
+* Alternância da exibição de lista/grade
+* Botões Adicionar ao carrinho
+* Suporte a amostras
+* Várias imagens por produto
+* Controles deslizantes de preço
+* Suporte de idioma
+
+Os comerciantes devem atualizar o [!DNL Live Search] extensão para a versão >= 4.1.0 para acessar esses recursos.
+
+Após instalar a versão 3.1.1 ou superior, ative os novos indexadores:
+
+* Feed de preços do produto
+* Feed de dados do site de escopos
+* Feed de dados dos grupos de clientes dos escopos
+
+Depois da atualização, teste a configuração atualizada no controle de qualidade ou preparo antes de enviar as alterações para a produção.
+
+## Versões anteriores
+
++++4.0.0 e anteriores
+
 ## [!DNL Live Search] 4.0.0 {#400}
 
 _13 de novembro de 2023_
@@ -61,27 +93,11 @@ _13 de novembro de 2023_
 ![Correção](../assets/fix.svg) Estilos CSS reconfigurados para melhor isolar classes de widget.
 ![Correção](../assets/fix.svg) Correções de erros secundários
 
-Os comerciantes devem atualizar o [!DNL Live Search] extensão para a versão >= 4.0.0 para acessar esses recursos.
-
-Após instalar a versão 3.1.1 ou superior, ative os novos indexadores:
-
-* Feed de preços do produto
-* Feed de dados do site de escopos
-* Feed de dados dos grupos de clientes dos escopos
-
-Depois da atualização, teste a configuração atualizada no controle de qualidade ou preparo antes de enviar as alterações para a produção.
-
-## Versões anteriores
-
-+++3.1.1 e anteriores
-
 ## [!DNL Live Search] 3.1.1 {#311}
 
 _15 de setembro de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
-
-
 
 ![Novo](../assets/new.svg) A guia Nova categoria de merchandising foi adicionada. Agora, os usuários podem adicionar Classificações inteligentes e Classificações manuais (fixar, impulsionar, enterrar, ocultar) por categoria
 ![Novo](../assets/new.svg) Os usuários podem adicionar uma única regra de categoria com classificação inteligente ou manual
