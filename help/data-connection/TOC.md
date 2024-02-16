@@ -5,10 +5,10 @@ breadcrumb-title: "[!DNL Data Connection] extensão para o Adobe Commerce"
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay
-source-git-commit: f3e0fab42ced9306a8083fb83cf09c53735628f9
+source-git-commit: cb31b0d1f9589da9785ed0b02b4c519a562f14d0
 workflow-type: tm+mt
-source-wordcount: '77'
-ht-degree: 5%
+source-wordcount: '98'
+ht-degree: 4%
 
 ---
 
@@ -18,11 +18,15 @@ ht-degree: 5%
 - [Notas de versão](release-notes.md)
 - Fundamentos {#fundamentals}
    - [Instale o [!DNL Data Connection] extensão](install.md)
+   - [Tipos de dados do Commerce](data-ingestion.md)
+   - [Atualizar esquemas de evento de série de tempo para assimilação de dados do Commerce](update-xdm.md)
+   - [Atualizar esquema de registro de perfil para assimilação de dados do Commerce](profile-data.md)
    - [Conectar dados do Commerce à Adobe Experience Platform](connect-data.md)
-   - [Adicionar grupos de campos ao esquema XDM](update-xdm.md)
    - [Integrar o SDK do Adobe Experience Platform Mobile ao Commerce](mobile-sdk-epc.md)
 - Capturar dados {#event-forwarding}
-   - [Eventos](events.md)
+   - [Eventos comportamentais](events.md)
+   - [Eventos de back-office](events-backoffice.md)
+   - [Registros de perfil](events-profilerecord.md)
    - [Eventos personalizados](custom-events.md)
    - [Usar tags do Adobe Experience Platform](using-tags.md)
 - Caso de uso {#use-cases}

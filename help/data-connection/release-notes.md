@@ -3,9 +3,9 @@ title: Notas de versão
 description: As informações mais recentes da versão do [!DNL Data Connection] extensão do Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 6378b89e5a077e35213f35e84be9a629c1bdc3ac
+source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
 workflow-type: tm+mt
-source-wordcount: '774'
+source-wordcount: '818'
 ht-degree: 0%
 
 ---
@@ -46,7 +46,7 @@ _16 de novembro de 2023_
 
 _10 de outubro de 2023_
 
-![Novo](../assets/new.svg) - Adição de novos eventos de status de pedido: [Pedido Faturado](events.md#orderinvoiced), [Devolução do Item da Ordem Iniciada](events.md#orderitemsreturninitiated), e [Devolução do Item da Ordem Concluída](events.md#orderitemreturncompleted).
+![Novo](../assets/new.svg) - Adição de novos eventos de status de pedido: [Pedido Faturado](events-backoffice.md#orderinvoiced), [Devolução do Item da Ordem Iniciada](events.md#orderitemsreturninitiated), e [Devolução do Item da Ordem Concluída](events.md#orderitemreturncompleted).
 ![Correção](../assets/fix.svg) - Correção de um problema em que as alterações na configuração de moeda não eram refletidas nos eventos após a atualização do cache.
 ![Correção](../assets/fix.svg) - Corrigido o erro quando a mensagem de confirmação de pedido não era exibida se o posicionamento assíncrono de pedido estivesse ativado.
 ![Novo](../assets/new.svg) - Adição de dados a [addToRequisitionList](events.md#addtorequisitionlist) evento para produtos simples na página de exibição Categoria.
@@ -71,6 +71,16 @@ _12 de outubro de 2022_
 ![Novo](../assets/new.svg) - Adição de suporte para um [Loja AEM](overview.md#aem-support).
 
 +++
+
+## 3.2.0-beta1
+
+_16 de fevereiro de 2024_
+
+[!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
+
+![Novo](../assets/new.svg) - Se você estiver participando do beta, verifique se `composer.json` O arquivo tem o seguinte no nível raiz: ` "minimum-stability": "beta"`.
+![Novo](../assets/new.svg) - Adição da capacidade de [adicionar atributos personalizados](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
+![Novo](../assets/new.svg) - Adição da capacidade de [coletar e enviar registros de perfil](connect-data.md#send-customer-profile-data) e dados para o Experience Platform.
 
 ## 3.1.0
 
@@ -120,8 +130,8 @@ _30 de março de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) - Empacotado o `commerce-data-export` e `saas-export` dependências com o `experience-platform-connector` extensão. Anteriormente, você tinha que instalar essas dependências separadamente. Essas dependências, juntamente com a configuração de comerciante, permitem o processamento do lado do servidor de [eventos de back office](events.md#back-office-events).
-![Novo](../assets/new.svg) - Adição de um novo evento de back office chamado [`orderShipmentCompleted`](events.md#ordershipmentcompleted).
+![Novo](../assets/new.svg) - Empacotado o `commerce-data-export` e `saas-export` dependências com o `experience-platform-connector` extensão. Anteriormente, você tinha que instalar essas dependências separadamente. Essas dependências, juntamente com a configuração de comerciante, permitem o processamento do lado do servidor de [eventos de back office](events-backoffice.md).
+![Novo](../assets/new.svg) - Adição de um novo evento de back office chamado [`orderShipmentCompleted`](events-backoffice.md#ordershipmentcompleted).
 
 ## 2.1.1
 
