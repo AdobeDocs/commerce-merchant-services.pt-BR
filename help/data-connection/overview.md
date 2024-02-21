@@ -3,9 +3,9 @@ title: Visão geral do Guia
 description: Saiba como integrar dados do Adobe Commerce ao Adobe Experience Platform usando o [!DNL Data Connection] extensão.
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: af54529ad037dc99dbc07cf1a6ac270d17f16870
 workflow-type: tm+mt
-source-wordcount: '1708'
+source-wordcount: '1732'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ Após configurar a conexão entre o Commerce e o Experience Platform e o Experie
 
 O compartilhamento de dados entre esses dois sistemas requer a compreensão de vários conceitos.
 
-* **Dados** - Os dados compartilhados com o Experience Platform são dados coletados dos eventos do navegador na loja e dos eventos do back office no servidor. Os eventos de vitrine eletrônica são capturados das interações dos compradores no site e incluem eventos como [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)e assim por diante. Consulte [eventos da loja](events.md#storefront-events) para obter a lista completa dos eventos da loja. Os eventos do lado do servidor ou de back-office incluem [status do pedido](events.md#back-office-events) informações, como [`orderPlaced`](events.md#orderplaced), [`orderReturned`](events.md#orderitemreturncompleted), [`orderShipped`](events.md#ordershipmentcompleted), [`orderCancelled`](events.md#ordercancelled)e assim por diante. Consulte [eventos de back office](events.md#back-office-events) para obter a lista completa de eventos de back office.
+* **Dados** - Os dados compartilhados com o Experience Platform são os dados coletados dos eventos do navegador na loja, dos eventos do back office no servidor e dos dados de registro do perfil. Os eventos de vitrine eletrônica são capturados das interações dos compradores no site e incluem eventos como [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout)e assim por diante. Consulte [eventos da loja](events.md#storefront-events) para obter a lista completa dos eventos da loja. Os eventos do lado do servidor ou de back-office incluem [status do pedido](events-backoffice.md#order-status) informações, como [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled)e assim por diante. Consulte [eventos de back office](events-backoffice.md) para obter a lista completa de eventos de back office. Os dados de registro do perfil contêm informações quando um novo perfil é criado, atualizado ou excluído. Consulte [dados de registro do perfil](events-profilerecord.md) para saber mais.
 
 * **Rede de Experience Platform e de borda** - Data warehouse para a maioria dos produtos Adobe DX. Os dados enviados para o Experience Platform são então propagados para os produtos Adobe DX através da Experience Platform Edge Network. Por exemplo, você pode iniciar o Journey Optimizer, recuperar seus dados de evento do Commerce específicos da borda e criar um email de carrinho abandonado no Journey Optimizer. O Journey Optimizer pode enviar esse email se houver carrinhos abandonados em sua loja de Commerce. Saiba mais sobre o [Experience Platform e a rede de borda](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 

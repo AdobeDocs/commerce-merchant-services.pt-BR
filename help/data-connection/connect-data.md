@@ -3,7 +3,7 @@ title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar os dados do Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '2501'
 ht-degree: 0%
@@ -101,7 +101,7 @@ Nesta seção, você especifica o tipo de dados que deseja coletar e enviar para
 
 Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, revise a [pré-requisitos](overview.md#prerequisites).
 
-Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events), [back office](events.md#back-office-events), e [perfil](events.md#customer-profile-events-server-side) eventos.
+Consulte o tópico de eventos para saber mais sobre [vitrine](events.md#storefront-events), [back office](events-backoffice.md), e [perfil](events-backoffice.md#customer-profile-events-server-side) eventos.
 
 >[!NOTE]
 >
@@ -193,7 +193,7 @@ Pode levar cerca de 10 minutos para que um registro de perfil fique disponível 
 
 ### Enviar dados históricos do pedido
 
-A Adobe Commerce coleta até cinco anos de [dados e status históricos do pedido](events.md#back-office-events). Você pode usar o [!DNL Data Connection] extensão para enviar esses dados históricos ao Experience Platform para enriquecer os perfis do cliente e personalizar as experiências do cliente com base nesses pedidos anteriores. Os dados são armazenados em um conjunto de dados no Experience Platform.
+A Adobe Commerce coleta até cinco anos de [dados e status históricos do pedido](events-backoffice.md#back-office-events). Você pode usar o [!DNL Data Connection] extensão para enviar esses dados históricos ao Experience Platform para enriquecer os perfis do cliente e personalizar as experiências do cliente com base nesses pedidos anteriores. Os dados são armazenados em um conjunto de dados no Experience Platform.
 
 Embora o Commerce já colete os dados históricos do pedido, há várias etapas que você deve concluir para enviar esses dados para o Experience Platform.
 

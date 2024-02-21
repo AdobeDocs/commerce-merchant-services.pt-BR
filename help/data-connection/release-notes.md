@@ -3,7 +3,7 @@ title: Notas de versão
 description: As informações mais recentes da versão do [!DNL Data Connection] extensão do Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: d54b7e894df4e6f64607afcfc6754b5a560b91e2
+source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
@@ -46,7 +46,7 @@ _16 de novembro de 2023_
 
 _10 de outubro de 2023_
 
-![Novo](../assets/new.svg) - Adição de novos eventos de status de pedido: [Pedido Faturado](events-backoffice.md#orderinvoiced), [Devolução do Item da Ordem Iniciada](events.md#orderitemsreturninitiated), e [Devolução do Item da Ordem Concluída](events.md#orderitemreturncompleted).
+![Novo](../assets/new.svg) - Adição de novos eventos de status de pedido: [Pedido Faturado](events-backoffice.md#orderinvoiced), [Devolução do Item da Ordem Iniciada](events-backoffice.md#orderitemsreturninitiated), e [Devolução do Item da Ordem Concluída](events-backoffice.md#orderitemreturncompleted).
 ![Correção](../assets/fix.svg) - Correção de um problema em que as alterações na configuração de moeda não eram refletidas nos eventos após a atualização do cache.
 ![Correção](../assets/fix.svg) - Corrigido o erro quando a mensagem de confirmação de pedido não era exibida se o posicionamento assíncrono de pedido estivesse ativado.
 ![Novo](../assets/new.svg) - Adição de dados a [addToRequisitionList](events.md#addtorequisitionlist) evento para produtos simples na página de exibição Categoria.
