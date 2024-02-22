@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 8bac6f053cddd3d47c3aa279abf7c96c79ffcd81
+source-git-commit: bf7dc316f7b7b702836441b35770403d75be6cfd
 workflow-type: tm+mt
-source-wordcount: '1233'
+source-wordcount: '1281'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,19 @@ _25 de abril de 2023_
 
 ## Versão principal atual
 
+### 6.0.0 do magento/product-recommendations
+
+_22 de fevereiro de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg) A variável [!DNL Catalog Sync Dashboard] agora é o [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html). Esse painel renovado fornece insights sobre fluxos de dados para [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service].
+![Correção](../assets/fix.svg) Correção de um problema que causava erros de check-out do Recommendations do produto.
+
+### Versões anteriores
+
++++5.0.0 e anteriores
+
 ### 5.0.1 do magento/product-recommendations
 
 _15 de setembro de 2023_
@@ -58,10 +71,6 @@ _15 de setembro de 2023_
 #### Limitações conhecidas
 
 * A variável `websiteCode` o valor é retornado incorretamente se contiver um sublinhado (_).
-
-### Versões anteriores
-
-+++5.0.0 e anteriores
 
 ### 5.0.0 do magento/product-recommendations
 

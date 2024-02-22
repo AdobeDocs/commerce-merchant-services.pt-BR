@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: "Saiba como instalar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
 workflow-type: tm+mt
-source-wordcount: '578'
+source-wordcount: '607'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Para garantir que a exportação de catálogo esteja sendo executada corretament
 - Verifique se os indexadores estão em execução.
 - Certifique-se de que o `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, e `Product Variant Feed` indexadores são definidos como &quot;Atualizar por programação&quot;.
 
-A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o catálogo exporta dados do produto do servidor do Commerce para os Commerce services de forma contínua, a fim de manter os serviços atualizados.
+A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o catálogo exporta dados do produto do servidor do Commerce para os Commerce services de forma contínua, a fim de manter os serviços atualizados. Para monitorar o status da sincronização, consulte a [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Acessar o serviço
 
@@ -145,3 +145,7 @@ Para permitir [!DNL Catalog Service] por meio de um firewall, adicione `commerce
 A variável [Malha de API para o Construtor de aplicativos Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite aos desenvolvedores integrar APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe IO.
 
 Consulte a  [[!DNL Catalog Service] e API Mesh](mesh.md) tópico para obter detalhes sobre instalação e configuração.
+
+## Painel de gerenciamento de dados
+
+Os usuários podem consultar a [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obter mais dados sobre [!DNL Catalog Service] sincronização de dados.

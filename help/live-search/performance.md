@@ -2,9 +2,9 @@
 title: "Painel de desempenho"
 description: "O [!DNL Live Search] O painel Desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: a0dded0beac3d45f8944016bd73e4ec1ae3eae22
+source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
 workflow-type: tm+mt
-source-wordcount: '465'
+source-wordcount: '481'
 ht-degree: 0%
 
 ---
@@ -18,6 +18,8 @@ A variável [!DNL Live Search] O painel Desempenho fornece informações sobre o
 * Resultados populares
 
 ![Desempenho](assets/performance-unique-searches.png)
+
+Você também pode consultar a [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
 
 ## Exibir um relatório
 
