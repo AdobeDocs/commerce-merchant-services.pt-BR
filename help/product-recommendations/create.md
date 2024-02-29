@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 24a930178873535f23331c9c5295c482d5b8e384
+source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
 workflow-type: tm+mt
-source-wordcount: '1007'
+source-wordcount: '1022'
 ht-degree: 0%
 
 ---
@@ -31,6 +31,10 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 1. No _Nomeie sua recomendação_ insira um nome descritivo para referência interna, como `Home page most popular`.
 
 1. No _Selecionar tipo de página_ selecione a página onde deseja que a recomendação seja exibida a partir das seguintes opções:
+
+   >[!NOTE]
+   >
+   > O Recommendations do produto não é compatível com a página Carrinho quando a loja está configurada para [exibir a página carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
 
    * Página inicial
    * Categoria
