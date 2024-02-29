@@ -3,9 +3,9 @@ title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar os dados do Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 655b5d18a4fb77232523c9c18a9fb362de93c70a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '2501'
+source-wordcount: '2480'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Nesta seção, você aprenderá a configurar o [!DNL Data Connection] extensão.
 
 ### Adicionar conta de serviço e detalhes da credencial
 
-Se você planeja coletar e enviar [dados históricos do pedido](#send-historical-order-data) ou [(Beta) dados de perfil do cliente](#send-customer-profile-data), você deve adicionar a conta de serviço e os detalhes da credencial. Além disso, se você estiver configurando o [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensão, você deve concluir essas etapas.
+Se você planeja coletar e enviar [dados históricos do pedido](#send-historical-order-data) ou [dados do perfil do cliente](#send-customer-profile-data), você deve adicionar a conta de serviço e os detalhes da credencial. Além disso, se você estiver configurando o [Audience Activation](https://experienceleague.adobe.com/docs/commerce-admin/customers/audience-activation.html) extensão, você deve concluir essas etapas.
 
 Se você estiver coletando e enviando apenas dados da loja ou do back office, pule para a [geral](#general) seção.
 
@@ -97,7 +97,7 @@ Nesta seção, você especifica o tipo de dados que deseja coletar e enviar para
 
 - **Back office** (dados do lado do servidor) são dados capturados nos servidores do Commerce. Isso inclui informações sobre o status de um pedido, como se um pedido tivesse sido feito, cancelado, reembolsado, remetido ou concluído. Também inclui [dados históricos do pedido](#send-historical-order-data).
 
-- (**Beta**) **Perfil** são dados relacionados às informações de perfil do comprador. Saiba mais [mais](#send-customer-profile-data).
+- **Perfil** são dados relacionados às informações de perfil do comprador. Saiba mais [mais](#send-customer-profile-data).
 
 Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, revise a [pré-requisitos](overview.md#prerequisites).
 
@@ -158,13 +158,9 @@ Após a integração, os dados da loja começam a fluir para a borda do Experien
 
 ### Enviar dados de perfil do cliente
 
->[!IMPORTANT]
->
->Esse recurso está na versão beta. Se você quiser participar do programa beta, envie uma solicitação para [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
 Há dois tipos de dados de perfil que você pode enviar para o Experience Platform: registros de perfil e eventos de perfil de série temporal.
 
-Um registro de perfil contém dados que são salvos quando um comprador cria um perfil na instância do Commerce, como o nome do comprador. Quando o esquema e o conjunto de dados são [configurado corretamente](profile-data.md), um registro de perfil é enviado ao Experience Platform e encaminhado ao serviço de gerenciamento e segmentação de perfis do Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Um registro de perfil contém dados que são salvos quando um comprador cria um perfil na instância do Commerce, como o nome do comprador. Quando o esquema e o conjunto de dados são [configurado corretamente](profile-data.md), um registro de perfil é enviado ao Experience Platform e encaminhado ao serviço de gerenciamento e segmentação de perfis do Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=pt-BR).
 
 Os eventos de perfil de série temporal contêm dados sobre as informações de perfil do comprador, como se ele criasse, editasse ou excluísse uma conta no site. Quando os dados do evento de perfil são enviados para o Experience Platform, eles ficam em um conjunto de dados onde podem ser usados por outros produtos DX.
 

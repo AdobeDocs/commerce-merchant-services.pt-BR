@@ -3,9 +3,9 @@ title: Tipos de dados do Commerce
 description: Saiba mais sobre os tipos de dados que você pode coletar e enviar para o Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '331'
+source-wordcount: '312'
 ht-degree: 0%
 
 ---
@@ -30,11 +30,7 @@ Saiba como [criar um esquema](update-xdm.md) que podem assimilar dados de evento
 
 ## Registrar dados
 
->[!NOTE]
->
->Esse recurso está na versão beta. Se você quiser participar do programa beta, envie uma solicitação para [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
-
-Os dados do registro fornecem informações sobre os atributos de um assunto. Um assunto pode ser uma organização ou um indivíduo. Por exemplo, um comprador em seu site cria uma conta e gera dados de registro. Esses dados são assimilados no Experience Platform usando um esquema que tem a classe definida como **Perfil individual**. É possível enviar esses dados de registro para o serviço de gerenciamento e segmentação de perfil do Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html).
+Os dados do registro fornecem informações sobre os atributos de um assunto. Um assunto pode ser uma organização ou um indivíduo. Por exemplo, um comprador em seu site cria uma conta e gera dados de registro. Esses dados são assimilados no Experience Platform usando um esquema que tem a classe definida como **Perfil individual**. É possível enviar esses dados de registro para o serviço de gerenciamento e segmentação de perfil do Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=pt-BR).
 
 ### Dados de registro de perfil capturados
 

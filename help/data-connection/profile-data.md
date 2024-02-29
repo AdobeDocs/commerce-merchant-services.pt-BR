@@ -3,18 +3,14 @@ title: Atualizar esquema de registro de perfil para assimilação de dados do Co
 description: Saiba como criar um esquema, conjunto de dados e sequência de dados para coletar e enviar dados de registro de perfil do Commerce para o Experience Platform.
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 8456f9b81812cf8ace55b7406d8b4fe50332c17a
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '261'
+source-wordcount: '242'
 ht-degree: 0%
 
 ---
 
 # Atualizar esquema de registro de perfil para assimilação de dados do Commerce
-
->[!NOTE]
->
->Esse recurso está na versão beta. Se você quiser participar do programa beta, envie uma solicitação para [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Quando seus compradores criam um perfil no site do Commerce, um registro de perfil é criado e os dados são capturados. Você deve criar um esquema e um conjunto de dados específicos para esse registro de perfil antes de poder transmitir esses dados de perfil para o Experience Platform.
 

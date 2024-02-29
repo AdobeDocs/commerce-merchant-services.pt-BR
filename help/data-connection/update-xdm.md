@@ -4,9 +4,9 @@ description: Saiba como criar um esquema, conjunto de dados e sequência de dado
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: d5824e11b4961b518e35fcf56ff2c7ee00480617
+source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
 workflow-type: tm+mt
-source-wordcount: '997'
+source-wordcount: '978'
 ht-degree: 0%
 
 ---
@@ -76,10 +76,6 @@ Com os esquemas, conjuntos de dados e fluxos de dados configurados para dados co
 Para incluir as informações do perfil do comprador, consulte a próxima seção.
 
 ## Dados do evento de perfil de série temporal
-
->[!NOTE]
->
->Esse recurso está na versão beta. Se você quiser participar do programa beta, envie uma solicitação para [dataconnection@adobe.com](mailto:dataconnection@adobe.com).
 
 Os dados do evento de perfil de série temporal são gerados a partir dos seguintes eventos:
 
