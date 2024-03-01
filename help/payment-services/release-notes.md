@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: ac7e16fd7e5e4161ee8935f4ecc6da6ae2e9d9f0
+source-git-commit: 36475f3071e819efa9884aefffc8bbeb6b6ac788
 workflow-type: tm+mt
-source-wordcount: '2183'
+source-wordcount: '2209'
 ht-degree: 0%
 
 ---
@@ -75,6 +75,16 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e a variável [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.3.4
+
+_4 de março de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg)<!-- PAY-5244 --> Correção da compatibilidade de check-out assíncrono.
+
+![Correção](../assets/fix.svg)<!-- PAY-5253 --> Correção de um erro em que um token de cofre não pertencente aos Serviços de pagamento não podia ser excluído.
 
 ## v2.3.3
 
