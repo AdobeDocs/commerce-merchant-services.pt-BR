@@ -3,9 +3,9 @@ title: Conectar sua instância
 description: Conecte sua instância do Commerce usando uma chave de API e uma chave privada e especifique o espaço de dados na configuração.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
 workflow-type: tm+mt
-source-wordcount: '635'
+source-wordcount: '590'
 ht-degree: 0%
 
 ---
@@ -17,6 +17,10 @@ ht-degree: 0%
 * Se você tiver *já conectou sua instância*, obtendo e usando suas credenciais de API e configurando os Serviços do Commerce, você pode prosseguir para [configuração da sandbox de teste](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/sandbox.html).
 * Se você ainda *precisa conectar sua instância*, consulte as informações sobre [obtenção de credenciais de API](#obtain-api-credentials) e [configuração de Commerce Services](#configure-commerce-services).
 * Se você estiver *não tenho certeza se sua instância está conectada*, navegue até **Sistema** > Serviços > **Conector dos Commerce Services** e exibir os valores de chave da API pública e privada na variável [!UICONTROL Sandbox Keys] e [!UICONTROL Production Keys] seções e o *Projeto* e *Espaço de dados* campos no [!UICONTROL SaaS Identifier] seção. Se esses valores estiverem presentes, sua instância será conectada.
+
+>[!NOTE]
+>
+>Todos os comerciantes habilitados para Serviços de Pagamento podem usar um espaço de dados de produção e dois espaços de dados de teste.
 
 ## Obter credenciais de API
 
