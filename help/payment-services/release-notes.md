@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 57b140463d457404b57dd23d33c72e48b4c3ac89
+source-git-commit: bcb111a409ee901a231d0bb4475b0c9ec728c95c
 workflow-type: tm+mt
-source-wordcount: '2209'
+source-wordcount: '2229'
 ht-degree: 0%
 
 ---
@@ -29,6 +29,10 @@ Consulte [Disponibilidade do produto](https://experienceleague.adobe.com/docs/co
 Essas notas de versão descrevem alterações e correções de recursos que ocorreram e foram lançadas fora das versões de recursos com versão normal do serviço hospedado.
 
 +++Atualizações do serviço hospedado
+
+_5 de março de 2024_
+
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-5252 --> Agora, os comerciantes podem copiar dados das grades do Painel selecionando o conteúdo de uma única célula.
 
 _10 de outubro de 2023_
 
