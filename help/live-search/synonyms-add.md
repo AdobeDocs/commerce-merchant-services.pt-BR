@@ -2,9 +2,9 @@
 title: "Adicionar sinônimos"
 description: "Adicionar [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
-source-git-commit: c4bca0c7238be653dd13b051634c662e5891767d
+source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
-source-wordcount: '390'
+source-wordcount: '383'
 ht-degree: 0%
 
 ---
@@ -35,7 +35,7 @@ Siga as instruções para o [tipo de sinônimo](synonyms-type.md) que deseja cri
 
 1. Insira o **Palavra-chave** termo ou frase a ser correspondido.
 1. Insira o **Expansão** termos que você deseja adicionar como sinônimos para a palavra-chave. Separe vários termos com uma vírgula.
-Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o conjunto de termos de expansão é &quot;calças compridas, calças, calças frouxas&quot;.
+Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o conjunto de termos de expansão é &quot;calças, calças&quot;.
 
    ![Exemplo de sinônimo bidirecional](assets/synonym-add-two-way-example.png)
 
@@ -54,7 +54,7 @@ O conjunto de sinônimos aparece na lista com uma seta bidirecional entre cada t
 
    ![Exemplo de sinônimo unidirecional](assets/synonym-add-one-way-example.png)
 
-   Neste exemplo, a palavra-chave é &quot;calças&quot; e os termos de expansão unidirecional &quot;capris, calças de comprimento de bezerro, traçadores de pedal&quot; são um subconjunto de &quot;calças&quot;, mas com um significado específico.
+   Neste exemplo, a palavra-chave é &quot;calças&quot; e os termos de expansão unidirecional &quot;capris, peddle-pushers&quot; são um subconjunto de &quot;calças&quot;, mas com um significado específico.
 
 1. Quando terminar, clique em **Salvar**.
 O conjunto de sinônimos aparece na lista com uma seta unidirecional apontando dos termos de expansão para a palavra-chave para indicar que os termos são subconjuntos da palavra-chave. Um sinal de mais separa cada termo de expansão.
