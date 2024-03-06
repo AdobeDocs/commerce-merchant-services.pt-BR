@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] O para Adobe Commerce fornece uma maneira de recuperar o conteúdo das Páginas de exibição do produto e das Páginas de lista de produtos com muito mais rapidez do que as consultas nativas do Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: d9d9506b2555bc30d6fbec67c65fa220d9a51e91
+source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
@@ -25,7 +25,7 @@ A variável [!DNL Catalog Service] usos [GraphQL](https://graphql.org/) para sol
 
 O Adobe Commerce tem dois sistemas GraphQL. O sistema GraphQL principal fornece uma ampla variedade de consultas (operações de leitura) e mutações (operações de gravação) que permitem que um comprador interaja com vários tipos de páginas, incluindo produto, conta do cliente, carrinho, check-out e muito mais. No entanto, as consultas que retornam informações do produto não são otimizadas para velocidade. O sistema GraphQL de serviços só pode executar consultas em produtos e informações relacionadas. Esses queries têm mais desempenho do que queries principais semelhantes.
 
-[!DNL Catalog Service] os clientes podem usar o novo [Indexador de preços SaaS](../price-index/index.md), que oferece atualizações de alteração de preço e tempo de sincronização mais rápidos.
+[!DNL Catalog Service] os clientes podem usar o novo [Indexador de preços SaaS](../price-index/price-indexing.md), que oferece atualizações de alteração de preço e tempo de sincronização mais rápidos.
 
 ## Arquitetura
 
@@ -68,7 +68,7 @@ Um produto complexo não tem um preço definido. Em vez disso, o Serviço de cat
 
 >[!NOTE]
 >
-> Clientes do Commerce com [!DNL Catalog Service] podem aproveitar as atualizações de alterações de preço e o tempo de sincronização mais rápidos em seus sites com o [Indexador de preços SaaS](../price-index/index.md).
+> Clientes do Commerce com [!DNL Catalog Service] podem aproveitar as atualizações de alterações de preço e o tempo de sincronização mais rápidos em seus sites com o [Indexador de preços SaaS](../price-index/price-indexing.md).
 
 ## Implementação
 
