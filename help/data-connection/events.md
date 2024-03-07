@@ -4,9 +4,9 @@ description: Saiba quais dados cada evento comportamental captura.
 exl-id: b0c88af3-29c1-4661-9901-3c6d134c2386
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
-source-git-commit: 540c423ecf7e50a36c1137f43a9cf9673658c805
+source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
 workflow-type: tm+mt
-source-wordcount: '4497'
+source-wordcount: '4496'
 ht-degree: 0%
 
 ---
@@ -303,9 +303,9 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `productListItems.selectedOptions.attribute` | Identifica um atributo do produto configurável, como `size` ou `color`. |
 | `productListItems.selectedOptions.value` | Identifica o valor do atributo, como `small` ou `black`. |
 
-## Eventos de perfil do cliente (comportamental)
+## Eventos de perfil do cliente
 
-Os eventos de perfil capturados na loja incluem informações da conta, como `signIn`, `signOut`, `createAccount`, e `editAccount`. Esses dados são usados para ajudar a preencher os principais detalhes do cliente necessários para definir melhor os segmentos ou executar campanhas de marketing, como enviar ofertas de desconto de inscrição, confirmações de alterações de conta etc. Há eventos de perfil semelhantes capturados no [lado do servidor](events-backoffice.md#customer-profile-events-back-office).
+Os eventos de perfil capturados na loja incluem informações da conta, como `signIn`, `signOut`, `createAccount`, e `editAccount`. Esses dados são usados para ajudar a preencher os principais detalhes do cliente necessários para definir melhor os segmentos ou executar campanhas de marketing, como enviar ofertas de desconto de inscrição, confirmações de alterações de conta etc. Há eventos de perfil semelhantes capturados no [lado do servidor](events-backoffice.md#customer-profile-events).
 
 ### signIn
 
