@@ -2,9 +2,9 @@
 title: "Tipos de sinônimos"
 description: "Unidirecional e bidirecional [!DNL Live Search] sinônimos expandem a definição de palavras-chave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
-source-git-commit: 9bacdb5fd232a3603bcb7abe2e93da9ead794d38
+source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
-source-wordcount: '512'
+source-wordcount: '466'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,3 @@ Não é necessário definir as formas singular e plural de uma palavra como sin�
 ### Consistência
 
 Seja consistente com a forma como a terminologia é usada em seu catálogo. Lembre-se de que pode haver diferenças regionais no uso e, às vezes, diferenças em um setor.
-
-### Mapeamento de palavra-chave
-
-Essa técnica usa atributos de produto pesquisáveis, em vez de sinônimos, para criar associações baseadas em palavras-chave entre produtos. Como resultado, um produto mapeado pode aparecer nos resultados de pesquisa de outro produto. Para saber mais, consulte [Resultados da pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html).
