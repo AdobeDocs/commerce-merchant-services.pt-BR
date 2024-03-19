@@ -3,9 +3,9 @@ title: "Visão geral técnica"
 description: "[!DNL Live Search] fluxo de integração, requisitos, limites e limitações do sistema"
 exl-id: 45f6c1ae-544b-47ef-9feb-c1a05f93108a
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: e8d4215b1f16f1cb34783674cabc046dec135729
 workflow-type: tm+mt
-source-wordcount: '1028'
+source-wordcount: '1023'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Este tópico analisa os requisitos técnicos e dicas para a instalação e otimi
 
 Como [!DNL Live Search] não tem acesso à base de dados completa do produto, [!DNL Live Search] O GraphQL e o Commerce Core GraphQL não terão paridade completa.
 
-É recomendável chamar a API SaaS diretamente, especificamente o endpoint do Serviço de catálogo.
+É recomendável chamar as APIs SaaS diretamente, especificamente o endpoint do Serviço de catálogo.
 
 * Obter desempenho e reduzir a carga do processador, ignorando o processo de banco de dados/Graphql do Commerce
 * Aproveite o [!DNL Catalog Service] federação a ser chamada [!DNL Live Search], [!DNL Catalog Service], e [!DNL Product Recommendations] de um único endpoint.
@@ -43,8 +43,8 @@ Se você tiver uma implementação personalizada do headless, verifique a [!DNL 
 * [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
 * [Campo do Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-Se você não usar os componentes padrão, como o Adaptador de pesquisa ou widgets do Luma, ou Widgets CIF AEM, saiba que o evento (dados de sequência de cliques que alimentam o Adobe Sensei para Merchandising inteligente e métricas de desempenho) não funcionará imediatamente e requer desenvolvimento personalizado para implementar eventos headless.
-A versão mais recente de [!DNL Live Search] já usa [!DNL Catalog Service] e as instalações [!DNL Catalog Service] módulos.
+Se você não usar os componentes padrão, como o Adaptador de pesquisa ou widgets do Luma, ou AEM CIF Widgets, o evento (dados de sequência de cliques que alimentam o Adobe Sensei para Merchandising inteligente e métricas de desempenho) não funcionará imediatamente e exigirá desenvolvimento personalizado para implementar eventos headless.
+A versão mais recente de [!DNL Live Search] já usa [!DNL Catalog Service].
 
 ## Limites e limites
 
@@ -109,6 +109,7 @@ Para restringir grupos de clientes usando permissões de Catálogo:
 | Letão | Letônia | lv_LV | lv_LV |
 | Norueguês | Noruega - Bokmal | nb_NO | nb_NO |
 | Holandês | Holanda | nl_NL | nl_NL |
+| Polonês | Polônia | pl_PL | pl_PL |
 | Português | Brasil | pt_BR | pt_BR |
 | Português | Portugal | pt_PT | pt_PT |
 | Romeno | Romênia | ro_RO | ro_RO |
@@ -142,7 +143,7 @@ Isso permite que os desenvolvedores personalizem totalmente a funcionalidade e o
 
 ## Inventory management
 
-[!DNL Live Search] suporta [Inventory management](https://experienceleague.adobe.com/docs/commerce-admin/inventory/introduction.html) no Commerce (conhecido anteriormente como Inventário de várias origens ou MSI). Para habilitar o suporte completo, você deve [atualizar](install.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
+[!DNL Live Search] suporta [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction) no Commerce (conhecido anteriormente como Inventário de várias origens ou MSI). Para habilitar o suporte completo, você deve [atualizar](install.md#update) o módulo de dependência `commerce-data-export` para a versão 102.2.0+.
 
 [!DNL Live Search] retorna um valor booleano observando se um produto está disponível no Inventory management, mas não contém informações sobre qual origem tem o estoque.
 
@@ -193,9 +194,9 @@ Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
 
 ## Não suportado no momento
 
-* A variável [Pesquisa avançada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#advanced-search) o módulo é desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
-* [Preços da camada](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-tier.html) e [Preços Especiais](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/product-price-special.html) não são compatíveis com o [!DNL Live Search] Widget de página de listagem de campo e produto.
+* A variável [Pesquisa avançada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) o módulo é desativado quando [!DNL Live Search] O está instalado e o link Pesquisa avançada no rodapé da loja é removido.
+* [Preços da camada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) e [Preços Especiais](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) não são compatíveis com o [!DNL Live Search] Widget de página de listagem de campo e produto.
 
 ## Cookies
 
-[!DNL Live Search] O coleta dados de interação do usuário como parte de sua funcionalidade básica, e os cookies são usados para armazenar esses dados. Ao coletar qualquer informação do usuário, ele deve concordar em armazenar cookies. [!DNL Live Search] e [!DNL Product Recommendations] compartilhar o fluxo de dados e, portanto, o mesmo mecanismo de cookie. Leia mais sobre isso em [Lidar com restrições de cookies](https://experienceleague.adobe.com/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie.html).
+[!DNL Live Search] O coleta dados de interação do usuário como parte de sua funcionalidade básica, e os cookies são usados para armazenar esses dados. Ao coletar qualquer informação do usuário, ele deve concordar em armazenar cookies. [!DNL Live Search] e [!DNL Product Recommendations] compartilhar o fluxo de dados e, portanto, o mesmo mecanismo de cookie. Leia mais sobre isso em [Lidar com restrições de cookies](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/product-recommendations/developer/setting-cookie).
