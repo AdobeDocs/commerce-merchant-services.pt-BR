@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
+source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
 workflow-type: tm+mt
-source-wordcount: '859'
+source-wordcount: '866'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,7 @@ Qualquer projeto SaaS associado às suas chaves será exibido na **Projeto** no 
 >
 > Se você gerar novas chaves na seção Portal de API de Minha conta, atualize imediatamente as chaves de API na configuração de Administrador. Se você gerar novas chaves e não atualizá-las no Admin, suas extensões SaaS não funcionarão mais e você perderá dados valiosos.
 
-Para alterar os nomes do projeto SaaS ou do espaço de dados, clique em **Renomear**.
+Para alterar os nomes do projeto SaaS ou do espaço de dados, clique em **Renomear** ao lado de qualquer um. Alterar o nome não afeta seu serviço porque o nome é apenas um rótulo que ajuda a identificar e diferenciar entre projetos e espaços de dados.
 
 ## Organização IMS (opcional) {#organizationid}
 
