@@ -3,9 +3,9 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1150'
 ht-degree: 0%
 
 ---
@@ -50,7 +50,7 @@ Também é possível alterar o layout, a largura, a altura e o estilo externo do
 
 ## [!DNL Apple Pay] botão
 
-Os clientes podem usar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que utilizam credenciais de pagamento de cartão de crédito e débito armazenadas em um dispositivo iOS ou macOS, para fazer compras.
+Os clientes podem usar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que usa credenciais de pagamento de cartão de crédito e débito armazenadas em um dispositivo iOS ou macOS, para fazer compras.
 
 [!DNL Apple Pay] O só está disponível no navegador Safari. Os comerciantes podem adicionar até 99 domínios por conta de comerciante.
 
@@ -64,15 +64,31 @@ A variável [!DNL Apple Pay] O botão é visível nas exibições página do pro
 
 Você pode configurar [!UICONTROL Apple Pay] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md#apple-pay) para obter mais informações.
 
+## [!DNL Google Pay] botão
+
+Os clientes podem usar [[!DNL Google Pay]](https://pay.google.com/about/) adicionando detalhes de pagamento à conta da Google, onde são armazenados com segurança para obter uma experiência de finalização perfeita.
+
+[!DNL Google Pay] O só está disponível em determinados países ou regiões e em determinados dispositivos. Consulte [[!DNL Google Pay] documentação](https://developer.paypal.com/docs/checkout/apm/google-pay/#link-googlepayintegration) para obter mais informações.
+
+![Botão Pagamento do Google no checkout](assets/google-pay-button.png){width="500" zoomable="yes"}
+
+A variável [!DNL Google Pay] O botão é visível nas exibições página do produto, minicarrinho, carrinho de compras e check-out.
+
+Você pode configurar [!UICONTROL Google Pay] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md) para obter mais informações.
+
+>[!NOTE]
+>
+> A variável [!DNL Google Pay] A API só pode ser usada em sites em um contexto seguro. Consulte [Solução de problemas](https://developers.google.com/pay/api/web/support/troubleshooting) para obter mais informações.
+
 ## [!DNL PayPal Payment Buttons]
 
 [!DNL PayPal payment buttons], que usam o PayPal para concluir uma compra, armazena o endereço de entrega, os endereços de cobrança e os detalhes de pagamento do comprador para uso posterior. Os compradores podem usar qualquer método de pagamento armazenado ou oferecido anteriormente pelo PayPal.
 
 ![Botão PayPal](assets/paypal-button.png){width="350" zoomable="yes"}
 
-Você pode configurar [!UICONTROL PayPal payment buttons] na configuração da loja ou na variável [!DNL Payment Services] Início.  Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
+Você pode configurar [!UICONTROL PayPal payment buttons] na configuração da loja ou na variável [!DNL Payment Services] Início. Consulte [Configurações](settings.md#payment-buttons) para obter mais informações.
 
-Consulte PayPal&#39;s [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/) para saber em quais países cada método de pagamento está disponível atualmente.
+Saiba mais sobre a disponibilidade de métodos de pagamento por país no site do PayPal [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ### [!DNL PayPal] botão
 
@@ -102,27 +118,27 @@ A variável [!DNL Pay Later] O botão é visível nas exibições página do pro
 
 Consulte informações sobre as ofertas de Pagar mais tarde em [PayPal&#39;s Pay Later oferece documentação](https://developer.paypal.com/docs/checkout/pay-later/us/). Use o **País ou região** para selecionar uma região de interesse.
 
-Consulte [Configurações](settings.md#payment-buttons) para saber como desativar/ativar o [!DNL Pay Later] mensagens.
+Saiba como desativar ou ativar o [!DNL Pay Later] mensagens atualizando o [Configurações](settings.md#payment-buttons) configuração.
 
 ## Usar somente botões de pagamento do PayPal
 
-Para colocar rapidamente sua loja no modo de produção, você pode configurar _somente_ Botões de pagamento do PayPal (Venmo, PayPal etc.)—em vez de também usar a opção de pagamento com cartão de crédito PayPal.
+Para colocar rapidamente sua loja no modo de produção, você pode configurar _somente_ Botões de pagamento do PayPal (Venmo, PayPal e assim por diante).—em vez de também usar a opção de pagamento com cartão de crédito PayPal.
 
 Isso permite:
 
-* Forneça uma variedade de opções de pagamento para seus clientes, incluindo os botões de pagamento Venmo e PayPal, com a opção de desativar os campos de cartão hospedados no PayPal e usar um provedor de cartão de crédito existente.
-* Use seu fornecedor de cartão de crédito existente para pagamentos de cartão de crédito, ao mesmo tempo que utiliza outras opções de pagamento do PayPal.
-* Use os botões de pagamento do PayPal em uma região na qual o PayPal não oferece suporte a cartões de crédito como uma opção de pagamento.
+* Forneça várias opções de pagamento para seus clientes, incluindo os botões de pagamento Venmo e PayPal, com a opção de desativar os campos de cartão hospedado no PayPal e usar um provedor de cartão de crédito existente.
+* Use seu fornecedor de cartão de crédito existente para pagamentos com cartão de crédito, ao mesmo tempo que usa outras opções de pagamento do PayPal.
+* Use os botões de pagamento do PayPal em regiões onde o PayPal não oferece suporte a cartões de crédito como uma opção de pagamento.
 
 Para **capturar pagamentos com _somente_ Botões de pagamento do PayPal (_não_ a opção de pagamento com cartão de crédito do PayPal)**:
 
-1. Verifique se o armazenamento está [no modo de produção](settings.md#enable-payment-services).
+1. Certifique-se de que seu armazenamento esteja [no modo de produção](settings.md#enable-payment-services).
 1. [Configurar os botões de pagamento do PayPal desejados](settings.md#payment-buttons) em Configurações.
 1. Girar _Desligado_ o **[[!UICONTROL Show PayPal Credit and Debit card button]](settings.md#payment-buttons)** opção no _[!UICONTROL Payment buttons]_seção.
 
 Para **capture pagamentos com seu provedor de cartão de crédito atual _e_ Botões de pagamento do PayPal**:
 
-1. Verifique se o armazenamento está [no modo de produção](settings.md#enable-payment-services).
+1. Certifique-se de que seu armazenamento esteja [no modo de produção](settings.md#enable-payment-services).
 1. [Configurar os botões de pagamento do PayPal desejados](settings.md#payment-buttons).
 1. Girar _Desligado_ o **[[!UICONTROL PayPal Show Credit and Debit card button]](settings.md#payment-buttons)** opção no _[!UICONTROL Payment buttons]_seção.
 1. Girar _Desligado_ o **[[!UICONTROL Show on checkout page]](settings.md#credit-card-fields)** opção no _[!UICONTROL Credit card fields]_e use sua [conta do provedor de cartão de crédito existente](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/payments/payments.html#payments).

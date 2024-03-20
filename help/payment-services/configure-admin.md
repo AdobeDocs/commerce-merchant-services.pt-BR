@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 8dd4f629fa60959588cee4ea22f9fb577f338716
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1402'
+source-wordcount: '1652'
 ht-degree: 0%
 
 ---
@@ -20,14 +20,15 @@ Ao configurar [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento
 
 ## Configuração geral
 
-Você pode ativar [!DNL Payment Services] para sua loja e ative os testes de sandbox ou os pagamentos em tempo real no _[!UICONTROL General Configuration]_seção.
+Você pode ativar [!DNL Payment Services] para sua loja e seu  _[!UICONTROL Merchant Location]_e ative os testes de sandbox ou os pagamentos em tempo real no_[!UICONTROL General Configuration]_ seção.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
 
    ![Exibição de métodos](assets/methods-view.png){width="400" zoomable="yes"}
 
-1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
+1. Defina o _[!UICONTROL Merchant Country]_no campo_[!UICONTROL Merchant Location]_.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_para acessar a_[!UICONTROL [!DNL Payment Services]]_ seção.
 1. No _[!UICONTROL [!DNL Payment Services]]_, expanda a_[!UICONTROL General Configuration]_ seção.
 1. Para **Ativar**, defina-o como `Yes` para habilitar [!DNL Payment Services] para sua loja.
 1. Para **Método**, defina-o como `Sandbox` se você ainda estiver testando [!DNL Payment Services] para sua loja ou `Production` se estiver pronto para ativar os pagamentos em tempo real.
@@ -39,6 +40,8 @@ Você pode ativar [!DNL Payment Services] para sua loja e ative os testes de san
 1. Para **Descritor suave** (valores personalizados que são exibidos em demonstrativos bancários de transações do cliente para definir entre lojas/marcas/catálogos), adicione o texto personalizado (até 22 caracteres) ao campo de texto, substituindo `Custom descriptor` ou o valor existente.
 1. Clique em **[!UICONTROL Save Config]** para salvar as alterações.
 1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
+
+![Exibição da solução de Adobe em destaque](assets/featured-adobe-solution-view.png){width="700" zoomable="yes"}
 
 ### Opções de configuração
 
@@ -58,7 +61,7 @@ Consulte [Opções de pagamentos](payments-options.md#paypal-smart-buttons) para
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
-1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_seção.
 1. No _[!UICONTROL Payment Services]_, expanda a_[!UICONTROL Credit Card Fields]_ seção.
 1. Para **[!UICONTROL Title]**, informe o texto (se necessário) para alterar o nome do método de pagamento conforme mostrado durante o checkout.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **Autorizar e capturar**.
@@ -92,14 +95,15 @@ Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obt
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
-1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_seção.
 1. No _[!UICONTROL Payment Services]_, expanda a_[!UICONTROL Apple Pay]_ seção.
 1. Para **[!UICONTROL Title]**, informe o texto (se necessário) para alterar o nome do método de pagamento conforme mostrado durante o checkout.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
-1. Para mostrar [!DNL Apple Pay] na página de check-out, selecione `Yes` para o **[!UICONTROL Show buttons on checkout page]**.
-1. Para mostrar [!DNL Apple Pay] na página detalhes do produto, selecione `Yes` para o **[!UICONTROL Show buttons on product detail page]**.
-1. Para mostrar [!DNL Apple Pay] na visualização do minicarrinho, selecione `Yes` para **[!UICONTROL Show buttons in mini cart preview]**.
-1. Para mostrar [!DNL Apple Pay] na página do carrinho, selecione `Yes` para o **[!UICONTROL Show buttons on cart page]**.
+1. Especificar onde o [!DNL Apple Pay] estiver ativada no Adobe Commerce ao selecionar `Yes` nas seguintes opções, conforme necessário:
+   * **[!UICONTROL Show Apple Pay on checkout page]**
+   * **[!UICONTROL Show Apple Pay on product detail page]**
+   * **[!UICONTROL Show Apple Pay in mini cart preview]**
+   * **[!UICONTROL Show Apple Pay on cart page]**
 1. Para ativar o modo de depuração, selecione `Yes` para o **[!UICONTROL Debug Mode]** (`No` O desativa).
 1. Para salvar as alterações, clique em **[!UICONTROL Save Config]** .
 1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
@@ -111,10 +115,51 @@ Consulte [Opções de pagamentos](payments-options.md#apple-pay-button) para obt
 | [!UICONTROL Title] | exibição de loja | Adicione o texto a ser exibido como o título para esta opção de pagamento na exibição de Método de Pagamento durante a finalização da compra. Opções: [!UICONTROL text field] |
 | [!UICONTROL Payment Action] | site | A variável [ação de pagamento](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) para o método de pagamento especificado. Opções: [!UICONTROL Authorize] / [!UICONTROL Authorize and Capture] |
 | [!UICONTROL Show on checkout page] | site | Ativar ou desativar [!DNL Apple Pay] na página de check-out. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | exibição de loja | A ordem de classificação do método de pagamento especificado na página de finalização da compra. `Numeric Only` value |
 | [!UICONTROL Show buttons on product detail page] | exibição de loja | Ativar ou desativar [!DNL Apple Pay] na página de detalhes do produto. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons in mini-cart preview] | exibição de loja | Ativar ou desativar [!DNL Apple Pay] na pré-visualização do minicarrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Show buttons on cart page] | exibição de loja | Ativar ou desativar [!DNL Apple Pay] na página do carrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+
+## [!UICONTROL Google Pay]
+
+A variável [!UICONTROL Google Pay] A opção de pagamento permite que o comerciante ofereça o Google Pay aos seus compradores, que podem usar a Carteira do Google em seus dispositivos para fazer compras.
+
+Consulte [Opções de pagamentos](payments-options.md#google-pay-button) para obter mais informações.
+
+1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
+1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_seção.
+1. No _[!UICONTROL Payment Services]_, expanda a_[!UICONTROL Google Pay]_ seção.
+1. (Opcional) Altere o nome do método de pagamento mostrado durante o check-out inserindo o novo nome no campo **[!UICONTROL Title]** campo.
+1. [Definir a ação de pagamento](production.md#set-payment-services-as-payment-method) selecionando **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
+1. Especificar onde o [!DNL Google Pay] estiver ativada no Adobe Commerce ao selecionar `Yes` nas seguintes opções, conforme necessário:
+   * **[!UICONTROL Show Google Pay on checkout page]**
+   * **[!UICONTROL Show Google Pay on product detail page]**
+   * **[!UICONTROL Show Google Pay in mini cart preview]**
+   * **[!UICONTROL Show Google Pay on cart page]**
+1. Para ativar o modo de depuração, selecione `Yes` para o **[!UICONTROL Debug Mode]** (`No` O desativa).
+1. Configure a aparência da variável _[!UICONTROL Google Pay]_botão selecionando o **[!UICONTROL Button Color]**,**[!UICONTROL Button Type]**, e **[!UICONTROL Button Style]**conforme necessário.
+1. Para definir a altura, o usa o valor padrão para altura definido em **[!UICONTROL Button Style]**.
+1. Para salvar as alterações, clique em **[!UICONTROL Save Config]** .
+1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
+
+### Opções de configuração
+
+| Campo | Escopo | Descrição |
+|---|---|---|
+| [!UICONTROL Title] | exibição de loja | Especifica o rótulo de texto que é exibido para esta opção de pagamento na exibição de Método de Pagamento durante o check-out. Opções: `[!UICONTROL text field]` |
+| [!UICONTROL Payment Action] | site | A variável [ação de pagamento](https://experienceleague.adobe.com/docs/commerce-admin/config/sales/payment-methods/payment-methods.html) para o método de pagamento especificado. Opções: `[!UICONTROL Authorize]` / `[!UICONTROL Authorize and Capture]` |
+| [!UICONTROL Show on checkout page] | site | Ativar ou desativar [!DNL Google Pay] na página de check-out. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Sort order] | exibição de loja | A ordem de classificação do método de pagamento especificado na página de finalização da compra. `Numeric Only` value |
+| [!UICONTROL Show buttons on product detail page] | exibição de loja | Ativar ou desativar [!DNL Google Pay] na página de detalhes do produto. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons in mini-cart preview] | exibição de loja | Ativar ou desativar [!DNL Google Pay] na pré-visualização do minicarrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Show buttons on cart page] | exibição de loja | Ativar ou desativar [!DNL Google Pay] na página do carrinho. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Debug Mode] | site | Ative ou desative o Modo de depuração. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
+| [!UICONTROL Button Color] | Exibição da loja | Definir a cor do [!DNL Google Pay] botão. Opções: `[!UICONTROL Default]` / `[!UICONTROL Black]` / `[!UICONTROL White]` |
+| [!UICONTROL Button Type] | Exibição da loja | Definir o tipo de [!DNL Google Pay] botão. Opções: `[!UICONTROL buy]` / `[!UICONTROL checkout]` / `[!UICONTROL order]` / `[!UICONTROL pay]` / `[!UICONTROL plain]` |
+
+Consulte [Opções de objeto de solicitação da API de Pagamento do Google](https://developers.google.com/pay/api/web/reference/request-objects) para obter mais informações.
 
 ## [!DNL PayPal Payment Buttons]
 
@@ -128,16 +173,17 @@ Você pode ativar e configurar as opções de pagamento dos botões de pagamento
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
-1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_seção.
 1. No _[!UICONTROL Payment Services]_, expanda a_[!UICONTROL PayPal payment buttons]_ seção.
 1. Para alterar o nome do método de pagamento conforme mostrado durante a finalização da compra, edite o _[!UICONTROL Title]_campo.
 1. Para [definir a ação de pagamento](production.md#set-payment-services-as-payment-method), selecione **[!UICONTROL Authorize]** ou **[!UICONTROL Authorize and Capture]**.
 1. Para priorizar um método de pagamento na página de finalização da compra, forneça uma `Numeric Only` valor no **[!UICONTROL Sort order]** campo.
 1. Para ativar/desativar o [Mensagens de Pagamento Posterior](payments-options.md#pay-later-button), selecione `Yes`/`No` para **[!UICONTROL Display Pay Later Message]**.
-1. Para mostrar os botões de pagamento do PayPal na página de check-out, selecione `Yes` para o **[!UICONTROL Show buttons on checkout page]**.
-1. Para mostrar os botões de pagamento do PayPal na página de detalhes do produto, selecione `Yes` para o **[!UICONTROL Show buttons on product detail page]**.
-1. Para mostrar os botões de pagamento do PayPal na visualização do minicarrinho, selecione `Yes` para **[!UICONTROL Show buttons in mini cart preview]**.
-1. Para mostrar os botões de pagamento do PayPal na página do carrinho, selecione `Yes` para o **[!UICONTROL Show buttons on cart page]**.
+1. Especifique onde os botões de pagamento do PayPal são ativados no Adobe Commerce selecionando `Yes` nas seguintes opções, conforme necessário:
+   * **[!UICONTROL Show buttons on checkout page]**
+   * **[!UICONTROL Show buttons on product detail page]**
+   * **[!UICONTROL Show buttons in mini cart preview]**
+   * **[!UICONTROL Show buttons on cart page]**
 1. Para habilitar Venmo como uma opção de pagamento, selecione `Yes` para **[!UICONTROL Venmo Enabled]**.
 1. Para habilitar cartões de crédito e débito como opção de pagamento (botão PayPal Smart), selecione `Yes` para **[!UICONTROL Credit and Debit Card Enabled]**.
 1. Para ativar/desativar o [PayPal Pay Later (Pagar mais tarde no PayPal)](payments-options.md#pay-later-button) opção de pagamento, selecione `Yes`/`No` para **[!UICONTROL PayPal Pay Later Enabled]**.
@@ -167,7 +213,7 @@ Você também pode configurar as opções _[!UICONTROL Button style]_opções do
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
-1. Expanda a _[!UICONTROL Recommended Solutions]_seção.
+1. Expanda a _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_seção.
 1. No _[!UICONTROL [!DNL Payment Services]]_, expanda a_[!UICONTROL PayPal Smart Button Styling]_ seção.
 1. Para definir o layout, selecione `Vertical` ou `Horizontal` para **[!UICONTROL Layout]**
 1. Para definir a cor, selecione uma das cores disponíveis no **[!UICONTROL Color]**.

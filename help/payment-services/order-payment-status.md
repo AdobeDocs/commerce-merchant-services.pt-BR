@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 192e47b9-d52b-4dcf-a720-38459156fda4
 feature: Payments, Checkout, Orders
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
 workflow-type: tm+mt
-source-wordcount: '1864'
+source-wordcount: '2045'
 ht-degree: 0%
 
 ---
@@ -83,9 +83,36 @@ Você pode [baixar transações de pagamento](#download-order-payment-statuses) 
 >
 >Os dados mostrados nesta tabela são classificados em ordem decrescente (`DESC`) por padrão usando o `TRANS DATE`. A variável `TRANS DATE` é a data e a hora em que a transação foi iniciada.
 
+### Atualizações do status de pagamento
+
+Determinados métodos de pagamento exigem um período para capturar o pagamento. [!DNL Payment Services] O agora detecta os status pendentes de uma transação de pagamento em uma ordem do:
+
+* Detecção síncrona `pending capture` transações
+* Monitoramento assíncrono `pending capture` transações
+
+>[!NOTE]
+>
+>A detecção dos status pendentes das transações de pagamento em uma ordem impede a entrega acidental de ordens se o pagamento ainda não tiver sido recebido. Isso pode ocorrer para transações de Cheque eletrônico e PayPal.
+
+#### Detecção síncrona de transações de captura pendentes
+
+Detectar automaticamente transações de captura em uma `Pending` status e impedir que os pedidos insiram um `Processing` status quando essa transação é detectada.
+
+Durante o checkout do cliente ou quando um administrador cria uma NFF para um pagamento autorizado anteriormente, [!DNL Payment Services] O detecta automaticamente as transações de captura em uma `Pending` O status e altera as ordens correspondentes para `Payment Review` status.
+
+#### Monitoramento assíncrono de transações de captura pendentes
+
+Detectar quando uma transação de captura pendente entra em uma `Completed` para que os comerciantes possam retomar o processamento do pedido afetado.
+
+Para garantir que esse processo funcione conforme o esperado, os comerciantes devem configurar um novo trabalho cron. Quando o job estiver configurado para ser executado automaticamente, nenhuma outra intervenção será esperada do comerciante.
+
+Consulte [Configurar trabalhos cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html). Uma vez configurado, o novo trabalho é executado a cada 30 minutos para buscar atualizações para pedidos que estão em uma `Payment Review` status.
+
+Os comerciantes podem verificar o status de pagamento atualizado por meio da exibição do relatório Status de pagamento da ordem.
+
 ### Dados usados no relatório
 
-A variável [!DNL Payment Services] O módulo usa dados de pedido e os combina com dados de pagamento agregados de outras fontes (incluindo PayPal), para fornecer relatórios significativos e altamente úteis.
+[!DNL Payment Services] O usa dados de pedidos e os combina com dados de pagamentos agregados de outras fontes (incluindo PayPal), para fornecer relatórios significativos e altamente úteis.
 
 Os dados do pedido são exportados e mantidos no serviço de pagamento. Quando você [alterar ou adicionar status de pedido](https://docs.magento.com/user-guide/sales/order-status-custom.html) ou [editar uma visualização de loja](https://docs.magento.com/user-guide/stores/stores-all-view-edit.html), [loja](https://docs.magento.com/user-guide/stores/store-information.html), ou nome do site, de que os dados são combinados com os dados de pagamento e o relatório de status de pagamento do pedido é preenchido com as informações combinadas.
 
@@ -132,9 +159,9 @@ Para selecionar a fonte de dados para sua [!UICONTROL Order Payment Status] rela
 
    Os resultados do relatório são gerados novamente com base na fonte de dados selecionada.
 
-### Personalizar período de datas
+### Personalizar período de datas do pedido
 
-Na exibição do relatório Status de pagamento da ordem, você pode personalizar o período dos status que deseja exibir selecionando datas específicas. Por padrão, 30 dias de status de pedidos de pagamento são mostrados na grade.
+Na exibição do relatório Status de pagamento da ordem, você pode personalizar o período dos resultados do status que deseja exibir selecionando datas específicas. Por padrão, 30 dias de status de pedidos de pagamento são mostrados na grade.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique em _[!UICONTROL Order dates]_filtro seletor de calendário.
@@ -148,7 +175,7 @@ Na exibição do relatório Status de pagamento da ordem, você pode filtrar os 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Clique em **[!UICONTROL Filter]** seletor.
 1. Alterne a _Status do pagamento_ opções para ver os resultados do relatório apenas para os status do pagamento da ordem selecionado.
-1. Insira um _Valor mínimo do pedido_ ou _Valor máximo do pedido_ para ver os resultados do relatório dentro dessa faixa de quantias da ordem.
+1. Exibir resultados do relatório dentro de uma faixa de valores da ordem informando uma _[!UICONTROL Min Order Amount]_ou _[!UICONTROL Max Order Amount_].
 1. Clique em **[!UICONTROL Hide filters]** para ocultar o filtro.
 
 ### Mostrar e ocultar colunas
@@ -159,7 +186,7 @@ O relatório Status do Pagamento da Ordem mostra todas as colunas de informaçõ
 1. Clique em _Configurações de coluna_ ícone (![ícone configurações de coluna](assets/column-settings.png){width="20" zoomable="yes"}).
 1. Para personalizar quais colunas você vê no relatório, marque ou desmarque as colunas na lista.
 
-   O relatório de status do Pedido de pagamento mostrará imediatamente quaisquer alterações feitas no menu de configurações Coluna. As preferências de coluna serão salvas e permanecerão em vigor se você sair da exibição de relatório.
+   O relatório de status do pagamento da Ordem mostra imediatamente quaisquer alterações feitas no menu de configurações Coluna. As preferências de coluna são salvas e permanecem em vigor se você sair da exibição de relatório.
 
 ### Exibir status
 
@@ -197,10 +224,10 @@ Você pode visualizar todas as contestações nos pedidos da sua loja e navegar 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL [!DNL Payment Services]]** > _[!UICONTROL Orders]_>**[!UICONTROL View Report]**.
 1. Navegue até a **[!UICONTROL Disputes column]**.
 1. Veja todas as contestações de um pedido específico e veja [o status da contestação](#order-payment-status-information).
-1. Clique no link de ID de contestação (começando com _PP-D-_) para acessar o [Centro de resolução do PayPal](https://www.paypal.com/us/smarthelp/article/what-is-the-resolution-center-faq3327).
+1. Revisar detalhes da contestação do [Centro de resolução do PayPal](https://www.paypal.com/us/cshelp/article/what-is-the-resolution-center-help246) clicando no link de ID de contestação que começa com _PP-D-_.
 1. Tomar as medidas apropriadas para a disputa, conforme necessário.
 
-   Para classificar contestações de ordem por status, clique no cabeçalho da coluna Contestações.
+   Para classificar contestações de ordem por status, clique no [!UICONTROL Disputes] cabeçalho da coluna.
 
 ### Baixar status de pagamento da ordem
 
