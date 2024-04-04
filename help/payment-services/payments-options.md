@@ -3,7 +3,7 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -74,7 +74,7 @@ Os clientes podem usar [[!DNL Google Pay]](https://pay.google.com/about/) adicio
 
 A variável [!DNL Google Pay] O botão é visível nas exibições página do produto, minicarrinho, carrinho de compras e check-out.
 
-Você pode configurar [!UICONTROL Google Pay] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](settings.md) para obter mais informações.
+Você pode configurar [!UICONTROL Google Pay] na configuração da loja ou na Página Inicial dos Serviços de Pagamento. Consulte [Configurações](configure-admin.md) para obter mais informações.
 
 >[!NOTE]
 >

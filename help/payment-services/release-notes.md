@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 0c7bbe78100a323b19b59422a97e6eed83cbc22c
+source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
 workflow-type: tm+mt
-source-wordcount: '2379'
+source-wordcount: '2434'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,16 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e a variável [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.4.1
+
+5 de abril de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg)<!-- PAY-5322 --> Correção de um problema de compatibilidade de PCI com versões mais recentes da Adobe Commerce. Agora, os Serviços de pagamento estão adaptados aos requisitos de check-out no Adobe Commerce como a opção de pagamento.
+
+![Correção](../assets/fix.svg)<!-- PAY-5323 --> PayLater e Venmo são exibidos corretamente no Adobe Commerce. Correção de um erro que impedia o Administrador de mostrar as opções de alternância PayLater e Venmo.
 
 ## v2.4.0
 
