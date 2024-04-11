@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: "Saiba como instalar [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6a7efbe0424e35cdec9cb00275d9a953feccaa5b
+source-git-commit: 8a98e069cd9ec3d2c4fec33485e5c8186d94518f
 workflow-type: tm+mt
-source-wordcount: '607'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -45,7 +45,7 @@ O processo de integração do [!DNL Catalog Service] requer acesso à linha de c
 [!DNL Catalog Service] O tem dois endpoints disponíveis para integração:
 
 - Sandbox (`https://catalog-service-sandbox.adobe.io/graphql`) — usado para teste e validação antes de entrar em funcionamento
-- Produção (`https://catalog-service.adobe.io/graphql`) — usado para tráfego direto para comerciantes e sites do Commerce
+- Produção (`https://catalog-service.adobe.io/graphql`) — usado para tráfego direto para comerciantes e sites da Commerce
 
 Todas as instâncias de teste do Commerce devem usar o ponto de extremidade da sandbox.
 
@@ -120,7 +120,7 @@ Use este método para instalar o [!DNL Catalog Service] extensão para uma inst�
 
 Depois de instalar [!DNL Catalog Service], você deve configurar o [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/integration-services/saas.html#apikey) especificando as chaves de API e selecionando um Espaço de dados SaaS.
 
-Após a configuração SaaS ser concluída, execute uma sincronização de dados inicial seguindo o [Sincronização de catálogo](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html) guia.
+Após a configuração SaaS ser concluída, execute uma sincronização de dados inicial usando o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Você pode usar esse painel para monitorar o status de sincronização dos dados do produto transferidos do banco de dados do Commerce para os serviços SaaS da Commerce.
 
 Para garantir que a exportação de catálogo esteja sendo executada corretamente:
 
@@ -128,13 +128,13 @@ Para garantir que a exportação de catálogo esteja sendo executada corretament
 - Verifique se os indexadores estão em execução.
 - Certifique-se de que o `Catalog Attributes Feed, Product Feed, Product Overrides Feed`, e `Product Variant Feed` indexadores são definidos como &quot;Atualizar por programação&quot;.
 
-A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o catálogo exporta dados do produto do servidor do Commerce para os Commerce services de forma contínua, a fim de manter os serviços atualizados. Para monitorar o status da sincronização, consulte a [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
+A sincronização inicial pode levar de alguns minutos a horas, dependendo do tamanho do catálogo. Após a sincronização inicial, o Catálogo exporta dados do produto do servidor do Commerce para os serviços da Commerce de forma contínua para manter os serviços atualizados. Para monitorar o status da sincronização, consulte a [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html).
 
 ### Acessar o serviço
 
 A variável [!DNL Catalog Service] A API pode ser acessada usando comandos POST em HTTPS.
 
-Para obter a chave de API, vá para a área Conector do Commerce Service no administrador e copie a chave de API pública.
+Para obter a chave de API, vá para a área Commerce Service Connector no admin e copie a chave de API pública.
 
 Leia o [Documentação do GraphQL](https://developer.adobe.com/commerce/services/graphql/) para entender como consultar e enviar os cabeçalhos necessários para gerar solicitações de API.
 
