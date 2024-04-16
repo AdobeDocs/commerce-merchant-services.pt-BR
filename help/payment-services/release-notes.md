@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: bc38c01f429b4d20d4ba0d04c34932e1857a20cf
+source-git-commit: 880cb5c70727224217297d5d5b09490bdb112ff1
 workflow-type: tm+mt
-source-wordcount: '2445'
+source-wordcount: '2481'
 ht-degree: 0%
 
 ---
@@ -77,6 +77,14 @@ _28 de junho de 2021_
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos na variável [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e a variável [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) mostrando ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.4.3
+
+_16 de abril de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg)<!-- Issue PAY-5106 --> Correção de um problema que preenchia incorretamente os totais do valor do pedido durante o checkout entre o PayPal e o Adobe Commerce. Agora, os comerciantes podem garantir que os totais do valor do pedido estejam corretos ao fazer um pedido.
 
 ## v2.4.2
 
