@@ -4,14 +4,20 @@ description: Instale a extensão Serviços de Pagamentos.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
-source-wordcount: '462'
+source-wordcount: '451'
 ht-degree: 0%
 
 ---
 
 # Instalar [!DNL Payment Services]
+
+Para começar a usar os Serviços de pagamento para [!DNL Adobe Commerce] e [!DNL Magento Open Source], você deve concluir algumas etapas de integração.
+
+>[!INFO]
+>
+> Consulte nossa [Configurar [!DNL Payment Services] para Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-payment-services) vídeo para obter mais informações.
 
 Download e instalação do [!DNL Payment Services] extensão para [!DNL Adobe Commerce] e [!DNL Magento Open Source] é uma etapa de pré-requisito para usar o [!DNL Payment Services].
 
@@ -29,7 +35,8 @@ Primeiro, baixe a extensão de [Commerce Marketplace](https://experienceleague.a
 
 ## Instalar a extensão
 
-Você pode instalar o [!DNL Payment Services] extensão para ambos [!DNL Adobe Commerce] na infraestrutura em nuvem e em instâncias locais, que estão vinculadas à sua conta do Commerce [mageid](https://devdocs.magento.com/marketplace/sellers/profile-personal.html#field-descriptions) fornecido no processo de inscrição. [!DNL Magento Open Source] Os clientes do usam as instruções no local.
+Você pode instalar o [!DNL Payment Services] extensão para ambos [!DNL Adobe Commerce] na infraestrutura em nuvem e em instâncias locais, que estão vinculadas à sua conta da Commerce [mageid](https://developer.adobe.com/commerce/marketplace/guides/sellers/profile-information/#access-keys) fornecido no processo de inscrição.
+[!DNL Magento Open Source] Os clientes do usam as instruções no local.
 
 O Composer usa essas chaves durante a instalação inicial do [!DNL Adobe Commerce], ou em situações nas quais as chaves do Composer não foram salvas anteriormente no `auth.json` arquivo.
 

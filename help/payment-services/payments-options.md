@@ -3,7 +3,7 @@ title: Opções de pagamento
 description: Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja.
 exl-id: 95e648e6-6cb8-4226-b5ea-e1857212f20a
 feature: Payments, Checkout, Configuration
-source-git-commit: 978340c03e05d29bae6ee872ae9c7332edcd7251
+source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
 workflow-type: tm+mt
 source-wordcount: '1150'
 ht-degree: 0%
@@ -54,7 +54,7 @@ Os clientes podem usar [[!DNL Apple Pay]](https://www.apple.com/apple-pay/), que
 
 [!DNL Apple Pay] O só está disponível no navegador Safari. Os comerciantes podem adicionar até 99 domínios por conta de comerciante.
 
-![Botão Pagamento do Apple no minicart](assets/apple-pay-button.png){width="500" zoomable="yes"}
+![Botão Pagamento do Apple no minicart](assets/applepay-button.png){width="500" zoomable="yes"}
 
 A variável [!DNL Apple Pay] O botão é visível nas exibições página do produto, minicarrinho, carrinho de compras e check-out.
 
