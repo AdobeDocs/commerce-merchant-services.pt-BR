@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a439df188f72d17a6a41fa248aa9957aaabd9e02
+source-git-commit: 0c4bd1aa58dced3d21edae529da367426c973034
 workflow-type: tm+mt
-source-wordcount: '581'
+source-wordcount: '605'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,16 @@ As atualizações incluem:
 ![Bug](../assets/bug.svg) Problemas conhecidos
 
 ## Versão principal atual
+
+### Versão V1.18
+
+_11 de abril de 2023_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg) Adição de suporte para PHP 8.3.
+
+![Novo](../assets/new.svg) A variável [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) o query agora retorna dados de opções personalizáveis para produtos simples e complexos.<!--DATA-5538-->
 
 ### Versão V1.17
 
@@ -49,7 +59,7 @@ _13 de fevereiro de 2023_
 Estes recursos ainda não são compatíveis:
 
 * O tamanho máximo para a carga de atributos dinâmicos é de 9 MB.
-* Preço de produto de grupo. Pode ser calculada com preços simples de produtos.
+* Preço de produto de grupo. Esse valor pode ser calculado com preços simples do produto.
 * Em uma matriz de imagens, somente a primeira imagem contém funções.
 
 As seguintes limitações podem ser resolvidas usando a API Mesh e a Core GraphQL API:
@@ -64,7 +74,7 @@ _12 de outubro de 2023_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg) O Serviço de catálogo oferece suporte ao `inStock` sinalizador para grades de produtos.
-![Novo](../assets/new.svg) `urlKey` e `externalId` foram adicionados ao esquema do GraphQL.
+![Novo](../assets/new.svg) A variável `urlKey` e `externalId` Os campos foram adicionados ao esquema do GraphQL.
 ![Novo](../assets/new.svg) Produtos e cartões-presente baixáveis agora são compatíveis.
 
 ### Versão V1.12
@@ -90,7 +100,7 @@ _27 de junho de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) A API do Serviço de catálogo agora é compatível com &quot;produtos relacionados&quot;.
+![Novo](../assets/new.svg) A API do Serviço de catálogo agora é compatível com `related products`.
 
 ### Versão V1.7
 
@@ -184,5 +194,3 @@ _9 de agosto de 2022_
 * Um preço específico para produtos simples e faixas de preço para produtos configuráveis.
 * Preços de grupo e faixas de preços do cliente. Eles retornam um preço padrão de fallback para os compradores sem um grupo de clientes.
 * Tipos de produto que usam preços específicos do cliente B2B.
-
-+++
