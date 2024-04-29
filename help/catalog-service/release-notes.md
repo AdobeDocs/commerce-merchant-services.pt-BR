@@ -3,7 +3,7 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: 8b0640064168303f48b34af7bb3f1ce1f43b2470
+source-git-commit: 733bad1c12ff62b226ac8a9675faf9c091e84732
 workflow-type: tm+mt
 source-wordcount: '607'
 ht-degree: 0%
@@ -32,6 +32,10 @@ _11 de abril de 2023_
 
 ![Novo](../assets/new.svg) A variável [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) e [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) as consultas agora retornam dados de opções personalizáveis para produtos simples e complexos.<!--DATA-5538-->
 
+## Versões anteriores
+
++++ Versões anteriores
+
 ### Versão V1.17
 
 _22 de fevereiro de 2023_
@@ -39,10 +43,6 @@ _22 de fevereiro de 2023_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg) A variável [[!DNL Data Management Dashboard]](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) O agora está disponível. Esse painel renovado fornece insights sobre fluxos de dados para [!DNL Product Recommendations], [!DNL Live Search], e [!DNL Catalog Service]. O suporte para esse recurso foi introduzido na v3.1.0 do `catalog-service` metapackage.
-
-## Versões anteriores
-
-+++ Versões anteriores
 
 ### Versão V1.16
 
