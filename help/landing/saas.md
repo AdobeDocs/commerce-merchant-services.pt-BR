@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 2d6b80b5133eb00ac42a5f2b64c5846ad30e56c4
+source-git-commit: b86464ac65aeb260930fa2f6fed0a4aedbd7eddf
 workflow-type: tm+mt
-source-wordcount: '866'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ A lista a seguir mostra os [!DNL Commerce] recursos que você pode acessar por m
 
 A um nível elevado, a [!DNL Commerce Services Connector] O é composto pelos seguintes elementos principais:
 
-![Arquitetura do conector de serviços do Commerce](assets/saas-config-sync-workflow.png)
+![Arquitetura do Commerce Services Connector](assets/saas-config-sync-workflow.png)
 
 As seções a seguir discutem cada um desses elementos com mais detalhes.
 
@@ -63,7 +63,7 @@ As chaves de API de sandbox e produção são geradas a partir do [!DNL Commerce
 
 1. Repita as etapas acima para cada ambiente (produção e sandbox).
 
-   A variável **Chaves de API** A seção agora exibe suas chaves de API. Você precisa das chaves de produção e de sandbox ao [selecionar ou criar um projeto SaaS](#createsaasenv).
+   A variável **Chaves de API** A seção agora exibe suas chaves de API (Públicas). Você precisa das chaves de produção e de sandbox (Público+Privado) ao [selecionar ou criar um projeto SaaS](#createsaasenv).
 
 ## Configuração SaaS {#saasenv}
 
