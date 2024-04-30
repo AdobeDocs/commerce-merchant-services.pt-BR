@@ -3,9 +3,9 @@ title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar os dados do Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 99d1097b98ea18c8a317613b2366a97db131432f
+source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
 workflow-type: tm+mt
-source-wordcount: '2480'
+source-wordcount: '2486'
 ht-degree: 0%
 
 ---
@@ -17,17 +17,17 @@ Ao instalar o [!DNL Data Connection] extensão do, duas novas páginas de config
 - Conector dos Commerce Services
 - [!DNL Data Connection]
 
-Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve configurar ambos os conectores, começando com o conector dos Commerce Services e terminando com o [!DNL Data Connection] extensão.
+Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, você deve configurar ambos os conectores, começando com o conector do Commerce Services e terminando com o [!DNL Data Connection] extensão.
 
-## Configurar o conector dos Commerce Services
+## Configurar o conector de serviços do Commerce
 
-Se você instalou um serviço do Adobe Commerce anteriormente, provavelmente já configurou o conector dos Commerce Services. Caso contrário, você deverá concluir as seguintes tarefas no [Conector dos Commerce Services](../landing/saas.md) página:
+Se você tiver instalado anteriormente um serviço do Adobe Commerce, provavelmente já terá configurado o conector de Serviços do Commerce. Caso contrário, você deverá concluir as seguintes tarefas no [Conector de serviços do Commerce](../landing/saas.md) página:
 
-1. Faça logon na sua conta do Commerce para [recuperar as chaves de API de produção e sandbox](../landing/saas.md#credentials).
+1. Faça logon na sua conta da Commerce para [recuperar as chaves de API de produção e sandbox](../landing/saas.md#credentials).
 1. Selecione um [Espaço de dados SaaS](../landing/saas.md#saas-configuration).
 1. Faça logon na sua conta Adobe para [recuperar a ID da organização](../landing/saas.md#ims-organization-optional).
 
-Após configurar o conector dos Commerce Services, configure o [!DNL Data Connection] extensão.
+Após configurar o conector de Serviços da Commerce, configure o [!DNL Data Connection] extensão.
 
 ## Configure o [!DNL Data Connection] extensão
 
@@ -41,7 +41,7 @@ Se você estiver coletando e enviando apenas dados da loja ou do back office, pu
 
 #### Etapa 1: criar um projeto no Console do Adobe Developer
 
-Crie um projeto no Console do Adobe Developer que autentica o Commerce para que ele possa fazer chamadas de API Experience Platform.
+Crie um projeto no Console do Adobe Developer que autentica o Commerce para que ele possa fazer chamadas de API de Experience Platform.
 
 Para criar o projeto, siga as etapas descritas na seção [Autenticar e acessar APIs de Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/platform-apis/api-authentication.html) tutorial.
 
@@ -57,7 +57,7 @@ O resultado dessa etapa cria um arquivo de configuração que você usa na próx
 
 Baixe o [arquivo de configuração do espaço de trabalho](https://developer.adobe.com/commerce/extensibility/events/project-setup/#download-the-workspace-configuration-file). Copie e cole o conteúdo desse arquivo na **Detalhes da Conta de Serviço/Credencial** página do Administrador do Commerce.
 
-1. No Administrador de comércio, navegue até **Lojas** > Configurações > **Configuração** > **Serviços** > **[!DNL Data Connection]**.
+1. No Administrador do Commerce, navegue até **Lojas** > Configurações > **Configuração** > **Serviços** > **[!DNL Data Connection]**.
 
 1. Selecione o método de autorização de servidor para servidor que você implementou na **Tipo de autorização do Adobe Developer** menu. O Adobe recomenda usar o OAuth. O JWT foi descontinuado. [Saiba mais](https://developer.adobe.com/developer-console/docs/guides/authentication/ServerToServerAuthentication/migration/).
 
@@ -95,9 +95,9 @@ Nesta seção, você especifica o tipo de dados que deseja coletar e enviar para
 
 - **Comportamento** (dados do lado do cliente) são dados capturados na loja. Isso inclui interações do comprador, como `View Page`, `View Product`, `Add to Cart`, e [lista de requisições](events.md#b2b-events) informações (para os comerciantes B2B).
 
-- **Back office** (dados do lado do servidor) são dados capturados nos servidores do Commerce. Isso inclui informações sobre o status de um pedido, como se um pedido tivesse sido feito, cancelado, reembolsado, remetido ou concluído. Também inclui [dados históricos do pedido](#send-historical-order-data).
+- **Back office** (dados do lado do servidor) são dados capturados nos servidores da Commerce. Isso inclui informações sobre o status de um pedido, como se um pedido tivesse sido feito, cancelado, reembolsado, remetido ou concluído. Também inclui [dados históricos do pedido](#send-historical-order-data).
 
-- **Perfil** são dados relacionados às informações de perfil do comprador. Saiba mais [mais](#send-customer-profile-data).
+- **Perfil (Beta)** são dados relacionados às informações de perfil do comprador. Saiba mais [mais](#send-customer-profile-data).
 
 Para garantir que sua instância do Adobe Commerce possa iniciar a coleta de dados, revise a [pré-requisitos](overview.md#prerequisites).
 
@@ -158,6 +158,10 @@ Após a integração, os dados da loja começam a fluir para a borda do Experien
 
 ### Enviar dados de perfil do cliente
 
+>[!IMPORTANT]
+>
+>Esse recurso está na versão beta.
+
 Há dois tipos de dados de perfil que você pode enviar para o Experience Platform: registros de perfil e eventos de perfil de série temporal.
 
 Um registro de perfil contém dados que são salvos quando um comprador cria um perfil na instância do Commerce, como o nome do comprador. Quando o esquema e o conjunto de dados são [configurado corretamente](profile-data.md), um registro de perfil é enviado ao Experience Platform e encaminhado ao serviço de gerenciamento e segmentação de perfis do Adobe: [Real-Time CDP](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/rtcdp-intro/overview.html?lang=pt-BR).
@@ -191,7 +195,7 @@ Pode levar cerca de 10 minutos para que um registro de perfil fique disponível 
 
 A Adobe Commerce coleta até cinco anos de [dados e status históricos do pedido](events-backoffice.md#back-office-events). Você pode usar o [!DNL Data Connection] extensão para enviar esses dados históricos ao Experience Platform para enriquecer os perfis do cliente e personalizar as experiências do cliente com base nesses pedidos anteriores. Os dados são armazenados em um conjunto de dados no Experience Platform.
 
-Embora o Commerce já colete os dados históricos do pedido, há várias etapas que você deve concluir para enviar esses dados para o Experience Platform.
+Embora a Commerce já colete os dados históricos do pedido, há várias etapas que você deve concluir para enviar esses dados para o Experience Platform.
 
 Assista a este vídeo para saber mais sobre pedidos históricos e, em seguida, conclua as etapas a seguir para implementar a coleção de pedidos históricos.
 
@@ -207,7 +211,7 @@ O serviço de sincronização de pedidos usa o [Estrutura da fila de mensagens](
 
    >[!NOTE]
    >
-   >O RabbitMQ já está configurado para as versões 2.4.7 e mais recentes do Commerce, mas você deve habilitar os consumidores.
+   >O RabbitMQ já está configurado para o Commerce versões 2.4.7 e mais recentes, mas você deve habilitar os consumidores.
 
 1. Habilitar consumidores da fila de mensagens por trabalho cron em `.magento.env.yaml` usar `CRON_CONSUMERS_RUNNER` variável de ambiente.
 
@@ -250,7 +254,7 @@ Especifique o intervalo de datas para as ordens históricas que você deseja env
 
 ## Confirmar se os dados do evento foram coletados
 
-Para confirmar se os dados estão sendo coletados em sua loja do Commerce, use o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) para examinar o site do Commerce. Depois de confirmar que os dados estão sendo coletados, é possível verificar se os dados do evento da loja e do back office aparecem na borda executando uma consulta que retorna dados do [conjunto de dados que você criou](overview.md#prerequisites).
+Para confirmar se os dados estão sendo coletados no armazenamento do Commerce, use o [Adobe Experience Platform Debugger](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) para examinar o site do Commerce. Depois de confirmar que os dados estão sendo coletados, é possível verificar se os dados do evento da loja e do back office aparecem na borda executando uma consulta que retorna dados do [conjunto de dados que você criou](overview.md#prerequisites).
 
 1. Selecionar **Consultas** na navegação à esquerda de Experience Platform e clique em [!UICONTROL Create Query].
 
@@ -270,10 +274,10 @@ Para confirmar se os dados estão sendo coletados em sua loja do Commerce, use o
 
    ![Editor de consultas](assets/query-results.png)
 
-Neste exemplo, você vê dados de evento do [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e assim por diante. Essa exibição permite verificar se os dados do Commerce chegaram à borda.
+Neste exemplo, você vê dados de evento do [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview)e assim por diante. Essa visualização permite verificar se os dados do Commerce chegaram à borda.
 
 Se os resultados não forem os esperados, abra o conjunto de dados e procure qualquer importação de lotes com falha. Saiba mais sobre [solução de problemas de importações de lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
 
 ## Próximas etapas
 
-Quando os dados do Commerce são enviados para o Experience Platform edge, outros produtos Adobe Experience Cloud, como o Adobe Journey Optimizer, podem usar esses dados. Por exemplo, você pode configurar o Journey Optimizer para acompanhar determinados eventos e, com base nesses dados, acionar um email para um usuário pela primeira vez ou se houver um carrinho abandonado. Saiba como estender sua plataforma do Commerce [criação de jornadas do cliente](using-ajo.md) no Journey Optimizer.
+Quando os dados do Commerce são enviados para a borda do Experience Platform, outros produtos da Adobe Experience Cloud, como o Adobe Journey Optimizer, podem usar esses dados. Por exemplo, você pode configurar o Journey Optimizer para acompanhar determinados eventos e, com base nesses dados, acionar um email para um usuário pela primeira vez ou se houver um carrinho abandonado. Saiba como estender sua plataforma do Commerce [criação de jornadas do cliente](using-ajo.md) no Journey Optimizer.
