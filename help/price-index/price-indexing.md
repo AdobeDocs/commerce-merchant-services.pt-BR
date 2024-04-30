@@ -4,7 +4,7 @@ description: Usando a indexação de preços SaaS para melhorar o desempenho
 seo-title: Adobe SaaS Price Indexing
 seo-description: Price indexing give performance improvements using SaaS infrastructure
 exl-id: 5b92d6ea-cfd6-4976-a430-1a3aeaed51fd
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
 source-wordcount: '409'
 ht-degree: 0%
@@ -39,10 +39,10 @@ Este guia descreve como a indexação de preços do SaaS funciona e como ativá-
 ## Requisitos
 
 * Adobe Commerce 2.4.4+
-* Pelo menos um dos seguintes Commerce Services com a versão mais recente da extensão do Adobe Commerce:
+* Pelo menos um dos seguintes serviços da Commerce com a versão mais recente da extensão do Adobe Commerce:
 
    * [Serviço de catálogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
    * [Recommendations do produto](../product-recommendations/guide-overview.md)
 
 Os usuários do Luma e do Adobe Commerce Core GraphQL podem instalar o [`catalog-adapter`](catalog-adapter.md) Extensão que fornece compatibilidade com o Luma e o Core GraphQl e desativa o indexador de Preço de produto do Adobe Commerce.

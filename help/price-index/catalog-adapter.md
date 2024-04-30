@@ -1,15 +1,15 @@
 ---
 title: Extensão do Adaptador de Catálogo
-description: Utilização do Adaptador de catálogo para renderizar preços do Commerce Services
+description: Utilização do Adaptador de catálogo para renderizar preços dos Serviços Commerce
 seo-title: Catalog Adapter Extension
 seo-description: Using Catalog Adapter to render prices from Commerce Services
-source-git-commit: a637ece6e806771dfc6359dacececf8ccf05b983
+exl-id: 2c9120eb-aa51-48e9-b6a4-fffe25fc31f2
+source-git-commit: 7d62f8d5539cd744e98d8d6c072d77a2a7c5a256
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '332'
 ht-degree: 0%
 
 ---
-
 
 # Adaptador do catálogo
 
@@ -19,10 +19,10 @@ O indexador de Preço de Produto do Adobe Commerce está desabilitado e não pod
 ## Requisitos
 
 * Adobe Commerce 2.4.4+
-* Tenha ambos os seguintes Commerce Services instalados:
+* Tenha ambos os seguintes serviços da Commerce instalados:
 
    * [Serviço de catálogo](../catalog-service/overview.md)
-   * [Live Search](../live-search/guide-overview.md)
+   * [Live Search](../live-search/overview.md)
 
 ## Instalação
 
@@ -73,7 +73,7 @@ A seguir estão alguns comuns `Catalog Adapter` cenários.
 1. Instale o adaptador do catálogo.
 1. Reative o indexador padrão de Preço de produto do Adobe Commerce.
 
-### Instâncias do Headless Commerce
+### Instâncias headless do Commerce
 
 * Um comerciante com uma instância do Commerce headless com os serviços necessários instalados (Live Search, Recommendations de produtos, Serviço de catálogo)
 * Nenhuma dependência do indexador de preço de produto padrão do Adobe Commerce

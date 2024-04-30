@@ -3,7 +3,7 @@ title: "[!DNL Live Search] Notas de versão"
 description: "As informações mais recentes da versão do [!DNL Live Search] da Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 20b4fc2dc0f6cba325e4bc79778ce4852eb189c2
+source-git-commit: 471bee273a82304ac35b0ca384a2161d7a3399d6
 workflow-type: tm+mt
 source-wordcount: '1925'
 ht-degree: 0%
@@ -53,8 +53,8 @@ _19 de março de 2024_
 
 ### Novos recursos
 
-![Novo](../assets/new.svg) Suporte de idioma adicionado para [Polonês](technical-overview.md#language-support).
-![Novo](../assets/new.svg) [!DNL Live Search] O agora suporta o PHP 8.3 para instalações que executam o Adobe Commerce 2.4.7.
+![Novo](../assets/new.svg) Adição de suporte de idioma para polonês.
+![Novo](../assets/new.svg) [!DNL Live Search] O agora suporta o PHP 8.3 para instalações que executam o Adobe Commerce 2.4.4.
 
 ## [!DNL Live Search] 4.1.0 {#410}
 
@@ -262,7 +262,7 @@ Existente [!DNL Live Search] as instalações devem ser atualizadas para [!DNL L
 
 ![Novo](../assets/new.svg) [!DNL Live Search] O agora suporta o PHP 8.1 para instalações que executam o Adobe Commerce 2.4.4.
 ![Novo](../assets/new.svg) A variável `Magento_ElasticsearchCatalogPermissionsGraphQl` O módulo é adicionado à lista de módulos que são desativados durante a instalação.
-![Novo](../assets/new.svg) O número de linhas disponíveis na [[!DNL storefront popover]](quick-tour.md) pode ser configurado no *Admin*.
+![Novo](../assets/new.svg) O número de linhas disponíveis na [[!DNL storefront popover]](overview.md) pode ser configurado no *Admin*.
 ![Novo](../assets/new.svg) Beta [PWA](https://developer.adobe.com/commerce/pwa-studio/) compatível com [!DNL Live Search].
 ![Novo](../assets/new.svg) A variável [!DNL Live Search] o processo de instalação é atualizado com alterações avançadas do processo.
 ![Correção](../assets/fix.svg) [Pesquisa avançada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) link removido do rodapé da loja.

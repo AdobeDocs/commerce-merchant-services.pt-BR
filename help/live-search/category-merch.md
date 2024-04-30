@@ -3,9 +3,9 @@ title: Merchandising de categoria
 description: Uso [!DNL Live Search] Merchandising por categoria para uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: d5df2a098dbbb2ecfb68c36dd12843c963d46b17
+source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
 workflow-type: tm+mt
-source-wordcount: '1045'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -13,6 +13,10 @@ ht-degree: 0%
 # Merchandising de categoria
 
 O merchandising por categoria permite que os proprietários de lojas apliquem [!DNL Live Search] Classificação inteligente [regras](rules.md) às categorias e subcategorias de produtos.
+
+Este vídeo é uma introdução ao Merchandising por categoria.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
 O recurso é acessado na guia Administrador em **Marketing** > SEO E Pesquisa > **[!DNL Live Search]** > **Merchandising de categoria**.
 

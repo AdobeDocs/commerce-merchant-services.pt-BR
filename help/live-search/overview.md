@@ -1,59 +1,77 @@
 ---
-title: Introdução ao [!DNL Live Search]
+title: O que é o [!DNL Live Search]?
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
 workflow-type: tm+mt
-source-wordcount: '722'
+source-wordcount: '678'
 ht-degree: 0%
 
 ---
 
-# Introdução ao [!DNL Live Search]
+# O que é o [!DNL Live Search]?
 
-[!DNL Live Search] O é um serviço para o Adobe Commerce que substitui os recursos de pesquisa padrão. A variável [!DNL Live Search] O módulo é instalado com o Composer e conecta o [!DNL Commerce] instalação no [!DNL Live Search] [serviço](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto. [!DNL Live Search] O também instala o widget Página de listagem de produtos (PLP), que fornece recursos robustos de filtragem ao navegar pelos resultados da pesquisa.
+[!DNL Live Search] O é uma extensão que substitui os recursos de pesquisa padrão no Adobe Commerce. A variável [!DNL Live Search] é instalada com o Composer e conecta o [!DNL Commerce] instalação no [!DNL Live Search] [serviço](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto. [!DNL Live Search] O também instala o widget Página de listagem de produtos (PLP), que fornece recursos robustos de filtragem ao navegar pelos resultados da pesquisa.
 
-[!DNL Live Search] aparece no *Marketing* menu em *SEO e pesquisa* no [!DNL Commerce] *Admin*.
+Com [!DNL Live Search], você pode:
+
+- Crie experiências de pesquisa significativas para ajudar compradores e compradores a encontrar o que desejam com o menor esforço possível.
+- Aproveite a faceta dinâmica alimentada por IA e a reclassificação dos resultados de pesquisa em resposta aos comportamentos do comprador na sessão.
+- Use um serviço leve baseado em SaaS que ofereça atualizações fáceis e esteja incluído em sua licença, reduzindo o custo total de propriedade.
+- Obtenha conhecimento técnico habilitando a API GraphQL, a flexibilidade headless, os ambientes de sandbox da API e o SaaS ultrarrápido.
+
+>[!IMPORTANT]
+>
+>Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Certifique-se de ler [Limites e limites](boundaries-limits.md) antes da implementação, assegurar [!DNL Live Search] O é adequado às necessidades da sua empresa.
+
+## Arquitetura
 
 O lado da Adobe Commerce na arquitetura inclui hospedar a pesquisa *Admin*, sincronizando dados de catálogo e executando o serviço de consulta. Depois [!DNL Live Search] estiver instalado e configurado, o Adobe Commerce começará a compartilhar dados de pesquisa e catálogo com os serviços SaaS. Neste ponto, os usuários administradores podem configurar, personalizar e gerenciar a pesquisa [facetas](facets.md), [sinônimos](synonyms.md), e [regras de merchandising](category-merch.md).
 
+![Fluxo de dados do Live Search](assets/ls-cs-data-flow.png)
+
+## Tour rápido
+
+Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um divisor de águas tanto para compradores quanto para comerciantes. Siga para um rápido tour pelo [!DNL Live Search] da loja.
+
+### Pesquisar enquanto digita
+
+[!DNL Live Search] O responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em uma [popover](storefront-popover.md) à medida que os compradores digitam consultas na variável [Pesquisar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) caixa. A variável [detalhes do produto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
+
+[!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. O popover inclui o`name`, `sku`, e `category_ids` campos.
+
+![Exemplo de vitrine - pesquisar à medida que você digita](assets/storefront-search-as-you-type.png)
+
+### Exibir todos os resultados da pesquisa
+
+Para listar todos os produtos retornados pela consulta &quot;pesquisar ao digitar&quot;, clique em _Exibir todos_ no rodapé do popover.
+
+![Exemplo de vitrine - aspectos de preço](assets/storefront-view-all-search-results.png)
+
+### Pesquisa filtrada com facetas
+
+A pesquisa filtrada usa várias dimensões de valores de atributo ou [facetas](facets.md), como critério de pesquisa. A seleção de filtros é definida pelo comerciante e muda de acordo com os produtos retornados, com as facetas mais usadas fixadas no topo da lista.
+
+Usar facetas como parâmetros de URL:`http://yourwebsite.com?color=red`, e o Live Search filtra os resultados com base nesses valores de atributo.
+
+### Sinônimos
+
+[Sinônimos](synonyms.md) expanda o alcance e ajuste a nitidez do foco das consultas ao incluir palavras que os compradores podem usar diferentes daquelas no catálogo. Você pode ajustar o dicionário de sinônimo para manter os compradores envolvidos e no caminho para comprar.
+
+### Regras de merchandising
+
+Merchandising [regras](rules.md) molde a experiência de compra com instruções if-then que adicionam lógica e eventos a serem pesquisados. Você pode facilmente impulsionar ou enterrar produtos para uma promoção, temporada ou outro período de tempo.
+
+### Suporte a termos de pesquisa
+
+[!DNL Live Search] compatível com Commerce [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.
+
 ## Componentes do Live Search
 
-* [!DNL Live Search] [widget popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
-* [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
-* AEM Componentes CIF: o [Widget do Popover](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-popover.html?lang=en) e a variável [Widget do PLP](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/live-search-plp.html) permitir que sites AEM aproveitem as [!DNL Live Search].
-* [[!DNL Live Search] Admin](workspace.md) é onde regras, facetas e sinônimos são configurados.
-
-## Visão geral do fluxo de trabalho
-
-[!DNL Live Search] O funciona movendo dados de catálogo para a infraestrutura SaaS do Adobe Commerce e criando índices que são usados para fornecer resultados de pesquisa rapidamente à medida que os usuários digitam.
-
-### 1. Instalação
-
-[!DNL Live Search] é [instalado](install.md) na instância do Adobe Commerce por meio de [Compositor](https://getcomposer.org/). Isso instala os módulos necessários que se conectam ao serviço e configura a instância do Commerce para substituir o campo de pesquisa padrão. Ele também instala as opções de Administrador do Commerce para configurar o serviço.
-
-### 2. Sincronizar dados
-
-[!DNL Live Search] O move dados do catálogo para a infraestrutura SaaS do Adobe. Os dados são indexados e os resultados da pesquisa são enviados desse índice diretamente para a loja. Dependendo do tamanho e da complexidade, a indexação pode levar de 30 minutos a algumas horas.
-
-### 3. Configurar dados
-
-A configuração correta dos dados do produto garante bons resultados de pesquisa para os clientes. Há algumas etapas de configuração necessárias: atribuição de categorias e configuração de atributos.
-
-#### Atribuir categorias
-
-Produto devolvido em [!DNL Live Search] deve receber um [categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/categories.html). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Isso permite uma melhor granularidade ao filtrar.
-
-#### Campos pesquisáveis e filtráveis
-
-Os produtos são atribuídos [atributos](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que pode ser usado para pesquisa e filtragem. Atributos são coisas como &quot;Cor&quot;, &quot;Tamanho&quot;, &quot;Tipo de material&quot;. Com esses atributos, os usuários podem procurar por &quot;tops verdes&quot;. Cada produto pode ter muitos atributos definidos no administrador do Commerce.
-
-Cada um desses atributos pode ser definido como [&quot;pesquisável&quot;](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html) no admin. Quando definidos como &quot;pesquisáveis&quot;, esses atributos estão disponíveis para serem pesquisados por [!DNL Live Search].
-
-[Facetas](facets.md) são atributos de produto definidos no [!DNL Live Search] para ser filtrável. Qualquer atributo filtrável pode ser definido como uma faceta no [!DNL Live Search] mas há limites para quantas facetas podem ser pesquisadas de uma vez.
-
-[Sinônimos](synonyms.md) são termos que você pode definir para ajudar a orientar os usuários para o produto correto. Os usuários que procuram calças podem digitar &quot;calças&quot; ou &quot;pretas&quot;. É possível definir sinônimos para que esses termos de pesquisa direcionem os usuários aos resultados de &quot;calças&quot;.
+- [!DNL Live Search] [widget popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
+- [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
+- [[!DNL Live Search] Admin](workspace.md) é onde regras, facetas e sinônimos são configurados.
 
 ## [!DNL Live Search] espaço de trabalho
 
@@ -62,20 +80,6 @@ A variável [!DNL Live Search] [espaço de trabalho](workspace.md) é a área no
 ## Eventos
 
 [!DNL Live Search] usos [events](events.md) para calcular [Merchandising inteligente](category-merch.md) e [desempenho](performance.md) painéis. O evento é fornecido com implementações padrão. O evento para frente de loja headless deve ser ativado manualmente.
-
-## Personalização de widgets
-
-A maioria dos proprietários de lojas desejará garantir que a [!DNL Live Search] os widgets estão em conformidade com a aparência e comportamento da loja.
-
-Os widgets popover e PLP podem ser estilizados definindo regras CSS personalizadas, conforme necessário. Consulte [Elementos Popover de estilo](storefront-popover-styling.md) e [Widget da página de listagem de produtos](plp-styling.md).
-
-Se você quiser estender a funcionalidade dos widgets, o código-fonte de cada um deles estará disponível em um repositório público.
-Nesse cenário, você pode personalizar o JavaScript de acordo com suas necessidades e, em seguida, hospedar seu código personalizado no CDN. Este script personalizado se comunica com a variável [!DNL Live Search] e retorna os resultados normalmente, permitindo que você controle a funcionalidade do widget.
-
-* [repositório de widgets PLP](https://github.com/adobe/storefront-product-listing-page)
-* [Pesquisar repositório de barras](https://github.com/adobe/storefront-search-as-you-type)
-
-Obter mais detalhes sobre [!DNL Live Search] no [Visão geral técnica](technical-overview.md).
 
 ## [!DNL Live Search] demonstração
 
