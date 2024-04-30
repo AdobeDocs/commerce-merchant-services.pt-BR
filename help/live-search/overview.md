@@ -3,9 +3,9 @@ title: O que é o [!DNL Live Search]?
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 8aca09aba13e32afb191169729dfc1fbd0087262
+source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '674'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,11 @@ O lado da Adobe Commerce na arquitetura inclui hospedar a pesquisa *Admin*, sinc
 
 ## Tour rápido
 
-Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um divisor de águas tanto para compradores quanto para comerciantes. Siga para um rápido tour pelo [!DNL Live Search] da loja.
+Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é um divisor de águas tanto para compradores quanto para comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] da loja.
+
+>[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+
+Para obter um vídeo mais detalhado sobre como usar e configurar o Live Search, consulte [Demonstração completa em [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) tópico.
 
 ### Pesquisar enquanto digita
 
@@ -80,11 +84,3 @@ A variável [!DNL Live Search] [espaço de trabalho](workspace.md) é a área no
 ## Eventos
 
 [!DNL Live Search] usos [events](events.md) para calcular [Merchandising inteligente](category-merch.md) e [desempenho](performance.md) painéis. O evento é fornecido com implementações padrão. O evento para frente de loja headless deve ser ativado manualmente.
-
-## [!DNL Live Search] demonstração
-
-Assista a este vídeo para saber mais sobre [!DNL Live Search]:
-
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
-
-Para obter um vídeo mais detalhado sobre como usar e configurar o Live Search, consulte [Demonstração completa em [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) tópico.
