@@ -3,9 +3,9 @@ title: Notas de versão
 description: As informações mais recentes da versão do [!DNL Data Connection] extensão do Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: 2b168c0ef07324c7fc7b3cfd464742b257d073ec
+source-git-commit: 84094f4249eeb9f98a85e582c52e2c48e0dd9316
 workflow-type: tm+mt
-source-wordcount: '826'
+source-wordcount: '838'
 ht-degree: 0%
 
 ---
@@ -87,7 +87,7 @@ _4 de março de 2024_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Novo](../assets/new.svg) - Se você estiver participando do beta, verifique se `composer.json` O arquivo tem o seguinte no nível raiz: ` "minimum-stability": "beta"`.
+![Novo](../assets/new.svg) - Se você estiver participando do beta, verifique se `composer.json` O arquivo tem o seguinte no nível raiz: ` "minimum-stability": "beta"`. Além disso, adicione `composer require "magento/customers-connector: ^1.2.0"` para enviar perfis de clientes da sua instância do Commerce para o SaaS.
 ![Novo](../assets/new.svg) - Adição da capacidade de [adicionar atributos personalizados](update-xdm.md#update-schema-with-time-series-behavioral-and-back-office-event-data).
 ![Novo](../assets/new.svg) - Adição da capacidade de [coletar e enviar registros de perfil](connect-data.md#send-customer-profile-data) e dados para o Experience Platform.
 
