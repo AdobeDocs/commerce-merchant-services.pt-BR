@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: e5d9576f0c326dd3a97eeaf9831db0d89b85caff
+source-git-commit: b6775b196ca36448f50a6fed283ef0626e03d286
 workflow-type: tm+mt
-source-wordcount: '875'
+source-wordcount: '907'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ As seções a seguir discutem cada um desses elementos com mais detalhes.
 
 ## Credenciais {#apikey}
 
-As chaves de API de sandbox e produção são geradas a partir do [!DNL Commerce] titular da licença, que é identificada por uma única autoridade de licenciamento [!DNL Commerce] ID (MageID). Para passar na validação de direitos para serviços como [!DNL Product Recommendations] ou [!DNL Live Search], o titular da licença da organização do comerciante pode gerar o conjunto de chaves de API, desde que a conta esteja em bom estado. As chaves podem ser compartilhadas de acordo com a necessidade de saber com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do detentor da licença. Além disso, os integradores de soluções também estão autorizados a usar o [!DNL Commerce Services]. Se você for um integrador de soluções, o signatário da [!DNL Commerce] o contrato de parceiro deve gerar as chaves de API.
+As chaves de API de sandbox e produção são geradas a partir do [!DNL Commerce] conta do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) que é identificado por um único [!DNL Commerce] ID (MageID). Para passar na validação de direitos para serviços como [!DNL Product Recommendations] ou [!DNL Live Search], o proprietário da licença da organização do comerciante pode gerar o conjunto de chaves de API, desde que a conta esteja em bom estado. As chaves podem ser compartilhadas de acordo com a necessidade de saber com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do detentor da licença. Além disso, os integradores de soluções também estão autorizados a usar o [!DNL Commerce Services]. Se você for um integrador de soluções, o signatário da [!DNL Commerce] o contrato de parceiro deve gerar as chaves de API.
+
+>[!NOTE]
+>
+>O proprietário da licença normalmente é o contato principal na conta da Adobe Commerce e nem sempre é o mesmo Proprietário do projeto Adobe Commerce na infraestrutura em nuvem.
 
 ### Gerar as chaves de API de produção e sandbox {#genapikey}
 
