@@ -2,16 +2,16 @@
 title: "Espaço de trabalho facetado"
 description: "Saiba mais sobre o [!DNL Live Search] espaço de trabalho facetado."
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
-source-git-commit: e166c8cb9d715dce573195a188b5335c02d8fd0c
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '219'
 ht-degree: 0%
 
 ---
 
 # Espaço de trabalho Faceting
 
-A variável [!DNL Live Search] o espaço de trabalho lista todas as facetas disponíveis no momento e fornece acesso às ferramentas necessárias para configurar e gerenciar facetas. As facetas fixadas aparecem primeiro na lista de facetas existentes, seguidas pelas facetas dinâmicas. A lista pode ser filtrada para mostrar todas as facetas, ou apenas aquelas que estão fixadas ou dinâmicas.
+A variável *Facetagem* o espaço de trabalho lista todas as facetas disponíveis no momento e fornece acesso às ferramentas necessárias para configurar e gerenciar facetas. As facetas fixadas aparecem primeiro na lista de facetas existentes, seguidas pelas facetas dinâmicas. A lista pode ser filtrada para mostrar todas as facetas, ou apenas aquelas que estão fixadas ou dinâmicas.
 
 ![Espaço de trabalho facetado](assets/faceting-workspace.png)
 

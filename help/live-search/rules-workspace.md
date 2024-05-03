@@ -2,16 +2,16 @@
 title: "Pesquisar espaço de trabalho de merchandising"
 description: "Saiba mais sobre o espaço de trabalho de Merchandising de pesquisa."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
-source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
+source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
 workflow-type: tm+mt
-source-wordcount: '580'
+source-wordcount: '573'
 ht-degree: 1%
 
 ---
 
 # Pesquisar espaço de trabalho de merchandising
 
-O espaço de trabalho Pesquisar merchandising lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
+A variável *Pesquisar merchandising* o espaço de trabalho lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
 
 * Pesquisar regras
 * Exibir detalhes da regra
@@ -19,7 +19,7 @@ O espaço de trabalho Pesquisar merchandising lista a seleção atual de regras 
 * Excluir regras
 * Acessar o editor de regras
 
-![Procurar espaço de trabalho de merchandising](assets/rules-workspace.png)
+![Pesquisar espaço de trabalho de merchandising](assets/rules-workspace.png)
 
 ## Definir o escopo
 
@@ -57,7 +57,7 @@ A pesquisa encontra as regras correspondentes à medida que você digita. A sequ
 
 O painel de detalhes mostra o nome da regra, o status, as condições e os eventos, as datas de início e término, a descrição e a data da última edição. As regras podem ser ativadas, editadas e excluídas no painel de detalhes.
 
-1. No *Pesquisar merchandising* , localize na grade a regra que deseja exibir e clique em **Mais** (...)
+1. No *Pesquisar merchandising* espaço de trabalho, localize na grade a regra que deseja exibir e clique em **Mais** (...)
 1. Clique em **Exibir detalhes**.
 Você pode executar qualquer um dos seguintes procedimentos a partir do painel Exibir detalhes:
 

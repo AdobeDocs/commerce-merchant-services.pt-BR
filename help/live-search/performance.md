@@ -1,17 +1,17 @@
 ---
-title: "Painel de desempenho"
-description: "O [!DNL Live Search] O painel Desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
+title: "Desempenho"
+description: "O [!DNL Live Search] O espaço de trabalho de desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '479'
 ht-degree: 0%
 
 ---
 
-# Painel de desempenho
+# Desempenho
 
-A variável [!DNL Live Search] O painel Desempenho fornece informações sobre os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O painel Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
+A variável *Desempenho* o workspace fornece informações sobre os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O espaço de trabalho Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
 
 * Pesquisas únicas
 * Zero resultados
@@ -30,7 +30,7 @@ Você também pode consultar a [Painel de gerenciamento de dados](https://experi
 
 >[!NOTE]
 >
->O painel de desempenho é atualizado a cada 12 horas.
+>O espaço de trabalho de desempenho é atualizado a cada 12 horas.
 
 ## Descrições dos campos
 

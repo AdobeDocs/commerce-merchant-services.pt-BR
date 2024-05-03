@@ -1,19 +1,19 @@
 ---
-title: '[!DNL Live Search] Workspace'
+title: 'Espaço de trabalho'
 description: A variável [!DNL Live Search] O espaço de trabalho é usado para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '236'
+source-wordcount: '218'
 ht-degree: 0%
 
 ---
 
-# [!DNL Live Search] Workspace
+# Workspace
 
 O espaço de trabalho é onde você configura, gerencia e monitora o desempenho do [!DNL Live Search]. O menu na parte superior fornece acesso às ferramentas em cada área funcional.  Os recursos disponíveis refletem a seleção de menu atual.
 
-![Espaço de trabalho facetado](assets/workspace.png)
+![Workspace](assets/workspace.png)
 
 ## Definir o escopo
 

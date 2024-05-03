@@ -3,16 +3,16 @@ title: O que é o [!DNL Live Search]?
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: aba552808ea7af540f64f00a2ae4aeaf2b9cc52e
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '674'
+source-wordcount: '667'
 ht-degree: 0%
 
 ---
 
 # O que é o [!DNL Live Search]?
 
-[!DNL Live Search] O é uma extensão que substitui os recursos de pesquisa padrão no Adobe Commerce. A variável [!DNL Live Search] é instalada com o Composer e conecta o [!DNL Commerce] instalação no [!DNL Live Search] [serviço](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto. [!DNL Live Search] O também instala o widget Página de listagem de produtos (PLP), que fornece recursos robustos de filtragem ao navegar pelos resultados da pesquisa.
+[!DNL Live Search] O é um recurso que substitui os recursos de pesquisa padrão no Adobe Commerce. A variável [!DNL Live Search] O recurso é instalado com o Composer e conecta o [!DNL Commerce] armazenar no [Conector dos Commerce Services](../landing/saas.md). Quando configurado, o campo de texto de pesquisa padrão é substituído pelo campo [!DNL Live Search] campo de texto. [!DNL Live Search] O também instala o widget Página de listagem de produtos (PLP), que fornece recursos robustos de filtragem ao navegar pelos resultados da pesquisa.
 
 Com [!DNL Live Search], você pode:
 
@@ -75,7 +75,6 @@ Merchandising [regras](rules.md) molde a experiência de compra com instruções
 
 - [!DNL Live Search] [widget popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
 - [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
-- [[!DNL Live Search] Admin](workspace.md) é onde regras, facetas e sinônimos são configurados.
 
 ## [!DNL Live Search] espaço de trabalho
 

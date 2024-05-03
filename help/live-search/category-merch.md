@@ -3,7 +3,7 @@ title: Merchandising de categoria
 description: Uso [!DNL Live Search] Merchandising por categoria para uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
-source-git-commit: 109a4e79a7faac62a4d7c48cadcada1ec28f3c94
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
 source-wordcount: '1053'
 ht-degree: 0%
@@ -22,7 +22,7 @@ O recurso é acessado na guia Administrador em **Marketing** > SEO E Pesquisa > 
 
 >[!NOTE]
 >
->O merchandising por categoria está disponível com o [!DNL Live Search] [3.0.0 ou superior](release-notes.md). Se você vir a guia Merchandising por categoria, mas ela não estiver preenchida com dados, atualize a [!DNL Live Search] módulo.
+>O merchandising por categoria está disponível com o [!DNL Live Search] [3.0.0 ou superior](release-notes.md). Se você vir o espaço de trabalho Categoria de merchandising, mas ele não estiver preenchido com dados, atualize o [!DNL Live Search] módulo.
 
 ![Merchandising em categorias](assets/category_workspace.png)
 

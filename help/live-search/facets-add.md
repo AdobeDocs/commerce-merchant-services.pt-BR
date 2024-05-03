@@ -2,9 +2,9 @@
 title: "Adicionar facetas"
 description: "Saiba como adicionar atributos de produto filtráveis como [!DNL Live Search] aspectos."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 10edbb6127405d45c06d4c8ffc89d92a6ca061c3
+source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
-source-wordcount: '588'
+source-wordcount: '597'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 Qualquer atributo de produto filtrável pode ser usado como uma faceta. A variável *Adicionar facetas* O painel lista as facetas atuais e facilita a atribuição de atributos de produto adicionais como facetas. Durante esse processo de três etapas, um atributo é escolhido para ser usado como uma faceta, as propriedades são editadas, se necessário, e as alterações são publicadas na loja.
 
-![Espaço de trabalho facetado](assets/facets-add.png)
+![Adicionar facetas](assets/facets-add.png)
 
 ## Etapa 1: adicionar uma faceta
 
@@ -48,7 +48,7 @@ A faceta é adicionada à parte inferior do *Aspectos dinâmicos* e a *Publicar 
 
 1. Quando terminar, clique em **Salvar**.
 
-   ![Espaço de trabalho facetado](assets/facet-edit.png)
+   ![Editar facetas](assets/facet-edit.png)
 
 1. Para fixar a faceta na parte superior do *Filtros* clique no pino cinza (![Fixar seletor](assets/btn-pin-gray.png)).
 1. Para alterar a ordem da faceta fixada, clique no link **Mover** (![Mover seletor](assets/btn-move.png)) e arraste a linha para uma nova posição na *Facetas fixadas* seção.
