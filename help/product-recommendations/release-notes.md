@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: c3940c399c0639fe53e23cea96b347c7827ecb42
+source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
 workflow-type: tm+mt
-source-wordcount: '1276'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,16 @@ _25 de abril de 2023_
 
 ## Versão principal atual
 
+### 6.0.2 do magento/product-recommendations
+
+_9 de maio de 2024_
+
+[!BADGE Compatível]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg) Correção de um problema em que clicar no botão **[!DNL Add to Cart]** em um produto simples em uma unidade Recommendations de produto redirecionava o comprador para a página inicial em vez de permanecer na página atual.
+
+### Versões anteriores
+
 ### 6.0.1 do magento/product-recommendations
 
 _19 de março de 2024_
@@ -52,8 +62,6 @@ _19 de março de 2024_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg) Suporte ao PHP 8.3 adicionado.
-
-### Versões anteriores
 
 ### 6.0.0 do magento/product-recommendations
 
@@ -125,7 +133,7 @@ _20 de março de 2023_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg) Adicionado [Suporte B2B](onboarding.md#b2bsupport) in [!DNL Product Recommendations]
-![Novo](../assets/new.svg) Adição de novos feeds ao [sincronizar dados do catálogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) para Commerce Services por meio da linha de comando
+![Novo](../assets/new.svg) Adição de novos feeds ao [sincronizar dados do catálogo](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/data-services/catalog-sync) para os Serviços da Commerce por meio da linha de comando
 
 ### 3.3.3 do magento/product-recommendations
 
