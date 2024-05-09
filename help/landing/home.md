@@ -6,16 +6,16 @@ seo-description: Access the product documentation for hosted services that help 
 breadcrumb-title: Documentação
 exl-id: b3502f96-0809-442c-9208-abb3bc6e18ec
 recommendations: noCatalog
-source-git-commit: 9558367bb80e04af1d55be63fcf4f7382e662436
+source-git-commit: 6368f95bc56cc0bd82f6bfb1d7ba47fa83bd85cb
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '371'
 ht-degree: 0%
 
 ---
 
 # Guias de serviços da Adobe Commerce
 
-O Adobe fornece uma coleção de serviços de comércio, integração e dados para ajudar os comerciantes a dar suporte aos principais componentes de seus negócios.
+O Adobe fornece uma coleção de serviços de dados, integração e Commerce para ajudar os comerciantes a dar suporte aos principais componentes de seus negócios.
 
 >[!BEGINSHADEBOX &quot;Informações sobre a versão&quot;]
 
@@ -23,7 +23,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
 
 >[!ENDSHADEBOX]
 
-## Commerce services
+## Serviços da Commerce
 
 <table>
 <tr>
@@ -53,13 +53,6 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
     <img alt="Payment Services" src="assets/payment-services.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/guide-overview.html"><strong>Payment Services</strong></a>  <br><em>(Disponível para Magento Open Source)</em>
     <div>Impulsionar a satisfação do cliente oferecendo facilmente vários métodos de pagamento, incluindo prestações de pagamento sem juros e uma única visualização do processamento de pagamentos, pedidos e faturas.</div>
-  </td>
-    </tr>
-<tr>
-  <td valign="top" width="200px">
-    <img alt="Check-out rápido" src="assets/quick-checkout.png" width="170px"/></td>
-   <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/quick-checkout/overview.html"><strong>Check-out rápido</strong></a>  <br><em>(Disponível para Magento Open Source)</em>
-    <div>Converta compradores únicos em titulares de conta fiéis fornecendo uma experiência de compra rápida e intuitiva.</div>
   </td>
     </tr>
 <tr>
@@ -112,7 +105,7 @@ Consulte [novidades da documentação](whats-new.md) ou [notas de versão](relea
    <td valign="top" width="200">
       <img alt="[!DNL Catalog Sync]" src="assets/live-search.png" width="170px"/></td>
    <td valign="top"><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html"><strong>[!DNL Catalog Sync]</strong></a>  
-    <div>A sincronização do catálogo exporta dados do produto do servidor Commerce para os Commerce services no para manter os serviços atualizados. Os indexadores, acionados por eventos como uma alteração no preço de um produto ou no nível do inventário, compilam os dados do catálogo. Você pode observar e gerenciar esse processo no painel *Catalog Sync* ou na interface de linha de comando.</div>
+    <div>A sincronização do catálogo exporta dados do produto do servidor do Commerce para os serviços da Commerce no para manter os serviços atualizados. Os indexadores, acionados por eventos como uma alteração no preço de um produto ou no nível do inventário, compilam os dados do catálogo. Você pode observar e gerenciar esse processo no painel *Catalog Sync* ou na interface de linha de comando.</div>
   </td>
 </tr>
 </table>
