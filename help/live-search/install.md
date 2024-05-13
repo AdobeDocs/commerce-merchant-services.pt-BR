@@ -3,9 +3,9 @@ title: "Introdução ao [!DNL Live Search]"
 description: "Conheça os requisitos de sistema e as etapas de instalação para [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 4138cda03e30bdeafe6e39862e8a6c99dae5da43
+source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
 workflow-type: tm+mt
-source-wordcount: '2370'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
@@ -418,6 +418,20 @@ Atualmente, os preços básicos são suportados. Os preços avançados que não 
 Examinar [API Mesh](../catalog-service/mesh.md) para cálculos de preços mais complexos.
 
 O formato de preço oferece suporte à definição da configuração local na instância do Commerce: *Lojas* > Configurações > *Configuração* > Geral > *Geral* > Opções locais > Local.
+
+### Suporte a vitrine headless
+
+Como opção, talvez seja necessário instalar o `module-data-services-graphql` módulo que expande a cobertura existente do GraphQL do aplicativo para incluir campos necessários para a coleção de dados comportamentais da loja.
+
+```bash
+composer require magento/module-data-services-graphql
+```
+
+Esse módulo adiciona contextos adicionais às consultas do GraphQL:
+
+- `dataServicesStorefrontInstanceContext`
+- `dataServicesMagentoExtensionContext`
+- `dataServicesStoreConfigurationContext`
 
 ### suporte para PWA
 
