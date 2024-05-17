@@ -3,9 +3,9 @@ title: O que é o [!DNL Live Search]?
 description: "[!DNL Live Search] O da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 362592eae354b43a3bf98e2839ffe90c21fd3593
 workflow-type: tm+mt
-source-wordcount: '667'
+source-wordcount: '726'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Com [!DNL Live Search], você pode:
 
 >[!IMPORTANT]
 >
->Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Certifique-se de ler [Limites e limites](boundaries-limits.md) antes da implementação, assegurar [!DNL Live Search] O é adequado às necessidades da sua empresa.
+>Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Antes da implementação, reveja a [Limites e limites](boundaries-limits.md) informações para assegurar que [!DNL Live Search] O é adequado às necessidades da sua empresa.
 
 ## Arquitetura
 
@@ -37,11 +37,11 @@ Com foco na velocidade, relevância e facilidade de uso, [!DNL Live Search] O é
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
 
-Para obter um vídeo mais detalhado sobre como usar e configurar o Live Search, consulte [Demonstração completa em [!DNL Live Search]](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration.html) tópico.
+Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte [Demonstração completa em [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration) tópico.
 
 ### Pesquisar enquanto digita
 
-[!DNL Live Search] O responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em uma [popover](storefront-popover.md) à medida que os compradores digitam consultas na variável [Pesquisar](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search.html#quick-search) caixa. A variável [detalhes do produto](https://experienceleague.adobe.com/docs/commerce-admin/start/storefront/storefront.html#product-page) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
+[!DNL Live Search] O responde com produtos sugeridos e uma imagem em miniatura dos principais resultados da pesquisa em uma [popover](storefront-popover.md) à medida que os compradores digitam consultas na variável [Pesquisar](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) caixa. A variável [detalhes do produto](https://experienceleague.adobe.com/en/docs/commerce-admin/start/storefront/storefront) é exibida quando os compradores clicam em um produto sugerido ou em destaque. A _Exibir todos_ no rodapé do popover exibe a página de resultados da pesquisa.
 
 [!DNL Live Search] retorna resultados de &quot;pesquisa ao digitar&quot; para uma consulta de dois ou mais caracteres. Para uma correspondência parcial, o número máximo de caracteres por palavra é 20. O número de caracteres na consulta não é configurável. O popover inclui o`name`, `sku`, e `category_ids` campos.
 
@@ -69,12 +69,13 @@ Merchandising [regras](rules.md) molde a experiência de compra com instruções
 
 ### Suporte a termos de pesquisa
 
-[!DNL Live Search] compatível com Commerce [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html). Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.
+[!DNL Live Search] compatível com Commerce [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms). Por exemplo, os usuários podem procurar por um termo como &quot;Taxas de envio&quot; e ser direcionados diretamente para a página de taxas de envio.
 
 ## Componentes do Live Search
 
 - [!DNL Live Search] [widget popover](storefront-popover.md) é a caixa que é aberta no campo de pesquisa que contém os resultados da pesquisa.
-- [Widget de página de listagem de produtos](plp-styling.md) O fornece uma página pesquisável da lista de produtos com suporte a aspectos e sinônimos.
+- [Widget de página de listagem de produtos](plp-styling.md) O (PLP) fornece uma página de listagem de produtos pesquisável com suporte a facetas e sinônimos. O widget está instalado e ativado no Live Search 4.0.0+.
+- (**Obsoleto**) O adaptador de pesquisa foi o precursor do widget PLP e foi instalado com o Live Search &lt; 4.0.0. Se você estiver usando uma versão do Live Search anterior à 4.0.0, a Commerce recomenda atualizar para receber os benefícios dos recursos do widget PLP e melhorias futuras.
 
 ## [!DNL Live Search] espaço de trabalho
 

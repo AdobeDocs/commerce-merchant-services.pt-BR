@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites e as limitações do [!DNL Live Search] para garantir que atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 589475cfc695cefb727176ee772c8d0d07e8e0a2
+source-git-commit: b7e81acf3b3c4904f96e5e3b8cfbb49e5b3dddac
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '591'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - Os preços dos produtos não incluem o imposto sobre o valor acrescentado (IVA).
 - A pesquisa de conteúdo não é suportada.
 - Há um limite de 10 mil produtos que podem ser paginados.
+- O adaptador de pesquisa não oferece suporte a atributos de produto criados com um modelo de origem personalizado e usados como facetas. Para oferecer suporte a essa funcionalidade, é necessário usar o [Widget da página de listagem de produtos](plp-styling.md).
 
 ## Indexação
 
