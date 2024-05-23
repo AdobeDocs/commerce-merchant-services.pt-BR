@@ -3,9 +3,9 @@ title: Conectar sua instância
 description: Conecte sua instância do Commerce usando uma chave de API e uma chave privada e especifique o espaço de dados na configuração.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
 workflow-type: tm+mt
-source-wordcount: '608'
+source-wordcount: '636'
 ht-degree: 0%
 
 ---
@@ -70,3 +70,10 @@ Agora que obteve as credenciais, é possível configurar o projeto SaaS e o Espa
    >[!INFO]
    >
    > Consulte nossa [[!DNL Adobe Commerce] Conector de serviços](https://experienceleague.adobe.com/docs/commerce-learn/tutorials/admin/adobe-commerce-services/configure-adobe-commerce-services-connector.html?lang=en#configuration-faqs) vídeo para obter mais informações.
+
+## Endpoint
+
+[!DNL Payment Services] usa o [Conector dos Commerce Services](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html) para se conectar aos Serviços da Commerce e implantar como SaaS. Este [!DNL Commerce Services Connector] se comunica por meio do endpoint em:
+
+* `commerce-beta.adobe.io` para ambientes de sandbox.
+* `commerce.adobe.io for` para ambientes dinâmicos.
