@@ -4,9 +4,9 @@ description: Saiba como usar o Adobe Journey Optimizer para enviar um email de c
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 5e4e7c0a-c00b-4278-bd73-6b6f2fcbe770
-source-git-commit: ee84525a9146123d80c303e40acdc6baba098cdd
+source-git-commit: 6500aaa373d8e9abf88d1ca45dc2742c83bfeca3
 workflow-type: tm+mt
-source-wordcount: '1412'
+source-wordcount: '1262'
 ht-degree: 0%
 
 ---
@@ -23,20 +23,6 @@ Crie um carrinho abandonado, navegue por e-mail ou envie notificações usando d
 |---|---|---|
 | **Definição** | Cliques ou ações que os clientes realizam no site. | Informações sobre o ciclo de vida e detalhes de cada pedido (passado e atual). |
 | **Eventos capturados pelo Adobe Commerce** | [pageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#pageview)<br>[productPageView](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events)<br>[addToCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#addtocart)<br>[openCart](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#opencart)<br>[startCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#startcheckout)<br>[completeCheckout](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events#completecheckout) | [orderPlaced](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/event-forwarding/events-backoffice#orderplaced)<br>[Histórico de pedidos](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/data-connection/fundamentals/connect-data#send-historical-order-data) |
-
-### O que posso fazer apenas com o Adobe Commerce?
-
-Usar Adobe [!DNL Commerce] para configurar lembretes de email baseados em regras, que podem servir como carrinho ou navegar em emails de abandono. Saiba mais aqui.
-
-### O que posso fazer com o Adobe [!DNL Commerce] e Experience Cloud?
-
-- **Adobe [!DNL Commerce] com o Adobe Journey Optimizer** - Utilização do Adobe [!DNL Commerce] com o Adobe Journey Optimizer permite usar [!DNL Commerce] como acionador de uma jornada de abandono omnicanal. Você pode personalizar essa jornada com base nos atributos do cliente, nos itens que eles abandonaram, em outros comportamentos de compras e em comportamentos de compras anteriores.
-
-- **Adobe Commerce, Adobe Journey Optimizer e Adobe Real-Time CDP** : a adição do Real-Time CDP permite refinar ainda mais as campanhas de abandono com base em perfis unificados de clientes e públicos gerenciados centralmente com base em regras ou AI. Por exemplo, você pode criar:
-
-   - Um público-alvo de &quot;conversores fortes&quot; com uma baixa taxa de abandono
-   - Um público-alvo de &quot;alta consideração&quot; que revisitou determinadas categorias várias vezes
-   - Um público-alvo de &quot;alto potencial&quot; com altos gastos e fidelidade, mas que abandonou recentemente
 
 ### O que outros clientes conquistaram?
 
