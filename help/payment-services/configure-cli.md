@@ -5,9 +5,9 @@ role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
 feature: Payments, Checkout, Configuration, Integration
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '489'
+source-wordcount: '548'
 ht-degree: 0%
 
 ---
@@ -48,11 +48,11 @@ bin/magento indexer:set-mode schedule sales_order_data_exporter sales_order_stat
 >
 >Se você não especificar nenhum indexador em seu comando, todos os indexadores serão atualizados com o mesmo valor. Se quiser alterar um indexador específico, você deve listá-lo no comando.
 
-Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} in the developer documentation. To learn how to change it in the Admin, see [Index management](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} no guia do usuário principal.
+Para saber mais sobre como alterar manualmente o modo de um indexador, consulte [Configurar indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#configure-indexers){target="_blank"} na documentação do desenvolvedor. Para saber como alterá-lo no Administrador, consulte [Gerenciamento de índice](https://docs.magento.com/user-guide/system/index-management.html#change-the-index-mode){target="_blank"} no guia do usuário principal.
 
 ### Reindexar dados manualmente
 
-Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obter mais informações.
+Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Gerenciar os Indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obter mais informações.
 
 Quando `BY SCHEDULE` estiver definido, o sistema rastreará as entidades alteradas e o trabalho cron atualizará o índice delas com base em um agendamento definido. Consulte [Executar cron a partir da linha de comando](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) para saber como acionar manualmente a indexação usando trabalhos cron.
 
@@ -89,3 +89,15 @@ bin/magento cron:run --group payment_services_data_export
 ```
 
 Para saber mais sobre reindexação e indexadores, consulte a [Gerenciar os indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) tópico na documentação do desenvolvedor.
+
+## Configurar processamento L2/L3
+
+[!DNL Payment Services] O pode processar dados de nível 2 e nível 3 de transações de pagamento com cartão para fornecer informações adicionais aos comerciantes.
+
+>[!WARNING]
+>
+> A integração com o processamento de Nível 2 e Nível 3 com o PayPal está disponível somente para comerciantes dos EUA. Consulte [processamento de pagamento](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
+
+Se quiser usar dados de processamento L2/L3 para [!DNL Payment Services]ou, se tiver dúvidas, entre em contato com o [!DNL Payment Services] gerente de conta.
+
+Para saber mais sobre o processamento L2 e L3 usados em [!DNL Payment Services], consulte [Processamento de nível 2 e nível 3](levels-card-payment-transactions.md).

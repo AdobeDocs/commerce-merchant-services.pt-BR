@@ -6,15 +6,15 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 9242e8eea078a00445c7f24ffc998b7d978a9775
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '85'
-ht-degree: 3%
+source-wordcount: '91'
+ht-degree: 4%
 
 ---
 
 
-# [!DNL Payment Services] para o Commerce {#payment-services}
+# [!DNL Payment Services] para Commerce {#payment-services}
 
 - [Visão geral do guia](guide-overview.md)
 - [Introdução ao [!DNL Payment Services]](overview.md)
@@ -41,6 +41,7 @@ ht-degree: 3%
    - [Relatório de status do pagamento da ordem](order-payment-status.md)
    - [Relatório de pagamentos](payouts.md)
    - [Dados disponíveis](data.md)
+   - [Processamento de nível 2 e nível 3](levels-card-payment-transactions.md)
 - Gerenciar pagamentos {#manage}
    - [Reembolsos](refunds.md)
    - [Nulos](voids.md)

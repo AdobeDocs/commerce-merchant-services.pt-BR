@@ -3,9 +3,9 @@ title: Ativar [!DNL Payment Services] para produção
 description: Conclua o processo de integração ativando [!DNL Payment Services] para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: 5fe23b5aba9ad0a2a6c995fa6ade78f46fe7e3e1
+source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
 workflow-type: tm+mt
-source-wordcount: '1006'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Você pode colocar o serviço em produção e concluir o [processo de integraç�
 
 ## Definir [!DNL Payment Services] como método de pagamento
 
-Depois que você [configurar os Commerce Services](connect.md#configure-commerce-services) e ative [teste de sandbox](sandbox.md#enable-sandbox-testing) ou [pagamentos em tempo real](#enable-live-payments), você deve definir [!DNL Payment Services] como sua forma de pagamento.
+Depois que você [configurar os serviços da Commerce](connect.md#configure-commerce-services) e ative [teste de sandbox](sandbox.md#enable-sandbox-testing) ou [pagamentos em tempo real](#enable-live-payments), você deve definir [!DNL Payment Services] como sua forma de pagamento.
 
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Clique em **[!UICONTROL Enable Payment Services]**.
@@ -144,6 +144,8 @@ Obtenha o seu [!DNL Payment Services] _ID do comerciante_:
 1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
 1. Na exibição Início, clique em **[!UICONTROL Settings]**. Consulte [Início](payments-home.md) para obter mais informações.
 1. Selecione o necessário _ID do comerciante_ e envie-o ao representante de vendas, que configurará o tipo de preço correto.
+
+Consulte [Processamento de nível 2 e nível 3](levels-card-payment-transactions.md) para obter mais informações sobre transações de pagamento.
 
 ## Habilitar pagamentos ao vivo
 
