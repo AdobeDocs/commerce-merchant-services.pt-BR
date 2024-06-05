@@ -1,13 +1,13 @@
 ---
 title: Dados disponíveis
-description: Use dados de relatórios financeiros para reconciliar relatórios com sistemas não comerciais.
+description: Use dados de relatórios financeiros para reconciliar relatórios com sistemas não-Commerce.
 role: User
 level: Intermediate
 exl-id: dbf41ce9-01f9-45d0-b651-e4c499e83822
 feature: Payments, Checkout, Data Import/Export
-source-git-commit: c4068d71eba45ea45b1c1eefc324bf830479e0e3
+source-git-commit: 9a933d41bffc2af453eed00caeb941eb18b23852
 workflow-type: tm+mt
-source-wordcount: '172'
+source-wordcount: '152'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ Alguns dados de pedidos e pagamentos estão disponíveis para que você possa co
 
 Você pode reconciliar o Adobe Commerce financial reporting com seu sistema não-Adobe Enterprise Resource Planning (ERP) usando a ID de incremento associada a um pedido específico.
 
-Quando os Serviços de pagamento enviam a ordem do Commerce para o PayPal, a ID do incremento é incluída como a `custom_id` _e_ no `invoice_id` (que também contém uma sequência aleatória após a variável `increment_id`).
+Quando os Serviços de pagamento enviam o pedido do Commerce para o PayPal, a ID do incremento é incluída como a `custom_id` _e_ no `invoice_id` (que também contém uma sequência aleatória após a variável `increment_id`).
 
 As IDs são facilmente acessíveis nos detalhes de atividade do comerciante para um pagamento e no webhook do PayPal.
 
@@ -79,5 +79,5 @@ A variável `invoice_id` e `custom_id` são exibidos perto da parte inferior dos
 
 Consulte a documentação das REST APIs do PayPal para obter mais informações:
 
-* [`purchase_unit`, em que `custom_id` e `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit:~:text=Read%20only.-,purchase_unit,-Recolher)
+* [`purchase_unit`, em que `custom_id` e `invoice_id` residir](https://developer.paypal.com/docs/api/orders/v2/#definition-purchase_unit)
 * [Mostrar detalhes do pedido](https://developer.paypal.com/docs/api/orders/v2/#orders_get)
