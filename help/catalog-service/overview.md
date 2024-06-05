@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service]'
 description: '''[!DNL Catalog Service] O para Adobe Commerce fornece uma maneira de recuperar o conteúdo das Páginas de exibição do produto e das Páginas de lista de produtos com muito mais rapidez do que as consultas nativas do Adobe Commerce GraphQL."'
 exl-id: 266faca4-6a65-4590-99a9-65b1705cac87
 recommendations: noCatalog
-source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '890'
+source-wordcount: '918'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,8 @@ Opções complexas de produto são unificadas e diferenciadas por seu comportame
 Produtos simples representam a unidade base de vendas com preço. [!DNL Catalog Service] O calcula o preço normal antes dos descontos, bem como o preço final após os descontos. Os cálculos de preço podem incluir impostos fixos do produto. Eles excluem promoções personalizadas.
 
 Um produto complexo não tem um preço definido. Em vez disso, o Serviço de catálogo retorna os preços dos simples vinculados. Como exemplo, um comerciante pode atribuir inicialmente os mesmos preços a todas as variantes de um produto configurável. Se determinados tamanhos ou cores não forem populares, o comerciante poderá reduzir os preços dessas variantes. Assim, o preço do produto complexo (configurável) inicialmente mostra uma faixa de preço, refletindo o preço de variantes padrão e impopulares. Depois que o comprador selecionar um valor para todas as opções disponíveis, a vitrine exibe um único preço.
+
+O Serviço de catálogo garante atualizações de preços e cálculos precisos, oferecendo suporte a preços com valores grandes (até 16 dígitos) e alta precisão decimal (até 4 casas decimais).
 
 >[!NOTE]
 >

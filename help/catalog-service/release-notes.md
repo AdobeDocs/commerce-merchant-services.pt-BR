@@ -3,9 +3,9 @@ title: '[!DNL Catalog Service] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes
-source-git-commit: a2841b809cfc52798dc3f1bdcc033a77333bf0e5
+source-git-commit: 7293914fab34381deb5bc841d147371f9f3470a5
 workflow-type: tm+mt
-source-wordcount: '627'
+source-wordcount: '677'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,13 @@ As atualizações incluem:
 
 _23 de maio de 2024_
 
-![Correção](../assets/fix.svg) A variável `InStock` sinalizador para valores de opção agora leva em conta o escopo `enabled` status da variante de produto.
+![Correção](../assets/fix.svg) <!--DATA-5033-->A variável `InStock` sinalizador para valores de opção agora leva em conta o escopo `enabled` status da variante de produto.
+
+![Correção](../assets/fix.svg) <!--DATA-5888-->Adicione suporte para preços de produtos que exigem números grandes (até 16 dígitos) e maior precisão decimal (até 4 casas decimais). Para aplicar as atualizações de configuração de preço ao catálogo existente, ressincronize os dados do catálogo do [Painel de gerenciamento de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard)ou usando o [Interface de linha de comando do Adobe Commerce](../landing/catalog-sync.md#command-line-interface).
+
+## Versões anteriores
+
++++ Versões anteriores
 
 ### Versão V1.18
 
@@ -37,10 +43,6 @@ _11 de abril de 2024_
 ![Novo](../assets/new.svg) Adição de suporte para PHP 8.3.
 
 ![Novo](../assets/new.svg) A variável [`products`](https://developer.adobe.com/commerce/services/graphql/catalog-service/products/) e [`refineProduct`](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/) as consultas agora retornam dados de opções personalizáveis para produtos simples e complexos.<!--DATA-5538-->
-
-## Versões anteriores
-
-+++ Versões anteriores
 
 ### Versão V1.17
 
