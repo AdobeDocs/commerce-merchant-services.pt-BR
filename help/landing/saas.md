@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
 workflow-type: tm+mt
-source-wordcount: '907'
+source-wordcount: '934'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,11 @@ As seções a seguir discutem cada um desses elementos com mais detalhes.
 
 ## Credenciais {#apikey}
 
-As chaves de API de sandbox e produção são geradas a partir do [!DNL Commerce] conta do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) que é identificado por um único [!DNL Commerce] ID (MageID). Para passar na validação de direitos para serviços como [!DNL Product Recommendations] ou [!DNL Live Search], o proprietário da licença da organização do comerciante pode gerar o conjunto de chaves de API, desde que a conta esteja em bom estado. As chaves podem ser compartilhadas de acordo com a necessidade de saber com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do detentor da licença. Além disso, os integradores de soluções também estão autorizados a usar o [!DNL Commerce Services]. Se você for um integrador de soluções, o signatário da [!DNL Commerce] o contrato de parceiro deve gerar as chaves de API.
+As chaves de API de sandbox e produção são geradas a partir do [!DNL Commerce] conta do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding) que é identificado por um único [!DNL Commerce] ID (MageID). Para passar na validação de direitos para serviços como [!DNL Product Recommendations] ou [!DNL Live Search], o proprietário da licença da organização do comerciante pode gerar o conjunto de chaves de API, desde que a conta esteja em bom estado.
+
+As chaves podem ser compartilhadas com base no &quot;conhecimento necessário&quot; com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do titular da licença. Desenvolvedores que receberam permissão [!DNL Shared Access] pelo titular da licença não pode gerar as chaves em seu nome, mesmo que a organização do comerciante esteja presente no [!DNL Switch Accounts] na conta deles.
+
+Além disso, os integradores de soluções também estão autorizados a usar o [!DNL Commerce Services]. Se você for um integrador de soluções, o signatário da [!DNL Commerce] o contrato de parceiro deve gerar as chaves de API.
 
 >[!NOTE]
 >
