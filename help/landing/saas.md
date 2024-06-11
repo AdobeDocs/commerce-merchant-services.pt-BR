@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 448cfcc1297aba21383cdba3284aeb95095360b2
+source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
 workflow-type: tm+mt
-source-wordcount: '934'
+source-wordcount: '1034'
 ht-degree: 0%
 
 ---
@@ -85,7 +85,11 @@ Para [!DNL Product Recommendations], o espaço de dados SaaS contém dados de ca
 
 ### Selecionar ou criar um projeto SaaS {#createsaasenv}
 
-Para selecionar ou criar um projeto SaaS, solicite a [!DNL Commerce] Chave de API do [!DNL Commerce] titular da licença da sua loja.
+Para selecionar ou criar um projeto SaaS, solicite a [!DNL Commerce] Chave de API do [!DNL Commerce] proprietário da licença da sua loja:
+
+>[!NOTE]
+>
+> Se você não vir a variável **[!UICONTROL Commerce Services Connector]** na seção [!DNL Commerce] , você deve instalar o [!DNL Commerce] módulos para o que desejar [[!DNL Commerce] serviço](#availableservices).
 
 1. No _Admin_ barra lateral, vá para **Sistema** > Serviços > **Conector dos Commerce Services**.
 
@@ -102,10 +106,14 @@ Qualquer projeto SaaS associado às suas chaves será exibido na **Projeto** no 
 1. Se não existirem projetos SaaS, clique em **Criar projeto**. Em seguida, no **Projeto** insira um nome para o projeto SaaS.
 
    Ao criar um projeto SaaS, [!DNL Commerce] gera um ou mais espaços de dados SaaS dependendo do [!DNL Commerce] licença:
-   - Adobe Commerce - Um espaço de dados de produção; dois espaços de dados de teste
+   - Adobe Commerce - Um espaço de dados de produção; dois espaços de dados de teste somente. Em projetos do Cloud Pro com vários ambientes de preparo, você pode solicitar espaços de dados de teste adicionais para cada ambiente de preparo ao [enviar uma solicitação de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket).
    - Magento Open Source - Um espaço de dados de produção; sem espaços de dados de teste
 
 1. Selecione o **Espaço de dados** para usar com a configuração atual do seu [!DNL Commerce] armazenamento.
+
+>[!NOTE]
+>
+>Se você tiver instâncias separadas para integrar aos Serviços da Commerce, [enviar um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um novo Projeto SaaS para cada instância adicional. Depois que o suporte tiver criado o projeto SaaS, configure a integração dos Serviços da Commerce para a instância usando a mesma chave de API e selecionando o novo projeto SaaS para o espaço de dados.
 
 >[!WARNING]
 >
