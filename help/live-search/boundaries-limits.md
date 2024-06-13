@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites e as limitações do [!DNL Live Search] para garantir que atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 63c90d4ef0e14c0baaf8c79569a01e5dffa5b450
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '651'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
@@ -43,7 +43,6 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 
 ## Query
 
-- [!DNL Live Search] O não tem acesso à taxonomia completa da árvore de categoria, o que torna alguns cenários de pesquisa de navegação em camadas fora de seu alcance.
 - [!DNL Live Search] usa um único [endpoint do GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) para consultas que oferecem suporte a recursos como facetas dinâmicas e pesquisa conforme o tipo. Embora semelhante à [API do GraphQL](https://developer.adobe.com/commerce/webapi/graphql/)Existem algumas diferenças e alguns campos podem não ser totalmente compatíveis.
 - O número máximo de resultados que podem ser retornados em uma consulta de pesquisa é 10.000.
 - Não é possível filtrar resultados usando um atributo de tipo de data.
@@ -74,3 +73,4 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
    - O grupo de clientes &quot;Não conectado&quot; deve receber permissões de navegação &quot;Permitir&quot;.
    - Para restringir produtos ao grupo de clientes &quot;Não conectado&quot;, vá para cada categoria e defina as permissões para cada grupo de clientes.
 - No momento, não há suporte para B2B com Live Search para PWA Studio.
+- Aspectos da categoria em [!DNL Live Search] O pode exibir categorias que não podem ser exibidas para um grupo de clientes específico.

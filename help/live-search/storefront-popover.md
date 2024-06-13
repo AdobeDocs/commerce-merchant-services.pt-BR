@@ -2,9 +2,9 @@
 title: "[!DNL Storefront Popover]"
 description: "O [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos."
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
-source-git-commit: c77b2f9cb55d3eb339dcc900ce606b94c592f559
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '531'
+source-wordcount: '375'
 ht-degree: 0%
 
 ---
@@ -18,19 +18,6 @@ Quando [!DNL Live Search] é [instalado](install.md), um [!DNL popover] aparece 
 Por padrão, [!DNL Live Search] suporta [redirecionamentos de termo de pesquisa](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-terms.html).
 
 ![[!DNL Live Search popover]](assets/storefront-search-as-you-type.png)
-
-## Atributos pesquisáveis
-
-Para produzir resultados altamente direcionados, revise o conjunto de [pesquisável](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) (`searchable=true`) atributos do produto. Para garantir relevância, torne os atributos pesquisáveis somente se eles tiverem conteúdo com significado claro e conciso. Evite usar atributos que contenham texto menos preciso e longo, como `description`, que embora ativadas por padrão para pesquisa, podem reduzir a precisão dos resultados da pesquisa.
-Por exemplo, se uma pessoa procurar por &quot;shorts&quot; e houver camisas com uma descrição que inclua o termo &quot;mangas curtas&quot;, as camisas serão incluídas nos resultados da pesquisa.
-
-[!DNL Live Search] respeita igualmente a [peso](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search) de um atributo de produto, conforme definido no Adobe Commerce. Atributos com um peso maior aparecerão mais altos nos resultados da pesquisa.
-
-Os seguintes atributos são sempre pesquisáveis:
-
-* `sku`
-* `name`
-* `categories`
 
 ## [!DNL Popover] tamanho da página
 

@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de versão'
 description: As informações mais recentes da versão do [!DNL Product Recommendations] do Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 316059288ace6ebaf3748a294d8fe7351fc63bbd
+source-git-commit: 76fb723c2269cfc2af197e7facc588099be8a39f
 workflow-type: tm+mt
-source-wordcount: '1315'
+source-wordcount: '1329'
 ht-degree: 0%
 
 ---
@@ -52,6 +52,7 @@ _9 de maio de 2024_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Correção](../assets/fix.svg) Correção de um problema em que clicar no botão **[!DNL Add to Cart]** em um produto simples em uma unidade Recommendations de produto redirecionava o comprador para a página inicial em vez de permanecer na página atual.
+![Bug](../assets/bug.svg) Há um erro de validação causado pelo `referenceBlock` elemento na `ProductRecommendations Layout` Arquivo XML.
 
 ### Versões anteriores
 
@@ -173,7 +174,7 @@ _20 de março de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg) Serviços de Magento renomeados para [Commerce Services](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) e melhor usabilidade no Administrador
+![Novo](../assets/new.svg) Serviços de Magento renomeados para [Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) e melhor usabilidade no Administrador
 
 ### 3.2.4 do magento/product-recommendations
 

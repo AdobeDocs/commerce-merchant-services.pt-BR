@@ -3,9 +3,9 @@ title: "Introdução ao [!DNL Live Search]"
 description: "Conheça os requisitos de sistema e as etapas de instalação para [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: c66eab4ae0dda9a447a17f357ee0bb7364dc46ba
+source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
 workflow-type: tm+mt
-source-wordcount: '2405'
+source-wordcount: '2266'
 ht-degree: 0%
 
 ---
@@ -169,7 +169,7 @@ Para obter ajuda adicional, consulte [[!DNL Live Search] catálogo não sincroni
 
 ## 5. Configurar os dados
 
-A configuração correta dos dados do produto garante bons resultados de pesquisa para os clientes. Nesta seção, você ativa os widgets da lista de produtos e atribui categorias e atributos.
+A configuração correta dos dados do produto garante bons resultados de pesquisa para os clientes. Nesta seção, você ativa os widgets da lista de produtos e atribui categorias.
 
 ### Ativar widgets de listagem de produtos
 
@@ -197,16 +197,6 @@ Ao alterar essa configuração, a mensagem `Page cache is invalidated` é exibid
 ### Atribuir categorias
 
 Produtos devolvidos em [!DNL Live Search] deve ser atribuído a um [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Isso permite uma melhor granularidade ao filtrar.
-
-### Campos pesquisáveis e filtráveis
-
-Os produtos são atribuídos [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) que pode ser usado para pesquisa e filtragem. Atributos são coisas como &quot;Cor&quot;, &quot;Tamanho&quot;, &quot;Tipo de material&quot;. Com esses atributos, os usuários podem procurar por &quot;tops verdes&quot;. Cada produto pode ter muitos atributos definidos na variável [!DNL Commerce] Admin.
-
-Cada um desses atributos pode ser definido como [&quot;pesquisável&quot;](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) em Admin. Quando definidos como &quot;pesquisáveis&quot;, esses atributos estão disponíveis para serem pesquisados por [!DNL Live Search].
-
-[Facetas](facets.md) são atributos de produto definidos no [!DNL Live Search] para ser filtrável. Qualquer atributo filtrável pode ser definido como uma faceta no [!DNL Live Search] mas há limites para quantas facetas podem ser pesquisadas de uma vez.
-
-[Sinônimos](synonyms.md) são termos que você pode definir para ajudar a orientar os usuários para o produto correto. Os usuários que procuram calças podem digitar &quot;calças&quot; ou &quot;pretas&quot;. É possível definir sinônimos para que esses termos de pesquisa direcionem os usuários aos resultados de &quot;calças&quot;.
 
 ## 6. Testar a conexão {#test-connection}
 
@@ -432,6 +422,10 @@ Esse módulo adiciona contextos adicionais às consultas do GraphQL:
 - `dataServicesStorefrontInstanceContext`
 - `dataServicesMagentoExtensionContext`
 - `dataServicesStoreConfigurationContext`
+
+### Suporte B2B
+
+[!DNL Live Search] suporta [Funcionalidade B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) com adicional [limitações](boundaries-limits.md#b2b-and-category-permissions).
 
 ### suporte para PWA
 
