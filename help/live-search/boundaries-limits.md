@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites e as limitações do [!DNL Live Search] para garantir que atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '710'
 ht-degree: 0%
 
 ---
@@ -72,5 +72,12 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
    - Os produtos devem ser atribuídos à categoria Raiz.
    - O grupo de clientes &quot;Não conectado&quot; deve receber permissões de navegação &quot;Permitir&quot;.
    - Para restringir produtos ao grupo de clientes &quot;Não conectado&quot;, vá para cada categoria e defina as permissões para cada grupo de clientes.
-- No momento, não há suporte para B2B com Live Search para PWA Studio.
+- No momento, não há suporte pronto para uso para B2B com o widget PLP no PWA Studio. No entanto, é possível [usar a API](install.md#pwa-support) para implementar essa funcionalidade.
 - Aspectos da categoria em [!DNL Live Search] O pode exibir categorias que não podem ser exibidas para um grupo de clientes específico.
+
+## [!DNL Storefront popover]
+
+- A variável [[!DNL popover]](storefront-popover.md) está disponível somente para lojas que usam o *Luma* tema ou um tema personalizado baseado em *Luma*. As navegações estruturais na página de resultados da pesquisa não terão *Luma* estilo.
+- A variável [!DNL popover] não suporta o *Em branco* tema.
+- A variável [!DNL popover] não é suportado no formulário Pedido rápido.
+- As listas de desejos e as comparações de produtos não são compatíveis.
