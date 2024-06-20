@@ -1,10 +1,11 @@
 ---
 title: Interface de linha de comando da exportação de dados SaaS
-description: "Saiba como usar os comandos da interface de linha de comando para gerenciar feeds e processos para o [!DNL data export extension] para serviços SaaS da Adobe Commerce."
+description: Saiba como usar os comandos da interface de linha de comando para gerenciar feeds e processos do [!DNL data export extension] para serviços SaaS da Adobe Commerce.
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: f360d920-7d02-4317-8c56-c7d4c4ed2ff2
+source-git-commit: af9de40a717d2cb55a5f42483bd0e4cbcd913f64
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '574'
 ht-degree: 0%
 
 ---
@@ -21,10 +22,24 @@ O Adobe não recomenda usar o `saas:resync` comando regularmente. Os cenários t
 
 ## Sincronização inicial
 
+>[!NOTE]
+>Se você estiver usando o Live Search ou o Product Recommendations, não será necessário executar a sincronização inicial. O processo é iniciado automaticamente depois que você conecta o serviço à sua instância do Commerce.
+
 Quando você aciona um `saas:resync` na linha de comando, dependendo do tamanho do catálogo, pode levar de alguns minutos a algumas horas para que os dados sejam atualizados.
 
->[!NOTE]
->Se estiver usando o Live Search ou o Product Recommendations, não será necessário iniciar a sincronização. O processo é iniciado automaticamente depois que você conecta o serviço à sua instância do Commerce.
+Para a sincronização inicial, o Adobe recomenda executar os comandos na seguinte ordem:
+
+```bash
+bin/magento saas:resync --feed productattributes
+bin/magento saas:resync --feed products
+bin/magento saas:resync --feed scopesCustomerGroup
+bin/magento saas:resync --feed scopesWebsite
+bin/magento saas:resync --feed prices
+bin/magento saas:resync --feed productoverrides
+bin/magento saas:resync --feed variants
+bin/magento saas:resync --feed categories
+bin/magento saas:resync --feed categoryPermissions
+```
 
 ## Exemplos de comandos
 
