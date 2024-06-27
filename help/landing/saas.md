@@ -1,12 +1,12 @@
 ---
-title: Conector dos Commerce Services
+title: Commerce Services Connector
 description: Saiba como integrar sua instância do Adobe Commerce ou Magento Open Source a serviços usando chaves de API de produção e sandbox.
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 84238910d58e0635ae38a0ebe54903b2a2d9d666
+source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
 workflow-type: tm+mt
-source-wordcount: '1034'
+source-wordcount: '1051'
 ht-degree: 0%
 
 ---
@@ -91,7 +91,7 @@ Para selecionar ou criar um projeto SaaS, solicite a [!DNL Commerce] Chave de AP
 >
 > Se você não vir a variável **[!UICONTROL Commerce Services Connector]** na seção [!DNL Commerce] , você deve instalar o [!DNL Commerce] módulos para o que desejar [[!DNL Commerce] serviço](#availableservices).
 
-1. No _Admin_ barra lateral, vá para **Sistema** > Serviços > **Conector dos Commerce Services**.
+1. No _Admin_ barra lateral, vá para **Sistema** > Serviços > **Commerce Services Connector**.
 
    Se você não vir a variável **[!UICONTROL Commerce Services Connector]** na seção [!DNL Commerce] , instale o [!DNL Commerce] módulos para o que desejar [[!DNL Commerce] serviço](#availableservices). Além disso, verifique se o plug-in `magento/module-services-id` pacote está instalado.
 
@@ -125,6 +125,6 @@ Para alterar os nomes do projeto SaaS ou do espaço de dados, clique em **Renome
 
 Para conectar sua instância do Adobe Commerce à Adobe Experience Platform, faça logon em sua conta Adobe usando sua Adobe ID. Após fazer logon, a organização IMS associada à sua conta Adobe é exibida nesta seção.
 
-## Sincronização do catálogo
+## Exportação de dados SaaS
 
-Quando o [!DNL Commerce] instância se conecta com sucesso ao [!DNL Commerce Services], o processo de sincronização do catálogo exporta dados do produto do [!DNL Commerce] servidor para [!DNL Commerce Services]. Atualmente, somente o Recommendations de produto usa o serviço de sincronização de catálogo. [Saiba mais](catalog-sync.md) sobre o processo de sincronização de catálogo.
+Quando o [!DNL Commerce] instância se conecta com sucesso ao [!DNL Commerce Services], o processo de exportação de dados SaaS exporta dados do Commerce do seu [!DNL Commerce] servidor para [!DNL Commerce SaaS Services] para que possa ser sincronizado com os serviços conectados da Commerce. No Admin, é possível verificar o status da sincronização usando o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Para obter detalhes, consulte [Guia de exportação de dados SaaS](../data-export/overview.md).
