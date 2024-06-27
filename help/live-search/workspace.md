@@ -2,9 +2,9 @@
 title: 'Configurando o Live Search'
 description: A variável [!DNL Live Search] O espaço de trabalho é usado para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 099a4b9ce3ab71bc3c7ae181be242863a55d0ca9
+source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
 workflow-type: tm+mt
-source-wordcount: '828'
+source-wordcount: '921'
 ht-degree: 0%
 
 ---
@@ -14,6 +14,19 @@ ht-degree: 0%
 O espaço de trabalho é onde você configura, gerencia e monitora o desempenho do [!DNL Live Search]. O menu na parte superior fornece acesso às ferramentas em cada área funcional. Os recursos disponíveis refletem a seleção de menu atual.
 
 ![Workspace](assets/workspace.png)
+
+## Coleta de dados
+
+Para garantir que cada área funcional do espaço de trabalho contenha os dados corretos, é necessário configurar a coleta de dados com base na implementação de vitrine selecionada:
+
+1. Luma - A coleção de dados está disponível e pronta para uso.
+1. Headless - a coleta de dados deve ser configurada manualmente, dependendo da implementação da loja.
+
+Se você estiver usando uma loja headless, consulte a seguinte documentação para obter mais informações sobre os eventos necessários que precisam ser adicionados:
+
+- [Eventos obrigatórios](events.md) para o painel do Live Search.
+- [Colecionador de eventos da vitrine eletrônica](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/) que precisa ser adicionado como pré-requisito.
+- [Exemplos](https://github.com/adobe/commerce-events/tree/main/examples) da estrutura de eventos.
 
 ## Definir o escopo
 
@@ -47,9 +60,9 @@ Para permitir que os atributos sejam pesquisáveis, conclua as seguintes etapas:
 
 Os seguintes atributos são sempre pesquisáveis:
 
-* `sku`
-* `name`
-* `categories`
+- `sku`
+- `name`
+- `categories`
 
 [Facetas](facets.md) são atributos de produto definidos no [!DNL Live Search] para ser filtrável. Você pode definir qualquer atributo filtrável como uma faceta no [!DNL Live Search], mas há [limites](boundaries-limits.md) para saber quantas facetas você pode pesquisar de uma vez.
 
