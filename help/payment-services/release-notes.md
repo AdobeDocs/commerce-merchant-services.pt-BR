@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de versão"
 description: Revise as notas de versão para obter informações sobre tudo [!DNL Payment Services] versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 9b4ce379728b126390177d64c10d57b2c587619c
+source-git-commit: 9f0381546a98a8a5d72394adbd3ddd49daf539cb
 workflow-type: tm+mt
-source-wordcount: '2502'
+source-wordcount: '2547'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,10 @@ Saiba mais sobre as próximas versões do, o suporte ao produto e quais versões
 Essas notas de versão descrevem alterações e correções de recursos que ocorreram e foram lançadas fora das versões de recursos regulares do serviço hospedado.
 
 +++Atualizações do serviço hospedado
+
+_9 de julho de 2024_
+
+![Novo problema](../assets/new.svg)<!-- Issue PAY-5488 --> Agora, os comerciantes podem exibir a ID do cliente da Commerce como uma coluna na [relatório de transações](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/transactions.html) para ajudar a identificar as transações que um cliente específico fez. Além disso, os comerciantes podem filtrar o relatório de transações por essa ID de cliente da Commerce para pedidos associados.
 
 _5 de março de 2024_
 
@@ -171,6 +175,7 @@ _7 de dezembro de 2023_
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
 ![Novo](../assets/new.svg)<!-- PAY-5047 --> A marca do cartão de crédito/débito ou o tipo de método de pagamento agora está disponível nos seguintes locais:
+
 - a página de pedido do cliente na loja
 - o email de confirmação do pedido enviado ao comprador
 - do [exibição dos detalhes do pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/order-processing.html#view-an-order) no Administrador do Commerce.
@@ -189,7 +194,7 @@ _27 de setembro de 2023_
 
 [!BADGE Compatível]{type=Informative tooltip="Compatível"}
 
-![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4870 --> Correção de um problema que preenchia incorretamente o novo atributo de cabeçalho na Loja ao enviar a versão da extensão com a versão mais recente. Anteriormente, com o `1.3.0` do conector Commerce Services, não foi possível estender o `User-Agent header` do [!DNL Payment Services] extensão.
+![Problema corrigido](../assets/fix.svg)<!-- Issue PAY-4870 --> Correção de um problema que preenchia incorretamente o novo atributo de cabeçalho na Loja ao enviar a versão da extensão com a versão mais recente. Anteriormente, com o `1.3.0` do conector de Serviços Commerce, não foi possível estender o `User-Agent header` do [!DNL Payment Services] extensão.
 
 ## v2.2.0
 
