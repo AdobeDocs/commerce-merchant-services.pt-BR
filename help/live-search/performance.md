@@ -1,6 +1,6 @@
 ---
 title: "Desempenho"
-description: "O [!DNL Live Search] O espaço de trabalho de desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
+description: "O espaço de trabalho  [!DNL Live Search] Desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt
@@ -11,7 +11,7 @@ ht-degree: 0%
 
 # Desempenho
 
-A variável *Desempenho* o workspace fornece informações sobre os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O espaço de trabalho Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
+O espaço de trabalho *Desempenho* fornece informações sobre os termos de pesquisa que os compradores usam. As informações podem ser usadas para identificar tendências, aumentar o click-through e melhorar o índice de conversão. O espaço de trabalho Desempenho fornece um instantâneo das métricas de pesquisa para um intervalo de datas específico e inclui os seguintes relatórios:
 
 * Pesquisas únicas
 * Zero resultados
@@ -19,7 +19,7 @@ A variável *Desempenho* o workspace fornece informações sobre os termos de pe
 
 ![Desempenho](assets/performance-unique-searches.png)
 
-Você também pode consultar a [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
+Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
 
 ## Exibir um relatório
 

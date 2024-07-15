@@ -1,33 +1,33 @@
 ---
 title: Configuração geral
-description: Definir configurações gerais para habilitar [!DNL Store Fulfillment] para sua loja. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para habilitar a integração entre o Adobe Commerce e os serviços de Atendimento da loja.
+description: Defina as configurações gerais para habilitar [!DNL Store Fulfillment] para seu armazenamento. Defina as configurações de extensão global, as configurações do sistema para registro, sincronização de dados e segurança. Forneça os principais dados para habilitar a integração entre o Adobe Commerce e os serviços de Atendimento da loja.
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2405'
 ht-degree: 0%
 
 ---
 
 # Serviço de armazenamento e configuração de vendas
 
-Ativar [!DNL Store Fulfillment] extensão do [!DNL Commerce] Admin definindo as configurações de extensão, as configurações de segurança para usuários do aplicativo Store Assist e as opções do método de entrega.
+Habilite a extensão [!DNL Store Fulfillment] no Administrador [!DNL Commerce] definindo as configurações de extensão, as configurações de segurança para os usuários do aplicativo Store Assist e as opções de método de entrega.
 
 >[!IMPORTANT]
 >
->A configuração do serviço Store Fulfillment se aplica somente depois que você conecta a instância do Adobe Commerce e a [!DNL Store Fulfillment] aplicativo. Consulte [Conectar Atendimento da Loja](connect-set-up-service.md).
+>A configuração do serviço de Atendimento da Loja se aplica somente após a conexão da instância do Adobe Commerce e do aplicativo [!DNL Store Fulfillment]. Consulte [Atendimento do Connect Store](connect-set-up-service.md).
 
 ## Gerenciar configurações de Serviços de Atendimento da Loja
 
-Gerenciar configurações para Serviços de Atendimento da Loja do [!DNL Commerce Admin Store Configuration] menu.
+Gerencie as configurações dos serviços de Atendimento da Loja no menu [!DNL Commerce Admin Store Configuration].
 
-- Habilite a extensão, defina as configurações globais e especifique as opções de segurança para conexões de usuário e contas do aplicativo Store Assist selecionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
+- Habilite a extensão, defina as configurações globais e especifique as opções de segurança para conexões e contas de usuário do aplicativo Store Assist, selecionando **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**.
 
-  ![Configuração de serviços da Loja do Administrador para Atendimento da Loja](assets/store-services-admin-sf-config.png)
+  ![Configuração de serviços do Admin Store para Atendimento do Repositório](assets/store-services-admin-sf-config.png)
 
-- Configurar métodos de delivery selecionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
+- Configure os métodos de entrega selecionando **[!UICONTROL Store > Configuration > Sales > Delivery Methods > In-Store Pickup]**.
 
   ![Configuração de vendas da Loja do Administrador para Atendimento da Loja](assets/store-sales-admin-sf-deliver-config.png)
 
@@ -67,11 +67,11 @@ Gerenciar configurações para Serviços de Atendimento da Loja do [!DNL Commerc
 
 >[!NOTE]
 >
->A variável [!UICONTROL Search Radius] A configuração só será usada se você tiver configurado o [localização de armazenamento e configuração de mapeamento](store-location-map-provider-setup.md) para Adobe Commerce.
+>A configuração [!UICONTROL Search Radius] será usada somente se você tiver configurado a [localização de repositório e a configuração de mapeamento](store-location-map-provider-setup.md) para o Adobe Commerce.
 
 ## Habilitar a solução Store Fulfillment
 
-Ativar o [!DNL Store Fulfillment] solução para adicionar os recursos de retirada na loja e à beira-mar às experiências de compra e check-out na loja da Adobe Commerce.
+Habilite a solução [!DNL Store Fulfillment] para adicionar os recursos de retirada na loja e na beira da calçada às experiências de compra e check-out na loja da Adobe Commerce.
 
 <table>
 <thead>
@@ -85,7 +85,7 @@ Ativar o [!DNL Store Fulfillment] solução para adicionar os recursos de retira
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enabled]</strong></td>
-<td>Habilitar ou desabilitar a solução. Quando habilitado, configure e use os recursos de Atendimento da Loja e estabeleça a conexão entre sua loja da Adobe Commerce e [!DNL Store Fulfillment] serviços. Quando desabilitados, todos os recursos de Atendimento da Loja são desabilitados e não há comunicação entre o Adobe Commerce e os serviços de Atendimento da Loja. As informações da ordem não podem ser processadas ou recebidas.</td>
+<td>Habilitar ou desabilitar a solução. Quando habilitado, configure e use os recursos de Atendimento da Loja e estabeleça a conexão entre sua loja da Adobe Commerce e os serviços do [!DNL Store Fulfillment]. Quando desabilitados, todos os recursos de Atendimento da Loja são desabilitados e não há comunicação entre o Adobe Commerce e os serviços de Atendimento da Loja. As informações da ordem não podem ser processadas ou recebidas.</td>
 <td>Site</td>
 <td>Sim</td>
 </tr>
@@ -103,7 +103,7 @@ Ativar o [!DNL Store Fulfillment] solução para adicionar os recursos de retira
 </tr>
 <tr>
 <td><strong>[!UICONTROL Environment]</strong></td>
-<td>Selecione <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Selecionar [!UICONTROL Sandbox] permite a comunicação com serviços de fulfillment em um ambiente de teste.<br></br>Selecionar [!UICONTROL Production] permite a comunicação com serviços de fulfillment em um ambiente ativo.<br></br>Você recebe um conjunto de credenciais para cada ambiente e pode gerenciar ambos os conjuntos na mesma instalação. <br></br>Salve as credenciais antes de validar a conexão.</td>
+<td>Selecione <i>[!UICONTROL Sandbox]</i> ou <i>[!UICONTROL Production]</i><br></br>Selecionar [!UICONTROL Sandbox] habilita a comunicação com serviços de preenchimento em um ambiente de teste.<br></br>Selecionar [!UICONTROL Production] habilita a comunicação com os serviços de preenchimento em um ambiente ativo.<br></br>Você recebeu um conjunto de credenciais para cada ambiente e pode gerenciar ambos os conjuntos na mesma instalação. <br></br>Salve as credenciais antes de validar a conexão.</td>
 <td>Global</td>
 <td>Sim</td>
 </tr>
@@ -139,19 +139,19 @@ Ativar o [!DNL Store Fulfillment] solução para adicionar os recursos de retira
 </tr>
 </table>
 
-Após configurar o [!UICONTROL Account Credentials], selecione <strong>[!UICONTROL Validate Credentials]</strong> para verificar e estabelecer uma conexão com o serviço de abastecimento de armazenamento pela primeira vez.
+Após configurar o [!UICONTROL Account Credentials], selecione <strong>[!UICONTROL Validate Credentials]</strong> para verificar e estabelecer uma conexão com o serviço de preenchimento de repositório pela primeira vez.
 
 ## Configurar registro
 
-Os logs dos serviços de fornecimento de armazenamento estão disponíveis no arquivo de log `var/log/walmart-bopis.log`.
+Os logs dos serviços de preenchimento de repositório estão disponíveis no arquivo de log `var/log/walmart-bopis.log`.
 
 Solicite ao administrador do sistema que configure seus ambientes para permitir o tratamento de exceções para que as exceções relacionadas à API possam ser capturadas por meio do firewall ou do cache.
 
-Como o arquivo de log do aplicativo pode crescer rapidamente, habilite o registro para o aplicativo somente por um curto período quando necessário - por exemplo, ao solucionar problemas de preenchimento de lojas para um [!DNL Commerce] pedido. Essa configuração evita problemas de tempo de resposta em ambientes de produção causados por arquivos de log grandes.
+Como o arquivo de log do aplicativo pode crescer rapidamente, habilite o log do aplicativo somente por um curto período quando necessário - por exemplo, ao solucionar problemas de preenchimento de repositório para um pedido [!DNL Commerce]. Essa configuração evita problemas de tempo de resposta em ambientes de produção causados por arquivos de log grandes.
 
 >[!TIP]
 >
->Para instalações locais do Adobe Commerce, peça ao administrador do sistema para configurar a rotação de log para o `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) no _Guia de instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
+>Para instalações locais do Adobe Commerce, peça ao administrador do sistema para configurar a rotação de log para o arquivo `var/log/walmart-bopis.log` para minimizar o tamanho. Para instalações locais do Adobe Commerce, consulte [Rotação de logs](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/next-steps/configuration.html#server-settings) no _Guia de Instalação do Adobe Commerce_. Para projetos de infraestrutura em nuvem do Adobe Commerce, consulte [Exibir e gerenciar logs](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/develop/test/log-locations.html).
 
 <table>
 <thead>
@@ -165,7 +165,7 @@ Como o arquivo de log do aplicativo pode crescer rapidamente, habilite o registr
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Debug Mode]</strong></td>
-<td>O Modo de depuração é usado para aumentar a atividade registrada na integração. Quando desativado, nenhuma informação de depuração é registrada. Quando ativado, todas as informações de depuração são registradas <br></br>Todos os dados registrados podem ser encontrados no arquivo: <pre>var/log/walmart-bopis.log</pre>
+<td>O Modo de depuração é usado para aumentar a atividade registrada na integração. Quando desativado, nenhuma informação de depuração é registrada. Quando habilitado, todas as informações de depuração são registradas <br></br>Todos os dados registrados podem ser encontrados no arquivo: <pre>var/log/walmart-bopis.log</pre>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -190,13 +190,13 @@ Você pode exibir detalhes sobre operações de sincronização de ordens no pai
 </tr>
 <tr>
 <td><strong>[!UICONTROL Retry Critical Error]</strong></td>
-<td>Especifica as tentativas de repetição para uma operação de sincronização de registros após a ocorrência de um erro crítico.<br></br>Erros críticos ocorrem sempre que a integração não obtém uma resposta positiva do serviço de preenchimento. Esses problemas ocorrem quando o serviço está inativo ou quando há um erro nos dados do pedido que está sendo enviado.<br></br>Quando o limite de novas tentativas é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros de <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> Gerenciamento no Administrador. Para solucionar problemas de itens com falha consistente, entre em contato com o Gerente de conta.</td>
+<td>Especifica as tentativas de repetição para uma operação de sincronização de registros após a ocorrência de um erro crítico.<br></br>Erros críticos ocorrem sempre que a integração falha ao obter uma resposta positiva do serviço de preenchimento. Esses problemas ocorrem quando o serviço está inativo ou quando há um erro nos dados do pedido que está sendo enviado.<br></br>Quando o limite de novas tentativas é atingido, o item permanece em uma fila, mas não é processado novamente. Exibir todos os itens com erros do Gerenciamento <strong>[!UICONTROL System > Tools > Store Fulfillment Queue]</strong> no Administrador. Para solucionar problemas de itens com falha consistente, entre em contato com o Gerente de conta.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Error Notification Email]</strong></td>
-<td>Ativar notificações de erro para receber um email quando a variável [!UICONTROL Retry Critical Error Threshold] é atingido para um pedido. A notificação inclui todos os detalhes disponíveis sobre o erro.</td>
+<td>Habilite as notificações de erro para receber um email quando o [!UICONTROL Retry Critical Error Threshold] for alcançado para um pedido. A notificação inclui todos os detalhes disponíveis sobre o erro.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -228,19 +228,19 @@ Você pode exibir detalhes sobre operações de sincronização de ordens no pai
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Barcode Source]</strong></td>
-<td>O atributo de catálogo que armazena o código digitalizável para itens correspondentes em seus locais de comerciante.<br></br>Se você tiver apenas uma localização de comerciante existente, é provável que você use códigos UPC, enquanto seu canal de comércio eletrônico identifica produtos por SKU. Nesse cenário, selecione o atributo de catálogo que contém o código UPC.<br></br>Essa configuração garante que as ordens enviadas aos itens da lista de lojas com o identificador correto, para que as associadas de loja possam verificar os itens com precisão durante o processo de separação.<br></br>Se não tiver certeza, verifique com seus associados de preenchimento no departamento de Entrega e Separação para determinar qual atributo deve ser enviado. Se o atributo não estiver incluído no banco de dados, você poderá adicioná-lo ao conjunto de atributos do produto Adobe Commerce.</td>
+<td>O atributo de catálogo que armazena o código digitalizável para itens correspondentes em seus locais de comerciante.<br></br>Se você tiver apenas uma localização de comerciante existente, é provável que use códigos UPC, enquanto o canal de comércio eletrônico identifica produtos por SKU. Nesse cenário, selecione o atributo de catálogo que contém o código UPC.<br></br>Essa configuração garante que as ordens enviadas para os itens da lista de lojas com o identificador correto, para que as associadas de loja possam verificar com precisão os itens durante o processo de separação.<br></br>Se não tiver certeza, consulte seus associados de preenchimento no departamento de Remessa e Separação para determinar qual atributo deve ser enviado. Se o atributo não estiver incluído no banco de dados, você poderá adicioná-lo ao conjunto de atributos do produto Adobe Commerce.</td>
 <td>Site</td>
 <td>Sim</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Barcode Type]</strong></td>
-<td>O atributo de catálogo que armazena a origem do código de barras para itens correspondentes em seus locais de comerciante.<br></br>Essa configuração garante que as ordens enviadas aos itens da lista de lojas com o identificador correto, para que as associadas de loja possam verificar os itens com precisão durante o processo de separação. As opções incluem - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Preço incorporado UPC.<br></br>Se não tiver certeza, selecione a opção mais parecida com os valores contidos nas [!UICONTROL Barcode Source] atributo. Os associados da loja ainda podem corresponder itens manualmente em sua lista de separação.</td>
+<td>O atributo de catálogo que armazena a origem do código de barras para itens correspondentes em seus locais de comerciante.<br></br>Essa configuração garante que as ordens enviadas para os itens da lista de lojas com o identificador correto, para que as associações de loja possam verificar com precisão os itens durante o processo de separação. As opções incluem - SKU, UPC, GTIN, UPCA, EAN13, UPCE0, DISA, UAB, CODABAR, Preço incorporado UPC.<br></br>Se não tiver certeza, selecione a opção mais parecida com os valores contidos no seu atributo [!UICONTROL Barcode Source]. Os associados da loja ainda podem corresponder itens manualmente em sua lista de separação.</td>
 <td>Site</td>
 <td>Sim</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Max Number of Items]</strong></td>
-<td>O número máximo de itens a serem enviados da fila de atendimento de armazenamento de uma vez.<br></br>As ordens de BOPIS são enviadas ao serviço de fulfillment em lotes, em intervalos regulares. Essa configuração permite controlar o tamanho do lote.<br></br>O valor padrão é 100 itens. Dependendo do volume e da capacidade do seu pedido, você pode ajustar o valor máximo para cima ou para baixo.</td>
+<td>O número máximo de itens a serem enviados da fila de atendimento de armazenamento de uma vez.<br></br>Os pedidos BOPIS são enviados ao serviço de atendimento em lotes, em intervalos regulares. Essa configuração permite controlar o tamanho do lote.<br></br>O valor padrão é 100 itens. Dependendo do volume e da capacidade do seu pedido, você pode ajustar o valor máximo para cima ou para baixo.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -265,7 +265,7 @@ Configure as opções de envio de Store Fulfillment que determinam a disponibili
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship To Store]</strong></td>
-<td>A configuração de entrega para armazenamento baseia-se nos recursos existentes de entrega para armazenamento. Se você usa o Inventory management, ou se você pode aceitar e atender ordens em locais de comerciantes sem inventário por meio de transferências de inventário de loja para loja, defina esta opção como "Sim".<br></br>Se você não puder suportar a opção entregar para armazenamento ou não quiser oferecê-la, defina como "Não". Quando desativados, os itens no catálogo com inventário zero para uma loja de comerciantes ou os itens que estão abaixo do [!DNL Out of Stock Threshold] para esse local, não são oferecidos com opções de coleta na loja.<br></br>É possível ajustar o valor dessa configuração por localização do comerciante.</td>
+<td>A configuração de entrega para armazenamento baseia-se nos recursos existentes de entrega para armazenamento. Se você usa o Inventory management, ou se você pode aceitar e atender ordens em locais de comerciantes sem inventário por meio de transferências de inventário de loja para loja, defina esta opção como "Sim".<br></br>Se você não puder oferecer suporte à opção entregar para armazenamento ou não quiser oferecê-la, defina como `Não`. Quando desabilitados, os itens do catálogo com estoque zero para uma loja de comerciantes, ou os itens que estão abaixo de [!DNL Out of Stock Threshold] para esse local, não são oferecidos com as opções de retirada na loja.<br></br>Você pode ajustar o valor dessa configuração por localização do comerciante.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -286,7 +286,7 @@ Configure as opções de envio de Store Fulfillment que determinam a disponibili
 <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable Ship From Store]</strong></td>
-<td>Ativa ou desativa a opção Entrega em casa nas lojas do comerciante. Quando ativado, seus locais de loja de comerciantes são considerados em conjunto com outras fontes atribuídas no estoque associado ao seu site.<br></br>Nos serviços Inventory management padrão, a variável [!DNL Ship from Store] A opção is é inerente e não pode ser desativada. Com a solução Store Fulfillment, você pode ativá-la ou desativá-la.<br></br>Você pode ajustar essa configuração por localização e produto do comerciante.</td>
+<td>Ativa ou desativa a opção Entrega em casa nas lojas do comerciante. Quando ativado, seus locais de loja de comerciantes são considerados em conjunto com outras fontes atribuídas no estoque associado ao seu site.<br></br>Nos serviços padrão do Inventory management, a opção [!DNL Ship from Store] é inerente e não pode ser desabilitada. Com a solução Store Fulfillment, você pode ativá-la ou desativá-la.<br></br>Você pode ajustar essa configuração por localização e produto do comerciante.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -318,7 +318,7 @@ Defina as configurações da segurança de senha e conta de usuário do Aplicati
 </tr>
 <tr>
 <td><strong>[!UICONTROL Maximum Login Failures to Lockout Account]</strong></td>
-<td>Especifica o número de tentativas de logon com falha permitidas antes que uma associada de armazenamento seja bloqueada de sua conta.<br></br>Para desativar o bloqueio de conta, defina o valor como 0.</td>
+<td>Especifica o número de tentativas de logon com falha permitidas antes que uma associada de armazenamento seja bloqueada de sua conta.<br></br>Para desabilitar o bloqueio de conta, defina o valor como 0.</td>
 <td>Global</td>
 <td>Não</td>
 </tr>
@@ -345,17 +345,18 @@ Defina as configurações da segurança de senha e conta de usuário do Aplicati
 
 ## Métodos de delivery
 
-O Atendimento da loja funciona estendendo o Adobe Commerce nativo [!DNL In-Store Delivery] recursos. Após instalar a extensão, é possível configurar métodos de entrega na loja usando as seguintes configurações estendidas que são adicionadas ao Administrador.
+A Store Fulfillment funciona estendendo os recursos nativos do Adobe Commerce [!DNL In-Store Delivery]. Após instalar a extensão, é possível configurar métodos de entrega na loja usando as seguintes configurações estendidas que são adicionadas ao Administrador.
 
-- **Coleta na loja**—Opções de oferta para entrega na loja durante o processo de finalização Essas configurações configuram os cenários de entrega mais comuns para pedidos BOPIS.
+- **Coleta na loja** — Opções de oferta para entrega na loja durante o processo de check-out
+Essas configurações definem os cenários de entrega mais comuns para pedidos BOPIS.
 
-- **[!UICONTROL Curbside pick up]**-Oferecer opções para que os clientes estacionem em um local de loja e tenham seu pedido entregue a eles por um associado de loja.
+- **[!UICONTROL Curbside pick up]**-Ofereça opções para que os clientes estacionem em um local de loja e que seus pedidos sejam entregues a eles por um associado da loja.
 
 Defina essas configurações no Administrador selecionando <strong>[!UICONTROL Stores > Configuration > Sales > Delivery Methods > In-Store Pickup]</strong>.
 
 >[!NOTE]
 >
->Para obter informações adicionais sobre como configurar as opções de entrega na loja, consulte [Entrega na loja](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) no _Guia do usuário do Adobe Commerce_.
+>Para obter informações adicionais sobre a configuração das opções de entrega na loja, consulte [Entrega na loja](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) no _Guia do Usuário do Adobe Commerce_.
 
 
 ### Configuração de métodos de entrega
@@ -374,13 +375,13 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
  <tbody>
 <tr>
 <td><strong>[!UICONTROL Enable In-Store Pickup]</strong></td>
-<td>Habilite ou desabilite a opção de retirada na loja disponível durante o check-out para clientes que escolhem a retirada da loja. Quando a coleta na loja está desativada, a opção não é exibida.<br></br>Essa configuração global se aplica a todos os locais de lojas de varejo. Quando ativado, você pode desativá-lo seletivamente no local da loja de varejo.</td>
+<td>Habilite ou desabilite a opção de retirada na loja disponível durante o check-out para clientes que escolhem a retirada da loja. Quando a coleta na loja está desativada, a opção não é exibida.<br></br>Esta configuração global se aplica a todos os locais de lojas de varejo. Quando ativado, você pode desativá-lo seletivamente no local da loja de varejo.</td>
 <td>Site</td>
 <td>Não</td>
 </tr>
 <tr>
 <td><strong>[!UICONTROL Enable Curbside Pickup]</strong></td>
-<td>Habilite ou desabilite a opção de retirada à beira-mar durante o processo de finalização para clientes que escolhem a retirada da loja.<br></br>Essa configuração global se aplica a todos os locais de lojas de varejo. Quando ativado, você pode desativá-lo seletivamente no local da loja de varejo.</td>
+<td>Habilite ou desabilite a opção de retirada à beira-mar durante o processo de finalização para clientes que escolhem a retirada da loja.<br></br>Esta configuração global se aplica a todos os locais de lojas de varejo. Quando ativado, você pode desativá-lo seletivamente no local da loja de varejo.</td>
 <td>Site</td>
 <td>Não</td>
 </tr>
@@ -400,7 +401,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </thead>
 <tbody><tr>
 <td><strong>Título da entrega inicial</strong></td>
-<td>Especifica o título a ser exibido para a opção Entrega inicial nas áreas do produto, carrinho e finalização. A entrega em casa refere-se aos recursos de entrega padrão do Adobe Commerce — de um depósito, por uma transportadora ou diretamente para o endereço de entrega fornecido pelo cliente. </br></br>Essa etiqueta não afeta as etiquetas do método de envio da transportadora selecionada.</td>
+<td>Especifica o título a ser exibido para a opção Entrega inicial nas áreas do produto, carrinho e finalização. A entrega em casa refere-se aos recursos de entrega padrão do Adobe Commerce — de um depósito, por uma transportadora ou diretamente para o endereço de entrega fornecido pelo cliente. </br></br>Este rótulo não afeta os rótulos do método de envio da transportadora selecionada.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -436,7 +437,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </tr>
 <tr>
 <td><strong>Instruções de retirada na loja</strong></td>
-<td>Quando um pedido estiver pronto para retirada em suas lojas de varejo, o cliente será notificado por e-mail. Se o cliente selecionou [!DNL In-Store Pickup] durante a finalização da compra, você pode personalizar as instruções de retirada aqui. </br></br>Essas instruções são definidas globalmente e se aplicam a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
+<td>Quando um pedido estiver pronto para retirada em suas lojas de varejo, o cliente será notificado por e-mail. Se o cliente selecionou [!DNL In-Store Pickup] durante o check-out, você pode personalizar as instruções de retirada aqui. </br></br>Essas instruções são definidas globalmente e se aplicam a todos os locais de lojas de varejo. Você também pode personalizar as instruções no nível do local da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -454,7 +455,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </tr>
 <tr>
 <td><strong>Rótulo de tempo estimado de retirada</strong></td>
-<td>Exibe o tempo estimado até que um pedido esteja disponível para retirada do cliente. Essas informações são exibidas para os clientes quando eles selecionam um local de loja de varejo para a [!DNL In-Store Pickup] opção de entrega. </br></br>Ao personalizar esse rótulo, você pode usar o código <code>%1</code> para inserir seu <strong>Lead Time de Retirada Estimado</strong>. Por exemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Essa configuração se aplica a todos os locais de loja de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</td>
+<td>Exibe o tempo estimado até que um pedido esteja disponível para retirada do cliente. Essas informações são mostradas aos clientes quando eles selecionam um local de loja de varejo para a opção de entrega [!DNL In-Store Pickup]. </br></br>Ao personalizar este rótulo, você pode usar o código <code>%1</code> para inserir seu <strong>Prazo de Entrega Estimado</strong>. Por exemplo:</br></br><code>Ready for Pickup in %1 minutes.</code></br></br>Essa configuração se aplica a todos os locais de lojas de varejo. Você também pode personalizar o prazo de entrega no nível de localização da loja de varejo.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 <tr>
@@ -480,7 +481,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </thead>
 <tbody><tr>
 <td><strong>Em Estoque</strong></td>
-<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para os itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL in-stock]</em> rótulo de status aqui.</td>
+<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para os itens atuais é mostrada para cada local. </br></br>Você pode personalizar o rótulo de status <em>[!UICONTROL in-stock]</em> aqui.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -492,7 +493,7 @@ Com o método de entrega na loja, o cliente pode selecionar uma origem a ser usa
 </tr>
 <tr>
 <td><strong>Parcialmente em Estoque</strong></td>
-<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para quaisquer itens atuais é mostrada para cada local. </br></br>É possível personalizar o <em>[!UICONTROL partially in-stock]</em> rótulo de status aqui.</td>
+<td>Quando um cliente estiver usando o endereço da loja de varejo, a disponibilidade do inventário para quaisquer itens atuais é mostrada para cada local. </br></br>Você pode personalizar o rótulo de status <em>[!UICONTROL partially in-stock]</em> aqui.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>

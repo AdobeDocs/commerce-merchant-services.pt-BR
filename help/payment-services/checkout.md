@@ -2,39 +2,39 @@
 title: Check-out
 description: Personalize o checkout para atender às necessidades do seu cliente.
 feature: Payments, Checkout
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
+source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
 workflow-type: tm+mt
-source-wordcount: '330'
+source-wordcount: '322'
 ht-degree: 0%
 
 ---
 
-
 # Check-out
 
-Você pode configurar o check-out do Adobe Commerce [!DNL Payment Services] para melhor atender aos seus compradores. Funcionalidade como [ordem de anulação automática](#order-auto-voided-if-error) e [compartimentalização de cartão de crédito](#credit-card-vaulting) certifique-se de que seus compradores tenham uma experiência perfeita para o usuário.
+Você pode configurar o check-out para o Adobe Commerce [!DNL Payment Services] para melhor atender aos seus compradores. Uma funcionalidade como a [anulação automática de pedido](#order-auto-voided-if-error) e a [compartimentalização de cartão de crédito](#credit-card-vaulting) garante que seus compradores tenham uma experiência perfeita para o usuário.
 
 ## Pedido anulado automaticamente em caso de erro
 
-Se ocorrer um erro durante o check-out, [!DNL Payment Services] anula/cancela automaticamente a ordem.
+Se ocorrer um erro durante o check-out, [!DNL Payment Services] anulará/cancelará automaticamente a ordem.
 
 Uma mensagem de erro é exibida na página de check-out do comprador. A mensagem pode variar.
 
 ![Erro ao verificar](assets/user-checkout-error.png "Erro ao fazer check-out"){width="600" zoomable="yes"}
 
-Um comentário sobre o pedido cancelado também é exibido no Administrador de um [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en).
+Um comentário sobre o pedido cancelado também é exibido no Admin para um [pedido](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/order-management/orders/orders.html?lang=en) específico.
 
-![Comentário do pedido cancelado no Admin para pedido](assets/admin-checkout-error.png "Comentário do pedido cancelado no Admin para pedido"){width="600" zoomable="yes"}
+![Comentário de pedido cancelado no Administrador para pedido](assets/admin-checkout-error.png "Comentário de pedido cancelado no Administrador para pedido"){width="600" zoomable="yes"}
 
-Se um comprador obtiver autorização para um pedido, mas o pedido não tiver sido criado e convertido em um `Capture`, a ordem é anulada automaticamente. Esse processo garante que nenhum crédito seja reservado no cartão de crédito do comprador e evita a taxa do provedor de pagamento que ocorre quando a autorização é anulada no final do período padrão de 29 dias.
+Se um comprador obtiver autorização para um pedido, mas o pedido não tiver sido criado e convertido em um `Capture`, o pedido será anulado automaticamente. Esse processo garante que nenhum crédito seja reservado no cartão de crédito do comprador e evita a taxa do provedor de pagamento que ocorre quando a autorização é anulada no final do período padrão de 29 dias.
 
 >[!NOTE]
 >
->A anulação automática da ordem só ocorre quando o cliente usa um método de pagamento definido como `Authorize` modo, não `Authorize and Capture` modo.
+>A anulação automática da ordem só ocorre quando o cliente usa um método de pagamento definido como modo `Authorize`, não modo `Authorize and Capture`.
 
 ## Check-out da página do produto
 
-Quando um cliente faz o check-out diretamente da página do produto, usando o PayPal ou [!DNL Pay Later] , somente o item representado na página atual do produto é comprado. Os itens que já residem no carrinho do cliente não são adicionados ao fluxo de check-out e não são comprados.
+Quando um cliente faz o check-out diretamente da página do produto, usando os botões PayPal ou [!DNL Pay Later], somente o item representado na página do produto atual é comprado. Os itens que já residem no carrinho do cliente não são adicionados ao fluxo de check-out e não são comprados.
 
 Essa função permite que o cliente compre rapidamente o item que está visualizando no momento, enquanto retém os itens adicionados anteriormente ao carrinho.
 Se o cliente cancelar o pedido, o item na página do produto atual será adicionado ao carrinho do cliente.

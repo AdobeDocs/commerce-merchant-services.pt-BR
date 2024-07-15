@@ -19,7 +19,7 @@ O Atendimento da loja oferece um conjunto estendido de modelos de email transaci
 
 Os modelos de email de Atendimento da loja são configurados com as mensagens e configurações padrão. Os administradores de comerciantes no Adobe Commerce podem gerenciar e modificar configurações e selecionar os modelos de email para se comunicar com os clientes em diferentes cenários. Os administradores também podem configurar e personalizar modelos.
 
-Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
+Configure os modelos de Email de Vendas do Administrador: **[!UICONTROL Stores > Configuration > Sales > Sales Emails]**.
 
 ## Emails - Configurações gerais
 
@@ -34,7 +34,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 </thead>
 <tbody><tr>
 <td><strong>Envio assíncrono</strong></td>
-<td>Determina se os emails de vendas são enviados de forma assíncrona. Opções: <br/>**`Disable`** - (Padrão) Os emails de vendas são enviados quando acionados por um evento. Para obter a comunicação e o tempo de resposta mais rápidos para a Retirada da loja, use a configuração padrão. <br/>**`Habilitar`** - habilitar essa opção move os processos que manipulam notificações por email de check-out e processamento de pedidos para o segundo plano a serem enviados em intervalos regulares predeterminados.</td>
+<td>Determina se os emails de vendas são enviados de forma assíncrona. Opções: <br/>**`Desabilitar`** - (Padrão) Os emails de vendas são enviados quando acionados por um evento. Para obter a comunicação e o tempo de resposta mais rápidos para a Retirada da loja, use a configuração padrão. <br/>**`Habilitar`** - habilitar essa opção move os processos que manipulam o check-out e as notificações por email de processamento de pedidos para o plano de fundo a serem enviados em intervalos regulares predeterminados.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -207,7 +207,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Esse email é enviado ao cliente para notificá-lo de que seu pedido foi cancelado na loja do comerciante. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, esse recurso não impedirá que um pedido seja cancelado.</td>
+<td>Esse email é enviado ao cliente para notificá-lo de que seu pedido foi cancelado na loja do comerciante. Defina como <code>No</code> para desabilitar a notificação por email. Se o template de email estiver desativado, esse recurso não impedirá que um pedido seja cancelado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -257,7 +257,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 </thead>
 <tbody><tr>
 <td><strong>Ativado</strong></td>
-<td>Esse email é enviado ao cliente para notificá-lo de que parte de seu pedido foi cancelada na loja do comerciante. Defina como <code>No</code> para desativar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja parcialmente cancelado.</td>
+<td>Esse email é enviado ao cliente para notificá-lo de que parte de seu pedido foi cancelada na loja do comerciante. Defina como <code>No</code> para desabilitar a notificação por email. Se o template de email estiver desativado, isso não impede que um pedido seja parcialmente cancelado.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -312,8 +312,8 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 </thead>
 <tbody><tr>
 <td><strong>O Pedido Tem Remetente De Email De Produtos De Entrega Para Armazenamento</strong></td>
-<td>Email enviado à equipe de comerciante especificada como um relatório agregado de todas as ordens em aberto que não podem ser separadas em um armazenamento de comerciante até que o estoque esteja disponível. </br></br> Os comerciantes podem usar este relatório para iniciar e gerenciar transferências de inventário de armazenamento para armazenamento ou reposição. </br></br>Esta notificação só se aplica quando a [!DNL Ship-to-Store] Os recursos do estão habilitados.
-</br></br>Essa etiqueta não afeta a transportadora de remessa selecionada ou suas etiquetas de método de remessa disponíveis.</td>
+<td>Email enviado à equipe de comerciante especificada como um relatório agregado de todas as ordens em aberto que não podem ser separadas em um armazenamento de comerciante até que o estoque esteja disponível. </br></br> Comerciantes podem usar este relatório para iniciar e gerenciar transferências de estoque de loja para loja ou reabastecimento. </br></br>Esta notificação só se aplica quando os recursos [!DNL Ship-to-Store] estão habilitados.
+</br></br>Este rótulo não afeta a transportadora selecionada nem seus rótulos de método de envio disponíveis.</td>
 <td>Exibição da loja</td>
 <td>Não</td>
 </tr>
@@ -333,7 +333,7 @@ Configure os modelos de e-mail de vendas do Administrador: **[!UICONTROL Stores 
 
 >[!NOTE]
 >
->Se você permitir pedidos pendentes, deverá fornecer um endereço de email de administrador para receber notificações sobre esses pedidos. Adicione o endereço às seguintes definições de configuração: **[!UICONTROL Send Order Delayed Email Copy To]** no [Atraso do pedido](#order-delayed) modelo e [!UICONTROL Ship To Store Email Recipients] no [Enviar para loja](#ship-to-store) modelo.
+>Se você permitir pedidos pendentes, deverá fornecer um endereço de email de administrador para receber notificações sobre esses pedidos. Adicione o endereço às seguintes configurações: **[!UICONTROL Send Order Delayed Email Copy To]** no modelo [Atraso do Pedido](#order-delayed) e [!UICONTROL Ship To Store Email Recipients] no modelo [Enviar para Loja](#ship-to-store).
 
 
 

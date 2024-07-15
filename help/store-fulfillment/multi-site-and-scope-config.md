@@ -7,16 +7,16 @@ feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 8939046e-1c26-4380-83be-ff8e074e591d
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '189'
+source-wordcount: '181'
 ht-degree: 0%
 
 ---
 
 # Configuração de vários sites e escopos
 
-Você pode definir a variável [Escopo](https://docs.magento.com/user-guide/configuration/scope.html) para obter alguns elementos para acomodar vários sites, lojas e visualizações de loja:
+Você pode definir o [Escopo](https://docs.magento.com/user-guide/configuration/scope.html) para alguns elementos para acomodar vários sites, lojas e visualizações de loja:
 
-- [Gerenciar estoque](https://docs.magento.com/user-guide/catalog/inventory-stock.html) por escopo
+- [Gerenciar Estoque](https://docs.magento.com/user-guide/catalog/inventory-stock.html) por escopo
 
 - Gerenciar [!DNL Delivery Methods] por escopo
 
@@ -26,7 +26,7 @@ Depois de atualizar a configuração com êxito, as opções de retirada da loja
 
 ## Gerenciar configurações de retirada na loja
 
-Ative ou desative o [!UICONTROL In-Store Pickup] opções para cada site ou escopo de loja da [Configurações do método de entrega](enable-general.md#delivery-methods) em Admin.
+Habilite ou desabilite as opções [!UICONTROL In-Store Pickup] para cada escopo de site ou de repositório a partir das [Configurações do Método de Entrega](enable-general.md#delivery-methods) no Administrador.
 
 1. Navegue até **[!UICONTROL Stores > Configuration]**.
 
@@ -34,8 +34,8 @@ Ative ou desative o [!UICONTROL In-Store Pickup] opções para cada site ou esco
 
 1. Com o escopo selecionado, navegue até **[!UICONTROL Sales > Delivery Methods]**.
 
-1. Desative ou ative o **[!UICONTROL In-Store Pickup]** Método de entrega.
+1. Desabilite ou habilite o método de entrega **[!UICONTROL In-Store Pickup]**.
 
 Você também pode gerenciar se a coleta na berma ou na loja está disponível globalmente nesta seção.
 
-Gerenciar o [!UICONTROL In-Store Pickup] e [!UICONTROL Delivery Method] configurações por origem de estoque. Existem várias outras configurações para obter total flexibilidade sobre sua implementação.
+Gerenciar as configurações de [!UICONTROL In-Store Pickup] e [!UICONTROL Delivery Method] por fonte de estoque. Existem várias outras configurações para obter total flexibilidade sobre sua implementação.

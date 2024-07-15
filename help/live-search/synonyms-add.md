@@ -1,6 +1,6 @@
 ---
 title: "Adicionar sinônimos"
-description: "Adicionar [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."
+description: "Adicione  [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt
@@ -11,30 +11,30 @@ ht-degree: 0%
 
 # Adicionar sinônimos
 
-Aumente o engajamento do cliente adicionando sua própria lista de preparação de [!DNL Live Search] sinônimos. [!DNL Live Search] pode gerenciar até 200 sinônimos por `Data Space ID`.
+Aumente o engajamento do cliente adicionando sua própria lista com curadoria de sinônimos do [!DNL Live Search]. [!DNL Live Search] pode gerenciar até 200 sinônimos por `Data Space ID`.
 
 ![[!DNL Live Search] sinônimos](assets/synonym-workspace.png)
 
 ## Etapa 1: adicionar um sinônimo
 
-1. No Administrador, acesse **Marketing** > SEO E Pesquisa > **[!DNL Live Search]**.
-1. Para vários armazenamentos, defina **Escopo** para o [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde as configurações de sinônimo se aplicam.
-1. Clique em **Sinônimos** guia.
-1. Clique em **Adicionar sinônimos** botão.
+1. No Administrador, vá para **Marketing** > SEO e pesquisa > **[!DNL Live Search]**.
+1. Para vários armazenamentos, defina o **Escopo** para a [exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde as configurações de sinônimo se aplicam.
+1. Clique na guia **Sinônimos**.
+1. Clique no botão **Adicionar sinônimos**.
 
 ## Etapa 2: definir o sinônimo por tipo
 
-Siga as instruções para o [tipo de sinônimo](synonyms-type.md) que deseja criar.
+Siga as instruções para o [tipo de sinônimo](synonyms-type.md) que você deseja criar.
 
 ### Sinônimo de bidirecional
 
-1. Aceitar o padrão **Bidirecional** opção.
+1. Aceite a opção padrão **Bidirecional**.
 
    ![Adicionar sinônimo bidirecional](assets/synonym-add-two-way.png)
 
 
-1. Insira o **Palavra-chave** termo ou frase a ser correspondido.
-1. Insira o **Expansão** termos que você deseja adicionar como sinônimos para a palavra-chave. Separe vários termos com uma vírgula.
+1. Digite o termo ou frase **Palavra-chave** que deve ser correspondida.
+1. Insira os termos de **Expansão** que você deseja adicionar como sinônimos para a palavra-chave. Separe vários termos com uma vírgula.
 Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o conjunto de termos de expansão é &quot;calças, calças&quot;.
 
    ![Exemplo de sinônimo bidirecional](assets/synonym-add-two-way-example.png)
@@ -42,15 +42,15 @@ Neste exemplo, a palavra-chave a ser correspondida é &quot;calças&quot; e o co
 1. Quando terminar, clique em **Salvar**.
 O conjunto de sinônimos aparece na lista com uma seta bidirecional entre cada termo, o que significa que os termos são intercambiáveis.
 
-   ![Sinônimo de bidirecional](assets/synonym-two-way.png)
+   ![Sinônimo bidirecional](assets/synonym-two-way.png)
 
 ### Sinônimo unidirecional
 
-1. Clique em **Unidirecional** tipo de sinônimo.
+1. Clique no tipo de sinônimo **Unidirecional**.
 
    ![Adicionar sinônimo unidirecional](assets/synonym-add-one-way.png)
 
-1. Insira o **Palavra-chave** e **Expansão** termos. Separe vários termos com uma vírgula.
+1. Insira os termos da **Palavra-chave** e da **Expansão**. Separe vários termos com uma vírgula.
 
    ![Exemplo de sinônimo unidirecional](assets/synonym-add-one-way-example.png)
 
@@ -61,9 +61,9 @@ O conjunto de sinônimos aparece na lista com uma seta unidirecional apontando d
 
    ![Sinônimo unidirecional](assets/synonym-one-way.png)
 
-## Etapa 3: publicar alterações
+## Etapa 3: alterações no Publish
 
-1. Quando seus sinônimos estiverem completos, clique em **Publicar alterações**.
+1. Quando seus sinônimos estiverem completos, clique em **Publish changes**.
 1. Aguarde até duas horas para que suas atualizações fiquem disponíveis na loja.
 
 ## Descrições de campo

@@ -15,7 +15,7 @@ ht-degree: 43%
 # Documentação dos serviços do Adobe Commerce {#user-guides}
 
 - [Visão geral](home.md)
-- Informações da versão {#release-information}
+- Informações sobre a versão {#release-information}
    - [Notas de versão](/help/landing/release-notes-all.md)
    - [Novidades nos documentos](/help/landing/whats-new.md)
 - Serviços da Commerce {#commerce-services}
@@ -30,7 +30,7 @@ ht-degree: 43%
    - [[!DNL Data Connection]](https://experienceleague.adobe.com/docs/commerce-merchant-services/data-connection/overview.html)
    - [Conector de serviços](/help/landing/saas.md)
 - Ferramentas de dados {#data-services}
-   - [Exportação de dados SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
+   - [Exportação De Dados SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/saas-data-export/overview.html)
    - [Indexação de preços SaaS](https://experienceleague.adobe.com/docs/commerce-merchant-services/price-indexer/price-indexing.html)
    - [Sincronização de catálogo](/help/landing/catalog-sync.md)
 

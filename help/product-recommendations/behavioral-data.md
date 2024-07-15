@@ -4,7 +4,7 @@ description: Saiba mais sobre dados comportamentais e quando você pode começar
 exl-id: d68a97b9-1497-4603-a72c-4aaaf6e048cb
 source-git-commit: 840b091638aedd3f6ac097a010d035eff997ffe2
 workflow-type: tm+mt
-source-wordcount: '643'
+source-wordcount: '647'
 ht-degree: 0%
 
 ---
@@ -16,9 +16,9 @@ Alguns tipos de recomendações usam dados comportamentais de seus compradores p
 - `More like this`
 - `Visual similarity`
 
-Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Esse processo é conhecido como _Inicialização a frio_ problema.
+Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Isso é conhecido como o problema _Cold Start_.
 
-A variável _Inicialização a frio_ O problema é uma medida de quanto tempo um modelo precisa para treinar antes de ser considerado de alta qualidade. Nas recomendações de produtos, significa aguardar que o Adobe Sensei treine seus modelos de aprendizado de máquina antes de implantar unidades de recomendação no site. Quanto mais dados esses modelos tiverem, mais precisas e úteis serão as recomendações. A coleta desses dados leva tempo e varia de acordo com o volume de tráfego. Como esses dados podem ser coletados somente em um site de produção, é do seu interesse implantar a coleta de dados lá o mais rápido possível. Você pode fazer isso ao [instalação e configuração](install-configure.md) o `magento/production-recommendations` módulo.
+O problema _Cold Start_ é uma medida de quanto tempo um modelo precisa ser treinado antes de ser considerado de alta qualidade. Nas recomendações de produtos, significa aguardar que o Adobe Sensei treine seus modelos de aprendizado de máquina antes de implantar unidades de recomendação no site. Quanto mais dados esses modelos tiverem, mais precisas e úteis serão as recomendações. A coleta desses dados leva tempo e varia de acordo com o volume de tráfego. Como esses dados podem ser coletados somente em um site de produção, é do seu interesse implantar a coleta de dados lá o mais rápido possível. Você pode fazer isso [instalando e configurando](install-configure.md) o módulo `magento/production-recommendations`.
 
 A tabela a seguir fornece algumas orientações gerais sobre o tempo necessário para coletar dados suficientes para cada tipo de recomendação:
 
@@ -35,18 +35,18 @@ Outras variáveis que podem afetar o tempo necessário para treinar:
 - Alguns tipos de recomendações são treinados mais rapidamente do que outros
 - O Adobe Commerce recalcula dados comportamentais a cada quatro horas. O Recommendations se torna mais preciso quanto mais tempo eles forem usados no site.
 
-Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a variável [criar recomendação](create.md) exibe indicadores de prontidão.
+Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a página [criar recomendação](create.md) exibe indicadores de preparação.
 
-Embora os dados sejam coletados na produção e os modelos de aprendizado de máquina sejam treinados, você pode implementar o [tarefas restantes](implementation-workflow.md) necessário para implantar recomendações na loja. Quando você terminar de testar e configurar as recomendações, os modelos de aprendizado de máquina terão coletado e calculado dados suficientes para criar recomendações relevantes, permitindo que você implante as recomendações na loja.
+Embora os dados sejam coletados em modelos de produção e aprendizado de máquina sejam treinados, você pode implementar as [tarefas restantes](implementation-workflow.md) necessárias para implantar recomendações para sua loja. Quando você terminar de testar e configurar as recomendações, os modelos de aprendizado de máquina terão coletado e calculado dados suficientes para criar recomendações relevantes, permitindo que você implante as recomendações na loja.
 
 Se o tráfego for insuficiente (exibições, produtos comprados, tendências) para a maioria das SKUs, talvez não haja dados suficientes para concluir o processo de aprendizado. Isso pode fazer com que o indicador de prontidão no Admin pareça travado.
 Os indicadores de prontidão devem fornecer aos comerciantes outro ponto de dados para escolher qual tipo de recomendações é melhor para sua loja. Os números são um guia e podem nunca chegar a 100%.
 
 ## Recomendações de backup {#backuprecs}
 
-Se não houver dados de entrada suficientes para fornecer todos os itens de recomendação solicitados em uma unidade, a Adobe Commerce fornecerá recomendações de backup para preencher as unidades de recomendação. Por exemplo, se você implantar o `Recommended for you` tipo de recomendação para sua página inicial, um comprador pela primeira vez no site não gerou dados comportamentais suficientes para recomendar com precisão produtos personalizados. Nesse caso, o Adobe Commerce exibe itens com base no `Most viewed` tipo de recomendação para este comprador.
+Se não houver dados de entrada suficientes para fornecer todos os itens de recomendação solicitados em uma unidade, a Adobe Commerce fornecerá recomendações de backup para preencher as unidades de recomendação. Por exemplo, se você implantar o tipo de recomendação `Recommended for you` na sua página inicial, um comprador novo no site não terá gerado dados comportamentais suficientes para recomendar com precisão os produtos personalizados. Nesse caso, o Adobe Commerce exibe itens baseados no tipo de recomendação `Most viewed` para esse comprador.
 
-Os seguintes tipos de recomendações fazem fallback para `Most viewed` tipo de recomendação se não houver dados de entrada suficientes coletados:
+Os seguintes tipos de recomendação farão o fallback para o tipo de recomendação `Most viewed` se não houver dados de entrada suficientes coletados:
 
 - `Recommended for you`
 - `Viewed this, viewed that`

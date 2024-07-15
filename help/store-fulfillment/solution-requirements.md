@@ -1,13 +1,13 @@
 ---
 title: Requisitos de Atendimento da Loja
-description: Requisitos para provisionamento e integração do [!DNL Store Fulfillment solution].
+description: Requisitos para provisionamento e integração do  [!DNL Store Fulfillment solution].
 role: Leader, Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: f9e05049-5904-4f6c-b45d-9f81fbc76b69
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '306'
 ht-degree: 0%
 
 ---
@@ -18,7 +18,7 @@ As seções a seguir detalham os requisitos técnicos e comerciais para instalar
 
 ## Requisitos de versão de software e plataforma
 
-A variável [!DNL Store Fulfillment] está disponível para clientes do Adobe Commerce nas seguintes plataformas.
+A solução [!DNL Store Fulfillment] está disponível para clientes do Adobe Commerce nas seguintes plataformas.
 
 - Adobe Commerce na infraestrutura em nuvem (ECE)
 - Adobe Commerce no local (EE)
@@ -27,9 +27,9 @@ Antes de instalar ou atualizar, reveja as notas de versão e os requisitos de si
 
 - [Notas de versão de fornecimento da loja](release-notes.md)
 
-- [Notas de versão do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) no *Informações da versão do Adobe Commerce*.
+- [Notas de Versão do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/release/versions.html) nas *Informações de Versão do Adobe Commerce*.
 
-- [Requisitos de sistema da Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no *Guia de instalação do Adobe Commerce*.
+- [Requisitos de Sistema do Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/system-requirements.html) no *Guia de Instalação do Adobe Commerce*.
 
 
 ## Requisitos do aplicativo Store Assist
@@ -38,7 +38,7 @@ O processo completo para gerenciar pedidos de retirada de lojas é gerenciado pe
 
 **Requisitos mínimos do sistema operacional**
 
-- Android 6
+- ANDROID 6
 - iOS 12
 
 **Requisitos mínimos de hardware**

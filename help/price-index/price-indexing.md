@@ -15,17 +15,17 @@ ht-degree: 0%
 
 A indexação de preços do SaaS melhora o desempenho do site, movendo processos computacionais pesados, como indexação e cálculo de preços do aplicativo do Commerce para a infraestrutura de nuvem do Adobe. Essa abordagem permite que os comerciantes aumentem os recursos rapidamente para aumentar os tempos de indexação de preços, a fim de refletir as alterações de preço mais rapidamente ao enviar dados para a loja e os serviços conectados da Commerce.
 
-O diagrama a seguir mostra o fluxo de dados de indexação para serviços SaaS quando o Commerce está usando o [indexação de preço](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) processo incluído no aplicativo do Commerce:
+O diagrama a seguir mostra o fluxo de dados de indexação para serviços SaaS quando a Commerce está usando o processo [indexação de preço](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) incluído no aplicativo do Commerce:
 
 ![Fluxo de dados padrão](assets/old_way.png)
 
-Com a indexação de preço SaaS ativada, o fluxo de dados é alterado. A indexação de preços é realizada usando [Exportação de dados SaaS do Commerce](../data-export/data-synchronization.md).
+Com a indexação de preço SaaS ativada, o fluxo de dados é alterado. A indexação de preços é executada usando a [exportação de dados SaaS do Commerce](../data-export/data-synchronization.md).
 
 ![Fluxo de dados de indexação de preço SaaS](assets/new_way.png)
 
 Todos os comerciantes podem se beneficiar do uso da indexação de preços SaaS, mas os comerciantes que têm projetos com as seguintes características podem obter os maiores ganhos:
 
-* **Variações constantes de preço**-Comerciantes que exigem alterações repetidas em seus preços para atender a objetivos estratégicos, como promoções frequentes, descontos sazonais ou markdowns de inventário.
+* **Alterações constantes de preço**-Comerciantes que exigem alterações repetidas em seus preços para atender a metas estratégicas, como promoções frequentes, descontos sazonais ou markdowns de estoque.
 * **Vários sites e/ou grupos de clientes**-Comerciantes com catálogos de produtos compartilhados em vários sites (domínios/marcas) e/ou grupos de clientes.
 * **Muitos preços únicos em sites ou grupos de clientes**-Comerciantes com catálogos de produtos compartilhados extensos que contêm preços únicos em sites ou grupos de clientes. Os exemplos incluem comerciantes B2B que têm preços pré-negociados ou marcas com estratégias de preços diferentes.
 
@@ -48,7 +48,7 @@ A indexação de preços do SaaS é ativada automaticamente ao instalar os Servi
 
 >[!NOTE]
 >
->Se necessário, o indexador de preço padrão no aplicativo do Commerce pode ser desativado usando o [Adaptador do catálogo](catalog-adapter.md).
+>Se necessário, o indexador de preço padrão no aplicativo do Commerce pode ser desabilitado usando o [Adaptador de Catálogo](catalog-adapter.md).
 
 ## Sincronizar preços com a indexação de preços SaaS
 
@@ -66,7 +66,7 @@ Os cálculos de preço são compatíveis com tipos de produtos personalizados, c
 
 Se você tiver um tipo de produto personalizado que usa uma fórmula específica para calcular o preço final, será possível estender o comportamento do feed de preço do produto.
 
-1. Crie um plug-in no `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice` classe.
+1. Crie um plug-in na classe `Magento\ProductPriceDataExporter\Model\Provider\ProductPrice`.
 
    ```xml
    <config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"

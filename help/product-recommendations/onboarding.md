@@ -1,6 +1,6 @@
 ---
 title: Integração
-description: Conheça os requisitos e as plataformas compatíveis na [!DNL Product Recommendations].
+description: Saiba mais sobre os requisitos e as plataformas compatíveis do  [!DNL Product Recommendations].
 exl-id: ad47ac39-8f6f-4765-84ad-9e3d104385db
 source-git-commit: a90fcd8401b7745a65715f68efccdb3ce7c77ccb
 workflow-type: tm+mt
@@ -32,22 +32,22 @@ O processo de integração do [!DNL Product Recommendations] requer acesso à li
 
 ## Endpoint
 
-[!DNL Product Recommendations] se comunica por meio do endpoint em `https://catalog-service.adobe.io/graphql`.
+[!DNL Product Recommendations] se comunica através do ponto de extremidade em `https://catalog-service.adobe.io/graphql`.
 
 ### Suporte ao Page Builder
 
-[!DNL Product Recommendations] podem ser adicionados a uma página como um tipo de conteúdo do Page Builder. Para adicionar suporte do Page Builder ao Product Recommendations, consulte [Instalar e configurar](install-configure.md).
+[!DNL Product Recommendations] pode ser adicionado a uma página como um tipo de conteúdo do Page Builder. Para adicionar suporte do Page Builder ao Product Recommendations, consulte [Instalar e Configurar](install-configure.md).
 
-Consulte [[!DNL Page Builder] Integração](page-builder.md) para obter instruções sobre como adicionar [!DNL Product Recommendations] em [!DNL Page Builder] conteúdo.
+Consulte [[!DNL Page Builder] Integração](page-builder.md) para obter instruções sobre como adicionar [!DNL Product Recommendations] ao conteúdo [!DNL Page Builder].
 
 ### Indexação de preços SaaS
 
-Recomendações de produtos que os clientes podem usar [Indexação de preços SaaS](../price-index/price-indexing.md), que fornece atualizações de alterações de preço e tempo de sincronização mais rápidos.
+Os clientes da Recomendação de produto podem usar a [indexação de preço do SaaS](../price-index/price-indexing.md), que oferece atualizações de alterações de preço e tempo de sincronização mais rápidos.
 
 ### Suporte B2B {#b2bsupport}
 
-As vitrines B2B geralmente exigem uma lógica complexa que determina a visibilidade e os preços do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] now [suporte](release-notes.md) essa funcionalidade respeitando [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html), e [preços específicos do grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você tiver ocultado determinadas categorias do segmento de cliente de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores veem recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
+As vitrines B2B geralmente exigem uma lógica complexa que determina a visibilidade e os preços do produto para cada comprador ou grupo de clientes. [!DNL Product Recommendations] agora [oferece suporte](release-notes.md) a essa funcionalidade ao honrar [permissões de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html), [catálogos compartilhados](https://experienceleague.adobe.com/docs/commerce-admin/b2b/shared-catalogs/catalog-shared.html) e [preços específicos de grupo de clientes](https://experienceleague.adobe.com/docs/commerce-admin/catalog/products/pricing/pricing-advanced.html). Por exemplo, se você tiver ocultado determinadas categorias do segmento de cliente de varejo, um comprador nesse segmento não receberia recomendações para produtos nessas categorias. Além disso, ao definir um catálogo compartilhado para grupos de clientes e empresas específicos, esses compradores veem recomendações somente para produtos que podem acessar. Todos os produtos recomendados refletem o preço correto específico do grupo de clientes com base no grupo de clientes de cada comprador.
 
 >[!NOTE]
 >
->Os comerciantes podem personalizar e estender widgets ou elementos de vitrine usando o [Serviço de catálogo](../catalog-service/overview.md) API da loja, mas qualquer personalização está fora do escopo para a equipe de suporte do Adobe.
+>Os comerciantes podem personalizar e estender widgets ou elementos de vitrine usando a API de vitrine do [Serviço de catálogo](../catalog-service/overview.md), mas qualquer personalização está fora do escopo da equipe de suporte do Adobe.

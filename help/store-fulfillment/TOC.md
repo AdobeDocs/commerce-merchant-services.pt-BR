@@ -9,25 +9,25 @@ recommendations: noDisplay
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
 source-wordcount: '84'
-ht-degree: 10%
+ht-degree: 8%
 
 ---
 
 
-# Processamento na loja para o Commerce {#store-fulfillment}
+# Abastecimento de loja para o Commerce {#store-fulfillment}
 
 - [Visão geral do guia](guide-overview.md)
-- [Introdução ao [!DNL Store Fulfillment]](introduction.md)
+- [Introdução a  [!DNL Store Fulfillment]](introduction.md)
 - [Fluxos de trabalho de assistência da loja](store-assist-modules.md)
 - [Requisitos](solution-requirements.md)
 - [Notas de versão](release-notes.md)
-- Atendimento de loja integrada {#onboarding}
+- Atendimento de Loja Integrada {#onboarding}
    - [Visão geral da integração](onboard.md)
    - [Instalar a extensão](install.md)
    - [Conectar Atendimento da Loja](connect-set-up-service.md)
    - [Teste e implantação](test-and-deploy.md)
 - [Visão geral da configuração](service-config-settings-overview.md)
-- Configuração da loja {#store-configuration}
+- Configuração de armazenamento {#store-configuration}
    - [Configuração geral](enable-general.md)
    - [Modelos de email de vendas](sales-emails.md)
    - [Loja do comerciante (fontes)](merchant-store-configuration.md)

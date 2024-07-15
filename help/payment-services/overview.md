@@ -1,6 +1,6 @@
 ---
-title: Introdução ao [!DNL Payment Services]
-description: Saiba como instalar e usar o [!DNL Payment Services] como uma solução de processamento de pagamentos pronta para uso, robusta e segura para seu [!DNL Adobe Commerce] e [!DNL Magento Open Source] Web sites.
+title: Introdução a  [!DNL Payment Services]
+description: Saiba como instalar e usar o [!DNL Payment Services] como uma solução de processamento de pagamento pronta para uso, robusta e segura para seus [!DNL Adobe Commerce] e [!DNL Magento Open Source] sites.
 role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
@@ -14,9 +14,9 @@ ht-degree: 0%
 
 # Introdução ao [!DNL Payment Services]
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O é a sua solução de autoatendimento pronta para uso, incluindo teste de sandbox e uma configuração simples, para fornecer processamento de pagamento robusto e seguro para seus sites da Commerce.
+O [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] é a sua solução de autoatendimento completa, incluindo testes de sandbox e uma configuração simples, para fornecer um processamento de pagamento robusto e seguro para os sites da Commerce.
 
-![[!DNL Payment Services] exibição do administrador da extensão](assets/admin-view.png){width="300" zoomable="yes"}
+![[!DNL Payment Services] exibição de administrador da extensão](assets/admin-view.png){width="300" zoomable="yes"}
 
 Seja você uma pequena empresa, uma empresa de médio porte ou uma grande empresa, essa solução de pagamentos ajuda a reduzir a sobrecarga operacional, aumentar a receita e fornecer ferramentas úteis para melhorar toda a experiência do comprador.
 
@@ -34,19 +34,19 @@ Seja você uma pequena empresa, uma empresa de médio porte ou uma grande empres
 >
 >Alguns dos recursos mencionados aqui podem ainda não estar disponíveis para a versão GA (Disponibilidade geral).
 
-[!DNL Payment Services] O é o seu balcão central para check-out on-line (desde o acordo e reembolsos até o pagamento). Ele fornece ferramentas poderosas para fornecer a você o insight e o controle necessários para criar a melhor experiência para seus compradores.
+[!DNL Payment Services] é o seu balcão central para check-out online (desde acordos e reembolsos até o pagamento). Ele fornece ferramentas poderosas para fornecer a você o insight e o controle necessários para criar a melhor experiência para seus compradores.
 
-* [**Integração**](onboard.md)— o processo o orienta por meio de inscrição comercial, configuração técnica, direitos, configuração de ambiente de sandbox e ativação de pagamento em tempo real.
+* [**Integração**](onboard.md) — o processo orienta você pela inscrição comercial, configuração técnica, direitos, configuração do ambiente de sandbox e habilitação de pagamento ao vivo.
 * [**Opções de pagamento**](payments-options.md)—Defina as opções de pagamento para personalizar os métodos disponíveis para seus clientes de loja (ou de várias lojas).
-* **Relatórios financeiros de gerenciamento de fluxo de caixa**— Synchronize [detalhes do pagamento](order-payment-status.md) com pedidos para obter total transparência do volume processado, saldo de pagamento, [pagamentos](payouts.md)e detalhado [relatório de nível de transação](transactions.md) para reconciliação financeira e o máximo em visibilidade de transações.
-* **Preços transparentes**— os preços são claros e antecipados; o que você vê é o que você obtém.
-* **Experiência de finalização eficiente**—elimine quaisquer barreiras a um checkout rápido e simples e crie clientes fiéis, com [compartimentação de placa](vaulting.md) e [Compra instantânea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (ativado por padrão para o Adobe Commerce).
+* **Relatórios financeiros de gerenciamento de fluxo de caixa**—Sincronize [detalhes de pagamento](order-payment-status.md) com ordens para obter total transparência ao volume processado, saldo de pagamento, [pagamentos](payouts.md) e [relatórios de nível de transação](transactions.md) detalhados para reconciliação financeira e o máximo em visibilidade de transação.
+* **Preços transparentes**—Os preços são claros e antecipados; o que você vê é o que você ganha.
+* **Experiência eficiente de check-out**—Remova todas as barreiras para um check-out rápido e simples e crie clientes fiéis, com os recursos de [cofre de cartão](vaulting.md) e [Compra Instantânea](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/checkout-instant-purchase.html) (habilitada por padrão para o Adobe Commerce).
 
 ## Disponibilidade
 
-[!DNL Payment Services] está disponível para [!DNL Adobe Commerce] e [!DNL Magento Open Source]. A variável [!DNL Payment Services] a extensão agora é compatível com o [!DNL Adobe Commerce] versões 2.4.x.
+[!DNL Payment Services] está disponível para [!DNL Adobe Commerce] e [!DNL Magento Open Source]. A extensão [!DNL Payment Services] agora é compatível com [!DNL Adobe Commerce] versões 2.4.x.
 
-Atualmente, [!DNL Payment Services] oferece suporte total (via [Integração avançada](../payment-services/production.md#advanced-onboarding)) para todas as opções de pagamento nestes países:
+Atualmente, o [!DNL Payment Services] oferece suporte total (via [Integração avançada](../payment-services/production.md#advanced-onboarding)) para todas as opções de pagamento nestes países:
 
 * Estados Unidos (US)
 * Canadá (CA)
@@ -54,32 +54,32 @@ Atualmente, [!DNL Payment Services] oferece suporte total (via [Integração ava
 * França (FR)
 * Reino Unido (UK)
 
-Os serviços de pagamento fornecem [Recursos de Finalização Expressa](../payment-services/payments-options.md) (subconjunto de opções de pagamento) para outros [países disponíveis durante a integração](../payment-services/production.md#complete-merchant-onboarding).
+Os Serviços de Pagamento fornecem [recursos de Finalização Expressa](../payment-services/payments-options.md) (subconjunto de opções de pagamento) para outros [países disponíveis durante a integração](../payment-services/production.md#complete-merchant-onboarding).
 
-Consulte [Política de ciclo de vida](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) e a variável [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
+Consulte as páginas [Política de ciclo de vida](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/lifecycle-policy.html) e [[!DNL Payment Services] notas de versão](release-notes.md) para obter mais informações sobre versões e lançamentos específicos.
 
 ### Cartões de crédito e moedas aceitos
 
-[!DNL Payment Services] aceita as moedas dos países [em que está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obter mais informações.
+[!DNL Payment Services] aceita as moedas dos países [nos quais está disponível](#availability). Consulte [Configuração de moeda](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration.html) para obter mais informações.
 
-Para ver quais moedas o PayPal suporta, consulte [Documentação de moedas suportadas](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
+Para ver quais moedas o PayPal oferece suporte, consulte a [Documentação de moedas compatíveis](https://developer.paypal.com/docs/reports/reference/paypal-supported-currencies/).
 
-Para ver quais métodos de pagamento o PayPal aceita, consulte seus [Documentação de métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
+Para ver quais métodos de pagamento o PayPal aceita, consulte sua [documentação sobre métodos de pagamento](https://developer.paypal.com/docs/checkout/payment-methods/).
 
 ## Introdução
 
-Integração e configuração [!DNL Payment Services] O é concluído em apenas algumas etapas:
+A integração e a configuração do [!DNL Payment Services] foram concluídas em apenas algumas etapas:
 
-1. Obtenha o [[!DNL Payment Services] extensão](install.md).
+1. Obter a [[!DNL Payment Services] extensão](install.md).
 1. Conecte sua instância do Commerce aos Serviços da Commerce.
 1. Integrar e configurar o serviço de sandbox.
-1. Ativar [!DNL Payment Services] como seu método de pagamento e iniciar o processamento de pagamentos de teste.
+1. Habilite [!DNL Payment Services] como método de pagamento e comece a processar pagamentos de teste.
 1. Conclua a integração do comerciante para habilitar os pagamentos ao vivo para seus sites.
-1. Ativar [!DNL Payment Services] no modo ativo para iniciar o processamento de pagamentos ativos.
+1. Ative [!DNL Payment Services] no modo Online para iniciar o processamento de pagamentos online.
 
-Para obter as instruções completas e iniciar o processo de integração, consulte [Integrado [!DNL Payment Services]](onboard.md).
+Para obter as instruções completas e iniciar o processo de integração, consulte [Integração [!DNL Payment Services]](onboard.md).
 
-## [!DNL Payment Services] demonstração
+## Demonstração do [!DNL Payment Services]
 
 Assista a este vídeo para saber mais sobre [!DNL Payment Services]:
 

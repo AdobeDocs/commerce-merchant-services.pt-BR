@@ -1,21 +1,21 @@
 ---
-title: Transferência de origem do Inventory management
-description: "Configurar estoques para o [!DNL Store Fulfillment solution] com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o estoque do estoque padrão para que você possa atribuí-lo às fontes configuradas para habilitar os recursos de Retirada da Loja exigidos pela solução de Atendimento da Loja."
+title: Transferência do Inventory management Source
+description: "Configure os estoques do  [!DNL Store Fulfillment solution]  com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o estoque do estoque padrão para que você possa atribuí-lo às fontes configuradas para habilitar os recursos de Retirada da Loja exigidos pela solução de Atendimento da Loja."
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
 source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
 workflow-type: tm+mt
-source-wordcount: '396'
+source-wordcount: '356'
 ht-degree: 0%
 
 ---
 
 
-# Transferência de origem do Inventory management
+# Transferência do Inventory management Source
 
-A variável [!DNL Store Fulfillment] A solução usa o Adobe Commerce Inventory management nativo. Por padrão, a variável [!DNL Commerce] a configuração atribui todo o inventário web ao estoque padrão, que não pode ter origens adicionais atribuídas. Como um site só pode ter um único estoque atribuído, um comerciante deve configurar um novo estoque e, opcionalmente, transferir seu inventário de origem padrão para uma origem atribuída ao escopo apropriado. Em seguida, a origem pode ser atribuída ao novo estoque.
+A solução [!DNL Store Fulfillment] usa o Adobe Commerce Inventory management nativo. Por padrão, a configuração [!DNL Commerce] atribui todo o inventário da Web ao estoque padrão, que não pode ter fontes adicionais atribuídas. Como um site só pode ter um único estoque atribuído, um comerciante deve configurar um novo estoque e, opcionalmente, transferir seu inventário de origem padrão para uma origem atribuída ao escopo apropriado. Em seguida, a origem pode ser atribuída ao novo estoque.
 
 >[!IMPORTANT]
 >
@@ -23,27 +23,27 @@ A variável [!DNL Store Fulfillment] A solução usa o Adobe Commerce Inventory 
 
 Essas alterações de configuração ajudam você a realizar três coisas:
 
-1. [Transferir inventário para origem](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) para mover o inventário do estoque/origem padrão para o novo estoque/origem.
+1. [Transferir estoque para origem](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) para mover o estoque padrão/origem para o novo estoque/origem.
 
-1. [Origens de atribuição em massa](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) para adicionar as novas fontes para todos os seus produtos.
+1. [Atribuir fontes](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) em massa para adicionar as novas fontes para todos os seus produtos.
 
-1. [Atualizações em massa completas para atributos do produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para adicionar o `Allow Store Pickup` e `Allow Home Delivery` atributos aos produtos existentes. Quando a solução é instalada, os atributos têm a configuração ideal *padrão* valores. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de updaContes em massa.
+1. [Conclua as atualizações em massa dos atributos de produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para adicionar os atributos `Allow Store Pickup` e `Allow Home Delivery` aos produtos existentes. Quando a solução é instalada, os atributos têm os *valores padrão* ideais. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de updaContes em massa.
 
-O estoque é deduzido da origem selecionada (localização da loja de varejo ou depósito de comércio eletrônico). As origens usadas como depósitos de comércio eletrônico devem ser atribuídas ao mesmo estoque que o local de retirada da loja e priorizadas antes dos locais de varejo. Para obter informações adicionais, consulte [Priorizando Origens de um Estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+O estoque é deduzido da origem selecionada (localização da loja de varejo ou depósito de comércio eletrônico). As origens usadas como depósitos de comércio eletrônico devem ser atribuídas ao mesmo estoque que o local de retirada da loja e priorizadas antes dos locais de varejo. Para obter informações adicionais, consulte [Priorizando fontes para um estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
 
 Para obter mais informações sobre gerenciamento de inventário, estoques e fontes, consulte a documentação do usuário do Adobe Commerce:
 
-- [Gerenciar inventário](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Gerenciando o inventário](https://docs.magento.com/user-guide/catalog/inventory-management.html)
 
 - [Gerenciando Quantidades de Inventário](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
 
-- [Gerenciar o Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Gerenciando o Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
 
-- [Gerenciar fontes](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Gerenciando fontes](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
 
-- [Priorizando Origens de um Estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Priorizando fontes para um estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
 
-- [Atualizações em massa para atributos do produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Atualizações em massa para atributos de produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
 
 
 >[!IMPORTANT]

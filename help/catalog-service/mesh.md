@@ -1,33 +1,33 @@
 ---
 title: '[!DNL Catalog Service and API Mesh]'
-description: '[!DNL API Mesh] O para Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um endpoint comum do GraphQL.'
+description: '[!DNL API Mesh] for Adobe Commerce fornece uma maneira de integrar várias fontes de dados por meio de um ponto de extremidade comum do GraphQL.'
 exl-id: cdda4a83-3c5f-4a69-8279-b90464e16c0e
 role: Admin, Developer
 feature: Services, API Mesh, Catalog Service
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
 workflow-type: tm+mt
-source-wordcount: '256'
+source-wordcount: '241'
 ht-degree: 0%
 
 ---
 
 # [!DNL Catalog Service and API Mesh]
 
-A variável [Malha de API para o Construtor de aplicativos Adobe Developer](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) O permite aos desenvolvedores integrar APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
+A [API Mesh para Adobe Developer App Builder](https://developer.adobe.com/graphql-mesh-gateway/gateway/overview/) permite que os desenvolvedores integrem APIs privadas ou de terceiros e outras interfaces com produtos Adobe usando o Adobe I/O Runtime.
 
-![Diagrama da arquitetura de catálogo](assets/catalog-service-architecture-mesh.png)
+![Diagrama de arquitetura do catálogo](assets/catalog-service-architecture-mesh.png)
 
-A primeira etapa para usar a API Mesh com o Serviço de catálogo é conectar a API Mesh à sua instância. Consulte as instruções detalhadas em [Criar uma malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
+A primeira etapa para usar a API Mesh com o Serviço de catálogo é conectar a API Mesh à sua instância. Veja instruções detalhadas em [Criar uma Malha](https://developer.adobe.com/graphql-mesh-gateway/gateway/create-mesh/).
 
-Para concluir a configuração, instale o [Pacote CLI do Adobe Developer](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
+Para concluir a instalação, instale o [pacote Adobe Developer CLI](https://developer.adobe.com/runtime/docs/guides/tools/cli_install/).
 
-Depois que o Mesh for configurado no Adobe I/O Runtime, execute o seguinte comando, que adiciona um `CommerceCatalogServiceGraph` para sua malha.
+Depois que o Mesh for configurado no Adobe I/O Runtime, execute o comando a seguir, que adiciona uma origem `CommerceCatalogServiceGraph` à malha.
 
 ```bash
 aio api-mesh:source:install "CommerceCatalogServiceGraph" -f variables.json
 ```
 
-Onde `variables.json` é um arquivo separado que armazena os valores usados com frequência para o Adobe I/O Runtime.
+Onde `variables.json` é um arquivo separado que armazena valores comumente usados para o Adobe I/O Runtime.
 Por exemplo, a chave de API pode ser salva no arquivo:
 
 ```json
@@ -36,16 +36,16 @@ Por exemplo, a chave de API pode ser salva no arquivo:
 }
 ```
 
-Após a execução desse comando, o Serviço de catálogo deve estar em execução por meio da API Mesh. Você pode executar o `aio api-mesh:get` comando para ver a configuração da malha atualizada.
+Após a execução desse comando, o Serviço de catálogo deve estar em execução por meio da API Mesh. Você pode executar o comando `aio api-mesh:get` para exibir a configuração da malha atualizada.
 
 ## Exemplos de API Mesh
 
-A API Mesh permite que os usuários consumam fontes de dados externas para aprimorar a instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para habilitar novas funcionalidades.
+A API Mesh permite que os usuários consumam fontes de dados externas para aprimorar a instância do Adobe Commerce. Ele também pode ser usado para configurar dados existentes do Commerce para ativar novas funcionalidades.
 
 ### Habilitar preços de camada
 
 Neste exemplo, a API Mesh é usada para ativar os preços da camada no Adobe Commerce.
-Substitua o `name `, `endpoint`, e `x-api-key` valores.
+Substitua os valores `name `, `endpoint` e `x-api-key`.
 
 ```json
 {
@@ -160,7 +160,7 @@ query {
 
 ### Obter uma ID de entidade
 
-Essa malha anexa a `entityId` à interface do ProductView. Substitua o `name `, `endpoint`, e `x-api-key` valores.
+Esta Malha anexa o `entityId` à interface do ProductView. Substitua os valores `name `, `endpoint` e `x-api-key`.
 
 ```json
 {

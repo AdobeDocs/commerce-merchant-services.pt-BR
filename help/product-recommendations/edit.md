@@ -4,7 +4,7 @@ description: Saiba como editar uma recomendação de produto.
 exl-id: 36fd6d3a-74f8-4510-a187-a2a91742cd1a
 source-git-commit: e7c3d1ab49ee9469e3312321f6d96446840d0778
 workflow-type: tm+mt
-source-wordcount: '427'
+source-wordcount: '428'
 ht-degree: 0%
 
 ---
@@ -19,13 +19,13 @@ A página Editar recomendação oferece a capacidade de ajustar as configuraçõ
 - [Posicionamento e Posição](#placement)
 - [Filtrar produtos](#filters)
 
-A visualização no lado direito da página mostra como a recomendação com as configurações atuais pode aparecer na loja. A variável _Visualização de produtos recomendada_ O permanece visível para referência à medida que você rolar a página para baixo. A visualização exibe uma imagem do produto em miniatura, o nome do produto, SKU, preço e tipo de resultado para cada produto retornado. O tipo de resultado indica se há dados comportamentais primários suficientes para gerar a recomendação ou se está usando dados comportamentais de backup.
+A visualização no lado direito da página mostra como a recomendação com as configurações atuais pode aparecer na loja. A _Visualização de produtos recomendada_ permanece visível para referência à medida que você rolar pela página. A visualização exibe uma imagem do produto em miniatura, o nome do produto, SKU, preço e tipo de resultado para cada produto retornado. O tipo de resultado indica se há dados comportamentais primários suficientes para gerar a recomendação ou se está usando dados comportamentais de backup.
 
 ![Editar Recommendations](assets/edit-recommendation.png)
 
 ## Editar uma recomendação
 
-1. No _Admin_ barra lateral, vá para **Marketing** > _Promoções_ > **Recommendations do produto**.
+1. Na barra lateral _Admin_, vá para **Marketing** > _Promoções_ > **Recommendations de Produtos**.
 
 1. Selecione a recomendação que deseja editar.
 
@@ -58,23 +58,23 @@ Ajuste o controle deslizante para exibir até 20 produtos na unidade de recomend
    - Na parte inferior do conteúdo principal
    - Na parte superior do conteúdo principal
 
-   ![Editar inserção](assets/edit-placement.png)
+   ![Editar posicionamento](assets/edit-placement.png)
 
-1. Para alterar a ordem das recomendações incluídas na unidade, use o **Mover** ![Mover seletor](assets/icon-move.png) controle para arrastar as recomendações para a posição.
+1. Para alterar a ordem das recomendações incluídas na unidade, use o controle **Mover** ![Mover seletor](assets/icon-move.png) para arrastar as recomendações para a posição.
 
    ![Editar posição](assets/edit-position.png)
 
 ### Filtrar produtos {#filters}
 
-Quaisquer alterações feitas no produto [filtros](filters.md) são refletidos na _Visualização de produtos recomendada_. Somente os produtos que correspondem aos filtros de inclusão podem ser recomendados. Os produtos que correspondem a qualquer filtro de exclusão não são recomendados.
+Todas as alterações feitas nos [filtros](filters.md) do produto serão refletidas na _Visualização de produtos recomendada_. Somente os produtos que correspondem aos filtros de inclusão podem ser recomendados. Os produtos que correspondem a qualquer filtro de exclusão não são recomendados.
 
-A variável _Inclusões_ e _Exclusões_ As guias listam os filtros disponíveis de cada tipo. Na lista, cada filtro ativo é marcado com um ponto azul.
+As guias _Inclusões_ e _Exclusões_ listam os filtros disponíveis de cada tipo. Na lista, cada filtro ativo é marcado com um ponto azul.
 
 - Para exibir os detalhes sobre cada filtro, clique no nome do filtro.
-- Para alterar o status do filtro, defina a variável **Ativar filtro** alternar para a variável `on` ou `off` posição.
+- Para alterar o status do filtro, defina a opção **Habilitar filtro** para a posição `on` ou `off`.
 
 ![Editar filtros](assets/edit-filters.png)
 
-As configurações de filtro descrevem os produtos a serem incluídos ou excluídos na unidade de recomendação. Por exemplo, a variável _Categoria_ as configurações de inclusão de filtro informam o sistema para incluir produtos somente das categorias selecionadas.
+As configurações de filtro descrevem os produtos a serem incluídos ou excluídos na unidade de recomendação. Por exemplo, as configurações de inclusão de filtro _Categoria_ instruem o sistema a incluir produtos somente das categorias selecionadas.
 
-![Editar filtro de categorias](assets/edit-filter-category.png)
+![Editar filtro de categoria](assets/edit-filter-category.png)

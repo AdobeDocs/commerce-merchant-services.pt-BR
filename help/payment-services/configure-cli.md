@@ -1,6 +1,6 @@
 ---
 title: Configuração da linha de comando
-description: Após a instalação, é possível configurar [!DNL Payment Services] usando a Interface de linha de comando (CLI).
+description: Após a instalação, você pode configurar o [!DNL Payment Services] usando a Interface de Linha de Comando (CLI).
 role: Admin, Developer
 level: Intermediate
 exl-id: 265ab1be-fe52-41f3-85cb-addbc2ddfb17
@@ -14,21 +14,21 @@ ht-degree: 0%
 
 # Configuração da linha de comando
 
-Depois de instalar [!DNL Payment Services], você pode configurá-lo facilmente no [dentro da página inicial](payments-home.md) ou pela CLI (Command-line Interface, interface de linha de comando).
+Após instalar o [!DNL Payment Services], você poderá configurá-lo facilmente a partir do [na página inicial](payments-home.md) ou por meio da CLI (Interface de Linha de Comando).
 
 ## Configurar exportação de dados
 
-[!DNL Payment Services] combina dados de pedidos exportados de [!DNL Magento Open Source] e [!DNL Adobe Commerce] com dados de pagamento agregados de provedores de pagamento para criar relatórios úteis. A variável [!DNL Payment Services] A extensão do usa indexadores para coletar com eficiência todos os dados necessários para os relatórios do.
+[!DNL Payment Services] combina dados de pedidos exportados de [!DNL Magento Open Source] e [!DNL Adobe Commerce] com dados de pagamentos agregados de provedores de pagamentos para criar relatórios úteis. A extensão [!DNL Payment Services] usa indexadores para coletar com eficiência todos os dados necessários para os relatórios.
 
-Para saber mais sobre os dados usados no [!DNL Payment Services] relatórios, Consulte [Relatório de status do pagamento da ordem](order-payment-status.md#data-used-in-the-report).
+Para saber mais sobre os dados usados nos relatórios [!DNL Payment Services], consulte [Relatório de status do pagamento da ordem](order-payment-status.md#data-used-in-the-report).
 
 ### Configurar cron em [!DNL Magento Open Source]
 
-Se quiser usar um `BY SCHEDULE` modo de índice ativado [!DNL Magento Open Source], você deve configurar o cron. Consulte [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
+Se quiser usar um modo de índice `BY SCHEDULE` em [!DNL Magento Open Source], você deve configurar o cron. Consulte [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html).
 
 ### Definir indexadores
 
-Os dados do pedido são exportados e mantidos no Serviço de pagamento, usando um dos dois modos de índice—`ON SAVE` (padrão) ou `BY SCHEDULE` (recomendado).
+Os dados do pedido são exportados e mantidos no Serviço de Pagamento, usando um dos dois modos de índice: `ON SAVE` (padrão) ou `BY SCHEDULE` (recomendado).
 
 Os índices a seguir são para [!DNL Payment Services]:
 
@@ -52,9 +52,9 @@ Para saber mais sobre como alterar manualmente o modo de um indexador, consulte 
 
 ### Reindexar dados manualmente
 
-Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindexar](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} in [Gerenciar os Indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obter mais informações.
+Você pode reindexar os dados manualmente, em vez de esperar que eles aconteçam automaticamente. Consulte [Reindex](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html#reindex){target="_blank"} em [Manage the Indexers](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html){target="_blank"} para obter mais informações.
 
-Quando `BY SCHEDULE` estiver definido, o sistema rastreará as entidades alteradas e o trabalho cron atualizará o índice delas com base em um agendamento definido. Consulte [Executar cron a partir da linha de comando](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) in [Configurar e executar o cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) para saber como acionar manualmente a indexação usando trabalhos cron.
+Quando o modo `BY SCHEDULE` é definido, o sistema rastreia entidades alteradas e o trabalho cron atualiza o índice dessas entidades com base em um agendamento definido. Consulte [Executar cron a partir da linha de comando](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html#config-cli-cron-group-run) em [Configurar e executar cron](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-cron.html)) para saber como disparar manualmente a indexação usando trabalhos cron.
 
 ### Enviar dados reindexados para o serviço de pagamento
 
@@ -71,7 +71,7 @@ Use as seguintes opções de comando:
 | `bin/magento saas:resync --feed [feedName]` | Executa uma reindexação do feed especificado e o envia para o serviço correspondente |
 | `bin/magento saas:resync --no-reindex` | Ignora a indexação e envia dados não sincronizados dos índices |
 
-A variável `--feed` permite especificar qual feed deseja enviar:
+O parâmetro `--feed` permite especificar qual feed você deseja enviar:
 
 | Feed | Descrição |
 |  ---  |  ---  |
@@ -82,22 +82,22 @@ A variável `--feed` permite especificar qual feed deseja enviar:
 | `paymentServicesStoresProduction` | Lojas no modo de produção |
 | `paymentServicesStoresSandbox` | Lojas no modo Sandbox |
 
-Todos os dados necessários para os relatórios são enviados para [!DNL Payment Services] automaticamente se o cron estiver configurado e instalado. Você também pode acionar manualmente o processo de envio de dados CRON para [!DNL Payment Services].
+Todos os dados necessários para os relatórios são enviados para [!DNL Payment Services] automaticamente se o cron estiver configurado e instalado. Você também pode acionar manualmente o processo de envio de dados cron para [!DNL Payment Services].
 
 ```bash
 bin/magento cron:run --group payment_services_data_export
 ```
 
-Para saber mais sobre reindexação e indexadores, consulte a [Gerenciar os indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) tópico na documentação do desenvolvedor.
+Para saber mais sobre indexação e indexadores, consulte o tópico [Gerenciar os indexadores](https://devdocs.magento.com/guides/v2.4/config-guide/cli/config-cli-subcommands-index.html) na documentação do desenvolvedor.
 
 ## Configurar processamento L2/L3
 
-[!DNL Payment Services] O pode processar dados de nível 2 e nível 3 de transações de pagamento com cartão para fornecer informações adicionais aos comerciantes.
+O [!DNL Payment Services] pode processar dados de nível 2 e nível 3 de transações de pagamento com cartão para fornecer informações adicionais aos comerciantes.
 
 >[!WARNING]
 >
 > A integração com o processamento de Nível 2 e Nível 3 com o PayPal está disponível somente para comerciantes dos EUA. Consulte [processamento de pagamento](https://developer.paypal.com/docs/checkout/advanced/processing/){target=_blank} na documentação do desenvolvedor do PayPal para obter mais informações.
 
-Se quiser usar dados de processamento L2/L3 para [!DNL Payment Services]ou, se tiver dúvidas, entre em contato com o [!DNL Payment Services] gerente de conta.
+Se quiser usar os dados de processamento L2/L3 para [!DNL Payment Services], ou se tiver dúvidas, entre em contato com o gerente de conta do [!DNL Payment Services].
 
-Para saber mais sobre o processamento L2 e L3 usados em [!DNL Payment Services], consulte [Processamento de nível 2 e nível 3](levels-card-payment-transactions.md).
+Para saber mais sobre o processamento L2 e L3 usado em [!DNL Payment Services], consulte [Processamento de Nível 2 e Nível 3](levels-card-payment-transactions.md).

@@ -16,17 +16,17 @@ ht-degree: 0%
 
 O aplicativo Store Assist fornece à Store Associates quatro módulos para gerenciar o processo de atendimento na loja para compra online e retirada em pedidos da loja:
 
-- **[Escolher](#pick-module)**— obtenha visibilidade total de todos os itens solicitados e das ferramentas para garantir que os itens certos e as quantidades certas sejam separados. Os associados da loja podem separar uma ou várias ordens simultaneamente para maior eficiência.
+- **[Separar](#pick-module)** — obtenha visibilidade total de todos os itens solicitados e das ferramentas para garantir que os itens certos e as quantidades certas sejam separados. Os associados da loja podem separar uma ou várias ordens simultaneamente para maior eficiência.
 
-- **[Estágio](#stage-module)**—Insira o local onde os pedidos são feitos enquanto os clientes estão viajando para a loja para que a Store Associates possa encontrar e entregar pedidos mais rapidamente.
+- **[Estágio](#stage-module)**—Insira o local onde os pedidos são feitos enquanto os clientes estão viajando para a loja para que os Associados da Loja possam encontrar e entregar pedidos mais rapidamente.
 
-- **[Entrega](#hand-off-module)**— receba notificações em tempo real depois que os clientes chegarem à loja para minimizar o tempo de espera e os pedidos de entrega sem problemas.
+- **[Entrega](#hand-off-module)**—Receba notificações em tempo real depois que os clientes chegarem à loja, para minimizar seu tempo de espera e ordens de entrega sem problemas.
 
-- **[Pedidos](#orders-module)**—Visualize uma lista de todos os pedidos feitos para uma loja para que todos saibam o número de pedidos e o status de cada pedido.
+- **[Pedidos](#orders-module)** — Exiba uma lista de todos os pedidos feitos para uma loja para que todos saibam o número de pedidos e o status de cada pedido.
 
 >[!NOTE]
 >
->Antes que a Store Associates possa usar o aplicativo Store Assist, um administrador deve concluir a [processo de configuração do aplicativo](app-setup.md).
+>Para que os Associados da Loja possam usar o aplicativo Store Assist, um Administrador deve concluir o [processo de configuração do aplicativo](app-setup.md).
 
 ## Escolher módulo
 
@@ -53,7 +53,7 @@ Você também pode atualizar facilmente o local de preparo no aplicativo, se seu
 
 ## Módulo de entrega
 
-A variável [!UICONTROL Hand Off] O módulo mostra quais clientes fizeram check-in para retirar seus pedidos e onde seus pedidos estão preparados e aguardam por eles. Os clientes podem retirar os pedidos na loja ou no estacionamento fora/na calçada. As informações sobre a localização exata são apresentadas neste módulo após o check-in.
+O módulo [!UICONTROL Hand Off] mostra quais clientes fizeram check-in para retirar seus pedidos e onde seus pedidos estão preparados e aguardar por eles. Os clientes podem retirar os pedidos na loja ou no estacionamento fora/na calçada. As informações sobre a localização exata são apresentadas neste módulo após o check-in.
 
 Depois de selecionar um pedido pronto para entrega ao cliente. Todos podem ver as informações do pedido, inclusive os itens que não foram encontrados, o local de espera do cliente, o tempo de espera, onde o pedido é preparado e o número de telefone do cliente, se disponível.
 

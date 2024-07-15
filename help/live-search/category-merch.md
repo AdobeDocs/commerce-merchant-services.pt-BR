@@ -1,6 +1,6 @@
 ---
 title: Merchandising de categoria
-description: Uso [!DNL Live Search] Merchandising por categoria para uma experiência de compra mais rápida.
+description: Use o  [!DNL Live Search] Merchandising por categoria para ter uma experiência de compra mais rápida.
 gourl: ls_catalog_merchandising
 exl-id: 24f159c1-b175-47c1-aca1-8bada118b4b4
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
@@ -12,19 +12,19 @@ ht-degree: 0%
 
 # Merchandising de categoria
 
-O merchandising por categoria permite que os proprietários de lojas apliquem [!DNL Live Search] Classificação inteligente [regras](rules.md) às categorias e subcategorias de produtos.
+O merchandising por categoria permite que os proprietários de lojas apliquem [!DNL Live Search] [regras](rules.md) de classificação inteligente a categorias e subcategorias de produtos.
 
 Este vídeo é uma introdução ao Merchandising por categoria.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424617)
 
-O recurso é acessado na guia Administrador em **Marketing** > SEO E Pesquisa > **[!DNL Live Search]** > **Merchandising de categoria**.
+O recurso é acessado no Administrador em **Marketing** > SEO e pesquisa > **[!DNL Live Search]** > **Merchandising de categorias**.
 
 >[!NOTE]
 >
->O merchandising por categoria está disponível com o [!DNL Live Search] [3.0.0 ou superior](release-notes.md). Se você vir o espaço de trabalho Categoria de merchandising, mas ele não estiver preenchido com dados, atualize o [!DNL Live Search] módulo.
+>O Merchandising por categoria está disponível com [!DNL Live Search] [3.0.0 ou superior](release-notes.md). Se você vir o espaço de trabalho Categoria de merchandising, mas ele não estiver preenchido com dados, atualize o módulo [!DNL Live Search].
 
-![Merchandising em categorias](assets/category_workspace.png)
+![Merchandising de categoria](assets/category_workspace.png)
 
 A exibição de Merchandising por categoria mostra regras de categoria definidas, com colunas para:
 
@@ -38,10 +38,10 @@ Você pode pesquisar uma categoria ou subcategoria no campo &quot;Pesquisar por 
 
 ## Estratégias de classificação
 
-O merchandising por categoria usa os mesmos tipos de classificação que com [produtos individuais](rules-workspace.md).
+O Merchandising por categoria usa os mesmos tipos de classificação que com [produtos individuais](rules-workspace.md).
 Há dois tipos de classificação: Inteligente e Manual.
 
-**Classificação inteligente** aproveita a análise de dados comportamentais da loja ao [Adobe Sensei](https://www.adobe.com/sensei.html) para classificar todos os produtos nas categorias escolhidas por um determinado algoritmo. Depois que uma classificação inteligente é escolhida, espera-se que a ordem específica dos produtos mude com o tempo, à medida que os dados subjacentes são reanalisados pela Adobe Sensei continuamente. Por exemplo, os principais produtos de tendências serão alterados automaticamente com o tempo, à medida que as preferências do comprador forem alteradas.
+**A classificação inteligente** aproveita a análise de dados comportamentais de vitrine pela [Adobe Sensei](https://www.adobe.com/sensei.html) para classificar todos os produtos nas categorias escolhidas por um determinado algoritmo. Depois que uma classificação inteligente é escolhida, espera-se que a ordem específica dos produtos mude com o tempo, à medida que os dados subjacentes são reanalisados pela Adobe Sensei continuamente. Por exemplo, os principais produtos de tendências serão alterados automaticamente com o tempo, à medida que as preferências do comprador forem alteradas.
 Os métodos de classificação inteligente são:
 
 * Mais comprados: classifica os produtos de acordo com a frequência com que foram comprados pelos compradores nos sete dias anteriores.
@@ -51,23 +51,23 @@ Os métodos de classificação inteligente são:
 * Tendências: classifica os produtos por retomadas recentes de popularidade com base nas visualizações.
 * Nenhum: classifica os produtos de acordo com sua ordem padrão.
 
-**Classificação manual** permite que os usuários substituam a ordem de classificação automática do produto definindo regras manuais de fixação, reforço, enterramento e ocultação.
+**A classificação manual** permite que os usuários substituam a ordem de classificação automática de produtos definindo regras manuais de fixação, reforço, enterramento e ocultação.
 
 ## Classificação herdada
 
 Como comerciante, você pode querer selecionar todas as categorias de roupas femininas para serem classificadas por &quot;tendências&quot;. Isso inclui as subcategorias &quot;Calças femininas&quot;, &quot;Camisas femininas&quot; e &quot;Acessórios femininos&quot;. As categorias masculinas não devem ser afetadas. Você pode usar classificações herdadas para fazer isso.
 
-Ao selecionar um método de classificação Inteligente para uma categoria ou subcategoria que tenha subcategorias, você pode ativar o **Aplicar classificações inteligentes a subcategorias** opção. Isso aplica o método de classificação a todas as subcategorias.
+Ao selecionar um método de classificação inteligente para uma categoria ou subcategoria que tenha subcategorias, você pode ativar a opção **Aplicar classificações inteligentes a subcategorias**. Isso aplica o método de classificação a todas as subcategorias.
 
-Essas subcategorias agora herdam essa regra da categoria principal (&quot;Sim&quot; na coluna Classificação herdada). Na coluna Ação, as únicas opções disponíveis são **Editar regra**, e **Exibir detalhes**. A variável **Excluir** está desativada para regras herdadas em subcategorias. Excluir a herança de subcategoria requer desfazer a herança da categoria principal.
+Essas subcategorias agora herdam essa regra da categoria principal (&quot;Sim&quot; na coluna Classificação herdada). Na coluna Ação, as únicas opções disponíveis são **Editar Regra** e **Exibir Detalhes**. A opção **Excluir** está desabilitada para regras herdadas em subcategorias. Excluir a herança de subcategoria requer desfazer a herança da categoria principal.
 
 Qualquer categoria ou subcategoria pode ter somente uma classificação Inteligente aplicada de cada vez. Eles também podem ter classificações manuais adicionais aplicadas.
 
-Se você aplicar uma classificação Inteligente a uma categoria e ativar a **Aplicar classificação inteligente a subcategorias** qualquer classificação inteligente já aplicada às subcategorias é substituída.
+Se você aplicar uma classificação inteligente a uma categoria e ativar a opção **Aplicar classificação inteligente às subcategorias**, qualquer classificação inteligente já aplicada às subcategorias será substituída.
 
 ![Lista de subcategorias substituída](assets/category_overwite_subs.png){width="700"}
 
-Se você clicar em **Exibir todos**, uma caixa de diálogo será aberta com detalhes das alterações propostas.
+Se você clicar em **Exibir tudo**, uma caixa de diálogo será aberta com detalhes das alterações propostas.
 
 ![Detalhes das alterações de classificação](assets/category_overwrite.png)
 
@@ -86,27 +86,27 @@ Será exibida uma caixa de diálogo explicando quais subcategorias herdadas são
 
 Para criar uma regra de categoria:
 
-1. Clique em **Adicionar regra** botão.
-1. No _Selecionar categoria_ , clique nas categorias e subcategorias.
+1. Clique no botão **Adicionar regra**.
+1. No modo de exibição _Selecionar Categoria_, clique nas categorias e subcategorias.
 1. Marque a caixa de seleção para selecionar a categoria que deseja classificar.
 1. Clique em **Aplicar**.
 
-   ![Selecionar uma categoria](assets/category_select.png)
+   ![Selecione uma categoria](assets/category_select.png)
 
-1. No _Adicionar regra de categoria_ selecione o método de classificação Inteligente que deseja aplicar à categoria.
+1. Na exibição _Adicionar regra de categoria_, selecione o método de classificação inteligente que deseja aplicar à categoria.
 A página Visualização de categoria mostra os resultados reais da classificação selecionada, usando os dados do Live Search.
-1. Clique em **Salvar e publicar** para salvar a regra.
+1. Clique em **Salvar e Publish** para salvar a regra.
 
-![Selecione o método de classificação Inteligente](assets/category_ranking.png)
+![Selecione o método de classificação inteligente](assets/category_ranking.png)
 
-A variável [!DNL Live Search] o serviço processa a regra e a ativa no armazenamento quando concluído.
+O serviço [!DNL Live Search] processa a regra e a ativa no armazenamento quando concluído.
 
 ## Modificar uma regra de categoria
 
 Para modificar uma regra existente:
 
-1. Clique em **..** na coluna Ação e escolha **Editar**.
-1. Na exibição de regra Editar categoria, faça as alterações necessárias e clique em **Salvar e publicar**.
+1. Clique em **...** na coluna Ação e escolha **Editar**.
+1. Na exibição de regra Editar Categoria, faça as alterações necessárias e clique em **Salvar e Publish**.
 
 As alterações são refletidas no armazenamento quando [!DNL Live Search] processou a alteração.
 
@@ -114,8 +114,8 @@ As alterações são refletidas no armazenamento quando [!DNL Live Search] proce
 
 Para excluir uma regra de categoria:
 
-1. Clique em **..** na coluna Ação e escolha **Excluir**.
-1. No _Excluir regra_ modal, selecione **Excluir** para remover a regra ou **Cancelar** para cancelar a ação
+1. Clique em **...** na coluna Ação e escolha **Excluir**.
+1. No modal _Excluir regra_, selecione **Excluir** para remover a regra ou **Cancelar** para cancelar a ação.
 
 ## Classificação manual
 
@@ -138,6 +138,6 @@ Você também pode clicar no ícone de pino para fixar um produto no local atual
 
 Para adicionar um evento manualmente:
 
-1. Em Classificação manual, clique no botão **Selecionar um evento** e escolha um evento para ocorrer quando as condições associadas forem atendidas.
+1. Em Classificação Manual, clique no menu **Selecionar um evento** e escolha um evento a ser realizado quando as condições associadas forem atendidas.
 1. Insira o nome do produto que você deseja que seja afetado. Os produtos são sugeridos à medida que você digita.
 1. Para vários eventos, escolha outros eventos que deseja acionar quando as condições forem atendidas.

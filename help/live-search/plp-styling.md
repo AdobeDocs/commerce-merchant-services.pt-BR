@@ -1,6 +1,6 @@
 ---
 title: Widget da página de listagem de produtos
-description: Ativação e estilo do [!DNL Live Search Product Listing Page Widget]
+description: Habilitando e estilizando o  [!DNL Live Search Product Listing Page Widget]
 exl-id: f7346a06-a8c7-4a33-8437-ea4f61d9281f
 source-git-commit: faf217486d57588d8535c1d605e963c91ec3ee68
 workflow-type: tm+mt
@@ -11,17 +11,17 @@ ht-degree: 0%
 
 # Widget da página de listagem de produtos
 
-A variável [!DNL Live Search Product Listing Page Widget] O (PLP) usa a plataforma de Serviços da Commerce para fornecer uma página de listagem de produtos com desempenho, pesquisável e compatível com facetas. Este tópico descreve como ativar e estilizar o widget PLP.
+O [!DNL Live Search Product Listing Page Widget] (PLP) usa a plataforma Commerce Services para fornecer uma página de listagem de produtos com desempenho, pesquisável e compatível com facetas. Este tópico descreve como ativar e estilizar o widget PLP.
 
 ## Ativar o dispositivo PLP
 
-Quando a variável [!DNL Live Search] estiver instalado, a funcionalidade de pesquisa padrão será convertida em [!DNL Live Search] automaticamente.
+Quando o serviço [!DNL Live Search] é instalado, a funcionalidade de pesquisa padrão é convertida para [!DNL Live Search] automaticamente.
 
-A variável [!DNL Live Search] O widget PLP é habilitado por padrão para novas instalações. Se você estiver atualizando [!DNL Live Search] e o widget PLP já foi desligado, ele permanecerá assim.
+O widget PLP [!DNL Live Search] é habilitado por padrão para novas instalações. Se você estiver atualizando o [!DNL Live Search] e o widget PLP já tiver sido desativado, ele permanecerá assim.
 
 >[!IMPORTANT]
 >
->Quando a variável [!DNL Live Search Product Listing Page Widget] estiver ativado, a direção da ordem de classificação em uma página da lista de produtos não poderá ser alterada.
+>Quando o [!DNL Live Search Product Listing Page Widget] está habilitado, a direção da ordem de classificação em uma página de listagem de produtos não pode ser alterada.
 
 ## Recursos do widget
 
@@ -39,7 +39,7 @@ Além dos recursos prontos do widget PLP, você pode personalizar ainda mais o w
 - Suporte a vários idiomas
 - Controles deslizantes de preço
 
-Para obter informações sobre como personalizar o widget PLP para lidar com os recursos acima, consulte o `storefront-product-listing-page` leia-me no seguinte [repo](https://github.com/adobe/storefront-product-listing-page/).
+Para obter informações sobre como personalizar o widget PLP para lidar com os recursos acima, consulte o arquivo readme do `storefront-product-listing-page` no seguinte [repositório](https://github.com/adobe/storefront-product-listing-page/).
 
 >[!WARNING]
 >
@@ -47,13 +47,13 @@ Para obter informações sobre como personalizar o widget PLP para lidar com os 
 
 ## Exemplo de estilo
 
-Você pode personalizar a aparência do widget PLP para corresponder ao seu site usando [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
+Você pode personalizar a aparência do widget PLP para corresponder ao seu site usando o [CSS](https://developer.adobe.com/commerce/frontend-core/guide/css/).
 
 >[!NOTE]
 >
->Elementos com classes personalizadas em um tema do Adobe Commerce não são herdados. Esses elementos devem ser direcionados por sua classe específica para corresponder às classes personalizadas; as classes de ação principais não funcionarão em um botão de widget. Os elementos direcionados genéricos dentro do CSS são herdados; `button` aplica-se a botões de widget.
+>Elementos com classes personalizadas em um tema do Adobe Commerce não são herdados. Esses elementos devem ser direcionados por sua classe específica para corresponder às classes personalizadas; as classes de ação principais não funcionarão em um botão de widget. Os elementos genéricos de destino dentro do CSS são herdados; `button` aplica-se aos botões do widget.
 
-Os divs destacados contêm a classe de destino `ds-sdk-product-item__product-name`.
+Os divs realçados contêm a classe de destino `ds-sdk-product-item__product-name`.
 
 ![Paginação](assets/plp-css-example.png)
 
@@ -88,7 +88,7 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 
 - `.ds-plp-pagination_item--current`
 
-![Paginação do item atual](assets/plp-css-pagination-item-current.png)
+![Item atual de paginação](assets/plp-css-pagination-item-current.png)
 
 ### Widgets
 
@@ -102,7 +102,7 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 
 - `.ds-sdk-sort-dropdown`
 
-![Lista suspensa Classificar](assets/plp-css-dropdown.png)
+![Classificar lista suspensa](assets/plp-css-dropdown.png)
 
 - `.ds-sdk-sort-dropdown__button`
 
@@ -118,7 +118,7 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 
 - `.ds-sdk-sort-dropdown__items--item-selected`
 
-![Lista suspensa de itens selecionados](assets/plp-css-dropdown-selected.png)
+![Item selecionado na lista suspensa](assets/plp-css-dropdown-selected.png)
 
 - `.ds-sdk-sort-dropdown__items--item-active`
 
@@ -136,7 +136,7 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 - `.ds-plp-facets__pills`
 - `.ds-sdk-pill`
 
-![Pílulas faciais](assets/plp-css-facets-pill.png){width="350"}
+![pílulas facetadas](assets/plp-css-facets-pill.png){width="350"}
 
 - `.ds-sdk-pill__label`
 - `.ds-sdk-pill__cta`
@@ -190,5 +190,5 @@ Personalize o nome do produto adicionando uma regra para torná-lo em letras mai
 
 Para desativar o dispositivo PLP:
 
-1. Ir para **Lojas** > Configurações > **Configuração** > **[!DNL Live Search]** > **Recursos da loja** e defina **Ativar widgets de listagem de produtos** para &quot;Não&quot;.
-1. Selecionar **Salvar configuração** para salvar a configuração.
+1. Vá para **Lojas** > Configurações > **Configuração** > **[!DNL Live Search]** > **Recursos de Vitrine** e defina **Habilitar Widgets de Listagem de Produtos** como &quot;Não&quot;.
+1. Selecione **Salvar configuração** para salvar a configuração.

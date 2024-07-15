@@ -1,6 +1,6 @@
 ---
 title: "Tipos de sinônimos"
-description: "Unidirecional e bidirecional [!DNL Live Search] sinônimos expandem a definição de palavras-chave."
+description: "Sinônimos unidirecionais e bidirecionais [!DNL Live Search] expandem a definição de palavras-chave."
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt
@@ -17,8 +17,8 @@ Sinônimos unidirecionais e bidirecionais expandem a definição de palavras-cha
 
 Sinônimos bidirecionais têm o mesmo significado e retornam os mesmos resultados de pesquisa. No exemplo a seguir, a primeira palavra mostrada em negrito é a palavra-chave usada no catálogo, seguida por palavras que têm o mesmo significado que a palavra-chave original. Você pode criar um par simples de sinônimos bidirecionais ou uma cadeia de vários sinônimos bidirecionais para a mesma palavra-chave.
 
-**jaqueta** ![Seletor bidirecional](assets/btn-two-way.png) casaco
-**calças** ![Seletor bidirecional](assets/btn-two-way.png) slacks ![Seletor bidirecional](assets/btn-two-way.png) calças
+**Jaqueta** ![Seletor bidirecional](assets/btn-two-way.png) casaco
+**calças** ![Seletor bidirecional](assets/btn-two-way.png) pretas ![Seletor bidirecional](assets/btn-two-way.png) calças
 
 ## Unidirecional
 
@@ -29,11 +29,11 @@ Um sinônimo unidirecional é um subconjunto de uma palavra-chave, mas com um si
 
 ## Práticas recomendadas
 
-Lembre-se das seguintes práticas recomendadas para aproveitar ao máximo o [!DNL Live Search] sinônimos.
+Lembre-se das seguintes práticas recomendadas para obter o máximo de [!DNL Live Search] sinônimos.
 
 ### Evitar &quot;palavras de interrupção&quot;
 
-[!DNL Live Search] filtra &quot;palavras de interrupção&quot; comuns em inglês de sinônimos, como:
+[!DNL Live Search] filtra as &quot;palavras de interrupção&quot; comuns em inglês de sinônimos, como:
 
 a, an, and, são, como, at, be, mas, por, for, in, into, is, it, no, not, of, on, or, tal, que, o, seu, então, há, esses, eles, este, para, foi, será, com
 

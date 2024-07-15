@@ -1,6 +1,6 @@
 ---
 user-guide-title: “Guia do [!DNL Live Search]”
-user-guide-description: "Este guia fornece instruções detalhadas para usar o [!DNL Live Search] da Adobe Commerce."
+user-guide-description: "Este guia fornece instruções detalhadas para usar o  [!DNL Live Search] da Adobe Commerce."
 breadcrumb-title: “Guia do [!DNL Live Search]”
 role: Admin
 feature: Services, Search
@@ -13,7 +13,7 @@ ht-degree: 10%
 
 # [!DNL Live Search] para Commerce {#live-search}
 
-- [O que é o [!DNL Live Search]?](overview.md)
+- [O que é  [!DNL Live Search]?](overview.md)
 - [Instalar](install.md)
 - [Configuração do Live Search](workspace.md)
 - [Limites e limites](boundaries-limits.md)
@@ -22,7 +22,7 @@ ht-degree: 10%
    - [Widgets da vitrine](storefront-widgets.md)
    - [Página de listagem de produtos](plp-styling.md)
    - [Loja [!DNL Popover]](storefront-popover.md)
-- Admin {#live-search-admin}
+- Administrador {#live-search-admin}
    - [Desempenho](performance.md)
    - Facetas {#facets}
       - [Visão geral](facets.md)
@@ -35,7 +35,7 @@ ht-degree: 10%
       - [Tipos de sinônimos](synonyms-type.md)
       - [Adicionar sinônimos](synonyms-add.md)
       - [Gerenciar sinônimos](synonyms-manage.md)
-   - Pesquisar merchandising {#rules}
+   - Pesquisar Merchandising {#rules}
       - [Visão geral](rules.md)
       - [Workspace](rules-workspace.md)
       - [Adicionar regras](rules-add.md)
@@ -45,6 +45,6 @@ ht-degree: 10%
    - [GraphQL](graphql.md)
    - [Configurações](settings.md)
 - [Eventos](events.md)
-- consultas do GraphQL {#graphql}
+- Consultas do GraphQL {#graphql}
    - [attributeMetadata](https://developer.adobe.com/commerce/services/graphql/live-search/attribute-metadata/)
    - [productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)

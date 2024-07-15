@@ -1,6 +1,6 @@
 ---
 title: "Facetas"
-description: "[!DNL Live Search] As facetas usam várias dimensões de valores de atributo como critérios de pesquisa."
+description: "[!DNL Live Search] facetas usam várias dimensões de valores de atributo como critérios de pesquisa."
 exl-id: 63c0b255-6be9-41ad-b4bf-13bb7ff098fd
 source-git-commit: 460065ecf6478e4313bd31ea848e04c7e8e192a3
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Facetas
 
-Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa. A pesquisa facetada é semelhante, mas consideravelmente &quot;mais inteligente&quot; do que o padrão [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html). A lista de filtros disponíveis é determinada pelo parâmetro [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de produtos retornados nos resultados da pesquisa.
+Faceting é um método de filtragem de alto desempenho que usa várias dimensões de valores de atributo como critérios de pesquisa. A pesquisa facetada é semelhante, mas consideravelmente &quot;mais inteligente&quot; do que a [navegação em camadas](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html) padrão. A lista de filtros disponíveis é determinada pelos [atributos filtráveis](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation-layered.html#filterable-attributes) de produtos retornados nos resultados da pesquisa.
 
-[!DNL Live Search] usa o `productSearch` consulta, que retorna facetas e outros dados específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) na documentação do desenvolvedor para obter exemplos de código.
+[!DNL Live Search] usa a consulta `productSearch`, que retorna facetas e outros dados específicos de [!DNL Live Search]. Consulte [`productSearch` query](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/) na documentação do desenvolvedor para ver exemplos de código.
 
-![Resultados da pesquisa filtrada](assets/storefront-search-results-run.png)
+![Resultados de pesquisa filtrados](assets/storefront-search-results-run.png)
 
 Qualquer faceta definida pode ser usada como um parâmetro de URL e os resultados serão filtrados com base nos valores de parâmetro: `http://yourstore.com?brand=acme&color=red`.
 
@@ -39,20 +39,20 @@ Se você tiver um grande número de atributos com os quais lidar, considere comb
 | Configuração | Descrição |
 |--- |--- |
 | [Configurações de exibição de categoria](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/create/categories-display-settings.html) | Âncora - `Yes` |
-| [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de entrada de catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (somente widget), `Text swatch` (somente widget) |
-| Propriedades da vitrine do atributo | Usar na navegação em camadas dos resultados da pesquisa - `Yes` |
+| [Propriedades do atributo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/create/attribute-product-create.html) | [Tipo de Entrada de Catálogo](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/attributes-input-types.html) - `Yes/No`, `Dropdown`, `Multiple Select`, `Price`, `Visual swatch` (somente widget), `Text swatch` (somente widget) |
+| Propriedades da vitrine do atributo | Usar na Navegação em Camadas de Resultados da Pesquisa - `Yes` |
 
 ## Agregação de facetas
 
-A agregação de facetas é executada da seguinte maneira: se a loja tiver três facetas (categorias, cor e preço) e os filtros do comprador nos três (cor = azul, preço vai de US$ 10,00 a US$ 50,00, categorias = `promotions`).
+A agregação de facetas é executada da seguinte maneira: se a loja tiver três facetas (categorias, cor e preço) e os filtros do comprador em todos os três (cor = azul, preço é de $10,00 a 50,00, categorias = `promotions`).
 
-* `categories` agregação - Agregados `categories`, aplica a variável `color` e `price` filtros, mas não os `categories` filtro.
-* `color` agregação - Agregados `color`, aplica a variável`price` e `categories` filtros, mas não os `color` filtro.
-* `price` agregação - Agregados `price`, aplica a variável `color` e `categories` filtros, mas não os `price` filtro.
+* Agregação `categories` - Agrega `categories`, e aplica os filtros `color` e `price`, mas não o filtro `categories`.
+* Agregação `color` - Agrega `color`, e aplica os filtros `price` e `categories`, mas não o filtro `color`.
+* Agregação `price` - Agrega `price`, e aplica os filtros `color` e `categories`, mas não o filtro `price`.
 
 ## Valores de atributo padrão
 
-Os seguintes atributos de produto têm [propriedades da loja](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que são usados por [!DNL Live Search] e ativado por padrão.
+Os seguintes atributos de produto têm [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que são usadas por [!DNL Live Search] e habilitadas por padrão.
 
 | Propriedade | Propriedade da vitrine | Atributo |
 |---|---|---|
@@ -62,7 +62,7 @@ Os seguintes atributos de produto têm [propriedades da loja](https://experience
 
 ## Propriedades de atributo não-sistema padrão
 
-A tabela a seguir mostra a pesquisa padrão e as propriedades filtráveis de atributos não pertencentes ao sistema, incluindo aqueles específicos aos dados de amostra do Luma. Definição de *Usar na pesquisa* atribuir propriedade a `Yes` torna o atributo pesquisável em ambos [!DNL Live Search] e Adobe Commerce nativo.
+A tabela a seguir mostra a pesquisa padrão e as propriedades filtráveis de atributos não pertencentes ao sistema, incluindo aqueles específicos aos dados de amostra do Luma. Definir a propriedade de atributo *Usar na Pesquisa* como `Yes` torna o atributo pesquisável tanto no [!DNL Live Search] quanto no Adobe Commerce nativo.
 
 | Código do atributo | Pesquisável | Usar na navegação em camadas |
 |--- |--- |--- |

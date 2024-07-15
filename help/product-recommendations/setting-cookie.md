@@ -4,7 +4,7 @@ description: Saiba como as recomendações de produto lidam com restrições de 
 exl-id: 2f48c47c-569b-455c-a589-8f99b7b74064
 source-git-commit: 78f226465b9d84707612596a5aa4622aa7869ee1
 workflow-type: tm+mt
-source-wordcount: '170'
+source-wordcount: '163'
 ht-degree: 0%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 0%
 
 O Adobe Commerce e o Magento Open Source solicitam consentimento antes que os dados sejam armazenados em cookies do navegador. Para obter mais informações, consulte [Modo de restrição de cookies](https://experienceleague.adobe.com/docs/commerce-admin/start/compliance/privacy/compliance-cookie-law.html).
 
-Ao implantar o `magento/product-recommendations` para produção, ele começa a coletar eventos de interação do comprador na loja. Como os dados desses eventos podem ser armazenados em cookies do navegador ou no armazenamento local, o recurso suporta o modo de restrição de cookie, pois não coleta eventos até que o comprador tenha dado o consentimento para o cookie.
+Quando você implanta o módulo `magento/product-recommendations` na produção, ele começa a coletar eventos de interação do comprador na loja. Como os dados desses eventos podem ser armazenados em cookies do navegador ou no armazenamento local, o recurso suporta o modo de restrição de cookie, pois não coleta eventos até que o comprador tenha dado o consentimento para o cookie.
 
-Isso pode não funcionar com soluções de consentimento de cookies de terceiros. É responsabilidade de cada comerciante garantir que a coleta de dados não ocorra antes que o cookie tenha sido consentido, como é frequentemente exigido por lei. Se você gerenciar o consentimento do cookie com o código personalizado, poderá usar um cookie não rastreado chamado `mg_dnt` para restringir a coleta de dados.
+Isso pode não funcionar com soluções de consentimento de cookies de terceiros. É responsabilidade de cada comerciante garantir que a coleta de dados não ocorra antes que o cookie tenha sido consentido, como é frequentemente exigido por lei. Se você gerenciar o consentimento de cookies com um código personalizado, poderá usar um cookie não rastreável chamado `mg_dnt` para restringir a coleta de dados.
 
 - Nome do cookie:
 

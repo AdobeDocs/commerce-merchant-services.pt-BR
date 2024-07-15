@@ -20,7 +20,7 @@ O modelo de Usuário do Aplicativo de Abastecimento da Loja é separado de outro
 
 >[!TIP]
 >
->Para obter melhores resultados, [configurar sua conexão](connect-set-up-service.md) antes de adicionar usuários e permissões para Store Associates que usam o aplicativo Store Assist.
+>Para obter melhores resultados, [configure sua conexão](connect-set-up-service.md) antes de adicionar usuários e permissões aos associados da loja que usam o aplicativo Store Assist.
 
 ## Aplicativo de Assistência da Loja - Funções de Usuário
 
@@ -42,7 +42,7 @@ Configurar Funções de Usuário de **[!UICONTROL System > Store Fulfillment App
 
 ## Store Assist - Informações do usuário
 
-Gerencie perfis de usuário do aplicativo de Assistência da Loja nas configurações do Sistema de Administração:  **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
+Gerenciar perfis de usuário do aplicativo de Assistência da Loja nas configurações do Sistema de Administração: **[!UICONTROL System > Store Fulfillment App Permissions > All Store Fulfillment App Users]**.
 
 | **Campo** | **Descrição** | **Escopo** | **Obrigatório** |
 |------------------------------------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|--------------|
@@ -52,6 +52,6 @@ Gerencie perfis de usuário do aplicativo de Assistência da Loja nas configura�
 | **[!UICONTROL Last Name]** | Sobrenome associado ao usuário | Global | Não |
 | **[!UICONTROL Role]** | Função associada ao usuário | Global | Não |
 | **[!UICONTROL Access to all locations]** | Atribua aos usuários acesso a todas as lojas ou selecione lojas individualmente. | Global | Não |
-| **Localidade da interface** | Se sua loja tiver vários idiomas, defina o Local da interface para o idioma a ser usado para a interface de administrador. | Global | Não |
+| **Localidade da Interface** | Se sua loja tiver vários idiomas, defina o Local da interface para o idioma a ser usado para a interface de administrador. | Global | Não |
 | **Ativo desde** | Para definir uma data de início, selecione o ícone de calendário. | Global | Não |
-| **Ativo Até** | Defina a Data de expiração selecionando o ícone do calendário. Definir uma data de expiração é útil para configurar atribuições temporárias de usuários ou funções. Após a data de expiração, o status da conta do usuário muda para `Inactive`, mas a conta ainda poderá ser atualizada, se necessário. | Global | Não |
+| **Ativo para** | Defina a Data de expiração selecionando o ícone do calendário. Definir uma data de expiração é útil para configurar atribuições temporárias de usuários ou funções. Após a data de expiração, o status da conta do usuário muda para `Inactive`, mas a conta ainda pode ser atualizada, se necessário. | Global | Não |

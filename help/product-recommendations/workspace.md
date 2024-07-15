@@ -4,25 +4,25 @@ description: Saiba como configurar, gerenciar e monitorar o desempenho de recome
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
 workflow-type: tm+mt
-source-wordcount: '640'
+source-wordcount: '633'
 ht-degree: 0%
 
 ---
 
-# [!DNL Product Recommendations] Workspace
+# Workspace [!DNL Product Recommendations]
 
-A variável [!DNL Product Recommendations] o espaço de trabalho exibe uma lista de recomendações configuradas anteriormente com métricas que ajudam você a monitorar o sucesso de cada recomendação. A lista pode ser configurada para calcular métricas do último dia, semana ou mês. Você pode usar as métricas para criar insights acionáveis com base na frequência com que uma unidade de recomendação é visualizada ou clicada, ou para analisar o desempenho de suas recomendações.
+O espaço de trabalho [!DNL Product Recommendations] exibe uma lista de recomendações configuradas anteriormente com métricas que ajudam você a monitorar o sucesso de cada recomendação. A lista pode ser configurada para calcular métricas do último dia, semana ou mês. Você pode usar as métricas para criar insights acionáveis com base na frequência com que uma unidade de recomendação é visualizada ou clicada, ou para analisar o desempenho de suas recomendações.
 
-![Workspace do Recommendations](assets/workspace.png)
-_Espaço de trabalho Recommendations_
+![espaço de trabalho do Recommendations](assets/workspace.png)
+_Recommendations Workspace_
 
 ## Definir o escopo
 
-Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de todas as configurações de recomendação estiver definida como `Default Store View`. Se a instalação do Commerce incluir várias exibições de loja, defina **Escopo** para o [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde suas recomendações se aplicam.
+Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html) de todas as configurações de recomendação está definido como `Default Store View`. Se a instalação do Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ao qual as recomendações se aplicam.
 
 ## Definir intervalo de datas das métricas
 
-1. Clique em **Calendário** ![Seletor de calendário](assets/icon-calendar.png) controle.
+1. Clique no controle **Seletor de ![Calendário** ](assets/icon-calendar.png).
 
 1. Escolha uma das seguintes opções:
 
@@ -45,7 +45,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
 
    A tabela é atualizada para incluir apenas as colunas selecionadas.
 
-   ![Workspace do Recommendations](assets/workspace-select-columns.png)
+   ![espaço de trabalho do Recommendations](assets/workspace-select-columns.png)
    _Mostrar/ocultar colunas_
 
 ## Configurações
@@ -56,15 +56,15 @@ As configurações determinam o espaço de dados SaaS que fornece os dados compo
 
 - Para configurar um novo espaço de dados SaaS, clique em **Editar configuração**. Para saber mais, consulte [Configurações](settings.md).
 
-![Configurações do Recommendations](assets/settings.png)
+![configurações do Recommendations](assets/settings.png)
 _Configurações do Recommendations_
 
 ## Exibir detalhes
 
 1. Na tabela, clique na recomendação que deseja examinar.
 
-   ![Workspace do Recommendations](assets/recommendation-detail.png)
-   _Detalhes da taxa de conversão da página inicial_
+   ![espaço de trabalho do Recommendations](assets/recommendation-detail.png)
+   _Detalhes do Índice de Conversão da Página Inicial_
 
 1. Para alterar o status da recomendação, clique em **Ativar** ou **Desativar**.
 
@@ -81,9 +81,9 @@ Na página de detalhes da recomendação, clique em **Criar**. Para saber mais, 
 | Controle | Descrição |
 |---|---|
 | ![Seletor de calendário](assets/icon-calendar.png) | Determina o intervalo de tempo usado para cálculos de métricas. Opções: 24 horas/7 dias/30 dias |
-| ![Seletor de coluna](assets/icon-show-hide-columns.png) | Determina as colunas que aparecem na variável [!DNL Product Recommendations] tabela. |
+| ![Seletor de coluna](assets/icon-show-hide-columns.png) | Determina as colunas que aparecem na tabela [!DNL Product Recommendations]. |
 | Configurações | Determina o espaço de dados SaaS onde os dados comportamentais de recomendação são obtidos e também ativa o tipo de recomendação de semelhança visual. |
-| Criar recomendação | Abre a [Criar nova recomendação](create.md) página. |
+| Criar recomendação | Abre a página [Criar Nova Recomendação](create.md). |
 
 ## Descrições da coluna
 
@@ -98,7 +98,7 @@ Na página de detalhes da recomendação, clique em **Criar**. Para saber mais, 
 | Impressões | O número de vezes que uma unidade de recomendação é carregada e renderizada em uma página. Uma unidade de recomendação que está abaixo da dobra da janela de visualização do navegador é renderizada na página, mas não é visualizada pelo comprador. Nesse caso, a unidade renderizada é contada como uma impressão, mas uma visualização é contada somente se o usuário rolar a unidade para visualização. |
 | vImpressões | (Impressões visíveis) O número de unidades de recomendação que registram pelo menos uma visualização. |
 | Visualizações | O número de unidades de recomendação exibidas na janela de visualização do navegador do comprador. Esse evento pode ser disparado várias vezes em uma página. |
-| Cliques | A soma do número de vezes que um comprador clica em um item na unidade de recomendação e o número de vezes que o comprador clica em **Adicionar ao carrinho** botão na unidade de recomendação |
+| Cliques | A soma do número de vezes que um comprador clica em um item na unidade de recomendação e do número de vezes que ele clica no botão **Adicionar ao carrinho** na unidade de recomendação |
 | Receita | A receita gerada pela recomendação para o intervalo de tempo atual. |
 | Receita Lt | (Receita vitalícia) A receita vitalícia impulsionada por uma recomendação. |
 | Visibilidade | A porcentagem de unidades de recomendação que se registram na exibição. |

@@ -1,6 +1,6 @@
 ---
 title: Relatórios financeiros
-description: "[!DNL Payment Services] O oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja."
+description: "[!DNL Payment Services] oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja."
 role: User
 feature: Payments, Checkout
 level: Intermediate
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Relatórios financeiros
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja.
+O [!DNL Payment Services] for [!DNL Adobe Commerce] e [!DNL Magento Open Source] oferece relatórios abrangentes para você ter uma visão clara dos pedidos e pagamentos da loja.
 
 ![Exibição de relatórios financeiros](assets/reports-view.png){width="600" zoomable="yes"}
 

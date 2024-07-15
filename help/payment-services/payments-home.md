@@ -1,6 +1,6 @@
 ---
 title: Início
-description: Introdução ao [!DNL Payment Services] Início.
+description: Introdução à Página Inicial  [!DNL Payment Services] .
 role: Admin, User
 level: Intermediate
 exl-id: d7a4c87f-33cb-446a-b442-3cdf05b518a2
@@ -8,19 +8,19 @@ feature: Payments, Checkout
 source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
 workflow-type: tm+mt
 source-wordcount: '163'
-ht-degree: 1%
+ht-degree: 3%
 
 ---
 
-# Introdução ao [!DNL Payment Services] Início
+# Introdução à Página Inicial do [!DNL Payment Services]
 
-[!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] O fornece uma exibição Início com todas as informações necessárias para iniciar a configuração e o uso da extensão.
+O [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] fornece um modo de exibição de Página Inicial com todas as informações necessárias para iniciar a configuração e o uso da extensão.
 
-1. No _Admin_ barra lateral, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
+1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**:
 
-   ![Exibição da página inicial](assets/home-view.png){width="700" zoomable="yes"}
+   ![Modo de exibição de página inicial](assets/home-view.png){width="700" zoomable="yes"}
 
-1. Nesta visualização inicial, você pode acessar _Início_ exibir, _Saiba mais_ sobre [!DNL Payment Services], configurar a extensão _Configurações_ ou obtenha _Ajuda_.
+1. Neste modo de exibição de Página Inicial, você pode acessar o modo de exibição _Página Inicial_, _Aprender_ sobre [!DNL Payment Services], configurar a extensão _Configurações_ ou obter _Ajuda_.
 
 ## Início
 
@@ -33,16 +33,16 @@ ht-degree: 1%
 
 | Campo | Descrição |
 |---|---|
-| [!UICONTROL Read documentation] | Consulte os documentos mais recentes de usuários e desenvolvedores para [!DNL Payment Services]. |
-| [!UICONTROL How to onboard] | Encontre tudo o que você precisa para começar a configurar e usar o [!DNL Payment Services] recurso. |
+| [!UICONTROL Read documentation] | Veja os documentos de usuário e desenvolvedor mais recentes para [!DNL Payment Services]. |
+| [!UICONTROL How to onboard] | Encontre tudo o que você precisa para obter configuração e começar a usar o recurso [!DNL Payment Services]. |
 | [!UICONTROL Understand financial reports] | Explicação detalhada do relatório de gerenciamento de fluxo de caixa em [!DNL Payment Services]. |
 
 ## Ajuda
 
 | Campo | Descrição |
 |---|---|
-| [!UICONTROL Visit help center] | A variável [!DNL Adobe Commerce] A Central de Ajuda tem artigos da knowledge base sobre [!DNL Payment Services]. |
-| [!UICONTROL Get support] | Visite o [!DNL Adobe Commerce] portal de suporte para obter assistência com o [!DNL Payment Services.] |
+| [!UICONTROL Visit help center] | A Central de Ajuda do [!DNL Adobe Commerce] tem artigos da base de dados de conhecimento sobre [!DNL Payment Services]. |
+| [!UICONTROL Get support] | Visite o portal de suporte do [!DNL Adobe Commerce] para obter assistência com o [!DNL Payment Services.] |
 
 ## Configurações
 

@@ -1,9 +1,10 @@
 ---
 title: Estimar o volume de dados e o tempo de transmissão
-description: "Saiba como estimar o volume de dados e o tempo de transmissão necessários para o [!DNL data export] ferramenta para sincronizar dados de feed entre o Adobe Commerce e os serviços conectados."
+description: Saiba como estimar o volume de dados e o tempo de transmissão necessários para que a ferramenta [!DNL data export] sincronize dados de feed entre o Adobe Commerce e os serviços conectados.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
@@ -22,7 +23,7 @@ Por padrão, a ferramenta de exportação de dados processa dados no modo de thr
 Com base na configuração padrão, os seguintes fatores afetam o tempo de transmissão de dados durante a sincronização.
 
 - A contagem de threads está definida como 1 (por padrão)
-- O tamanho do lote está definido como _100_ para todos os feeds, exceto para `prices` feed, onde está definido como _500_.
+- O tamanho do lote está definido como _100_ para todos os feeds, exceto para o feed `prices`, no qual está definido como _500_.
 - A taxa de aceitação do feed é de 2 solicitações por segundos.
 - Todos os produtos são atribuídos a todos os sites existentes
 - Para os cenários de cálculo de preço, todos os produtos têm preços especiais e agrupados atribuídos a eles
@@ -49,4 +50,3 @@ Use os valores e as fórmulas na tabela a seguir para calcular o volume de dados
 | Permissões de categoria | Contagem de todas as Permissões de Categoria + 4 registros de fallback (CP): 10000 | CP = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
 | Status do Estoque de Estoque | Produtos (P): 10000, Produtos de estoque atribuídos a (S): 5 (supondo que cada produto esteja atribuído a cada estoque) | P * S = 50000 | 50000 / Tamanho de Lote (100) = 500 solicitações | (500 solicitações * 0,5 segundo por solicitação) / 60 = 4,2 minutos |
 | Ordens de Venda | Todos os registros de ordem (incluindo NFFs, entregas e assim por diante) (SO): 10000 | SO = 10000 | 10000 / Tamanho de Lote (100) = 100 solicitações | (100 solicitações * 0,5 segundo por solicitação) / 60 = 0,8 minuto (50 segundos) |
-

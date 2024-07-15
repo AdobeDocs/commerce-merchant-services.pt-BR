@@ -1,13 +1,13 @@
 ---
 title: Instalação
-description: "Instale o [!DNL Store Fulfillment solution] para uma loja Adobe Commerce usando o Composer para PHP."
+description: "Instale o  [!DNL Store Fulfillment solution] para uma loja da Adobe Commerce usando o Composer para PHP."
 role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
 source-git-commit: 78b09113e72382053b01d6016276bae3aa545fa3
 workflow-type: tm+mt
-source-wordcount: '715'
+source-wordcount: '666'
 ht-degree: 0%
 
 ---
@@ -15,15 +15,15 @@ ht-degree: 0%
 
 # Instalação
 
-Conclua a instalação inicial do [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] extensão em um ambiente de não produção com o gerenciador de filas em execução e armazenamento em cache configurado para permitir o tratamento de exceções. Certifique-se de que seu ambiente de desenvolvimento inclua ferramentas de desenvolvimento para garantir as práticas recomendadas para operar e manter sua instância do Adobe Commerce.
+Conclua a instalação inicial da extensão [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] em um ambiente de não produção com o gerenciador de filas em execução e o armazenamento em cache configurado para permitir o tratamento de exceções. Certifique-se de que seu ambiente de desenvolvimento inclua ferramentas de desenvolvimento para garantir as práticas recomendadas para operar e manter sua instância do Adobe Commerce.
 
 >[!TIP]
 >
->Atualize a extensão Store Fulfillment para Adobe Commerce no local seguindo o [instruções de atualização](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) no _Guia de atualização do Adobe Commerce_. Para o Adobe Commerce na infraestrutura em nuvem, consulte [Atualizar uma extensão](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) no *Guia do Commerce na infraestrutura em nuvem*.
+>Atualize a extensão Store Fulfillment para Adobe Commerce local seguindo as [instruções de atualização](https://experienceleague.adobe.com/docs/commerce-operations/upgrade-guide/modules/upgrade.html) no _Guia de Atualização do Adobe Commerce_. Para o Adobe Commerce na infraestrutura em nuvem, consulte [Atualizar uma extensão](https://experienceleague.adobe.com/docs/commerce-cloud-service/user-guide/configure-store/extensions.html#upgrade-an-extension) no *Guia do Commerce na Infraestrutura em Nuvem*.
 
 ## Pré-requisitos
 
-Revise o [requisitos](solution-requirements.md) para a solução Store Fulfillment e coletar as informações necessárias antes de instalar ou atualizar o [!DNL Store Fulfillment] para o Adobe Commerce.
+Revise os [requisitos](solution-requirements.md) para a solução de Atendimento da Loja e colete as informações necessárias antes de instalar ou atualizar a extensão [!DNL Store Fulfillment] para o Adobe Commerce.
 
 Se você tiver instalado uma versão de pré-lançamento ou beta da extensão Store Fulfillment for Adobe Commerce, use o seguinte comando para removê-la antes de instalar a versão atual.
 
@@ -34,19 +34,19 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 ## Requisitos de instalação
 
-- **Acesso ao arquivo de software Store Fulfillment by Walmart Commerce Technologies (arquivo .zip)**—Durante o processo de integração e habilitação, trabalhe com seu Gerente de contas para obter acesso ao arquivo de instalação da extensão Store Fulfillment.
+- **Acesso ao Atendimento da Loja pelo arquivo de software Walmart Commerce Technologies (arquivo .zip)**—Durante o processo de integração e habilitação, trabalhe com seu Gerente de Conta para obter acesso ao arquivo de instalação da extensão de Atendimento da Loja.
 
-- **Informações da conta do Adobe Commerce**-Instalação do [!DNL Store Fulfillment] A solução requer um [[!DNL Commerce] account](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador à [!DNL Adobe Commerce] projeto.
+- **Informações da conta da Adobe Commerce**-A instalação da solução [!DNL Store Fulfillment] requer uma [[!DNL Commerce] conta](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao projeto [!DNL Adobe Commerce].
 
 - Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto em nuvem. Consulte [Gerenciar acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
 
-- **Experiência com o Composer e o[!DNL Commerce CLI]**— See [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões no [!DNL Adobe Commerce] plataforma.
+- **Experiência usando o Composer e o[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões na plataforma [!DNL Adobe Commerce].
 
-- **Experiência na instalação de extensões de terceiros no Adobe Commerce**—Para referência, consulte a documentação do Adobe Commerce.
+- **Experiência na instalação de extensões de terceiros no Adobe Commerce**. Para obter referência, consulte a documentação do Adobe Commerce.
 
-   - [Instalar uma extensão para uma instância do Adobe Commerce na infraestrutura em nuvem](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [Instalar uma extensão para uma Adobe Commerce na instância da infraestrutura em nuvem](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
 
-   - [Instalar uma extensão para uma instância do Adobe Commerce no local](https://devdocs.magento.com/extensions/install/).
+   - [Instale uma extensão para uma instância local do Adobe Commerce](https://devdocs.magento.com/extensions/install/).
 
 ### Etapa 1: baixar o pacote de extensão
 
@@ -60,7 +60,7 @@ Extraia o arquivo que contém o pacote de integração para instalar a extensão
 
    - Na linha de comando, vá para o diretório raiz do documento do servidor Web.
 
-   - Criar um `artifacts` diretório.
+   - Crie um diretório `artifacts`.
 
 1. Extraia o arquivo morto para o novo diretório.
 
@@ -85,7 +85,7 @@ Use o Composer para configurar o diretório de origem para a instalação e inst
    composer config repositories.artifacts artifact artifacts/
    ```
 
-1. Adicionar a extensão Store Fulfillment Services a `composer.json`.
+1. Adicione a extensão Store Fulfillment Services a `composer.json`.
 
    ```bash
    composer require walmart/magento-bopis-metapackage:1.0.0
@@ -93,11 +93,11 @@ Use o Composer para configurar o diretório de origem para a instalação e inst
 
 >[!NOTE]
 >
->Para obter melhor desempenho nas instâncias locais do Adobe Commerce, é possível [atualizar a configuração de carregamento automático](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
+>Para obter melhor desempenho em instâncias locais do Adobe Commerce, você pode [atualizar a configuração de carregamento automático](https://experienceleague.adobe.com/docs/commerce-operations/performance-best-practices/deployment-flow.html#update-the-autoloader): `composer dump-autoload --optimize`
 
 ### Etapa 4: Atualizar o esquema de banco de dados e os dados
 
-Conclua a instalação usando o `bin/magento setup:upgrade` para atualizar o esquema do banco de dados e os dados com as alterações para dar suporte à solução Store Fulfillment.
+Conclua a instalação usando o `bin/magento setup:upgrade` para atualizar o esquema de banco de dados e os dados com as alterações para dar suporte à solução Store Fulfillment.
 
 >[!NOTE]
 >
@@ -105,13 +105,13 @@ Conclua a instalação usando o `bin/magento setup:upgrade` para atualizar o esq
 
 ### Etapa 5: concluir a instalação
 
-1. Registre a extensão com o Adobe Commerce usando o `setup:upgrade` comando Magento CLI.
+1. Registre a extensão com o Adobe Commerce usando o comando CLI Magento `setup:upgrade`.
 
    ```terminal
    bin/magento setup:upgrade
    ```
 
-1. Se solicitado, recompile o [!DNL Commerce] projeto.
+1. Se solicitado, recompile o projeto [!DNL Commerce].
 
    ```bash
    bin/magento setup:di:compile
@@ -135,7 +135,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 1. Faça logon no servidor.
 
-   Para instalações no Adobe Commerce na infraestrutura em nuvem, [usar SSH para fazer logon no ambiente remoto](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Para instalações no Adobe Commerce na infraestrutura em nuvem, [use o SSH para fazer logon no ambiente remoto](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
 
 1. Verifique se os módulos Store Fulfillment Services estão habilitados.
 
@@ -189,16 +189,16 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 ### Etapas adicionais
 
-Se necessário, use o [configuração:static-content:implantar](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} Comando da CLI para implantar arquivos de visualização estáticos no ambiente de produção.
+Se necessário, use o comando CLI [setup:static-content:deploy](https://experienceleague.adobe.com/docs/commerce-operations/reference/commerce-on-premises.html){target="_blank"} para implantar arquivos de exibição estáticos no ambiente de produção.
 
 ```terminal
 php bin/magento setup:static-content:deploy -f
 ```
 
-A variável `-f` será necessária se você estiver usando um tema em branco.
+A opção `-f` é necessária se você estiver usando um tema em branco.
 
 >[!NOTE]
 >
->Para obter mais informações, consulte [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) no Centro de ajuda da Adobe Commerce.
+>Para obter mais informações, consulte o artigo [Práticas recomendadas de implantação de conteúdo estático no Adobe Commerce](https://experienceleague.adobe.com/docs/commerce-operations/implementation-playbook/best-practices/development/static-content-deployment.html) na Central de Ajuda do Adobe Commerce.
 
 

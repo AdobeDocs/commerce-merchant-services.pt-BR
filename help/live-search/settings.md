@@ -1,6 +1,6 @@
 ---
 title: "Configurações"
-description: "Definir configurações para o [!DNL Live Search] serviço."
+description: "Defina as configurações para o serviço  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
 workflow-type: tm+mt
@@ -11,11 +11,11 @@ ht-degree: 0%
 
 # Configurações
 
-Use o *Configurações* espaço de trabalho para configurar os intervalos e as faixas de facetas de preços e o idioma padrão do índice.
+Use o espaço de trabalho *Configurações* para configurar os intervalos e os intervalos de facetas de preços e o idioma padrão do índice.
 
 A facetagem de preços especifica o número de grupos de faixas de preços e como os valores de preços são distribuídos entre eles.
 
-A configuração Idioma informa o [!DNL Live Search] serviço que idioma esperar ao gravar o índice.
+A configuração Idioma informa ao serviço [!DNL Live Search] qual idioma esperar ao gravar o índice.
 
 ![Configurações](assets/settings.png)
 
@@ -23,10 +23,10 @@ A configuração Idioma informa o [!DNL Live Search] serviço que idioma esperar
 
 Você pode especificar o número de grupos de faixas de preços e como os valores de preços são distribuídos entre eles. Cada faixa de preços sobrepõe o grupo anterior em um. Por exemplo, cinco grupos com um intervalo de 20 criam as seguintes faixas de preço: 0-20, 20-40, 40-60, 60-80 e >80. Se não houver produtos suficientes no catálogo para preencher todos os intervalos definidos, a exibição dos grupos disponíveis será ajustada de acordo. Por exemplo: 0-20, 60-80, >80.
 
-1. No Administrador, acesse **Marketing** > *SEO e pesquisa* > **[!DNL Live Search]**.
-1. No **Configurações** espaço de trabalho em *Faceting de preço*, faça o seguinte:
-   * Insira o **Número de seleções** ou grupos de preços a serem disponibilizados. Até 50 agrupamentos de preços podem ser definidos.
-   * Insira o **Valor do intervalo** ou faixa de preços para cada grupo. O valor máximo é 10.000.
+1. No Administrador, vá para **Marketing** > *SEO e pesquisa* > **[!DNL Live Search]**.
+1. No espaço de trabalho **Configurações** em *Facetagem de preços*, faça o seguinte:
+   * Insira o **Número de seleções** ou agrupamentos de preços que estarão disponíveis. Até 50 agrupamentos de preços podem ser definidos.
+   * Insira o **Valor do intervalo** ou o intervalo de preços para cada grupo. O valor máximo é 10.000.
 1. Clique em **Salvar**.
 
    Leva aproximadamente 15 minutos para as configurações atualizadas estarem disponíveis na loja.
@@ -40,7 +40,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 
 ## Idioma
 
-A configuração Idioma informa [!DNL Live Search] qual idioma esperar ao ler o catálogo e gravar o índice.
+A configuração Idioma informa a [!DNL Live Search] qual idioma esperar ao ler o catálogo e gravar o índice.
 
 As línguas têm diferentes conjuntos de regras para a gramática: como as palavras são separadas, tempos verbais e formas de palavras, por exemplo.
 A configuração Idioma garante que o conjunto correto de regras seja aplicado ao mecanismo de indexação.

@@ -1,5 +1,5 @@
 ---
-title: "Pesquisar espaço de trabalho de merchandising"
+title: "Pesquisar Workspace de merchandising"
 description: "Saiba mais sobre o espaço de trabalho de Merchandising de pesquisa."
 exl-id: a52839fb-2264-4443-83c3-9eaa2ccb6996
 source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
@@ -9,9 +9,9 @@ ht-degree: 1%
 
 ---
 
-# Pesquisar espaço de trabalho de merchandising
+# Pesquisar Workspace de merchandising
 
-A variável *Pesquisar merchandising* o espaço de trabalho lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
+O espaço de trabalho *Merchandising de Pesquisa* lista a seleção atual de regras e seus status, e fornece acesso às ferramentas necessárias para criar e gerenciar regras. No espaço de trabalho, é possível:
 
 * Pesquisar regras
 * Exibir detalhes da regra
@@ -19,11 +19,11 @@ A variável *Pesquisar merchandising* o espaço de trabalho lista a seleção at
 * Excluir regras
 * Acessar o editor de regras
 
-![Pesquisar espaço de trabalho de merchandising](assets/rules-workspace.png)
+![Pesquisar Workspace de merchandising](assets/rules-workspace.png)
 
 ## Definir o escopo
 
-Se a sua instalação do Adobe Commerce incluir várias visualizações de loja, defina **Escopo** para o [exibição de loja](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde suas regras se aplicam.
+Se a instalação do Adobe Commerce incluir vários modos de exibição de armazenamento, defina o **Escopo** como [modo de exibição de armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) ao qual as regras se aplicam.
 
 ## Mostrar/ocultar colunas
 
@@ -39,7 +39,7 @@ As colunas visíveis têm uma marca de seleção azul no menu de opções. O nom
 
 1. Se o armazenamento tiver muitas regras, você poderá filtrar as regras por status para reduzir a lista. Por padrão, a lista Regras exibe todas as regras.
 
-1. Para listar apenas as regras com uma configuração de status específica, defina **Status** a um dos seguintes:
+1. Para listar apenas as regras com uma configuração de status específica, defina **Status** como um dos seguintes:
 
    * Todos
    * Ativo
@@ -51,13 +51,13 @@ As colunas visíveis têm uma marca de seleção azul no menu de opções. O nom
 Comece digitando o nome da regra ou qualquer palavra no nome da regra.
 A pesquisa encontra as regras correspondentes à medida que você digita. A sequência de caracteres correspondentes é realçada no nome de cada regra encontrada.
 
-![Regras - Localizar por nome](assets/rules-workspace-search-name.png)
+![Regras - localizar pelo nome](assets/rules-workspace-search-name.png)
 
 ## Exibir detalhes
 
 O painel de detalhes mostra o nome da regra, o status, as condições e os eventos, as datas de início e término, a descrição e a data da última edição. As regras podem ser ativadas, editadas e excluídas no painel de detalhes.
 
-1. No *Pesquisar merchandising* espaço de trabalho, localize na grade a regra que deseja exibir e clique em **Mais** (...)
+1. No espaço de trabalho *Pesquisar Merchandising*, localize a regra na grade que você deseja exibir e clique em **Mais** (...).
 1. Clique em **Exibir detalhes**.
 Você pode executar qualquer um dos seguintes procedimentos a partir do painel Exibir detalhes:
 
@@ -65,9 +65,9 @@ Você pode executar qualquer um dos seguintes procedimentos a partir do painel E
    * Excluir regra
    * Ativar/desativar regra
 
-1. Para fechar o *Exibir detalhes* clique em **Fechar** (X) no canto superior direito.
+1. Para fechar o painel *Exibir detalhes*, clique em **Fechar** (X) no canto superior direito.
 
-   ![Regra - Detalhes](assets/rules-workspace-details.png)
+   ![Regra - detalhes](assets/rules-workspace-details.png)
 
 ## Descrições da coluna
 
@@ -75,19 +75,19 @@ Você pode executar qualquer um dos seguintes procedimentos a partir do painel E
 |--- |--- |
 | Nome | O nome da regra. |
 | Última atualização | A data em que a regra foi atualizada pela última vez. |
-| Data inicial | A data de início de uma regra agendada. |
+| Data de início | A data de início de uma regra agendada. |
 | Data final | A data final de uma regra agendada. |
-| Status | O status codificado por cores indica o estado atual da regra. Use o controle Status acima da grade para filtrar regras por status. Valores:<br />Todos os status - Exibe todas as regras independentemente do status.<br />Ativo (azul) - Exibe somente as regras ativas.<br />Agendado (Laranja) - exibe somente as regras agendadas.<br />Inativas (cinza) - exibe somente as regras inativas. |
+| Status | O status codificado por cores indica o estado atual da regra. Use o controle Status acima da grade para filtrar regras por status. Valores:<br />Todos os status - Exibe todas as regras independentemente do status.<br />Ativo (azul) - Exibe apenas as regras ativas.<br />Agendado (Laranja) - exibe somente as regras agendadas.<br />Inativo (cinza) - exibe somente regras inativas. |
 
 ## Controles
 
 | Controle | Descrição |
 |--- |--- |
-| Adicionar regra | Abre a [editor de regras](rules-add.md). |
+| Adicionar regra | Abre o [editor de regras](rules-add.md). |
 | Status | Filtra a lista de regras por status. Opções: Todas, Ativas, Inativas, Programadas |
 | ![Seletor de coluna](assets/btn-show-hide-columns.png) | Especifica as colunas que ficam visíveis na grade. Opções: Última atualização, Data inicial, Data final, Status |
 | Pesquisar | Pesquisa uma regra por nome completo ou correspondência parcial. |
-| ![Mais seletores](assets/btn-more.png) | Exibe um menu de mais ações que podem ser aplicadas à regra selecionada. Opções: Editar, Exibir detalhes, Excluir |
+| ![Mais seletor](assets/btn-more.png) | Exibe um menu de mais ações que podem ser aplicadas à regra selecionada. Opções: Editar, Exibir detalhes, Excluir |
 
 ## Detalhes da regra
 

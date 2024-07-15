@@ -18,7 +18,7 @@ Conecte os Serviços de Abastecimento de Loja com o Adobe Commerce adicionando a
 
 - **[Configurar [!DNL Commerce integration settings]](#create-an-adobe-commerce-integration)**-Crie uma integração do Adobe Commerce para os serviços de Atendimento da Loja e gere os tokens de acesso para autenticar solicitações recebidas dos servidores de Atendimento da Loja.
 
-- **[Configurar credenciais de conta para Serviços de Atendimento de Repositório](#configure-store-fulfillment-account-credentials)**-Adicione suas credenciais para conectar o Adobe Commerce à sua conta Store Fulfillment.
+- **[Configurar credenciais de conta para os Serviços de Atendimento da Loja](#configure-store-fulfillment-account-credentials)**-Adicione suas credenciais para conectar o Adobe Commerce à sua conta de Atendimento da Loja.
 
 >[!NOTE]
 >
@@ -26,7 +26,7 @@ Conecte os Serviços de Abastecimento de Loja com o Adobe Commerce adicionando a
 
 ## Criar uma integração do Adobe Commerce
 
-Para integrar o Adobe Commerce aos serviços de Atendimento da loja, crie uma integração do Commerce e gere tokens de acesso que possam ser usados para autenticar solicitações dos servidores de Atendimento da loja. Você também deve atualizar o Adobe Commerce [!UICONTROL Consumer Settings] opções para impedir `The consumer isn't authorized to access %resources.` erros de resposta em solicitações do Adobe Commerce para [!DNL Store Fulfillment] serviços.
+Para integrar o Adobe Commerce aos serviços de Atendimento da loja, crie uma integração do Commerce e gere tokens de acesso que possam ser usados para autenticar solicitações dos servidores de Atendimento da loja. Você também deve atualizar as opções [!UICONTROL Consumer Settings] do Adobe Commerce para evitar `The consumer isn't authorized to access %resources.` erros de resposta nas solicitações do Adobe Commerce para os serviços [!DNL Store Fulfillment].
 
 1. No Administrador, crie a Integration for Store Fulfillment.
 
@@ -45,15 +45,15 @@ Para integrar o Adobe Commerce aos serviços de Atendimento da loja, crie uma in
 
 1. Trabalhe com seu Gerente de conta para concluir a configuração no lado de Atendimento da loja e autorizar a integração.
 
-1. Ativar o Adobe Commerce [!UICONTROL Consumer Settings] opção para [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
+1. Habilite a opção [!UICONTROL Consumer Settings] do Adobe Commerce para [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens].
 
-   - No Administrador, acesse **[!UICONTROL Stores]** >  [!UICONTROL Configuration] > **[!UICONTROL Services]** >  **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
+   - No Administrador, vá para **[!UICONTROL Stores]** > [!UICONTROL Configuration] > **[!UICONTROL Services]** > **[!UICONTROL OAuth]** > **[!UICONTROL Consumer Settings]**
 
-   - Defina o [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] opção para **[!UICONTROL Yes]**.
+   - Defina a opção [!UICONTROL Allow OAuth Access Tokens to be used as standalone Bearer tokens] como **[!UICONTROL Yes]**.
 
 >[!IMPORTANT]
 >
-> O token de integração é específico do ambiente. Se você restaurar o banco de dados para um ambiente com os dados de origem de um ambiente diferente, por exemplo, restaurando os dados de produção de um ambiente de preparo, exclua o `oauth_token` da exportação do banco de dados para que os detalhes do token de integração não sejam substituídos durante a operação de restauração.
+> O token de integração é específico do ambiente. Se você restaurar o banco de dados para um ambiente com os dados de origem de um ambiente diferente, por exemplo, restaurando os dados de produção de um ambiente de preparo, exclua a tabela `oauth_token` da exportação do banco de dados para que os detalhes do token de integração não sejam substituídos durante a operação de restauração.
 
 
 ## Configurar credenciais da conta de Abastecimento do Repositório
@@ -64,25 +64,25 @@ Depois de preencher o formulário de entrada, uma conta de Atendimento de Loja W
 - [!DNL Consumer ID]
 - [!DNL Consumer Secret]
 - [!DNL API Server URL]
-- [!DNL Token Auth Server URL] (geralmente o mesmo que a configuração acima)
+- [!DNL Token Auth Server URL] (geralmente o mesmo da configuração acima)
 
 Essas credenciais são necessárias para configurar e usar o Atendimento da Loja.
 
 >[!NOTE]
 >
->O processo de criação de conta pode levar algum tempo para ser concluído. Enquanto você aguarda as credenciais, [revisar e definir outras configurações para a solução Store Fulfillment](service-config-settings-overview.md).
+>O processo de criação de conta pode levar algum tempo para ser concluído. Enquanto você aguarda as credenciais, [revise e defina outras configurações para a solução de Atendimento de Loja](service-config-settings-overview.md).
 
 ### Adicionar credenciais para se conectar ao Atendimento da Loja
 
-1. Configurar [credenciais da conta](enable-general.md) para os ambientes de Produção e Sandbox.
+1. Configure as [credenciais da conta](enable-general.md) para os ambientes de Produção e Sandbox.
 
-1. No Administrador, acesse **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
+1. No Administrador, vá para **[!UICONTROL Stores > Configuration > Services > Store Fulfillment by Walmart Commerce Technologies]**
 
 1. Insira as credenciais de conta fornecidas para o **[!UICONTROL Production environment]**. Todos os campos são obrigatórios.
 
-1. Selecionar **[!UICONTROL Save Config]**.
+1. Selecione **[!UICONTROL Save Config]**.
 
-1. Testar a conexão selecionando **[!UICONTROL Validate Credentials]**.
+1. Teste a conexão selecionando **[!UICONTROL Validate Credentials]**.
 
 >[!NOTE]
 >

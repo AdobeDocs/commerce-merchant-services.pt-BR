@@ -18,6 +18,6 @@ Os seguintes itens são alterações importantes e recentes na documentação:
 
 | Serviço | Alterar | Tipo |
 | -- | -- | -- |
-| [**Serviço de catálogo**](../live-search/overview.md) | Adição de [Exibir impostos com o Serviço de Catálogo e a API Mesh](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html) tópico. | Novo tópico |
+| [**Serviço de catálogo**](../live-search/overview.md) | Adição do tópico [Exibir impostos com Serviço de Catálogo e API Mesh](https://experienceleague.adobe.com/docs/commerce-merchant-services/catalog-service/taxes.html). | Novo tópico |
 
 Esta tabela é atualizada na primeira segunda-feira de cada mês.

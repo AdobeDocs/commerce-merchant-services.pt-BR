@@ -6,24 +6,24 @@ role: Admin, Developer
 feature: Personalization, Integration, Eventing
 source-git-commit: 4a5877d6e1a5c7d840e36f4913306b0c440bbac5
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '260'
 ht-degree: 0%
 
 ---
 
 # Criar eventos personalizados
 
-É possível estender a variável [plataforma de evento](events.md) criando seus próprios eventos de vitrine eletrônica para coletar dados exclusivos de seu setor. Ao criar e configurar um evento personalizado, ele é enviado para o [Coletor de eventos do Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
+Você pode estender a [plataforma de eventos](events.md) criando seus próprios eventos de vitrine eletrônica para coletar dados exclusivos de seu setor. Quando você cria e configura um evento personalizado, ele é enviado para o [Coletor de Eventos da Adobe Commerce](https://github.com/adobe/commerce-events/tree/main/packages/storefront-events-collector).
 
 ## Lidar com eventos personalizados
 
 Eventos personalizados são compatíveis somente com o Adobe Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Adobe Commerce.
 
-Para qualquer `custom` evento, o coletor:
+Para qualquer evento `custom`, o coletor:
 
-- Adiciona `identityMap` com `ECID` como identidade principal
-- Inclui `email` in `identityMap` como uma identidade secundária _se_ `personalEmail.address` está definido no evento
-- Envolve o evento completo em um `xdm` objeto antes de encaminhar para o Edge
+- Adiciona `identityMap` com `ECID` como identidade primária
+- Inclui `email` em `identityMap` como uma identidade secundária _se_ `personalEmail.address` estiver definido no evento
+- Envolve o evento completo dentro de um objeto `xdm` antes de encaminhar para a Edge
 
 Exemplo:
 
@@ -39,7 +39,7 @@ mse.publish.custom({
 });
 ```
 
-Na borda do Experience Platform:
+No Experience Platform Edge:
 
 ```javascript
 {
@@ -75,7 +75,7 @@ Na borda do Experience Platform:
 
 As substituições de atributo para eventos padrão são compatíveis somente com o Experience Platform. Os dados personalizados não são encaminhados para painéis e rastreadores de métricas do Commerce.
 
-Para qualquer evento com `customContext`, o coletor substitui campos de junções definidos nos contextos relevantes por campos em `customContext`. O caso de uso para substituições é quando um desenvolvedor deseja reutilizar e estender contextos definidos por outras partes da página em eventos já compatíveis.
+Para qualquer evento com `customContext`, o coletor substitui campos de junções definidos em contextos relevantes por campos em `customContext`. O caso de uso para substituições é quando um desenvolvedor deseja reutilizar e estender contextos definidos por outras partes da página em eventos já compatíveis.
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ mse.publish.productPageView({
 });
 ```
 
-Na borda do Experience Platform:
+No Experience Platform Edge:
 
 ```javascript
 {

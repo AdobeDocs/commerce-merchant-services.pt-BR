@@ -13,16 +13,16 @@ ht-degree: 0%
 
 # Adaptador do catálogo
 
-A variável `[!DNL Catalog Adapter]` A extensão desativa o indexador de preço de produto padrão incluído no aplicativo do Commerce e usa os preços fornecidos pelo [Serviço de catálogo](../catalog-service/overview.md) em vez disso.
+A extensão `[!DNL Catalog Adapter]` desabilita o indexador de preço de produto padrão incluído no aplicativo do Commerce e usa os preços fornecidos pelo [Serviço de Catálogo](../catalog-service/overview.md).
 
-O adaptador foi projetado para funcionar com [Exportação de dados SaaS](../data-export/overview.md) e o Serviço Adobe Commerce. A exportação de dados SaaS é responsável pela apresentação dos [!DNL Catalog Adapter] recupera todos os preços do Adobe Commerce Service.
+O adaptador foi projetado para funcionar com a [exportação de dados SaaS](../data-export/overview.md) e o Serviço Adobe Commerce. A exportação de dados SaaS é responsável pelo envio dos preços, e o [!DNL Catalog Adapter] recupera todos os preços do Serviço Adobe Commerce.
 
-Quando você habilita o [!DNL Catalog Adapter], a indexação de preços e as operações são afetadas das seguintes formas:
+Ao habilitar o [!DNL Catalog Adapter], a indexação de preços e as operações são afetadas das seguintes maneiras:
 
 - O indexador de preços incluído no aplicativo Adobe Commerce está desativado.
-- Os preços são gerenciados usando a exportação de dados SaaS e o [Indexador de preços SaaS](price-indexing.md).
+- Os preços são gerenciados com a exportação de dados SaaS e o [indexador de preços SaaS](price-indexing.md).
 - Quando um cliente abre um produto, categoria ou outra página que mostra os preços do produto, os preços são recuperados do Serviço da Adobe Commerce.
-- Os preços são enviados para o Adobe Commerce Service sincronizando os dados do [Exportação de dados SaaS](../data-export/overview.md).
+- Os preços são enviados ao Serviço Adobe Commerce sincronizando dados da [exportação de dados SaaS](../data-export/overview.md).
 - O check-out recalcula os preços dinamicamente.
 
 Você pode reativar a indexação de preços no aplicativo do Commerce removendo ou desabilitando a extensão Adaptador de Catálogo.
@@ -40,9 +40,9 @@ Você pode reativar a indexação de preços no aplicativo do Commerce removendo
 
 A extensão Adaptador do catálogo é um metapackage do Composer que instala os seguintes módulos:
 
-- **Desativador do Indexador de Preços**-Este módulo desativa o índice de preços no aplicativo Commerce para que os preços sejam fornecidos por meio do índice de preços SaaS. O indexador de preços do produto no aplicativo Commerce não pode ser ativado quando a extensão de indexação de preços SaaS estiver instalada.
-- **Provedor de preços**-Este módulo fornece os preços dos produtos do Serviço Adobe Commerce. Ele forma o query de pesquisa e obtém os preços dos produtos no front-end.
-- **Adaptador de Pesquisa do Serviço de Catálogo**-Este módulo transfere preços do aplicativo Adobe Commerce para um serviço Adobe Commerce em resposta a uma solicitação de pesquisa de produto.
+- **Desabilitador do Indexador de Preços** - Este módulo desabilita o índice de preços no aplicativo Commerce para que os preços sejam entregues por meio da indexação de preços SaaS. O indexador de preços do produto no aplicativo Commerce não pode ser ativado quando a extensão de indexação de preços SaaS estiver instalada.
+- **Provedor de Preços** - Este módulo fornece preços para produtos do Serviço Adobe Commerce. Ele forma o query de pesquisa e obtém os preços dos produtos no front-end.
+- **Adaptador de Pesquisa do Serviço de Catálogo** - Este módulo transfere os preços do aplicativo Adobe Commerce para um Serviço Adobe Commerce em resposta a uma solicitação de pesquisa de produto.
 
 ## Etapas de instalação
 
@@ -50,13 +50,13 @@ A extensão Adaptador do catálogo é um metapackage do Composer que instala os 
 
 >[!TAB Infraestrutura em nuvem]
 
-Use este método para instalar o [!DNL Catalog Adapter] para uma instância Commerce Cloud.
+Use este método para instalar o [!DNL Catalog Adapter] para uma instância de Commerce Cloud.
 
 1. Na estação de trabalho local, altere para o diretório do projeto do Adobe Commerce na infraestrutura em nuvem.
 
    >[!NOTE]
    >
-   >Para obter informações sobre como gerenciar os ambientes de projeto do Commerce localmente, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) no _Guia do usuário do Adobe Commerce na infraestrutura em nuvem_.
+   >Para obter informações sobre o gerenciamento local de ambientes de projeto do Commerce, consulte [Gerenciamento de ramificações com a CLI](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/cli-branches) no _Guia do Usuário do Adobe Commerce na Infraestrutura da Nuvem_.
 
 1. Confira a ramificação do ambiente para atualizar usando a CLI do Adobe Commerce Cloud.
 
@@ -76,9 +76,9 @@ Use este método para instalar o [!DNL Catalog Adapter] para uma instância Comm
    composer update "magento/catalog-adapter"
    ```
 
-1. Confirmar e enviar alterações de código para a `composer.json` e `composer.lock` arquivos.
+1. Confirmar e enviar alterações de código para os arquivos `composer.json` e `composer.lock`.
 
-1. Adicionar, confirmar e enviar as alterações de código para o `composer.json` e `composer.lock` para o ambiente de nuvem.
+1. Adicione, confirme e envie por push as alterações de código dos arquivos `composer.json` e `composer.lock` para o ambiente de nuvem.
 
    ```shell
    git add -A
@@ -86,7 +86,7 @@ Use este método para instalar o [!DNL Catalog Adapter] para uma instância Comm
    git push origin <branch-name>
    ```
 
-   Enviar as atualizações para o ambiente de nuvem inicia o [Processo de implantação da nuvem do Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar as alterações. Verifique o status da implantação no [implantar log](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
+   A ação de enviar as atualizações para o ambiente de nuvem inicia o [processo de implantação da nuvem do Commerce](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/deploy/process) para aplicar as alterações. Verifique o status da implantação no [log de implantação](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/test/log-locations#deploy-log).
 
 >[!TAB No local]
 
@@ -136,7 +136,7 @@ bin/magento index:reindex catalog_product_price
 
 ## Desabilitar indexador de preços de produto para o cenário de frente de loja headless
 
-Se você tiver uma instância do Commerce headless, talvez seja necessário desativar a indexação de preço do produto do Adobe Commerce para reduzir a carga na instância do Adobe Commerce. Você pode concluir essa tarefa instalando o `magento/module-price-indexer-disabler` módulo:
+Se você tiver uma instância do Commerce headless, talvez seja necessário desativar a indexação de preço do produto do Adobe Commerce para reduzir a carga na instância do Adobe Commerce. Você pode concluir esta tarefa instalando o módulo `magento/module-price-indexer-disabler`:
 
 ```bash
 composer require magento/module-price-indexer-disabler
@@ -144,7 +144,7 @@ composer require magento/module-price-indexer-disabler
 
 ## Cenários de uso
 
-A seguir estão alguns comuns `[!DNL Catalog Adapter]` cenários.
+Veja a seguir alguns cenários `[!DNL Catalog Adapter]` comuns.
 
 ### Nenhuma dependência no indexador de preço de produto do Adobe Commerce
 
@@ -166,5 +166,5 @@ A seguir estão alguns comuns `[!DNL Catalog Adapter]` cenários.
 - Um comerciante com uma instância do Commerce headless com os serviços necessários instalados (Live Search, Recommendations de produtos, Serviço de catálogo)
 - Nenhuma dependência do indexador de preço de produto padrão do Adobe Commerce
 
-1. Instale o `magento/module-price-indexer-disabler` módulo do [!DNL Catalog Adapter] pacote.
+1. Instale o módulo `magento/module-price-indexer-disabler` do pacote [!DNL Catalog Adapter].
 

@@ -1,27 +1,28 @@
 ---
-title: "[!DNL Manage the Data Export extension]"
-description: "Saiba como atualizar o [!DNL Data Export] e para remover ou desativar serviços de exportação de dados que não são necessários."
+title: '[!DNL Manage the Data Export extension]'
+description: Saiba como atualizar a extensão  [!DNL Data Export]  e remover ou desabilitar serviços de exportação de dados que não são necessários.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: d2326673-0f82-4266-bf56-74d55e32fcab
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
 
-
 # Gerenciar a extensão de exportação de dados SaaS
 
-A variável [!DNL data export] A extensão para serviços SaaS é uma coleção de módulos que permitem a coleta e a sincronização de dados entre o Adobe Commerce e os serviços conectados da Commerce.
+A extensão [!DNL data export] para serviços SaaS é uma coleção de módulos que permitem a coleta e a sincronização de dados entre o Adobe Commerce e os Commerce Services conectados.
 
-Módulos específicos são incluídos nos metapackages para extensões do Adobe Commerce Services, como [Live Search](/help/live-search/overview.md), [Recommendations do produto](/help/product-recommendations/overview.md), e [Serviço de catálogo](/help/catalog-service/overview.md). Se você estiver usando esses serviços, nenhuma instalação separada será necessária para habilitar a extensão Exportação de dados.
+Módulos específicos são incluídos nos metapackages para extensões dos Serviços da Adobe Commerce, como
+como [Live Search](/help/live-search/overview.md), [Product Recommendations](/help/product-recommendations/overview.md) e [Serviço de Catálogo](/help/catalog-service/overview.md). Se você estiver usando esses serviços, nenhuma instalação separada será necessária para habilitar a extensão Exportação de dados.
 
 ## Remova ou desative os recursos de exportação de dados do Commerce
 
-Se você não precisar de um dos módulos de exportação de dados de comércio instalados, use o `magento:module:disable` Comando da CLI para desativá-la.
+Se você não precisar de um dos módulos de exportação de dados de comércio instalados, use o comando da CLI `magento:module:disable` para desabilitá-lo.
 
-Por exemplo, há uma variável [API de categorias](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) que usa os dados de feed de permissão das categorias internamente. Se você não estiver usando essa API, poderá desativar a exportação de dados para o feed de permissões de categorias.
+Por exemplo, há uma [API de Categorias](https://developer.adobe.com/commerce/services/graphql/catalog-service/categories/) que usa os dados de feed de permissões de categorias internamente. Se você não estiver usando essa API, poderá desativar a exportação de dados para o feed de permissões de categorias.
 
 ```shell script
 bin/magento module:disable Magento_CategoryPermissionDataExporter Magento_SaaSCategoryPermissions
@@ -39,8 +40,4 @@ Você pode atualizar qualquer um dos módulos de exportação de dados de comér
    composer require magento/module-saas-price:103.3.1 --with-all-dependencies
    ```
 
-Se a instância do Commerce for implantada na infraestrutura em nuvem, atualize a extensão do diretório do projeto em nuvem. Consulte [Atualizar uma extensão](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) no _Guia da infraestrutura do Adobe Commerce na nuvem_.
-
-
-
-
+Se a instância do Commerce for implantada na infraestrutura em nuvem, atualize a extensão do diretório do projeto em nuvem. Consulte [Atualizar uma extensão](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension) no _Guia de Infraestrutura do Adobe Commerce on Cloud_.

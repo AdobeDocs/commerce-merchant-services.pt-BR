@@ -1,9 +1,10 @@
 ---
 title: Melhore o desempenho da exportação de dados SaaS
-description: "Saiba como melhorar o desempenho da exportação de dados SaaS para Serviços da Commerce usando o modo de exportação de dados de vários threads."
+description: Saiba como melhorar o desempenho da exportação de dados SaaS para Serviços da Commerce usando o modo de exportação de dados de vários threads.
 role: Admin, Developer
 recommendations: noCatalog
-source-git-commit: 8230756c203cb2b4bdb4949f116c398fcaab84ff
+exl-id: 20c81ef4-5a97-45cd-9401-e82910a2ccc3
+source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 0%
@@ -12,7 +13,7 @@ ht-degree: 0%
 
 # Melhore o desempenho da exportação de dados SaaS
 
-**Modo de exportação de dados de vários threads** O acelera o processo de exportação dividindo dados do feed em lotes e processando-os em paralelo.
+**Modo de exportação de dados de vários threads** acelera o processo de exportação dividindo dados de feed em lotes e processando-os em paralelo.
 
 Os desenvolvedores ou integradores de sistema podem melhorar o desempenho usando o modo de exportação de dados de vários segmentos em vez do modo de segmento único padrão. No modo de thread único, não há paralelização do processo de envio do feed. Além disso, devido aos limites padrão definidos, todos os clientes estão restritos a usar apenas um segmento. Na maioria dos casos, não é necessário personalizar a configuração.
 
@@ -23,13 +24,13 @@ A Adobe recomenda usar a configuração padrão para assimilação de dados, o q
 
 Considere os seguintes fatores principais ao decidir se a configuração da exportação de dados deve ser personalizada:
 
-- **Sincronização inicial**-Avaliar o número de produtos e [estimar o volume de dados e o tempo de transmissão](estimate-data-volume-sync-time.md) com base na configuração padrão. Pergunte a si mesmo: é possível aguardar essa sincronização de dados inicial após a integração de um serviço do Commerce?
+- **Sincronização Inicial** - Avalie o número de produtos e [estime o volume de dados e o tempo de transmissão](estimate-data-volume-sync-time.md) com base na configuração padrão. Pergunte a si mesmo: é possível aguardar essa sincronização de dados inicial após a integração de um serviço do Commerce?
 
-- **Adicionar novas visualizações de loja ou sites**-Se você planeja adicionar exibições da loja ou sites com a mesma contagem de produtos após a ativação, estime o volume de dados e o tempo de transmissão. Determine se o tempo de sincronização é aceitável com a configuração padrão ou se o processamento de vários threads é necessário.
+- **Adicionando Novos Modos de Exibição de Loja ou Sites**-Se você planeja adicionar Modos de Exibição de Loja ou Sites com a mesma contagem de produto após a ativação, estime o volume de dados e o tempo de transmissão. Determine se o tempo de sincronização é aceitável com a configuração padrão ou se o processamento de vários threads é necessário.
 
-- **Importações regulares**-Antecipar importações regulares, como atualizações de preços ou alterações no status do estoque. Avalie se essas atualizações podem ser aplicadas dentro de um período de tempo aceitável ou se é necessário um processamento mais rápido.
+- **Importações regulares** - Antecipe importações regulares, como atualizações de preços ou alterações de status do estoque. Avalie se essas atualizações podem ser aplicadas dentro de um período de tempo aceitável ou se é necessário um processamento mais rápido.
 
-- **Peso do produto**-Considere se seus produtos são leves ou pesados. Ajuste o tamanho do lote adequadamente se as descrições ou atributos do produto aumentarem o tamanho do produto.
+- **Peso do Produto**-Considere se seus produtos são leves ou pesados. Ajuste o tamanho do lote adequadamente se as descrições ou atributos do produto aumentarem o tamanho do produto.
 
 Lembre-se de que um planejamento criterioso, incluindo a estimativa do volume de dados e do tempo de sincronização, pode frequentemente eliminar a necessidade de personalização. Agende operações de assimilação de feed com base nessas estimativas para atingir resultados ideais.
 
@@ -39,10 +40,10 @@ Lembre-se de que um planejamento criterioso, incluindo a estimativa do volume de
 
 ## Configurar multi-threading
 
-O modo multithread é compatível com todos [métodos de sincronização](data-synchronization.md#synchronization-process)—sincronização completa, sincronização parcial e sincronização de itens com falha. Para configurar multi-threading, especifique o número de threads e o tamanho do lote a serem usados durante a sincronização.
+O modo de vários threads tem suporte para todos os [métodos de sincronização](data-synchronization.md#synchronization-process)—sincronização completa, sincronização parcial e sincronização de itens com falha. Para configurar multi-threading, especifique o número de threads e o tamanho do lote a serem usados durante a sincronização.
 
 - `threadCount` é o número de threads ativados para processar entidades. O padrão `threadCount` é `1`.
-- `batchSize` é o número de entidades processadas em uma iteração. O padrão `batchSize` é `100` registros para todos os feeds, exceto o feed de preço. Para o feed de preço, o valor padrão é `500` registros.
+- `batchSize` é o número de entidades processadas em uma iteração. O padrão `batchSize` são `100` registros para todos os feeds, exceto o feed de preço. Para o feed de preço, o valor padrão é `500` registros.
 
 Você pode configurar vários threads como uma opção temporária ao executar um comando resync ou adicionando a configuração de vários threads à configuração do aplicativo Adobe Commerce.
 
@@ -52,21 +53,21 @@ Você pode configurar vários threads como uma opção temporária ao executar u
 
 ### Configurar multi-threading no tempo de execução
 
-Ao executar um comando de sincronização completa a partir da linha de comando, especifique o processamento de vários threads adicionando o `threadCount` e `batchSize` opções para o comando da CLI.
+Ao executar um comando de sincronização completa a partir da linha de comando, especifique o processamento de vários threads adicionando as opções `threadCount` e `batchSize` ao comando da CLI.
 
 ```
 bin/magento saas:resync --feed=products --threadCount=2 --batchSize=200
 ```
 
-As opções especificadas na linha de comando substituem a configuração de exportação de dados especificada no aplicativo do Adobe Commerce `config.php` arquivo.
+As opções especificadas na linha de comando substituem a configuração de exportação de dados especificada no arquivo `config.php` do aplicativo Adobe Commerce.
 
 ### Adicionar multi-threading à configuração do Commerce
 
 Para processar todas as operações de exportação de dados usando multi-threading, os integradores de sistema ou desenvolvedores podem modificar o número de threads e o tamanho do lote para cada feed na configuração do aplicativo do Commerce.
 
-Essas alterações podem ser aplicadas adicionando valores personalizados à variável [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
+Essas alterações podem ser aplicadas adicionando valores personalizados à [seção do sistema](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/files/config-reference-configphp#system) do arquivo de configuração, `app/etc/config.php`.
 
-**Exemplo: Configuração de multithreading para produtos e preços**
+**Exemplo: configuração de multithreading para produtos e preços**
 
 ```php
 <?php

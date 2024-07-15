@@ -22,11 +22,11 @@ Como prática recomendada, o Adobe recomenda as seguintes diretrizes ao usar as 
 
 - Diversifique seus tipos de recomendação. Os clientes começam a ignorar as recomendações se sugerirem os mesmos produtos repetidamente.
 
-- Não implante as mesmas recomendações na página do carrinho e na página de confirmação de pedido. Considere usar `Most Added to Cart` para a página do carrinho e `Bought This, Bought That` para a página de confirmação do pedido.
+- Não implante as mesmas recomendações na página do carrinho e na página de confirmação de pedido. Considere usar `Most Added to Cart` para a página do carrinho e `Bought This, Bought That` para a página de confirmação de pedido.
 
 - Mantenha seu site organizado. Não implante mais de três unidades de recomendação na mesma página.
 
-- Se sua loja vende roupas, a loja `More like this` A recomendação do pode sugerir produtos específicos de gênero que não correspondem ao gênero do produto que está sendo visualizado. Considere usar esse tipo de recomendação somente para categorias que não sejam de roupas.
+- Se sua loja vende roupas, a recomendação `More like this` pode sugerir produtos específicos de gênero que não correspondem ao gênero do produto que está sendo visualizado. Considere usar esse tipo de recomendação somente para categorias que não sejam de roupas.
 
 ## Personalizado {#personalized}
 
@@ -34,8 +34,8 @@ Esses tipos de recomendações recomendam produtos com base no histórico compor
 
 | Tipo | Descrição |
 |---|---|
-| Recomendado para você | Recomenda produtos com base no comportamento atual e anterior de cada comprador no local. Exibe recomendações altamente relevantes com base no histórico de navegação e compra do comprador. Esse tipo de recomendação é eficaz na página inicial, onde a maioria dos compradores começa sua jornada em um site. Para compradores pela primeira vez em seu site que não geraram nenhum sinal para personalizar sua experiência, o Adobe Commerce mostra produtos com base no tipo de recomendação Mais visualizados. Quando o comprador começa a interagir com os produtos no site, no entanto, os produtos recomendados se ajustam em tempo real ao seu comportamento.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria <br/><br/>**Etiquetas sugeridas:**<br/> - Só para você<br/>- Recomendado para você<br/>- Inspirado pelas suas tendências de compras |
-| Visualizado recentemente | Exibe os produtos visualizados mais recentemente pelo comprador, com base no histórico do navegador. Todos os produtos excluídos são removidos pela unidade de recomendação. A unidade de recomendação não será exibida se não houver histórico do navegador ou se não houver histórico suficiente quando as regras de filtro forem aplicadas. Se os resultados contiverem menos produtos do que o configurado, a unidade de recomendação exibirá somente os produtos retornados.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Visualizado recentemente<br/>- Dê outra olhada |
+| Recomendado para você | Recomenda produtos com base no comportamento atual e anterior de cada comprador no local. Exibe recomendações altamente relevantes com base no histórico de navegação e compra do comprador. Esse tipo de recomendação é eficaz na página inicial, onde a maioria dos compradores começa sua jornada em um site. Para compradores pela primeira vez em seu site que não geraram nenhum sinal para personalizar sua experiência, o Adobe Commerce mostra produtos com base no tipo de recomendação Mais visualizados. Quando o comprador começa a interagir com os produtos no site, no entanto, os produtos recomendados se ajustam em tempo real ao seu comportamento.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria <br/><br/>**Rótulos sugeridos:**<br/> - Apenas para você<br/>- Recomendado para você<br/>- Inspirado pelas suas tendências de compras |
+| Visualizado recentemente | Exibe os produtos visualizados mais recentemente pelo comprador, com base no histórico do navegador. Todos os produtos excluídos são removidos pela unidade de recomendação. A unidade de recomendação não será exibida se não houver histórico do navegador ou se não houver histórico suficiente quando as regras de filtro forem aplicadas. Se os resultados contiverem menos produtos do que o configurado, a unidade de recomendação exibirá somente os produtos retornados.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Visualizados recentemente<br/>- Dê outra olhada |
 
 ## Vendas cruzadas e vendas adicionais {#crossup}
 
@@ -43,10 +43,10 @@ Esses tipos de recomendações são orientados à prova social para ajudar os co
 
 | Tipo | Descrição |
 |---|---|
-| Visualizou isto, visualizou aquilo | Recomenda produtos que os compradores visualizam com mais frequência do que os produtos visualizados no momento.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Clientes que visualizaram este produto também visualizaram (PDP) |
-| Visualizou isto, comprou aquilo | Recomenda produtos que os compradores tendem a comprar de forma desproporcional mais frequente depois de visualizar o produto atual. Ajuda a orientar os compradores a descobrir produtos que, de outra forma, talvez eles não tenham notado.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Clientes que visualizaram esta última compra<br/>- Clientes que compraram<br/>- O que outras pessoas compram depois de visualizar este produto? |
-| Comprei isto, comprei aquilo | Recomenda produtos que os compradores compram com mais frequência do que o produto visualizado atualmente. Usado com mais frequência no carrinho ou na página de detalhes do produto para aumentar a exposição do produto de venda cruzada relacionado a fim de aumentar o valor médio de pedido. Exibe produtos altamente relevantes que os compradores podem adicionar ao carrinho agregando o que outros compradores compraram com o produto atual.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Obtenha tudo o que precisa<br/>- Não se esqueça destes<br/>- Comprados frequentemente em conjunto |
-| Veja mais aqui | Recomenda produtos com base em metadados semelhantes, como nome, descrição, atribuição de categoria e atributos. Ao avaliar os atributos dos produtos que estão sendo visualizados, o recomenda produtos semelhantes na mesma categoria. Por exemplo, se um comprador estiver navegando em tapetes de ioga, outros produtos na categoria de equipamentos são recomendados. Como esse tipo de recomendação não distingue sexos, não é recomendado para roupas, moda ou outros setores verticais específicos de gênero.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais produtos como este<br/>- Semelhante a este |
+| Visualizou isto, visualizou aquilo | Recomenda produtos que os compradores visualizam com mais frequência do que os produtos visualizados no momento.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Clientes que visualizaram este produto também visualizaram (PDP) |
+| Visualizou isto, comprou aquilo | Recomenda produtos que os compradores tendem a comprar de forma desproporcional mais frequente depois de visualizar o produto atual. Ajuda a orientar os compradores a descobrir produtos que, de outra forma, talvez eles não tenham notado.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Clientes que viram esta última compra<br/>- Clientes comprados por fim<br/>- O que outros compram depois de visualizar este produto? |
+| Comprei isto, comprei aquilo | Recomenda produtos que os compradores compram com mais frequência do que o produto visualizado atualmente. Usado com mais frequência no carrinho ou na página de detalhes do produto para aumentar a exposição do produto de venda cruzada relacionado a fim de aumentar o valor médio de pedido. Exibe produtos altamente relevantes que os compradores podem adicionar ao carrinho agregando o que outros compradores compraram com o produto atual.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Obtenha tudo o que precisa<br/>- Não se esqueça destes<br/>- Comprados com frequência |
+| Veja mais aqui | Recomenda produtos com base em metadados semelhantes, como nome, descrição, atribuição de categoria e atributos. Ao avaliar os atributos dos produtos que estão sendo visualizados, o recomenda produtos semelhantes na mesma categoria. Por exemplo, se um comprador estiver navegando em tapetes de ioga, outros produtos na categoria de equipamentos são recomendados. Como esse tipo de recomendação não distingue sexos, não é recomendado para roupas, moda ou outros setores verticais específicos de gênero.<br/><br/>**Onde usado:**<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais produtos como este<br/>- Semelhante a este |
 | [Semelhança visual](#visualsim) | Recomenda produtos com aparência semelhante ao produto que está sendo visualizado. Esse tipo de recomendação é mais útil se as imagens e os aspectos visuais dos produtos forem importantes para a experiência de compra. |
 
 ## População {#popularity}
@@ -55,10 +55,10 @@ Esses tipos de recomendações recomendam produtos que são os mais populares ou
 
 | Tipo | Descrição |
 |---|---|
-| Mais visualizados | Recomenda produtos que foram mais visualizados ao contar o número de sessões em que uma ação de visualização ocorreu nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Mais popular<br/>- Tendências<br/>- Popular agora<br/>- Recentemente popular<br/>- Produtos populares inspirados por este produto (PDP)<br/>- Mais vendidos |
-| Mais comprados | Recomenda os produtos comprados com mais frequência pelos compradores nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais popular<br/>- Tendências<br/>- Popular agora<br/>- Recentemente popular<br/>- Produtos populares inspirados por este produto (PDP)<br/>- Mais vendidos |
-| Mais adicionados ao carrinho | Recomenda os produtos adicionados com mais frequência aos carrinhos pelos compradores nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais popular<br/>- Tendências<br/>- Popular agora<br/>- Recentemente popular<br/>- Produtos populares inspirados por este produto (PDP)<br/>- Mais vendidos |
-| Tendências | Recomenda produtos com base no impulso recente da popularidade de um produto em seu site.<br/><br/>A Adobe Sensei agrega dados de navegação e compra em todo o site para determinar e classificar quais produtos são os mais populares entre seus compradores. Como a análise de tendências analisa o impulso recente do produto, ela é um tipo de recomendação eficiente para catálogos que têm um alto faturamento. Se o catálogo for mais estático, talvez não seja tão útil, a menos que os padrões de compra do público-alvo sejam altamente variáveis.<br/><br/>Quando usado na página inicial do, o Tendências recomenda produtos que são populares recentemente em todo o site. As tendências não exibem produtos que são consistentemente populares, mas sim aqueles que se tornaram populares recentemente. Por exemplo, se você tiver uma campanha de marketing por email promovendo determinados produtos, o aumento de popularidade gerado pelo email aumenta a probabilidade de os produtos promovidos serem classificados como de tendência.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/>- Tendências<br/>- Em tendência agora<br/>- Tendências recentes<br/>- Produtos quentes<br/>- PDP (Trending Related products, produtos relacionados às tendências) |
+| Mais visualizados | Recomenda produtos que foram mais visualizados ao contar o número de sessões em que uma ação de visualização ocorreu nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
+| Mais comprados | Recomenda os produtos comprados com mais frequência pelos compradores nos últimos sete dias.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
+| Mais adicionados ao carrinho | Recomenda os produtos adicionados com mais frequência aos carrinhos pelos compradores nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
+| Tendências | Recomenda produtos com base no impulso recente da popularidade de um produto em seu site.<br/><br/>A Adobe Sensei agrega dados de navegação e compra em todo o site para determinar e classificar quais produtos são os mais populares entre seus compradores. Como a análise de tendências analisa o impulso recente do produto, ela é um tipo de recomendação eficiente para catálogos que têm um alto faturamento. Se o catálogo for mais estático, talvez não seja tão útil, a menos que os padrões de compra do público-alvo sejam altamente variáveis.<br/><br/>Quando usado na home page, a seção Tendências recomenda produtos que são populares recentemente em todo o site. As tendências não exibem produtos que são consistentemente populares, mas sim aqueles que se tornaram populares recentemente. Por exemplo, se você tiver uma campanha de marketing por email promovendo determinados produtos, o aumento de popularidade gerado pelo email aumenta a probabilidade de os produtos promovidos serem classificados como de tendência.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/>- Tendências<br/>- Tendências agora<br/>- Tendências recentes<br/>- Produtos importantes<br/>- Tendências relacionadas aos produtos (PDP) |
 
 ## Alto desempenho {#highperf}
 
@@ -66,18 +66,18 @@ Esses tipos de recomendações recomendam produtos de melhor desempenho com base
 
 | Tipo | Descrição |
 |---|---|
-| Exibir para conversão de compra | Recomenda produtos com a mais alta taxa de conversão de visualização para compra. De todas as sessões do comprador que registraram uma visualização de produto, qual é a proporção de que eventualmente registrou uma compra pelo comprador.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> -Mais vendidos<br/>- Produtos populares<br/>- Você pode estar interessado em |
-| Exibição para conversão de carrinho | Recomenda produtos com a mais alta taxa de conversão de visualização ao carrinho. De todas as sessões de compradores que registraram uma visualização de produto, qual é a proporção que eventualmente registrou e adicionou ao carrinho pelo comprador.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais vendidos<br/>- Produtos populares<br/>- Você pode estar interessado em |
-| Mais comprados | Geralmente chamado de &quot;Mais vendidos&quot;, esse tipo de recomendação conta o número de sessões em que uma ação de solicitação de local ocorreu nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais popular<br/>- Tendências<br/>- Popular agora<br/>- Recentemente popular<br/>- Produtos populares inspirados por este produto (PDP)<br/>- Mais vendidos |
-| Mais adicionados ao carrinho | Recomenda os produtos adicionados com mais frequência aos carrinhos pelos compradores nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carro<br/>- Confirmação <br/><br/>**Etiquetas sugeridas:**<br/> - Mais popular<br/>- Tendências<br/>- Popular agora<br/>- Recentemente popular<br/>- Produtos populares inspirados por este produto (PDP)<br/>- Mais vendidos |
+| Exibir para conversão de compra | Recomenda produtos com a mais alta taxa de conversão de visualização para compra. De todas as sessões do comprador que registraram uma visualização de produto, qual é a proporção de que eventualmente registrou uma compra pelo comprador.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> -Mais vendidos<br/>- Produtos populares<br/>- Talvez você esteja interessado |
+| Exibição para conversão de carrinho | Recomenda produtos com a mais alta taxa de conversão de visualização ao carrinho. De todas as sessões de compradores que registraram uma visualização de produto, qual é a proporção que eventualmente registrou e adicionou ao carrinho pelo comprador.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Principais vendedores<br/>- Produtos populares<br/>- Talvez você esteja interessado |
+| Mais comprados | Geralmente chamado de &quot;Mais vendidos&quot;, esse tipo de recomendação conta o número de sessões em que uma ação de solicitação de local ocorreu nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
+| Mais adicionados ao carrinho | Recomenda os produtos adicionados com mais frequência aos carrinhos pelos compradores nos últimos sete dias. Esse tipo de recomendação pode ser usado em todas as páginas.<br/><br/>**Onde usado:**<br/>- Página inicial<br/>- Categoria<br/>- Detalhes do produto<br/>- Carrinho<br/>- Confirmação <br/><br/>**Rótulos sugeridos:**<br/> - Mais popular<br/>- Tendências<br/>- Popular no momento<br/>- Popular no momento<br/>- Produtos populares inspirados neste produto (PDP)<br/>- Mais vendidos |
 
 ## Semelhança visual {#visualsim}
 
-A variável _Semelhança visual_ tipo de recomendação recomenda produtos com aparência semelhante ao produto que está sendo visualizado. Esse tipo de recomendação é mais útil quando imagens e aspectos visuais dos produtos são partes importantes da experiência de compra.
+O tipo de recomendação _Semelhança visual_ recomenda produtos de aparência semelhante ao produto que está sendo visualizado. Esse tipo de recomendação é mais útil quando imagens e aspectos visuais dos produtos são partes importantes da experiência de compra.
 
 ### Como funciona
 
-A variável _Semelhança visual_ o tipo de recomendação oferece recomendações para outros produtos do catálogo que têm uma semelhança visual com a imagem que está sendo visualizada no momento. A semelhança visual inclui aspectos como:
+O tipo de recomendação _Similaridade visual_ oferece recomendações para outros produtos em seu catálogo que têm uma similaridade visual com as imagens sendo visualizadas no momento. A semelhança visual inclui aspectos como:
 
 - Cor
 - Forma
@@ -102,17 +102,17 @@ Como esse tipo de recomendação não se aplica à maioria dos catálogos, ele n
 
 >[!NOTE]
 >
-> A variável _Semelhança visual_ o tipo de recomendação está disponível quando você [instalar](install-configure.md) como um módulo opcional.
+> O tipo de recomendação _Semelhança visual_ está disponível quando você o [instala](install-configure.md) como um módulo opcional.
 
-1. No _Admin_ barra lateral, vá para **Marketing** > _Promoções_ > **Recommendations do produto** para exibir o _Recommendations do produto_ painel.
+1. Na barra lateral _Admin_, vá para **Marketing** > _Promoções_ > **Recommendations de Produtos** para exibir o painel do _Recommendations de Produtos_.
 
-1. Clique em **Configurações** (ícone de engrenagem) para exibir a variável _Configurações_ página.
+1. Clique em **Configurações** (ícone de engrenagem) para exibir a página _Configurações_.
 
-1. No _Visual Recommendations_ selecione para **Ativar o Visual Recommendations**.
+1. Na seção _Visual Recommendations_, selecione **Habilitar Visual Recommendations**.
 
 1. Clique em **Salvar alterações** quando terminar.
 
-   A variável [Criar nova recomendação](create.md) A página agora é exibida **Semelhança visual** como um tipo de recomendação selecionável quando o tipo de página for **Detalhes do produto**.
+   A página [Criar nova recomendação](create.md) agora exibe **Semelhança visual** como um tipo de recomendação selecionável quando o tipo de página é **Detalhes do produto**.
 
 Após ativar as recomendações visuais, o Adobe Sensei inicia o processamento da imagem. O tempo de duração depende do tamanho do catálogo.
 
@@ -128,10 +128,10 @@ Após ativar as recomendações visuais, o Adobe Sensei inicia o processamento d
 
 ### Exemplo
 
-A imagem a seguir mostra a página de detalhes do produto da _Inspeção de Clâmbar_:
+A imagem a seguir mostra a página de detalhes do produto da _Observação da Sala de Aula_:
 
-![Inspeção de Clâmbar](assets/visual-sim-pdp.png)
+![Observação de Colâmbar](assets/visual-sim-pdp.png)
 
-A seguir estão os _Semelhança visual_ unidade de recomendação para _Inspeção de Clâmbar_:
+O item a seguir mostra a unidade de recomendação _Semelhança visual_ para _Observação de Clâmbar_:
 
 ![Unidade de semelhança visual](assets/visual-sim-unit.png)

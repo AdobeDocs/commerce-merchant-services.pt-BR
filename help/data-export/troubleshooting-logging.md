@@ -1,6 +1,6 @@
 ---
 title: Revisar logs e solucionar problemas
-description: Saiba como solucionar problemas [!DNL data export] erros ao usar os logs de exportação de dados e exportação de saas.
+description: Saiba como solucionar erros [!DNL data export] usando os logs de exportação de dados e exportação de saas.
 feature: Services
 recommendations: noCatalog
 exl-id: 55903c19-af3a-4115-a7be-9d1efaed8140
@@ -13,11 +13,11 @@ ht-degree: 0%
 
 # Revisar logs e solucionar problemas
 
-A variável [!DNL data export] A extensão fornece logs para rastrear processos de coleta e sincronização de dados.
+A extensão [!DNL data export] fornece logs para rastrear processos de sincronização e coleta de dados.
 
 ## Logs
 
-Os logs estão disponíveis no `var/log` no servidor de aplicativos Commerce.
+Os logs estão disponíveis no diretório `var/log` no servidor de aplicativos do Commerce.
 
 | nome do log | filename | descrição |
 |-----------------| ----------| -------------|
@@ -54,7 +54,7 @@ A tabela a seguir descreve os tipos de operação que podem ser registrados nos 
 |----------------------------|---------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------|
 | sincronização completa | A sincronização completa coleta e envia todos os dados para o SaaS de um determinado feed. | `bin/magento saas:resync --feed=products` |
 | reindexação parcial | A sincronização parcial coleta e envia dados para o SaaS somente para entidades atualizadas em um determinado feed. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=index` |
-| tentar novamente os itens com falha | Reenvia itens de um determinado feed para o SaaS se a operação de sincronização anterior falhou devido a um erro de aplicativo ou servidor do Commerce. Este log só estará presente se houver itens com falha. | `bin/magento cron:run --group=saas_data_exporter`  (qualquer grupo cron &quot;*_data_exporter&quot;) |
+| tentar novamente os itens com falha | Reenvia itens de um determinado feed para o SaaS se a operação de sincronização anterior falhou devido a um erro de aplicativo ou servidor do Commerce. Este log só estará presente se houver itens com falha. | `bin/magento cron:run --group=saas_data_exporter` (qualquer grupo cron &quot;*_data_exporter&quot;) |
 | sincronização completa (herdada) | Sincronização completa para um determinado feed no modo de exportação herdado. | `bin/magento saas:resync --feed=categories` |
 | reindexação parcial (herdado) | Envia entidades atualizadas para o SaaS para um determinado feed no modo de exportação herdado. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=index` |
 | sincronização parcial (herdada) | Envia entidades atualizadas para o SaaS para um determinado feed no modo de exportação herdado. Este log só estará presente se existirem entidades atualizadas. | `bin/magento cron:run --group=saas_data_exporter` (qualquer grupo cron &quot;*_data_exporter&quot;) |
@@ -75,15 +75,15 @@ Durante uma ressincronização completa, o progresso é rastreado e registrado a
 }
 ```
 
-Neste exemplo, a variável `status` Os valores de fornecem informações sobre a operação de sincronização:
+Neste exemplo, os valores `status` fornecem informações sobre a operação de sincronização:
 
 - **`"Progress 2/5"`** indica que 2 de 5 iterações foram concluídas. O número de iterações depende do número de entidades exportadas.
 - **`"processed: 200"`** indica que 200 itens foram processados.
-- **`"synced: 100"`** indica que 100 itens foram enviados para SaaS. Espera-se que `"synced"` não é igual a `"processed"`. Veja um exemplo:
+- **`"synced: 100"`** indica que 100 itens foram enviados para SaaS. Espera-se que `"synced"` não seja igual a `"processed"`. Veja um exemplo:
    - **`"synced" < "processed"`** significa que a tabela de feed não detectou alterações no item em comparação à versão sincronizada anteriormente. Esses itens são ignorados durante a operação de sincronização.
    - **`"synced" > "processed"`** a mesma id de entidade (por exemplo, `Product ID`) pode ter vários valores em escopos diferentes. Por exemplo, um produto pode ser atribuído a cinco sites. Nesse caso, você pode ter &quot;1 item processado&quot; e &quot;5 itens sincronizados&quot;.
 
-+++ **Exemplo: log de ressincronização completa do feed de preço**
++++ **Exemplo: Log de ressincronização completo para o feed de preço**
 
 ```
 Price feed full resync:
@@ -111,7 +111,7 @@ Se você armazenar logs do Adobe Commerce na New Relic, poderá adicionar regras
 
 1. Configure a regra de análise adicionando os seguintes valores.
 
-   - **Filtrar logs com base em NRQL**
+   - **Filtrar logs com base no NRQL**
 
      `filePath LIKE '%commerce-data-export%.log'`
 
@@ -121,7 +121,7 @@ Se você armazenar logs do Adobe Commerce na New Relic, poderá adicionar regras
 
 Esse exemplo adiciona uma regra que permite consultar logs do New Relic por tipo de feed específico, operação e assim por diante.
 
-**Exemplo de sequência de consulta**—`feed.feed:"products" and feed.status:"Complete"`
+**Exemplo de cadeia de caracteres de consulta**—`feed.feed:"products" and feed.status:"Complete"`
 
 ## Solução de problemas
 
@@ -130,7 +130,7 @@ Se os dados estiverem ausentes ou incorretos nos Serviços do Comércio, verifiq
 - commerce-data-export-errors.log - se ocorreu um erro durante a fase de coleta
 - saas-export-errors.log - se um erro ocorreu durante a fase de transmissão
 
-Se você vir erros não relacionados à configuração ou extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) com o máximo de informação possível.
+Se você vir erros não relacionados à configuração ou a extensões de terceiros, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html?lang=en#submit-ticket) com o máximo de informações possível.
 
 ### Resolver problemas de sincronização do catálogo {#resolvesync}
 
@@ -139,23 +139,23 @@ Quando você aciona uma ressincronização de dados, pode levar até uma hora pa
 #### Discrepância de dados
 
 1. Exiba a exibição detalhada do produto em questão nos resultados da pesquisa.
-1. Copie a saída JSON e verifique se o conteúdo corresponde ao que você tem na [!DNL Commerce] catálogo.
+1. Copie a saída JSON e verifique se o conteúdo corresponde ao que você tem no catálogo [!DNL Commerce].
 1. Se o conteúdo não corresponder, faça uma pequena alteração no produto no catálogo, como adicionar um espaço ou um ponto.
-1. Aguarde uma ressincronização ou [acionar uma ressincronização manual](#resync).
+1. Aguarde uma ressincronização ou [acione uma ressincronização manual](#resync).
 
 #### A sincronização não está em execução
 
-Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte esta [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html) artigo.
+Se a sincronização não estiver sendo executada de acordo com um agendamento ou se nada estiver sincronizado, consulte este artigo da [KnowledgeBase](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/troubleshoot-product-recommendations-module-in-magento-commerce.html).
 
 #### Falha na sincronização
 
-Se a sincronização do catálogo tiver um status de **Failed**, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
+Se a sincronização do catálogo tiver um status de **Falha**, envie um [tíquete de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket).
 
 ## Logon estendido
 
 Para obter informações de log adicionais, você pode usar variáveis de ambiente para estender logs com dados adicionais para rastreamento e solução de problemas.
 
-Há dois arquivos de log no `var/log/` diretório:
+Há dois arquivos de log no diretório `var/log/`:
 
 - commerce-data-export-errors.log - se ocorreu um erro durante a fase de coleta
 - saas-export-errors.log - se um erro ocorreu durante a fase de transmissão
@@ -164,19 +164,19 @@ Você pode usar variáveis de ambiente para estender logs com dados adicionais p
 
 ### Verificar a carga do feed
 
-Inclua a carga do feed no log de exportação do SaaS adicionando o `EXPORTER_EXTENDED_LOG=1` variável de ambiente quando você ressincroniza o feed.
+Inclua a carga do feed no log de exportação do SaaS, adicionando a variável de ambiente `EXPORTER_EXTENDED_LOG=1` quando sincronizar novamente o feed.
 
 ```shell script
 EXPORTER_EXTENDED_LOG=1 bin/magento saas:resync --feed=products
 ```
 
-Após a conclusão da operação, a carga do feed fica disponível para análise no log de exportação do SaaS (`var/.log/saas-export.log`).
+Após a conclusão da operação, a carga do feed estará disponível para revisão no log de exportação do SaaS (`var/.log/saas-export.log`).
 
 ### Preservar conteúdo na tabela de índice do feed
 
-Para a extensão de exportação de dados SaaS do Commerce (`magento/module-data-exporter`) 103.3.0 e posteriores, os feeds de exportação imediata mantêm somente os dados mínimos necessários na tabela de índice. Os feeds incluem todos os feeds de status do catálogo e do estoque de estoque.
+Para a extensão de exportação de dados SaaS do Commerce (`magento/module-data-exporter`) 103.3.0 e posterior, os feeds de exportação imediatos mantêm somente os dados mínimos necessários na tabela de índice. Os feeds incluem todos os feeds de status do catálogo e do estoque de estoque.
 
-A preservação de dados de carga útil na tabela de índice não é recomendada em ambientes de produção, mas pode ser útil em um ambiente de desenvolvedor. Inclua a carga do feed no índice adicionando o `PERSIST_EXPORTED_FEED=1` variável de ambiente quando você ressincroniza o feed.
+A preservação de dados de carga útil na tabela de índice não é recomendada em ambientes de produção, mas pode ser útil em um ambiente de desenvolvedor. Inclua a carga do feed no índice adicionando a variável de ambiente `PERSIST_EXPORTED_FEED=1` ao ressincronizar o feed.
 
 ```shell script
 PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
@@ -186,7 +186,7 @@ PERSIST_EXPORTED_FEED=1 bin/magento saas:resync --feed=products
 
 Se o processo de reindexação de um feed específico demorar um tempo excessivo, execute o profiler para coletar dados adicionais que podem ser úteis para a Equipe de suporte.
 
-Execute o profiler adicionando o `EXPORTER_PROFILER=1` variável de ambiente ao executar o comando reindex.
+Execute o profiler adicionando a variável de ambiente `EXPORTER_PROFILER=1` quando você executar o comando reindex.
 
 ```
 EXPORTER_PROFILER=1 bin/magento indexer:reindex catalog_data_exporter_products
