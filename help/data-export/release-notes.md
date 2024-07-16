@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 051e558f9aa9760c2d6e993713e49a5997270f1b
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '498'
 ht-degree: 0%
 
 ---
@@ -27,6 +27,17 @@ As atualizações incluem:
 >A extensão de exportação de dados SaaS é uma coleção de módulos instalados automaticamente com o Live Search, o Recommendations de produtos e o Serviço de catálogo. Você pode verificar a versão instalada em seu sistema usando o composer. Em alguns casos, você pode querer atualizar a extensão de exportação de dados no seu sistema para coletar correções ou novos recursos sem atualizar a versão do Serviço do Commerce.
 
 ## Versão principal atual
+
+## Versão 103.3.7
+
+![Correção](../assets/fix.svg) Remoção de dependências desnecessárias do módulo InventoryDataExporter.
+![Correção](../assets/fix.svg) Alteradas as versões necessárias dos módulos de inventário incluídos no módulo CatalogInventoryDataExporter para oferecer suporte à versão 2.4.4 do Adobe Commerce.
+
+## Versão 103.3.6
+
+![Correção](../assets/fix.svg) Corrigidos bloqueios que ocorriam durante a reindexação do feed no modo de vários threads. Agora as consultas são separadas em operações Inserir e Atualizar.
+![Correção](../assets/fix.svg) Otimizou a consulta de preços para catálogos grandes com muitos sites.
+![Novo](../assets/new.svg) Lógica de repetição adicionada para executar novamente transações com falha quando ocorrem bloqueios.
 
 ## Versão 103.3.5
 
