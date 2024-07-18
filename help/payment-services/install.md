@@ -4,7 +4,7 @@ description: Instale a extensão Serviços de Pagamentos.
 exl-id: babaa91a-9376-4acb-b934-a89f9df52016
 role: Admin
 feature: Payments, Checkout, Install, Upgrade
-source-git-commit: 5c4fe370507e4154d4495d4c09e2ff8705e53191
+source-git-commit: 692a7e55d72b1e2f1a161d508be5e179c4d26bde
 workflow-type: tm+mt
 source-wordcount: '451'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Você pode ver erros ao tentar instalar a extensão [!DNL Payment Services]. Use
 
 Se você vir o seguinte erro que indica que você tem as chaves do Composer incorretas:
 
-```terminal
+```
 Could not find a matching version of package magento/payment-services. Check the package spelling, your version constraint and that the package is available in a stability which matches your minimum-stability (stable).
 ```
 
@@ -145,7 +145,7 @@ Para ver quais chaves do Composer estão configuradas:
 
 Se você vir o seguinte erro indicando que você não tem memória suficiente para o PHP:
 
-```terminal
+```
 Fatal error: Allowed memory size of 2146435072 bytes exhausted (tried to allocate 4096 bytes) in phar:///usr/local/bin/composer/src/Composer/DependencyResolver/RuleWatchGraph.php on line 52
 ```
 
