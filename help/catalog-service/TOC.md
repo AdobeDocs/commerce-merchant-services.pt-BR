@@ -5,9 +5,9 @@ breadcrumb-title: “Guia do [!DNL Catalog Service]”
 hide: true
 role: Admin
 feature: Services, Catalog Service
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '55'
+source-wordcount: '56'
 ht-degree: 10%
 
 ---
@@ -25,4 +25,4 @@ ht-degree: 10%
    - [consulta productSearch](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/)
    - [refineProduct query](https://developer.adobe.com/commerce/services/graphql/catalog-service/refine-product/)
 - [Notas de versão](release-notes.md)
-- [Retornar aos Serviços da Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)
+- [Retornar à Página Inicial dos Serviços Commerce](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/home)

@@ -4,7 +4,7 @@ description: Saiba mais sobre como usar a extensão  [!DNL data export]  para se
 role: Admin, Developer
 recommendations: noCatalog
 exl-id: c5711fa6-09e2-42b0-a7af-4d7b866c871d
-source-git-commit: 42a9ea0f62f35db451cd3e780adf530d0699a638
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
 source-wordcount: '433'
 ht-degree: 0%
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Guia do [!DNL SaaS Data Export]
 
-O [!DNL SaaS data export] melhora o desempenho de front-end otimizando a sincronização de dados entre uma instância do Adobe Commerce e os Commerce Services conectados. Ao adicionar o Live Search, o Recommendations do Produto ou o Serviço de Catálogo a uma instalação do Adobe Commerce, a extensão [!DNL Data export] é instalada automaticamente.
+[!DNL SaaS data export] sincroniza dados entre uma instância do Adobe Commerce e o Commerce Services conectado. Ao adicionar o Live Search, o Recommendations do Produto ou o Serviço de Catálogo a uma instalação do Adobe Commerce, a extensão [!DNL Data export] é instalada automaticamente.
 
 A exportação de dados SaaS coleta e exporta vários tipos de dados, chamados de _feeds_, que agregam tipos específicos de informações. Dependendo dos serviços Commerce instalados, os feeds de exportação de dados SaaS incluem:
 
@@ -22,7 +22,7 @@ A exportação de dados SaaS coleta e exporta vários tipos de dados, chamados d
 - O **feed de Ordem de Venda** agrega dados de pedidos, incluindo suas entidades relacionadas, como faturas, remessas, avisos de crédito e assim por diante.
 - O **feed de Inventário MultisSource** agrega dados sobre os itens de status do estoque do estoque.
 
-A extensão de exportação de dados oferece suporte a vários métodos para iniciar e gerenciar o processo de sincronização de dados.
+A exportação de dados SaaS é fornecida como uma extensão PHP. Ela é compatível com vários métodos para iniciar e gerenciar o processo de sincronização de dados.
 
 - **Sincronização manual do Administrador ou da linha de comando**
 

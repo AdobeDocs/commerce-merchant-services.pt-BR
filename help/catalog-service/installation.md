@@ -2,9 +2,9 @@
 title: Integração e instalação
 description: "Saiba como instalar o [!DNL Catalog Service]"
 exl-id: 4e9fbdc9-67a1-4703-b8c0-8b159e0cc2a7
-source-git-commit: 6ca91feefbfc2fbc4d5851040b9f1ca3de6a6560
+source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
 workflow-type: tm+mt
-source-wordcount: '823'
+source-wordcount: '867'
 ht-degree: 0%
 
 ---
@@ -143,7 +143,7 @@ Use este método para instalar o [!DNL Catalog Service] para uma instância loca
 
 ### Configurar o serviço e a exportação de dados
 
-Após instalar o [!DNL Catalog Service], conclua as tarefas a seguir para integrar o serviço de Catálogo à sua instância do Adobe Commerce. Essa integração permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte.
+Após instalar o [!DNL Catalog Service], conclua as tarefas a seguir para integrar o serviço de Catálogo à sua instância do Adobe Commerce. Essa integração permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A sincronização de dados é realizada pela [extensão de Exportação de Dados SaaS](../data-export/overview.md).
 
 1. Configure o [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas) especificando as chaves de API e selecionando um Espaço de Dados SaaS.
 
@@ -162,6 +162,10 @@ Para garantir que a exportação de catálogo esteja sendo executada corretament
 - [Confirme se os trabalhos cron estão em execução](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/cron-readiness-check-issues).
 - Verifique se os indexadores estão sendo executados do [Admin](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/index-management) ou usando o comando `bin/magento indexer:info` da CLI do Commerce.
 - Verifique se os indexadores `Catalog Attributes Feed, Product Feed, Product Overrides Feed` e `Product Variant Feed` estão definidos como `Update by Schedule`.
+
+### Monitorar e solucionar problemas de sincronização de dados
+
+Com o Administrador do Commerce, é possível monitorar o processo de sincronização usando o [Painel de Gerenciamento de Dados](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/data-transfer/data-dashboard). Use a [CLI do Commerce](../data-export/data-export-cli-commands.md#troubleshooting) e os logs para gerenciar e solucionar problemas do processo.
 
 ### Acessar o serviço
 
