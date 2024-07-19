@@ -4,16 +4,16 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 3eb873c84edb56d2fc399c72296f2b545a78064e
+source-git-commit: 391208f63c092f1eebb7330e2445079e09594890
 workflow-type: tm+mt
-source-wordcount: '1051'
+source-wordcount: '1048'
 ht-degree: 0%
 
 ---
 
 # [!DNL Commerce Services Connector]
 
-Alguns recursos do Adobe Commerce e do Magento Open Source são fornecidos pelo [!DNL Commerce Services] e implantados como SaaS (software como um serviço). Para usar esses serviços, você deve conectar sua instância do [!DNL Commerce] usando chaves de API de sandbox e produção e especificar o espaço de dados na [configuração](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Você só precisa configurar isso uma vez.
+Alguns recursos do Adobe Commerce e do Magento Open Source são fornecidos pelo [!DNL Commerce Services] e implantados como SaaS (software como um serviço). Para usar esses serviços, você deve conectar sua instância do [!DNL Commerce] usando chaves de API de sandbox e produção e especificar o espaço de dados na [configuração](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html). Você só precisa configurar a conexão uma vez para cada instância do Commerce.
 
 ## Serviços disponíveis {#availableservices}
 
@@ -24,7 +24,6 @@ Veja a seguir uma lista dos recursos do [!DNL Commerce] que você pode acessar p
 | [[!DNL Product Recommendations]](/help/product-recommendations/overview.md) ativado por Adobe Sensei | Adobe Commerce |
 | [[!DNL Live Search]](/help/live-search/overview.md) ativado por Adobe Sensei | Adobe Commerce |
 | [[!DNL Payment Services]](/help/payment-services/overview.md) | ADOBE COMMERCE e MAGENTO OPEN SOURCE |
-| [[!DNL Channel Manager]](https://experienceleague.adobe.com/docs/commerce-channels/channel-manager/intro-to-channel-manager/overview.html) | ADOBE COMMERCE e MAGENTO OPEN SOURCE |
 | [[!DNL Site-Wide Analysis Tool]](https://experienceleague.adobe.com/docs/commerce-operations/tools/site-wide-analysis-tool/intro.html) | Adobe Commerce |
 | [[!DNL Catalog Service]](/help/catalog-service/overview.md) | Adobe Commerce |
 | [[!DNL Data Connection]](/help/data-connection/overview.md) | Adobe Commerce |
@@ -39,7 +38,7 @@ As seções a seguir discutem cada um desses elementos com mais detalhes.
 
 ## Credenciais {#apikey}
 
-As chaves de API de sandbox e produção são geradas a partir da conta [!DNL Commerce] do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding), que é identificada por uma ID [!DNL Commerce] exclusiva (MageID). Para passar na validação de direito para serviços como [!DNL Product Recommendations] ou [!DNL Live Search], o proprietário da licença para a organização do comerciante pode gerar o conjunto de chaves de API, desde que a conta esteja em bom estado.
+As chaves de API de sandbox e produção são geradas a partir da conta [!DNL Commerce] do [proprietário da licença](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/start/onboarding). A conta do Commerce é identificada por um identificador exclusivo [!DNL Commerce] (MageID). O proprietário da licença da organização do comerciante pode gerar chaves de API para serviços como o Recommendations do produto ou o Live Search, desde que a conta esteja em boa posição.
 
 As chaves podem ser compartilhadas com base no &quot;conhecimento necessário&quot; com o integrador de sistemas ou a equipe de desenvolvimento que gerencia projetos e ambientes em nome do titular da licença. Os desenvolvedores aos quais o proprietário da licença concedeu [!DNL Shared Access] não podem gerar as chaves em seu nome, mesmo que a organização do comerciante esteja presente na lista suspensa [!DNL Switch Accounts] em sua conta.
 
@@ -57,15 +56,13 @@ Além disso, os integradores de soluções também podem usar o [!DNL Commerce S
 
 1. No menu _Ambiente_, selecione **Produção** ou **Sandbox**.
 
-1. Insira um nome na seção _Chaves de API_ e clique em **Adicionar novo**.
-
-   Isso abre uma caixa de diálogo para baixar a nova chave.
+1. Insira um nome na seção _Chaves de API_ e clique em **Adicionar novo** para abrir a caixa de diálogo para baixar a nova chave.
 
    ![Baixar chave privada](assets/download-api-private-key.png)
 
    >[!WARNING]
    >
-   > Essa é a única oportunidade que você tem para copiar ou baixar suas chaves.
+   > Esta caixa de diálogo fornece a única oportunidade que você tem para copiar ou baixar suas chaves.
 
 1. Clique em **Baixar** e em **Cancelar**.
 
@@ -113,7 +110,7 @@ Qualquer projeto SaaS associado às suas chaves é exibido no campo **Projeto** 
 
 >[!NOTE]
 >
->Se você tiver instâncias separadas para integrar com os Serviços Commerce, [envie um tíquete de Suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um novo Projeto SaaS para cada instância adicional. Depois que o suporte tiver criado o projeto SaaS, configure a integração dos Serviços da Commerce para a instância usando a mesma chave de API e selecionando o novo projeto SaaS para o espaço de dados.
+>Se você tiver instâncias separadas para integrar com os Serviços Commerce, [envie um tíquete de Suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide#submit-ticket) para solicitar um novo projeto SaaS para cada instância adicional. Depois que o suporte tiver criado o projeto SaaS, configure a integração dos Serviços da Commerce para a instância usando a mesma chave de API e selecionando o novo projeto SaaS para o espaço de dados.
 
 >[!WARNING]
 >
