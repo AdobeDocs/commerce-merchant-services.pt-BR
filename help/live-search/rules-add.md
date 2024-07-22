@@ -2,9 +2,9 @@
 title: "Adicionar regras"
 description: "Saiba como criar regras de merchandising de pesquisa."
 exl-id: c6b92ef5-3b08-47f9-8412-955a9c95a9ee
-source-git-commit: 52be82fa080474d6df81fd16d1655a421771e5e2
+source-git-commit: 0b099bf6a306806b5aa24261e6c125d43d528207
 workflow-type: tm+mt
-source-wordcount: '1536'
+source-wordcount: '1604'
 ht-degree: 0%
 
 ---
@@ -84,16 +84,23 @@ Os proprietários de lojas podem configurar os seguintes tipos de estratégias d
 
 * Mais comprados: classifica os produtos por total de compras por SKU nos 7 dias anteriores.
 * Mais adicionados ao carrinho - Classificações na ordem do total de atividades &quot;Adicionar ao carrinho&quot; nos 7 dias anteriores.
-* Mais visualizados: classificação no meu total de visualizações por SKU nos 7 dias anteriores.
-* Recomendado para você - Usa o ponto de dados `viewed-viewed` - Os compradores que visualizaram este SKU também visualizaram estes outros SKUs
-* Tendência: retroage aos eventos de exibição de página nas últimas 72 horas para eventos em segundo plano e 24 horas para eventos em primeiro plano
-* Nenhum: os produtos são ordenados por Relevância
+* Mais visualizados: classificação do total de visualizações por SKU nos 7 dias anteriores.
+* Recomendado para você - Usa o ponto de dados `viewed-viewed` - Os compradores que visualizaram este SKU também visualizaram esses outros SKUs.
+* Tendência: retroage aos eventos de exibição de página nas últimas 72 horas para eventos em segundo plano e 24 horas para eventos em primeiro plano.
+* Nenhum: os produtos são ordenados por Relevância.
 
-1. Selecione o tipo de estratégia para a regra. A janela Testar regra exibe os resultados esperados.
+Selecione o tipo de estratégia para a regra. A janela **Testar sua regra** exibe os resultados esperados.
 
->[!NOTE]
->
->Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
+### Avisos
+
+* Apóstrofos e citações em queries podem levar a alguns problemas menores com classificação e relevância em alguns idiomas.
+* Para garantir que a classificação inteligente funcione corretamente, verifique se o **Peso da Pesquisa** para qualquer atributo de produto usado para pesquisa ou filtragem (facetas) é `5` ou menos. Para localizar esta configuração no [!DNL Commerce] Admin:
+
+   1. Selecione **Lojas** > _Atributos_ > **Produto**.
+   1. Procure o atributo, como &quot;nome&quot;.
+   1. Na página **Informações do Atributo** > **Propriedades da vitrine**, defina o peso da pesquisa como menor ou igual a `5`.
+
+      ![Produto - Peso de Pesquisa](assets/set-search-weight.png)
 
 ## Classificação manual
 
