@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2d383d6b0d9e7b915fac32f90b25f1640dcab6cf
+source-git-commit: 61ebda0015c6d5a7c0bb08f7aae9a4593bca84a4
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
    - 200 atributos filtráveis
    - 200 atributos pesquisáveis
 - [!DNL Live Search] indexa somente produtos do banco de dados do Adobe Commerce.
-- As páginas CMS não são indexadas.
+- As páginas do CMS não são indexadas.
 - Os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Cancele a atribuição dos produtos às categorias se eles não forem destinados a essas categorias.
 
 ## Facetas
@@ -58,7 +58,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Sinônimos
 
 - [!DNL Live Search] pode gerenciar até 200 [sinônimos](synonyms.md) por exibição de armazenamento.
-- Sinônimos de várias palavras são limitados a 20 por exibição de loja.
+- Sinônimos de várias palavras podem nem sempre funcionar como esperado. Certifique-se de testar esses sinônimos no ambiente de preparo antes de usá-los na produção, pois eles podem ter um efeito adverso na relevância.
 
 ## Merchandising de categoria
 
