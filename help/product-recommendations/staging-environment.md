@@ -3,16 +3,16 @@ title: Teste no ambiente de preparo
 description: Saiba como usar o [!DNL Product Recommendations] do seu ambiente de produção no seu ambiente de preparo para fins de teste.
 exl-id: 178ff2aa-7821-45f7-85f1-d490d8182817
 feature: Services, Recommendations, Staging
-source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '423'
+source-wordcount: '426'
 ht-degree: 0%
 
 ---
 
 # Teste no ambiente de preparo
 
-Antes de implantar recomendações para o ambiente de produção, você deve testar em um ambiente de não produção para garantir que tudo esteja funcionando como o esperado.
+Antes de implantar recomendações em seu ambiente de produção, teste o serviço em um ambiente que não seja de produção para garantir que tudo esteja funcionando como o esperado.
 
 [!DNL Product Recommendations] retorna produtos com base em [dados comportamentais do comprador](behavioral-data.md) coletados de sua loja. No entanto, em um ambiente de não produção, é provável que você não tenha dados comportamentais de compradores. O único tipo de recomendação que você pode testar sem dados comportamentais é `More like this`. Esse tipo de recomendação não requer dados de entrada, pois usa uma correspondência direta de similaridade de conteúdo.
 
@@ -30,14 +30,14 @@ O Adobe Commerce permite que você busque recomendações de seu ambiente de pro
 
 Para buscar recomendações do seu ambiente de produção, você deve se certificar de que:
 
-- A coleção de dados da vitrine está [configurada e habilitada](install-configure.md) na produção.
-- Seu catálogo de ambientes de não produção é basicamente o mesmo que você tem na produção. Usar catálogos semelhantes garante que os produtos retornados nas unidades de recomendação mimetizem os da produção.
+- A coleção de dados da vitrine está [configurada e habilitada](install-configure.md) no ambiente de produção.
+- O catálogo em seu ambiente de não produção é basicamente o mesmo do ambiente de produção. Usar catálogos semelhantes garante que os produtos retornados nas unidades de recomendação mimetizem de perto aqueles no ambiente de produção.
 
 ## Gerar dados comportamentais em ambiente de não produção
 
 1. Implante o módulo `magento/product-recommendations` em um ambiente de não produção no qual os dados do catálogo sejam semelhantes ao seu catálogo de produção.
 
-1. Use uma das IDs de Espaço de Dados de não produção para [configuração](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) no Administrador.
+1. Use uma das IDs de Espaço de Dados de não produção para [configuração](../landing/saas.md#saas-configuration) no Administrador.
 
 1. Gere os dados sozinho clicando em torno da loja para imitar o comportamento de compradores reais (ou criar um script de automação). Por meio de testes, você gera eventos comportamentais no ambiente de não produção. Esses eventos são usados para produzir as afinidades de produto que potencializam as recomendações. Para testes, [!DNL Commerce] sugere que você interaja com os seguintes tipos de recomendações:
 
@@ -47,6 +47,6 @@ Para buscar recomendações do seu ambiente de produção, você deve se certifi
 
 ### Avisos
 
-- Os dados comportamentais e de catálogo do espaço de dados SaaS de não produção identificam um ambiente isolado em que as recomendações do produto resultantes se baseiam inteiramente nos dados comportamentais gerados na loja associada.
+- Os dados comportamentais e de catálogo do [Espaço de dados SaaS](../landing/saas.md#saas-configuration) de não produção identificam um ambiente isolado em que as recomendações do produto resultante se baseiam inteiramente nos dados comportamentais gerados na loja associada.
 
-- Como você não tem grandes quantidades de dados comportamentais, os dados de entrada para associações de produto de computação são escassos. No entanto, esses dados ainda são enviados para o Sensei para calcular os modelos de aprendizado de máquina e fornecer recomendações com base nos dados gerados nesse ambiente.
+- Como você não tem grandes quantidades de dados comportamentais, os dados de entrada para associações de produto de computação são escassos. No entanto, esses dados ainda são enviados para o Sensei para computar os modelos de aprendizado de máquina e fornecer recomendações com base nos dados gerados nesse ambiente.

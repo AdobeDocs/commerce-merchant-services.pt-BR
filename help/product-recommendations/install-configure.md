@@ -3,16 +3,16 @@ title: Instalar e configurar
 description: Saiba como instalar, atualizar e desinstalar o  [!DNL Product Recommendations].
 exl-id: fa599f72-1064-41da-ac54-2b3a3c16a1fe
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 3a5dec9422aa34eeb204b9fe6f089551e4038f1c
 workflow-type: tm+mt
-source-wordcount: '560'
+source-wordcount: '554'
 ht-degree: 0%
 
 ---
 
 # Instalar e configurar
 
-A implantação do [!DNL Product Recommendations] na vitrine e no Administrador requer a instalação do módulo e a configuração do [Commerce Services Connector](../landing/saas.md). À medida que as atualizações forem lançadas, você poderá atualizar facilmente sua instalação com a versão mais recente.
+A implantação do [!DNL Product Recommendations] na vitrine e no Administrador requer a instalação do módulo e a configuração do [Commerce Services Connector](../landing/saas.md). À medida que as atualizações forem lançadas, você poderá atualizar facilmente a instalação com a versão mais recente.
 
 - [Instalar](#install)
 - [Configurar](#configure)
@@ -37,7 +37,7 @@ O [!DNL Product Recommendations] for Page Builder é um módulo opcional e é in
 composer require magento/module-page-builder-product-recommendations
 ```
 
-Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
+Ao habilitar [!DNL Product Recommendations] no Page Builder, você pode adicionar uma [unidade de recomendação](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations) existente e ativa a qualquer conteúdo criado no Page Builder, como páginas, blocos e blocos dinâmicos.
 
 Consulte [Usar [!DNL Product Recommendations] com conteúdo do Page Builder](page-builder.md) para obter mais instruções.
 
@@ -51,13 +51,13 @@ composer require magento/module-visual-product-recommendations
 
 ## Configurar [!DNL Product Recommendations] {#configure}
 
-1. Após instalar o módulo `magento/product-recommendations`, configure o [Commerce Services Connector](https://experienceleague.adobe.com/docs/commerce-admin/config/services/saas.html) especificando as Chaves de API e selecionando um Espaço de Dados SaaS.
+1. Após instalar o módulo `magento/product-recommendations`, configure o [Commerce Services Connector](../landing/saas.md) especificando as Chaves de API e selecionando um Espaço de Dados SaaS.
 
    A configuração dessa conexão permite a sincronização de dados e a comunicação entre a instância do Commerce, o Serviço de catálogo e outros serviços de suporte. A sincronização de dados é realizada pela [extensão de Exportação de Dados SaaS](../data-export/overview.md).
 
-1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs.html) e os [indexadores](https://experienceleague.adobe.com/docs/commerce-operations/configuration-guide/cli/manage-indexers.html) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
+1. Para garantir que a exportação de catálogo possa ser executada corretamente, confirme se os trabalhos [cron](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/configure-cron-jobs) e os [indexadores](https://experienceleague.adobe.com/en/docs/commerce-operations/configuration-guide/cli/manage-indexers) estão em execução e se o indexador `Product Feed` está definido como `Update by Schedule`.
 
-Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce e especificar o Espaço de dados SaaS, a sincronização do catálogo é iniciada. Em seguida, você pode [verificar](verify.md) se os dados comportamentais estão sendo enviados para a loja.
+Depois de vincular com êxito o aplicativo do Commerce aos Serviços da Commerce e especificar o [Espaço de Dados SaaS](../landing/saas.md#saas-configuration), a sincronização do catálogo será iniciada. Em seguida, você pode [verificar](verify.md) se os dados comportamentais estão sendo enviados para a loja.
 
 ## Monitorar e solucionar problemas de sincronização de dados
 
@@ -107,7 +107,7 @@ composer update --with-dependencies magento/product-recommendations magento/modu
 
 >[!NOTE]
 >
-> Nas versões 3.x.x do Product Recommendations, você só precisava de uma única chave de API. Nas versões 4.x.x e posteriores, você deve fornecer as chaves de API pública e privada de produção, bem como as chaves de API públicas e privadas de sandbox. Se você não fornecer ambos os pares de chaves de API, não poderá acessar o recurso Recommendations do produto no Administrador. A coleta de dados, no entanto, continuará em sua loja e as recomendações existentes continuarão a ser mostradas aos seus compradores.
+> Nas versões 3.x.x do Product Recommendations, você só precisava de uma única chave de API. Nas versões 4.x.x e superior, você deve fornecer chaves de API públicas e privadas para os ambientes de sandbox e produção. Se você não fornecer ambos os pares de chaves de API, não poderá acessar o recurso Recommendations do produto no Administrador. No entanto, a coleta de dados continua em sua loja e as recomendações existentes continuam a ser mostradas aos seus compradores.
 
 ## Firewalls
 
@@ -115,4 +115,4 @@ Para permitir que o Recommendations do Produto passe por um firewall, adicione `
 
 ## Desinstalar [!DNL Product Recommendations] {#uninstall}
 
-Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/docs/commerce-operations/installation-guide/tutorials/uninstall-modules.html) o módulo product-recommendations.
+Se necessário, você pode [desinstalar](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules) o módulo product-recommendations.
