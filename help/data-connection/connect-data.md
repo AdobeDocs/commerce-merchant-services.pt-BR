@@ -3,9 +3,9 @@ title: Conectar dados do Commerce ao Adobe Experience Platform
 description: Saiba como conectar os dados do Commerce à Adobe Experience Platform.
 exl-id: 87898283-545c-4324-b1ab-eec5e26a303a
 feature: Personalization, Integration, Configuration
-source-git-commit: 89607d22ba8e69e0c98fce97e041022e33d01c07
+source-git-commit: c252c2fb614ec74f1bdd11cc482066a7133dd523
 workflow-type: tm+mt
-source-wordcount: '2486'
+source-wordcount: '2532'
 ht-degree: 0%
 
 ---
@@ -182,6 +182,10 @@ Os eventos de perfil de série temporal contêm dados sobre as informações de 
 
 Pode levar cerca de 10 minutos para que um registro de perfil fique disponível no Real-Time CDP. Os eventos de perfil começam a ser transmitidos imediatamente.
 
+>[!TIP]
+>
+>Se você não estiver vendo os dados do perfil no Experience Platform, consulte a [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obter sugestões de solução de problemas.
+
 #### Descrições dos campos
 
 | Campo | Descrição |
@@ -277,6 +281,10 @@ Para confirmar se os dados estão sendo coletados do seu armazenamento do Commer
 Neste exemplo, você vê os dados do evento de [`commerce.productListAdds`](events.md#addtocart), [`commerce.productViews`](events.md#productpageview), [`web.webpagedetails.pageViews`](events.md#pageview) e assim por diante. Essa visualização permite verificar se os dados do Commerce chegaram à borda.
 
 Se os resultados não forem os esperados, abra o conjunto de dados e procure qualquer importação de lotes com falha. Saiba mais sobre [solução de problemas de importações em lote](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/troubleshooting.html).
+
+### Verifique se os dados do perfil aparecem no Experience Platform
+
+Se você não estiver vendo os dados do perfil no Experience Platform, consulte a [Commerce KnowledgeBase](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/data-connection-customer-profiles-not-exported) para obter sugestões de solução de problemas.
 
 ## Próximas etapas
 
