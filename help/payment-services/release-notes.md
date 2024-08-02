@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de Versão"
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
 workflow-type: tm+mt
-source-wordcount: '2576'
+source-wordcount: '2787'
 ht-degree: 0%
 
 ---
@@ -86,6 +86,26 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos no [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e no [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) exibindo ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.7.0
+
+_2 de agosto de 2024_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] agora dá suporte a [dados de item de linha no nível de pedido](line-items.md). Esse recurso permite que os comerciantes vejam informações detalhadas sobre os itens de um pedido, como detalhes do produto, quantidade e preço (incluindo imposto, descontos e outras informações relevantes).
+
+![Novo](../assets/new.svg)<!-- PAY-5380 --> O [!DNL Payment Services] aprimora a [Configuração na experiência de Administrador](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) para comerciantes, para um processo de integração mais fácil e intuitivo. Este recurso permite que os comerciantes redefinam suas [!DNL Payment Services] IDs.
+
+![Novo](../assets/new.svg)<!-- PAY-5255 --> [!DNL Payment Services] inclui uma [notificação de falha de pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/checkout/checkout-payment-failed-emails). Esse recurso fornece notificações quase em tempo real de falhas de pagamento aos comerciantes, para que os pedidos possam ser salvos, entrando em contato com o comprador e melhorando potencialmente a resolução do problema.
+
+![Correção](../assets/fix.svg)<!-- PAY-5469 --> Corrigido um problema no qual o **pop-up Pagamento do Google foi bloqueado pelo Safari**. Os compradores agora podem concluir suas transações de pagamento de Google Pay no Safari.
+
+![Correção](../assets/fix.svg)<!-- PAY-5492 --> corrigiu um problema quando um comerciante adicionava termos e condições personalizados à página de check-out. Durante um [check-out expresso](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/payments-options#standard-vs-advanced-payments-experience), um comprador agora pode aceitar esses termos e condições para concluir o check-out sem problemas.
+
+![Correção](../assets/fix.svg)<!-- PAY-5532 --> funcionalidades aprimoradas de ISPU (Seleção na Loja) com **InstantPurchase**. **Os Métodos de Entrega ISPU** não são mais exibidos quando um comprador faz um pedido com **InstantPurchase**.
+
+![Correção](../assets/fix.svg)<!-- PAY-5606 --> Corrigido um problema no seletor de país **Página de Configuração** que ocorria quando o país do comerciante estava definido como **Alemanha**.
 
 ## v2.6.0
 
