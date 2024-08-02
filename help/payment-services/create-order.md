@@ -3,7 +3,7 @@ title: Criar um Pedido com [!DNL Payment Services]
 description: O Administrador oferece a capacidade de atender a um pedido usando  [!DNL Payment Services]  diretamente do Administrador por um comerciante para seus clientes que precisam de assistência.
 exl-id: 1542a33f-9c01-4c36-bbce-bfa3107fbeb8
 feature: Payments, Checkout
-source-git-commit: 90bfa7099924feb308397960cff76bdf177bbe49
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
@@ -18,7 +18,7 @@ O [!DNL Payment Services] for [!DNL Adobe Commerce] e [!DNL Magento Open Source]
 
 ## Campos de cartão de crédito hospedados
 
-[!DNL Payment Services] estão disponíveis como um método de pagamento ao criar um pedido no Administrador:
+[!DNL Payment Services] está disponível como método de pagamento no Administrador ao criar um pedido:
 
 1. Na barra lateral _Admin_, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Orders]**.
 1. Clique em **[!UICONTROL Create New Order]**.

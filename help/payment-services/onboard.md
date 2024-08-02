@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: 1ee8c660-0941-4378-a1d7-ae45de3de211
 feature: Payments, Checkout, Integration
-source-git-commit: 6ba5a283d9138b4c1be11b80486826304c63247f
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '313'
+source-wordcount: '336'
 ht-degree: 0%
 
 ---
@@ -18,9 +18,13 @@ Para começar a usar o [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DN
 
 ## Fluxo de integração
 
+Este diagrama de fluxo mostra o processo geral de integração do [!DNL Payment Services].
+
 ![Fluxo de integração](assets/onboarding-diagram.svg){width="600" zoomable="yes"}
 
-Este diagrama de fluxo de integração mostra o processo geral de integração do [!DNL Payment Services].
+>[!NOTE]
+>
+> Para as versões 2.4.7 ou mais recentes do Adobe Commerce, você pode ignorar a etapa de extensão do Marketplace, pois o [!DNL Payment Services] está disponível e pronto para uso.
 
 Após concluir a integração para sandbox ou pagamentos ao vivo, os relatórios financeiros podem ser acessados de [!DNL Payment Services] no Administrador.
 
@@ -28,13 +32,15 @@ Se a sandbox e os pagamentos ao vivo forem integrados e ativados, você poderá 
 
 ## Pré-requisitos
 
-Para usar [!DNL Payment Services], você deve ter o seguinte disponível para sua instância:
+Para usar o [!DNL Payment Services], você deve ter todos os módulos dependentes habilitados e os seguintes módulos disponíveis para a sua instância:
 
 * Módulo do Conector de Serviços
 * Módulo de ID de serviços
 * Chaves de API
 
-Os módulos Services Connector e Services ID são instalados automaticamente durante a [instalação do [!DNL Payment Services]](install.md). Quando a instalação for concluída, você poderá ver uma nova seção nas definições de configuração (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) ao expandir **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
+Os módulos Services Connector e Services ID são instalados automaticamente durante a [instalação do [!DNL Payment Services]](install.md).
+
+Quando a instalação for concluída, você poderá ver uma nova seção nas definições de configuração (**[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**) se expandir **[!UICONTROL Services]**—**[!UICONTROL Commerce Services Connector]**.
 
 Para saber como criar ou acessar suas chaves de API, consulte [Credenciais de API](#obtain-api-credentials).
 

@@ -3,9 +3,9 @@ title: Configurar o teste de sandbox
 description: Use uma conta de sandbox do PayPal para usar  [!DNL Payment Services]  no modo de teste.
 exl-id: 99c14b4e-e6cf-48f9-9546-5c0d5c71464d
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: bfb49e3602cc80f97817a8fd8d7c4684a3a3bcd2
+source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
 workflow-type: tm+mt
-source-wordcount: '582'
+source-wordcount: '614'
 ht-degree: 0%
 
 ---
@@ -81,5 +81,7 @@ Este recurso é `off` por padrão. Ao ativá-lo, os administradores de loja pode
 >Essa configuração não se aplica a outros fluxos de check-out.
 
 ## Teste em ambiente de sandbox
+
+É altamente recomendável usar testes de espaços de dados para ambientes de integração e preparo, e testar Pagamentos em produção, com cartões de crédito e bancos reais, antes de expor essa funcionalidade para os compradores.
 
 Consulte [Testar e validar](test-validate.md) para obter mais informações.
