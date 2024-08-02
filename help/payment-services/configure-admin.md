@@ -5,9 +5,9 @@ role: Admin, User
 level: Intermediate
 exl-id: e1a3269d-bdf9-4b0f-972f-e8a0ef469503
 feature: Payments, Checkout, Configuration
-source-git-commit: 0dc370409ace6ac6b0a56511cd0071cf525620f1
+source-git-commit: 7a886679ad00f9b29e6ffd7d8bc8e2f6fc0082d4
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1702'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,18 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. No painel esquerdo, expanda **[!UICONTROL Sales]** e escolha **[!UICONTROL Payment Methods]**.
-
-   ![Exibição de métodos](assets/methods-view.png){width="400" zoomable="yes"}
-
-1. Defina o campo _[!UICONTROL Merchant Country]_no_[!UICONTROL Merchant Location]_.
+1. Defina o campo _[!UICONTROL Merchant Country]_no_[!UICONTROL Merchant Location]_. Se um _[!UICONTROL Merchant Country]_não for especificado, o_[!UICONTROL Default Country]_ da configuração geral será usado.
 1. Expanda a seção _[!UICONTROL FEATURED ADOBE PAYMENT SOLUTION]_para acessar a seção_[!UICONTROL [!DNL Payment Services]]_.
 1. Na seção _[!UICONTROL [!DNL Payment Services]]_, expanda a seção_[!UICONTROL General Configuration]_.
 1. Para **Habilitar**, defina-o como `Yes` para habilitar [!DNL Payment Services] para seu armazenamento.
 1. Para o **Método**, defina-o como `Sandbox` se você ainda estiver testando o [!DNL Payment Services] para sua loja ou `Production` se você estiver pronto para habilitar pagamentos ao vivo.
+1. Os valores de **[!UICONTROL Payment Services Sandbox ID]** e **[!UICONTROL Payment Services Production ID]** são preenchidos automaticamente depois que você configura o [Commerce Services Connector](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas){target=_blank} e visita o painel [!DNL Payment Services] pela primeira vez. Faça isso para concluir a integração dos ambientes de sandbox e/ou produção. Esses valores associam sua SaaS ID a [!DNL Payment Services].
 
    >[!WARNING]
    >
-   >Os _[!UICONTROL Sandbox Merchant ID]_e_[!UICONTROL Production Merchant ID]_ são gerados automaticamente e estão presentes em seus respectivos campos quando você conclui a integração para a sandbox e/ou produção. Não remova nem altere essas IDs.
+   > Se precisar alterar a ID do espaço de dados no Commerce Services Connector, redefina a ID do [!DNL Payment Services]. Clique em **Redefinir ID de Serviços de Pagamento** para redefinir suas IDs de Sandbox ou Produção. Se você redefinir suas [!DNL Payment Services] IDs, será necessário integrar novamente.
 
-1. Para o **Descritor Flexível** (valores personalizados que são exibidos em demonstrativos bancários de transações do cliente para definir entre lojas/marcas/catálogos), adicione seu texto personalizado (até 22 caracteres) ao campo de texto, substituindo `Custom descriptor` ou o valor existente.
+1. Para o **Descritor Flexível** (valores personalizados que são exibidos em demonstrativos bancários de transações do cliente para definir entre lojas/marcas/catálogos), adicione seu texto personalizado (até 22 caracteres) ao campo de texto, substituindo `Soft descriptor` ou o valor existente.
 1. Clique em **[!UICONTROL Save Config]** para salvar suas alterações.
 1. Navegue até **[!UICONTROL System]** > **[!UICONTROL Cache Management]** e clique em **[!UICONTROL Flush Cache]** para atualizar todos os caches inválidos.
 
@@ -49,8 +47,8 @@ Você pode habilitar [!DNL Payment Services] para sua loja e _[!UICONTROL Mercha
 |---|---|---|
 | [!UICONTROL Enable] | site | Habilite ou desabilite o [!DNL Payment Services] para o seu site. Opções: `[!UICONTROL Yes]` / `[!UICONTROL No]` |
 | [!UICONTROL Method] | exibição de loja | Defina o método ou ambiente para sua loja. Opções: [!UICONTROL Sandbox] / [!UICONTROL Production] |
-| [!UICONTROL Sandbox Merchant ID] | exibição de loja | Sua ID de comerciante de sandbox, que é gerada automaticamente durante a integração da sandbox. Não altere ou altere esta ID. |
-| [!UICONTROL Production Merchant ID] | exibição de loja | Sua ID de comerciante de produção, que é gerada automaticamente durante a integração da sandbox. Não altere ou altere esta ID. |
+| [!UICONTROL Payment Services Sandbox ID] | exibição de loja | Sua ID de comerciante de sandbox, que é gerada automaticamente durante a integração da sandbox. |
+| [!UICONTROL Payment Services Production ID] | exibição de loja | Sua ID de comerciante de produção, que é gerada automaticamente durante a integração da sandbox. |
 | [!UICONTROL Soft Descriptor] | exibição de site ou loja | Adicione um descritor simples ao(s) site(s) e às visualizações da loja para adicionar informações às transações do cliente que definem marcas, lojas ou linhas de produtos. |
 
 ## [!UICONTROL Credit Card Fields]
