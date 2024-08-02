@@ -3,9 +3,9 @@ title: Notas de versão
 description: As informações da versão mais recente da extensão  [!DNL Data Connection]  do Adobe Commerce.
 exl-id: 7636664b-488a-46f7-8d19-a9faac126aec
 feature: Personalization, Integration, Release Notes
-source-git-commit: c736647fc148a02803bc458b16ff1f3419dc1fe1
+source-git-commit: 8dc6aa5ab2472d1282fbf65605fd511250816af7
 workflow-type: tm+mt
-source-wordcount: '896'
+source-wordcount: '937'
 ht-degree: 0%
 
 ---
@@ -24,15 +24,21 @@ Estas notas de versão contêm atualizações para a extensão [!DNL Data Connec
 
 Para obter alterações e correções de recursos relacionadas a extensões usadas pela extensão [!DNL Data Connection], consulte **Atualizações de serviço com suporte**.
 
-Consulte [Versões futuras](https://experienceleague.adobe.com/docs/commerce-operations/release/planning/schedule.html) para saber mais sobre os cronogramas de lançamento e o suporte.
+Consulte [Versões futuras](https://experienceleague.adobe.com/en/docs/commerce-operations/release/planning/schedule) para saber mais sobre os cronogramas de lançamento e o suporte.
 
-Consulte a documentação do desenvolvedor para [saber quais versões do Commerce são compatíveis com este módulo](https://experienceleague.adobe.com/docs/commerce-operations/release/product-availability.html).
+Consulte a documentação do desenvolvedor para [saber quais versões do Commerce são compatíveis com este módulo](https://experienceleague.adobe.com/en/docs/commerce-operations/release/product-availability).
 
 ## Atualizações de serviço compatíveis
 
 Essas notas de versão descrevem alterações de recursos e correções relacionadas a extensões usadas pela extensão [!DNL Data Connection].
 
 +++Atualizações de serviço com suporte
+
+_2 de agosto de 2024_
+
+![Correção](../assets/fix.svg) - Corrigido o valor total de pagamentos quando o total de pedidos está configurado para incluir impostos.
+![Novo](../assets/new.svg) - Adição de um campo `taxAmount` para solicitar eventos de compra.
+![Novo](../assets/new.svg) - Adição da capacidade de adicionar dados personalizados a eventos. Consulte o seguinte para obter um [exemplo](https://github.com/adobe/commerce-events/blob/main/examples/events/custom-event-override.md).
 
 _24 de janeiro de 2024_
 
@@ -78,7 +84,7 @@ _22 de julho de 2024_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Correção](../assets/new.svg) - O metapackage do Conector de Experience Platform foi atualizado para remover exportadores e indexadores de dados não utilizados.
+![Correção](../assets/fix.svg) - O metapackage do Conector de Experience Platform foi atualizado para remover exportadores e indexadores de dados não utilizados.
 
 ## 3.1.2
 
@@ -86,8 +92,8 @@ _5 de junho de 2024_
 
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
-![Correção](../assets/new.svg) - Corrigido um problema no qual o formato de data incorreto estava sendo usado ao iniciar uma [sincronização histórica](connect-data.md#specify-order-history-date-range).
-![Correção](../assets/new.svg) - Corrigido um problema no qual o evento [startCheckout](events.md#startcheckout) não estava sendo enviado no Adobe Commerce 2.4.7.
+![Correção](../assets/fix.svg) - Corrigido um problema no qual o formato de data incorreto estava sendo usado ao iniciar uma [sincronização histórica](connect-data.md#specify-order-history-date-range).
+![Correção](../assets/fix.svg) - Corrigido um problema no qual o evento [startCheckout](events.md#startcheckout) não estava sendo enviado no Adobe Commerce 2.4.7.
 
 ## 3.1.1
 
@@ -115,8 +121,8 @@ _16 de novembro de 2023_
 [!BADGE Compatibilidade]{type=Informative tooltip="Compatibilidade"}
 
 ![Novo](../assets/new.svg) - O conector Experience Platform foi renomeado para [!DNL Data Connection].
-![Correção](../assets/new.svg) - Adição da capacidade de registrar resposta de erro se o Adobe IMS não puder gerar o token de acesso.
-![Correção](../assets/new.svg) - Adicionou uma mensagem de notificação se você tentar sincronizar Pedidos Históricos, mas não especificou credenciais de conta.
+![Correção](../assets/fix.svg) - Adição da capacidade de registrar resposta de erro se o Adobe IMS não puder gerar o token de acesso.
+![Correção](../assets/fix.svg) - Adicionou uma mensagem de notificação se você tentar sincronizar Pedidos Históricos, mas não especificou credenciais de conta.
 
 ## 3.0.0
 
