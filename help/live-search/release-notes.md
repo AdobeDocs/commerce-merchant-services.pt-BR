@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de Versão"
 description: "As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 33ac4c2018e14c4379cab1438d6a5f11978796b6
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
-source-wordcount: '1993'
+source-wordcount: '2010'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ As atualizações incluem:
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
+_7 de agosto de 2024_
+
+![Correção](../assets/fix.svg) Aumentou o valor do intervalo máximo ou o intervalo de preço para [facetas de preço](settings.md#price-faceting) de 10.000 para 40.000.000.
 
 _13 de fevereiro de 2024_
 

@@ -2,9 +2,9 @@
 title: "Indexação"
 description: "Saiba como o  [!DNL Live Search] indexa propriedades de atributo de produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
 workflow-type: tm+mt
-source-wordcount: '587'
+source-wordcount: '586'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ As propriedades do atributo de produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) [propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` e `Visible in Advanced Search` podem ser definidos para o atributo.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) [propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
 
 [!DNL Live Search] não indexa produtos excluídos ou aqueles definidos como `Not Visible Individually`.
 

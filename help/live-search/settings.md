@@ -2,7 +2,7 @@
 title: "Configurações"
 description: "Defina as configurações para o serviço  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: ba7e92d5b3aaabe6a8c71f86b0e4eab38aec9adf
+source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -26,7 +26,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 1. No Administrador, vá para **Marketing** > *SEO e pesquisa* > **[!DNL Live Search]**.
 1. No espaço de trabalho **Configurações** em *Facetagem de preços*, faça o seguinte:
    * Insira o **Número de seleções** ou agrupamentos de preços que estarão disponíveis. Até 50 agrupamentos de preços podem ser definidos.
-   * Insira o **Valor do intervalo** ou o intervalo de preços para cada grupo. O valor máximo é 10.000.
+   * Insira o **Valor do intervalo** ou o intervalo de preços para cada grupo. O valor máximo é 40.000.000.
 1. Clique em **Salvar**.
 
    Leva aproximadamente 15 minutos para as configurações atualizadas estarem disponíveis na loja.
