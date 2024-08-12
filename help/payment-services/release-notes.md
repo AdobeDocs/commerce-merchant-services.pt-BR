@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de Versão"
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: c02c7c8700c9aa2157b296b8995c05805e371941
+source-git-commit: 73a48822a7df6999ddb597e53cd6b869b1b97222
 workflow-type: tm+mt
-source-wordcount: '2787'
+source-wordcount: '2788'
 ht-degree: 0%
 
 ---
@@ -93,7 +93,7 @@ _2 de agosto de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] agora dá suporte a [dados de item de linha no nível de pedido](line-items.md). Esse recurso permite que os comerciantes vejam informações detalhadas sobre os itens de um pedido, como detalhes do produto, quantidade e preço (incluindo imposto, descontos e outras informações relevantes).
+![Novo](../assets/new.svg)<!-- PAY-4844 --> [!DNL Payment Services] agora dá suporte a [dados de item de linha no nível de pedido](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/manage/line-items). Esse recurso permite que os comerciantes vejam informações detalhadas sobre os itens de um pedido, como detalhes do produto, quantidade e preço (incluindo imposto, descontos e outras informações relevantes).
 
 ![Novo](../assets/new.svg)<!-- PAY-5380 --> O [!DNL Payment Services] aprimora a [Configuração na experiência de Administrador](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/configure/configure-admin#general-configuration) para comerciantes, para um processo de integração mais fácil e intuitivo. Este recurso permite que os comerciantes redefinam suas [!DNL Payment Services] IDs.
 
