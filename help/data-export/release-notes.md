@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 11ea98069dcc6d06e9ab90add8239fef2c8edc7d
+source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
 workflow-type: tm+mt
-source-wordcount: '570'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
@@ -82,7 +82,16 @@ A ![nova](../assets/new.svg) exportação de dados SaaS agora armazena em cache 
 
 ![Novo](../assets/new.svg) cron-jobs de feed de exportação imediata renomeados para `*_feed_resend_failed_items`.
 
-![Novo](../assets/new.svg) feed de exportação imediata renomeado e tabelas de log de alterações.
+![Novo](../assets/new.svg) renomeou feeds de exportação imediatos, IDs de exibição de indexador e tabelas de log de alterações.
+- tabelas de feed (e IDs de exibição do indexador):
+   - `catalog_data_exporter_products` -> `cde_products_feed`
+   - `catalog_data_exporter_product_attributes` -> `cde_product_attributes_feed`
+   - `catalog_data_exporter_categories` -> `cde_categories_feed`
+   - `catalog_data_exporter_product_prices` -> `cde_product_prices_feed`
+   - `catalog_data_exporter_product_variants` -> `cde_product_variants_feed`
+   - `inventory_data_exporter_stock_status` -> `inventory_data_exporter_stock_status_feed`
+- alterar nomes de tabela de log - Segue o mesmo padrão de nomenclatura das tabelas de feed, mas os nomes de tabela de log de alteração adicionam um sufixo `_cl`.  Por exemplo `catalog_data_exporter_products_cl`-> `cde-products_feed_cl`
+Se você tiver um código personalizado que faça referência a qualquer uma dessas entidades, atualize as referências com os novos nomes para garantir que seu código continue a funcionar corretamente.
 
 ![Correção](../assets/fix.svg) Defina o campo `modified_at` nos dados de feed somente para feeds que o exijam.
 
