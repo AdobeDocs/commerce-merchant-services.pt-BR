@@ -3,7 +3,7 @@ title: O que é  [!DNL Live Search]?
 description: "[!DNL Live Search] da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -35,7 +35,7 @@ O lado Adobe Commerce da arquitetura inclui hospedar a pesquisa *Admin*, sincron
 
 Com foco na velocidade, relevância e facilidade de uso, o [!DNL Live Search] é um divisor de águas para compradores e comerciantes. Assista ao vídeo a seguir e faça um rápido tour pelo [!DNL Live Search] na loja.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418679?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418797?learn=on)
 
 Para ver um vídeo mais detalhado sobre o uso e a configuração do Live Search, consulte o tópico [Demonstração completa sobre [!DNL Live Search]](https://experienceleague.adobe.com/en/docs/commerce-learn/tutorials/getting-started/capabilities/live-search-full-demonstration).
 

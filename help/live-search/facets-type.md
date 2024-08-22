@@ -2,9 +2,9 @@
 title: "Tipos de facetas"
 description: "[!DNL Live Search] facetas são dinâmicas e aparecem na lista de Filtros quando relevante."
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
-source-git-commit: f96f94a16e1926b7dd2f1ee94f124ac0c823a9e0
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
-source-wordcount: '374'
+source-wordcount: '404'
 ht-degree: 0%
 
 ---
@@ -15,6 +15,11 @@ ht-degree: 0%
 
 * Facetas fixadas - As facetas mais usadas podem ser fixadas no topo da lista. As facetas restantes estão listadas na ordem *Tipo de classificação* depois das facetas fixadas.
 * Aspectos dinâmicos - Atributos de produto que o [Adobe Sensei](https://www.adobe.com/sensei.html) considera mais relevantes para um conjunto de produtos e uma consulta. O cálculo leva em conta os metadados do atributo de todo o catálogo e determina, no momento da consulta, os aspectos mais relevantes da consulta.
+
+  >[!NOTE]
+  >
+  >Se você observar que erros de tempo limite estão aparecendo na resposta de consulta do GraphQL após a criação de facetas dinâmicas, altere todas as facetas para fixadas para ver se isso resolve os problemas de desempenho.
+
 * Aspectos populares - Atributos de produto que estão presentes com mais frequência nos resultados da pesquisa.
 * Facetas de preço - Devolver produtos por faixa de preço. Você pode especificar o número de seleções e o intervalo de preços no espaço de trabalho [*Configurações*](settings.md).
 

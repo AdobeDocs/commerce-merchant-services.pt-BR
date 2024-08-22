@@ -2,9 +2,9 @@
 title: '[!DNL Live Search] Práticas Recomendadas'
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
-source-git-commit: 88be2212f3a992e7a2d18bf1d5c2e8d5d2b64b80
+source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
 workflow-type: tm+mt
-source-wordcount: '2355'
+source-wordcount: '2349'
 ht-degree: 0%
 
 ---
@@ -38,9 +38,9 @@ O widget [!DNL Live Search] [[!DNL popover]](storefront-popover.md) habilita as 
 
 Saiba mais sobre o widget [popover](storefront-popover.md).
 
-### Sinônimos e ortografias
+### Sinônimos e erros ortográficos
 
-Incorpore sinônimos e erros ortográficos comuns para garantir resultados de pesquisa abrangentes. Além disso, você pode expandir a consulta de pesquisa para incluir palavras que os compradores podem usar que diferem das palavras especificadas em seu catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você pode capturar uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Você pode [definir sinônimos como unidirecionais ou bidirecionais](synonyms-add.md#step-2-define-the-synonym-by-type) para melhorar os resultados.
+O Live Search gerencia erros ortográficos por padrão. Você pode configurar sinônimos para incluir palavras que os compradores podem usar que diferem das palavras especificadas em seu catálogo. Você não quer perder uma venda porque alguém está procurando um &quot;sofá&quot;, enquanto seu produto está listado como um &quot;sofá&quot;. Você pode capturar uma ampla variedade de termos de pesquisa inserindo todas as palavras possíveis que os clientes podem usar para encontrar seus produtos. Você pode [definir sinônimos como unidirecionais ou bidirecionais](synonyms-add.md#step-2-define-the-synonym-by-type) para melhorar os resultados.
 
 #### Dicas para otimizar sinônimos
 

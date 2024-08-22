@@ -2,7 +2,7 @@
 title: "Configurações"
 description: "Defina as configurações para o serviço  [!DNL Live Search] ."
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
 source-wordcount: '454'
 ht-degree: 0%
@@ -36,7 +36,7 @@ Você pode especificar o número de grupos de faixas de preços e como os valore
 | Campo | Descrição |
 |--- |--- |
 | Número de seleções | Especifica o número de agrupamentos de intervalo de preços que podem ser usados como filtros de pesquisa na loja. Valor padrão: 8, Valor máximo: 50 |
-| Valor do intervalo | Especifica o intervalo de preço para cada grupo. Por exemplo, cinco seleções com um valor de intervalo de 20 cria cinco agrupamentos de 0-20, 20-40, 40-60, 60-80 e >80. Valor padrão: 5, Valor máximo: 10.000 |
+| Valor do intervalo | Especifica o intervalo de preço para cada grupo. Por exemplo, cinco seleções com um valor de intervalo de 20 cria cinco agrupamentos de 0-20, 20-40, 40-60, 60-80 e >80. Valor padrão: 5, Valor máximo: 40.000.000 |
 
 ## Idioma
 
