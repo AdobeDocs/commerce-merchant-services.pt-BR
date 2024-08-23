@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 38a4e795200e368e91cd3075c611656e852b73f1
+source-git-commit: 4b579b7ec7698f32b5f2254f20514cedbbb50cdd
 workflow-type: tm+mt
-source-wordcount: '629'
+source-wordcount: '643'
 ht-degree: 0%
 
 ---
@@ -57,7 +57,7 @@ As atualizações incluem:
 
 ## Versão 103.3.4
 
-![Correção](../assets/fix.svg) Melhore o log de exportação de dados SaaS do Commerce adicionando mais detalhes sobre o processo de reindexação.
+![Correção](../assets/fix.svg) Adicionado suporte para log de auditoria de transferência de dados, adicionando um mecanismo para despachar um evento `data_sent_outside` sempre que os dados forem transmitidos da instância do Commerce para um serviço do Commerce <!--MDEE-785-->
 
 ## Versão 103.3.3
 
