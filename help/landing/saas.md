@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 34d4fdffbfaf85e28df4500298411258b2dab2c2
+source-git-commit: bfb839c25a378eedd3a20fd01f12f7398c6568b9
 workflow-type: tm+mt
-source-wordcount: '1157'
+source-wordcount: '1213'
 ht-degree: 0%
 
 ---
@@ -105,7 +105,12 @@ Para selecionar ou criar um projeto SaaS, solicite a chave de API [!DNL Commerce
 
 1. Nas seções _[!UICONTROL Sandbox API Keys]_e_[!UICONTROL Production API Keys]_, cole seus valores de chave.
 
-   As chaves privadas devem incluir `----BEGIN PRIVATE KEY---` no início da chave e `----END PRIVATE KEY----` no final da chave.
+   - As chaves privadas devem incluir `----BEGIN PRIVATE KEY---` no início da chave e `----END PRIVATE KEY----` no final da chave.
+   - Se você não tiver uma cópia das chaves reais, peça ao Proprietário da conta que as informe e, em seguida, conecte os valores à configuração.
+
+   >[!WARNING]
+   >
+   > Se você adicionar valores-chave consultando um backup de banco de dados ou snapshot e colando os valores na configuração, uma camada adicional de criptografia será aplicada e as chaves não funcionarão.
 
 1. Clique em **Salvar**.
 
