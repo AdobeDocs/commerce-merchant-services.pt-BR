@@ -3,9 +3,9 @@ title: "Introdução ao  [!DNL Live Search]"
 description: "Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
 workflow-type: tm+mt
-source-wordcount: '2357'
+source-wordcount: '2419'
 ht-degree: 0%
 
 ---
@@ -27,7 +27,7 @@ Este artigo destina-se ao desenvolvedor ou ao integrador de sistemas de sua equi
 ## Requisitos
 
 - [Adobe Commerce](https://business.adobe.com/products/magento/magento-commerce.html) 2.4.4+
-- PHP 8.1 / 8.2 / 8.3
+- PHP versão 8.1, 8.2 ou 8.3
 - [!DNL Composer]
 
 ## Plataformas compatíveis
@@ -63,13 +63,13 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
    composer require magento/live-search
    ```
 
-   Se você estiver adicionando a extensão [!DNL Live Search] a uma instalação do Adobe Commerce **new**, execute o procedimento a seguir para desabilitar o [!DNL OpenSearch] e os módulos relacionados, e instale o [!DNL Live Search]. Em seguida, siga para a etapa 4.
+   Se você estiver adicionando a extensão [!DNL Live Search] a uma instalação do Adobe Commerce **new**, execute o seguinte comando para desabilitar temporariamente o [!DNL OpenSearch] e os módulos relacionados, e instale o [!DNL Live Search]. Em seguida, prossiga para a etapa 4.
 
    ```bash
       bin/magento module:disable Magento_Elasticsearch Magento_Elasticsearch7 Magento_OpenSearch Magento_ElasticsearchCatalogPermissions Magento_InventoryElasticsearch Magento_ElasticsearchCatalogPermissionsGraphQl
    ```
 
-   Se você estiver adicionando a extensão [!DNL Live Search] a uma instalação do Adobe Commerce **existente**, execute o procedimento a seguir para desabilitar temporariamente os módulos [!DNL Live Search] que apresentam os resultados da pesquisa de vitrine. Em seguida, siga para a etapa 4:
+   Se você estiver adicionando a extensão [!DNL Live Search] a uma instalação do Adobe Commerce **existente**, execute o procedimento a seguir para desabilitar os módulos [!DNL Live Search] que apresentam resultados de pesquisa de vitrine. Em seguida, siga para a etapa 4:
 
    ```bash
       bin/magento module:disable Magento_LiveSearchAdapter Magento_LiveSearchStorefrontPopover Magento_LiveSearchProductListing 
@@ -151,16 +151,20 @@ Você também pode executar comandos de sincronização e solucionar problemas d
 
 #### Futuras atualizações do produto
 
-Após a sincronização inicial, pode levar até 15 minutos para que atualizações de produtos incrementais sejam disponibilizadas para pesquisa na loja. Para saber mais, consulte [Indexação - Streaming de Atualizações de Produto](indexing.md).
+Após a sincronização inicial, pode levar até 15 minutos para que atualizações de produtos incrementais sejam disponibilizadas para pesquisa na loja. Para saber mais, consulte [Streaming de Atualizações de Produto](indexing.md) na documentação de Indexação.
 
 ## 4. Verifique se os dados foram exportados {#verify-export}
 
-Para verificar se os dados do catálogo foram exportados da sua instância do Adobe Commerce e estão sincronizados para [!DNL Live Search], você tem algumas opções:
+Para verificar se os dados do catálogo foram exportados do Adobe Commerce e sincronizados com o [!DNL Live Search], você tem algumas opções:
 
 - Procure entradas nas seguintes tabelas:
 
-   - `catalog_data_exporter_products`
-   - `catalog_data_exporter_product_attributes`
+   - `cde_products_feed`
+   - `cde_product_attributes_feed`
+
+  >[!NOTE]
+  >
+  >Se você receber um erro `table does not exist`, procure entradas nas tabelas `catalog_data_exporter_products` e `catalog_data_exporter_product_attributes`. Estes nomes de tabela são usados em [!DNL Live Search] versões anteriores à 4.2.1.
 
 - Use a [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) com a consulta padrão para verificar o seguinte:
 
@@ -173,11 +177,11 @@ Para obter ajuda adicional, consulte [[!DNL Live Search] catálogo não sincroni
 
 A configuração correta dos dados do produto garante bons resultados de pesquisa para os clientes. Nesta seção, você ativa os widgets da lista de produtos e atribui categorias.
 
-### Ativar widgets de listagem de produtos
+### Ativar widgets de lista de produtos
 
-Quando você instala o [!DNL Live Search] 4.0.0+, os Widgets de Listagem de Produtos são habilitados por padrão. Quando os widgets são ativados, um componente de interface do usuário diferente é usado para a página de resultados da pesquisa e para a navegação de categorias na Página de listagem de produtos. Este componente da interface faz chamadas diretas à [API do Serviço de Catálogo](https://developer.adobe.com/commerce/services/graphql/catalog-service/product-search/), o que resulta em tempos de resposta mais rápidos.
+Quando você instala o [!DNL Live Search] 4.0.0+, os widgets de lista de produtos são habilitados por padrão. Quando os widgets são ativados, um componente de interface do usuário diferente é usado para a página de resultados da pesquisa e a página da lista de produtos da navegação por categorias. Este componente da interface faz chamadas diretas à [API do Serviço de Catálogo](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/), o que resulta em tempos de resposta mais rápidos.
 
-Se você tiver uma versão do [!DNL Live Search] anterior à 4.0.0+, precisará habilitar manualmente o Widget de listagem de produtos.
+Se você tiver uma versão do [!DNL Live Search] anterior à 4.0.0+, deverá habilitar manualmente o Widget de listagem de produtos.
 
 1. No *Admin*, vá para **[!UICONTROL Stores]** > _[!UICONTROL Settings]_>**[!UICONTROL Configuration]**.
 1. Em **[!UICONTROL Live Search]**, selecione **[!UICONTROL Storefront Features]**.
@@ -198,7 +202,7 @@ Quando você alterar essa configuração, a mensagem `Page cache is invalidated`
 
 ### Atribuir categorias
 
-Os produtos retornados em [!DNL Live Search] devem ser atribuídos a uma [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Isso permite uma melhor granularidade ao filtrar.
+Os produtos retornados em [!DNL Live Search] devem ser atribuídos a uma [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Essas atribuições de categoria melhoram a granularidade ao filtrar.
 
 ## 6. Testar a conexão {#test-connection}
 
@@ -216,9 +220,9 @@ Para permitir [!DNL Live Search] por meio de um firewall, adicione `commerce.ado
 
 ## 7. Personalizar para sua loja
 
-Você instalou a extensão [!DNL Live Search], sincronizou, validou e configurou seus dados. Agora, você deverá garantir que os widgets do [!DNL Live Search] estejam de acordo com a aparência da sua loja.
+Você instalou a extensão [!DNL Live Search], sincronizou, validou e configurou seus dados. A próxima etapa é garantir que os widgets do [!DNL Live Search] estejam de acordo com a aparência da sua loja.
 
-Você pode estilizar os widgets popover e PLP definindo regras CSS personalizadas, conforme necessário. Consulte [Elementos de Popover de Estilo](storefront-popover.md#styling-popover-example) e [Widget de página de listagem de produtos](plp-styling.md#styling-example).
+Você pode estilizar os widgets popover e PLP definindo regras CSS personalizadas, conforme necessário. Consulte [Elementos Popover de estilo](storefront-popover.md#styling-popover-example) e [widget da página de listagem de produtos](plp-styling.md#styling-example).
 
 Se você quiser estender a funcionalidade dos widgets, o código-fonte de cada um deles estará disponível em um repositório público.
 Nesse cenário, você pode personalizar o JavaScript de acordo com suas necessidades e, em seguida, hospedar seu código personalizado no CDN. Este script personalizado se comunica com o serviço [!DNL Live Search] e retorna os resultados normalmente, permitindo que você controle a funcionalidade do widget.
@@ -288,7 +292,7 @@ A extensão [!DNL Live Search] consiste nos seguintes pacotes:
 
 ## [!DNL Live Search] dependências {#dependencies}
 
-As seguintes dependências [!DNL Live Search] foram capturadas por [!DNL Composer].
+O metapackage [!DNL Composer] para instalar a extensão [!DNL Live Search] inclui as seguintes dependências de módulo.
 
 - `magento/module-saas-catalog`
 - `magento/module-saas-category`
@@ -315,9 +319,9 @@ As seções a seguir fornecem tópicos mais avançados ao usar [!DNL Live Search
 
 [!DNL Live Search] se comunica através do ponto de extremidade em `https://catalog-service.adobe.io/graphql`.
 
-Como [!DNL Live Search] não tem acesso ao banco de dados completo do produto, [!DNL Live Search] o GraphQL e o Commerce Core GraphQL não terão paridade completa.
+Como [!DNL Live Search] não tem acesso ao banco de dados completo do produto, as APIs principais do GraphQL do Commerce e do GraphQL [!DNL Live Search] não têm paridade completa.
 
-É recomendável chamar as APIs SaaS diretamente, especificamente o endpoint do Serviço de catálogo.
+A Adobe recomenda chamar as APIs SaaS diretamente — especificamente, o endpoint do Serviço de catálogo.
 
 - Obter desempenho e reduzir a carga do processador, ignorando o processo de banco de dados/Graphql do Commerce
 - Aproveite a federação [!DNL Catalog Service] para chamar [!DNL Live Search], [!DNL Catalog Service] e [!DNL Product Recommendations] de um único ponto de extremidade.
@@ -329,7 +333,7 @@ Se você tiver uma implementação headless personalizada, confira as [!DNL Live
 - [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo do Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-Se você não usar os componentes padrão, como o Adaptador de pesquisa ou widgets do Luma, ou AEM CIF Widgets, o evento (dados de sequência de cliques que alimentam o Adobe Sensei para Merchandising inteligente e métricas de desempenho) não funcionará imediatamente e exigirá desenvolvimento personalizado para implementar eventos headless.
+AEM Se você não usar os componentes padrão como o Adaptador de pesquisa, widgets Luma ou Widgets CIF, a coleta automática de dados de interação do usuário não funcionará por padrão. Esses dados coletados são usados pela Adobe Sensei para um merchandising inteligente e para o rastreamento de desempenho. Para resolver esse problema, é necessário desenvolver uma solução personalizada para implementar essa coleção de dados de forma headless.
 
 A última versão de [!DNL Live Search] já usa [!DNL Catalog Service].
 
@@ -375,15 +379,15 @@ Os widgets [!DNL Live Search] oferecem suporte aos seguintes idiomas:
 | Chinês | China | zh_CN | zh_Hans_CN |
 | Chinês | Taiwan | zh_TW | zh_Hant_TW |
 
-Se o widget detectar que a configuração de idioma do Administrador do Commerce (_Lojas_ > Configurações > _Configuração_ > _Geral_ > Opções de país) corresponde a um idioma com suporte, o padrão será esse idioma. Caso contrário, os widgets padrão serão em inglês.
+Se o widget detectar que a configuração de idioma do administrador do Commerce corresponde a um idioma suportado, o padrão será esse idioma. Caso contrário, o widget usará o inglês como padrão. No Admin, a configuração de idioma é definida navegando até _[!UICONTROL Stores]_> [!UICONTROL Settings] >_[!UICONTROL Configuration]_ > _[!UICONTROL General]_> [!UICONTROL Country Options].
 
 Os administradores também podem definir o idioma do [índice de pesquisa](settings.md#language), para ajudar a garantir melhores resultados de pesquisa.
 
 ### Repositório de código do widget
 
-O widget Página de listagem de produtos e o widget de campo do Live Search estão disponíveis para download no repositório do github.
+O código do widget página da lista de produtos e do widget de campo do Live Search está disponível para download no GitHub.
 
-Isso permite que os desenvolvedores personalizem totalmente a funcionalidade e o estilo. Esses usuários hospedam o código enquanto ainda aproveitam o serviço [!DNL Live Search].
+Os desenvolvedores que têm acesso ao código podem personalizar completamente o funcionamento e a aparência. Eles hospedam o código em seus próprios servidores, mas ainda usam o serviço [!DNL Live Search].
 
 - [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Barra de pesquisa](https://github.com/adobe/storefront-search-as-you-type)
@@ -438,8 +442,8 @@ Esse módulo adiciona contextos adicionais às consultas do GraphQL:
 O [!DNL Live Search] funciona com o PWA Studio, mas os usuários podem ver pequenas diferenças em comparação a outras implementações do Commerce. Funcionalidades básicas, como pesquisa e listagem de produtos, funcionam em Venia, mas algumas permutas de Graphql podem não funcionar corretamente. Também pode haver diferenças de desempenho.
 
 - A implementação PWA atual de [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
-- [!DNL Live Search] no PWA não dá suporte a [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, os relatórios de pesquisa e o merchandising inteligente funcionarão.
-- Não há suporte para a filtragem direta em `description`, `name`, `short_description` por GraphQL quando usada com [PWA](https://developer.adobe.com/commerce/pwa-studio/), mas ela é retornada com um filtro mais geral.
+- [!DNL Live Search] no PWA não dá suporte a [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, os relatórios de pesquisa e o merchandising inteligente não funcionam em vitrines de PWA.
+- Ao usar [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), o GraphQL não oferece suporte à filtragem diretamente em `description`, `name`, `short_description`, mas esses campos podem ser retornados com um filtro mais geral.
 
 Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
 
