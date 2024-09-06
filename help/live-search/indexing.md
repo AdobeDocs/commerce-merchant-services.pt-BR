@@ -2,9 +2,9 @@
 title: "Indexação"
 description: "Saiba como o  [!DNL Live Search] indexa propriedades de atributo de produto."
 exl-id: 04441e58-ffac-4335-aa26-893988a89720
-source-git-commit: 920324dbad62adaee5c7db688e59398557e03663
+source-git-commit: 2833b723845312fe657b29024b9d715ee07d5a1e
 workflow-type: tm+mt
-source-wordcount: '586'
+source-wordcount: '739'
 ht-degree: 0%
 
 ---
@@ -21,9 +21,9 @@ As propriedades do atributo de produto (metadados) determinam:
 
 O escopo dos metadados do atributo é `website/store/store view`.
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` ](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) [propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto que tenha a `Use in Search` ](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) [propriedade de vitrine definida como `Yes` no Administrador do Adobe Commerce. Quando habilitado, `Search Weight` pode ser definido para o atributo.
 
-[!DNL Live Search] não indexa produtos excluídos ou aqueles definidos como `Not Visible Individually`.
+[!DNL Live Search] não indexa produtos excluídos ou produtos definidos como `Not Visible Individually`.
 
 >[!NOTE]
 >
@@ -32,7 +32,8 @@ A API [!DNL Live Search] permite que um cliente classifique por qualquer atribut
 ## Pipeline de indexação
 
 O cliente chama o serviço de pesquisa da loja para recuperar (filtrável, classificável) os metadados do índice. O serviço de pesquisa pode chamar apenas atributos de produto pesquisáveis com a propriedade *Usar na Navegação em Camadas* definida como `Filterable (with results)` e *Usar para Classificação na Listagem de Produtos* definida como `Yes`.
-Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seus [weight](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/search/search-results.html#weighted-search). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
+
+Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quais atributos podem ser pesquisados e seus [weight](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-results). [!DNL Live Search] respeita os pesos de pesquisa do Adobe Commerce (1-10, onde 10 é a prioridade mais alta). A lista de dados sincronizados e compartilhados com o serviço de catálogo pode ser encontrada no schema, que é definido em:
 
 `vendor/magento/module-catalog-data-exporter/etc/et_schema.xml`
 
@@ -41,7 +42,7 @@ Para construir uma consulta dinâmica, o serviço de pesquisa precisa saber quai
 1. Verifique se o comerciante tem o direito de [!DNL Live Search].
 1. Obtenha exibições da loja com alterações nos metadados do atributo.
 1. Armazenar atributos de indexação.
-1. Reindexar índice de pesquisa.
+1. Reindexe o índice de pesquisa.
 
 ### Índice completo
 
@@ -67,23 +68,38 @@ Depois que o índice inicial for criado durante a [integração](install.md#sync
 * Alterações nos valores de atributo de produto
 
 Por exemplo, adicionar um novo valor de amostra ao atributo `color` é manipulado como uma atualização de produto de streaming.
+
 Fluxo de trabalho de atualização de transmissão:
 
 1. Os produtos atualizados são sincronizados da instância do Adobe Commerce para o serviço de catálogo.
 1. O serviço de indexação procura continuamente atualizações de produtos no serviço de catálogo. Os produtos atualizados são indexados à medida que chegam ao serviço de catálogo.
 1. Pode levar até 15 minutos para uma atualização de produto ficar disponível no [!DNL Live Search].
 
+#### Atualizações que afetam a visibilidade do produto
+
+Quando você atualiza as configurações do administrador do [!DNL Live Search], as configurações do administrador do Adobe Commerce ou as atualizações dos dados do catálogo, pode esperar um atraso antes que essas alterações apareçam na loja.
+
+A tabela a seguir descreve várias alterações e o tempo de espera aproximado antes que elas apareçam na loja.
+
+| Atualizações | Atraso até que fique visível na loja |
+|---|---|
+| [!DNL Live Search] Alterações do administrador em facetas, configurações de preço, pesquisa ou regras de merchandising de categoria. | 15-20 minutos. |
+| [!DNL Live Search] Alterações de administrador que exigem reindexação: configurações de idioma ou sinônimos. | Até 15 minutos após a conclusão da reindexação. |
+| Alterações no administrador do Adobe Commerce que exigem uma reindexação completa: metadados de atributos pesquisáveis, classificáveis ou filtráveis | Até 15 minutos após a conclusão da reindexação. |
+| Alterações incrementais nos dados do catálogo que não precisam de reindexação: inventário de produto, preço, nome e assim por diante. | Até 15 minutos após a atualização do índice de Pesquisa Elástica com os dados mais recentes. |
+
 ## Pesquisa de cliente
 
-A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto classificável definindo a [propriedade de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html), *Usada para classificar nas listagens de produtos* a `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no controle de paginação [Classificar por](https://experienceleague.adobe.com/docs/commerce-admin/catalog/catalog/navigation/navigation.html) em páginas de catálogo. Até 200 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades de vitrine](https://experienceleague.adobe.com/docs/commerce-admin/catalog/product-attributes/product-attributes.html) que podem ser pesquisadas e filtradas.
+A API [!DNL Live Search] permite que um cliente classifique por qualquer atributo de produto classificável definindo a [propriedade de vitrine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes), *Usada para classificar nas listagens de produtos* a `Yes`. Dependendo do tema, essa configuração faz com que o atributo seja incluído como uma opção no controle de paginação [Classificar por](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation) em páginas de catálogo. Até 200 atributos de produto podem ser indexados por [!DNL Live Search], com [propriedades de vitrine](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes) que podem ser pesquisadas e filtradas.
+
 Os metadados do índice são armazenados no pipeline de indexação e podem ser acessados pelo serviço de pesquisa.
 
 ![[!DNL Live Search] diagrama da API de metadados do índice ](assets/index-metadata-api.svg)
 
 ### Fluxo de trabalho de atributo classificável
 
-1. O cliente chama o Serviço de pesquisa.
-1. O Serviço de pesquisa chama o Serviço de administração de pesquisa.
+1. O cliente chama o serviço de pesquisa.
+1. O serviço de pesquisa chama o Serviço de administração de pesquisa.
 1. O serviço de pesquisa chama o pipeline de indexação.
 
 ## Indexado para todos os produtos

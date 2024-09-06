@@ -3,9 +3,9 @@ title: "Introdução ao  [!DNL Live Search]"
 description: "Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 43e821de9e147508397d45ccd24b5417478b520a
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '2419'
+source-wordcount: '2417'
 ht-degree: 0%
 
 ---
@@ -333,7 +333,7 @@ Se você tiver uma implementação headless personalizada, confira as [!DNL Live
 - [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo do Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-AEM Se você não usar os componentes padrão como o Adaptador de pesquisa, widgets Luma ou Widgets CIF, a coleta automática de dados de interação do usuário não funcionará por padrão. Esses dados coletados são usados pela Adobe Sensei para um merchandising inteligente e para o rastreamento de desempenho. Para resolver esse problema, é necessário desenvolver uma solução personalizada para implementar essa coleção de dados de forma headless.
+A coleta automática de dados de interação do usuário não funciona por padrão quando você não usa os componentes padrão, como o Adaptador de pesquisa, widgets Luma ou Widgets CIF AEM. O Adobe Sensei usa esses dados coletados para um merchandising inteligente e para o rastreamento de desempenho. Para resolver esse problema, é necessário desenvolver uma solução personalizada para implementar essa coleção de dados de forma headless.
 
 A última versão de [!DNL Live Search] já usa [!DNL Catalog Service].
 

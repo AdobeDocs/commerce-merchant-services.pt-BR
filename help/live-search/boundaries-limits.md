@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
+source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
 workflow-type: tm+mt
-source-wordcount: '777'
+source-wordcount: '887'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,10 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - Não há suporte para [Preços da Camada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) e [Preços Especiais](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) no campo [!DNL Live Search] e no Widget de página de listagem de produtos.
 - Os preços dos produtos não incluem o imposto sobre o valor acrescentado (IVA).
 - A pesquisa de conteúdo não é suportada.
-- Há um limite de 10 mil produtos que podem ser paginados.
+- Há um limite de 10 mil produtos que podem ser paginados. Embora esse limite possa ser aumentado, ele pode afetar o desempenho. Certifique-se de fornecer maneiras significativas de filtrar produtos caso uma categoria ou resultado de pesquisa tenha um grande número de produtos para que os compradores não precisem usar paginação profunda.
 - Há um limite rígido de 1 MB por atributo, incluindo descrição e atributos personalizados.
 - O adaptador de pesquisa não oferece suporte a atributos de produto criados com um modelo de origem personalizado e usados como facetas. Para oferecer suporte a esta funcionalidade, você deve usar o [Widget de página de listagem de produtos](plp-styling.md).
+- Não há suporte para tipos de produto personalizados.
 
 ## Indexação
 
@@ -84,3 +85,15 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - O [!DNL popover] não oferece suporte ao tema *Em branco*.
 - Não há suporte para [!DNL popover] no formulário de Pedido rápido.
 - As listas de desejos e as comparações de produtos não são compatíveis.
+- O símbolo de moeda para o sol peruano (PEN) não é suportado.
+
+## Solução de problemas
+
+Para obter ajuda para solucionar alguns problemas comuns no [!DNL Live Search], consulte os seguintes artigos da base de dados de conhecimento:
+
+- [[!DNL Live Search] catálogo não sincronizado](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-catalog-data-sync)
+- [[!DNL Live Search] a classificação do painel e do resultado da pesquisa está incorreta](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-dashboard-ranking-incorrect)
+- [[!DNL Live Search] exibe produtos indisponíveis, independentemente das configurações de status de estoque no Administrador](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-displays-out-of-stock-products)
+- [[!DNL Live Search] as facetas não estão classificadas alfabeticamente](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/troubleshooting/miscellaneous/live-search-facets-not-sorted)
+
+Se precisar de assistência adicional, contate o [suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide).

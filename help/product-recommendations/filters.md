@@ -2,9 +2,9 @@
 title: Filtrar produtos
 description: Defina condições que incluam ou excluam produtos de serem usados como recomendações.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: aa036228bb4040de5a8d4d159727fa0c4c6d99e1
+source-git-commit: b602385b956b6af131b008428d1182a586303bc7
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '734'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,11 @@ Os operadores lógicos `AND` e `OR` são usados para unir várias condições. S
 
 ### Categoria
 
-Os filtros baseados na categoria de um produto usam atribuições diretas de categoria e suas subcategorias. Por exemplo, habilitar uma condição de exclusão para a categoria `Gear` exclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`. Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurada.
+Os filtros baseados na categoria de um produto usam atribuições diretas de categoria e suas subcategorias. Por exemplo, habilitar uma condição de exclusão para a categoria `Gear` exclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`. O mesmo se aplica a um filtro de inclusão em uma categoria. Por exemplo, habilitar uma condição de inclusão para a categoria `Gear` inclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`.
+
+>[!NOTE]
+>
+>Para comerciantes B2B, o filtro Categoria adere a qualquer [categoria de produto específica do cliente](https://experienceleague.adobe.com/docs/commerce-admin/catalog/categories/category-permissions.html) configurada.
 
 A Adobe Commerce recomenda usar a seguinte configuração de filtro de categoria ao implantar recomendações para seus tipos de página:
 

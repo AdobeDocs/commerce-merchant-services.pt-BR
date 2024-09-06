@@ -2,9 +2,9 @@
 title: 'Configurando o Live Search'
 description: O espaço de trabalho  [!DNL Live Search]  é usado para configurar, gerenciar e monitorar o desempenho da pesquisa.
 exl-id: fb85974a-a5f9-4e6c-bd03-451e6457f2d2
-source-git-commit: 5e79bb43449b95b4c6aa0e234a0dbc999c312e59
+source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
 workflow-type: tm+mt
-source-wordcount: '921'
+source-wordcount: '949'
 ht-degree: 0%
 
 ---
@@ -74,14 +74,18 @@ A seção a seguir descreve as definições de configuração do Commerce com e 
 
 ### Valores de configuração compatíveis
 
+>[!IMPORTANT]
+>
+>É altamente recomendável usar os widgets de lista de produtos, habilitados por padrão no Live Search 4.0.0. Os widgets são destinados a substituir completamente a implementação de adaptadores em versões futuras. Consulte [habilitar widgets de lista de produtos](install.md#enable-product-listing-widgets) para saber mais.
+
 | Definição da configuração do Commerce | Descrição | Suportado pelo Popover | Suportado pelo adaptador |
 |---|---|---|---|
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Permitir todos os produtos por página | Se definida como `Yes`, inclui a opção `ALL` no controle &quot;Mostrar por Página&quot;. | Sim. Máximo de 500 produtos | Sim. Máximo de 500 produtos |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Duração mínima da consulta | O número mínimo de caracteres permitidos em uma pesquisa de catálogo. | Sim | Sim |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Produtos por página em valores permitidos da grade | Determina o número de produtos exibidos na exibição de grade. | Sim | Sim |
 | Lojas > Configuração > Catálogo > Catálogo > Pesquisa no catálogo > Produtos por página no valor padrão da grade | Determina o número de produtos exibidos por página por padrão na exibição de grade. | Sim. Máximo de 500 produtos | Sim. Máximo de 500 produtos |
-| Lojas > Configuração > Catálogo > Inventário > Exibir Produtos Sem Estoque | Exibe os produtos que estão esgotados. | Sim com v2.0.4+ | Sim com v2.0.4+ |
-| Lojas > Configuração > Moeda > Moeda de Exibição Padrão | A moeda principal usada para exibir preços. | Sim com 3.1.0+ | Sim com 3.1.0+ |
+| Lojas > Configuração > Catálogo > Inventário > Exibir Produtos Sem Estoque | Exibe os produtos que estão esgotados. | Sim | Sim |
+| Lojas > Configuração > Moeda > Moeda de Exibição Padrão | A moeda principal usada para exibir preços. | Sim | Sim |
 | Lojas > Configuração > Geral > Configuração de Moeda > Opções de Moeda > Moeda Base | A moeda principal usada para todas as transações de pagamento online. | Sim | Sim |
 
 Os preços na Página de listagem de produtos do widget e Popover são convertidos para a Moeda de exibição padrão usando as Taxas de moeda configuradas.

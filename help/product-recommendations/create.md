@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 51ff52eba117fe438d592ca886dbca25304a0d15
+source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
 workflow-type: tm+mt
-source-wordcount: '1022'
+source-wordcount: '1438'
 ht-degree: 0%
 
 ---
@@ -20,11 +20,11 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 1. Na barra lateral _Admin_, vá para **Marketing** > _Promoções_ > **Recommendations de Produtos** para exibir o espaço de trabalho do _Recommendations de Produtos_.
 
-1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/docs/commerce-admin/start/setup/websites-stores-views.html#scope-settings) onde deseja que as recomendações sejam exibidas.
+1. Especifique o [Modo de Exibição de Armazenamento](https://experienceleague.adobe.com/en/docs/commerce-admin/start/setup/websites-stores-views) onde deseja que as recomendações sejam exibidas.
 
    >[!NOTE]
    >
-   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recommendations do produto](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html).
+   > As unidades de recomendação do Page Builder devem ser criadas na exibição de armazenamento padrão, mas podem ser usadas em qualquer lugar. Para saber mais sobre como criar recomendações de produto com o Page Builder, consulte [Adicionar conteúdo - Recommendations do produto](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations).
 
 1. Clique em **Criar recomendação**.
 
@@ -34,14 +34,14 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
    >[!NOTE]
    >
-   > Não há suporte para Recommendations de produto na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration.html#redirect-to-cart).
+   > Não há suporte para Recommendations de produto na página Carrinho quando sua loja está configurada para [exibir a página do carrinho de compras imediatamente após adicionar um produto ao carrinho](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/point-of-purchase/cart/cart-configuration).
 
    * Página inicial
    * Categoria
    * Detalhes do produto
    * Carrinho
    * Confirmação
-   * [Construtor de páginas](https://experienceleague.adobe.com/docs/commerce-admin/page-builder/add-content/recommendations.html)
+   * [Construtor de páginas](https://experienceleague.adobe.com/en/docs/commerce-admin/page-builder/add-content/recommendations)
 
    Você pode criar até cinco unidades de recomendação ativas para cada tipo de página e até 25 para o Page Builder. O tipo de página fica esmaecido quando o limite é atingido.
 
@@ -81,37 +81,56 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 ## Indicadores de disponibilidade
 
-Alguns tipos de recomendações usam dados comportamentais dos compradores para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas.
+Os indicadores de disponibilidade mostram quais tipos de recomendação terão melhor desempenho com base no catálogo e nos dados comportamentais disponíveis. Você também pode usar indicadores de prontidão para determinar se tem problemas com o evento ou se não tem tráfego suficiente para preencher o tipo de recomendação.
 
-Requer apenas dados de catálogo. Não são necessários dados comportamentais para:
+Os indicadores de prontidão são categorizados como [baseados em estática](#static-based) ou [baseados em dinâmica](#dynamic-based). Baseado em estática usa somente dados de catálogo; enquanto que os dados comportamentais do uso baseado em dinâmica de seus compradores. Esses dados comportamentais são usados para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas e calcular sua pontuação de preparação.
+
+Os indicadores de prontidão são calculados com base em dois fatores:
+
+* Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
+
+* Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
+
+Com base nos fatores acima, um valor de disponibilidade é calculado e exibido da seguinte maneira:
+
+* 75% ou mais significa que as recomendações sugeridas para esse tipo de recomendação serão altamente relevantes.
+* Pelo menos 50% significa que as recomendações sugeridas para esse tipo de recomendação serão menos relevantes.
+* Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação não serão relevantes.
+
+Essas são diretrizes gerais, mas cada caso individual pode diferir com base na natureza dos dados coletados, conforme descrito acima. Saiba mais sobre [como os indicadores de disponibilidade são calculados](#understand-how-readiness-indicators-are-calculated) e [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-percent-is-low).
+
+### Baseado em estática
+
+Os seguintes tipos de recomendações são baseados em estática porque exigem apenas dados de catálogo. Nenhum dado comportamental é usado.
 
 * _Mais artigos como este_
-* _Visualizado recentemente_
 * _Similaridade visual_
 
-Com base nos últimos seis meses de dados comportamentais da loja:
+### Baseado em dinâmico
+
+Os tipos de recomendações a seguir são baseados em dinâmica porque usam dados comportamentais de vitrine.
+
+Últimos seis meses de dados comportamentais da loja:
 
 * _Visualizou isto, visualizou aquilo_
 * _Visualizou isto, comprou aquilo_
 * _Comprei isto, comprei aquilo_
 * _Recomendado para você_
 
-Os tipos de recomendação baseados em popularidade usam os últimos sete dias dos dados comportamentais da loja:
+Últimos sete dias de dados comportamentais da loja:
 
 * Mais visualizados
 * Mais comprados
 * Adicionado ao carrinho
 * Tendências
 
-Espera-se que os valores do indicador de disponibilidade flutuem devido a fatores como o tamanho geral do catálogo, o volume de eventos de interação do produto (visualizações, adições ao carrinho, compras) e a porcentagem de skus que registram esses eventos em uma determinada janela de tempo, conforme listado acima. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
+Dados comportamentais mais recentes do comprador (somente visualizações):
 
-Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a seção _Selecionar tipo de Recomendação_ exibe uma medida de prontidão para cada tipo. Esses indicadores de prontidão são calculados com base em dois fatores:
+* _Visualizado recentemente_
 
-* Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
+### Visualizar progresso
 
-* Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
-
-Com base nos fatores acima, um valor de disponibilidade é calculado e exibido. Um tipo de recomendação é considerado pronto para implantação quando seu valor de disponibilidade é de 75% ou superior. Um tipo de recomendação é considerado parcialmente pronto quando sua disponibilidade é de pelo menos 50%. Um tipo de recomendação é considerado não pronto para implantação quando seu valor de disponibilidade é inferior a 50%. Essas são diretrizes gerais, mas cada caso individual pode diferir com base na natureza dos dados coletados, conforme descrito acima.
+Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a seção _Selecionar tipo de Recomendação_ exibe uma medida de prontidão para cada tipo.
 
 ![Tipo de recomendação](assets/create-recommendation-select-type.png)
 _Tipo de recomendação_
@@ -119,6 +138,29 @@ _Tipo de recomendação_
 >[!NOTE]
 >
 >Os indicadores podem nunca atingir 100%.
+
+O percentual do indicador de disponibilidade para tipos de recomendação que dependem dos dados do catálogo não muda muito, pois o catálogo do comerciante não muda com frequência. Mas a porcentagem do indicador de disponibilidade para tipos de recomendação com base nos dados comportamentais do comprador pode mudar com frequência, dependendo da atividade diária do comprador.
+
+#### O que fazer se a porcentagem do indicador de disponibilidade estiver baixa
+
+Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](behavioral-data.md#backuprecs) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
+
+A seguir, uma lista de possíveis motivos e soluções para pontuações comuns de baixa disponibilidade:
+
+* **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
+* **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
+
+   * Campos ausentes nos eventos de loja obrigatórios para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+   * Baixo tráfego na loja, portanto, o volume de eventos comportamentais que recebemos é baixo.
+   * A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
+
+#### Como os indicadores de disponibilidade são calculados
+
+Os indicadores de prontidão são uma indicação do quanto o modelo é treinado. Os indicadores são independentes dos tipos de eventos coletados, da amplitude de produtos com os quais o interagiu e do tamanho do catálogo.
+
+A porcentagem do indicador de disponibilidade é derivada de um cálculo que indica quantos produtos podem ser recomendados, dependendo do tipo de recomendação. As estatísticas são aplicadas a produtos com base no tamanho geral do catálogo, no volume de interações (como exibições, cliques, adicionar a carrinhos) e na porcentagem de SKUs que registram esses eventos em uma determinada janela de tempo. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
+
+Como resultado dessas variáveis, o percentual do indicador de disponibilidade pode flutuar. Isso explica por que você pode ver que os tipos de recomendação entram e saem do estado &quot;Pronto para implantar&quot;.
 
 ## Visualizar Recommendations {#preview}
 
