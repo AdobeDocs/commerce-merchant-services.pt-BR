@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 5266ca2766697fc0fd8baf236a5ae83a26528977
+source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
 workflow-type: tm+mt
-source-wordcount: '1438'
+source-wordcount: '1428'
 ht-degree: 0%
 
 ---
@@ -81,9 +81,17 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 ## Indicadores de disponibilidade
 
-Os indicadores de disponibilidade mostram quais tipos de recomendação terão melhor desempenho com base no catálogo e nos dados comportamentais disponíveis. Você também pode usar indicadores de prontidão para determinar se tem problemas com o evento ou se não tem tráfego suficiente para preencher o tipo de recomendação.
+Os indicadores de disponibilidade mostram quais tipos de recomendação terão melhor desempenho com base no catálogo e nos dados comportamentais disponíveis. Você também pode usar indicadores de prontidão para determinar se tem problemas com seu [evento](events.md) ou se não tem tráfego suficiente para preencher o tipo de recomendação.
 
 Os indicadores de prontidão são categorizados como [baseados em estática](#static-based) ou [baseados em dinâmica](#dynamic-based). Baseado em estática usa somente dados de catálogo; enquanto que os dados comportamentais do uso baseado em dinâmica de seus compradores. Esses dados comportamentais são usados para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas e calcular sua pontuação de preparação.
+
+### Como os indicadores de disponibilidade são calculados
+
+Os indicadores de prontidão são uma indicação do quanto o modelo é treinado. Os indicadores dependem dos tipos de eventos coletados, da amplitude de produtos com os quais o interagiu e do tamanho do catálogo.
+
+A porcentagem do indicador de disponibilidade é derivada de um cálculo que indica quantos produtos podem ser recomendados, dependendo do tipo de recomendação. As estatísticas são aplicadas a produtos com base no tamanho geral do catálogo, no volume de interações (como exibições, cliques, adicionar a carrinhos) e na porcentagem de SKUs que registram esses eventos em uma determinada janela de tempo. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
+
+Como resultado dessas variáveis, o percentual do indicador de disponibilidade pode flutuar. Isso explica por que você pode ver que os tipos de recomendação entram e saem do estado &quot;Pronto para implantar&quot;.
 
 Os indicadores de prontidão são calculados com base em dois fatores:
 
@@ -95,15 +103,15 @@ Com base nos fatores acima, um valor de disponibilidade é calculado e exibido d
 
 * 75% ou mais significa que as recomendações sugeridas para esse tipo de recomendação serão altamente relevantes.
 * Pelo menos 50% significa que as recomendações sugeridas para esse tipo de recomendação serão menos relevantes.
-* Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação não serão relevantes.
+* Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação podem não ser relevantes. Neste caso, [recomendações de backup](behavioral-data.md#backuprecs) são usadas.
 
-Essas são diretrizes gerais, mas cada caso individual pode diferir com base na natureza dos dados coletados, conforme descrito acima. Saiba mais sobre [como os indicadores de disponibilidade são calculados](#understand-how-readiness-indicators-are-calculated) e [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-percent-is-low).
+Saiba mais sobre [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
 ### Baseado em estática
 
 Os seguintes tipos de recomendações são baseados em estática porque exigem apenas dados de catálogo. Nenhum dado comportamental é usado.
 
-* _Mais artigos como este_
+* _Mais itens similares_
 * _Similaridade visual_
 
 ### Baseado em dinâmico
@@ -119,10 +127,12 @@ Os tipos de recomendações a seguir são baseados em dinâmica porque usam dado
 
 Últimos sete dias de dados comportamentais da loja:
 
-* Mais visualizados
-* Mais comprados
-* Adicionado ao carrinho
-* Tendências
+* _Mais visualizados_
+* _Mais comprados_
+* _Mais adicionados ao carrinho_
+* _Tendências_
+* _Exibir para conversão de compra_
+* _Conversão de Visualização em Carrinho_
 
 Dados comportamentais mais recentes do comprador (somente visualizações):
 
@@ -150,17 +160,9 @@ A seguir, uma lista de possíveis motivos e soluções para pontuações comuns 
 * **Baseado em estática** - Baixo percentual para esses indicadores pode ser causado pela falta de dados de catálogo para os produtos exibíveis. Se forem menores do que o esperado, uma sincronização completa pode corrigir esse problema.
 * **Baseado em dinâmico** - Baixo percentual para indicadores baseados em dinâmico pode ser causado por:
 
-   * Campos ausentes nos eventos de loja obrigatórios para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
+   * Campos ausentes nos [eventos de loja](events.md) necessários para os respectivos tipos de recomendação (requestId, contexto do produto e assim por diante).
    * Baixo tráfego na loja, portanto, o volume de eventos comportamentais que recebemos é baixo.
    * A variedade de eventos comportamentais de vitrine em diferentes produtos em sua loja é baixa. Por exemplo, se apenas 10% dos seus produtos forem visualizados ou comprados na maior parte do tempo, os respectivos indicadores de disponibilidade serão baixos.
-
-#### Como os indicadores de disponibilidade são calculados
-
-Os indicadores de prontidão são uma indicação do quanto o modelo é treinado. Os indicadores são independentes dos tipos de eventos coletados, da amplitude de produtos com os quais o interagiu e do tamanho do catálogo.
-
-A porcentagem do indicador de disponibilidade é derivada de um cálculo que indica quantos produtos podem ser recomendados, dependendo do tipo de recomendação. As estatísticas são aplicadas a produtos com base no tamanho geral do catálogo, no volume de interações (como exibições, cliques, adicionar a carrinhos) e na porcentagem de SKUs que registram esses eventos em uma determinada janela de tempo. Por exemplo, durante o pico do tráfego na temporada de festas, os indicadores de disponibilidade podem mostrar valores mais altos do que nos momentos de volume normal.
-
-Como resultado dessas variáveis, o percentual do indicador de disponibilidade pode flutuar. Isso explica por que você pode ver que os tipos de recomendação entram e saem do estado &quot;Pronto para implantar&quot;.
 
 ## Visualizar Recommendations {#preview}
 
