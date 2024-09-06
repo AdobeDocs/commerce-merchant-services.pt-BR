@@ -3,7 +3,7 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 2f28b77691e5b125875f1ce39301bfebd093a922
+source-git-commit: 4898d426a3d5fd2ea9059d200ebf8ba45d0d65df
 workflow-type: tm+mt
 source-wordcount: '777'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Facetas
 
 - Um máximo de 100 atributos podem ser configurados como facetas dos 200 atributos filtráveis que podem ser indexados.
-- Dentro de uma faceta, um máximo de 30 intervalos podem ser retornados. Se mais de 30 compartimentos precisarem ser retornados, [crie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que o Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
+- Dentro de uma faceta, um máximo de 100 grupos podem ser retornados. Se você precisar retornar mais de 100 compartimentos, [crie um tíquete de suporte](https://experienceleague.adobe.com/en/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide) para que o Adobe possa analisar o impacto no desempenho e determinar se é viável aumentar esse limite no seu ambiente.
 - Os aspectos dinâmicos podem causar problemas de desempenho em índices grandes e índices com alta ordinalidade. Se você tiver criado facetas dinâmicas e notar qualquer deterioração de desempenho ou carregamento de página sem erros de tempo limite, tente alterar suas facetas para fixado para determinar se isso resolve seu problema de desempenho.
 - O status do estoque (`quantity_and_stock_status`) não tem suporte como uma faceta. Você pode usar o `inStock: 'true'` para filtrar por produtos de falta de estoque. Isso é suportado imediatamente no módulo `LiveSearchAdapter` quando &quot;Exibir produtos esgotados&quot; está definido como &quot;Verdadeiro&quot; no Administrador [!DNL Commerce].
 - Atributos de tipo de data não são suportados como uma faceta.

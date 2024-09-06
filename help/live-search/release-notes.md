@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de Versão"
 description: "As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 55b90f0025f69137d50fa1cacd80a2b655eb39dc
+source-git-commit: 5e0ab74e73f187213e83ce290abf2bb08571b9d1
 workflow-type: tm+mt
-source-wordcount: '2010'
+source-wordcount: '2027'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ As atualizações incluem:
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações que foram publicadas fora de uma versão com controle de versão ou melhorias no serviço hospedado.
+
+_4 de setembro de 2024_
+
+![Correção](../assets/fix.svg) Aumento do número máximo de compartimentos que podem ser retornados [em uma faceta](boundaries-limits.md#facets) para 100.
 
 _7 de agosto de 2024_
 
