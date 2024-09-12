@@ -1,16 +1,17 @@
 ---
-title: Check-out
-description: Personalize o checkout para atender às necessidades do seu cliente.
+title: Check-out em  [!DNL Payment Services]
+description: Personalize o check-out do  [!DNL Payment Services]  de acordo com as necessidades do cliente.
 feature: Payments, Checkout
 exl-id: 47df165f-2145-4e0e-b272-54b8e768cf19
-source-git-commit: 4a534f2f9844173b4ec878976595159c2c47c561
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '322'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
 
-# Check-out
+
+# Check-out em [!DNL Payment Services]
 
 Você pode configurar o check-out para o Adobe Commerce [!DNL Payment Services] para melhor atender aos seus compradores. Uma funcionalidade como a [anulação automática de pedido](#order-auto-voided-if-error) e a [compartimentalização de cartão de crédito](#credit-card-vaulting) garante que seus compradores tenham uma experiência perfeita para o usuário.
 

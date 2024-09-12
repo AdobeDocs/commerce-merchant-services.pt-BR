@@ -6,9 +6,9 @@ index: true
 role: Admin, Leader, User
 feature: Payments, Checkout
 recommendations: noDisplay
-source-git-commit: 5481b19f95908b441e12c4700c51649921dabb08
+source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
 workflow-type: tm+mt
-source-wordcount: '103'
+source-wordcount: '108'
 ht-degree: 3%
 
 ---
@@ -34,12 +34,13 @@ ht-degree: 3%
 - Pagamentos e check-out {#payments-checkout}
    - [Opções de pagamento](payments-options.md)
    - [Compartimentalização de cartão de crédito](vaulting.md)
-   - [Check-out](checkout.md)
-   - [Criar um pedido no Administrador](create-order.md)
+   - [Check-out em  [!DNL Payment Services]](checkout.md)
    - Gerenciar pagamentos {#manage}
       - [Itens de linha para  [!DNL Payment Services]](line-items.md)
       - [Reembolsos](refunds.md)
       - [Nulos](voids.md)
+   - [Criar um pedido no Administrador](create-order.md)
+   - [Acompanhando suas remessas em [!DNL Payment Services]](track-shipment.md)
 - Relatórios financeiros {#reporting}
    - [Relatório de transações](transactions.md)
    - [Relatório de status do pagamento da ordem](order-payment-status.md)
