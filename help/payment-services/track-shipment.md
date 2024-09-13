@@ -2,7 +2,7 @@
 title: Acompanhando suas remessas em [!DNL Payment Services]
 description: Personalizar [!DNL Payment Services] informações de remessa e rastreamento exibidas no Painel do Comerciante do Paypal.
 feature: Payments
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: 2169907d7200a0937ce5a3ddf9634423cc8c2f5f
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 0%
@@ -48,4 +48,4 @@ As instruções a seguir irão orientá-lo pelo processo de criação de uma rem
 
 ### Compatibilidade com terceiros
 
-Qualquer extensão de terceiros é compatível com a funcionalidade quando uma entidade de remessa é criada por meio da [API do Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#magentosalesapishipmentrepositoryinterface-shipmentrepositoryinterface){target=_blank}.
+Qualquer extensão de terceiros é compatível com a funcionalidade quando uma entidade de remessa é criada por meio da [API do Commerce](https://developer.adobe.com/commerce/webapi/rest/attributes/#ShipmentRepositoryInterface){target=_blank}.
