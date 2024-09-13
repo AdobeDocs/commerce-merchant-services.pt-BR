@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de Versão"
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 153e6a82134a34737529f4e1a135eb7803b20e05
+source-git-commit: a5963055a17b5af0c30f3d5f6236d1524e028b22
 workflow-type: tm+mt
-source-wordcount: '2968'
+source-wordcount: '3017'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,14 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos no [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e no [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) exibindo ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.8.1
+
+_13 de setembro de 2024_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg)<!-- PAY-5644 --> Corrigiu um problema com o cache de parâmetros de SDK ao usar vários escopos em [!DNL Payment Services]. A configuração do SDK agora é armazenada em cache separadamente para cada escopo, em vez de ser armazenada em uma única chave. Isso garante que o cache de cada escopo seja invalidado independentemente, melhorando a confiabilidade ao gerenciar vários escopos.
 
 ## v2.8.0
 
