@@ -3,9 +3,9 @@ title: 'Limites e limites'
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 562af9995b49f4c0fddc76c2ae1c53dd928b1daa
+source-git-commit: 2feb97bf6aa41e5b99d3dcbc51ef3c1cdc05d8da
 workflow-type: tm+mt
-source-wordcount: '887'
+source-wordcount: '905'
 ht-degree: 0%
 
 ---
@@ -17,13 +17,14 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 ## Geral
 
 - O módulo [Pesquisa Avançada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) é desabilitado quando [!DNL Live Search] é instalado e o link Pesquisa Avançada no rodapé da loja é removido.
-- Não há suporte para [Preços da Camada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) e [Preços Especiais](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) no campo [!DNL Live Search] e no Widget de página de listagem de produtos.
+- Não há suporte para o [Preço da camada](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-tier) no campo [!DNL Live Search] e no Widget de página de listagem de produtos.
 - Os preços dos produtos não incluem o imposto sobre o valor acrescentado (IVA).
-- A pesquisa de conteúdo não é suportada.
+- A pesquisa de conteúdo (páginas e blocos do CMS) não é compatível.
 - Há um limite de 10 mil produtos que podem ser paginados. Embora esse limite possa ser aumentado, ele pode afetar o desempenho. Certifique-se de fornecer maneiras significativas de filtrar produtos caso uma categoria ou resultado de pesquisa tenha um grande número de produtos para que os compradores não precisem usar paginação profunda.
 - Há um limite rígido de 1 MB por atributo, incluindo descrição e atributos personalizados.
 - O adaptador de pesquisa não oferece suporte a atributos de produto criados com um modelo de origem personalizado e usados como facetas. Para oferecer suporte a esta funcionalidade, você deve usar o [Widget de página de listagem de produtos](plp-styling.md).
 - Não há suporte para tipos de produto personalizados.
+- Você pode filtrar os resultados usando as condições &quot;inicia com&quot; ou &quot;contém&quot; com algumas limitações, conforme descrito [aqui](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexação
 

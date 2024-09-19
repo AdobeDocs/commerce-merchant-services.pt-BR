@@ -2,7 +2,7 @@
 title: "Adicionar facetas"
 description: "Saiba como adicionar atributos de produto filtráveis como [!DNL Live Search] facetas."
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt
 source-wordcount: '597'
 ht-degree: 0%
@@ -44,7 +44,7 @@ A faceta é adicionada à parte inferior da lista *Facetas Dinâmicas* e o botã
 
    * Rótulo - ([Headless](facets-type.md) somente) Insira o rótulo de facetas que você deseja usar.
    * Tipo de classificação - As facetas são classificadas alfabeticamente para todas as [!DNL Commerce] lojas. Para implementações headless, os aspectos podem ser classificados em ordem alfabética ou por contagem. Opções: alfabética, contagem (somente headless)
-   * Valor máximo - Insira o número máximo de valores de facetas exibidos na loja. Entradas válidas: 0 - 30; Padrão: 8
+   * Valor máximo - Insira o número máximo de valores de facetas exibidos na loja. Entradas válidas: 0 - 100; Padrão: 8
 
 1. Quando terminar, clique em **Salvar**.
 
@@ -65,7 +65,7 @@ Se a faceta não estiver disponível após duas horas, consulte [Verificar expor
 |--- |--- |
 | Rótulo | (Somente [Headless](facets-type.md)) O [rótulo de faceta](facets-type.md) que está visível na loja pode ser editado para manter a consistência com a sua marca. |
 | Tipo de classificação | O método usado para [classificar](facets-type.md) facetas. Todas as [!DNL Commerce] vitrines classificam os aspectos somente em ordem alfabética. Implementações headless também podem classificar por `Count`. Opções:<br />Alfabético - Classifica aspectos em ordem alfabética.<br />Contagem - (Somente headless) Classifica facetas com base no número de correspondências encontradas. |
-| Valor máximo | O número máximo de valores que podem ser exibidos na loja para cada faceta. Os aspectos que representam um intervalo de valores são distribuídos uniformemente. Entradas válidas: 0 - 30; Padrão: 8 |
+| Valor máximo | O número máximo de valores que podem ser exibidos na loja para cada faceta. Os aspectos que representam um intervalo de valores são distribuídos uniformemente. Entradas válidas: 0 - 100; Padrão: 8 |
 
 ### Controles
 

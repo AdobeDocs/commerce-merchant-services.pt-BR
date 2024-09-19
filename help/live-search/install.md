@@ -3,9 +3,9 @@ title: "Introdução ao  [!DNL Live Search]"
 description: "Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: cacef0f205729fa4e05ec3c468594e1eaaf8c560
+source-git-commit: 8981dda82dbdf45d1df0257beb8603b22e98aa4b
 workflow-type: tm+mt
-source-wordcount: '2417'
+source-wordcount: '2977'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,58 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
    ```bash
    bin/magento setup:upgrade
    ```
+
+### Instalar o beta do [!DNL Live Search]
+
+>[!IMPORTANT]
+>
+>Se você quiser explorar novos recursos disponíveis no [!DNL Live Search], considere instalar o beta.
+
+Esta versão beta oferece suporte a três novos recursos na consulta [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
+
+- **Pesquisa em camadas** - Pesquisar em outro contexto de pesquisa - Com esse recurso, você pode realizar até duas camadas de pesquisa para suas consultas de pesquisa. Por exemplo:
+
+   - **Pesquisa de Camada 1** - Pesquise por &quot;motor&quot; em &quot;product_attribute_1&quot;.
+   - **Pesquisa de camada 2** - Pesquise por &quot;part number 123&quot; em &quot;product_attribute_2&quot;. Este exemplo procura por &quot;número de peça 123&quot; nos resultados por &quot;motor&quot;.
+
+  A pesquisa em camadas está disponível para a indexação de pesquisa `startsWith` e a indexação de pesquisa `contains`, conforme descrito abaixo:
+
+- **startsWith indexação de pesquisa** - Pesquisar usando a indexação `startsWith`. Esse novo recurso permite:
+
+   - Procurando produtos em que o valor do atributo começa com uma string específica.
+   - Configurar uma pesquisa &quot;termina com&quot; para que os compradores possam pesquisar produtos em que o valor do atributo termina com uma determinada string. Para habilitar uma pesquisa &quot;termina com&quot;, o atributo de produto precisa ser assimilado na ordem inversa, e a chamada de API também deve ser uma sequência invertida.
+
+- **contém a indexação de pesquisa** -Pesquise um atributo usando a indexação contains. Esse novo recurso permite:
+
+   - Procurando uma consulta em uma cadeia de caracteres maior. Por exemplo, se um comprador procurar o número de produto &quot;PE-123&quot; na cadeia de caracteres &quot;HAPE-123&quot;.
+
+      - Observação: este tipo de pesquisa é diferente da [pesquisa de frase](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#phrase) existente, que executa uma pesquisa de preenchimento automático. Por exemplo, se o valor do atributo do seu produto for &quot;calças de ar livre&quot;, uma pesquisa de frase retornará uma resposta para &quot;fora da panela&quot;, mas não retornará uma resposta para &quot;ou formigas&quot;. A contém busca, no entanto, retorna uma resposta para &quot;ou formigas&quot;.
+
+Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesquisa para refinar os resultados da pesquisa. Essas novas condições não afetam a consulta de pesquisa principal.
+
+Você pode implementar essas novas condições na página de resultados da pesquisa. Por exemplo, você pode adicionar uma nova seção na página, onde o comprador pode refinar ainda mais os resultados da pesquisa. Você pode permitir que os compradores selecionem atributos específicos do produto, como &quot;Fabricante&quot;, &quot;Número da peça&quot; e &quot;Descrição&quot;. A partir daí, eles pesquisam dentro desses atributos usando as condições `contains` ou `startsWith`. Consulte o Guia do administrador para obter uma lista de [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) pesquisáveis.
+
+1. Para instalar a versão beta, execute o seguinte na linha de comando:
+
+   ```bash
+   composer require magento/module-live-search-search-types:"^1.0-beta"
+   ```
+
+   Este beta adiciona **[!UICONTROL Search types]** caixas de seleção para **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** e **[!UICONTROL Starts with]** no Administrador. Ela também atualiza a API do GraphQL `productSearch` para incluir esses novos recursos de pesquisa.
+
+1. No Administrador, [defina um atributo de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) para ser pesquisável e especifique o recurso de pesquisa para esse atributo, como **Contém** (padrão) ou **Começa com**. Você pode especificar no máximo seis atributos a serem habilitados para **Contém** e seis atributos a serem habilitados para **Começa com**. Para beta, esteja ciente de que o Administrador não impõe essa restrição, mas ela é imposta em pesquisas de API.
+
+   ![Especificar recurso de pesquisa](./assets/search-filters-admin.png)
+
+1. Consulte a [documentação do desenvolvedor](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) para saber como atualizar suas chamadas de API do [!DNL Live Search] usando os novos recursos de pesquisa do `contains` e do `startsWith`.
+
+### Descrições dos campos
+
+| Campo | Descrição |
+|--- |--- |
+| `Autocomplete` | Ativado por padrão e não pode ser modificado. Com `Autocomplete` você pode usar `contains` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Aqui, a consulta de pesquisa em `contains` retorna uma resposta de pesquisa do tipo preenchimento automático. A Adobe recomenda usar esse tipo de pesquisa para campos de descrição, que normalmente têm >50 caracteres. |
+| `Contains` | Ativa uma pesquisa de &quot;texto contido em uma sequência de caracteres&quot; verdadeira em vez de uma pesquisa de preenchimento automático. Use `contains` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Consulte as [Limitações](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) para obter mais informações. |
+| `Starts with` | Permite consultar strings que começam com um valor específico. Use `startsWith` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
 ## 2. Configurar chaves de API
 
