@@ -3,9 +3,9 @@ title: "Introdução ao  [!DNL Live Search]"
 description: "Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: b17cdc61ddbf7e3d1e5782eb079a628a240ea8c0
+source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
 workflow-type: tm+mt
-source-wordcount: '2977'
+source-wordcount: '3000'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
 
 >[!IMPORTANT]
 >
->Se você quiser explorar novos recursos disponíveis no [!DNL Live Search], considere instalar o beta.
+>O recurso a seguir está na versão beta. Para participar da versão beta, envie uma solicitação de email para [commerce-store-services](mailto:commerce-storefront-services@adobe.com).
 
 Esta versão beta oferece suporte a três novos recursos na consulta [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/):
 
@@ -141,13 +141,15 @@ Essas novas condições aprimoram o mecanismo de filtragem de consultas de pesqu
 
 Você pode implementar essas novas condições na página de resultados da pesquisa. Por exemplo, você pode adicionar uma nova seção na página, onde o comprador pode refinar ainda mais os resultados da pesquisa. Você pode permitir que os compradores selecionem atributos específicos do produto, como &quot;Fabricante&quot;, &quot;Número da peça&quot; e &quot;Descrição&quot;. A partir daí, eles pesquisam dentro desses atributos usando as condições `contains` ou `startsWith`. Consulte o Guia do administrador para obter uma lista de [atributos](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) pesquisáveis.
 
-1. Para instalar a versão beta, execute o seguinte na linha de comando:
+1. Para instalar a versão beta, adicione a seguinte dependência ao seu projeto:
 
    ```bash
    composer require magento/module-live-search-search-types:"^1.0.0-beta1"
    ```
 
-   Este beta adiciona **[!UICONTROL Search types]** caixas de seleção para **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** e **[!UICONTROL Starts with]** no Administrador. Ela também atualiza a API do GraphQL `productSearch` para incluir esses novos recursos de pesquisa.
+1. Confirme e envie por push as alterações nos arquivos do `composer.json` e do `composer.lock` para o projeto de nuvem. [Saiba mais](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#upgrade-an-extension).
+
+   Este beta adiciona **[!UICONTROL Search types]** caixas de seleção para **[!UICONTROL Autocomplete]**, **[!UICONTROL Contains]** e **[!UICONTROL Starts with]** no Administrador. Ela também atualiza a API do GraphQL [`productSearch`](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability) para incluir esses novos recursos de pesquisa.
 
 1. No Administrador, [defina um atributo de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/product-attributes-add#step-5-describe-the-storefront-properties) para ser pesquisável e especifique o recurso de pesquisa para esse atributo, como **Contém** (padrão) ou **Começa com**. Você pode especificar no máximo seis atributos a serem habilitados para **Contém** e seis atributos a serem habilitados para **Começa com**. Para beta, esteja ciente de que o Administrador não impõe essa restrição, mas ela é imposta em pesquisas de API.
 
@@ -159,7 +161,7 @@ Você pode implementar essas novas condições na página de resultados da pesqu
 
 | Campo | Descrição |
 |--- |--- |
-| `Autocomplete` | Ativado por padrão e não pode ser modificado. Com `Autocomplete` você pode usar `contains` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Aqui, a consulta de pesquisa em `contains` retorna uma resposta de pesquisa do tipo preenchimento automático. A Adobe recomenda usar esse tipo de pesquisa para campos de descrição, que normalmente têm >50 caracteres. |
+| `Autocomplete` | Ativado por padrão e não pode ser modificado. Com `Autocomplete` você pode usar `contains` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering). Aqui, a consulta de pesquisa em `contains` retorna uma resposta de pesquisa do tipo preenchimento automático. A Adobe recomenda usar esse tipo de pesquisa para campos de descrição, que normalmente têm mais de 50 caracteres. |
 | `Contains` | Ativa uma pesquisa de &quot;texto contido em uma sequência de caracteres&quot; verdadeira em vez de uma pesquisa de preenchimento automático. Use `contains` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). Consulte as [Limitações](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations) para obter mais informações. |
 | `Starts with` | Permite consultar strings que começam com um valor específico. Use `startsWith` no [filtro de pesquisa](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#filtering-using-search-capability). |
 
