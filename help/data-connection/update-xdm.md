@@ -4,9 +4,9 @@ description: Saiba como criar um esquema, conjunto de dados e sequência de dado
 exl-id: 4401bbe7-1ccc-4349-a998-9e9ee9db590f
 role: Admin, Developer
 feature: Personalization, Integration
-source-git-commit: 90ddfdd41958b254fc0c2f3e0891385193f1bb9c
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '1073'
+source-wordcount: '898'
 ht-degree: 0%
 
 ---
@@ -66,33 +66,6 @@ Nesta seção, você aprenderá a atualizar seu esquema existente ou criar um es
 Com os esquemas, conjuntos de dados e sequências de dados configurados para dados comportamentais e de back office, você pode [configurar](connect-data.md#data-collection) sua instância do Commerce para coletar e enviar esses dados para o Experience Platform.
 
 Para incluir as informações do perfil do comprador, consulte [dados do evento de perfil de série temporal](#time-series-profile-event-data).
-
-### Adicionar atributos personalizados
-
-Você pode usar atributos personalizados se quiser transmitir dados de evento de back office personalizados da sua instância do Commerce para o Experience Platform.
-
-Os atributos personalizados são aceitos em dois níveis:
-
-- Nível do pedido
-- Nível do item da ordem
-
->[!NOTE]
->
->O Adobe Commerce oferece suporte a atributos personalizados que têm um tipo de dados de sequência ou matriz de sequência.
-
-1. Adicione e habilite um módulo adicional no aplicativo [!DNL Commerce]. Veja o seguinte [exemplo](https://github.com/shiftedreality/beacon-backoffice-custom-events/blob/main/BeaconDemo/Plugin/ModifyOrder.php).
-
-   Você precisa modificar o código de exemplo para expor atributos personalizados adicionais. A implementação varia com base no local em que esses atributos são armazenados e na lógica necessária para extraí-los.
-
-1. Estenda seu esquema XDM existente. Consulte o [guia](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/ui/resources/schemas#custom-fields-for-standard-groups) a seguir para criar atributos personalizados para os níveis de item Pedido e Pedido. O campo ID do locatário é gerado dinamicamente, no entanto, a estrutura do campo deve se parecer com o exemplo fornecido.
-
-   >[!IMPORTANT]
-   >
-   >Os atributos personalizados XDM devem corresponder aos atributos enviados de [!DNL Commerce].
-
-1. Verifique se a sequência de dados associada ao esquema XDM é a mesma sequência de dados especificada na guia [Coleção de dados](connect-data.md#data-collection).
-
-1. Clique em **[!UICONTROL Save]** na guia **Coleção de dados** para recuperar os atributos personalizados especificados.
 
 ## Dados do evento de perfil de série temporal
 

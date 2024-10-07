@@ -4,14 +4,14 @@ description: Saiba como criar um esquema, conjunto de dados e sequência de dado
 role: Admin, Developer
 feature: Personalization, Integration
 exl-id: 86a3ba12-7f26-4f7e-98a0-9af0d1d8d881
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '290'
+source-wordcount: '289'
 ht-degree: 0%
 
 ---
 
-# Atualizar esquema de registro de perfil para assimilação de dados do Commerce (Beta)
+# Atualizar esquema de registro de perfil para assimilação de dados do Commerce
 
 Quando os compradores criam um perfil no site do Commerce, um registro de perfil é criado e os dados são capturados. Você deve criar um esquema e um conjunto de dados específicos para esse registro de perfil antes de poder transmitir esses dados de perfil para o Experience Platform.
 

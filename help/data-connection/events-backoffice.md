@@ -4,9 +4,9 @@ description: Saiba quais dados cada evento de back office captura.
 role: Admin, Developer
 feature: Personalization, Integration, Eventing
 exl-id: a5a4f04b-89ac-4020-95ce-984f9f2d8385
-source-git-commit: 813be62b366b1c76a2b909079cfba31ef8000617
+source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
 workflow-type: tm+mt
-source-wordcount: '3611'
+source-wordcount: '3606'
 ht-degree: 0%
 
 ---
@@ -403,10 +403,6 @@ A tabela a seguir descreve os dados coletados para esse evento.
 | `productListItems.categories.path` | O caminho para a categoria. |
 
 ## Eventos de perfil do cliente
-
->[!IMPORTANT]
->
->Esse recurso está na versão beta.
 
 Os eventos de perfil capturados do lado do servidor incluem informações de conta, como `accountCreated`, `accountUpdated` e `accountDeleted`. Esses dados são usados para ajudar a preencher os principais detalhes do cliente necessários para definir melhor os segmentos ou executar campanhas de marketing, como enviar ofertas de desconto de inscrição, confirmações de alterações de conta etc. Há eventos de perfil semelhantes capturados da [vitrine](events.md#customer-profile-events).
 
