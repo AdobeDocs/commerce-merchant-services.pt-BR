@@ -2,9 +2,9 @@
 title: '[!DNL Product Recommendations] Workspace'
 description: Saiba como configurar, gerenciar e monitorar o desempenho de recomendações de produtos.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
-source-git-commit: 25d5321b6f29bab5d8cf329170f3644f35100438
+source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
 workflow-type: tm+mt
-source-wordcount: '633'
+source-wordcount: '781'
 ht-degree: 0%
 
 ---
@@ -12,6 +12,10 @@ ht-degree: 0%
 # Workspace [!DNL Product Recommendations]
 
 O espaço de trabalho [!DNL Product Recommendations] exibe uma lista de recomendações configuradas anteriormente com métricas que ajudam você a monitorar o sucesso de cada recomendação. A lista pode ser configurada para calcular métricas do último dia, semana ou mês. Você pode usar as métricas para criar insights acionáveis com base na frequência com que uma unidade de recomendação é visualizada ou clicada, ou para analisar o desempenho de suas recomendações.
+
+>[!INFO]
+>
+>Uma unidade de recomendação é um widget que contém o produto recomendado _itens_.
 
 ![espaço de trabalho do Recommendations](assets/workspace.png)
 _Recommendations Workspace_
@@ -31,6 +35,10 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
    - Últimos 30 dias
 
    Os valores calculados nas colunas de métricas são alterados para refletir o intervalo de datas atual.
+
+   >[!NOTE]
+   >
+   >As métricas de Recomendação de produto são otimizadas para vitrines da Luma. Se sua loja não for baseada em Luma, a forma como as métricas rastreiam os dados dependerá de como você [implementa a coleção de eventos](events.md).
 
 ## Mostrar/ocultar colunas
 
@@ -95,12 +103,12 @@ Na página de detalhes da recomendação, clique em **Criar**. Para saber mais, 
 | Status | O status da recomendação. Opções: Inativo/Ativo/Rascunho |
 | Criado em | A data em que a recomendação foi criada. |
 | Última edição | A data em que a recomendação foi editada pela última vez. |
-| Impressões | O número de vezes que uma unidade de recomendação é carregada e renderizada em uma página. Uma unidade de recomendação que está abaixo da dobra da janela de visualização do navegador é renderizada na página, mas não é visualizada pelo comprador. Nesse caso, a unidade renderizada é contada como uma impressão, mas uma visualização é contada somente se o usuário rolar a unidade para visualização. |
-| vImpressões | (Impressões visíveis) O número de unidades de recomendação que registram pelo menos uma visualização. |
-| Visualizações | O número de unidades de recomendação exibidas na janela de visualização do navegador do comprador. Esse evento pode ser disparado várias vezes em uma página. |
+| Impressões | O número de vezes que uma unidade de recomendação é carregada e renderizada em uma página. Uma unidade de recomendação que está abaixo da dobra da janela de visualização do navegador é renderizada na página, mesmo se não for visualizada pelo comprador. Nesse caso, a unidade renderizada é contada como uma impressão, mas uma exibição é contada somente se o comprador rolar a unidade para visualização. |
+| vImpressões | (Impressões visíveis) O número de unidades de recomendação que registram pelo menos uma visualização. Por exemplo, se a unidade de recomendação tiver duas linhas, cada uma com dois produtos, e os dois últimos produtos não forem vistos pelo comprador, mas as duas primeiras forem, a atividade ainda contará como uma impressão. |
+| Visualizações | O número de unidades de recomendação exibidas na janela de visualização do navegador do comprador. Se o comprador rolar a página várias vezes para cima ou para baixo, o evento será acionado várias vezes, cada vez que a unidade estiver visível. |
 | Cliques | A soma do número de vezes que um comprador clica em um item na unidade de recomendação e do número de vezes que ele clica no botão **Adicionar ao carrinho** na unidade de recomendação |
 | Receita | A receita gerada pela recomendação para o intervalo de tempo atual. |
 | Receita Lt | (Receita vitalícia) A receita vitalícia impulsionada por uma recomendação. |
 | Visibilidade | A porcentagem de unidades de recomendação que se registram na exibição. |
-| Ctr | (Taxa de click-through) A porcentagem de impressões de unidade para a recomendação que registra um clique. |
-| vCtr | (Índice de click-through de visualização) A porcentagem de impressões visualizáveis para a unidade de recomendação que registra um clique. |
+| CTR | (Taxa de click-through) A porcentagem de impressões de unidade para a recomendação que registra um clique. O CTR conta todas as impressões, mesmo se a unidade não entrar na visualização do comprador. Se a unidade de recomendação não for visualizada, é improvável clicar nela. No entanto, essas impressões inéditas contam para a pontuação do CTR e reduzem a porcentagem geral de CTR. |
+| vCTR | (Taxa de click-through de visualização) mede os cliques com base apenas em impressões visualizáveis (recomendações que realmente apareceram na parte visível da tela do comprador), fornecendo um indicador mais preciso do envolvimento do comprador. |

@@ -3,34 +3,25 @@ title: '[!DNL Live Search] Eventos'
 description: Saiba como os eventos coletam dados para  [!DNL Live Search].
 feature: Services, Eventing
 exl-id: b0c72212-9be0-432d-bb8d-e4c639225df3
-source-git-commit: 0d966c8dbd788563fa453912961fdc62a5a6c23e
+source-git-commit: 45a7d101c28eb9cd1404090c3ea5024652a97913
 workflow-type: tm+mt
-source-wordcount: '461'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
 
 # [!DNL Live Search] Eventos
 
-[!DNL Live Search] usa eventos para potencializar algoritmos de pesquisa como &quot;Mais visualizados&quot; e &quot;Visualizou isto, Visualizou aquilo&quot;. Enquanto os usuários da LUMA obtêm eventos prontos para uso, as implementações headless e outras implementações personalizadas precisam implementar eventos para suas próprias necessidades.
+[!DNL Live Search] usa eventos para potencializar algoritmos de pesquisa como &quot;Mais visualizados&quot; e &quot;Visualizou isto, Visualizou aquilo&quot;. Embora o [tema Luma de amostra do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/content-design/design/themes/themes#the-default-theme) obtenha eventos por padrão, o headless e outras implementações personalizadas precisam implementar eventos para suas próprias necessidades.
 
-Como [!DNL Live Search] e [!DNL Product Recommendations] usam o mesmo algoritmo de back-end, alguns eventos são compartilhados por ambos os serviços. Alguns eventos do Recommendations de produtos são necessários para preencher o Painel do Recommendations.
+Esta tabela descreve os eventos usados por [!DNL Live Search] [estratégias de classificação](rules-add.md#intelligent-ranking).
 
-Esta tabela descreve os eventos usados por [!DNL Live Search] estratégias.
-
-| Estratégia | Produtos | Eventos | Página |
+| Estratégia de classificação | Eventos | Página |
 | --- | --- | --- | ---|
-| Mais visualizados | Live Search<br>Registros de Produtos | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Mais comprados | Live Search<br>Registros de Produtos | exibição de página<br>concluir check-out | Carrinho/Check-out |
-| Mais adicionados ao carrinho | Live Search<br>Registros de Produtos | exibição de página<br>adicionar ao carrinho | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
-| Visualizou isto, visualizou aquilo | Live Search<br>Registros de Produtos | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Tendências | Live Search<br>Registros de Produtos | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Visualizou isto, comprou aquilo | Registros de produto | exibição de página<br>exibição de produto | Página de detalhes do produto<br>Carrinho/Check-out |
-| Comprei isto, comprei aquilo | Registros de produto | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Conversão: exibir para compra | Registros de produto | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Conversão: exibir para compra | Registros de produto | exibição de página<br>concluir check-out | Carrinho/Check-out |
-| Conversão: exibir para carrinho | Registros de produto | exibição de página<br>exibição de produto | Página de detalhes do produto |
-| Conversão: exibir para carrinho | Registros de produto | exibição de página<br>adicionar ao carrinho | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
+| Mais visualizados | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Mais comprados | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
+| Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
+| Visualizou isto, visualizou aquilo | `page-view`<br>`product-view` | Página de detalhes do produto |
 
 >[!NOTE]
 >
@@ -42,13 +33,13 @@ Alguns eventos são necessários para preencher o [painel do Live Search](perfor
 
 | Área do painel | Eventos | Ingressar no campo |
 | ------------------- | ------------- | ---------- |
-| Pesquisas únicas | `page-view`, `search-request-sent`, | searchRequestId |
-| Nenhuma pesquisa de resultados | `page-view`, `search-request-sent`, | searchRequestId |
-| Taxa de resultados zero | `page-view`, `search-request-sent`, | searchRequestId |
-| Pesquisas populares | `page-view`, `search-request-sent`, | searchRequestId |
+| Pesquisas únicas | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Nenhuma pesquisa de resultados | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Taxa de resultados zero | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
+| Pesquisas populares | `page-view`, `search-request-sent`, `search-response-received` | `searchRequestId` |
 | Média posição do clique | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId |
-| Taxa de cliques | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | searchRequestId, sku |
-| Índice de conversão | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | searchRequestId, sku |
+| Taxa de cliques | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click` | `searchRequestId`, `sku`, `parentSku` |
+| Índice de conversão | `page-view`, `search-request-sent`, `search-response-received`, `search-results-view`, `search-product-click`, `product-view`, `add-to-cart`, `place-order` | `searchRequestId`, `sku`, `parentSku` |
 
 ### Contextos obrigatórios
 
@@ -72,11 +63,8 @@ mse.publish.searchRequestSent("search-bar");
 
 ## Avisos
 
-Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](workspace.md) de envolvimento e receita sejam reportadas incorretamente.
-
-O evento não captura todas as transações que ocorrem no site do comerciante. O objetivo do evento é dar ao comerciante uma ideia geral dos eventos que estão acontecendo no site.
-
-As implementações headless devem implementar eventos para alimentar o [painel do Product Recommendations](../product-recommendations/events.md).
+- Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](performance.md) de envolvimento e receita sejam reportadas incorretamente. Além disso, alguns eventos podem não ser enviados porque os compradores saem da página ou por problemas de rede.
+- As implementações headless devem implementar eventos para potencializar o merchandising inteligente.
 
 >[!NOTE]
 >

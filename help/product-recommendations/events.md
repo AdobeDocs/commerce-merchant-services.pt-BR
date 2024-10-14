@@ -3,57 +3,134 @@ title: Coletar dados
 description: Saiba como os eventos coletam dados para recomendações de produto.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 67296ea42bfddb10b0c86cb1ca47324f5fec7825
+source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
 workflow-type: tm+mt
-source-wordcount: '417'
+source-wordcount: '1316'
 ht-degree: 0%
 
 ---
 
 # Coletar dados
 
-Quando você instala e configura recursos do Adobe Commerce baseados em SaaS, como o [Product Recommendations](install-configure.md) ou o [Live Search](https://experienceleague.adobe.com/docs/commerce-merchant-services/live-search/onboard/install.html), os módulos implantam a coleção de dados comportamentais na loja. Esse mecanismo coleta dados comportamentais anônimos dos compradores e oferece recomendações de produtos. Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
+Quando você instala e configura recursos do Adobe Commerce baseados em SaaS, como o [Product Recommendations](install-configure.md) ou o [Live Search](../live-search/install.md), os módulos implantam a coleção de dados comportamentais na loja. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e fornece recomendações de produto e resultados do [Live Search](../live-search/overview.md). Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
 
 >[!NOTE]
 >
 >A coleta de dados para os fins das recomendações de produto não inclui informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Saiba [mais](https://www.adobe.com/privacy/experience-cloud.html).
 
-Os eventos a seguir não são específicos do Recommendations do produto, mas são necessários para retornar resultados:
+## Tipos de dados e eventos
+
+Há dois tipos de dados usados no Recommendations do produto:
+
+- **Comportamento** - Dados do envolvimento de um comprador no seu site, como exibições de produtos, itens adicionados ao carrinho e compras.
+- **Catálogo** - Metadados do produto, como nome, preço, disponibilidade etc.
+
+Quando você instala o módulo `magento/product-recommendations`, o Adobe Sensei agrega os dados comportamentais e de catálogo, criando Recommendations de Produto para cada tipo de recomendação. O serviço Recommendations do Produto implanta essas recomendações na loja na forma de um widget que contém o produto recomendado _itens_.
+
+Alguns tipos de recomendações usam dados comportamentais de seus compradores para treinar modelos de aprendizado de máquina para criar recomendações personalizadas. Outros tipos de recomendações usam apenas dados de catálogo e não usam dados comportamentais. Se você quiser começar rapidamente a usar o Recommendations de produto em seu site, poderá usar os seguintes tipos de recomendação somente de catálogo:
+
+- `More like this`
+- `Visual similarity`
+
+### Arranque a frio
+
+Quando você pode começar a usar tipos de recomendação que usam dados comportamentais? Depende. Isso é conhecido como o problema _Cold Start_.
+
+O problema _Cold Start_ refere-se ao tempo que um modelo leva para ser treinado e se tornar efetivo. Para recomendações de produtos, isso significa aguardar que o Adobe Sensei colete dados suficientes para treinar seus modelos de aprendizado de máquina antes de implantar unidades de recomendação em seu site. Quanto mais dados os modelos tiverem, mais precisas e úteis serão as recomendações. Como a coleta de dados ocorre em um site ativo, é melhor iniciar esse processo antecipadamente instalando e configurando o módulo `magento/production-recommendations`.
+
+A tabela a seguir fornece algumas orientações gerais sobre o tempo necessário para coletar dados suficientes para cada tipo de recomendação:
+
+| Tipo de recomendação | Tempo de treinamento | Notas |
+|---|---|---|
+| Baseado em popularidade (`Most viewed`, `Most purchased`, `Most added to cart`) | Varia | Depende do volume de eventos — as exibições são mais comuns e, portanto, aprende mais rápido; depois, adiciona ao carrinho e, em seguida, às compras |
+| `Viewed this, viewed that` | Requer mais treinamento | O volume das visualizações de produto é decentemente alto |
+| `Viewed this, bought that`, `Bought this, bought that` | Requer mais treinamento | Os eventos de compra são os eventos mais raros em um site de comércio, especialmente em comparação às visualizações de produto |
+| `Trending` | Requer três dias de dados para estabelecer uma linha de base de popularidade | As tendências são uma medida do impulso recente na popularidade de um produto em comparação com sua própria linha de base de popularidade. A pontuação de tendência de um produto é calculada usando um conjunto de primeiro plano (popularidade recente em 24 horas) e um conjunto de segundo plano (popularidade na linha de base em 72 horas). Se a popularidade de um item aumentar significativamente em um período de 24 horas em comparação com sua popularidade na linha de base, ele receberá uma alta pontuação de tendência. Cada produto tem essa pontuação e os itens com a pontuação mais alta a qualquer momento compõem o conjunto dos principais produtos em tendência. |
+
+Outras variáveis que podem afetar o tempo necessário para treinar:
+
+- Maior volume de tráfego contribui para uma aprendizagem mais rápida
+- Alguns tipos de recomendações são treinados mais rapidamente do que outros
+- O Adobe Commerce recalcula dados comportamentais a cada quatro horas. O Recommendations se torna mais preciso quanto mais tempo eles forem usados no site.
+
+Para ajudá-lo a visualizar o progresso do treinamento de cada tipo de recomendação, a página [criar recomendação](create.md#readiness-indicators) exibe indicadores de preparação.
+
+Enquanto os dados estão sendo coletados em seu site ativo e os modelos de aprendizado de máquina estão sendo treinados, você pode concluir outras tarefas de teste e configuração necessárias para definir as recomendações. Quando você terminar este trabalho, os modelos terão dados suficientes para criar recomendações úteis, permitindo que você os implante em sua loja.
+
+Se o site não receber tráfego suficiente (exibições, compras, tendências) para a maioria dos SKUs de produtos, talvez não haja dados suficientes para concluir o processo de aprendizado. Isso pode fazer com que o indicador de prontidão do Administrador pareça travado. Os indicadores de prontidão devem fornecer aos comerciantes outro ponto de dados para escolher qual tipo de recomendações é melhor para sua loja. Os números são um guia e podem nunca chegar a 100%. [Saiba mais](create.md#readiness-indicators) sobre os indicadores de preparação.
+
+### Recomendações de backup {#backuprecs}
+
+Se os dados de entrada forem insuficientes para fornecer todos os itens de recomendação solicitados em uma unidade, a Adobe Commerce fornecerá recomendações de backup para preencher as unidades de recomendação. Por exemplo, se você implantar o tipo de recomendação `Recommended for you` na sua página inicial, um comprador novo no site não terá gerado dados comportamentais suficientes para recomendar com precisão os produtos personalizados. Nesse caso, o Adobe Commerce exibe itens baseados no tipo de recomendação `Most viewed` para esse comprador.
+
+No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recomendação fazem fallback para o tipo de recomendação `Most viewed`:
+
+- `Recommended for you`
+- `Viewed this, viewed that`
+- `Viewed this, bought that`
+- `Bought this, bought that`
+- `Trending`
+- `Conversion (view to purchase)`
+- `Conversion (view to cart)`
+
+### Eventos
+
+O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, no entanto, há um subconjunto de eventos específicos do Recommendations do produto. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e potencializam as métricas usadas para ajudar você a analisar o desempenho de suas recomendações.
+
+| Evento | Descrição |
+| --- | --- | --- |
+| `impression-render` | Enviado quando a unidade de recomendação é renderizada na página. Se uma página tiver duas unidades de recomendação (compradas, exibição), dois eventos `impression-render` serão enviados. Esse evento é usado para rastrear a métrica para impressões. |
+| `rec-add-to-cart-click` | O comprador clica no botão **Adicionar ao carrinho** para um item na unidade de recomendação. |
+| `rec-click` | O comprador clica em um produto na unidade de recomendação. |
+| `view` | Enviado quando a unidade de recomendação se torna pelo menos 50% visível, como ao rolar a página para baixo. Por exemplo, se uma unidade de recomendação tiver duas linhas, um evento `view` será enviado quando uma linha mais um pixel da segunda linha se tornar visível para o comprador. Se o comprador rolar a página várias vezes para cima e para baixo, o evento `view` será enviado tantas vezes quanto o comprador vir toda a unidade de recomendação novamente na página. |
+
+>[!NOTE]
+>
+>As métricas de Recomendação de produto são otimizadas para vitrines da Luma. Se sua loja foi implementada com o PWA Studio, consulte a [documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usa uma tecnologia de front-end personalizada, como o React ou o Vue JS, saiba como integrar o [Product Recommendations em um ambiente headless](headless.md).
+
+#### Eventos de painel obrigatórios
+
+Os seguintes eventos são necessários para preencher o [[!DNL Product Recommendations] painel](workspace.md)
+
+| Coluna do painel | Eventos | Ingressar no campo |
+| ---------------- | --------- | ----------- |
+| Impressões | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | `unitId` |
+| Visualizações | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | `unitId` |
+| Cliques | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | `unitId` |
+| Receita | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
+| Receita LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | `unitId`, `sku`, `parentSku` |
+| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
+| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | `unitId`, `sku`, `parentSku` |
+
+Os seguintes eventos não são específicos do Recommendations de produto, mas são necessários para que o Adobe Sensei interprete os dados do comprador corretamente:
 
 - `view`
 - `add-to-cart`
 - `place-order`
 
-O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, no entanto, há um subconjunto de eventos específicos do Recommendations do produto. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e potencializam as métricas usadas para ajudar você a analisar o desempenho de suas recomendações.
+#### Tipo de recomendação
 
-| Evento | Descrição | Usado para métricas? |
-| --- | --- | --- |
-| `impression-render` | A unidade de recomendação é renderizada na página. | Sim |
-| `rec-add-to-cart-click` | O cliente clica no botão **Adicionar ao carrinho** para um item na unidade de recomendação. | Sim, quando um botão **Adicionar ao carrinho** estiver presente no modelo de recomendações. |
-| `rec-click` | O cliente clica em um produto na unidade de recomendação. | Sim |
-| `view` | A unidade de recomendação se torna visível na página, como ao rolar a tela para exibição. | Sim |
+Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
-Os eventos a seguir são necessários para preencher corretamente o painel.
+| Tipo de recomendação | Eventos | Página |
+| --- | --- | --- | ---|
+| Mais visualizados | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Mais comprados | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
+| Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
+| Visualizou isto, visualizou aquilo | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Visualizou isto, comprou aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto<br>Carrinho/Check-out |
+| Comprei isto, comprei aquilo | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Tendências | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Conversão: exibir para compra | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Conversão: exibir para compra | Registros de produto | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
+| Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`product-view` | Página de detalhes do produto |
+| Conversão: exibir para carrinho | Registros de produto | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
 
-| Coluna do painel | Eventos | Ingressar no campo |
-| ---------------- | --------- | ----------- |
-| Impressões | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render` | unitId |
-| Visualizações | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view` | unitId |
-| Cliques | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click` | unitId |
-| Receita | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| Receita LT | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-item-click`, `recs-add-to-cart-click`, `place-order` | unitId, sku |
-| CTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
-| vCTR | `page-view`, `recs-request-sent`, `recs-response-received`, `recs-unit-render`, `recs-unit-view`, `recs-item-click`, `recs-add-to-cart-click` | unitId, sku |
+#### Avisos
 
-Se sua loja foi implementada com o PWA Studio, consulte a [documentação do PWA](https://developer.adobe.com/commerce/pwa-studio/integrations/product-recommendations/). Se você usar uma tecnologia de front-end personalizada, como o React ou o Vue JS, consulte o guia do usuário para saber como integrar o [Product Recommendations em um ambiente headless](headless.md).
-
-## Avisos
-
-Os bloqueadores de anúncios e as configurações de privacidade podem impedir que o módulo `magento/product-recommendations` capture eventos e podem fazer com que as [métricas](workspace.md) de envolvimento e receita sejam reportadas incorretamente.
-
-O evento não captura todas as transações que ocorrem no site do comerciante. O objetivo do evento é dar ao comerciante uma ideia geral dos eventos que estão acontecendo no site.
-
-As implementações headless devem implementar eventos para acionar o painel de produtos do Recommendations.
+- Os bloqueadores de anúncios e as configurações de privacidade podem impedir que eventos sejam capturados e podem fazer com que as [métricas](workspace.md#column-descriptions) de envolvimento e receita sejam reportadas incorretamente. Além disso, alguns eventos podem não ser enviados porque os compradores saem da página ou por problemas de rede.
+- [As implementações headless](headless.md) devem implementar eventos para potencializar o painel do Product Recommendations.
+- Para produtos configuráveis, o Recommendations do produto usa a imagem do produto principal na unidade de recomendação. Se o produto configurável não tiver uma imagem especificada, a unidade de recomendação ficará vazia para esse produto específico.
 
 >[!NOTE]
 >

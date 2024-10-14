@@ -3,9 +3,9 @@ title: "Introdução ao  [!DNL Live Search]"
 description: "Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] da Adobe Commerce."
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 9a10613db182d0d6bf8dad2bbcd1fd9023804370
+source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
 workflow-type: tm+mt
-source-wordcount: '3000'
+source-wordcount: '3093'
 ht-degree: 0%
 
 ---
@@ -39,7 +39,14 @@ Este artigo destina-se ao desenvolvedor ou ao integrador de sistemas de sua equi
 
 Em um nível superior, a integração do [!DNL Live Search] exige que você:
 
-![Fluxo de Trabalho do Live Search](assets/livesearch-workflow.png)
+1. [Instalar](#1-install-the-live-search-extension) a extensão [!DNL Live Search]
+1. [Configurar](#2-configure-api-keys) as chaves de API
+1. [Sincronizar](#3-sync-your-catalog-data) seus dados de catálogo
+1. [Verificar](#4-verify-that-the-data-was-exported) se os dados do catálogo foram exportados
+1. [Configurar](#5-configure-the-data) os dados
+1. [Testar](#6-test-the-connection) a conexão
+1. [Verificar](#7-validate-events-are-capturing-data) se os eventos estão capturando dados
+1. [Personalizar](#8-customize-for-your-storefront) sua loja
 
 ## 1. Instalar a extensão [!DNL Live Search]
 
@@ -272,7 +279,15 @@ Se você encontrar problemas na loja, verifique o arquivo `var/log/system.log` e
 
 Para permitir [!DNL Live Search] por meio de um firewall, adicione `commerce.adobe.io` ao arquivo de inclui na lista de permissões.
 
-## 7. Personalizar para sua loja
+## 7. Verifique se os eventos estão capturando dados
+
+Verifique se os eventos da loja implantados em seu site estão funcionando. Isso é especialmente importante para implementações headless.
+
+- Revise os [eventos](events.md) necessários para [!DNL Live Search].
+- Verifique se o [painel do Live Search](performance.md) está exibindo dados de seu(s) ambiente(s) de não produção.
+- [Verificar coleção de eventos](../product-recommendations/verify.md). Enquanto esta página estiver no guia [!DNL Product Recommendations], as etapas de verificação também se aplicam a [!DNL Live Search].
+
+## 8. Personalize para sua loja
 
 Você instalou a extensão [!DNL Live Search], sincronizou, validou e configurou seus dados. A próxima etapa é garantir que os widgets do [!DNL Live Search] estejam de acordo com a aparência da sua loja.
 

@@ -2,21 +2,25 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0940e0049d8fb388b40b828250b7955eabfd583f
+source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
 workflow-type: tm+mt
-source-wordcount: '1428'
+source-wordcount: '1457'
 ht-degree: 0%
 
 ---
 
 # Criar nova recomendação
 
-Ao criar uma recomendação, você cria uma _unidade de recomendação_ que contém o produto recomendado _itens_.
+Ao criar uma recomendação, você cria uma _unidade de recomendação_, ou widget, que contém o produto recomendado _itens_.
 
 ![Unidade de recomendação](assets/unit.png)
 _Unidade de recomendação_
 
 Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [coletar dados](workspace.md) para medir impressões, exibições, cliques e assim por diante. A tabela [!DNL Product Recommendations] exibe as métricas de cada unidade de recomendação para ajudá-lo a tomar decisões de negócios conscientes.
+
+>[!NOTE]
+>
+>As métricas de Recomendação de produto são otimizadas para vitrines da Luma. Se sua loja não for baseada em Luma, a forma como as métricas rastreiam os dados dependerá de como você [implementa a coleção de eventos](events.md).
 
 1. Na barra lateral _Admin_, vá para **Marketing** > _Promoções_ > **Recommendations de Produtos** para exibir o espaço de trabalho do _Recommendations de Produtos_.
 
@@ -83,7 +87,7 @@ Quando você ativa a unidade de recomendação, o Adobe Commerce começa a [cole
 
 Os indicadores de disponibilidade mostram quais tipos de recomendação terão melhor desempenho com base no catálogo e nos dados comportamentais disponíveis. Você também pode usar indicadores de prontidão para determinar se tem problemas com seu [evento](events.md) ou se não tem tráfego suficiente para preencher o tipo de recomendação.
 
-Os indicadores de prontidão são categorizados como [baseados em estática](#static-based) ou [baseados em dinâmica](#dynamic-based). Baseado em estática usa somente dados de catálogo; enquanto que os dados comportamentais do uso baseado em dinâmica de seus compradores. Esses dados comportamentais são usados para [treinar modelos de aprendizado de máquina](behavioral-data.md) para criar recomendações personalizadas e calcular sua pontuação de preparação.
+Os indicadores de prontidão são categorizados como [baseados em estática](#static-based) ou [baseados em dinâmica](#dynamic-based). Baseado em estática usa somente dados de catálogo; enquanto que os dados comportamentais do uso baseado em dinâmica de seus compradores. Esses dados comportamentais são usados para [treinar modelos de aprendizado de máquina](events.md) para criar recomendações personalizadas e calcular sua pontuação de preparação.
 
 ### Como os indicadores de disponibilidade são calculados
 
@@ -95,7 +99,7 @@ Como resultado dessas variáveis, o percentual do indicador de disponibilidade p
 
 Os indicadores de prontidão são calculados com base em dois fatores:
 
-* Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](behavioral-data.md#backuprecs)?
+* Tamanho suficiente do conjunto de resultados: há resultados suficientes sendo retornados na maioria dos cenários para evitar o uso de [recomendações de backup](events.md#backuprecs)?
 
 * Variedade suficiente do conjunto de resultados: os produtos retornados representam uma variedade de produtos do catálogo? O objetivo com esse fator é evitar que uma minoria de produtos seja os únicos itens recomendados no site.
 
@@ -103,7 +107,7 @@ Com base nos fatores acima, um valor de disponibilidade é calculado e exibido d
 
 * 75% ou mais significa que as recomendações sugeridas para esse tipo de recomendação serão altamente relevantes.
 * Pelo menos 50% significa que as recomendações sugeridas para esse tipo de recomendação serão menos relevantes.
-* Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação podem não ser relevantes. Neste caso, [recomendações de backup](behavioral-data.md#backuprecs) são usadas.
+* Menos de 50% significa que as recomendações sugeridas para esse tipo de recomendação podem não ser relevantes. Neste caso, [recomendações de backup](events.md#backuprecs) são usadas.
 
 Saiba mais sobre [por que os indicadores de disponibilidade podem estar baixos](#what-to-do-if-the-readiness-indicator-percent-is-low).
 
@@ -153,7 +157,7 @@ O percentual do indicador de disponibilidade para tipos de recomendação que de
 
 #### O que fazer se a porcentagem do indicador de disponibilidade estiver baixa
 
-Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](behavioral-data.md#backuprecs) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
+Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](events.md#backuprecs) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
 
 A seguir, uma lista de possíveis motivos e soluções para pontuações comuns de baixa disponibilidade:
 
@@ -175,7 +179,7 @@ Para testar uma recomendação ao trabalhar em um ambiente de não produção, v
 | Nome | O nome do produto. |
 | SKU | A Unidade de Manutenção de Estoque atribuída ao produto |
 | Preço | O preço do produto. |
-| Tipo de resultado | Principal - indica que há dados de treinamento suficientes coletados para exibir uma recomendação.<br />Backup - indica que não há dados de treinamento suficientes coletados, portanto, uma recomendação de backup é usada para preencher o slot. Acesse [Dados comportamentais](behavioral-data.md) para saber mais sobre modelos de aprendizado de máquina e recomendações de backup. |
+| Tipo de resultado | Principal - indica que há dados de treinamento suficientes coletados para exibir uma recomendação.<br />Backup - indica que não há dados de treinamento suficientes coletados, portanto, uma recomendação de backup é usada para preencher o slot. Acesse [Dados comportamentais](events.md) para saber mais sobre modelos de aprendizado de máquina e recomendações de backup. |
 
 À medida que você cria sua unidade de recomendação, experimente o tipo de página, o tipo de recomendação e os filtros para obter feedback imediato em tempo real sobre os produtos que serão incluídos. À medida que você começa a entender quais produtos aparecem, é possível configurar a unidade de recomendação para atender às suas necessidades comerciais.
 

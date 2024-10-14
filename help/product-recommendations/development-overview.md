@@ -2,9 +2,9 @@
 title: Desenvolvimento de administradores de Recommendations de produtos
 description: Uma visão geral da arquitetura do Recommendations de produtos e dos recursos de desenvolvimento.
 exl-id: caef5e0c-dd69-4846-8f85-b1c5e1c6a28f
-source-git-commit: a433d970e83792a9f53b2a09afd84c335d980024
+source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
-source-wordcount: '426'
+source-wordcount: '309'
 ht-degree: 0%
 
 ---
@@ -24,20 +24,6 @@ Em um alto nível, o Commerce Product Recommendations é implantado como SaaS. O
 ![Diagrama de arquitetura de recomendações de produto](assets/arch-diag-sensei.svg)
 
 Depois que os módulos de recomendação forem instalados e configurados, sua loja começará a coletar dados comportamentais. O Adobe Sensei processa esses dados comportamentais junto com seus dados de catálogo e calcula associações de produtos que são aproveitadas pelo serviço de recomendações. Neste ponto, o comerciante pode criar, gerenciar e implantar unidades de recomendação de produto em sua vitrine diretamente da interface do usuário do administrador.
-
-## Tipos de dados
-
-O Recommendations do produto exige os seguintes dados:
-
-- **Comportamento** - Dados do envolvimento de um comprador no seu site, como exibições de produtos, itens adicionados ao carrinho e compras. A Commerce e a Adobe Sensei não coletam informações de identificação pessoal.
-
-- **Catálogo** - Metadados do produto, como nome, preço, disponibilidade etc.
-
-Quando você instala o módulo `magento/product-recommendations`, o Adobe Sensei agrega os dados comportamentais e de catálogo, criando Recommendations de Produto para cada tipo de recomendação. O serviço Recommendations do produto implanta essas recomendações na loja.
-
->[!NOTE]
->
->Para produtos configuráveis, o Recommendations do produto usa a imagem do produto principal na unidade de recomendação. Se o produto configurável não tiver uma imagem especificada, a unidade de recomendação ficará vazia para esse produto específico.
 
 ## Próximas etapas
 
