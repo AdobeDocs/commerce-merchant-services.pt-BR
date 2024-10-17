@@ -3,7 +3,7 @@ title: Coletar dados
 description: Saiba como os eventos coletam dados para recomendações de produto.
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: 87db52e0c851b56c9a8ceba1bf25c222c6d63cda
+source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
 workflow-type: tm+mt
 source-wordcount: '1316'
 ht-degree: 0%
@@ -78,7 +78,7 @@ No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recome
 O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, no entanto, há um subconjunto de eventos específicos do Recommendations do produto. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e potencializam as métricas usadas para ajudar você a analisar o desempenho de suas recomendações.
 
 | Evento | Descrição |
-| --- | --- | --- |
+| --- | --- |
 | `impression-render` | Enviado quando a unidade de recomendação é renderizada na página. Se uma página tiver duas unidades de recomendação (compradas, exibição), dois eventos `impression-render` serão enviados. Esse evento é usado para rastrear a métrica para impressões. |
 | `rec-add-to-cart-click` | O comprador clica no botão **Adicionar ao carrinho** para um item na unidade de recomendação. |
 | `rec-click` | O comprador clica em um produto na unidade de recomendação. |
@@ -113,7 +113,7 @@ Os seguintes eventos não são específicos do Recommendations de produto, mas s
 Esta tabela descreve os eventos usados por cada tipo de recomendação.
 
 | Tipo de recomendação | Eventos | Página |
-| --- | --- | --- | ---|
+| --- | --- | --- |
 | Mais visualizados | `page-view`<br>`product-view` | Página de detalhes do produto |
 | Mais comprados | `page-view`<br>`complete-checkout` | Carrinho/Check-out |
 | Mais adicionados ao carrinho | `page-view`<br>`add-to-cart` | Página de detalhes do produto<br>Página de listagem do produto<br>Carrinho<br>Lista de desejos |
