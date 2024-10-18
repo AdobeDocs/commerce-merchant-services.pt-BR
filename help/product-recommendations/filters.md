@@ -2,9 +2,9 @@
 title: Filtrar produtos
 description: Defina condições que incluam ou excluam produtos de serem usados como recomendações.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: b602385b956b6af131b008428d1182a586303bc7
+source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
 workflow-type: tm+mt
-source-wordcount: '734'
+source-wordcount: '748'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,9 @@ Os operadores lógicos `AND` e `OR` são usados para unir várias condições. S
 
 ### Categoria
 
-Os filtros baseados na categoria de um produto usam atribuições diretas de categoria e suas subcategorias. Por exemplo, habilitar uma condição de exclusão para a categoria `Gear` exclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`. O mesmo se aplica a um filtro de inclusão em uma categoria. Por exemplo, habilitar uma condição de inclusão para a categoria `Gear` inclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`.
+Filtra produtos com base em suas categorias. O filtro de categoria usa atribuições de categoria diretas e suas subcategorias. Por exemplo, habilitar uma condição de exclusão para a categoria `Gear` exclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`. O mesmo se aplica a um filtro de inclusão em uma categoria. Por exemplo, habilitar uma condição de inclusão para a categoria `Gear` inclui produtos atribuídos a `Gear` e todas as suas subcategorias como `Gear/Bags` ou `Gear/Fitness Equipment`.
+
+O campo de categoria exibe categorias que pertencem à loja atual.
 
 >[!NOTE]
 >
