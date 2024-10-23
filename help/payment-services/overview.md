@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: e4d8d789-fcf6-4aaa-bc4e-42ce21c6dd6c
 feature: Payments, Checkout
-source-git-commit: ff83c83a054e5b14814cc3076744c5517081a80f
+source-git-commit: 2bb5cbe2360a82de0dbad73d6beae58a6bc6937e
 workflow-type: tm+mt
-source-wordcount: '468'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
@@ -15,8 +15,6 @@ ht-degree: 0%
 # Introdução ao [!DNL Payment Services]
 
 O [!DNL Payment Services] para [!DNL Adobe Commerce] e [!DNL Magento Open Source] é a sua solução de autoatendimento completa, incluindo testes de sandbox e uma configuração simples, para fornecer um processamento de pagamento robusto e seguro para os sites da Commerce.
-
-![[!DNL Payment Services] exibição de administrador da extensão](assets/admin-view.png){width="300" zoomable="yes"}
 
 Seja você uma pequena empresa, uma empresa de médio porte ou uma grande empresa, essa solução de pagamentos ajuda a reduzir a sobrecarga operacional, aumentar a receita e fornecer ferramentas úteis para melhorar toda a experiência do comprador.
 
