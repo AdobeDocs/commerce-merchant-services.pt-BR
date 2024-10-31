@@ -3,9 +3,9 @@ title: Estimar o volume de dados e o tempo de transmissão
 description: Saiba como estimar o volume de dados e o tempo de transmissão necessários para que a ferramenta [!DNL data export] sincronize dados de feed entre o Adobe Commerce e os serviços conectados.
 role: Admin, Developer
 exl-id: 51ea98fd-cf90-44bd-a639-992bfc7f3eca
-source-git-commit: b80bc2867f44e6123adb104eb148ac5e8f80b63d
+source-git-commit: 7e33b1d5dfc825f8a4d252bcfcbd4f591e337aed
 workflow-type: tm+mt
-source-wordcount: '599'
+source-wordcount: '559'
 ht-degree: 0%
 
 ---
@@ -14,12 +14,12 @@ ht-degree: 0%
 
 O Adobe recomenda estimar o volume de dados e o tempo de sincronização antes de iniciar qualquer sincronização do feed de dados para garantir uma programação suave e evitar interrupções nas operações do site. Essa estimativa é importante ao planejar sincronizações iniciais ou atualizações de catálogos em larga escala, como alterações de preço em massa.
 
-Por padrão, a ferramenta de exportação de dados processa dados no modo de thread único com um tamanho de lote padrão. Com a configuração padrão, não há paralelização do processo de envio do feed. Além disso, a política de limitação padrão permite que o Adobe Commerce aceite duas solicitações por segundo (RPS), o que significa o seguinte:
+Por padrão, a ferramenta de exportação de dados processa dados no modo de thread único com um tamanho de lote padrão. Com a configuração padrão, não há paralelização do processo de envio do feed. Além disso, esse componente aceita solicitações por segundo (RPS), o que se traduz no seguinte:
 
 - Até 10.000 produtos por minuto quando um produto for um SKU com atributos em uma loja específica
 - Até 50 mil preços por minuto
 
-Com base na configuração padrão, os seguintes fatores afetam o tempo de transmissão de dados durante a sincronização.
+Os seguintes fatores afetam o tempo de transmissão de dados durante a sincronização.
 
 - A contagem de threads está definida como 1 (por padrão)
 - O tamanho do lote está definido como _100_ para todos os feeds, exceto para o feed `prices`, no qual está definido como _500_.
@@ -27,9 +27,6 @@ Com base na configuração padrão, os seguintes fatores afetam o tempo de trans
 - Todos os produtos são atribuídos a todos os sites existentes
 - Para os cenários de cálculo de preço, todos os produtos têm preços especiais e agrupados atribuídos a eles
 
->[!NOTE]
->
->Se necessário, o limite da política de controle pode ser aumentado com base em uma análise de impacto de desempenho. Para obter assistência, entre em contato com o Gerente técnico de conta (TAM) ou envie um tíquete de suporte.
 
 ## Calcular a transmissão de dados por feed
 
