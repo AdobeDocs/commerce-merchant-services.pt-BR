@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Integration, Tools and External Services, Configuration
 exl-id: d09c4652-e2eb-49dc-8c42-2aa9b6be5d6b
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '167'
 ht-degree: 0%
@@ -14,11 +14,11 @@ ht-degree: 0%
 
 # Localização de armazenamento e configuração de mapeamento
 
-Habilite o local de armazenamento e os recursos de mapeamento para Atendimento de Loja configurando um [provedor de distância](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html) para procurar locais de loja de varejo.
+Habilite o local de armazenamento e os recursos de mapeamento para Atendimento de Loja configurando um [provedor de distância](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm) para procurar locais de loja de varejo.
 
 **Requisitos**
 
-Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps. Se você não tiver um, [gere um da plataforma Google Maps](https://docs.magento.com/user-guide/catalog/inventory-configure-distance-priority.html#configure-google-maps).
+Durante o processo de configuração, você fornece uma chave de API do Google para a plataforma Google Maps. Se você não tiver um, [gere um da plataforma Google Maps](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/configuration/distance-priority-algorithm#configure-google-maps).
 
 Para configurar o provedor de distância:
 

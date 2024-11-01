@@ -3,7 +3,7 @@ title: Compartimentalização do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 6769e29a4ae07b8cf15aa2da3cac2fe8583497e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '292'
 ht-degree: 0%
@@ -20,7 +20,7 @@ Os compradores usam o token armazenado para concluir um check-out futuro com as 
 
 ![Usar credenciais armazenadas para compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
 
-Eles também podem facilmente excluir seus cartões de crédito com cofre de [Métodos de Pagamento Armazenados](https://docs.magento.com/user-guide/customers/account-dashboard-stored-payment-methods.html) em sua Minha Conta.
+Eles também podem facilmente excluir seus cartões de crédito com cofre de [Métodos de Pagamento Armazenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) em sua Minha Conta.
 
 ![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
 

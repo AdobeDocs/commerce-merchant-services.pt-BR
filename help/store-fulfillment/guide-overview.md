@@ -5,7 +5,7 @@ seo-title: Adobe Commerce Store Fulfillment Guide
 seo-description: Describes how to use [!DNL Store Fulfillment by Walmart Commerce Technologies] services with Adobe Commerce.
 recommendations: noDisplay
 exl-id: b4af273c-5176-4a67-a783-e0bb1740b3d8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '187'
 ht-degree: 0%
@@ -32,8 +32,8 @@ Este guia não aborda os principais recursos do Adobe Commerce.
 
 | Guia | Descrição |
 |-----------------------------------------------------------------------|----------------------------------------------------------------------------|
-| [Guia do Usuário do Adobe Commerce 2.4](https://docs.magento.com/user-guide/) | Documentação voltada para o comerciante do Adobe Commerce |
-| [Guia do desenvolvedor do Adobe Commerce 2.4](https://devdocs.magento.com/) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce |
+| [Guia do Usuário do Adobe Commerce 2.4](https://experienceleague.adobe.com/en/docs/commerce-admin/user-guides/home) | Documentação voltada para o comerciante do Adobe Commerce |
+| [Guia do desenvolvedor do Adobe Commerce 2.4](https://developer.adobe.com/commerce/docs/) | Documentação voltada para o desenvolvedor usada para criar e personalizar o Adobe Commerce |
 
 ## Suporte
 

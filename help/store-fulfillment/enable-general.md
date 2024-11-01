@@ -4,7 +4,7 @@ description: Defina as configurações gerais para habilitar [!DNL Store Fulfill
 role: Admin
 level: Intermediate
 exl-id: 51dcfc95-3dd6-40d9-bd26-d8409a25f3c8
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '2405'
 ht-degree: 0%
@@ -356,7 +356,7 @@ Defina essas configurações no Administrador selecionando <strong>[!UICONTROL S
 
 >[!NOTE]
 >
->Para obter informações adicionais sobre a configuração das opções de entrega na loja, consulte [Entrega na loja](https://docs.magento.com/user-guide/shipping/shipping-in-store-delivery.html) no _Guia do Usuário do Adobe Commerce_.
+>Para obter informações adicionais sobre a configuração das opções de entrega na loja, consulte [Entrega na loja](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/delivery/basic-methods/shipping-in-store-delivery) no _Guia do Usuário do Adobe Commerce_.
 
 
 ### Configuração de métodos de entrega

@@ -3,7 +3,7 @@ title: Habilitar [!DNL Payment Services] para produção
 description: Conclua o processo de integração habilitando  [!DNL Payment Services]  para produção.
 exl-id: 3b1269e8-127b-47f8-9738-9722a5737c63
 feature: Payments, Checkout, Configuration, Install
-source-git-commit: d1379bb108f2259051641a7bf77cd8b459fd9cbf
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
@@ -27,7 +27,7 @@ Depois de [configurar seus Serviços Commerce](connect.md#configure-commerce-ser
 
    Esta opção estará visível se você ainda não tiver configurado o [!DNL Payment Services] como o método de pagamento para um ou mais sites.
 
-   Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://docs.magento.com/user-guide/configuration/sales/payment-methods.html){target="_blank"}.
+   Você é direcionado para a área de configurações na exibição Página Inicial com as opções relevantes expandidas (**[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Settings]_), onde é possível habilitar as opções [!DNL Payment Services] como seu [método de pagamento](https://experienceleague.adobe.com/en/docs/commerce-admin/config/sales/payment-methods/payment-methods){target="_blank"}.
 
 1. Em _[!UICONTROL General Configuration]_, defina **[!UICONTROL Enable]**como `Yes`.
 1. Defina **[!UICONTROL Payment Action]**, para _[!UICONTROL Credit Card Fields]_e_[!UICONTROL PayPal payment buttons]_, para um dos seguintes:
@@ -157,7 +157,7 @@ Ativar pagamentos em tempo real:
 1. Na Página Inicial, clique em **[!UICONTROL Settings]** na parte superior direita da página. Consulte [Página inicial](payments-home.md) para obter mais informações.
 1. Na seção _[!UICONTROL General Configuration]_, defina **[!UICONTROL Payment mode]**como `Production`.
 1. Clique em **[!UICONTROL Save]**.
-1. [Limpar o cache](https://docs.magento.com/user-guide/system/cache-management.html){target="_blank"}.
+1. [Limpar o cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management){target="_blank"}.
 
    >[!IMPORTANT]
    >

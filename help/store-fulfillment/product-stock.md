@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 3ac217f7-e823-4578-8416-5ecceb76aa87
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '400'
 ht-degree: 0%
@@ -14,7 +14,7 @@ ht-degree: 0%
 
 # Gerenciamento de Estoque de Produtos
 
-Como comerciante, você pode usar as opções de ações e de origem do Adobe Commerce [Inventory management](https://docs.magento.com/user-guide/catalog/inventory-management.html). Além disso, você pode usar a solução Store Fulfillment para controlar outras opções de disponibilidade de estoque relacionadas às operações de sua loja de comerciantes.
+Como comerciante, você pode usar as opções de ações e de origem do Adobe Commerce [Inventory management](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction). Além disso, você pode usar a solução Store Fulfillment para controlar outras opções de disponibilidade de estoque relacionadas às operações de sua loja de comerciantes.
 
 - Opção de entrega doméstica de lojas comerciantes
 

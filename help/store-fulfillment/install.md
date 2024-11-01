@@ -5,7 +5,7 @@ role: Admin, Developer
 level: Intermediate
 feature: Shipping/Delivery, Install
 exl-id: 6613268a-7d22-4c54-af89-834921b7f262
-source-git-commit: 8999d63319f627e0b56a0ef5a881d25dbeaf648f
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
@@ -36,17 +36,17 @@ composer require walmart/magento-bopis-metapackage:1.0.0
 
 - **Acesso ao Atendimento da Loja pelo arquivo de software Walmart Commerce Technologies (arquivo .zip)**—Durante o processo de integração e habilitação, trabalhe com seu Gerente de Conta para obter acesso ao arquivo de instalação da extensão de Atendimento da Loja.
 
-- **Informações da conta da Adobe Commerce**-A instalação da solução [!DNL Store Fulfillment] requer uma [[!DNL Commerce] conta](https://docs.magento.com/user-guide/magento/magento-account.html){target="_blank"}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao projeto [!DNL Adobe Commerce].
+- **Informações da conta da Adobe Commerce**-A instalação da solução [!DNL Store Fulfillment] requer uma [[!DNL Commerce] conta](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create){target="_blank"}. Você precisa de uma ID de conta e credenciais com acesso de Proprietário ou Administrador ao projeto [!DNL Adobe Commerce].
 
-- Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto em nuvem. Consulte [Gerenciar acesso do usuário](https://devdocs.magento.com/cloud/project/user-admin.html).
+- Para [!DNL Adobe Commerce] em projetos de infraestrutura em nuvem, os instaladores de software devem ter acesso de administrador ao projeto em nuvem. Consulte [Gerenciar acesso do usuário](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/project/user-access).
 
-- **Experiência usando o Composer e o[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://devdocs.magento.com/extensions/install/){target="_blank"} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões na plataforma [!DNL Adobe Commerce].
+- **Experiência usando o Composer e o[!DNL Commerce CLI]**—Consulte [Instalação geral da CLI](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions){target="_blank"} para obter informações sobre como usar essas ferramentas para instalar e gerenciar extensões na plataforma [!DNL Adobe Commerce].
 
 - **Experiência na instalação de extensões de terceiros no Adobe Commerce**. Para obter referência, consulte a documentação do Adobe Commerce.
 
-   - [Instalar uma extensão para uma Adobe Commerce na instância da infraestrutura em nuvem](https://devdocs.magento.com/cloud/howtos/install-components.html#install-an-extension).
+   - [Instalar uma extensão para uma Adobe Commerce na instância da infraestrutura em nuvem](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/configure-store/extensions#install-an-extension).
 
-   - [Instale uma extensão para uma instância local do Adobe Commerce](https://devdocs.magento.com/extensions/install/).
+   - [Instale uma extensão para uma instância local do Adobe Commerce](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/extensions).
 
 ### Etapa 1: baixar o pacote de extensão
 
@@ -135,7 +135,7 @@ No servidor do Adobe Commerce, verifique se os módulos da extensão Store Fulfi
 
 1. Faça logon no servidor.
 
-   Para instalações no Adobe Commerce na infraestrutura em nuvem, [use o SSH para fazer logon no ambiente remoto](https://devdocs.magento.com/cloud/env/environments-ssh.html#ssh).
+   Para instalações no Adobe Commerce na infraestrutura em nuvem, [use o SSH para fazer logon no ambiente remoto](https://experienceleague.adobe.com/en/docs/commerce-cloud-service/user-guide/develop/secure-connections#ssh).
 
 1. Verifique se os módulos Store Fulfillment Services estão habilitados.
 

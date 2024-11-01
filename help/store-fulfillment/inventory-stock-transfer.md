@@ -5,7 +5,7 @@ role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration
 exl-id: 669d4dce-4cac-4bde-acc5-26c70a51f7f1
-source-git-commit: 36b57648e156ead801764f3ee4e5e6a0f3245fe6
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
@@ -23,27 +23,27 @@ A solução [!DNL Store Fulfillment] usa o Adobe Commerce Inventory management n
 
 Essas alterações de configuração ajudam você a realizar três coisas:
 
-1. [Transferir estoque para origem](https://docs.magento.com/user-guide/catalog/inventory-bulk-transfer-inventory.html) para mover o estoque padrão/origem para o novo estoque/origem.
+1. [Transferir estoque para origem](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/inventory-transfer) para mover o estoque padrão/origem para o novo estoque/origem.
 
-1. [Atribuir fontes](https://docs.magento.com/user-guide/catalog/inventory-bulk-assign-sources.html) em massa para adicionar as novas fontes para todos os seus produtos.
+1. [Atribuir fontes](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/bulk-assignment) em massa para adicionar as novas fontes para todos os seus produtos.
 
-1. [Conclua as atualizações em massa dos atributos de produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html) para adicionar os atributos `Allow Store Pickup` e `Allow Home Delivery` aos produtos existentes. Quando a solução é instalada, os atributos têm os *valores padrão* ideais. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de updaContes em massa.
+1. [Conclua as atualizações em massa dos atributos de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update) para adicionar os atributos `Allow Store Pickup` e `Allow Home Delivery` aos produtos existentes. Quando a solução é instalada, os atributos têm os *valores padrão* ideais. No entanto, esses atributos não são aplicados aos produtos existentes até que você conclua o processo de updaContes em massa.
 
-O estoque é deduzido da origem selecionada (localização da loja de varejo ou depósito de comércio eletrônico). As origens usadas como depósitos de comércio eletrônico devem ser atribuídas ao mesmo estoque que o local de retirada da loja e priorizadas antes dos locais de varejo. Para obter informações adicionais, consulte [Priorizando fontes para um estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html).
+O estoque é deduzido da origem selecionada (localização da loja de varejo ou depósito de comércio eletrônico). As origens usadas como depósitos de comércio eletrônico devem ser atribuídas ao mesmo estoque que o local de retirada da loja e priorizadas antes dos locais de varejo. Para obter informações adicionais, consulte [Priorizando fontes para um estoque](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources).
 
 Para obter mais informações sobre gerenciamento de inventário, estoques e fontes, consulte a documentação do usuário do Adobe Commerce:
 
-- [Gerenciando o inventário](https://docs.magento.com/user-guide/catalog/inventory-management.html)
+- [Gerenciando o inventário](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/introduction)
 
-- [Gerenciando Quantidades de Inventário](https://docs.magento.com/user-guide/catalog/inventory-manage-inventory-quantities.html)
+- [Gerenciando Quantidades de Inventário](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/quantities/quantities-manage)
 
-- [Gerenciando o Stock](https://docs.magento.com/user-guide/catalog/inventory-stock.html)
+- [Gerenciando o Stock](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-manage)
 
-- [Gerenciando fontes](https://docs.magento.com/user-guide/catalog/inventory-sources.html)
+- [Gerenciando fontes](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/sources/sources-manage)
 
-- [Priorizando fontes para um estoque](https://docs.magento.com/user-guide/catalog/inventory-stock-priority.html)
+- [Priorizando fontes para um estoque](https://experienceleague.adobe.com/en/docs/commerce-admin/inventory/stocks/stocks-prioritize-sources)
 
-- [Atualizações em massa para atributos de produto](https://docs.magento.com/user-guide/stores/bulk-product-attribute-update.html)
+- [Atualizações em massa para atributos de produto](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/create/bulk-product-attribute-update)
 
 
 >[!IMPORTANT]

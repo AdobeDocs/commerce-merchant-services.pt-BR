@@ -3,7 +3,7 @@ title: Conectar sua instância
 description: Conecte sua instância do Commerce usando uma chave de API e uma chave privada e especifique o espaço de dados na configuração.
 exl-id: 5038fd31-bac5-419e-a172-66919a9b5272
 feature: Payments, Checkout, Configuration, Saas
-source-git-commit: 5d3a89b2ef06b2c67ec715ce4f31f22249b336e0
+source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -28,11 +28,11 @@ O [!DNL Payment Services] é desenvolvido pelos Serviços da Commerce e implanta
 
 ## Obter credenciais de API
 
-Para consumir um serviço SaaS do Commerce, você deve usar as chaves de API da sua instância (chave de API pública do Commerce e uma chave privada) para sandbox e produção, que são criadas e gerenciadas no [Painel da Minha Conta](https://account.magento.com/customer/account/login). [O par de chaves](https://docs.magento.com/user-guide/configuration/services/saas.html) pode ser criado para uma conta da Commerce, um para sandbox e um para produção, embora apenas um par possa ser usado ativamente de cada vez.
+Para consumir um serviço SaaS do Commerce, você deve usar as chaves de API da sua instância (chave de API pública do Commerce e uma chave privada) para sandbox e produção, que são criadas e gerenciadas no [Painel da Minha Conta](https://account.magento.com/customer/account/login). [O par de chaves](https://experienceleague.adobe.com/en/docs/commerce-admin/config/services/saas) pode ser criado para uma conta da Commerce, um para sandbox e um para produção, embora apenas um par possa ser usado ativamente de cada vez.
 
 >[!NOTE]
 >
->Precisa de ajuda para acessar seu painel [!UICONTROL My Account]? Consulte [Criar uma conta do Commerce](https://docs.magento.com/user-guide/magento/magento-account-create.html).
+>Precisa de ajuda para acessar seu painel [!UICONTROL My Account]? Consulte [Criar uma conta do Commerce](https://experienceleague.adobe.com/en/docs/commerce-admin/start/commerce-account/commerce-account-create).
 
 Uma chave de API pública, uma vez criada, está sempre disponível no Painel Minha conta. Ela pode ser copiada ou excluída, conforme necessário. A chave de API privada torna-se visível quando você cria uma chave de API pública para sandbox ou produção; ela só está disponível para copiar ou salvar da caixa de diálogo subsequente e não pode ser acessada posteriormente.
 
@@ -40,7 +40,7 @@ Um determinado par de chaves de API é válido para todos os serviços da Commer
 
 Se sua chave de API for perdida, um novo par de chaves de API deverá ser [gerado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#generate-an-api-key-and-private-key) e [aplicado](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/get-started/connect.html#configure-saas-project) à configuração do Commerce Services Connector no Administrador. Se as chaves incorretas estiverem configuradas ou não houver nenhuma na configuração, uma caixa de diálogo de erro de verificação de conta será exibida nos Serviços de pagamento, notificando-o de que a conta não foi verificada.
 
-Consulte uma [lista de Serviços Commerce disponíveis que usam a API](https://docs.magento.com/user-guide/system/saas.html#available-services).
+Consulte uma [lista de Serviços Commerce disponíveis que usam a API](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/user-guides/integration-services/saas#availableservices).
 
 Para saber como gerar uma chave de API para ambientes de sandbox ou produção, consulte [Credenciais](https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/saas.html#apikey).
 
