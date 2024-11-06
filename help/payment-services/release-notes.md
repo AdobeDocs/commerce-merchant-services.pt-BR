@@ -3,9 +3,9 @@ title: "[!DNL Payment Services] Notas de Versão"
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
 workflow-type: tm+mt
-source-wordcount: '3017'
+source-wordcount: '3174'
 ht-degree: 0%
 
 ---
@@ -90,6 +90,24 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 ![Novo](../assets/new.svg)<!-- Issue PAY-2761 --> Agora é possível personalizar os dados exibidos no [Relatório de status do pagamento da ordem](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/order-payment-status.html#show-and-hide-columns) e no [Relatório de pagamentos](https://experienceleague.adobe.com/docs/commerce-merchant-services/payment-services/reporting/payouts.html#show-and-hide-columns) exibindo ou ocultando colunas usando o controle Configurações de coluna.
 
 +++
+
+## v2.9.0
+
+_7 de novembro de 2024_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] agora oferece suporte a uma **URL do SDK atualizada para o Apple Pay**, melhorando a integração para comerciantes que usam o Apple Pay. Esse recurso é compatível com o macOS 14 e versões posteriores, os dispositivos que executam versões anteriores do macOS não exibirão essa funcionalidade.
+
+![Novo](../assets/new.svg)<!-- PAY-5630 --> Atualizou as páginas **Check-out**, **Produto**, **Carrinho** e **Minicarrinho** para oferecer suporte à URL do SDK **atualizada para o Apple Pay**, aprimorando a experiência do usuário para comerciantes que oferecem o Apple Pay como uma opção de pagamento.
+
+![Novo](../assets/new.svg)<!-- PAY-5635 --> Estimativas de envio aprimoradas **com base no endereço de pagamento do Apple**, permitindo que os clientes vejam os custos de envio precisos durante o check-out.
+
+![Correção](../assets/fix.svg)<!-- PAY-5661 --> Correção de vários **[!DNL Payment Services]problemas no check-out**, melhorando a confiabilidade do processo de pagamento para comerciantes e compradores.
+
+![Correção](../assets/fix.svg)<!-- PAY-5692 --> Corrigido um problema no qual o **nome e sobrenome do cliente** não foram adicionados ao pedido ao usar os **botões inteligentes para check-out expresso**.
+
+![Correção](../assets/fix.svg)<!-- PAY-5712 --> Resolveu um problema em que os comerciantes **não conseguiam concluir o check-out usando a opção de pagamento Check-out Subtotal Zero** quando o valor total estava livre.
 
 ## v2.8.1
 
