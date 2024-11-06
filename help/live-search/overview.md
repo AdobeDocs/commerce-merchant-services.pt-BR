@@ -3,7 +3,7 @@ title: O que é  [!DNL Live Search]?
 description: "[!DNL Live Search] da Adobe Commerce oferece uma experiência de pesquisa rápida, relevante e intuitiva."
 exl-id: aca0ef19-ead1-4c79-90c3-db5ec48cb3c1
 recommendations: noCatalog
-source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
 source-wordcount: '726'
 ht-degree: 0%
@@ -19,7 +19,7 @@ Com [!DNL Live Search], você pode:
 - Crie experiências de pesquisa significativas para ajudar compradores e compradores a encontrar o que desejam com o menor esforço possível.
 - Aproveite a faceta dinâmica alimentada por IA e a reclassificação dos resultados de pesquisa em resposta aos comportamentos do comprador na sessão.
 - Use um serviço leve baseado em SaaS que ofereça atualizações fáceis e esteja incluído em sua licença, reduzindo o custo total de propriedade.
-- Obtenha conhecimento técnico habilitando a API GraphQL, a flexibilidade headless, os ambientes de sandbox da API e o SaaS ultrarrápido.
+- Obtenha conhecimento técnico habilitando a API do GraphQL, a flexibilidade headless, os ambientes de sandbox da API e o SaaS ultrarrápido.
 
 >[!IMPORTANT]
 >

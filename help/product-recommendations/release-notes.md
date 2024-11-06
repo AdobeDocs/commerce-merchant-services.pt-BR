@@ -3,9 +3,9 @@ title: '[!DNL Product Recommendations] Notas de Versão'
 description: As informações da versão mais recente do  [!DNL Product Recommendations] Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 6f31361e95b17ee3fa19ff3c2f4a7e2d6d9bc091
+source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
 workflow-type: tm+mt
-source-wordcount: '1376'
+source-wordcount: '1410'
 ht-degree: 0%
 
 ---
@@ -45,6 +45,15 @@ _25 de abril de 2023_
 ![Novos](../assets/new.svg) clientes do [!DNL Product Recommendations] agora podem aproveitar a [indexação de preços do SaaS](../price-index/price-indexing.md).
 
 ## Versão principal atual
+
+### 6.0.3 do magento/product-recommendations
+
+_6 de novembro de 2024_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg) Corrigido um problema no qual o [filtro de categoria](filters.md#category) incluía categorias que não pertenciam à loja atual.
+![Correção](../assets/fix.svg) Corrigiu um problema de dependência no metapackage `magento/product-recommendations`.
 
 ### 6.0.2 do magento/product-recommendations
 

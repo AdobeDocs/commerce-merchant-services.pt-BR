@@ -2,9 +2,9 @@
 title: Filtrar produtos
 description: Defina condições que incluam ou excluam produtos de serem usados como recomendações.
 exl-id: baab28ff-b529-4cbc-adb7-4fa225e87d4a
-source-git-commit: e42b9524fb2e8518576935bc0cd378eca9a579c5
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '748'
+source-wordcount: '749'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Os filtros de produto especificam quais produtos específicos estão qualificado
 
 ### Tipo
 
-Um filtro com base no tipo de produto inclui ou exclui todos os produtos de um tipo específico. Os tipos suportados incluem _Simples_, _Configurável_, _Virtual_, _Baixável_ ou _Cartão-presente_. Os produtos _Pacote_ e _Agrupado_ ainda não têm suporte.
+Um filtro com base no tipo de produto inclui ou exclui todos os produtos de um tipo específico. Os tipos suportados incluem _simple_, _configurable_, _virtual_, _downloadable_ ou _vale-presente_. Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados.
 
 ### Visibilidade
 

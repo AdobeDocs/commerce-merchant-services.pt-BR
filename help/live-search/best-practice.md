@@ -2,9 +2,10 @@
 title: '[!DNL Live Search] Práticas Recomendadas'
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
-source-git-commit: 77d12a1294c87089ce806615f92bf89396bfc43b
+exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
+source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
 workflow-type: tm+mt
-source-wordcount: '2349'
+source-wordcount: '2359'
 ht-degree: 0%
 
 ---
@@ -137,7 +138,7 @@ Saiba mais sobre regras de pesquisa:
 
 ### Aproveitar os metadados do produto
 
-Verifique se atributos de produto precisos e detalhados estão [configurados como pesquisáveis](workspace.md#set-attributes-as-searchable). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. 
+Verifique se atributos de produto precisos e detalhados estão [configurados como pesquisáveis](workspace.md#set-attributes-as-searchable). Observe que os atributos SKU, nome e categoria podem ser pesquisados por padrão e não podem ser excluídos da pesquisa. Para obter melhores resultados, não use espaços nas SKUs.
 
 Para aumentar a relevância da pesquisa, atribua um peso a cada atributo pesquisável. Atributos com um peso maior devem aparecer mais altos nos resultados da pesquisa. A classificação por relevância é afetada por vários critérios, como peso da pesquisa. Isso significa que, às vezes, os atributos com menor peso de pesquisa ainda podem ter mais relevância do que os atributos com maior peso de pesquisa. Outros critérios podem incluir o número de correspondências em qualquer atributo, a posição do termo de pesquisa encontrado e a estrutura geral do texto antes e depois de um termo de pesquisa.
 

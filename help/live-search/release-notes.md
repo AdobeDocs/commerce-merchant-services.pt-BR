@@ -3,9 +3,9 @@ title: "[!DNL Live Search] Notas de Versão"
 description: "As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce."
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: a68fe02be6e207b323d600910cba62992edd6725
+source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
 workflow-type: tm+mt
-source-wordcount: '2046'
+source-wordcount: '2042'
 ht-degree: 0%
 
 ---
@@ -318,8 +318,8 @@ As instalações existentes do [!DNL Live Search] devem ser atualizadas para o [
 
 [!BADGE Com suporte]{type="Informativo" tooltip="Compatível"}
 
-![Corrigir](../assets/fix.svg) [O atributo de preço personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) não retorna mais um erro quando configurado como [faceta]({% link live-search/facets-add.md %}).
-![Correção](../assets/fix.svg) Corrigido um problema que causava um erro quando nenhum [símbolo de moeda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration(optional)) (`data-currency-symbol`) estava disponível.
+![Corrigir](../assets/fix.svg) [O atributo de preço personalizado](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/product-attributes/attributes-input-types) não retorna mais um erro quando configurado como [faceta](facets-add.md).
+![Correção](../assets/fix.svg) Corrigido um problema que causava um erro quando nenhum [símbolo de moeda](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/site-store/currency/currency-configuration#step-5-customize-currency-symbols-optional) (`data-currency-symbol`) estava disponível.
 ![Correção](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) agora mostra o [Preço Especial](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/products/pricing/product-price-special) (preço final mínimo) quando disponível.
 
 ### [!DNL Live Search] 1.3.0 {#130}

@@ -2,9 +2,9 @@
 title: Criar nova recomendação
 description: Saiba como criar uma unidade de recomendação de produto.
 exl-id: d393ab78-0523-463f-9b03-ad3f523dce0f
-source-git-commit: 0b651189184a107dec8452d5b0d588f52d689605
+source-git-commit: 0d6e935fc5812efd7d3359a4fa242f8d5d85043e
 workflow-type: tm+mt
-source-wordcount: '1457'
+source-wordcount: '1497'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,10 @@ O percentual do indicador de disponibilidade para tipos de recomendação que de
 #### O que fazer se a porcentagem do indicador de disponibilidade estiver baixa
 
 Uma baixa porcentagem de prontidão indica que não há muitos produtos do catálogo elegíveis para serem incluídos nas recomendações para esse tipo de recomendação. Isso significa que há uma alta probabilidade de [recomendações de backup](events.md#backuprecs) serem retornadas se você implantar esse tipo de recomendação mesmo assim.
+
+>[!IMPORTANT]
+>
+>Não há suporte para _Pacotes_, _agrupados_ e tipos de produtos personalizados. Se seu catálogo contiver um grande número desses tipos de produtos, você poderá esperar uma baixa pontuação de preparação. Além disso, qualquer SKU com espaços pode reduzir a relevância da recomendação e deve ser evitada.
 
 A seguir, uma lista de possíveis motivos e soluções para pontuações comuns de baixa disponibilidade:
 
