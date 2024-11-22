@@ -1,15 +1,15 @@
 ---
-title: Adicionar atributos do produto de forma programática ao feed do Exportador de dados
-description: Saiba como adicionar atributos de produto personalizados aos dados de feed do  [!DNL SaaS Data Export] .
+title: Adicionar atributos de produto dinamicamente
+description: Saiba como adicionar atributos de produto personalizados ao feed de exportação de dados de forma dinâmica durante o processo de sincronização de dados.
 role: Admin, Developer
-source-git-commit: 06ef294d2670e5d36bbb6cd18deafce2cc751772
+source-git-commit: e75092e918d06d4d1291784b0498d274ea8396e8
 workflow-type: tm+mt
-source-wordcount: '282'
+source-wordcount: '281'
 ht-degree: 0%
 
 ---
 
-# Adicionar atributos do produto de forma programática ao feed do Exportador de dados
+# Adicionar atributos de produto dinamicamente durante a sincronização de dados
 
 É possível estender atributos do produto sem registrá-los no Adobe Commerce criando um plug-in para adicionar os atributos durante o processo de sincronização de dados.
 
