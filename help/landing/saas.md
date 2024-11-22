@@ -4,9 +4,9 @@ description: Saiba como integrar sua instância do Adobe Commerce ou Magento Ope
 exl-id: 28027a83-449b-4b96-b926-a7bfbfd883d8
 feature: Services, Saas
 role: Admin, User
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: daad5bb1ce74126d727207812abebdcf0cbf72c0
 workflow-type: tm+mt
-source-wordcount: '1259'
+source-wordcount: '1304'
 ht-degree: 0%
 
 ---
@@ -118,6 +118,10 @@ Para selecionar ou criar um projeto SaaS, solicite a chave de API [!DNL Commerce
 Qualquer projeto SaaS associado às suas chaves é exibido no campo **Projeto** da seção **Identificador SaaS**.
 
 1. Se não existirem projetos SaaS, clique em **Criar projeto**. Em seguida, no campo **Projeto**, digite um nome para o projeto SaaS.
+
+>[!NOTE]
+>
+>Para evitar confusão, não use um Serviço Commerce específico como o nome do seu projeto, por exemplo *Live Search*, *Product Recommendations* ou *Conexão de Dados*.  A menos que sua licença tenha sido provisionada para vários projetos SaaS, você poderá usar o mesmo projeto SaaS para vários serviços.
 
 1. Selecione o **Espaço de Dados** a ser usado para a configuração atual do seu repositório [!DNL Commerce].
 
