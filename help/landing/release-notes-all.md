@@ -5,7 +5,7 @@ seo-title: Adobe Commerce Services release notes
 seo-description: See a collated list of all release notes for Adobe Commerce Services and related data and integration services.
 exl-id: 2d0d2663-275d-4471-b47c-95a40b328b2b
 feature: Release Notes, Services
-source-git-commit: 0b0bc88c13d8c90a6209d9156f6fd6a7ce040f72
+source-git-commit: b2425eb7204400899dfe6eaa9978e49c3ff00ec7
 workflow-type: tm+mt
 source-wordcount: '116'
 ht-degree: 0%
@@ -38,7 +38,7 @@ Use a tabela a seguir para localizar notas de versão e informações importante
       <td><strong>Serviços de dados</strong>
         <p>Saiba mais sobre as melhorias mais recentes no serviço de dados que permite que nossos Serviços da Commerce gerenciem dados de produtos.</p>
           <ul>
-           <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-export/release-notes.html">Extensão SaaS Data Export</a></li>
+           <li><a href="https://experienceleague.adobe.com/en/docs/commerce-merchant-services/saas-data-export/release-notes">Extensão SaaS Data Export</a></li>
             <li><a href="https://experienceleague.adobe.com/docs/commerce-merchant-services/user-guides/data-services/catalog-sync.html">Sincronização de catálogo</a></li>
           </ul>
       </td>
