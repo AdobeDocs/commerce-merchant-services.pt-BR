@@ -1,6 +1,6 @@
 ---
-title: "Sinônimos"
-description: "[!DNL Live Search] Sinônimos expandem consultas com palavras que diferem daquelas no catálogo."
+title: Sinônimos
+description: '[!DNL Live Search] Sinônimos expandem consultas com palavras que diferem daquelas no catálogo.'
 exl-id: f2b7c5fb-f009-4834-baff-06e8ed7be7e5
 source-git-commit: 888b81683a4e139a35b771d9c573f1f5f0c3b902
 workflow-type: tm+mt

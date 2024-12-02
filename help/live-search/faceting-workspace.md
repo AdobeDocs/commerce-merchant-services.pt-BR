@@ -1,6 +1,6 @@
 ---
-title: "Faceting Workspace"
-description: "Saiba mais sobre o  [!DNL Live Search] espaço de trabalho facetado."
+title: Faceting Workspace
+description: Saiba mais sobre o  [!DNL Live Search] espaço de trabalho facetado.
 exl-id: b47b5c19-59bb-41e4-9599-3b90cbc44b70
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

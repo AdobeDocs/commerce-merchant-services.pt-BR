@@ -1,7 +1,7 @@
 ---
-user-guide-title: "[!DNL Data Connection] extensão para Adobe Commerce"
-user-guide-description: "Este guia fornece instruções detalhadas para usar a extensão  [!DNL Data Connection] para o Adobe Commerce."
-breadcrumb-title: "[!DNL Data Connection] extensão para Adobe Commerce"
+user-guide-title: Extensão [!DNL Data Connection] para o Adobe Commerce
+user-guide-description: Este guia fornece instruções detalhadas para usar a extensão  [!DNL Data Connection]  para o Adobe Commerce.
+breadcrumb-title: Extensão [!DNL Data Connection] para o Adobe Commerce
 role: Admin
 feature: Personalization, Integration
 recommendations: noDisplay

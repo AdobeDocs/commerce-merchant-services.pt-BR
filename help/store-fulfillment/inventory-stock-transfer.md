@@ -1,6 +1,6 @@
 ---
 title: Transferência do Inventory management Source
-description: "Configure os estoques do  [!DNL Store Fulfillment solution]  com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o estoque do estoque padrão para que você possa atribuí-lo às fontes configuradas para habilitar os recursos de Retirada da Loja exigidos pela solução de Atendimento da Loja."
+description: Configure os estoques do  [!DNL Store Fulfillment solution]  com o Adobe Commerce Inventory management. Configure um novo estoque e transfira o estoque do estoque padrão para que você possa atribuí-lo às fontes configuradas para habilitar os recursos de Retirada da Loja exigidos pela solução de Atendimento da Loja.
 role: Admin
 level: Intermediate
 feature: Shipping/Delivery, Inventory, Configuration

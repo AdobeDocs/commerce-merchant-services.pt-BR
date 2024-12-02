@@ -1,6 +1,6 @@
 ---
-title: Visão Geral do Guia '[!DNL Catalog Service]'
-description: '[!DNL Catalog Service for Adobe Commerce] fornece uma maneira de recuperar o conteúdo das Páginas de Exibição do Produto e das Páginas de Lista de Produtos mais rapidamente do que as consultas nativas do Adobe Commerce GraphQL.'
+title: Visão geral do Guia do [!DNL Catalog Service]
+description: O [!DNL Catalog Service for Adobe Commerce] fornece uma maneira de recuperar o conteúdo das Páginas de Exibição de Produtos e das Páginas de Lista de Produtos mais rapidamente do que as consultas nativas do Adobe Commerce GraphQL.
 exl-id: d83375b2-0d87-4a0a-baf8-eb7eebe85a80
 recommendations: noCatalog
 source-git-commit: 9ae4aff1851e9ce9920c4fbf11d2616d6f0f6307

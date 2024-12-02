@@ -1,6 +1,6 @@
 ---
 title: Configuração do processo de segundo plano
-description: "Configure os agendamentos para  [!DNL Store Fulfillment] processos em segundo plano usados na sincronização de dados com os serviços de preenchimento."
+description: Configure os agendamentos para  [!DNL Store Fulfillment] processos em segundo plano usados na sincronização de dados com os serviços de preenchimento.
 role: Admin, Developer
 level: Intermediate
 exl-id: 742ae59e-77a0-4db6-b156-2992d4403be7

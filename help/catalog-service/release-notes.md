@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Catalog Service] Notas de Versão'
+title: Notas de versão do [!DNL Catalog Service]
 description: As informações da versão mais recente do  [!DNL Catalog Service] para Adobe Commerce.
 exl-id: 9bf8e3f7-5b74-4755-867e-ac1c5000ff33
 feature: Services, Catalog Service, Release Notes

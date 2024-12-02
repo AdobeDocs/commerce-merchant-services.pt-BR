@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Product Recommendations] Workspace'
+title: Workspace [!DNL Product Recommendations]
 description: Saiba como configurar, gerenciar e monitorar o desempenho de recomendações de produtos.
 exl-id: 85a06cc3-91b9-484a-96a9-fc85718e6d70
 source-git-commit: 91e19e30d55259d3287404895d1d893c480743b6
@@ -56,7 +56,7 @@ Inicialmente, o [escopo](https://experienceleague.adobe.com/docs/commerce-admin/
    ![espaço de trabalho do Recommendations](assets/workspace-select-columns.png)
    _Mostrar/ocultar colunas_
 
-## Configurações
+## Configurações 
 
 As configurações determinam o espaço de dados SaaS que fornece os dados comportamentais de recomendação.
 
@@ -90,7 +90,7 @@ Na página de detalhes da recomendação, clique em **Criar**. Para saber mais, 
 |---|---|
 | ![Seletor de calendário](assets/icon-calendar.png) | Determina o intervalo de tempo usado para cálculos de métricas. Opções: 24 horas/7 dias/30 dias |
 | ![Seletor de coluna](assets/icon-show-hide-columns.png) | Determina as colunas que aparecem na tabela [!DNL Product Recommendations]. |
-| Configurações | Determina o espaço de dados SaaS onde os dados comportamentais de recomendação são obtidos e também ativa o tipo de recomendação de semelhança visual. |
+| Configurações  | Determina o espaço de dados SaaS onde os dados comportamentais de recomendação são obtidos e também ativa o tipo de recomendação de semelhança visual. |
 | Criar recomendação | Abre a página [Criar Nova Recomendação](create.md). |
 
 ## Descrições da coluna

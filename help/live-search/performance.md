@@ -1,6 +1,6 @@
 ---
-title: "Desempenho"
-description: "O espaço de trabalho  [!DNL Live Search] Desempenho fornece informações sobre os termos de pesquisa que os compradores usam."
+title: Desempenho
+description: O espaço de trabalho Desempenho [!DNL Live Search] fornece informações sobre os termos de pesquisa que os compradores usam.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
 source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
 workflow-type: tm+mt

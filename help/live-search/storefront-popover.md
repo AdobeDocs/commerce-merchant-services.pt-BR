@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Storefront Popover]"
-description: "O  [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos."
+title: '[!DNL Storefront Popover]'
+description: O  [!DNL Live Search storefront popover] retorna dinamicamente os produtos e miniaturas sugeridos.
 exl-id: 88fdc3ed-b606-40de-94b7-435be09c4072
 source-git-commit: e375404a50dd4972ab584f69d7953aba2c8f4566
 workflow-type: tm+mt

@@ -1,5 +1,5 @@
 ---
-title: "[!DNL Payment Services] Visão geral do Guia"
+title: Visão geral do Guia do [!DNL Payment Services]
 description: Informações abrangentes sobre  [!DNL Payment Services] administradores do [!DNL Adobe Commerce] for [!DNL Magento Open Source] incluindo instalação e integração
 seo-title: Adobe Commerce Payments Services Guide
 seo-description: Describes how to use [!DNL Payment Services] with Adobe Commerce or [!DNL Magento Open Source].

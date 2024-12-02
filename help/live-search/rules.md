@@ -1,6 +1,6 @@
 ---
-title: "Pesquisar merchandising"
-description: "[!DNL Live Search] regras de merchandising combinam lógica e ações para moldar a experiência de compras."
+title: Pesquisar merchandising
+description: As regras de merchandising do [!DNL Live Search] combinam lógica e ações para moldar a experiência de compra.
 exl-id: d06a3040-6987-4813-90ae-2f7b3ad0b232
 source-git-commit: 2b0ca3f5a68e75ef4b4e71ac7705b17534e16845
 workflow-type: tm+mt

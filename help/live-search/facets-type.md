@@ -1,6 +1,6 @@
 ---
-title: "Tipos de facetas"
-description: "[!DNL Live Search] facetas são dinâmicas e aparecem na lista de Filtros quando relevante."
+title: Tipos de facetas
+description: '[!DNL Live Search] facetas são dinâmicas e aparecem na lista de Filtros quando relevante.'
 exl-id: 49fb7609-64b3-4ae8-928d-54c99032d919
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt

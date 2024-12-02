@@ -1,6 +1,6 @@
 ---
-title: "Adicionar sinônimos"
-description: "Adicione  [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa."
+title: Adicionar sinônimos
+description: Adicione  [!DNL Live Search] sinônimos para melhorar a resposta às solicitações de pesquisa.
 exl-id: 6c277d88-cb22-4174-abda-6d6bb65fe3be
 source-git-commit: 63318e2eb75bc5fb0a243b6430751b076e541b72
 workflow-type: tm+mt

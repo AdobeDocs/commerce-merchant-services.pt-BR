@@ -1,6 +1,6 @@
 ---
-title: "Configurações"
-description: "Defina as configurações para o serviço  [!DNL Live Search] ."
+title: 'Configurações '
+description: Defina as configurações do serviço  [!DNL Live Search] .
 exl-id: a0b63116-4b8f-490c-a54e-e21f1b02b634
 source-git-commit: ffbb41ef2bc940982b4acb33623ef689542617c1
 workflow-type: tm+mt
@@ -9,7 +9,7 @@ ht-degree: 0%
 
 ---
 
-# Configurações
+# Configurações 
 
 Use o espaço de trabalho *Configurações* para configurar os intervalos e os intervalos de facetas de preços e o idioma padrão do índice.
 

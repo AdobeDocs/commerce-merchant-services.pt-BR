@@ -1,6 +1,6 @@
 ---
-title: "Tipos de sinônimos"
-description: "Sinônimos unidirecionais e bidirecionais [!DNL Live Search] expandem a definição de palavras-chave."
+title: Tipos de sinônimos
+description: Sinônimos unidirecionais e bidirecionais [!DNL Live Search]  expandem a definição de palavras-chave.
 exl-id: 708d7b0d-7361-44f4-ae9e-b92f574ac975
 source-git-commit: cb5db979828eb0b678d19c926de2823829717c02
 workflow-type: tm+mt

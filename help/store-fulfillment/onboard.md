@@ -1,6 +1,6 @@
 ---
 title: Visão geral de integração para serviços de fornecimento da loja
-description: '[!DNL Live Search] fluxo de integração, requisitos do sistema, limites e limitações.'
+description: Fluxo de integração, requisitos do sistema, limites e limitações do [!DNL Live Search].
 role: Admin, Leader
 level: Intermediate
 feature: Shipping/Delivery, Install

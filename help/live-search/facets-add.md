@@ -1,6 +1,6 @@
 ---
-title: "Adicionar facetas"
-description: "Saiba como adicionar atributos de produto filtráveis como [!DNL Live Search] facetas."
+title: Adicionar facetas
+description: Saiba como adicionar atributos de produto filtráveis como [!DNL Live Search] facetas.
 exl-id: 0df6c21b-55b3-41ce-94f4-f70b70ffb84e
 source-git-commit: 2439e9c2b38269e1cf9761d2b662abce76b8304e
 workflow-type: tm+mt

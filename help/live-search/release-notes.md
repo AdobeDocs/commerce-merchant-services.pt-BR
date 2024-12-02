@@ -1,6 +1,6 @@
 ---
-title: "[!DNL Live Search] Notas de Versão"
-description: "As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce."
+title: Notas de versão do [!DNL Live Search]
+description: As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
 source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110

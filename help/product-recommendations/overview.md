@@ -1,6 +1,6 @@
 ---
 title: Introdução a  [!DNL Product Recommendations]
-description: '[!DNL Product Recommendations] são uma ferramenta de marketing poderosa que você pode usar para aumentar as conversões, aumentar a receita e estimular o envolvimento do comprador.'
+description: O [!DNL Product Recommendations] é uma poderosa ferramenta de marketing que pode ser usada para aumentar as conversões, aumentar a receita e estimular o envolvimento do comprador.
 exl-id: 818ac876-58c9-4c68-975e-53da59ed6b52
 recommendations: noCatalog
 source-git-commit: 289ac6ac464955f18f3a2448099ad459e6264941

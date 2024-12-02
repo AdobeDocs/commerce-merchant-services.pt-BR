@@ -1,5 +1,5 @@
 ---
-title: Visão Geral do Guia '[!DNL Product Recommendations]'
+title: Visão geral do Guia do [!DNL Product Recommendations]
 description: Informações abrangentes sobre o  [!DNL Product Recommendations]  para administradores do Adobe Commerce, incluindo instalação e integração
 seo-title: Adobe Commerce [!DNL Product Recommendations] Guide
 seo-description: Describes how to use [!DNL Product Recommendations] with Adobe Commerce.

@@ -1,13 +1,13 @@
 ---
-user-guide-title: “Guia do [!DNL Product Recommendations]”
+user-guide-title: Guia do [!DNL Product Recommendations]
 user-guide-description: Este guia fornece instruções detalhadas para usar o  [!DNL Product Recommendations] da Adobe Commerce.
-breadcrumb-title: “Guia do [!DNL Product Recommendations]”
+breadcrumb-title: Guia do [!DNL Product Recommendations]
 role: Admin
 feature: Services, Recommendations
 source-git-commit: 4a5c3550b03651279c24de6b6361ffa6dc28776e
 workflow-type: tm+mt
 source-wordcount: '58'
-ht-degree: 12%
+ht-degree: 13%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 12%
    - [Fluxo de trabalho de implementação](implementation-workflow.md)
    - [Headless](headless.md)
    - [Instalar](install-configure.md)
-   - [Configurações](settings.md)
+   - [Configurações ](settings.md)
    - [Ambiente de preparo](staging-environment.md)
    - [Integração do Page Builder](page-builder.md)
 - [!DNL Product Recommendations] Administrador {#admin}

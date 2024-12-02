@@ -1,6 +1,6 @@
 ---
-title: "Introdução a  [!DNL Store Fulfillment]"
-description: "Saiba como o  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] oferece suporte para comprar online, buscar na loja (BOPIS) para clientes. Use o dispositivo móvel Store Assist para simplificar o atendimento do BOPIS e o processamento de pedidos para associados da loja e clientes da Commerce."
+title: Introdução a  [!DNL Store Fulfillment]
+description: Saiba como o  [!DNL Store Fulfillment for Adobe Commerce by Walmart Commerce Technologies] oferece suporte para comprar online, retirar na loja (BOPIS) para clientes. Use o dispositivo móvel Store Assist para simplificar o atendimento BOPIS e o processamento de pedidos para associados da loja e clientes da Commerce.
 role: Leader, Admin, Developer, User
 level: Intermediate
 exl-id: d2f90af8-3eba-499d-84de-4b70ecc7166c

@@ -1,5 +1,5 @@
 ---
-title: '[!DNL Live Search] Práticas Recomendadas'
+title: Práticas recomendadas do [!DNL Live Search]
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034

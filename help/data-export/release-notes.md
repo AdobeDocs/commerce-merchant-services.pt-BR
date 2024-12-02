@@ -1,5 +1,5 @@
 ---
-title: '[!DNL SaaS Data Export Extension] Notas de Versão'
+title: Notas de versão do [!DNL SaaS Data Export Extension]
 description: As informações da versão mais recente do  [!DNL Data Export Extension] para Adobe Commerce.
 feature: Services, Release Notes
 recommendations: noCatalog

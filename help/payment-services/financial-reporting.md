@@ -1,6 +1,6 @@
 ---
 title: Relatórios financeiros
-description: "[!DNL Payment Services] oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja."
+description: A [!DNL Payment Services] oferece relatórios abrangentes para que você possa ter uma visão clara dos pedidos e pagamentos da loja.
 role: User
 feature: Payments, Checkout
 level: Intermediate
