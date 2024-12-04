@@ -3,9 +3,9 @@ title: Práticas recomendadas do [!DNL Live Search]
 description: Conheça as práticas recomendadas para implementar o [!DNL Live Search] em sua loja.
 role: Admin, Developer
 exl-id: 69b2c2a6-c8a9-4640-8d2b-08fcd7a96034
-source-git-commit: 834935abc55e21863c83e82dae8ec79e70e67220
+source-git-commit: ba2b798f2e7d5716be0d1686359ac8382f6cf8e4
 workflow-type: tm+mt
-source-wordcount: '2359'
+source-wordcount: '2426'
 ht-degree: 0%
 
 ---
@@ -106,6 +106,14 @@ Saiba como [gerenciar redirecionamentos de pesquisa](https://experienceleague.ad
 ## Melhorar relevância dos resultados da pesquisa
 
 Esta seção discute como melhorar a relevância dos resultados da pesquisa implementando regras de pesquisa eficazes e usando metadados de produto para garantir que atributos precisos e detalhados sejam pesquisáveis.
+
+### Imagens
+
+Certifique-se de que os produtos secundários dos produtos configuráveis tenham imagens com as funções corretas. Ter produtos principais ou secundários pode fazer com que o resultado da pesquisa não tenha imagens.
+
+>[!NOTE]
+>
+>As imagens nos resultados da pesquisa podem ser diferentes, dependendo do termo de pesquisa. Se o termo de pesquisa determinar que um produto secundário é mais relevante, as imagens do produto secundário serão usadas em vez das imagens do produto principal.
 
 ### Pesquisar regras
 
