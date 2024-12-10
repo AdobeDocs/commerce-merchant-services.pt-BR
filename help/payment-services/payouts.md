@@ -5,9 +5,9 @@ role: User
 level: Intermediate
 exl-id: f3f99474-cd28-4c8f-b0ea-dca8e014b108
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 9ccf4707ae46d2df52a5510c774688fe6da1d951
 workflow-type: tm+mt
-source-wordcount: '1301'
+source-wordcount: '1303'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ A visualização de relatório de Pagamentos mostra a maioria das colunas de inf
 
 1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]** > _[!UICONTROL Payouts]_>**[!UICONTROL View Report]**.
 1. [Personalize o período do intervalo de datas para suas transações](#customize-transactions-timeframe).
-1. Clique no ícone _Download_ (![](assets/icon-download.png){width="20" zoomable="yes"}).
+1. Clique no ícone _Download_ (![Ícone de download](assets/icon-download.png){width="20" zoomable="yes"}).
 
 Suas transações de pagamento são baixadas em um formato .csv.
 
