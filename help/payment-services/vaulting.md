@@ -3,38 +3,71 @@ title: Compartimentalização do cartão de crédito
 description: Os compradores podem guardar (salvar) os detalhes do cartão de crédito para compras futuras.
 exl-id: b4060307-ffcd-41cb-9b9d-a2fef02f23bd
 feature: Payments, Checkout
-source-git-commit: 37380063242b6d904910be731b8e58471625e9cb
+source-git-commit: 71e3dd6923d767d8149babdb8c0b3b18d6c452c2
 workflow-type: tm+mt
-source-wordcount: '292'
+source-wordcount: '482'
 ht-degree: 0%
 
 ---
 
 # Compartimentalização do cartão de crédito
 
-Converta clientes ocasionais em compradores fiéis com cofre de cartão de crédito. Os compradores podem salvar — ou &quot;guardar&quot; — suas credenciais de cartão de crédito durante o checkout para uso em uma compra posterior para a mesma, ou outra, loja na mesma conta de comerciante.
-
-![Guarde seu cartão de crédito para uso posterior](assets/save-card-for-later.png){width="400" zoomable="yes"}
-
-Os compradores usam o token armazenado para concluir um check-out futuro com as informações de cartão de crédito salvas.
-
-![Usar credenciais armazenadas para compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
-
-Eles também podem facilmente excluir seus cartões de crédito com cofre de [Métodos de Pagamento Armazenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) em sua Minha Conta.
-
-![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
-
->[!WARNING]
->
->Atualmente, o PayPal pode armazenar no máximo cinco cartões com cofre.
+Converta compradores únicos em clientes fiéis com cofre de cartão de crédito. Os clientes conectados podem salvar — ou &quot;salvar&quot; — suas credenciais de cartão de crédito para uso em uma compra posterior para a mesma, ou outra, loja na mesma conta de comerciante.
 
 ## Ativar compartimentação
 
-Você pode habilitar a compartimentalização de cartão de crédito para clientes _e_ comerciantes no Administrador para suas lojas em [!DNL Payment Services] [Configurações](settings.md#card-vaulting).
+Os comerciantes podem habilitar a cofre de cartão de crédito para suas lojas nas [!DNL Payment Services] [Configurações](settings.md#card-vaulting).
+
+1. Na barra lateral _Admin_, vá para **[!UICONTROL Sales]** > **[!UICONTROL Payment Services]**.
+
+1. Clique em **[!UICONTROL Settings]**.
+
+1. Alternar o seletor **[!UICONTROL Vault enabled]**. Consulte [Habilitar [!DNL Payment Services]](settings.md#enable-payment-services) para obter mais informações.
+
+## Compartimentalização sem compra
+
+Os clientes conectados podem colocar no cofre um método de pagamento no painel **Minha Conta** ao:
+
+1. Fazendo login em sua **Minha conta** na loja.
+
+1. Navegando até **[!UICONTROL Stored Payment Methods]** na navegação à esquerda para ver todos os métodos de pagamento armazenados.
+
+   Consulte [Métodos de pagamento armazenados](https://experienceleague.adobe.com/en/docs/commerce-admin/stores-sales/payments/stored-payment-methods) para obter mais informações.
+
+1. O cliente clica em **[!UICONTROL Add New Card]** para armazenar um novo cartão.
+
+   ![Adicionar novo cartão](assets/add-new-card.png){width="400" zoomable="yes"}
+
+   O cliente deve fornecer todos os detalhes necessários, como informações de cartão e faturamento, para compartimentar o método de pagamento.
+Todos os métodos de pagamento com cofre usam o endereço de cobrança definido durante o cofre do cartão, que está na conta do PayPal do comprador. O cliente pode ver um endereço de faturamento diferente do exibido no Commerce.
+
+1. Clique em **[!UICONTROL Save New Card]**
+
+   ![Métodos de pagamento armazenados em minha conta](assets/stored-payment-methods.png){width="400" zoomable="yes"}
+
+Os cartões armazenados são elegíveis para uso ao fazer um pedido:
+
+![Usar credenciais armazenadas para compra futura](assets/use-stored-card.png){width="400" zoomable="yes"}
+
+### Excluir um método de pagamento armazenado
+
+Os clientes podem excluir facilmente os cartões de crédito com cofre dos **Métodos de Pagamento Armazenados** na **Minha Conta** clicando em **Excluir** de um cartão específico.
+
+## Compartimentalização de um método de pagamento durante a finalização da compra
+
+Os clientes conectados podem transferir um cartão de crédito durante a finalização da compra para usar em compras posteriores na loja atual ou em outras lojas na mesma conta de comerciante:
+
+![Guarde seu cartão de crédito para uso posterior](assets/save-card-for-later.png){width="400" zoomable="yes"}
+
+O Commerce armazena um token que ajuda os clientes a concluírem check-outs futuros buscando as informações de cartão de crédito salvas. Copiar um cartão da conta do cliente ou durante o check-out resultará em tokens de pagamento diferentes.
+
+>[!WARNING]
+>
+> Atualmente, o PayPal pode armazenar no máximo cinco cartões com cofre.
 
 ## Usar a compartimentalização no Admin
 
-Se um cliente tiver um cartão de crédito com cofre anterior, um comerciante poderá criar uma ordem subsequente para esse cliente no Administrador usando seus métodos de pagamento com cofre.
+Se um cliente tiver um cartão de crédito com cofre anterior, um comerciante poderá criar uma ordem subsequente para esse cliente no Administrador usando qualquer um desses métodos de pagamento com cofre.
 
 Você só poderá usar cartões com cofre no Administrador se o cliente tiver uma conta existente e um token válido armazenado no sistema a partir de um pagamento concluído anteriormente.
 
