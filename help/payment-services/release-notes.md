@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Payment Services]
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: f48a177f53c88d1794683d08976ca6c88031fb93
+source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
 workflow-type: tm+mt
-source-wordcount: '3174'
+source-wordcount: '3311'
 ht-degree: 0%
 
 ---
@@ -91,15 +91,33 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 
 +++
 
+## v2.10.0
+
+_13 de dezembro de 2024_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg)<!-- PAY-5702 --> O [!DNL Payment Services] agora oferece suporte aos endpoints do GraphQL para compartimentação sem compra, permitindo que os clientes salvem seus métodos de pagamento sem concluir uma transação.
+
+![Novo](../assets/fix.svg)<!-- PAY-5789 --> O [!DNL Payment Services] agora oferece suporte à [autenticação Segura 3D com o Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), aprimorando a segurança para comerciantes e clientes durante transações de pagamento.
+
+![Correção](../assets/fix.svg)<!-- PAY-5703 --> A [!DNL Payment Services] adiciona a capacidade de [clientes salvarem cartões diretamente em sua **Minha Conta**](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), melhorando a conveniência e simplificando check-outs futuros. `Vault without purchase functionality might not be 100% compatible with Adobe Commerce 2.4.4 due to a known issue with` [`GraphQL authorization mechanisms`](https://developer.adobe.com/commerce/webapi/graphql/usage/authorization-tokens/).
+
+![Correção](../assets/fix.svg)<!-- PAY-5762 --> corrigiu um problema onde os códigos de cupom não eram aplicados na página de revisão do pedido quando o pedido era iniciado a partir da página de detalhes do produto (PDP).
+
+![Correção](../assets/fix.svg)<!-- PAY-5792 --> [!DNL Payment Services] agora exibe descrições e endereços de cobrança para [cartões com cofre na página de check-out](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/payments-checkout/vaulting), dando aos clientes mais visibilidade sobre seus métodos de pagamento salvos.
+
+![Correção](../assets/fix.svg)<!-- PAY-5793 --> O [!DNL Payment Services] permite que os comerciantes armazenem o endereço de cobrança de cartões com cofre diretamente da página de check-out, garantindo informações de pagamento precisas e completas.
+
 ## v2.9.0
 
 _7 de novembro de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] agora oferece suporte a uma **URL do SDK atualizada para o Apple Pay**, melhorando a integração para comerciantes que usam o Apple Pay. Esse recurso é compatível com o macOS 14 e versões posteriores, os dispositivos que executam versões anteriores do macOS não exibirão essa funcionalidade.
+![Novo](../assets/new.svg)<!-- PAY-5629 --> [!DNL Payment Services] agora oferece suporte a uma **URL atualizada do SDK para Apple Pay**, melhorando a integração para comerciantes que usam o Apple Pay. Esse recurso é compatível com o macOS 14 e versões posteriores, os dispositivos que executam versões anteriores do macOS não exibirão essa funcionalidade.
 
-![Novo](../assets/new.svg)<!-- PAY-5630 --> Atualizou as páginas **Check-out**, **Produto**, **Carrinho** e **Minicarrinho** para oferecer suporte à URL do SDK **atualizada para o Apple Pay**, aprimorando a experiência do usuário para comerciantes que oferecem o Apple Pay como uma opção de pagamento.
+![Novo](../assets/new.svg)<!-- PAY-5630 --> Atualizou as páginas **Check-out**, **Produto**, **Carrinho** e **Minicarrinho** para oferecer suporte à **URL atualizada do SDK para Apple Pay**, aprimorando a experiência do usuário para comerciantes que oferecem o Apple Pay como uma opção de pagamento.
 
 ![Novo](../assets/new.svg)<!-- PAY-5635 --> Estimativas de envio aprimoradas **com base no endereço de pagamento do Apple**, permitindo que os clientes vejam os custos de envio precisos durante o check-out.
 
@@ -115,7 +133,7 @@ _13 de setembro de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"}
 
-![Correção](../assets/fix.svg)<!-- PAY-5644 --> Corrigiu um problema com o cache de parâmetros de SDK ao usar vários escopos em [!DNL Payment Services]. A configuração do SDK agora é armazenada em cache separadamente para cada escopo, em vez de ser armazenada em uma única chave. Isso garante que o cache de cada escopo seja invalidado independentemente, melhorando a confiabilidade ao gerenciar vários escopos.
+![Correção](../assets/fix.svg)<!-- PAY-5644 --> Corrigiu um problema com o cache de parâmetros SDK ao usar vários escopos em [!DNL Payment Services]. A configuração do SDK agora é armazenada em cache separadamente para cada escopo, em vez de ser armazenada em uma única chave. Isso garante que o cache de cada escopo seja invalidado independentemente, melhorando a confiabilidade ao gerenciar vários escopos.
 
 ## v2.8.0
 
