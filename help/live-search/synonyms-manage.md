@@ -2,9 +2,9 @@
 title: Gerenciar sinônimos
 description: Saiba como gerenciar sinônimos [!DNL Live Search]  existentes.
 exl-id: 9f910b3c-ea28-4a50-9d3f-24b4812c0e75
-source-git-commit: bffbede99865e9085f60392e474065a454446370
+source-git-commit: b31d2f566dfd5c765c3d12bd2659c89afe7f91e0
 workflow-type: tm+mt
-source-wordcount: '224'
+source-wordcount: '221'
 ht-degree: 0%
 
 ---
@@ -32,8 +32,6 @@ Para facilitar a localização de um sinônimo, você pode filtrar a lista por t
 1. Clique em **Editar**.
 A palavra-chave é o primeiro termo na lista e cada termo é separado por vírgula. A palavra-chave e os termos de expansão podem ser atualizados, mas o tipo do sinônimo não pode ser alterado.
 1. Clique no item que deseja editar. Em seguida, atualize o texto conforme necessário.
-
-   ![editar sinônimo bidirecional](assets/synonym-two-way-edit.png)
 
 1. Quando terminar, clique em **Salvar**.
 
