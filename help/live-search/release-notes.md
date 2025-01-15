@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Live Search]
 description: As informações da versão mais recente do  [!DNL Live Search] Adobe Commerce.
 exl-id: 2a581e43-35f5-48ce-9752-844430ccdebf
 feature: Services, Search, Release Notes
-source-git-commit: 7f536c93ab1c87bf88bc892b2a485067fa8f8110
+source-git-commit: 3cd773060e0546026cc4cb1979abaceadd3fcc2c
 workflow-type: tm+mt
-source-wordcount: '2042'
+source-wordcount: '2068'
 ht-degree: 0%
 
 ---
@@ -65,6 +65,14 @@ _31 de maio de 2024_
 _27 de outubro de 2023_
 
 ![Novo](../assets/new.svg) O widget PLP [!DNL Live Search] agora dá suporte a amostras de cores.
+
+## [!DNL Live Search] 4.2.2 {#422}
+
+_6 de janeiro de 2025_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Correção](../assets/fix.svg) Corrigido um problema que causava um erro com a consulta GraphqL `categoryList` no Adobe Commerce versão 2.4.5 e anterior.
 
 ## [!DNL Live Search] 4.2.1 {#421}
 
@@ -327,7 +335,7 @@ As instalações existentes do [!DNL Live Search] devem ser atualizadas para o [
 [!BADGE Com suporte]{type="Informativo" tooltip="Compatível"}
 
 O painel de relatórios ![Novo](../assets/new.svg)[Desempenho](performance.md) fornece informações sobre os termos de pesquisa que os compradores usam.
-O ![Novo](../assets/new.svg) [!DNL Live Search] [SDK de Eventos da Loja](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornece acesso a uma camada de dados comum com métricas e serviços de assinatura e publicação de eventos.
+![Novo](../assets/new.svg) [!DNL Live Search] [O Storefront Events SDK](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/) fornece acesso a uma camada de dados comum com métricas e serviços de assinatura e publicação de eventos.
 ![Correção](../assets/fix.svg) [[!DNL Storefront popover]](storefront-popover.md) tem uma nova classe `active` para o contêiner `.search-autocomplete` que controla a visibilidade.
 ![Correção](../assets/fix.svg) Na loja, o link de rodapé [Termos de Pesquisa](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search-terms) foi removido e seu cache foi desabilitado para instalações de [!DNL Live Search].
 ![Bug](../assets/bug.svg) O Patch para o adaptador de Pesquisa manipula produtos duplicados.
