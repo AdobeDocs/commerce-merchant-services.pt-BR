@@ -4,9 +4,9 @@ description: Saiba como instalar, atualizar e desinstalar a extensão  [!DNL Dat
 exl-id: e78e8ab0-8757-4ab6-8ee1-d2e137fe6ced
 role: Admin, Developer
 feature: Install
-source-git-commit: 962452b7e3fdfecabe05f5af3d16afd8d24f2740
+source-git-commit: ae8651e3c3e11d1ed4c39f4d989b816a74d2437b
 workflow-type: tm+mt
-source-wordcount: '395'
+source-wordcount: '448'
 ht-degree: 0%
 
 ---
@@ -44,6 +44,8 @@ A extensão [!DNL Data Connection] está disponível no [Adobe Marketplace](http
 1. (Opcional) Para incluir dados do [!DNL Live Search], que incluem [eventos de pesquisa](events.md#search-events), instale a extensão [[!DNL Live Search]](../live-search/install.md).
 
 1. (Opcional) Para incluir dados B2B, que compreende [eventos de requisição](events.md#b2b-events), instale a [extensão B2B](#install-the-b2b-extension).
+
+1. (Opcional) Se você for um comerciante do plano de saúde, instale a extensão [Data Services HIPAA](#install-the-data-services-hipaa-extension) para que seus dados de back office do [!DNL Commerce] estejam prontos para HIPAA.
 
 ### Instale o Adobe I/O Events e configure o módulo do conector do cliente
 
@@ -109,6 +111,16 @@ Baixe a extensão `magento/experience-platform-connector-b2b` executando o segui
 
 ```bash
 composer require magento/experience-platform-connector-b2b
+```
+
+### Instalar a extensão HIPAA do Data Services
+
+Para comerciantes da área de saúde, instale a seguinte extensão para garantir que os dados de eventos de back office estejam prontos para HIPAA.
+
+Baixe a extensão `magento/module-data-services-hipaa` executando o seguinte na linha de comando:
+
+```bash
+composer require magento/module-data-services-hipaa
 ```
 
 ## Atualizar a extensão [!DNL Data Connection] {#update}

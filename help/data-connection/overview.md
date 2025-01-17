@@ -3,9 +3,9 @@ title: Visão geral do Guia
 description: Saiba como integrar dados do Adobe Commerce com o Adobe Experience Platform usando a extensão  [!DNL Data Connection] .
 exl-id: a8362e71-e21c-4b1d-8e3f-336e748e1018
 recommendations: noCatalog
-source-git-commit: b5727c90737ecfd237dd143801152f25600c3f97
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1752'
+source-wordcount: '1762'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 >
 >O conector Experience Platform foi renomeado para [!DNL Data Connection].
 
-A extensão [!DNL Data Connection] conecta a instância da Web do Adobe Commerce à Adobe Experience Platform e ao Edge Network. Para desenvolvedores de aplicativos móveis, você usa o SDK móvel da Adobe Experience Platform com o Commerce para capturar e enviar dados do Commerce para o Experience Platform. [Saiba mais](./mobile-sdk-epc.md).
+A extensão [!DNL Data Connection] conecta a instância da Web do Adobe Commerce à Adobe Experience Platform e ao Edge Network. Para desenvolvedores de aplicativos móveis, você usa o Adobe Experience Platform Mobile SDK com Commerce para capturar e enviar dados do Commerce para o Experience Platform. [Saiba mais](./mobile-sdk-epc.md).
 
 Sua loja Commerce contém uma grande quantidade de dados. As informações sobre como seus compradores navegam, visualizam e compram os produtos em seu site podem revelar oportunidades para criar uma experiência de compra mais personalizada. Embora esses dados possam informar recursos nativos do Commerce, como regras de preço do carrinho e blocos dinâmicos, os dados permanecem em silos na instância do Commerce.
 
@@ -49,23 +49,23 @@ Após configurar a conexão entre o Commerce e o Experience Platform e o Experie
 
 O compartilhamento de dados entre esses dois sistemas requer a compreensão de vários conceitos.
 
-* **Dados** - Os dados compartilhados com o Experience Platform são os dados coletados dos eventos do navegador na sua vitrine, dos eventos do back office no servidor e dos dados de registro do perfil. Os eventos de vitrine são capturados das interações dos compradores no site e incluem eventos como [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), e assim por diante. Consulte [eventos de vitrine](events.md#storefront-events) para obter a lista completa de eventos de vitrine. Os eventos do lado do servidor ou de back office incluem informações de [status do pedido](events-backoffice.md#order-status), como [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) e assim por diante. Consulte [eventos de back office](events-backoffice.md) para obter a lista completa de eventos de back office. Os dados de registro do perfil contêm informações quando um novo perfil é criado, atualizado ou excluído. Consulte [dados de registro de perfil](events-profilerecord.md) para saber mais.
+- **Dados** - Os dados compartilhados com o Experience Platform são os dados coletados dos eventos do navegador na sua vitrine, dos eventos do back office no servidor e dos dados de registro do perfil. Os eventos de vitrine são capturados das interações dos compradores no site e incluem eventos como [`addToCart`](events.md#addtocart), [`pageView`](events.md#pageview), [`createAccount`](events.md#createaccount), [`editAccount`](events.md#editaccount), [`startCheckout`](events.md#startcheckout), [`completeCheckout`](events.md#completecheckout), [`signIn`](events.md#signin), [`signOut`](events.md#signout), e assim por diante. Consulte [eventos de vitrine](events.md#storefront-events) para obter a lista completa de eventos de vitrine. Os eventos do lado do servidor ou de back office incluem informações de [status do pedido](events-backoffice.md#order-status), como [`orderPlaced`](events-backoffice.md#orderplaced), [`orderReturned`](events-backoffice.md#orderitemreturncompleted), [`orderShipped`](events-backoffice.md#ordershipmentcompleted), [`orderCancelled`](events-backoffice.md#ordercancelled) e assim por diante. Consulte [eventos de back office](events-backoffice.md) para obter a lista completa de eventos de back office. Os dados de registro do perfil contêm informações quando um novo perfil é criado, atualizado ou excluído. Consulte [dados de registro de perfil](events-profilerecord.md) para saber mais.
 
-* **Experience Platform e Edge Network** - O data warehouse da maioria dos produtos Adobe DX. Os dados enviados para o Experience Platform são então propagados para os produtos Adobe DX através do Edge Network Experience Platform. Por exemplo, você pode iniciar o Journey Optimizer, recuperar seus dados de evento específicos do Commerce da borda e criar um email de carrinho abandonado no Journey Optimizer. O Journey Optimizer pode enviar esse email se houver carrinhos abandonados na loja do Commerce. Saiba mais sobre o [Experience Platform e o Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
+- **Experience Platform e Edge Network** - O data warehouse da maioria dos produtos Adobe DX. Os dados enviados para o Experience Platform são propagados para produtos Adobe DX através do Edge Network Experience Platform. Por exemplo, você pode iniciar o Journey Optimizer, recuperar seus dados de evento específicos do Commerce da borda e criar um email de carrinho abandonado no Journey Optimizer. O Journey Optimizer pode enviar esse email se houver carrinhos abandonados na loja do Commerce. Saiba mais sobre o [Experience Platform e o Edge Network](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html).
 
-* **Esquema** - O esquema é o que descreve a estrutura dos dados que estão sendo enviados. Antes que o Experience Platform possa assimilar seus dados do Commerce, você deve compor um esquema para descrever a estrutura dos dados e fornecer restrições ao tipo de dados que podem estar contidos em cada campo. Os esquemas consistem em uma classe base e zero ou mais grupos de campos de esquema. O esquema usa a estrutura XDM, que todos os produtos Adobe DX podem ler. Assim, ao enviar seus dados para o Experience Platform, você pode ter certeza de que eles serão compreendidos em todos os produtos DX. Saiba mais sobre [esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+- **Esquema** - O esquema descreve a estrutura dos dados que estão sendo enviados. Antes que o Experience Platform possa assimilar seus dados do Commerce, você deve compor um esquema para descrever a estrutura dos dados e fornecer restrições para o tipo de dados que pode estar contido em cada campo. Os esquemas consistem em uma classe base e zero ou mais grupos de campos de esquema. O esquema usa a estrutura XDM, que todos os produtos Adobe DX podem ler. O esquema garante que os dados enviados para o Experience Platform sejam compreendidos em todos os produtos DX. Saiba mais sobre [esquemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
-* **Conjunto de dados** - Uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Todos os dados assimilados com sucesso na Adobe Experience Platform estão contidos em conjuntos de dados. Saiba mais sobre [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
+- **Conjunto de dados** - Uma construção de armazenamento e gerenciamento para uma coleção de dados, geralmente uma tabela que contém um esquema (colunas) e campos (linhas). Os conjuntos de dados também contêm metadados que descrevem vários aspectos dos dados armazenados. Todos os dados assimilados com sucesso na Adobe Experience Platform estão contidos em conjuntos de dados. Saiba mais sobre [conjuntos de dados](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html).
 
-* **Sequência de dados** - ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico em sua instância específica do Adobe Commerce. Ao criar esse fluxo de dados, especifique o esquema XDM criado acima. Saiba mais sobre [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+- **Sequência de dados** - ID que permite que os dados fluam do Adobe Experience Platform para outros produtos Adobe DX. Essa ID deve ser associada a um site específico em sua instância específica do Adobe Commerce. Ao criar esse fluxo de dados, especifique o esquema XDM criado acima. Saiba mais sobre [datastreams](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
 
 ## Arquitetura com suporte
 
 A extensão [!DNL Data Connection] está disponível nas seguintes arquiteturas:
 
-* PHP/Luma
-* [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
-* [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
+- PHP/Luma
+- [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/integrations/adobe-commerce/aep/)
+- [AEM](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/content/content-and-commerce/integrations/aep.html)
 
 >[!BEGINSHADEBOX]
 
@@ -73,10 +73,10 @@ A extensão [!DNL Data Connection] está disponível nas seguintes arquiteturas:
 
 Para usar a extensão [!DNL Data Connection], você deve ter o seguinte:
 
-* Adobe Commerce 2.4.4 ou mais recente
-* Adobe ID e ID da organização
-* [CADL (Camada de Dados do Cliente)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) do Adobe, que é necessária para coletar dados do evento da loja
-* Qualificações para outros produtos Adobe DX.
+- Adobe Commerce 2.4.4 ou mais recente
+- Adobe ID e ID da organização
+- [CADL (Camada de Dados do Cliente)](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/client-data-layer/overview.html) do Adobe, que é necessária para coletar dados do evento da loja
+- Qualificações para outros produtos Adobe DX.
 
 >[!ENDSHADEBOX]
 
@@ -98,7 +98,11 @@ O restante deste guia o guiará por todas essas etapas com mais detalhes para qu
 
 >[!NOTE]
 >
->Para desenvolvedores móveis, saiba como [integrar](./mobile-sdk-epc.md) o SDK do Adobe Experience Platform Mobile ao Commerce.
+>Para desenvolvedores móveis, saiba como [integrar](./mobile-sdk-epc.md) o Adobe Experience Platform Mobile SDK ao Commerce.
+
+## Disponibilidade para HIPAA
+
+A extensão [!DNL Data Connection] permite que você compartilhe dados de back office [!DNL Commerce] com o Experience Platform e mantenha a conformidade com a HIPAA. [Saiba mais](hipaa-readiness.md).
 
 ## Público-alvo
 
@@ -108,5 +112,5 @@ Este guia foi projetado para o comerciante do Adobe Commerce que deseja enriquec
 
 Se você precisar de informações ou tiver dúvidas que não são abordadas neste guia, use os seguintes recursos:
 
-* [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
-* [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.
+- [Central de ajuda](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/overview.html){target="_blank"}
+- [Tíquetes de suporte](https://experienceleague.adobe.com/docs/commerce-knowledge-base/kb/help-center-guide/magento-help-center-user-guide.html#submit-ticket){target="_blank"}—Envie um tíquete para receber ajuda adicional.

@@ -3,7 +3,7 @@ title: Introdução ao  [!DNL Live Search]
 description: Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] na Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 89dd5ae305563e5f6bbcdb80764fd9eeb177b491
+source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
 workflow-type: tm+mt
 source-wordcount: '3093'
 ht-degree: 0%
@@ -178,7 +178,7 @@ A chave de API do Adobe Commerce e sua chave privada associada são necessárias
 
 Saiba como configurar suas chaves de API no artigo [Commerce Services Connector](../landing/saas.md).
 
-## 3. Sincronizar os dados do catálogo {#synchronize-catalog-data}
+## 3. Sincronizar os dados do catálogo
 
 [!DNL Live Search] move dados de catálogo para a infraestrutura SaaS do Adobe. Os dados são indexados e os resultados da pesquisa são enviados desse índice diretamente para a loja. Dependendo do tamanho e da complexidade, a indexação pode levar de 30 minutos a algumas horas.
 
@@ -214,7 +214,7 @@ Você também pode executar comandos de sincronização e solucionar problemas d
 
 Após a sincronização inicial, pode levar até 15 minutos para que atualizações de produtos incrementais sejam disponibilizadas para pesquisa na loja. Para saber mais, consulte [Streaming de Atualizações de Produto](indexing.md) na documentação de Indexação.
 
-## 4. Verifique se os dados foram exportados {#verify-export}
+## 4. Verifique se os dados foram exportados
 
 Para verificar se os dados do catálogo foram exportados do Adobe Commerce e sincronizados com o [!DNL Live Search], você tem algumas opções:
 
@@ -265,7 +265,7 @@ Quando você alterar essa configuração, a mensagem `Page cache is invalidated`
 
 Os produtos retornados em [!DNL Live Search] devem ser atribuídos a uma [categoria](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/categories/categories). Na Luma, por exemplo, os produtos são colocados em categorias como &quot;Homens&quot;, &quot;Mulheres&quot; e &quot;Engrenagens&quot;. As subcategorias também são configuradas para &quot;Topos&quot;, &quot;Partes inferiores&quot; e &quot;Inspeções&quot;. Essas atribuições de categoria melhoram a granularidade ao filtrar.
 
-## 6. Testar a conexão {#test-connection}
+## 6. Testar a conexão
 
 Com seus dados de catálogo agora em SaaS, teste para garantir que os dados do produto sejam retornados nas seguintes situações:
 
@@ -299,7 +299,7 @@ Nesse cenário, você pode personalizar o JavaScript de acordo com suas necessid
 - [repositório de widgets PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Repo de barra de pesquisa](https://github.com/adobe/storefront-search-as-you-type)
 
-## Atualizando [!DNL Live Search] {#update}
+## Atualizando [!DNL Live Search]
 
 Antes de atualizar o Live Search, execute o seguinte na linha de comando para verificar a versão do Live Search instalada:
 
@@ -345,11 +345,11 @@ Para atualizar para uma versão principal, como 3.1.1 para 4.0.0, edite o arquiv
    composer update magento/live-search --with-dependencies
    ```
 
-## Desinstalando [!DNL Live Search] {#uninstall}
+## Desinstalando [!DNL Live Search]
 
 Para desinstalar o [!DNL Live Search], consulte [Desinstalar módulos](https://experienceleague.adobe.com/en/docs/commerce-operations/installation-guide/tutorials/uninstall-modules).
 
-## [!DNL Live Search] pacotes {#packages}
+## [!DNL Live Search] pacotes
 
 A extensão [!DNL Live Search] consiste nos seguintes pacotes:
 
@@ -359,7 +359,7 @@ A extensão [!DNL Live Search] consiste nos seguintes pacotes:
 | `module-live-search-adapter` | Encaminha solicitações de pesquisa da loja para o serviço [!DNL Live Search] e renderiza os resultados na loja. <br />- Navegação de categoria - Encaminha solicitações da [navegação superior](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/navigation/navigation-top) da vitrine para o serviço de pesquisa.<br />- Pesquisa global - Encaminha solicitações da caixa [pesquisa rápida](https://experienceleague.adobe.com/en/docs/commerce-admin/catalog/catalog/search/search) no canto superior direito da loja para o serviço [!DNL Live Search]. |
 | `module-live-search-storefront-popover` | Um popover &quot;pesquisar ao digitar&quot; substitui a pesquisa rápida padrão e retorna dados e miniaturas dos principais resultados da pesquisa. |
 
-## [!DNL Live Search] dependências {#dependencies}
+## [!DNL Live Search] dependências
 
 O metapackage [!DNL Composer] para instalar a extensão [!DNL Live Search] inclui as seguintes dependências de módulo.
 

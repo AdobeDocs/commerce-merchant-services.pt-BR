@@ -1,22 +1,26 @@
 ---
 title: Coletar dados
-description: Saiba como os eventos coletam dados para recomendações de produto.
+description: Saiba como os eventos coletam dados para  [!DNL Product Recommendations].
 exl-id: b827d88c-327f-4986-8239-8f1921d8383c
 feature: Services, Recommendations, Eventing
-source-git-commit: cd1ce643d7c1ffeec8e9853cfc6ffc5519ce8f7a
+source-git-commit: eb98389cfdd7a0492a4437e9de9412f2d2e5401c
 workflow-type: tm+mt
-source-wordcount: '1316'
+source-wordcount: '1360'
 ht-degree: 0%
 
 ---
 
 # Coletar dados
 
-Quando você instala e configura recursos do Adobe Commerce baseados em SaaS, como o [Product Recommendations](install-configure.md) ou o [Live Search](../live-search/install.md), os módulos implantam a coleção de dados comportamentais na loja. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e fornece recomendações de produto e resultados do [Live Search](../live-search/overview.md). Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
+Quando você instala e configura recursos do Adobe Commerce baseados em SaaS, como [[!DNL Product Recommendations]](install-configure.md) ou [[!DNL Live Search]](../live-search/install.md), os módulos implantam a coleção de dados comportamentais na loja. Esse mecanismo coleta dados comportamentais anônimos de seus compradores e habilita o [!DNL Product Recommendations]. Por exemplo, o evento `view` é usado para calcular o tipo de recomendação `Viewed this, viewed that`, e o evento `place-order` é usado para calcular o tipo de recomendação `Bought this, bought that`.
 
 >[!NOTE]
 >
->A coleta de dados para os fins das recomendações de produto não inclui informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Saiba [mais](https://www.adobe.com/privacy/experience-cloud.html).
+>A coleta de dados para os fins de [!DNL Product Recommendations] não inclui informações de identificação pessoal (PII). Todos os identificadores de usuários, como IDs de cookies e endereços IP, são estritamente anônimos. Saiba [mais](https://www.adobe.com/privacy/experience-cloud.html).
+
+## Clientes da área de saúde
+
+Se você for um cliente da área de saúde e tiver instalado a [extensão HIPAA do Data Services](../data-connection/hipaa-readiness.md#installation), que faz parte da [conexão de dados](../data-connection/overview.md), os dados do evento de vitrine usados por [!DNL Product Recommendations] não serão mais capturados. Isso ocorre porque os dados do evento da loja são gerados no lado do cliente. Para continuar capturando e enviando dados do evento da loja, habilite novamente a coleção de eventos para [!DNL Product Recommendations]. Consulte [configuração geral](https://experienceleague.adobe.com/en/docs/commerce-admin/config/general/general.html#data-services) para saber mais.
 
 ## Tipos de dados e eventos
 
@@ -75,7 +79,7 @@ No caso de coleta de dados de entrada insuficiente, os seguintes tipos de recome
 
 ### Eventos
 
-O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, no entanto, há um subconjunto de eventos específicos do Recommendations do produto. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e potencializam as métricas usadas para ajudar você a analisar o desempenho de suas recomendações.
+O [Coletor de Eventos da Adobe Commerce Storefront](https://developer.adobe.com/commerce/services/shared-services/storefront-events/collector/#quick-start) lista todos os eventos implantados na sua loja. Nessa lista, há um subconjunto de eventos específicos para [!DNL Product Recommendations]. Esses eventos coletam dados quando os compradores interagem com as unidades de recomendação na loja e alimentam as métricas para analisar o desempenho de suas recomendações.
 
 | Evento | Descrição |
 | --- | --- |
