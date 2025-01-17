@@ -3,9 +3,9 @@ title: Limites e limites
 description: Saiba mais sobre os limites do  [!DNL Live Search]  para garantir que ele atenda às necessidades da sua empresa.
 role: Admin, Developer
 exl-id: ad6737f9-6ecd-4d82-89e7-d95425e4ba53
-source-git-commit: 438d6a04cb0044f9e06f8c8b53c8eec79d650170
+source-git-commit: 867d65d0ffd212061524605fd725df1eb75be9eb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '943'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,7 @@ Quando se trata de pesquisa no site, o Adobe Commerce oferece opções. Revise o
 - Há um limite rígido de 1 MB por atributo, incluindo descrição e atributos personalizados.
 - O adaptador de pesquisa não oferece suporte a atributos de produto criados com um modelo de origem personalizado e usados como facetas. Para oferecer suporte a esta funcionalidade, você deve usar o [Widget de página de listagem de produtos](plp-styling.md).
 - Não há suporte para tipos de produto personalizados.
+- Não há suporte para atributos personalizados criados programaticamente com `"is_user_defined": false`.
 - Você pode filtrar os resultados usando as condições &quot;inicia com&quot; ou &quot;contém&quot; com algumas limitações, conforme descrito [aqui](https://developer.adobe.com/commerce/services/graphql/live-search/product-search/#limitations).
 
 ## Indexação
