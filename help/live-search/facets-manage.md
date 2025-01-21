@@ -2,7 +2,7 @@
 title: Gerenciar facetas
 description: Saiba como gerenciar  [!DNL Live Search]  facetas existentes.
 exl-id: 1d51a36a-20d6-46b6-b379-11e46c8824a0
-source-git-commit: bce69f952e70e2e8dcb892357dea41e18f61e5f6
+source-git-commit: e7befb65ef465e98ff35db3046a438835cfd157f
 workflow-type: tm+mt
 source-wordcount: '473'
 ht-degree: 0%
@@ -50,16 +50,20 @@ Consulte [Configurações](settings.md) para configurar intervalos e agrupamento
 
 1. Na coluna **Valor Máx.**, defina o número máximo (de 0 a 10) de valores de filtro de facetas a serem mostrados na vitrine.
 1. Quando terminar, clique em **Salvar**.
-Suas alterações não aparecerão na loja até que sejam publicadas.
+
+   Suas alterações não aparecerão na loja até que sejam publicadas.
 
 ## Fixar/desfixar faceta
 
 O pin altera a cor quando clicado e é usado para mover a faceta para a seção *Facetas Fixadas* ou *Facetas Dinâmicas*.
 
 1. Para fixar uma faceta na parte superior da lista *Filtros*, localize a faceta na lista *Facetas Dinâmicas* e clique no pino cinza (![Seletor de pinos](assets/btn-pin-gray.png)).
-O pin fica azul e a faceta é movida para a seção *Facetas Fixadas*.
+
+   O pin fica azul e a faceta é movida para a seção *Facetas Fixadas*.
+
 1. Para desafixar uma faceta, localize-a na lista *Facetas Fixadas* e clique no pino azul (![Seletor de pinos](assets/btn-pin-blue.png)).
-O pino fica cinza e a faceta se move para a seção *Facetas Dinâmicas*.
+
+   O pino fica cinza e a faceta se move para a seção *Facetas Dinâmicas*.
 
    ![Aspectos fixados e dinâmicos](assets/facets-pinned-unpinned.png)
 
@@ -77,7 +81,8 @@ A ordem das facetas fixadas pode ser alterada movendo a linha para uma posição
 
 1. Localize a faceta na seção *Facetas Fixadas* da lista.
 1. Use o ícone **Mover** (![Mover seletor](assets/btn-move.png)) para arrastar a linha para uma nova posição na seção *Facetas Fixadas*.
-Depois que as alterações forem publicadas, as facetas reordenadas aparecerão na lista de *Filtros* da vitrine.
+
+   Depois que as alterações forem publicadas, as facetas reordenadas aparecerão na lista de *Filtros* da vitrine.
 
 ## Excluir faceta
 
