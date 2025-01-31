@@ -4,9 +4,9 @@ description: As informações da versão mais recente do  [!DNL Data Export Exte
 feature: Services, Release Notes
 recommendations: noCatalog
 exl-id: 0c7aeeda-e8a6-4740-b466-0661a6d2df07
-source-git-commit: 5379299cdd10f3a9aab41da56ed0a7b41282b085
+source-git-commit: f222d66ff3fc99c1fb234e1988a760482aadf2ca
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '869'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ As atualizações incluem:
 
 ## Versão 103.3.18
 
-![Correção](../assets/fix.svg) As atualizações de preparo das entidades de produto e categoria agora são acionadas corretamente nas atualizações de dados da Exportação de Dados.&lt;!-MDEE-963—>
+![Correção](../assets/fix.svg) As atualizações de preparo das entidades de produto e categoria agora são acionadas corretamente nas atualizações de dados da Exportação de Dados.<!--MDEE-963-->
 
 ## Versão 103.3.17
 
