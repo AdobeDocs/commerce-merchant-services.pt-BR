@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Product Recommendations]
 description: As informações da versão mais recente do  [!DNL Product Recommendations] Adobe Commerce.
 exl-id: 1758e688-d26f-45e7-818c-d4726338a6c3
 feature: Services, Recommendations, Release Notes
-source-git-commit: 0e0f67c01c49c8d8c0ac4967eda0bde8685b2980
+source-git-commit: e446eb06212609dc44d0bf64fe981c7d1489d33c
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1429'
 ht-degree: 0%
 
 ---
@@ -30,6 +30,10 @@ Consulte a documentação do desenvolvedor para [saber mais sobre o suporte ao p
 ## Atualizações do serviço hospedado
 
 Essas notas descrevem atualizações ou problemas conhecidos que foram publicados ou descobertos fora de uma versão com versão ou de melhorias no serviço hospedado.
+
+_31 de janeiro de 2025_
+
+![Novo](../assets/new.svg) Há uma nova política de retenção de dados para dados de catálogo não consultados em seu ambiente de teste. [Saiba mais](overview.md#catalog-data-retention-policy).
 
 _28 de junho de 2024_
 

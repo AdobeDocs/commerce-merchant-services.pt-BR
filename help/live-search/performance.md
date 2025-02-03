@@ -2,9 +2,9 @@
 title: Desempenho
 description: O espaço de trabalho Desempenho [!DNL Live Search] fornece informações sobre os termos de pesquisa que os compradores usam.
 exl-id: ee2053fc-98c5-4d2c-9345-4d1f9a3180fb
-source-git-commit: 4978bdb5549f5df911863a23fdfbfc9ab9ad05df
+source-git-commit: 7539c0fe9ebe4b82f42f3a7ff30b03c951980eed
 workflow-type: tm+mt
-source-wordcount: '479'
+source-wordcount: '487'
 ht-degree: 0%
 
 ---
@@ -21,6 +21,10 @@ O espaço de trabalho *Desempenho* fornece informações sobre os termos de pesq
 
 Você também pode consultar o [Painel de gerenciamento de dados](https://experienceleague.adobe.com/docs/commerce-admin/systems/data-transfer/data-dashboard.html) para obter mais dados sobre a sincronização de dados.
 
+>[!NOTE]
+>
+>O espaço de trabalho de desempenho é atualizado a cada 12 horas.
+
 ## Exibir um relatório
 
 1. Para inserir o **Intervalo de datas**, clique no calendário (![Calendário](assets/btn-calendar.png)) e siga um destes procedimentos:
@@ -30,7 +34,7 @@ Você também pode consultar o [Painel de gerenciamento de dados](https://experi
 
 >[!NOTE]
 >
->O espaço de trabalho de desempenho é atualizado a cada 12 horas.
+>O intervalo de datas não pode exceder um ano.
 
 ## Descrições dos campos
 
