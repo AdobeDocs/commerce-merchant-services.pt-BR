@@ -3,9 +3,9 @@ title: Notas de versão do [!DNL Payment Services]
 description: Revise as notas de versão para obter informações sobre todas as  [!DNL Payment Services]  versões.
 exl-id: 104aa2c7-7735-4ac2-8ed1-a03cd9911273
 feature: Payments, Release Notes
-source-git-commit: feeaed7b7130b3581a1b1f7e3bdd161ce1e7d765
+source-git-commit: 8cf48ade51157a8d2ce51333deb4d142e4a1a011
 workflow-type: tm+mt
-source-wordcount: '3311'
+source-wordcount: '3344'
 ht-degree: 0%
 
 ---
@@ -91,13 +91,23 @@ As ![Novas](../assets/new.svg)<!-- Issue PAY-2854 --> melhorias na experiência 
 
 +++
 
+## v2.10.1
+
+_5 de fevereiro de 2025_
+
+[!BADGE Com suporte]{type=Informative tooltip="Compatível"}
+
+![Novo](../assets/new.svg)<!-- PAY-5813 --> Suporte adicionado para Adobe Commerce 2.4.8 e PHP 8.4.
+
 ## v2.10.0
 
 _13 de dezembro de 2024_
 
 [!BADGE Com suporte]{type=Informative tooltip="Compatível"}
 
-![Novo](../assets/new.svg)<!-- PAY-5702 --> O [!DNL Payment Services] agora oferece suporte aos endpoints do GraphQL para compartimentação sem compra, permitindo que os clientes salvem seus métodos de pagamento sem concluir uma transação.
+![Novo](../assets/new.svg)<!-- PAY-5873 --> [!DNL Payment Services] agora dá suporte a um [[!DNL Payment Services] componente de entrega](https://experienceleague.adobe.com/developer/commerce/storefront/dropins/payment-services/) na loja [Edge Delivery Services para Adobe Commerce](https://experienceleague.adobe.com/developer/commerce/storefront/get-started/).
+
+![Novo](../assets/new.svg)<!-- PAY-5702 --> [!DNL Payment Services] agora oferece suporte a [endpoints do GraphQL para compartimentação sem compra](https://developer.adobe.com/commerce/webapi/graphql/payment-services-extension/queries/get-vault-config/), permitindo que os clientes salvem seus métodos de pagamento sem concluir uma transação.
 
 ![Novo](../assets/fix.svg)<!-- PAY-5789 --> O [!DNL Payment Services] agora oferece suporte à [autenticação Segura 3D com o Google Pay](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/payment-services/security-compliance/security#3ds), aprimorando a segurança para comerciantes e clientes durante transações de pagamento.
 
