@@ -3,9 +3,9 @@ title: Introdução ao  [!DNL Live Search]
 description: Saiba mais sobre os requisitos de sistema e as etapas de instalação do  [!DNL Live Search] na Adobe Commerce.
 exl-id: aa251bb0-d52c-4cff-bccb-76a08ae2a3b2
 role: Admin, Developer
-source-git-commit: 42ad3e05789844a0bcc6cb114a0db067f3d497db
+source-git-commit: 079998ad1390849bc8078f958140e101b95460ca
 workflow-type: tm+mt
-source-wordcount: '3093'
+source-wordcount: '3100'
 ht-degree: 0%
 
 ---
@@ -60,7 +60,7 @@ Em um nível superior, a integração do [!DNL Live Search] exige que você:
 
    >[!IMPORTANT]
    >
-   >Devido ao anúncio do fim de suporte do Elasticsearch 7 para agosto de 2023, é recomendável que todos os clientes do Adobe Commerce migrem para o mecanismo de pesquisa OpenSearch 2.x. Para obter informações sobre como migrar o mecanismo de pesquisa durante uma atualização de produto, consulte [Migrando para OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) no _Guia de Atualização_.
+   >Devido ao anúncio do fim do suporte do Elasticsearch 7 para agosto de 2023, é recomendável que todos os clientes do Adobe Commerce migrem para o mecanismo de pesquisa OpenSearch 2.x. Para obter informações sobre como migrar o mecanismo de pesquisa durante uma atualização de produto, consulte [Migrando para OpenSearch](https://experienceleague.adobe.com/en/docs/commerce-operations/upgrade-guide/prepare/opensearch-migration) no _Guia de Atualização_.
 
 1. Baixe o pacote `live-search` do [Adobe Marketplace](https://commercemarketplace.adobe.com/magento-live-search.html).
 
@@ -180,7 +180,7 @@ Saiba como configurar suas chaves de API no artigo [Commerce Services Connector]
 
 ## 3. Sincronizar os dados do catálogo
 
-[!DNL Live Search] move dados de catálogo para a infraestrutura SaaS do Adobe. Os dados são indexados e os resultados da pesquisa são enviados desse índice diretamente para a loja. Dependendo do tamanho e da complexidade, a indexação pode levar de 30 minutos a algumas horas.
+O [!DNL Live Search] move dados de catálogo para a infraestrutura SaaS da Adobe. Os dados são indexados e os resultados da pesquisa são enviados desse índice diretamente para a loja. Dependendo do tamanho e da complexidade, a indexação pode levar de 30 minutos a algumas horas.
 
 Para iniciar a sincronização inicial dos dados do catálogo com os serviços SaaS, execute os seguintes comandos nesta ordem:
 
@@ -227,7 +227,7 @@ Para verificar se os dados do catálogo foram exportados do Adobe Commerce e sin
   >
   >Se você receber um erro `table does not exist`, procure entradas nas tabelas `catalog_data_exporter_products` e `catalog_data_exporter_product_attributes`. Estes nomes de tabela são usados em [!DNL Live Search] versões anteriores à 4.2.1.
 
-- Use a [GraphQL playground](https://developer.adobe.com/commerce/services/graphql/live-search/) com a consulta padrão para verificar o seguinte:
+- Use a [área de jogo do GraphQL](https://experienceleague.adobe.com/en/docs/commerce-merchant-services/live-search/live-search-admin/graphql) com a consulta padrão (consulte a [referência do GraphQL](https://developer.adobe.com/commerce/services/graphql/live-search/) para obter mais detalhes) para verificar o seguinte:
 
    - A contagem de produtos retornada está próxima do que você espera da exibição da loja.
    - Os aspectos são retornados.
@@ -250,7 +250,7 @@ Se você tiver uma versão do [!DNL Live Search] anterior à 4.0.0+, deverá hab
 
    ![Habilitar Widgets de Listagem de Produtos](assets/ls-admin-enable-widget.png)
 
-Quando você alterar essa configuração, a mensagem `Page cache is invalidated` será exibida. É necessário liberar o cache de Magento para salvar a alteração.
+Quando você alterar essa configuração, a mensagem `Page cache is invalidated` será exibida. É necessário liberar o cache do Magento para salvar a alteração.
 
 1. Acesse a página [Gerenciamento de Cache](https://experienceleague.adobe.com/en/docs/commerce-admin/systems/tools/cache-management) seguindo um destes procedimentos:
 
@@ -402,7 +402,7 @@ Se você tiver uma implementação headless personalizada, confira as [!DNL Live
 - [Widget do PLP](https://github.com/adobe/storefront-product-listing-page)
 - [Campo do Live Search](https://github.com/adobe/storefront-search-as-you-type)
 
-A coleta automática de dados de interação do usuário não funciona por padrão quando você não usa os componentes padrão, como o Adaptador de pesquisa, widgets Luma ou Widgets CIF AEM. O Adobe Sensei usa esses dados coletados para um merchandising inteligente e para o rastreamento de desempenho. Para resolver esse problema, é necessário desenvolver uma solução personalizada para implementar essa coleção de dados de forma headless.
+A coleta automática de dados de interação do usuário não funciona por padrão quando você não usa os componentes padrão, como o Adaptador de pesquisa, os widgets do Luma ou os Widgets do AEM CIF. O Adobe Sensei usa esses dados coletados para um merchandising inteligente e para o rastreamento de desempenho. Para resolver esse problema, é necessário desenvolver uma solução personalizada para implementar essa coleção de dados de forma headless.
 
 A última versão de [!DNL Live Search] já usa [!DNL Catalog Service].
 
@@ -506,15 +506,15 @@ Esse módulo adiciona contextos adicionais às consultas do GraphQL:
 
 [!DNL Live Search] dá suporte à [funcionalidade B2B](https://experienceleague.adobe.com/en/docs/commerce-admin/b2b/guide-overview) com [limitações](boundaries-limits.md#b2b-and-category-permissions) adicionais.
 
-### suporte para PWA
+### Suporte ao PWA
 
 O [!DNL Live Search] funciona com o PWA Studio, mas os usuários podem ver pequenas diferenças em comparação a outras implementações do Commerce. Funcionalidades básicas, como pesquisa e listagem de produtos, funcionam em Venia, mas algumas permutas de Graphql podem não funcionar corretamente. Também pode haver diferenças de desempenho.
 
-- A implementação PWA atual de [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
-- [!DNL Live Search] no PWA não dá suporte a [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, os relatórios de pesquisa e o merchandising inteligente não funcionam em vitrines de PWA.
-- Ao usar [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), o GraphQL não oferece suporte à filtragem diretamente em `description`, `name`, `short_description`, mas esses campos podem ser retornados com um filtro mais geral.
+- A implementação atual do PWA de [!DNL Live Search] requer mais tempo de processamento para retornar resultados de pesquisa do que [!DNL Live Search] com a loja nativa do Commerce.
+- [!DNL Live Search] no PWA não oferece suporte a [manipulação de eventos](https://developer.adobe.com/commerce/services/shared-services/storefront-events/sdk/). Como resultado, os relatórios de pesquisa e o merchandising inteligente não funcionam nas vitrines do PWA.
+- Ao usar o [PWA Studio](https://developer.adobe.com/commerce/pwa-studio/), o GraphQL não oferece suporte à filtragem diretamente em `description`, `name`, `short_description`, mas esses campos podem ser retornados com um filtro mais geral.
 
-Para usar [!DNL Live Search] com o PWA Studio, os integradores também devem:
+Para usar o [!DNL Live Search] com o PWA Studio, os integradores também devem:
 
 1. Instale o [livesearch-storefront-utils](https://www.npmjs.com/package/@magento/ds-livesearch-storefront-utils).
 1. Defina o `environmentId` no objeto `storeDetails`.
